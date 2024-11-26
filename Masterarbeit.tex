@@ -64,7 +64,7 @@
 MRI is a commonly used medical imaging technique that is non-invasice, radiation-free and has great contrast for soft tissue. However, speed is its main weakness as full-body scan can take up to 30 minutes, which is a burden on patients as well as hindering efficiency. Thus, MRI acquisition is usually accelerated by subsampling the k-space in which the data is recorded. This can, however, lead to problematic image artifacts that hinder many processing algorithms. Another problem of the slow data acquisition are motion artifacts, which are especially common for organs like lung and heart. While breathing can be controlled, cardiac motion is involuntarily and should not be stopped. These challenges have been traditionally addressed with computationally intensive algorithms that usually iterativly solve an optimization problem. New approaches, however, are based around the deep neural networks, which have seen a rise in popularity in the recent years in many fields including image processing. In this thesis, the possibility of using an unsupervised deep learning approach to align subsampled MRI data as well its potential usage in a motion reconstruction pipeline will be investigated.
 
 \section{Contributions of the Thesis} \label{Sec:Contributions}
-Building on already established work we used unsupervised neural network training to efficiently align subsampled MR images. An application for motion correction during image reconstruction was tested.
+Expanding already established work, unsupervised neural network training was used to efficiently align subsampled MR images. While the networks architecture was already tested on e.g. inter-patient brain scan alignment, a new use-case with undersampled cardiac MR scan was explored. The registration performance was also compared to other methods. Furthermore, a  potential application in a motion-compensated image reconstruction pipeline was tested.
 
 \section{Related Work} \label{Sec:RelatedWork}
 The network used for the main parts of this thesis are are \emph{Fourier-Net}~\cite{Fourier-Net} and \emph{Fourier-Net+}~\cite{Fourier-Net+}. These are based on works such as the unsupervised \emph{VoxelMorph}~\cite{Voxelmorph}, which is also used as an comparison, as well as the \emph{IC-Net}~\cite{IC-Net} and \emph{SYM-Net}~\cite{SYM-Net}. Additionally, the traditional registration algorithm \emph{NiftyReg}~\cite{NiftiReg} was also used in the evaluation.\\
@@ -1196,14 +1196,16 @@ Describe qualitative test to see whether the network can be used to improve a re
 \subsection{Training Networks}
 Before implementing the reconstruction pipeline we tested the domain translation capabilities of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}.
 
-\subsection{Reconstruction Pipeline using Fourier-Net+}
-As discussed in section~\ref{Sec:Motion-CompensatedReconstruction}, neural networks can be used in motion-compensated MRI reconstruction pipelines for either the reconstruction or the corrected of motion between the frames. As \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were already trained for frame-to-frame registration, they could be easily used for the latter. ESPIRiT~\cite{ESPIRiT} was used as a iterative reconstruction algorithm as it combines aspects of SENSE and GRAPPA to enable accurate reconstruction even for highly accelerated data. It also estimates the sensitivity maps from the provided k-space data using an eigenvalue decomposition.. One of the advantages of this setup is its memory effectiveness as \emph{Fourier-Net+} is a very small network and no big network is needed for the actual reconstruction. An overview of this reconstruction pipeline using \emph{Fourier-Net+} can be seen in Figure~\ref{fig:ReconstructionPipeline}. \\ 
-This task was done on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an inverse FT for frame-to-frame registration using the optimal settings obtained in sections~\ref{Sec:ParameterStudies} and~\ref{Sec:K-SpaceAndContrastiveLossExperiments} (MSE-loss, 16 channels, $\lambda=0.01$).
+\subsection{Reconstruction Pipeline}
+After ensuring that the previous results were translatable to the new data, the reconstruction pipeline had to be evaluated. As discussed in section~\ref{Sec:Motion-CompensatedReconstruction}, neural networks can be used in motion-compensated MRI reconstruction pipelines for either the reconstruction or the corrected of motion between the frames. As \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were already trained for frame-to-frame registration, they could be easily used for the latter. ESPIRiT~\cite{ESPIRiT} was used to simulate the coil sensitivity maps needed for a SENSE-type reconstruction from the provided k-space data using an eigenvalue decomposition. For the SENSE reconstruction iterative conjugate gradient was used as it is very memory effectiv due to \emph{Fourier-Net+} being a very small network and the fact that no big network is needed for the actual reconstruction as a lightweight algorithm does the work. \\ 
+This experiment was conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. To simulate this motion or mis-triggering, a similar strategy to~\cite{Oksuz2020} was used, swapping $z=\{16,32\}$ k-space lines between the frames in k-space. These new fully sampled frames were then subsampled using the subsampling masks before an inverse FT to generate the corrupted images for the pipeline. An overview of the whole reconstruction pipeline  can be seen in Figure~\ref{fig:ReconstructionPipeline}.\\
+\emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an inverse FT for frame-to-frame registration using the optimal settings obtained in sections~\ref{Sec:ParameterStudies} and~\ref{Sec:K-SpaceAndContrastiveLossExperiments} (MSE-loss, 16 channels, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:TestingEvalutionMetrics}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ReconstructionPipelineResults}.
+
 
 \begin{figure}[htpb]
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\linewidth]{ReconstructionPipelineCompact.png} 
+	\includegraphics[width=\linewidth]{ReconstructionPipelineEvaluation.png} 
 	\caption{Overview of the general reconstruction pipeline using \emph{Fourier-Net+} as a registration network (inspired by~\cite{Kuestner2022}).}
 	\label{fig:ReconstructionPipeline}
 \end{figure}
@@ -1868,7 +1870,7 @@ Experiments trying to change the sampling density of the displacement features a
 \section{Integration into a Motion-Compensated Reconstruction Pipeline} \label{Sec:ResultsIntegrationMotion-CompensatedReconstructionPipeline}
 Stuff.
 
-\subsection{Training Networks}
+\subsection{Training Networks} \label{SubSec:TrainingNetworksResults}
 Trained \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} again on the accelerated \emph{CMRxRecon} data (without crops). \\
 Compared \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} trained for 6 epochs on \emph{ACDC} to \emph{Fourier-Net+} trained for 14 epochs on \emph{CMRxRecon} to evaluate the domain translation capabilities of \emph{Fourier-Net+}. All other network parameters are the same.
 
@@ -1900,7 +1902,7 @@ Compared \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} train
 	\end{tabular}	
 \end{table}
 
-\subsection{Reconstruction Pipeline}
+\subsection{Reconstruction Pipeline} \label{SubSec:ReconstructionPipelineResults}
 After ensuring that the previous results were translatable to the new data, the reconstruction pipeline had to be evaluated. As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:TestingEvalutionMetrics}) and HaarPSI~\cite{HaarPSI} were also added. After ensuring that the reconstruction pipeline worked, the input images were further corrupted as the cardiac motion present was not deemed severe enough. To simulate motion or mis-triggering a similar strategy to~\cite{Oksuz2020} was used, swapping $z=\{16,32\}$ k-space lines between the frames. Results for the motion-compensated reconstruction using \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} is shown in Table~\ref{tab:ComparisonReconstructionCMRxRecon}.
 
 \begin{table}[h] %tpb
@@ -1942,9 +1944,9 @@ After ensuring that the previous results were translatable to the new data, the 
 		% 4x Accelerated (R=4) 				 		
 		\midrule
 		\multirow{5}{*}{\rotatebox{90}{$R=4$}} & Baseline & $52.754 \pm 7.725$ & $27.534 \pm 2.175$ & $74.379 \pm 5.869$ & $0.202 \pm 0.129$ \\  
-		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\  
+		 & VoxelMorph & \textcolor{red}{$52.747 \pm 7.658$} & \textcolor{red}{$27.512 \pm 2.188$} & \textcolor{red}{$74.349 \pm 5.900$} & \textcolor{red}{$0.203 \pm 0.129$} \\  
 		 & Fourier-Net & $52.802 \pm 7.708$ & $27.536 \pm 2.197$ & $74.421 \pm 5.937$ & $0.202 \pm 0.128$ \\  
-		 & Fourier-Net+ & $52.725 \pm 7.724$ & $27.522 \pm 2.198$ & $74.366 \pm 5.892$ & $0.203 \pm 0.129$ \\   
+		 & Fourier-Net+ & \textcolor{red}{$52.725 \pm 7.724$} & \textcolor{red}{$27.522 \pm 2.198$} & \textcolor{red}{$74.366 \pm 5.892$} & \textcolor{red}{$0.203 \pm 0.129$} \\   
 		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\  
 		
 		% 8x Accelerated (R=8) 
@@ -1959,8 +1961,8 @@ After ensuring that the previous results were translatable to the new data, the 
 		\midrule		
 		\multirow{5}{*}{\rotatebox{90}{$R=10$}} & Baseline & $49.311 \pm 7.049$ & $27.037 \pm 2.182$ & $74.029 \pm 5.782$ & $0.227 \pm 0.143$ \\  
 		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\  
-		 & Fourier-Net & $49.255 \pm 7.011$ & $27.024 \pm 2.168$ & $73.952 \pm 5.793$ & $0.227 \pm 0.141$ \\  
-		 & Fourier-Net+ & $49.296 \pm 7.001$ & $27.045 \pm 2.172$ & $74.028 \pm 5.784$ & $0.226 \pm 0.140$ \\   
+		 & Fourier-Net & \textcolor{red}{$49.255 \pm 7.011$} & \textcolor{red}{$27.024 \pm 2.168$} & \textcolor{red}{$73.952 \pm 5.793$} & $0.227 \pm 0.141$ \\  
+		 & Fourier-Net+ & \textcolor{red}{$49.296 \pm 7.001$} & $27.045 \pm 2.172$ & \textcolor{red}{$74.028 \pm 5.784$} & $0.226 \pm 0.140$ \\   
 		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
 		 \bottomrule
 	\end{tabular}
@@ -1971,6 +1973,8 @@ After ensuring that the previous results were translatable to the new data, the 
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Conclusion} \label{Ch:Conclusion}
-Summery of all stuff...
+After finding optimal model parameters for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}, their registration performance was compared to \emph{NiftyReg} and \emph{VoxelMorph} on the \emph{ACDC} dataset. As expected, the three networks performed very well for the different reduction factor present in the dataset with \emph{Fourier-Net} generally performing best, though \emph{4xFourier-Net+} had similar results while being more efficient.\\
+Trying to further optimize the performance, different loss functions e.g. utilizing k-space information or the contrastive InfoNCE loss were tested, though non of these were able to provide a better performance.\\
+Lastly, the networks were used in an motion-compensated reconstruction pipeline on \emph{CMRxRecon} data that was further motion-corrupted.
 
 \end{document}

@@ -77,7 +77,7 @@
 \contentsline {subsection}{Contrastive Learning}{45}{section*.64}%
 \contentsline {section}{\numberline {7.4}Integration into a Motion-Compensated Reconstruction Pipeline}{45}{section.7.4}%
 \contentsline {subsection}{Training Networks}{45}{section*.65}%
-\contentsline {subsection}{Reconstruction Pipeline using Fourier-Net+}{45}{section*.66}%
+\contentsline {subsection}{Reconstruction Pipeline}{45}{section*.66}%
 \contentsline {chapter}{\numberline {8}Results and Discussion}{47}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Parameter Studies on the CMRxRecon Dataset}{47}{section.8.1}%
 \contentsline {subsection}{Fourier-Net versus Fourier-Net+}{47}{section*.68}%
