@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  25 NOV 2024 11:16
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  26 NOV 2024 08:14
  restricted system commands enabled.
 **Masterarbeit.tex
 (./Masterarbeit.tex
@@ -3496,7 +3496,7 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 1:6,2:2700,3:558,4:213,5:2341,6:80,7:16590,8:73,9:902,10:24,11:1
 090
  65176 multiletter control sequences out of 65536+600000
- 305 fonts using 93575255 bytes
+ 305 fonts using 93574951 bytes
  102i,14n,128p,3041b,2944s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/opentype/public/lm/lmmono12-regular.otf><C:/Progr
 am Files/MiKTeX/fonts/opentype/public/lm/lmmonoprop10-regular.otf><C:/Program Fi
@@ -3515,7 +3515,7 @@ KTeX/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf><C:/Program Files/MiKTeX
 /fonts/opentype/huerta/alegreya/AlegreyaSans-Bold.otf><C:/Program Files/MiKTeX/f
 onts/opentype/huerta/alegreya/AlegreyaSans-Italic.otf><C:/Program Files/MiKTeX/f
 onts/opentype/huerta/alegreya/AlegreyaSans-Regular.otf>
-Output written on Masterarbeit.pdf (79 pages, 10362928 bytes).
+Output written on Masterarbeit.pdf (79 pages, 10364022 bytes).
 
 PDF statistics: 1305 PDF objects out of 1440 (max. 8388607)
  304 named destinations out of 1000 (max. 131072)
