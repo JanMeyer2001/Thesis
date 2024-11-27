@@ -628,7 +628,7 @@
 }
 \newcommand*\l@section{\uzl@sec@tocline{1}{1.5em}{2.3em}}
 \newcommand*\l@subsection{\uzl@sec@tocline{2}{3.8em}{3.2em}}
-\newcommand*\l@subsubsection{\uzl@sec@tocline{2}{3.8em}{3.2em}}
+\newcommand*\l@subsubsection{\uzl@sec@tocline{3}{3.8em}{3.2em}}
 
 \def\uzl@sec@tocline#1#2#3#4#5{%
   \ifnum #1>\c@tocdepth \else

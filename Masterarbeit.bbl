@@ -2521,450 +2521,6 @@
     \field{year}{2007}
   \endentry
 
-  \entry{CMRxRecon}{misc}{}
-    \name{author}{28}{}{%
-      {{hash=WC}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Chengyan},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=LJ}{%
-         family={Lyu},
-         familyi={L\bibinitperiod},
-         given={Jun},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=WS}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Shuo},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=QC}{%
-         family={Qin},
-         familyi={Q\bibinitperiod},
-         given={Chen},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=GK}{%
-         family={Guo},
-         familyi={G\bibinitperiod},
-         given={Kunyuan},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=ZX}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Xinyu},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=YX}{%
-         family={Yu},
-         familyi={Y\bibinitperiod},
-         given={Xiaotong},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=LY}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Yan},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=WF}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Fanwen},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=JJ}{%
-         family={Jin},
-         familyi={J\bibinitperiod},
-         given={Jianhua},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=SZ}{%
-         family={Shi},
-         familyi={S\bibinitperiod},
-         given={Zhang},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=XZ}{%
-         family={Xu},
-         familyi={X\bibinitperiod},
-         given={Ziqiang},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=TY}{%
-         family={Tian},
-         familyi={T\bibinitperiod},
-         given={Yapeng},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=HS}{%
-         family={Hua},
-         familyi={H\bibinitperiod},
-         given={Sha},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=CZ}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={Zhensen},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=LM}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Meng},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Sun},
-         familyi={S\bibinitperiod},
-         given={Mengting},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=KX}{%
-         family={Kuang},
-         familyi={K\bibinitperiod},
-         given={Xutong},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=WK}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Kang},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=WH}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Haoran},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=LH}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Hao},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=CY}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={Yinghua},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=YG}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Guang},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=BW}{%
-         family={Bai},
-         familyi={B\bibinitperiod},
-         given={Wenjia},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=ZX}{%
-         family={Zhuang},
-         familyi={Z\bibinitperiod},
-         given={Xiahai},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=WH}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={He},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=QJ}{%
-         family={Qin},
-         familyi={Q\bibinitperiod},
-         given={Jing},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=QX}{%
-         family={Qu},
-         familyi={Q\bibinitperiod},
-         given={Xiaobo},
-         giveni={X\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \keyw{Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and
-  information sciences, FOS: Computer and information sciences}
-    \strng{namehash}{WC+1}
-    \strng{fullhash}{WCLJWSQCGKZXYXLYWFJJSZXZTYHSCZLMSMKXWKWHLHCYYGBWZXWHQJQX1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.48550/ARXIV.2309.10836
-    \endverb
-    \field{title}{CMRxRecon: An open cardiac MRI dataset for the competition of
-  accelerated image reconstruction}
-    \verb{file}
-    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
-    \verb ter/Masterarbeit/Literatur/CMRxRecon.pdf:PDF
-    \endverb
-    \field{year}{2023}
-  \endentry
-
-  \entry{ACDC}{article}{}
-    \name{author}{37}{}{%
-      {{hash=BO}{%
-         family={Bernard},
-         familyi={B\bibinitperiod},
-         given={Olivier},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=LA}{%
-         family={Lalande},
-         familyi={L\bibinitperiod},
-         given={Alain},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=ZC}{%
-         family={Zotti},
-         familyi={Z\bibinitperiod},
-         given={Clement},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=CF}{%
-         family={Cervenansky},
-         familyi={C\bibinitperiod},
-         given={Frederick},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=YX}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Xin},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=HPA}{%
-         family={Heng},
-         familyi={H\bibinitperiod},
-         given={Pheng-Ann},
-         giveni={P\bibinithyphendelim A\bibinitperiod},
-      }}%
-      {{hash=CI}{%
-         family={Cetin},
-         familyi={C\bibinitperiod},
-         given={Irem},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=LK}{%
-         family={Lekadir},
-         familyi={L\bibinitperiod},
-         given={Karim},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=CO}{%
-         family={Camara},
-         familyi={C\bibinitperiod},
-         given={Oscar},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=GBMA}{%
-         family={Gonzalez\bibnamedelima Ballester},
-         familyi={G\bibinitperiod\bibinitdelim B\bibinitperiod},
-         given={Miguel\bibnamedelima Angel},
-         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=SG}{%
-         family={Sanroma},
-         familyi={S\bibinitperiod},
-         given={Gerard},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=NS}{%
-         family={Napel},
-         familyi={N\bibinitperiod},
-         given={Sandy},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=PS}{%
-         family={Petersen},
-         familyi={P\bibinitperiod},
-         given={Steffen},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=TG}{%
-         family={Tziritas},
-         familyi={T\bibinitperiod},
-         given={Georgios},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=GE}{%
-         family={Grinias},
-         familyi={G\bibinitperiod},
-         given={Elias},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=KM}{%
-         family={Khened},
-         familyi={K\bibinitperiod},
-         given={Mahendra},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=KVA}{%
-         family={Kollerathu},
-         familyi={K\bibinitperiod},
-         given={Varghese\bibnamedelima Alex},
-         giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=KG}{%
-         family={Krishnamurthi},
-         familyi={K\bibinitperiod},
-         given={Ganapathy},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=RMM}{%
-         family={Rohe},
-         familyi={R\bibinitperiod},
-         given={Marc-Michel},
-         giveni={M\bibinithyphendelim M\bibinitperiod},
-      }}%
-      {{hash=PX}{%
-         family={Pennec},
-         familyi={P\bibinitperiod},
-         given={Xavier},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Sermesant},
-         familyi={S\bibinitperiod},
-         given={Maxime},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=IF}{%
-         family={Isensee},
-         familyi={I\bibinitperiod},
-         given={Fabian},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=JP}{%
-         family={Jager},
-         familyi={J\bibinitperiod},
-         given={Paul},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=MHKH}{%
-         family={Maier-Hein},
-         familyi={M\bibinithyphendelim H\bibinitperiod},
-         given={Klaus\bibnamedelima H.},
-         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=FPM}{%
-         family={Full},
-         familyi={F\bibinitperiod},
-         given={Peter\bibnamedelima M.},
-         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=WI}{%
-         family={Wolf},
-         familyi={W\bibinitperiod},
-         given={Ivo},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=ES}{%
-         family={Engelhardt},
-         familyi={E\bibinitperiod},
-         given={Sandy},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=BCF}{%
-         family={Baumgartner},
-         familyi={B\bibinitperiod},
-         given={Christian\bibnamedelima F.},
-         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=KLM}{%
-         family={Koch},
-         familyi={K\bibinitperiod},
-         given={Lisa\bibnamedelima M.},
-         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=WJM}{%
-         family={Wolterink},
-         familyi={W\bibinitperiod},
-         given={Jelmer\bibnamedelima M.},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=II}{%
-         family={Isgum},
-         familyi={I\bibinitperiod},
-         given={Ivana},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=JY}{%
-         family={Jang},
-         familyi={J\bibinitperiod},
-         given={Yeonggul},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=HY}{%
-         family={Hong},
-         familyi={H\bibinitperiod},
-         given={Yoonmi},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=PJ}{%
-         family={Patravali},
-         familyi={P\bibinitperiod},
-         given={Jay},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=JS}{%
-         family={Jain},
-         familyi={J\bibinitperiod},
-         given={Shubham},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HO}{%
-         family={Humbert},
-         familyi={H\bibinitperiod},
-         given={Olivier},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=JPM}{%
-         family={Jodoin},
-         familyi={J\bibinitperiod},
-         given={Pierre-Marc},
-         giveni={P\bibinithyphendelim M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{2}{%
-      {Institute of Electrical}%
-      {Electronics Engineers (IEEE)}%
-    }
-    \strng{namehash}{BO+1}
-  \strng{fullhash}{BOLAZCCFYXHPACILKCOGBMASGNSPSTGGEKMKVAKGRMMPXSMIFJPMHKHFPMWIESBCFKLMWJMIIJYHYPJJSHOJPM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1109/tmi.2018.2837502
-    \endverb
-    \field{issn}{1558-254X}
-    \field{number}{11}
-    \field{pages}{2514\bibrangedash 2525}
-    \field{title}{Deep Learning Techniques for Automatic MRI Cardiac
-  Multi-Structures Segmentation and Diagnosis: Is the Problem Solved?}
-    \field{volume}{37}
-    \verb{file}
-    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
-    \verb ter/Masterarbeit/Literatur/Deep learning techniques for automatic MRI
-    \verb  cardiac multi-structures segmentation and diagnosis.pdf:PDF
-    \endverb
-    \field{journaltitle}{IEEE Transactions on Medical Imaging}
-    \field{month}{11}
-    \field{year}{2018}
-  \endentry
-
   \entry{Dalca2018}{inbook}{}
     \name{author}{4}{}{%
       {{hash=DAV}{%
@@ -3235,6 +2791,450 @@
     \field{year}{2015}
   \endentry
 
+  \entry{ACDC}{article}{}
+    \name{author}{37}{}{%
+      {{hash=BO}{%
+         family={Bernard},
+         familyi={B\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lalande},
+         familyi={L\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zotti},
+         familyi={Z\bibinitperiod},
+         given={Clement},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Cervenansky},
+         familyi={C\bibinitperiod},
+         given={Frederick},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HPA}{%
+         family={Heng},
+         familyi={H\bibinitperiod},
+         given={Pheng-Ann},
+         giveni={P\bibinithyphendelim A\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Cetin},
+         familyi={C\bibinitperiod},
+         given={Irem},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lekadir},
+         familyi={L\bibinitperiod},
+         given={Karim},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Camara},
+         familyi={C\bibinitperiod},
+         given={Oscar},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=GBMA}{%
+         family={Gonzalez\bibnamedelima Ballester},
+         familyi={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Miguel\bibnamedelima Angel},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sanroma},
+         familyi={S\bibinitperiod},
+         given={Gerard},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Napel},
+         familyi={N\bibinitperiod},
+         given={Sandy},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Petersen},
+         familyi={P\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tziritas},
+         familyi={T\bibinitperiod},
+         given={Georgios},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Grinias},
+         familyi={G\bibinitperiod},
+         given={Elias},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Khened},
+         familyi={K\bibinitperiod},
+         given={Mahendra},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KVA}{%
+         family={Kollerathu},
+         familyi={K\bibinitperiod},
+         given={Varghese\bibnamedelima Alex},
+         giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Krishnamurthi},
+         familyi={K\bibinitperiod},
+         given={Ganapathy},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RMM}{%
+         family={Rohe},
+         familyi={R\bibinitperiod},
+         given={Marc-Michel},
+         giveni={M\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=PX}{%
+         family={Pennec},
+         familyi={P\bibinitperiod},
+         given={Xavier},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sermesant},
+         familyi={S\bibinitperiod},
+         given={Maxime},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=IF}{%
+         family={Isensee},
+         familyi={I\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=JP}{%
+         family={Jager},
+         familyi={J\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MHKH}{%
+         family={Maier-Hein},
+         familyi={M\bibinithyphendelim H\bibinitperiod},
+         given={Klaus\bibnamedelima H.},
+         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=FPM}{%
+         family={Full},
+         familyi={F\bibinitperiod},
+         given={Peter\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WI}{%
+         family={Wolf},
+         familyi={W\bibinitperiod},
+         given={Ivo},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={Engelhardt},
+         familyi={E\bibinitperiod},
+         given={Sandy},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BCF}{%
+         family={Baumgartner},
+         familyi={B\bibinitperiod},
+         given={Christian\bibnamedelima F.},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=KLM}{%
+         family={Koch},
+         familyi={K\bibinitperiod},
+         given={Lisa\bibnamedelima M.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WJM}{%
+         family={Wolterink},
+         familyi={W\bibinitperiod},
+         given={Jelmer\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=II}{%
+         family={Isgum},
+         familyi={I\bibinitperiod},
+         given={Ivana},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=JY}{%
+         family={Jang},
+         familyi={J\bibinitperiod},
+         given={Yeonggul},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HY}{%
+         family={Hong},
+         familyi={H\bibinitperiod},
+         given={Yoonmi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Patravali},
+         familyi={P\bibinitperiod},
+         given={Jay},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Shubham},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HO}{%
+         family={Humbert},
+         familyi={H\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=JPM}{%
+         family={Jodoin},
+         familyi={J\bibinitperiod},
+         given={Pierre-Marc},
+         giveni={P\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{BO+1}
+  \strng{fullhash}{BOLAZCCFYXHPACILKCOGBMASGNSPSTGGEKMKVAKGRMMPXSMIFJPMHKHFPMWIESBCFKLMWJMIIJYHYPJJSHOJPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tmi.2018.2837502
+    \endverb
+    \field{issn}{1558-254X}
+    \field{number}{11}
+    \field{pages}{2514\bibrangedash 2525}
+    \field{title}{Deep Learning Techniques for Automatic MRI Cardiac
+  Multi-Structures Segmentation and Diagnosis: Is the Problem Solved?}
+    \field{volume}{37}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/Deep learning techniques for automatic MRI
+    \verb  cardiac multi-structures segmentation and diagnosis.pdf:PDF
+    \endverb
+    \field{journaltitle}{IEEE Transactions on Medical Imaging}
+    \field{month}{11}
+    \field{year}{2018}
+  \endentry
+
+  \entry{CMRxRecon}{misc}{}
+    \name{author}{28}{}{%
+      {{hash=WC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Chengyan},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lyu},
+         familyi={L\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Shuo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=QC}{%
+         family={Qin},
+         familyi={Q\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Kunyuan},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xinyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Xiaotong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Fanwen},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Jianhua},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SZ}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Zhang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Ziqiang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Yapeng},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hua},
+         familyi={H\bibinitperiod},
+         given={Sha},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhensen},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Meng},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Mengting},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KX}{%
+         family={Kuang},
+         familyi={K\bibinitperiod},
+         given={Xutong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Kang},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Haoran},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Chu},
+         familyi={C\bibinitperiod},
+         given={Yinghua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YG}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Guang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BW}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Wenjia},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhuang},
+         familyi={Z\bibinitperiod},
+         given={Xiahai},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={He},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=QJ}{%
+         family={Qin},
+         familyi={Q\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QX}{%
+         family={Qu},
+         familyi={Q\bibinitperiod},
+         given={Xiaobo},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and
+  information sciences, FOS: Computer and information sciences}
+    \strng{namehash}{WC+1}
+    \strng{fullhash}{WCLJWSQCGKZXYXLYWFJJSZXZTYHSCZLMSMKXWKWHLHCYYGBWZXWHQJQX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/ARXIV.2309.10836
+    \endverb
+    \field{title}{CMRxRecon: An open cardiac MRI dataset for the competition of
+  accelerated image reconstruction}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/CMRxRecon.pdf:PDF
+    \endverb
+    \field{year}{2023}
+  \endentry
+
   \entry{VoxelMorphDiff}{article}{}
     \name{author}{4}{}{%
       {{hash=DAV}{%
@@ -3352,55 +3352,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{HaarPSI}{article}{}
-    \name{author}{4}{}{%
-      {{hash=RR}{%
-         family={Reisenhofer},
-         familyi={R\bibinitperiod},
-         given={Rafael},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=BS}{%
-         family={Bosse},
-         familyi={B\bibinitperiod},
-         given={Sebastian},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KG}{%
-         family={Kutyniok},
-         familyi={K\bibinitperiod},
-         given={Gitta},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=WT}{%
-         family={Wiegand},
-         familyi={W\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \keyw{Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and
-  information sciences, FOS: Computer and information sciences}
-    \strng{namehash}{RR+1}
-    \strng{fullhash}{RRBSKGWT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.48550/ARXIV.1607.06140
-    \endverb
-    \field{title}{A Haar Wavelet-Based Perceptual Similarity Index for Image
-  Quality Assessment}
-    \verb{file}
-    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
-    \verb ter/Masterarbeit/Literatur/A Haar Wavelet-Based Perceptual Similarity
-    \verb  Index for Image Quality Assesment.pdf:PDF
-    \endverb
-    \field{year}{2016}
-  \endentry
-
   \entry{Oksuz2020}{article}{}
     \name{author}{9}{}{%
       {{hash=OI}{%
@@ -3484,6 +3435,55 @@
     \field{journaltitle}{IEEE Transactions on Medical Imaging}
     \field{month}{12}
     \field{year}{2020}
+  \endentry
+
+  \entry{HaarPSI}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RR}{%
+         family={Reisenhofer},
+         familyi={R\bibinitperiod},
+         given={Rafael},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bosse},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kutyniok},
+         familyi={K\bibinitperiod},
+         given={Gitta},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wiegand},
+         familyi={W\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and
+  information sciences, FOS: Computer and information sciences}
+    \strng{namehash}{RR+1}
+    \strng{fullhash}{RRBSKGWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/ARXIV.1607.06140
+    \endverb
+    \field{title}{A Haar Wavelet-Based Perceptual Similarity Index for Image
+  Quality Assessment}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/A Haar Wavelet-Based Perceptual Similarity
+    \verb  Index for Image Quality Assesment.pdf:PDF
+    \endverb
+    \field{year}{2016}
   \endentry
 \enddatalist
 \endinput
