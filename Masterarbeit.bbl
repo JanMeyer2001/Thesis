@@ -847,6 +847,134 @@
     \field{year}{2008}
   \endentry
 
+  \entry{ParallelMRI}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DA}{%
+         family={Deshmane},
+         familyi={D\bibinitperiod},
+         given={Anagha},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Gulani},
+         familyi={G\bibinitperiod},
+         given={Vikas},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GMA}{%
+         family={Griswold},
+         familyi={G\bibinitperiod},
+         given={Mark\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Seiberlich},
+         familyi={S\bibinitperiod},
+         given={Nicole},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{DA+1}
+    \strng{fullhash}{DAGVGMASN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/jmri.23639
+    \endverb
+    \field{issn}{1522-2586}
+    \field{number}{1}
+    \field{pages}{55\bibrangedash 72}
+    \field{title}{Parallel MR imaging}
+    \field{volume}{36}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/Parallel MR imaging.pdf:PDF
+    \endverb
+    \field{journaltitle}{Journal of Magnetic Resonance Imaging}
+    \field{month}{06}
+    \field{year}{2012}
+  \endentry
+
+  \entry{GRAPPA}{article}{}
+    \name{author}{8}{}{%
+      {{hash=GMA}{%
+         family={Griswold},
+         familyi={G\bibinitperiod},
+         given={Mark\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=JPM}{%
+         family={Jakob},
+         familyi={J\bibinitperiod},
+         given={Peter\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HRM}{%
+         family={Heidemann},
+         familyi={H\bibinitperiod},
+         given={Robin\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nittka},
+         familyi={N\bibinitperiod},
+         given={Mathias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JV}{%
+         family={Jellus},
+         familyi={J\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jianmin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kiefer},
+         familyi={K\bibinitperiod},
+         given={Berthold},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Haase},
+         familyi={H\bibinitperiod},
+         given={Axel},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{GMA+1}
+    \strng{fullhash}{GMAJPMHRMNMJVWJKBHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/mrm.10171
+    \endverb
+    \field{issn}{1522-2594}
+    \field{number}{6}
+    \field{pages}{1202\bibrangedash 1210}
+    \field{title}{Generalized autocalibrating partially parallel acquisitions
+  (GRAPPA)}
+    \field{volume}{47}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/Generalized autocalibrating partially para
+    \verb llel acquisitions (GRAPPA).pdf:PDF
+    \endverb
+    \field{journaltitle}{Magnetic Resonance in Medicine}
+    \field{month}{06}
+    \field{year}{2002}
+  \endentry
+
   \entry{DeepMRIReconstructionRadialSubsampling}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=YG}{%
@@ -966,6 +1094,92 @@
     \verb es For Deep MRI Reconstruction.pdf:PDF
     \endverb
     \field{year}{2023}
+  \endentry
+
+  \entry{GRICS}{article}{}
+    \name{author}{4}{}{%
+      {{hash=OF}{%
+         family={Odille},
+         familyi={O\bibinitperiod},
+         given={Freddy},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=VP}{%
+         family={Vuissoz},
+         familyi={V\bibinitperiod},
+         given={Pierre‐André},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Marie},
+         familyi={M\bibinitperiod},
+         given={Pierre‐Yves},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Felblinger},
+         familyi={F\bibinitperiod},
+         given={Jacques},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{OF+1}
+    \strng{fullhash}{OFVPMPFJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/mrm.21623
+    \endverb
+    \field{issn}{1522-2594}
+    \field{number}{1}
+    \field{pages}{146\bibrangedash 157}
+    \field{title}{Generalized Reconstruction by Inversion of Coupled Systems
+  (GRICS) applied to free‐breathing MRI}
+    \field{volume}{60}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/Generalized Reconstruction by Inversion of
+    \verb  Coupled Systems (GRICS).pdf:PDF
+    \endverb
+    \field{journaltitle}{Magnetic Resonance in Medicine}
+    \field{month}{06}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Zou2024}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZQ}{%
+         family={Zou},
+         familyi={Z\bibinitperiod},
+         given={Qing},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Bentham Science Publishers Ltd.}%
+    }
+    \strng{namehash}{ZQ1}
+    \strng{fullhash}{ZQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2174/0115734056270732231204061123
+    \endverb
+    \field{issn}{1573-4056}
+    \field{title}{Motion-resolved 3D Pulmonary MRI Reconstruction using
+  Sinusoidal Representation Networks}
+    \field{volume}{20}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/Motion-resolved 3D Pulmonary MRI Reconstru
+    \verb ction using Sinusoidal Representation Networks.pdf:PDF
+    \endverb
+    \field{journaltitle}{Current Medical Imaging Reviews}
+    \field{month}{01}
+    \field{year}{2024}
   \endentry
 
   \entry{Bardo2021}{article}{}
@@ -1176,83 +1390,6 @@
     \field{journaltitle}{Magnetic Resonance in Medicine}
     \field{month}{11}
     \field{year}{1999}
-  \endentry
-
-  \entry{GRAPPA}{article}{}
-    \name{author}{8}{}{%
-      {{hash=GMA}{%
-         family={Griswold},
-         familyi={G\bibinitperiod},
-         given={Mark\bibnamedelima A.},
-         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=JPM}{%
-         family={Jakob},
-         familyi={J\bibinitperiod},
-         given={Peter\bibnamedelima M.},
-         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=HRM}{%
-         family={Heidemann},
-         familyi={H\bibinitperiod},
-         given={Robin\bibnamedelima M.},
-         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=NM}{%
-         family={Nittka},
-         familyi={N\bibinitperiod},
-         given={Mathias},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=JV}{%
-         family={Jellus},
-         familyi={J\bibinitperiod},
-         given={Vladimir},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=WJ}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Jianmin},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=KB}{%
-         family={Kiefer},
-         familyi={K\bibinitperiod},
-         given={Berthold},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=HA}{%
-         family={Haase},
-         familyi={H\bibinitperiod},
-         given={Axel},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley}%
-    }
-    \strng{namehash}{GMA+1}
-    \strng{fullhash}{GMAJPMHRMNMJVWJKBHA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1002/mrm.10171
-    \endverb
-    \field{issn}{1522-2594}
-    \field{number}{6}
-    \field{pages}{1202\bibrangedash 1210}
-    \field{title}{Generalized autocalibrating partially parallel acquisitions
-  (GRAPPA)}
-    \field{volume}{47}
-    \verb{file}
-    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
-    \verb ter/Masterarbeit/Literatur/Generalized autocalibrating partially para
-    \verb llel acquisitions (GRAPPA).pdf:PDF
-    \endverb
-    \field{journaltitle}{Magnetic Resonance in Medicine}
-    \field{month}{06}
-    \field{year}{2002}
   \endentry
 
   \entry{SPIRiT}{article}{}
@@ -1618,110 +1755,6 @@
     \field{journaltitle}{APSIPA Transactions on Signal and Information
   Processing}
     \field{year}{2022}
-  \endentry
-
-  \entry{GRICS}{article}{}
-    \name{author}{4}{}{%
-      {{hash=OF}{%
-         family={Odille},
-         familyi={O\bibinitperiod},
-         given={Freddy},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=VP}{%
-         family={Vuissoz},
-         familyi={V\bibinitperiod},
-         given={Pierre‐André},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=MP}{%
-         family={Marie},
-         familyi={M\bibinitperiod},
-         given={Pierre‐Yves},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=FJ}{%
-         family={Felblinger},
-         familyi={F\bibinitperiod},
-         given={Jacques},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley}%
-    }
-    \strng{namehash}{OF+1}
-    \strng{fullhash}{OFVPMPFJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1002/mrm.21623
-    \endverb
-    \field{issn}{1522-2594}
-    \field{number}{1}
-    \field{pages}{146\bibrangedash 157}
-    \field{title}{Generalized Reconstruction by Inversion of Coupled Systems
-  (GRICS) applied to free‐breathing MRI}
-    \field{volume}{60}
-    \verb{file}
-    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
-    \verb ter/Masterarbeit/Literatur/Generalized Reconstruction by Inversion of
-    \verb  Coupled Systems (GRICS).pdf:PDF
-    \endverb
-    \field{journaltitle}{Magnetic Resonance in Medicine}
-    \field{month}{06}
-    \field{year}{2008}
-  \endentry
-
-  \entry{ParallelMRI}{article}{}
-    \name{author}{4}{}{%
-      {{hash=DA}{%
-         family={Deshmane},
-         familyi={D\bibinitperiod},
-         given={Anagha},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=GV}{%
-         family={Gulani},
-         familyi={G\bibinitperiod},
-         given={Vikas},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=GMA}{%
-         family={Griswold},
-         familyi={G\bibinitperiod},
-         given={Mark\bibnamedelima A.},
-         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=SN}{%
-         family={Seiberlich},
-         familyi={S\bibinitperiod},
-         given={Nicole},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley}%
-    }
-    \strng{namehash}{DA+1}
-    \strng{fullhash}{DAGVGMASN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1002/jmri.23639
-    \endverb
-    \field{issn}{1522-2586}
-    \field{number}{1}
-    \field{pages}{55\bibrangedash 72}
-    \field{title}{Parallel MR imaging}
-    \field{volume}{36}
-    \verb{file}
-    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
-    \verb ter/Masterarbeit/Literatur/Parallel MR imaging.pdf:PDF
-    \endverb
-    \field{journaltitle}{Journal of Magnetic Resonance Imaging}
-    \field{month}{06}
-    \field{year}{2012}
   \endentry
 
   \entry{LowRank+SparseMRI}{article}{}
@@ -3285,71 +3318,6 @@
     \field{journaltitle}{Medical Image Analysis}
     \field{month}{10}
     \field{year}{2019}
-  \endentry
-
-  \entry{InfoNCE}{article}{}
-    \name{author}{3}{}{%
-      {{hash=OAvd}{%
-         family={Oord},
-         familyi={O\bibinitperiod},
-         given={Aaron van\bibnamedelima den},
-         giveni={A\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim
-  d\bibinitperiod},
-      }}%
-      {{hash=LY}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Yazhe},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=VO}{%
-         family={Vinyals},
-         familyi={V\bibinitperiod},
-         given={Oriol},
-         giveni={O\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \keyw{Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer
-  and information sciences}
-    \strng{namehash}{OAvdLYVO1}
-    \strng{fullhash}{OAvdLYVO1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    While supervised learning has enabled great progress in many applications,
-  unsupervised learning has not seen such widespread adoption, and remains an
-  important and challenging endeavor for artificial intelligence. In this work,
-  we propose a universal unsupervised learning approach to extract useful
-  representations from high-dimensional data, which we call Contrastive
-  Predictive Coding. The key insight of our model is to learn such
-  representations by predicting the future in latent space by using powerful
-  autoregressive models. We use a probabilistic contrastive loss which induces
-  the latent space to capture information that is maximally useful to predict
-  future samples. It also makes the model tractable by using negative sampling.
-  While most prior work has focused on evaluating representations for a
-  particular modality, we demonstrate that our approach is able to learn useful
-  representations achieving strong performance on four distinct domains:
-  speech, images, text and reinforcement learning in 3D environments.%
-    }
-    \verb{doi}
-    \verb 10.48550/ARXIV.1807.03748
-    \endverb
-    \verb{eprint}
-    \verb 1807.03748
-    \endverb
-    \field{title}{Representation Learning with Contrastive Predictive Coding}
-    \verb{file}
-    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
-    \verb ter/Masterarbeit/Literatur/Representation Learning with Contrastive P
-    \verb redictive Coding.pdf:PDF
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.LG}
-    \field{month}{07}
-    \field{year}{2018}
   \endentry
 
   \entry{Oksuz2020}{article}{}
