@@ -408,9 +408,11 @@
 \newcounter {chapter}
 \newcounter {section}[chapter]
 \newcounter {subsection}[section]
+\newcounter {subsubsection}[subsection]
 \renewcommand\thechapter{\@arabic\c@chapter}
 \renewcommand\thesection{\thechapter.\@arabic\c@section}
 \renewcommand\thesubsection{\thesection.\@arabic\c@subsection}
+\renewcommand\thesubsubsection{\thesubsection.\@arabic\c@subsubsection}
 \newcommand\@chapapp{\chaptername}
 \newcommand\appendix{%
   \printbibliography
@@ -545,6 +547,29 @@
 }
 
 
+%%%
+%
+% Subsubsections
+%
+%%%
+                                 
+\newcommand\subsubsection{\@startsection{subsubsection}{2}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\parindent0pt\leavevmode\UzLStyle{subsubsection font,subsubsection layout,subsubsection color}}}
+
+\UzLStyle{
+  %
+  subsubsection/.uzl style inherits from = subsection,
+  subsubsection font/.append code = \large,
+  subsubsection layout/.code = {%
+    \rightskip 0pt plus1fil%
+    \uzl@is@secfalse
+    \uzl@sec@layout
+  }
+}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%
@@ -581,6 +606,7 @@
 }
 \newcommand*\l@section{\uzl@sec@tocline{1}{1.5em}{2.3em}}
 \newcommand*\l@subsection{\uzl@sec@tocline{2}{3.8em}{3.2em}}
+\newcommand*\l@subsubsection{\uzl@sec@tocline{2}{3.8em}{3.2em}}
 
 \def\uzl@sec@tocline#1#2#3#4#5{%
   \ifnum #1>\c@tocdepth \else
@@ -2435,6 +2461,7 @@
     dotted leaders,
     section font/.append code = \normalsize,
     subsection font/.append code = \normalsize,
+    subsubsection font/.append code = \normalsize,
     chapter number font/.append code = \huge
   },
   pagella basic design/.style={

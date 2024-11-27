@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  26 NOV 2024 17:08
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  27 NOV 2024 10:22
  restricted system commands enabled.
 **Masterarbeit.tex
 (./Masterarbeit.tex
@@ -321,9 +321,10 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \c@chapter=\count198
 \c@section=\count199
 \c@subsection=\count266
-\@itemdepth=\count267
-\c@figure=\count268
-\c@table=\count269
+\c@subsubsection=\count267
+\@itemdepth=\count268
+\c@figure=\count269
+\c@table=\count270
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \uzl@toc@fig@width=\dimen199
@@ -348,14 +349,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ("C:/Program Files/MiKTeX/tex/latex/amsmath/amsopn.sty"
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count270
+\inf@bad=\count271
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count271
-\leftroot@=\count272
+\uproot@=\count272
+\leftroot@=\count273
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count273
-\DOTSCASE@=\count274
+\classnum@=\count274
+\DOTSCASE@=\count275
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -368,20 +369,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen258
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count275
+\macc@depth=\count276
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count276
+\c@MaxMatrixCols=\count277
 \dotsspace@=\muskip16
-\c@parentequation=\count277
-\dspbrk@lvl=\count278
+\c@parentequation=\count278
+\dspbrk@lvl=\count279
 \tag@help=\toks30
-\row@=\count279
-\column@=\count280
-\maxfields@=\count281
+\row@=\count280
+\column@=\count281
+\maxfields@=\count282
 \andhelp@=\toks31
 \eqnshift@=\dimen259
 \alignsep@=\dimen260
@@ -419,7 +420,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip55
 \dth@everypar=\toks39
 )
-\c@theorem=\count282
+\c@theorem=\count283
 
 ("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec.sty"
 ("C:/Program Files/MiKTeX/tex/latex/l3packages/xparse/xparse.sty"
@@ -428,7 +429,7 @@ Package: expl3 2023-08-29 L3 programming layer (loader)
 
 ("C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-luatex.def"
 File: l3backend-luatex.def 2023-04-19 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count283
+\l__color_backend_stack_int=\count284
 Inserting `l3color' in `luaotfload.parse_color'.
 \l__pdf_internal_box=\box60
 ))
@@ -439,17 +440,17 @@ Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
 ("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec-luatex.sty"
 Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count284
-\l__fontspec_language_int=\count285
-\l__fontspec_strnum_int=\count286
-\l__fontspec_tmp_int=\count287
-\l__fontspec_tmpa_int=\count288
-\l__fontspec_tmpb_int=\count289
-\l__fontspec_tmpc_int=\count290
-\l__fontspec_em_int=\count291
-\l__fontspec_emdef_int=\count292
-\l__fontspec_strong_int=\count293
-\l__fontspec_strongdef_int=\count294
+\l__fontspec_script_int=\count285
+\l__fontspec_language_int=\count286
+\l__fontspec_strnum_int=\count287
+\l__fontspec_tmp_int=\count288
+\l__fontspec_tmpa_int=\count289
+\l__fontspec_tmpb_int=\count290
+\l__fontspec_tmpc_int=\count291
+\l__fontspec_em_int=\count292
+\l__fontspec_emdef_int=\count293
+\l__fontspec_strong_int=\count294
+\l__fontspec_strongdef_int=\count295
 \l__fontspec_tmpa_dim=\dimen265
 \l__fontspec_tmpb_dim=\dimen266
 \l__fontspec_tmpc_dim=\dimen267
@@ -460,11 +461,11 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec.cfg")))
 \uzl@latex@preskip=\skip56
 \uzl@latex@postskip=\skip57
-LaTeX Info: Redefining \LaTeX on input line 1001.
+LaTeX Info: Redefining \LaTeX on input line 1027.
 
 ("C:/Program Files/MiKTeX/tex/latex/tools/varioref.sty"
 Package: varioref 2022/01/09 v1.6f package for extended references (FMi)
-\c@vrcnt=\count295
+\c@vrcnt=\count296
 )
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/hyperref.sty"
 Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
@@ -514,15 +515,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 ("C:/Program Files/MiKTeX/tex/latex/kvoptions/kvoptions.sty"
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count296
+\c@section@level=\count297
 )
 ("C:/Program Files/MiKTeX/tex/latex/etoolbox/etoolbox.sty"
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count297
+\etb@tempcnta=\count298
 )
 \@linkdim=\dimen268
-\Hy@linkcounter=\count298
-\Hy@pagecounter=\count299
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/pd1enc.def"
 File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
@@ -530,7 +531,7 @@ File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 ("C:/Program Files/MiKTeX/tex/generic/intcalc/intcalc.sty"
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count300
+\Hy@SavedSpaceFactor=\count301
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/puenc.def"
 File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
@@ -546,7 +547,7 @@ Package hyperref Info: Plain pages OFF on input line 4182.
 Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4434.
-\c@Hy@tempcnt=\count301
+\c@Hy@tempcnt=\count302
 
 ("C:/Program Files/MiKTeX/tex/latex/url/url.sty"
 \Urlmuskip=\muskip17
@@ -562,7 +563,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count302
+\Fld@menulength=\count303
 \Field@Width=\dimen270
 \Fld@charsize=\dimen271
 Package hyperref Info: Hyper figures OFF on input line 6051.
@@ -577,9 +578,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6081.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count303
-\c@Item=\count304
-\c@Hfootnote=\count305
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
 )
 Package hyperref Info: Driver (autodetected): hluatex.
 
@@ -595,8 +596,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count306
-\c@bookmark@seq@number=\count307
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
 
 ("C:/Program Files/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty"
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -695,7 +696,7 @@ Package babel Info: Non-standard hyphenation setup on input line 118.
 \babelcatcodetablenum=\catcodetable14
 \bbl@pattcodes=\catcodetable15
 )
-\babel@savecnt=\count308
+\babel@savecnt=\count309
 \U@D=\dimen272
 \l@unhyphenated=\language79
 
@@ -746,12 +747,12 @@ Package babel Info: Importing font and identification data for german
 )
 ("C:/Program Files/MiKTeX/tex/latex/csquotes/csquotes.sty"
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count309
-\csq@gtype=\count310
-\csq@glevel=\count311
-\csq@qlevel=\count312
-\csq@maxlvl=\count313
-\csq@tshold=\count314
+\csq@reset=\count310
+\csq@gtype=\count311
+\csq@glevel=\count312
+\csq@qlevel=\count313
+\csq@maxlvl=\count314
+\csq@tshold=\count315
 \csq@ltx@everypar=\toks41
 
 ("C:/Program Files/MiKTeX/tex/latex/csquotes/csquotes.def"
@@ -791,7 +792,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 ("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryplothandlers.code
 .tex"
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count315
+\pgf@plot@mark@count=\count316
 \pgfplotmarksize=\dimen275
 )
 \tikz@lastx=\dimen276
@@ -806,18 +807,18 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
 \tikz@tempbox@bg=\box64
-\tikztreelevel=\count316
-\tikznumberofchildren=\count317
-\tikznumberofcurrentchild=\count318
-\tikz@fig@count=\count319
+\tikztreelevel=\count317
+\tikznumberofchildren=\count318
+\tikznumberofcurrentchild=\count319
+\tikz@fig@count=\count320
 
 ("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count320
-\pgfmatrixcurrentcolumn=\count321
-\pgf@matrix@numberofcolumns=\count322
+\pgfmatrixcurrentrow=\count321
+\pgfmatrixcurrentcolumn=\count322
+\pgf@matrix@numberofcolumns=\count323
 )
-\tikz@expandcount=\count323
+\tikz@expandcount=\count324
 
 ("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
 arytopaths.code.tex"
@@ -903,23 +904,23 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodepartsixbox=\box83
 \pgfnodepartfivebox=\box84
 ))) ("C:/Program Files/MiKTeX/tex/latex/listings/listings.sty"
-\lst@mode=\count324
+\lst@mode=\count325
 \lst@gtempboxa=\box85
 \lst@token=\toks44
-\lst@length=\count325
+\lst@length=\count326
 \lst@currlwidth=\dimen288
-\lst@column=\count326
-\lst@pos=\count327
+\lst@column=\count327
+\lst@pos=\count328
 \lst@lostspace=\dimen289
 \lst@width=\dimen290
-\lst@newlines=\count328
-\lst@lineno=\count329
+\lst@newlines=\count329
+\lst@lineno=\count330
 \lst@maxwidth=\dimen291
 
 ("C:/Program Files/MiKTeX/tex/latex/listings/lstmisc.sty"
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count330
-\lst@skipnumbers=\count331
+\c@lstnumber=\count331
+\lst@skipnumbers=\count332
 \lst@framebox=\box86
 )
 ("C:/Program Files/MiKTeX/tex/latex/listings/listings.cfg"
@@ -936,7 +937,7 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 ("C:/Program Files/MiKTeX/tex/latex/logreq/logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count332
+\lrq@indent=\count333
 
 ("C:/Program Files/MiKTeX/tex/latex/logreq/logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -944,49 +945,49 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ("C:/Program Files/MiKTeX/tex/latex/base/ifthen.sty"
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count333
-\c@listtotal=\count334
-\c@listcount=\count335
-\c@liststart=\count336
-\c@liststop=\count337
-\c@citecount=\count338
-\c@citetotal=\count339
-\c@multicitecount=\count340
-\c@multicitetotal=\count341
-\c@instcount=\count342
-\c@maxnames=\count343
-\c@minnames=\count344
-\c@maxitems=\count345
-\c@minitems=\count346
-\c@citecounter=\count347
-\c@maxcitecounter=\count348
-\c@savedcitecounter=\count349
-\c@uniquelist=\count350
-\c@uniquename=\count351
-\c@refsection=\count352
-\c@refsegment=\count353
-\c@maxextratitle=\count354
-\c@maxextratitleyear=\count355
-\c@maxextraname=\count356
-\c@maxextradate=\count357
-\c@maxextraalpha=\count358
-\c@abbrvpenalty=\count359
-\c@highnamepenalty=\count360
-\c@lownamepenalty=\count361
-\c@maxparens=\count362
-\c@parenlevel=\count363
-\blx@tempcnta=\count364
-\blx@tempcntb=\count365
-\blx@tempcntc=\count366
-\c@blx@maxsection=\count367
-\blx@maxsegment@0=\count368
-\blx@notetype=\count369
-\blx@parenlevel@text=\count370
-\blx@parenlevel@foot=\count371
-\blx@sectionciteorder@0=\count372
-\blx@sectionciteorderinternal@0=\count373
-\blx@entrysetcounter=\count374
-\blx@biblioinstance=\count375
+\c@tabx@nest=\count334
+\c@listtotal=\count335
+\c@listcount=\count336
+\c@liststart=\count337
+\c@liststop=\count338
+\c@citecount=\count339
+\c@citetotal=\count340
+\c@multicitecount=\count341
+\c@multicitetotal=\count342
+\c@instcount=\count343
+\c@maxnames=\count344
+\c@minnames=\count345
+\c@maxitems=\count346
+\c@minitems=\count347
+\c@citecounter=\count348
+\c@maxcitecounter=\count349
+\c@savedcitecounter=\count350
+\c@uniquelist=\count351
+\c@uniquename=\count352
+\c@refsection=\count353
+\c@refsegment=\count354
+\c@maxextratitle=\count355
+\c@maxextratitleyear=\count356
+\c@maxextraname=\count357
+\c@maxextradate=\count358
+\c@maxextraalpha=\count359
+\c@abbrvpenalty=\count360
+\c@highnamepenalty=\count361
+\c@lownamepenalty=\count362
+\c@maxparens=\count363
+\c@parenlevel=\count364
+\blx@tempcnta=\count365
+\blx@tempcntb=\count366
+\blx@tempcntc=\count367
+\c@blx@maxsection=\count368
+\blx@maxsegment@0=\count369
+\blx@notetype=\count370
+\blx@parenlevel@text=\count371
+\blx@parenlevel@foot=\count372
+\blx@sectionciteorder@0=\count373
+\blx@sectionciteorderinternal@0=\count374
+\blx@entrysetcounter=\count375
+\blx@biblioinstance=\count376
 \labelnumberwidth=\skip59
 \labelalphawidth=\skip60
 \biblabelsep=\skip61
@@ -998,9 +999,9 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
-\c@mincomprange=\count376
-\c@maxcomprange=\count377
-\c@mincompwidth=\count378
+\c@mincomprange=\count377
+\c@maxcomprange=\count378
+\c@mincompwidth=\count379
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1011,74 +1012,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count379
-\c@savedafterword=\count380
-\c@annotator=\count381
-\c@savedannotator=\count382
-\c@author=\count383
-\c@savedauthor=\count384
-\c@bookauthor=\count385
-\c@savedbookauthor=\count386
-\c@commentator=\count387
-\c@savedcommentator=\count388
-\c@editor=\count389
-\c@savededitor=\count390
-\c@editora=\count391
-\c@savededitora=\count392
-\c@editorb=\count393
-\c@savededitorb=\count394
-\c@editorc=\count395
-\c@savededitorc=\count396
-\c@foreword=\count397
-\c@savedforeword=\count398
-\c@holder=\count399
-\c@savedholder=\count400
-\c@introduction=\count401
-\c@savedintroduction=\count402
-\c@namea=\count403
-\c@savednamea=\count404
-\c@nameb=\count405
-\c@savednameb=\count406
-\c@namec=\count407
-\c@savednamec=\count408
-\c@translator=\count409
-\c@savedtranslator=\count410
-\c@shortauthor=\count411
-\c@savedshortauthor=\count412
-\c@shorteditor=\count413
-\c@savedshorteditor=\count414
-\c@labelname=\count415
-\c@savedlabelname=\count416
-\c@institution=\count417
-\c@savedinstitution=\count418
-\c@lista=\count419
-\c@savedlista=\count420
-\c@listb=\count421
-\c@savedlistb=\count422
-\c@listc=\count423
-\c@savedlistc=\count424
-\c@listd=\count425
-\c@savedlistd=\count426
-\c@liste=\count427
-\c@savedliste=\count428
-\c@listf=\count429
-\c@savedlistf=\count430
-\c@location=\count431
-\c@savedlocation=\count432
-\c@organization=\count433
-\c@savedorganization=\count434
-\c@origlocation=\count435
-\c@savedoriglocation=\count436
-\c@origpublisher=\count437
-\c@savedorigpublisher=\count438
-\c@publisher=\count439
-\c@savedpublisher=\count440
-\c@language=\count441
-\c@savedlanguage=\count442
-\c@origlanguage=\count443
-\c@savedoriglanguage=\count444
-\c@pageref=\count445
-\c@savedpageref=\count446
+\c@afterword=\count380
+\c@savedafterword=\count381
+\c@annotator=\count382
+\c@savedannotator=\count383
+\c@author=\count384
+\c@savedauthor=\count385
+\c@bookauthor=\count386
+\c@savedbookauthor=\count387
+\c@commentator=\count388
+\c@savedcommentator=\count389
+\c@editor=\count390
+\c@savededitor=\count391
+\c@editora=\count392
+\c@savededitora=\count393
+\c@editorb=\count394
+\c@savededitorb=\count395
+\c@editorc=\count396
+\c@savededitorc=\count397
+\c@foreword=\count398
+\c@savedforeword=\count399
+\c@holder=\count400
+\c@savedholder=\count401
+\c@introduction=\count402
+\c@savedintroduction=\count403
+\c@namea=\count404
+\c@savednamea=\count405
+\c@nameb=\count406
+\c@savednameb=\count407
+\c@namec=\count408
+\c@savednamec=\count409
+\c@translator=\count410
+\c@savedtranslator=\count411
+\c@shortauthor=\count412
+\c@savedshortauthor=\count413
+\c@shorteditor=\count414
+\c@savedshorteditor=\count415
+\c@labelname=\count416
+\c@savedlabelname=\count417
+\c@institution=\count418
+\c@savedinstitution=\count419
+\c@lista=\count420
+\c@savedlista=\count421
+\c@listb=\count422
+\c@savedlistb=\count423
+\c@listc=\count424
+\c@savedlistc=\count425
+\c@listd=\count426
+\c@savedlistd=\count427
+\c@liste=\count428
+\c@savedliste=\count429
+\c@listf=\count430
+\c@savedlistf=\count431
+\c@location=\count432
+\c@savedlocation=\count433
+\c@organization=\count434
+\c@savedorganization=\count435
+\c@origlocation=\count436
+\c@savedoriglocation=\count437
+\c@origpublisher=\count438
+\c@savedorigpublisher=\count439
+\c@publisher=\count440
+\c@savedpublisher=\count441
+\c@language=\count442
+\c@savedlanguage=\count443
+\c@origlanguage=\count444
+\c@savedoriglanguage=\count445
+\c@pageref=\count446
+\c@savedpageref=\count447
 \shorthandwidth=\skip67
 \shortjournalwidth=\skip68
 \shortserieswidth=\skip69
@@ -1118,19 +1119,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  ("C:/Program Files/MiKTeX/tex/latex/biblatex/biblatex.def"
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count447
-\c@textcitetotal=\count448
-\c@textcitemaxnames=\count449
-\c@biburlbigbreakpenalty=\count450
-\c@biburlbreakpenalty=\count451
-\c@biburlnumpenalty=\count452
-\c@biburlucpenalty=\count453
-\c@biburllcpenalty=\count454
+\c@textcitecount=\count448
+\c@textcitetotal=\count449
+\c@textcitemaxnames=\count450
+\c@biburlbigbreakpenalty=\count451
+\c@biburlbreakpenalty=\count452
+\c@biburlnumpenalty=\count453
+\c@biburlucpenalty=\count454
+\c@biburllcpenalty=\count455
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count455
+\c@smartand=\count456
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1142,8 +1143,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/bbx/standard.bbx"
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count456
-\c@bbx:relatedtotal=\count457
+\c@bbx:relatedcount=\count457
+\c@bbx:relatedtotal=\count458
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1204,9 +1205,9 @@ Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting wit
 h LuaLaTeX
 Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
 h LuaLaTeX)
-\g__um_fam_int=\count458
-\g__um_fonts_used_int=\count459
-\l__um_primecount_int=\count460
+\g__um_fam_int=\count459
+\g__um_fonts_used_int=\count460
+\l__um_primecount_int=\count461
 \g__um_primekern_muskip=\muskip22
 
 ("C:/Program Files/MiKTeX/tex/latex/unicode-math/unicode-math-table.tex")))
@@ -1228,7 +1229,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks45
 \XKV@tempa@toks=\toks46
 )
-\XKV@depth=\count461
+\XKV@depth=\count462
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 
@@ -2660,18 +2661,18 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count462
-\c@continuedfloat=\count463
+\c@caption@flags=\count463
+\c@continuedfloat=\count464
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count464
+\c@subfigure=\count465
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count465
+\c@subtable=\count466
 ) ("C:/Program Files/MiKTeX/tex/latex/float/float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count466
+\c@float@type=\count467
 \float@exts=\toks47
 \float@box=\box87
 \@float@everytoks=\toks48
@@ -2680,7 +2681,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ("C:/Program Files/MiKTeX/tex/latex/multirow/multirow.sty"
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip81
-\multirow@cntb=\count467
+\multirow@cntb=\count468
 \multirow@dima=\skip82
 \bigstrutjot=\dimen300
 )
@@ -2696,12 +2697,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen308
 \cmidrulekern=\dimen309
 \defaultaddspace=\dimen310
-\@cmidla=\count468
-\@cmidlb=\count469
+\@cmidla=\count469
+\@cmidlb=\count470
 \@aboverulesep=\dimen311
 \@belowrulesep=\dimen312
-\@thisruleclass=\count470
-\@lastruleclass=\count471
+\@thisruleclass=\count471
+\@lastruleclass=\count472
 \@thisrulewidth=\dimen313
 )
 Package csquotes Info: Checking for multilingual support...
@@ -2710,13 +2711,7 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./Masterarbeit.aux
 
-LaTeX Warning: Label `SubSec:Fourier-NetvsFourier-Net+' multiply defined.
-
-
-LaTeX Warning: Label `Sec:ParameterStudies' multiply defined.
-
-
-LaTeX Warning: Label `SubSec:DenseDisplacementAcc' multiply defined.
+LaTeX Warning: Label `SubSubSec:Fourier-NetvsFourier-Net+' multiply defined.
 
 )
 \openout1 = Masterarbeit.aux
@@ -2745,16 +2740,16 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 57.
  ("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count472
+\scratchcounter=\count473
 \scratchdimen=\dimen314
 \scratchbox=\box89
-\nofMPsegments=\count473
-\nofMParguments=\count474
+\nofMPsegments=\count474
+\nofMParguments=\count475
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count475
+\MPscratchCnt=\count476
 \MPscratchDim=\dimen315
-\MPnumerator=\count476
-\makeMPintoPDFobject=\count477
+\MPnumerator=\count477
+\makeMPintoPDFobject=\count478
 \everyMPtoPDFconversion=\toks50
 ) ("C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2803,7 +2798,7 @@ Package hyperref Info: Link coloring OFF on input line 57.
 \@outlinefile=\write5
 
 \openout5 = Masterarbeit.out
-\c@lstlisting=\count478
+\c@lstlisting=\count479
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -2835,7 +2830,7 @@ Package biblatex Info: Reference segment=0 on input line 57.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<Logo_IMI_de.png, id=142, 240.9pt x 55.70813pt>
+<Logo_IMI_de.png, id=86, 240.9pt x 55.70813pt>
 File: Logo_IMI_de.png Graphic file (type png)
 <use Logo_IMI_de.png>
 Package luatex.def Info: Logo_IMI_de.png  used on input line 57.
@@ -2848,7 +2843,7 @@ LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/it' will be
 (Font)              scaled to size 15.4pt on input line 57.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 57.
-<uzl-thesis-logo-slogan.pdf, id=143, 142.26349pt x 11.38112pt>
+<uzl-thesis-logo-slogan.pdf, id=87, 142.26349pt x 11.38112pt>
 File: uzl-thesis-logo-slogan.pdf Graphic file (type pdf)
 <use uzl-thesis-logo-slogan.pdf>
 Package luatex.def Info: uzl-thesis-logo-slogan.pdf  used on input line 57.
@@ -2878,14 +2873,16 @@ LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
 (Font)              scaled to size 22.0pt on input line 57.
 
-(./Masterarbeit.toc [5
-
-
-])
+(./Masterarbeit.toc)
 \tf@toc=\write6
 
 \openout6 = Masterarbeit.toc
- [6]
+ [5
+
+
+] [6
+
+]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
 (Font)              scaled to size 60.0pt on input line 63.
@@ -2902,435 +2899,518 @@ Overfull \hbox (1.86232pt too wide) in paragraph at lines 70--73
 -cussing Deep Learn-ing ap-proaches [[]󰋆󰋌[],
  []
 
+LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 77.
+
+LaTeX Warning: Reference `Ch:MRI' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Reference `Sec:ImageAcquisitionAndK-Space' on page 1 undefined o
+n input line 77.
+
+
+LaTeX Warning: Reference `Sec:ImagingAcceleration' on page 1 undefined on input
+ line 77.
+
+
+LaTeX Warning: Reference `Sec:Motion-CompensatedReconstruction' on page 1 undef
+ined on input line 77.
+
+
+LaTeX Warning: Reference `Ch:ImageTransformationsAndRegistration' on page 1 und
+efined on input line 77.
+
+
+LaTeX Warning: Reference `Sec:ImageTransformations' on page 1 undefined on inpu
+t line 77.
+
+
+LaTeX Warning: Reference `Sec:ImageRegistration' on page 1 undefined on input l
+ine 77.
+
+
+LaTeX Warning: Reference `Ch:DeepLearning' on page 1 undefined on input line 77
+.
+
+
+LaTeX Warning: Reference `Sec:DeepLearningArchitectures' on page 1 undefined on
+ input line 77.
+
+
+LaTeX Warning: Reference `Sec:DLImageRegistration' on page 1 undefined on input
+ line 77.
+
+
+LaTeX Warning: Reference `Sec:NetworkTrainingAndTesting' on page 1 undefined on
+ input line 77.
+
+
+LaTeX Warning: Reference `Ch:Data' on page 1 undefined on input line 78.
+
+
+LaTeX Warning: Reference `Sec:CMRxRecon' on page 1 undefined on input line 82.
+
+
+LaTeX Warning: Reference `Sec:ACDC' on page 1 undefined on input line 82.
+
+
+LaTeX Warning: Reference `Ch:NetworkArchitecture' on page 1 undefined on input 
+line 83.
+
+
+LaTeX Warning: Reference `Sec:Fourier-Net' on page 1 undefined on input line 85
+.
+
+
+LaTeX Warning: Reference `Sec:Fourier-Net+' on page 1 undefined on input line 8
+5.
+
+
+LaTeX Warning: Reference `Ch:Experiments' on page 1 undefined on input line 86.
+
+
+
+LaTeX Warning: Reference `Ch:ResultsDiscussion' on page 1 undefined on input li
+ne 86.
+
 [1
 
 
 ] [2]
 Chapter 2.
 
-Overfull \hbox (0.58069pt too wide) in paragraph at lines 94--95
+Overfull \hbox (0.58069pt too wide) in paragraph at lines 98--99
 \TU/Alegreya(0)/m/n/12 Mag-netic Res-o-nance Imag-ing (MRI) is a non-invasive, 
 radiation-free, to-mo-graphic imag-
  []
 
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 96.
-<images/MRI-Schematic.png, id=281, 639.13782pt x 345.54094pt>
+(Font)              scaled to size 10.9pt on input line 100.
+<images/MRI-Schematic.png, id=195, 639.13782pt x 345.54094pt>
 File: images/MRI-Schematic.png Graphic file (type png)
 <use images/MRI-Schematic.png>
-Package luatex.def Info: images/MRI-Schematic.png  used on input line 99.
+Package luatex.def Info: images/MRI-Schematic.png  used on input line 103.
 (luatex.def)             Requested size: 426.79135pt x 230.74142pt.
-[3
+LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
+(Font)              scaled to size 13.0pt on input line 108.
 
-<./images/MRI-Schematic.png>]
-Overfull \hbox (1.28639pt too wide) in paragraph at lines 105--106
+Overfull \hbox (1.28639pt too wide) in paragraph at lines 109--110
 \TU/Alegreya(0)/m/n/12 In the fol-low-ing sec-tion, the ba-sic prin-ci-ples un-d
 er-ly-ing MR imag-ing are pre-sented. These
  []
 
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 13.0pt on input line 107.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
+[3
+
+] [4<./images/MRI-Schematic.png>]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 116.
+(Font)              scaled to size 8.0pt on input line 120.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 116.
-[4] [5]
-<images/GradientEcho.png, id=314, 408.02437pt x 246.1697pt>
+(Font)              scaled to size 6.0pt on input line 120.
+ [5]
+<images/GradientEcho.png, id=229, 408.02437pt x 246.1697pt>
 File: images/GradientEcho.png Graphic file (type png)
 <use images/GradientEcho.png>
-Package luatex.def Info: images/GradientEcho.png  used on input line 151.
+Package luatex.def Info: images/GradientEcho.png  used on input line 155.
 (luatex.def)             Requested size: 426.79135pt x 257.50542pt.
  [6]
-<images/SpinEcho.png, id=328, 414.79968pt x 179.92218pt>
+<images/SpinEcho.png, id=243, 414.79968pt x 179.92218pt>
 File: images/SpinEcho.png Graphic file (type png)
 <use images/SpinEcho.png>
-Package luatex.def Info: images/SpinEcho.png  used on input line 163.
+Package luatex.def Info: images/SpinEcho.png  used on input line 167.
 (luatex.def)             Requested size: 426.79135pt x 185.12973pt.
- [7<./images/GradientEcho.png>] [8<./images/SpinEcho.png>]
-<images/2D_MRI_Measurement.png, id=353, 617.30624pt x 476.53032pt>
+ [7<./images/GradientEcho.png>]
+[8<./images/SpinEcho.png>]
+<images/2D_MRI_Measurement.png, id=270, 617.30624pt x 476.53032pt>
 File: images/2D_MRI_Measurement.png Graphic file (type png)
 <use images/2D_MRI_Measurement.png>
-Package luatex.def Info: images/2D_MRI_Measurement.png  used on input line 247.
+Package luatex.def Info: images/2D_MRI_Measurement.png  used on input line 251.
 
 (luatex.def)             Requested size: 320.0935pt x 247.09915pt.
-<images/constant_k-space_gradient.png, id=358, 191.21437pt x 267.24844pt>
+<images/constant_k-space_gradient.png, id=275, 191.21437pt x 267.24844pt>
 File: images/constant_k-space_gradient.png Graphic file (type png)
 <use images/constant_k-space_gradient.png>
 Package luatex.def Info: images/constant_k-space_gradient.png  used on input li
-ne 256.
+ne 260.
 (luatex.def)             Requested size: 189.92526pt x 265.46167pt.
-<images/refocusing_k-sapce_pulse.png, id=359, 187.45032pt x 267.24844pt>
+<images/refocusing_k-sapce_pulse.png, id=276, 187.45032pt x 267.24844pt>
 File: images/refocusing_k-sapce_pulse.png Graphic file (type png)
 <use images/refocusing_k-sapce_pulse.png>
 Package luatex.def Info: images/refocusing_k-sapce_pulse.png  used on input lin
-e 262.
+e 266.
 (luatex.def)             Requested size: 189.92526pt x 270.79146pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9<./images/2D_MRI_Measurement.png>]
-Overfull \hbox (5.05194pt too wide) in paragraph at lines 358--383
+Overfull \hbox (5.05194pt too wide) in paragraph at lines 362--387
 \TU/Alegreya(0)/m/n/12 ex-plored. A com-mon fea-ture of all non-rectilinear tra-
 jec-to-ries re-lates to their non-periodic
  []
 
 [10<./images/constant_k-space_gradient.png><./images/refocusing_k-sapce_pulse.pn
 g>]
-<images/ExamplesSubsampling.png, id=390, 787.44188pt x 331.2375pt>
+<images/ExamplesSubsampling.png, id=307, 787.44188pt x 331.2375pt>
 File: images/ExamplesSubsampling.png Graphic file (type png)
 <use images/ExamplesSubsampling.png>
-Package luatex.def Info: images/ExamplesSubsampling.png  used on input line 392
+Package luatex.def Info: images/ExamplesSubsampling.png  used on input line 396
 .
 (luatex.def)             Requested size: 426.79135pt x 179.52768pt.
-
-Overfull \hbox (3.1344pt too wide) in paragraph at lines 398--416
+ [11]
+Overfull \hbox (3.1344pt too wide) in paragraph at lines 402--420
 \TU/Alegreya(0)/m/n/12 One com-mon fea-ture of PI is the am-pli-fi-ca-tion of no
 ise in the re-con-structed im-age, though
  []
 
-[11] [12<./images/ExamplesSubsampling.png>] [13]
-Overfull \hbox (3.49265pt too wide) in paragraph at lines 438--442
+[12<./images/ExamplesSubsampling.png>] [13]
+Overfull \hbox (3.49265pt too wide) in paragraph at lines 442--446
 \TU/Alegreya(0)/m/n/12 by ap-ply-ing an ap-pro-pri-ate sam-pling scheme and re-c
 on-struc-tion that em-ploys sig-nal spar-
  []
 
-[14] [15] [16]
-Chapter 3.
+[14] [15]
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 475.
+(Font)              scaled to size 12.0pt on input line 479.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 475.
+(Font)              scaled to size 8.0pt on input line 479.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 6.0pt on input line 475.
+(Font)              scaled to size 6.0pt on input line 479.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 525.
+(Font)              scaled to size 12.0pt on input line 529.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 525.
+(Font)              scaled to size 8.0pt on input line 529.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 525.
-[17
-
-] [18] [19]
-Chapter 4.
-[20
-
-]
-<images/U-NetArchitecture.png, id=533, 677.53125pt x 463.7325pt>
+(Font)              scaled to size 6.0pt on input line 529.
+ [16] [17] [18] [19]
+<images/U-NetArchitecture.png, id=456, 677.53125pt x 463.7325pt>
 File: images/U-NetArchitecture.png Graphic file (type png)
 <use images/U-NetArchitecture.png>
-Package luatex.def Info: images/U-NetArchitecture.png  used on input line 595.
+Package luatex.def Info: images/U-NetArchitecture.png  used on input line 599.
 (luatex.def)             Requested size: 320.0935pt x 219.09352pt.
- [21<./images/U-NetArchitecture.png>] [22]
-<images/SupervisedRegistrationGraph.jpg, id=563, 2460.19125pt x 827.09pt>
+ [20<./images/U-NetArchitecture.png>]
+<images/SupervisedRegistrationGraph.jpg, id=476, 2460.19125pt x 827.09pt>
 File: images/SupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/SupervisedRegistrationGraph.jpg>
 Package luatex.def Info: images/SupervisedRegistrationGraph.jpg  used on input 
-line 615.
+line 619.
 (luatex.def)             Requested size: 426.79135pt x 143.48088pt.
-<images/UnsupervisedRegistrationGraph.jpg, id=573, 3329.43875pt x 935.495pt>
-File: images/UnsupervisedRegistrationGraph.jpg Graphic file (type jpg)
-<use images/UnsupervisedRegistrationGraph.jpg>
-Package luatex.def Info: images/UnsupervisedRegistrationGraph.jpg  used on inpu
-t line 627.
-(luatex.def)             Requested size: 426.79135pt x 119.90567pt.
-<images/GANRegistrationGraph.jpg, id=576, 3366.5775pt x 1457.445pt>
-File: images/GANRegistrationGraph.jpg Graphic file (type jpg)
-<use images/GANRegistrationGraph.jpg>
-Package luatex.def Info: images/GANRegistrationGraph.jpg  used on input line 63
-5.
-(luatex.def)             Requested size: 426.79135pt x 184.75987pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23<./images/SupervisedRegistrationGraph.jpg><./images/UnsupervisedRegistrationG
-raph.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 644--646
+<images/UnsupervisedRegistrationGraph.jpg, id=486, 3329.43875pt x 935.495pt>
+File: images/UnsupervisedRegistrationGraph.jpg Graphic file (type jpg)
+<use images/UnsupervisedRegistrationGraph.jpg>
+Package luatex.def Info: images/UnsupervisedRegistrationGraph.jpg  used on inpu
+t line 631.
+(luatex.def)             Requested size: 426.79135pt x 119.90567pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/GANRegistrationGraph.jpg, id=489, 3366.5775pt x 1457.445pt>
+File: images/GANRegistrationGraph.jpg Graphic file (type jpg)
+<use images/GANRegistrationGraph.jpg>
+Package luatex.def Info: images/GANRegistrationGraph.jpg  used on input line 63
+9.
+(luatex.def)             Requested size: 426.79135pt x 184.75987pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 648--650
 
  []
 
-[24<./images/GANRegistrationGraph.jpg>] [25] [26]
-Chapter 5.
-[27
+[22<./images/SupervisedRegistrationGraph.jpg><./images/UnsupervisedRegistrationG
+raph.jpg>] [23<./images/GANRegistrationGraph.jpg>] [24]
+Chapter 3.
+[25
 
 ]
-<images/CoilsHorizontal.png, id=635, 358.4592pt x 50.589pt>
+<images/CoilsHorizontal.png, id=555, 358.4592pt x 50.589pt>
 File: images/CoilsHorizontal.png Graphic file (type png)
 <use images/CoilsHorizontal.png>
-Package luatex.def Info: images/CoilsHorizontal.png  used on input line 741.
+Package luatex.def Info: images/CoilsHorizontal.png  used on input line 743.
 (luatex.def)             Requested size: 426.79135pt x 60.23561pt.
-<images/k-space_fullysampled.png, id=638, 462.528pt x 231.264pt>
+<images/k-space_fullysampled.png, id=558, 462.528pt x 231.264pt>
 File: images/k-space_fullysampled.png Graphic file (type png)
 <use images/k-space_fullysampled.png>
 Package luatex.def Info: images/k-space_fullysampled.png  used on input line 75
-1.
+3.
 (luatex.def)             Requested size: 192.0548pt x 96.02922pt.
-<images/k-space_subsampled.png, id=639, 462.528pt x 231.264pt>
+<images/k-space_subsampled.png, id=559, 462.528pt x 231.264pt>
 File: images/k-space_subsampled.png Graphic file (type png)
 <use images/k-space_subsampled.png>
-Package luatex.def Info: images/k-space_subsampled.png  used on input line 757.
+Package luatex.def Info: images/k-space_subsampled.png  used on input line 759.
 
 (luatex.def)             Requested size: 192.0548pt x 96.02922pt.
-<images/image_fullysampled.png, id=640, 440.847pt x 209.583pt>
+<images/image_fullysampled.png, id=560, 440.847pt x 209.583pt>
 File: images/image_fullysampled.png Graphic file (type png)
 <use images/image_fullysampled.png>
-Package luatex.def Info: images/image_fullysampled.png  used on input line 762.
+Package luatex.def Info: images/image_fullysampled.png  used on input line 764.
 
 (luatex.def)             Requested size: 192.0548pt x 91.30217pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--763
+Underfull \hbox (badness 10000) in paragraph at lines 765--765
 []\TU/Alegreya(0)/m/n/10.9 (c) |Cor-re-spond-ing im-age re-con-structed
  []
 
-<images/image_subsampled.png, id=641, 440.847pt x 209.583pt>
+<images/image_subsampled.png, id=561, 440.847pt x 209.583pt>
 File: images/image_subsampled.png Graphic file (type png)
 <use images/image_subsampled.png>
-Package luatex.def Info: images/image_subsampled.png  used on input line 768.
+Package luatex.def Info: images/image_subsampled.png  used on input line 770.
 (luatex.def)             Requested size: 192.0548pt x 91.30217pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 769--769
+Underfull \hbox (badness 10000) in paragraph at lines 771--771
 []\TU/Alegreya(0)/m/n/10.9 (d) |Cor-re-spond-ing im-age re-con-structed
  []
 
-[28<./images/CoilsHorizontal.png><./images/k-space_fullysampled.png><./images/k-
+[26<./images/CoilsHorizontal.png><./images/k-space_fullysampled.png><./images/k-
 space_subsampled.png><./images/image_fullysampled.png><./images/image_subsampled
 .png>]
-<images/Image_ACDC_systolic.png, id=659, 462.528pt x 346.896pt>
+<images/Image_ACDC_systolic.png, id=581, 462.528pt x 346.896pt>
 File: images/Image_ACDC_systolic.png Graphic file (type png)
 <use images/Image_ACDC_systolic.png>
-Package luatex.def Info: images/Image_ACDC_systolic.png  used on input line 885
+Package luatex.def Info: images/Image_ACDC_systolic.png  used on input line 887
 .
 (luatex.def)             Requested size: 170.71393pt x 128.0372pt.
-<images/Image_ACDC_diastolic.png, id=660, 462.528pt x 346.896pt>
+<images/Image_ACDC_diastolic.png, id=582, 462.528pt x 346.896pt>
 File: images/Image_ACDC_diastolic.png Graphic file (type png)
 <use images/Image_ACDC_diastolic.png>
 Package luatex.def Info: images/Image_ACDC_diastolic.png  used on input line 89
-2.
+4.
 (luatex.def)             Requested size: 170.71393pt x 128.0372pt.
-<images/Segmentation_ACDC_systolic.png, id=661, 462.528pt x 346.896pt>
+<images/Segmentation_ACDC_systolic.png, id=583, 462.528pt x 346.896pt>
 File: images/Segmentation_ACDC_systolic.png Graphic file (type png)
 <use images/Segmentation_ACDC_systolic.png>
 Package luatex.def Info: images/Segmentation_ACDC_systolic.png  used on input l
-ine 898.
+ine 900.
 (luatex.def)             Requested size: 170.71393pt x 128.0372pt.
-<images/Segmentation_ACDC_diastolic.png, id=662, 462.528pt x 346.896pt>
+<images/Segmentation_ACDC_diastolic.png, id=584, 462.528pt x 346.896pt>
 File: images/Segmentation_ACDC_diastolic.png Graphic file (type png)
 <use images/Segmentation_ACDC_diastolic.png>
 Package luatex.def Info: images/Segmentation_ACDC_diastolic.png  used on input 
-line 904.
+line 906.
 (luatex.def)             Requested size: 170.71393pt x 128.0372pt.
- [29<./images/Image_ACDC_systolic.png><./images/Image_ACDC_diastolic.png><./imag
-es/Segmentation_ACDC_systolic.png><./images/Segmentation_ACDC_diastolic.png>]
-Chapter 6.
 
-Overfull \hbox (3.62949pt too wide) in paragraph at lines 914--915
+Overfull \hbox (3.62949pt too wide) in paragraph at lines 916--917
 \TU/Alegreya(0)/m/n/12 works, e.g. \TU/Alegreya(0)/m/it/12 LAP-Net \TU/Alegreya
 (0)/m/n/12 [[]󰋉󰋈[]], are usu-ally su-per-vised and re-quire large com-pu-t
 a-tional re-sources. 
  []
 
-<images/ArchitectureFourier-Net.png, id=682, 1351.0475pt x 513.92pt>
+[27<./images/Image_ACDC_systolic.png><./images/Image_ACDC_diastolic.png><./image
+s/Segmentation_ACDC_systolic.png><./images/Segmentation_ACDC_diastolic.png>]
+<images/ArchitectureFourier-Net.png, id=606, 1351.0475pt x 513.92pt>
 File: images/ArchitectureFourier-Net.png Graphic file (type png)
 <use images/ArchitectureFourier-Net.png>
 Package luatex.def Info: images/ArchitectureFourier-Net.png  used on input line
- 924.
+ 926.
 (luatex.def)             Requested size: 426.79135pt x 162.34047pt.
-<images/SYMNetArchitectureFCN.png, id=687, 1032.85875pt x 676.02562pt>
+<images/SYMNetArchitectureFCN.png, id=611, 1032.85875pt x 676.02562pt>
 File: images/SYMNetArchitectureFCN.png Graphic file (type png)
 <use images/SYMNetArchitectureFCN.png>
 Package luatex.def Info: images/SYMNetArchitectureFCN.png  used on input line 9
-34.
+36.
 (luatex.def)             Requested size: 426.79135pt x 279.3385pt.
 
-Overfull \hbox (7.52713pt too wide) in paragraph at lines 930--945
+Overfull \hbox (7.52713pt too wide) in paragraph at lines 932--947
 \TU/Alegreya(0)/m/n/12 which are suit-able when both in-put and out-put are com-
 plex val-ues, how-ever these complex-
  []
 
 
-Overfull \hbox (2.50871pt too wide) in paragraph at lines 930--945
+Overfull \hbox (2.50871pt too wide) in paragraph at lines 932--947
 \TU/Alegreya(0)/m/n/12 valued op-er-a-tions sac-ri-fice com-pu-ta-tional ef-fi-c
 iency. Other ap-proaches like \TU/Alegreya(0)/m/it/12 Deep-Flash \TU/Alegreya(0
 )/m/n/12 [[]󰋊󰋅[]]
  []
 
 
-Overfull \hbox (0.38713pt too wide) in paragraph at lines 930--945
+Overfull \hbox (0.38713pt too wide) in paragraph at lines 932--947
 \TU/Alegreya(0)/m/n/12 ever, in-creases train-ing and in-fer-ence cost. To bridg
 e the do-main gap be-tween real-valued
  []
 
-[30
-
-] [31<./images/ArchitectureFourier-Net.png>] [32<./images/SYMNetArchitectureFCN.
-png>]
-<images/DecoderDisplacementField.png, id=726, 493.845pt x 405.01312pt>
+[28<./images/ArchitectureFourier-Net.png>] [29<./images/SYMNetArchitectureFCN.pn
+g>] [30]
+<images/DecoderDisplacementField.png, id=653, 493.845pt x 405.01312pt>
 File: images/DecoderDisplacementField.png Graphic file (type png)
 <use images/DecoderDisplacementField.png>
 Package luatex.def Info: images/DecoderDisplacementField.png  used on input lin
-e 980.
+e 982.
 (luatex.def)             Requested size: 277.41176pt x 227.51031pt.
- [33] [34<./images/DecoderDisplacementField.png>]
-<images/SpatialTransformer.png, id=757, 609.77812pt x 260.47313pt>
+ [31] [32<./images/DecoderDisplacementField.png>]
+<images/SpatialTransformer.png, id=688, 609.77812pt x 260.47313pt>
 File: images/SpatialTransformer.png Graphic file (type png)
 <use images/SpatialTransformer.png>
-Package luatex.def Info: images/SpatialTransformer.png  used on input line 1014
+Package luatex.def Info: images/SpatialTransformer.png  used on input line 1016
 .
 (luatex.def)             Requested size: 426.79135pt x 182.31404pt.
- [35] [36<./images/SpatialTransformer.png>]
-Overfull \hbox (13.11916pt too wide) in paragraph at lines 1073--1075
+ [33] [34<./images/SpatialTransformer.png>]
+Overfull \hbox (13.11916pt too wide) in paragraph at lines 1075--1077
 \TU/Alegreya(0)/m/n/12 limited spa-tial rep-re-sen-ta-tion of the im-ages as in-
 put, in-stead of their orig-i-nal full-resolution
  []
 
-<images/ArchitectureFourier-Net+.png, id=789, 1075.01625pt x 356.0803pt>
+<images/ArchitectureFourier-Net+.png, id=719, 1075.01625pt x 356.0803pt>
 File: images/ArchitectureFourier-Net+.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+.png>
 Package luatex.def Info: images/ArchitectureFourier-Net+.png  used on input lin
-e 1079.
+e 1081.
 (luatex.def)             Requested size: 426.79135pt x 141.36465pt.
-<images/CompressionEncoder.png, id=794, 490.83376pt x 391.4625pt>
+<images/CompressionEncoder.png, id=724, 490.83376pt x 391.4625pt>
 File: images/CompressionEncoder.png Graphic file (type png)
 <use images/CompressionEncoder.png>
-Package luatex.def Info: images/CompressionEncoder.png  used on input line 1089
+Package luatex.def Info: images/CompressionEncoder.png  used on input line 1091
 .
 (luatex.def)             Requested size: 213.39568pt x 170.18922pt.
-<images/ArchitectureFourier-Net+CNN.png, id=797, 1078.0275pt x 218.31563pt>
+<images/ArchitectureFourier-Net+CNN.png, id=727, 1078.0275pt x 218.31563pt>
 File: images/ArchitectureFourier-Net+CNN.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+CNN.png>
 Package luatex.def Info: images/ArchitectureFourier-Net+CNN.png  used on input 
-line 1096.
+line 1098.
 (luatex.def)             Requested size: 426.79135pt x 86.43193pt.
-[37] [38<./images/ArchitectureFourier-Net+.png><./images/CompressionEncoder.png>
-]
-<images/ArchitectureFourier-Net+Cascaded.png, id=823, 1409.265pt x 287.0725pt>
+[35<./images/ArchitectureFourier-Net+.png>] [36<./images/CompressionEncoder.png>
+<./images/ArchitectureFourier-Net+CNN.png>]
+<images/ArchitectureFourier-Net+Cascaded.png, id=756, 1409.265pt x 287.0725pt>
 File: images/ArchitectureFourier-Net+Cascaded.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+Cascaded.png>
 Package luatex.def Info: images/ArchitectureFourier-Net+Cascaded.png  used on i
-nput line 1116.
+nput line 1118.
 (luatex.def)             Requested size: 426.79135pt x 86.93715pt.
- [39<./images/ArchitectureFourier-Net+CNN.png><./images/ArchitectureFourier-Net+
-Cascaded.png>]
-Chapter 7.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1131.
 
-LaTeX Warning: Reference `SubSec:Pre-Processing' on page 40 undefined on input 
-line 1131.
 
-[40
+LaTeX Warning: Reference `SubSec:Pre-Processing' on page 37 undefined on input 
+line 1133.
 
-] [41] [42]
-Overfull \hbox (1.48141pt too wide) in paragraph at lines 1168--1170
+[37<./images/ArchitectureFourier-Net+Cascaded.png>] [38] [39]
+
+LaTeX Warning: Reference `SubSec:Fourier-NetvsFourier-Net+' on page 40 undefine
+d on input line 1170.
+
+
+Overfull \hbox (1.48141pt too wide) in paragraph at lines 1170--1172
 \TU/Alegreya(0)/m/n/12 The tests again in-cluded \TU/Alegreya(0)/m/it/12 Fourier
 -Net\TU/Alegreya(0)/m/n/12 , \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(
 0)/m/n/12 and \TU/Alegreya(0)/m/it/12 󰋐xFourier-Net+\TU/Alegreya(0)/m/n/12 , which were all trained
  []
 
-
-Overfull \hbox (2.80876pt too wide) in paragraph at lines 1172--1176
+[40]
+Overfull \hbox (2.80876pt too wide) in paragraph at lines 1174--1178
 \TU/Alegreya(0)/m/n/12 is-tra-tion net-work work-ing in the im-age do-main and 
 a an-other dense net-work which works
  []
 
-[43] [44]
-Overfull \hbox (2.24478pt too wide) in paragraph at lines 1200--1203
+[41]
+
+LaTeX Warning: Reference `Sec:Motion-CompensatedReconstruction' on page 42 unde
+fined on input line 1202.
+
+
+LaTeX Warning: Reference `Sec:K-SpaceAndContrastiveLossExperiments' on page 42 
+undefined on input line 1204.
+
+
+LaTeX Warning: Reference `SubSec:TestingEvalutionMetrics' on page 42 undefined 
+on input line 1204.
+
+
+Overfull \hbox (2.24478pt too wide) in paragraph at lines 1202--1205
 \TU/Alegreya(0)/m/n/12 the lat-ter. ES-PIRiT [[]󰋇󰋋[]] was used to sim-u-la
 te the coil sen-si-tiv-ity maps needed for a SENSE-
  []
 
-[45]
-<images/ReconstructionPipelineEvaluation.png, id=909, 511.9125pt x 386.94562pt>
+[42]
+<images/ReconstructionPipelineEvaluation.png, id=833, 511.9125pt x 386.94562pt>
 
 File: images/ReconstructionPipelineEvaluation.png Graphic file (type png)
 <use images/ReconstructionPipelineEvaluation.png>
 Package luatex.def Info: images/ReconstructionPipelineEvaluation.png  used on i
-nput line 1208.
+nput line 1210.
 (luatex.def)             Requested size: 426.79135pt x 322.60542pt.
- [46<./images/ReconstructionPipelineEvaluation.png>]
-Chapter 8.
+ [43] [44<./images/ReconstructionPipelineEvaluation.png>]
+Chapter 4.
 
-Overfull \hbox (15.31511pt too wide) in paragraph at lines 1229--1231
+Overfull \hbox (15.31511pt too wide) in paragraph at lines 1231--1233
 \TU/Alegreya(0)/m/n/12 First, the base-line net-work \TU/Alegreya(0)/m/it/12 Fou
 rier-Net \TU/Alegreya(0)/m/n/12 was com-pared to its more ef-fi-cient suc-ces-so
 r \TU/Alegreya(0)/m/it/12 󰋐xFourier-
  []
 
-LaTeX Font Info:    Calculating math sizes for size <10.9> on input line 1237.
+LaTeX Font Info:    Calculating math sizes for size <10.9> on input line 1239.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 1237.
+(Font)              scaled to size 10.9pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 7.62996pt on input line 1237.
+(Font)              scaled to size 7.62996pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 5.45pt on input line 1237.
+(Font)              scaled to size 5.45pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 10.9pt on input line 1237.
+(Font)              scaled to size 10.9pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 7.62996pt on input line 1237.
+(Font)              scaled to size 7.62996pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 5.45pt on input line 1237.
+(Font)              scaled to size 5.45pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 11.99005pt on input line 1237.
+(Font)              scaled to size 11.99005pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 8.39299pt on input line 1237.
+(Font)              scaled to size 8.39299pt on input line 1239.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 5.99503pt on input line 1237.
-[47
+(Font)              scaled to size 5.99503pt on input line 1239.
+[45
 
 ]
-<images/TestBenchmark_MSE_Boxplots.png, id=934, 722.7pt x 433.62pt>
+<images/TestBenchmark_MSE_Boxplots.png, id=864, 722.7pt x 433.62pt>
 File: images/TestBenchmark_MSE_Boxplots.png Graphic file (type png)
 <use images/TestBenchmark_MSE_Boxplots.png>
 Package luatex.def Info: images/TestBenchmark_MSE_Boxplots.png  used on input l
-ine 1323.
+ine 1325.
 (luatex.def)             Requested size: 211.25963pt x 126.75229pt.
-<images/TestBenchmark_SSIM_Boxplots.png, id=935, 722.7pt x 433.62pt>
+<images/TestBenchmark_SSIM_Boxplots.png, id=865, 722.7pt x 433.62pt>
 File: images/TestBenchmark_SSIM_Boxplots.png Graphic file (type png)
 <use images/TestBenchmark_SSIM_Boxplots.png>
 Package luatex.def Info: images/TestBenchmark_SSIM_Boxplots.png  used on input 
-line 1329.
+line 1331.
 (luatex.def)             Requested size: 211.25963pt x 126.75229pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48] [49<./images/TestBenchmark_MSE_Boxplots.png><./images/TestBenchmark_SSIM_Bo
-xplots.png>] [50]
-Overfull \hbox (9.29347pt too wide) in paragraph at lines 1408--1411
+[46] [47<./images/TestBenchmark_MSE_Boxplots.png><./images/TestBenchmark_SSIM_Bo
+xplots.png>] [48]
+Overfull \hbox (9.29347pt too wide) in paragraph at lines 1410--1413
 \TU/Alegreya(0)/m/n/12 Next, the im-pact of the start-ing chan-nels was ex-am-in
 ed. For this, \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(0)/m/n/12 and \
 TU/Alegreya(0)/m/it/12 󰋐xFourier-
  []
 
-[51]
+[49]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52]
+[50]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53] [54]
-Overfull \hbox (4.69507pt too wide) in paragraph at lines 1522--1529
-\TU/Alegreya(0)/m/n/12 not ac-cel-er-ated data. These new tests again in-cluded \TU/Alegreya(0)/m/it/12 Fourier-Net\TU/Alegreya(0)/m/n/12 , \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 
-󰋐xFourier-
- []
-
-
-Overfull \hbox (13.28703pt too wide) in paragraph at lines 1522--1529
+[51] [52]
+Overfull \hbox (13.28703pt too wide) in paragraph at lines 1524--1531
 \TU/Alegreya(0)/m/it/12 Fourier-Net \TU/Alegreya(0)/m/n/12 com-pared to the dens
 e ver-sion, while the band-limited \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Ale
 greya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 󰋐xFourier-
  []
 
-[55] [56] [57]
-Overfull \hbox (0.36066pt too wide) in paragraph at lines 1631--1653
+[53] [54] [55]
+
+LaTeX Warning: Reference `SubSec:ComparisonVoxelMorph' on page 56 undefined on 
+input line 1633.
+
+
+Overfull \hbox (0.36066pt too wide) in paragraph at lines 1633--1655
 \TU/Alegreya(0)/m/n/12 base-line. \TU/Alegreya(0)/m/it/12 Vox-el-Morph \TU/Aleg
 reya(0)/m/n/12 per-forms best in terms of SSIM, fol-lowed by \TU/Alegreya(0)/m/
 it/12 Fourier-Net \TU/Alegreya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 Ni󰀗tyReg
@@ -3338,100 +3418,108 @@ it/12 Fourier-Net \TU/Alegreya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 Ni󰀗tyReg
  []
 
 
-Overfull \hbox (7.89664pt too wide) in paragraph at lines 1631--1653
+Overfull \hbox (7.89664pt too wide) in paragraph at lines 1633--1655
 \TU/Alegreya(0)/m/n/12 tions for the mov-ing and fixed im-age ob-vi-ously re-mai
 n the same. \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(0)/m/n/12 and \TU
 /Alegreya(0)/m/it/12 󰋐xFourier-
  []
 
-[58] [59] [60]
+[56] [57] [58]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 9.25pt on input line 1656.
-LaTeX Font Info:    Calculating math sizes for size <9.25> on input line 1660.
+(Font)              scaled to size 9.25pt on input line 1658.
+LaTeX Font Info:    Calculating math sizes for size <9.25> on input line 1662.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 9.25pt on input line 1660.
+(Font)              scaled to size 9.25pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 6.47496pt on input line 1660.
+(Font)              scaled to size 6.47496pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 4.625pt on input line 1660.
+(Font)              scaled to size 4.625pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 9.25pt on input line 1660.
+(Font)              scaled to size 9.25pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 6.47496pt on input line 1660.
+(Font)              scaled to size 6.47496pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 4.625pt on input line 1660.
+(Font)              scaled to size 4.625pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 10.17505pt on input line 1660.
+(Font)              scaled to size 10.17505pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 7.12248pt on input line 1660.
+(Font)              scaled to size 7.12248pt on input line 1662.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 5.08752pt on input line 1660.
-<images/Boxplot_DiceScores_LV-Cavity.png, id=1033, 867.24pt x 433.62pt>
+(Font)              scaled to size 5.08752pt on input line 1662.
+<images/Boxplot_DiceScores_LV-Cavity.png, id=976, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package luatex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
- line 1706.
+ line 1708.
 (luatex.def)             Requested size: 341.43437pt x 170.71892pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=1034, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_Myocardium.png, id=977, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package luatex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
-t line 1712.
+t line 1714.
 (luatex.def)             Requested size: 341.43437pt x 170.71892pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=1035, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_RV-Cavity.png, id=978, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package luatex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
- line 1718.
+ line 1720.
 (luatex.def)             Requested size: 341.43437pt x 170.71892pt.
- [61]
-<images/TestExamples_Mode0.png, id=1040, 1962.8532pt x 709.6914pt>
+ [59]
+<images/TestExamples_Mode0.png, id=984, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
-Package luatex.def Info: images/TestExamples_Mode0.png  used on input line 1759
+Package luatex.def Info: images/TestExamples_Mode0.png  used on input line 1761
 .
 (luatex.def)             Requested size: 426.79135pt x 154.30249pt.
-<images/TestExamples_Mode1.png, id=1041, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode1.png, id=985, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
-Package luatex.def Info: images/TestExamples_Mode1.png  used on input line 1760
+Package luatex.def Info: images/TestExamples_Mode1.png  used on input line 1762
 .
 (luatex.def)             Requested size: 426.79135pt x 148.33151pt.
-<images/TestExamples_Mode2.png, id=1042, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode2.png, id=986, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
-Package luatex.def Info: images/TestExamples_Mode2.png  used on input line 1761
+Package luatex.def Info: images/TestExamples_Mode2.png  used on input line 1763
 .
 (luatex.def)             Requested size: 426.79135pt x 148.33151pt.
-<images/TestExamples_Mode3.png, id=1043, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode3.png, id=987, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
-Package luatex.def Info: images/TestExamples_Mode3.png  used on input line 1762
+Package luatex.def Info: images/TestExamples_Mode3.png  used on input line 1764
 .
 (luatex.def)             Requested size: 426.79135pt x 148.33151pt.
- [62<./images/Boxplot_DiceScores_LV-Cavity.png><./images/Boxplot_DiceScores_Myoc
+ [60<./images/Boxplot_DiceScores_LV-Cavity.png><./images/Boxplot_DiceScores_Myoc
 ardium.png><./images/Boxplot_DiceScores_RV-Cavity.png>]
 Overfull \vbox (8.80626pt too high) has occurred while \output is active []
 
 
-[63<./images/TestExamples_Mode0.png><./images/TestExamples_Mode1.png><./images/T
-estExamples_Mode2.png><./images/TestExamples_Mode3.png>] [64]
-<images/ContrastiveLoss_Mode1.png, id=1070, 2178.9405pt x 709.6914pt>
+[61<./images/TestExamples_Mode0.png><./images/TestExamples_Mode1.png><./images/T
+estExamples_Mode2.png><./images/TestExamples_Mode3.png>] [62]
+<images/ContrastiveLoss_Mode1.png, id=1019, 2178.9405pt x 709.6914pt>
 File: images/ContrastiveLoss_Mode1.png Graphic file (type png)
 <use images/ContrastiveLoss_Mode1.png>
 Package luatex.def Info: images/ContrastiveLoss_Mode1.png  used on input line 1
-865.
+867.
 (luatex.def)             Requested size: 426.79135pt x 139.0011pt.
- [65<./images/ContrastiveLoss_Mode1.png>]
+ [63<./images/ContrastiveLoss_Mode1.png>]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 10.9pt on input line 1884.
+(Font)              scaled to size 10.9pt on input line 1886.
+
+
+LaTeX Warning: Reference `SubSec:TestingEvalutionMetrics' on page 64 undefined 
+on input line 1908.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[66] [67]
-Chapter 9.
-[68
+[64] [65]
+Chapter 5.
+[66
+
+]
+Chapter 6.
+[67
 
 ]
 
@@ -3440,37 +3528,37 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Using 'family-given' now.
 
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 1980.
-[69
+(Font)              scaled to size 12.0pt on input line 1991.
+[68
 
-] [70]
-Underfull \hbox (badness 4403) in paragraph at lines 1980--1980
+] [69]
+Underfull \hbox (badness 4403) in paragraph at lines 1991--1991
 []\TU/Alegreya(0)/m/n/12 Strittmat-ter, A., Car-oli, A., and Zöll-ner, F. G.  
 A Mul-ti-stage Rigid-A󰀌fine-
  []
 
-[71]
-Underfull \hbox (badness 1661) in paragraph at lines 1980--1980
+[70]
+Underfull \hbox (badness 1661) in paragraph at lines 1991--1991
 \TU/Alegreya(0)/m/it/12 Com-puter Sci-ence\TU/Alegreya(0)/m/n/12 . Springer In-t
 er-na-tional Pub-lish-ing, 󰋇󰋅󰋆󰋍, pp. 󰋌󰋇󰋎–󰋌󰋈󰋍. \
 TU/Alegreya(0)/m/sc/12 󰁳󰃑󰀹󰂘\TU/Alegreya(0)/m/n/12 :
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 1980--1980
+Underfull \hbox (badness 1635) in paragraph at lines 1991--1991
 \TU/Alegreya(0)/m/n/12 work for Statis-tics on Dif-feo-mor-phisms. In: \TU/Aleg
 reya(0)/m/it/12 Lec-ture Notes in Com-puter Sci-ence\TU/Alegreya(0)/m/n/12 .
  []
 
-[72]
-Underfull \hbox (badness 2970) in paragraph at lines 1980--1980
+[71]
+Underfull \hbox (badness 2970) in paragraph at lines 1991--1991
 []\TU/Alegreya(0)/m/n/12 Jader-berg, M., Si-monyan, K., Zis-ser-man, A., and Kav
 ukcuoglu, K.  Spa-tial
  []
 
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 12.29993pt on input line 1980.
-[73] (./Masterarbeit.aux)
+(Font)              scaled to size 12.29993pt on input line 1991.
+[72] (./Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -3482,8 +3570,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: C842BE1D0FA8058B19DBE2DF5AB47504;7183.
+
+Package rerunfilecheck Warning: File `Masterarbeit.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Masterarbeit.out':
+(rerunfilecheck)             Before: 159B3B342AA6B779BA8B823E06311ACC;3779
+(rerunfilecheck)             After:  370A50A751C2F88286A6E2A4767738FB;3780.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                Masterarbeit
@@ -3495,36 +3589,112 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45284 strings out of 477259
- 195342,2373549 words of node,token memory allocated
+ 45346 strings out of 477259
+ 195333,2373549 words of node,token memory allocated
  1161 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 171 attribute
 , 71 glue_spec, 87 attribute_list, 2 write, 12 pdf_action nodes
-   avail lists: 1:6,2:2751,3:558,4:213,5:2341,6:80,7:16590,8:73,9:902,10:24,11:1
-090
- 65178 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:2793,3:558,4:220,5:2323,6:62,7:16554,8:73,9:910,10:24,11:1
+086
+ 65201 multiletter control sequences out of 65536+600000
  305 fonts using 93575255 bytes
  102i,14n,128p,3041b,2944s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.72'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.68'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.67'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.65'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.61'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.59'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.58'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.57'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.55'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.53'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.51'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.49'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.47'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.46'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.44'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.42'
+
+warning  (pdf backend): unreferenced destination with name 'section*.60'
+
+warning  (pdf backend): unreferenced destination with name 'section*.54'
+
+warning  (pdf backend): unreferenced destination with name 'section*.52'
+
+warning  (pdf backend): unreferenced destination with name 'section*.50'
+
+warning  (pdf backend): unreferenced destination with name 'section*.48'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.33'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.35'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.34'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.30'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.27'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.29'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.28'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.25'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.22'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.23'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.19'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.18'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.15'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.7'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.6'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.5'
+
+warning  (pdf backend): unreferenced destination with name 'chapter*.73'
 <C:/Program Files/MiKTeX/fonts/opentype/public/lm/lmmono12-regular.otf><C:/Progr
 am Files/MiKTeX/fonts/opentype/public/lm/lmmonoprop10-regular.otf><C:/Program Fi
-les/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf><C:/Program Files/Mi
-KTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Program Fil
-es/MiKTeX/fonts/opentype/public/tex-gyre/texgyrechorus-mediumitalic.otf><C:/Prog
-ram Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/Program
- Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/Program Fi
-les/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf><C:/Program Files/Mi
-KTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Program Fil
-es/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Progra
-m Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/Program F
-iles/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf><C:/Program Files
+les/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Progr
+am Files/MiKTeX/fonts/opentype/public/tex-gyre/texgyrechorus-mediumitalic.otf><C
+:/Program Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/P
+rogram Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/Prog
+ram Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf><C:/Program Fi
+les/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Progr
+am Files/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/
+Program Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/Pro
+gram Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf><C:/Program
+ Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf><C:/Program Files
 /MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/Program Files/Mi
 KTeX/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf><C:/Program Files/MiKTeX
 /fonts/opentype/huerta/alegreya/AlegreyaSans-Bold.otf><C:/Program Files/MiKTeX/f
 onts/opentype/huerta/alegreya/AlegreyaSans-Italic.otf><C:/Program Files/MiKTeX/f
 onts/opentype/huerta/alegreya/AlegreyaSans-Regular.otf>
-Output written on Masterarbeit.pdf (79 pages, 10262430 bytes).
+Output written on Masterarbeit.pdf (78 pages, 10251294 bytes).
 
-PDF statistics: 1309 PDF objects out of 1440 (max. 8388607)
- 304 named destinations out of 1000 (max. 131072)
- 288 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1267 PDF objects out of 1440 (max. 8388607)
+ 343 named destinations out of 1000 (max. 131072)
+ 176 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -63,8 +63,8 @@
 \chapter{Introduction} \label{Ch:Introduction}
 MRI is a commonly used medical imaging technique that is non-invasice, radiation-free and has great contrast for soft tissue. However, speed is its main weakness as full-body scan can take up to 30 minutes, which is a burden on patients as well as hindering efficiency. Thus, MRI acquisition is usually accelerated by subsampling the k-space in which the data is recorded. This can, however, lead to problematic image artifacts that hinder many processing algorithms. Another problem of the slow data acquisition are motion artifacts, which are especially common for organs like lung and heart. While breathing can be controlled, cardiac motion is involuntarily and should not be stopped. These challenges have been traditionally addressed with computationally intensive algorithms that usually iterativly solve an optimization problem. New approaches, however, are based around the deep neural networks, which have seen a rise in popularity in the recent years in many fields including image processing. In this thesis, the possibility of using an unsupervised deep learning approach to align subsampled MRI data as well its potential usage in a motion reconstruction pipeline will be investigated.
 
-\section{Contributions of the Thesis} \label{Sec:Contributions}
-Expanding already established work, unsupervised neural network training was used to efficiently align subsampled MR images. While the networks architecture was already tested on e.g. inter-patient brain scan alignment, a new use-case with undersampled cardiac MR scan was explored. The registration performance was also compared to other methods. Furthermore, a  potential application in a motion-compensated image reconstruction pipeline was tested.
+\section{Challenges of MRI Acquisition}
+
 
 \section{Related Work} \label{Sec:RelatedWork}
 The network used for the main parts of this thesis are are \emph{Fourier-Net}~\cite{Fourier-Net} and \emph{Fourier-Net+}~\cite{Fourier-Net+}. These are based on works such as the unsupervised \emph{VoxelMorph}~\cite{Voxelmorph}, which is also used as an comparison, as well as the \emph{IC-Net}~\cite{IC-Net} and \emph{SYM-Net}~\cite{SYM-Net}. Additionally, the traditional registration algorithm \emph{NiftyReg}~\cite{NiftiReg} was also used in the evaluation.\\
@@ -72,7 +72,8 @@ There are many works on image registration, though the field of medical image re
 For MRI reconstruction, a lot of work exists also discussing Deep Learning approaches~\cite{DeepMRIReconstructionRadialSubsampling,DeepMRIReconstructionSubsampling}.
 
 
-\section{Structure of the Thesis} \label{Sec:Structure}
+\section{Contributions and Structure of the Thesis} \label{Sec:ContributionsAndStructure}
+Expanding already established work~\cite{Fourier-Net,Fourier-Net+}, unsupervised neural network training was used to efficiently align subsampled MR images. While the networks architecture was already tested on e.g. inter-patient brain scan alignment, a new use-case with undersampled cardiac MR scan was explored. The registration performance was also compared to other methods. Furthermore, a  potential application in a motion-compensated image reconstruction pipeline was tested.\\
 In chapter~\ref{Ch:MRI}, the foundations of MRI are discussed including magnetic principles in section~\ref{Sec:MagneticExcitationAndRelaxation} image acquisition (section~\ref{Sec:ImageAcquisitionAndK-Space}), acceleration (section~\ref{Sec:ImagingAcceleration}), and reconstruction (section~\ref{Sec:Motion-CompensatedReconstruction}). In Chapter~\ref{Ch:ImageTransformationsAndRegistration}, image transformations (section~\ref{Sec:ImageTransformations}) and registration (section~\ref{Sec:ImageRegistration}) are introduced. In chapter~\ref{Ch:DeepLearning}, deep learning architectures (section~\ref{Sec:DeepLearningArchitectures}), their use in image registration (section~\ref{Sec:DLImageRegistration}) and general principles of network training and testing (section~\ref{Sec:NetworkTrainingAndTesting}).\\
 The data used in this thesis is described in Chapter~\ref{Ch:Data} with details concerning the 
 %\emph{OASIS}, 
@@ -87,10 +88,13 @@ Lastly, the thesis is briefly summarized in chapter~\ref{Ch:Conclusion}.
 
 
 %%%%%%%%%%%%%%%%%%%%
-%%%%%%%  MRI %%%%%%%
+%%%%%  Basics  %%%%%
 %%%%%%%%%%%%%%%%%%%%
 
-\chapter{Magnetic Resonance Imaging} \label{Ch:MRI}
+\chapter{Fundamentals} \label{Ch:Fundamentals}
+In this chapter the foundations of the thesis are explained. Starting with the principles behind MRI acquisition, acceleration and reconstruction, it also covers image registration and deep learning basics.
+
+\section{Magnetic Resonance Imaging} \label{Sec:MRI}
 Magnetic Resonance Imaging (MRI) is a non-invasive, radiation-free, tomographic imaging technology based on measurements of a magnetic field.  An MRI machine comprises four main components as seen in Figure~\ref{fig:MRISchematic}. The first component is a strong magnet powerful enough to generate a static magnetic field $B_0$ that is required to induce nuclear proton polarization. The second is a radio frequency (RF) system which generates an alternating magnetic field $B_1$ at the resonant frequency $f$ and detects the MR signal that is returned from the patient. The third component is the set of gradient systems (oriented orthogonally in X, Y and Z directions) that generates linear magnetic field variations, which are then superimposed upon $B_0$ and are used to spatially encode the MR signal. In clinical MR scanners, the three gradient sets and whole-body RF coils are typically concentrically positioned inside the bore of the magnet. The fourth component is a computer providing the user interface, generating images to be displayed and interpreted on the console~\cite{Serai2021}.
 
 \begin{figure}[htpb]
@@ -101,10 +105,10 @@ Magnetic Resonance Imaging (MRI) is a non-invasive, radiation-free, tomographic 
  	\label{fig:MRISchematic}
  \end{figure} 
 
-\section{Magnetic Excitation and Relaxation} \label{Sec:MagneticExcitationAndRelaxation}
+\subsection{Magnetic Excitation and Relaxation} \label{Sec:MagneticExcitationAndRelaxation}
 In the following section, the basic principles underlying MR imaging are presented. These include the relation between RF excitation and relaxation.
 
-\subsection{Radio Frequency Excitation}
+\subsubsection{Radio Frequency Excitation}
 Individual nuclei precess around the field $B_0$ at a
 resonance frequency known as the Larmor frequency $\omega_0$ of the net magnetization vector, which generally occurs in the RF range of the electromagnetic spectrum and is related to the external magnetic field as:
 \begin{equation} \label{eq:LarmorFrequency}
@@ -112,7 +116,7 @@ resonance frequency known as the Larmor frequency $\omega_0$ of the net magnetiz
 \end{equation}
 with $\gamma$ being the gyromagnetic ratio, which is a fixed value depending on the nuclei~\cite{SamplingStrategies}. When nuclei are placed in the presence of a strong static magnetic field such as $B_0$ the nuclei split into two energy states, either aligned parallel to the magnetic field $B_0$ (called a spin-up state) or aligned anti-parallel to $B_0$ (called a spin-down state). The spin-up state has a slightly lower energy level as compared to the spin-down state and is therefore preferred. This slight difference in the spin states ($0.001\%$) results in an overall net magnetization $M$ aligned in the same direction as $B_0$. To create an MR signal, the spins are excited out of their resting equilibrium, i.e. tipping $M$ away from $B_0$. To detect the signal from the hydrogen nuclei in the tissues an additional external field $B_1$ is introduced at the resonant Larmor frequency $\omega_0$ that can affect magnetization vector, causing it to rotate into a plane orthogonal to its original orientation. The rotated vector continues to precess around the $B_0$. The precession of the magnetization vector in the transverse plane can be detected by an RF coil tuned to the resonant frequency $\omega_0$. RF coils can be operated in a receive-only mode, in which case the inherent body coil is used as a transmitter; or the RF coils can be both transmit and receive. The purpose of the RF transmit coil is to create a time-varying $B_1$ field at right angles to $B_0$ that could be linearly or circularly polarized. The closer the receiving coil is to the source of the MR signal, the better the signal-to-noise ratio (SNR). Receiver coils generally comprise arrays of smaller individual coils or elements; however, each individual coil element has a limited depth penetration. Multiple arrays of coils, termed phased-array coils, can be used together to achieve a higher coverage. The multiple coils are electronically decoupled from one another so that they do not appear as just a single large coil. The images from individual coils are independently reconstructed and then grouped together to create the final image. An RF pulse of amplitude $B_1$, called excitation pulse, is applied for a certain time duration to tip the magnetization at an angle away from the $B_0$ field. The precessing transverse magnetization induces a voltage in the receiver RF coil; this induced voltage is known as the free induction decay. After the pulse, the magnetization returns to thermal equilibrium by processes known as MR relaxation. To fully encode the spatial information within the field of view (FOV), pulse sequences must be iterated numerous times. The time between successive iterations of a pulse sequence is known as the repetition time (TR). The time between the application of the initial RF pulse and the middle of the detected echo is known as the echo time (TE). Due to this the overall time to acquire an MR image is quite long~\cite{Serai2021}.\\
 
-\subsection{Magnetic Relaxation}
+\subsubsection{Magnetic Relaxation}
 Once the RF pulse is turned off, $M$ continues to precess as it returns to its thermal equilibrium state. During this time, two types of relaxation occur: $\text{T}_1$ (longitudinal or spin lattice) and $\text{T}_2$ (transverse or spin/spin). One attribute that makes $\text{T}_1$ and $\text{T}_2$ so valuable for determining the signal in MRI is their sensitivity to the presence and type of tissue. It is this tissue dependence property that gives MR its excellent soft-tissue contrast. $\text{T}_1$ relaxation describes the recovery of the longitudinal magnetization back to thermal equilibrium following a perturbation by an RF pulse. The longitudinal component regrows along the Z direction with a time constant $\text{T}_1$. In other words, after the RF pulse is turned off, the protons that were disturbed give their energy to the surrounding environment and return back to their original equilibrium state, realigning with $B_0$. Hence $\text{T}_1$ relaxation is also called longitudinal relaxation. Furthermore, because $\text{T}_1$ relaxation involves the loss of energy that was put into the spin system by the RF pulse, it is also referred to as spin-lattice relaxation, the lattice consisting of surrounding macromolecules. This loss of energy is stimulated by the fluctuating magnetic fields associated with the dipole–dipole interactions of neighboring magnetic moments. $\text{T}_1$ relaxation can only occur when these magnetic field fluctuations occur at the resonant frequency $\omega_0$. The rate at which the spin magnetization $M_z$ recovers to $M_0$ at time $t$ is called $\text{T}_1$ relaxation time. It can be expressed as follows:
 \begin{equation}
 	M_z = M_0 \cdot \bigg(1 - e^{-\frac{t}{\text{T}_1}} \bigg).
@@ -130,7 +134,7 @@ $\text{T}_2$ relaxation results in the loss of transverse magnetization caused b
 where $S(TE)$ is the signal intensity measured at each $TE$ and
 $S_0$ is the initial signal intensity at time $t=0$.
 
-\section{Image Acquisition and the Concept of K-Space} \label{Sec:ImageAcquisitionAndK-Space}
+\subsection{Image Acquisition and the Concept of K-Space} \label{SubSec:ImageAcquisitionAndK-Space}
 After discussing the physical mechanisms behind MRI, it is time to look at the actual process of acquiring the image as well as the concept of the k-space. 
 %\subsection{Image Acquisition and Pulse Sequences}
 The image contrast in MR imaging arises from tissues generating MR signals with different intensities due to their physical properties. Contrast weighting of the MR signal is obtained by the design of pulse sequences, which consist of repetitive trains of RF pulses. Two of the most common pulse sequences are gradient echo 
@@ -139,7 +143,7 @@ and spin echo
 %(SE) 
 sequences. %\\
 
-\subsection{Gradient Echo Sequence}
+\subsubsection{Gradient Echo Sequence}
 In a gradient echo (GE) sequence, the free induction decay (FID) signal is manipulated by a bi-polar gradient. The excitation pulse tilts the magnetization by $\alpha$ degrees. For $\alpha = 90°$ the longitudinal magnetization is rotated in the transverse plane. The data is sampled during a gradient echo at time TE after the excitation pulse. This gradient echo is achieved by dephasing the spins with a negative gradient before they are rephased by an opposite gradient with opposite polarity to generate an echo. A schematic overview of the process can be seen in Figure~\ref{fig:GradientEcho}. \\
 The pulse sequence is repeated a number of times to acquire the entire image. 
 %The time between two excitation pulses is called the repetition time. 
@@ -153,7 +157,7 @@ Changing the TR, TE, and flip angles of a GE sequence influences the contrast we
 	\label{fig:GradientEcho}
 \end{figure}
 
-\subsection{Spin Echo Sequence}
+\subsubsection{Spin Echo Sequence}
 With a spin echo (SE) sequence, pure $\text{T}_2$-weighted contrast can be generated. When a $90°$ pulse rotates the magnetization into the transverse plane, the resulting FID signal quickly decays due to the strong $\text{T}^*_2$ dephasing. If after a time $\frac{\text{TE}}{2}$ a $180°$ pulse is applied, the spins will be flipped and start to rephase. After another time, $\frac{\text{TE}}{2}$, a measurable echo signal is created. The spin dephasing due to static magnetic field inhomogeneities is compensated by inverting the spins with the $180°$ refocusing pulse. This process is visualized in Figure~\ref{fig:SpinEcho}.\\
 Consequently, the decay of the signal at time TE will solely originate from the $\text{T}_2$ relaxation. A SE sequence can also be used to generate proton density or $\text{T}_1$-weighted signals by using a short TE and a long or short TR, respectively~\cite{PulseSequences}.
 
@@ -201,7 +205,7 @@ Consequently, the decay of the signal at time TE will solely originate from the 
 %\end{figure}
 
 
-\subsection{Introduction to K-Space}
+\subsubsection{Introduction to K-Space}
 The concept of the k-space is a generalization of the simple relation of a time-variant signal to a spectrum of two or more dimensions. An 2D image is related to a 2D k-space data set by a 2D FT, as seen in Figure~\ref{fig:2D_MRI_Measurement}
 %, same as a 1D spectrum is related to the 1D signal by a normal (1D) FT. A 2D FT can be achieved by applying the (1D) FT successively row-by-row and column-by-column. 
 As the FT is an information-preserving operation, the k-space data contains exactly the same information as the image data. Thus, in order to get the full image information, the full k-space data needs to be measured. The task of forming an image by this approach is then converted to the task of finding a way to measure the necessary corresponding k-space data. 
@@ -267,7 +271,7 @@ sequentially. The observed spins evolve not only as a function of the gradients 
 	\label{fig:kSpaceTrajectories}
 \end{figure}
 
-\subsection{Rectilinear K-Space Sampling}
+\subsubsection{Rectilinear K-Space Sampling}
 Almost all MR imaging sequences 
 %used in clinical routine presently 
 are based on rectilinear k-space sampling, i. e., the sampling points 
@@ -354,7 +358,7 @@ In a Cartesian acquisition, one or more lines of k-space parallel to a Cartesian
 %%Especially single-shot RARE (or single-shot FSE) with very strong $\text{T}_2$-contrast has been shown to be extremely useful for imaging of liquid-filled structures like in MR myelography [16], MR urography [17], or MR cholangio-pancreatography (MRCP) [18]. 
 %Using half-Fourier phase encoding in half-Fourier acquired single-shot turbo spin echo (HASTE) [19], single-shot implementations with less $\text{T}_2$-contrast are also feasible. It has been noted that signal from fat is significantly brighter in RARE compared with conventional spin-echo imaging at equal echo times [20]. This is due to so-called J coupling of protons in lipids, which leads to a periodic modulation of their resonances just like the modulations caused by two elastically coupled pendulums [21]. This modulation will not be refocused but continue despite the reversal of the phase by the 180 pulse (Fig. 13). At a time interval equal to 1/(2 J), the signals from such coupled spins will be opposed and therefore canceled. For typical coupling constants, this condition is reached at echo times of 80 to 140 ms typically used for $\text{T}_2$-weighted imaging. The multiple refocusing in an echo train ensures that the phase of the signals from coupled spins stay together along the echo train; thereby, signal suppression is avoided and fat will appear bright. A similar cause is implied for a relative reduction in susceptibility contrast on RARE images (Fig. 14). Static susceptibility effect will be refocused on both spin-echo sequences. If spins move along strong local gradients as caused by hemorrhage, for example, the motion-dependent variation of their Larmor frequency cannot be refocused due to the random nature of the motion. Multiple refocusing pulses, however, will ensure that the spin phases stay together. Some such diffusion-dependent dynamic susceptibility effect is observed in most organs (nuclei in the brain and basal ganglia, liver, lung, etc.). Therefore, RARE images can look very different from conventional spin-echo images at identical echo times. Due to the repetitive use of refocusing pulses and the necessity for rewinding the phase-encoding gradient, RARE is inherently slower than EPI. The gradient performance of current scanners allows refocusing intervals as short as 4 ms or less. The high radio-frequency power inherent to a long train of $180°$ pulses limits, however, the range of applications for such fast echo trains. Even though this problem can be ameliorated by the use of lower refocusing flip angles, EPI with typical readout times of 1 ms or less will remain faster. The big advantage of spin-echo techniques remains, however, their lack of distorting artifacts which makes spin-echo techniques applicable all over the body. Even high-quality cardiac images with HASTE have been demonstrated as well as perfusion and ventilation imaging of the lung [22].
 
-\subsection{Non-Rectilinear K-Space Sampling}
+\subsubsection{Non-Rectilinear K-Space Sampling}
 A common problem of rectilinear sampling techniques is the very heterogeneous nature of the k-space trajectories used: Data are acquired along straight k-space lines under a constant gradient. Going around the corner of the trajectory requires very fast switching for a brief period. 
 This 
 %The combination of both modes of operation 
@@ -381,7 +385,7 @@ Other trajectories, such as rosettes or even random k-space trajectories, have a
 For an insufficient field of view of the k-space data, misregistration artifacts can be very severe, depending on the trajectory used. Spirals produce a circular rim artifact around the image. It is therefore mandatory to ensure that the k-space trajectory is sufficiently dense to always cover the whole object of interest~\cite{SamplingStrategies}. 
 %This limitation is especially severe for cardiac imaging, where the size of the field of view of a short axis plane can be considerable. Limitation of the field of view by the use of surface coils with limited sensitivity range is therefore mandatory for many applications of non-rectilinear trajectories.
 
-\section{Imaging Acceleration} \label{Sec:ImagingAcceleration}
+\subsection{Imaging Acceleration} \label{SubSec:ImagingAcceleration}
 To alleviate the slow image acquisition times of the MR imaging, different MRI acceleration techniques are used. Most of these included scanning less k-space lines during signal acquisition, omitting certain frequencies
 %higher frequencies and fully scanning the center region. 
 The amount of k-space lines that are omitted are usually given by a reduction factor $R$. While there are different subsampling techniques, most involve fully sampling a center region containing the lower frequencies and dropping higher frequencies, which are deemed less important. However, all of these methods create artifacts like image blur during image reconstruction, as seen in Figure~\ref{fig:ExamplesSubsampling}, leading to different technologies being developed to minimize these effects such as parallel imaging and compressed sensing.
@@ -394,7 +398,7 @@ The amount of k-space lines that are omitted are usually given by a reduction fa
 	\label{fig:ExamplesSubsampling}
 \end{figure}
 
-\subsection{Parallel Imaging}
+\subsubsection{Parallel Imaging}
 Parallel imaging (PI) is a robust method for accelerating the acquisition of MRI data by acquiring a reduced amount of k-space data with an array of receiver coils. These undersampled data can be acquired more quickly, but the undersampling leads to aliased images. One of several PI algorithms can then be used to reconstruct artifact-free images from either the aliased images (SENSE-type reconstruction) or from the under-sampled data (GRAPPA-type reconstruction). PI requires special hardware known as phased array coils that 
 %are now supplied with nearly every modern clinical scanner. Phased arrays 
 contain multiple independent receiver channels. Each coil element is most sensitive to the magnetization closest to it and less sensitive to magnetization further away. 
@@ -434,20 +438,20 @@ ESPIRiT~\cite{ESPIRiT} is an extension of SPIRiT that uses k-space kernel operat
 %A k-space kernel is moved to each possible position within this region, and each instance of the kernel is reshaped to populate a row in a special matrix. Many of the singular values of this matrix are small or close to zero, meaning that it has a null space. The existence of a null space implies that neighboring k-space points in the multichannel data are correlated. Missing k-space data are reconstructed by recognizing that this relationship should be true not only over the calibration region but also over the entire k-space.
 Unlike SENSE and GRAPPA, SPIRiT reconstructs images iteratively and can require long computation times which can be addressed by using e.g. parallelized GPUs~\cite{AdvancesPI}.
 
-\subsection{Compressed Sensing}
+\subsubsection{Compressed Sensing}
 The idea behind compressed sensing (CS) is that sparse or compressible signals can be acquired in an efficient way by applying compression already in the data acquisition process. According to CS theory, sparse or compressible signals can be recovered from fewer samples than required by the Shannon-Nyquist sampling theorem~\cite{CS-MRI}. This is achieved by applying an appropriate sampling scheme and reconstruction that employs signal sparsity to recover the signal. MRI fulfills two important requirements for the application of CS: medical imaging is naturally compressible by sparse coding and MRI scanners acquire samples of the encoded image in spatial frequency, rather than direct pixel values. CS emerged as an abstract mathematical idea that if one measures a relatively small number of random linear combinations of the signal values the signal can be reconstructed with good accuracy from these few measurements by a non-linear procedure due to the underlying signal being compressible.
 % – much smaller than the number of signal samples nominally defining it. However, because the underlying signal is compressible, the nominal number of signal samples is a gross over-estimate of the effective number of degrees of freedom of the signal. As a result, the signal can be reconstructed with good accuracy from relatively few measurements by a non-linear procedure. 
 In MRI, the sampled linear combinations are the individual Fourier coefficients (k-space samples) and CS is able to make accurate reconstructions from a small subset of k-space, rather than an entire k-space grid~\cite{CS-MRI}. It should be noted that unlike PI approaches, the k-space is incoherently sampled; thus, noise-like artefacts appear in the image when a direct inverse Fourier transform is performed. To remove the artefacts caused by the undersampling, iterative reconstruction is used. There are a number of sparsifying transforms that can be used for CS such as wavelets, which are very common, and total variation, which enforces the sparsity of the image gradients. The advantages of total variation include its simplicity, rotation invariance, and capability of preserving edges and providing good image quality~\cite{PulseSequences}. There are also several methods combining CS and PI trying to achieve higher acceleration factors~\cite{PI+CS, PI+CS2}.
 %, but with the addition of regularization that enforces sparsity by penalizing coefficients in some domain (e.g. Wavelet, finite difference) with a $L_1$-norm
 
-\subsection{Deep Learning Based Subsampling} \label{SubSec:DeepLearningBasedSubsampling}
+\subsubsection{Deep Learning Based Subsampling} \label{SubSubSec:DeepLearningBasedSubsampling}
 There are also approaches for learning new subsampling strategies in a data-driven manner (pruning unimportant k-space frequencies)~\cite{MRISubsamplingPruning} as well as deep learning based radial~\cite{DeepMRIReconstructionRadialSubsampling} and non-Cartesian~\cite{DeepMRIReconstructionSubsampling} subsampling for MRI acceleration.
 
 
-\section{Motion-Compensated Image Reconstruction} \label{Sec:Motion-CompensatedReconstruction}
+\subsection{Motion-Compensated Image Reconstruction} \label{SubSec:Motion-CompensatedReconstruction}
 Patient motion during acquisition is one of the major impediments of high-quality MRI scans. This is especially true for thoracic and abdominal imaging, as organs move during breathing. Steps can be taken during or after the reconstruction to mitigate motion artifacts.
 
-\subsection{Intraview and Interview Motion} \label{SubSec:IntraviewandInterviewMotion}
+\subsubsection{Intraview and Interview Motion} \label{SubSubSec:IntraviewandInterviewMotion}
 Due to the long acquisition times, motion is one of the major extrinsic factors influencing MR image quality. Patient and physiological motion induces aliasing along the phase-encoding direction and/or blurring of the image content~\cite{Kuestner2022}.
 %, where the appearance depends on the imaging trajectory.
 This motion can induce several consequences on MR signal formation. Intraview and interview motion have to be distinguished between: motion is intraview when occurring during individual MR experiments (between RF excitation and echo formation), whereas motion is interview when occurring between individual MR experiments. Whenever the period of motion is slow compared to the period of MR acquisition 
@@ -455,28 +459,28 @@ This motion can induce several consequences on MR signal formation. Intraview an
 $TR$, the assumption can be made that motion is interview. This is often a reasonable assumption when considering pseudo-periodic motion induced by respiration, and also possibly by cardiac contraction, which are the two common sources of motion in cardiac and abdominal imaging (typically, the adult respiratory period is about 4 to 5 $s$, and $TR \approx 10 ms$ for fast imaging). Interview motion results in spatial encoding inconsistencies, and thus in image deterioration which can take complex forms (blurring/ghosting artifacts) as acquisition is performed in a Fourier space. Several strategies can be employed in order to handle patient motion better. Patient cooperation is the most commonly used method. However, breath-holds cannot last much longer than 20 $s$ and physiological drifts cannot be completely avoided. This leads to a limitation on the time-period of signal recording and thus SNR. Moreover, the position of organs in successive breath-holds may not be reproducible. Synchronization techniques are well-established and systematically used in clinical protocols, but they require a high-level of motion reproducibility. This is often a limiting factor considering heart rate variability (whether in free breathing or during a breathhold), and respiratory variability in terms of amplitude and frequency~\cite{GRICS}. 
 %This is why alternative techniques have been put forward with the aim of inverting the process of spatial encoding of moving structures that underlies artifacts. While it is possible to correct for motion prospectively, by modulating the magnetic field gradients and RF fields in order to cancel the effect of motion in the Bloch equations, the method is limited to correcting of, at best, affine motion, due to magnetic field gradient systems being linear. 
 
-\subsection{Reconstruction Pipelines} \label{SubSec:ReconstructionPipelines}
+\subsubsection{Reconstruction Pipelines} \label{SubSubSec:ReconstructionPipelines}
 Motion-resolved data acquisition is usually accelerated by PI or CS techniques yielding subsampled k-space data. In order to reconstruct aliasing-free images, these methods rely on reconstruction schemes that incorporate sparsity or low-rank constraints to solve the ill-posed problem~\cite{CS-MRI,ParallelMRI,LowRank+SparseMRI}. Fixed sparsity assumptions in CS are often too restrictive and incapable of fully modeling spatio-temporal dynamics~\cite{Kuestner2022}. 
 %Careful fine-tuning between regularization and data consistency is required and especially in highly subsampled cases residual aliasing may remain in the image (under-regularization) or staircasing and blurring artifacts can occur (over-regularization) which affect the image registration. 
 After reconstruction, non-rigid motion fields can be estimated in image space from reconstructed images by solving a registration problem. A particular interest and challenge lies in the derivation of reliable motion fields which capture the spatio-temporal non-rigid deformations, such as respiratory or cardiac movement. Instead of performing these two steps sequentially, motion-compensated image reconstruction schemes like \emph{GRICS}~\cite{GRICS} integrate both motion field estimation and motion correction into the reconstruction process. These methods require reliable motion-resolved images from which the motion fields can be estimated. Motion field estimation can be controlled or supported by external motion surrogate signals, initial motion field estimates, from motion-aliased images or low-frequency image contents. Moreover, spatio-temporal redundancies can be exploited to achieve an aliasing-free image. While these methods have been proven to be more robust against registration errors, they can require a significantly increased computational demand and/or limit imaging acceleration~\cite{Kuestner2022}.\\
 There are two major parts of a motion-compensated reconstruction pipeline: a non-rigid registration model to reliably estimate the motion fields between frames and an unrolled reconstruction model that reconstructs the motion-corrected frames. Both of these can use either conventional iterative algorithms like in GRICS~\cite{GRICS} or neural networks that learn the given task~\cite{Kuestner2022}.
 
 
-\chapter{Image Transformations and Registration} \label{Ch:ImageTransformationsAndRegistration}
+\section{Image Transformations and Registration} \label{Sec:ImageTransformationsAndRegistration}
 In this chapter, a brief overview over the different kinds of image transformations is given, followed by an introduction into the challenges of image registration.\\
 The goal of image registration is to compute a transformation that aligns two images - moving and fixed. This transformation is then applied to the moving image to create an warped image that more closely resembles the fixed image. But first, the different kinds of image transformations must be discussed.
 
-\section{Image Transformations} \label{Sec:ImageTransformations}
+\subsection{Image Transformations} \label{SubSec:ImageTransformations}
 In medical image registration, there are three basic transformation types that are typically applied: rigid, affine and non-linear(deformable)~\cite{Strittmatter2023}.
 
-\subsection{Rigid Transformations}
+\subsubsection{Rigid Transformations}
 Rigid transformations are linear and global transformations that affect the whole image. As these are global operations, one can express them as matrix and vector operations. A rigid transformation includes translation and rotation and can be represented by:
 \begin{equation}
 	\mathbf{T}_{rigid} (x) = \mathbf{R} \cdot \overrightarrow{p} + \overrightarrow{t},
 \end{equation}
 with $\mathbf{R}$ being the rotation matrix, $\overrightarrow{p}$ a point in the image and $\overrightarrow{t}$ the translation vector.  For 3D images, the rotation matrix and the translation vector require three parameters each. Thus, six parameters have to be calculated for a rigid transformation for 3D images~\cite{Strittmatter2023}.
 
-\subsection{Affine Transformations}
+\subsubsection{Affine Transformations}
 Affine transformations are also linear and global transformations, however they include translation, rotation, scaling and shearing. Matrix multiplication can be used to merge all of these individual transformations into a single matrix:
 \begin{align}
 	\overrightarrow{p}' 	&= \mathbf{R} \cdot \mathbf{S} \cdot \mathbf{t} \cdot  \overrightarrow{p}	\\
@@ -546,14 +550,14 @@ with $\theta$ being the angle of the rotation for the rotation matric $\mathbf{R
 \end{equation}
 with $\mathbf{T}_{affine}$ being the general affine transformation matrix~\cite{Strittmatter2023}.
 
-\subsection{Non-Linear Transformations}
+\subsubsection{Non-Linear Transformations}
 Non-linear or deformable transformations are used to model local deformations in images that rigid and affine transformations cannot capture as these transformations are capable of locally warping the image. Non-linear transformations include radial basis functions, physical continuum models, and large deformation models like diffeomorphisms. These transformations are complex and do not preserve straightness or parallelism:
 \begin{equation}
 	\mathbf{T}_{deformable} (x) = x + \phi (x),
 \end{equation}
 with $\phi$ being the deformation or displacement field. Deformable image registration is an ill-posed problem, often requiring regularization to ensure a smooth and plausible displacement field~\cite{Strittmatter2023}.
 
-\section{Image Registration} \label{Sec:ImageRegistration}
+\subsection{Image Registration} \label{SubSec:ImageRegistration}
 Image registration is a challenging, yet important task for image processing. In the field of medical image analysis, image registration remains one of the main research topics and challenges. This task consists of transforming a moving image to match a fixed image~\cite{NiftiReg}. 
 %The most active area of research is non-rigid registration, in which attempts are made to locally warp one image into correspondence with another. Example problems are matching 3D MRI scans of two different patients, or two scans of the same patient before and after surgery. 
 %It can be described as the process of transforming different image datasets into one coordinate system with matched imaging contents~\cite{Haskins2020}. 
@@ -576,17 +580,17 @@ where $T'$ is the best transformation maximizing the similarity $S$ between the 
 Many methods have been proposed for medical image registration to deal with the complex challenges of this task. Popular conventional registration methods include optical flow~\cite{Yang2008}, demons~\cite{Vercauteren2009} and many more. However, most of these still lack accuracy and computation speed, which makes newer deep learning approaches all the more interesting~\cite{Fu2020}.
 
 
-\chapter{Deep Learning} \label{Ch:DeepLearning}
+\section{Deep Learning} \label{Sec:DeepLearning}
 Deep learning, and neural networks in general, have seen a significant rise in usage over the last couple of years due to many breakthroughs in areas of image recognition, segmentation and also registration. After discussing different network architectures, specific use-cases for image registration are discussed and a brief overview of network training and testing (including evaluation metrics) is given.
 
-\section{Deep Learning Architectures} \label{Sec:DeepLearningArchitectures}
+\subsection{Deep Learning Architectures} \label{SubSec:DeepLearningArchitectures}
 Neural networks, despite the theoretical foundations being around for decades, have seen a drastic rise in popularity over the last few years as constraints on computational power and data size have been alleviated. Especially deep neural networks, which are often summarized under the term deep learning (DL). Recent years have witnessed an almost exponential growth in the development and use of DL algorithms, sustained thus far by rapid improvements in computational hardware (e.g. GPUs). Consequently, clinical applications requiring image classification, segmentation, registration, or object detection/localization, have witnessed significant improvements in algorithmic performance, in terms of accuracy and/or efficiency~\cite{Chen2020}. The following network architecture are widely used for different tasks including medical image registration.
 
-\subsection{Convolutional Neural Networks} \label{SubSec:CNNs}
+\subsubsection{Convolutional Neural Networks} \label{SubSubSec:CNNs}
 Convolutional neural networks (CNNs) are a type of deep neural networks with regularized multilayer perceptron, which are mainly used for image processing. CNNs use convolution operations instead of general matrix multiplications in typical neural networks. These convolutional filters make CNNs very suitable for visual signal processing. Because of their excellent feature extraction ability, CNNs are some of the most successful models for image analysis. Different variants of CNN have been proposed and have achieved the-state-of-art performances in various image processing tasks. A typical CNN usually consists of multiple convolutional layers, max pooling layers, batch normalization layers, sometimes dropout layers, a sigmoid or softmax layer. In each convolutional layer, multiple channels of feature maps are extracted by sliding trainable convolutional kernels across the input feature maps. Hierarchical features with high-level abstraction are extracted using multiple convolutional layers. These feature maps usually go through multiple fully connected layer before reaching the final decision layer. Max pooling layers are often used to reduce the image sizes and to promote spatial invariance of the network. Batch normalization is used to reduce internal covariate shift among the training samples. Weight regularization and dropout layers are used to alleviate data overfitting~\cite{Fu2020}. The loss function is often defined as the difference between the predicted and the target output. CNNs are usually trained by minimizing the loss via gradient back propagation using optimization methods like Adam~\cite{Adam}. % lieber stochastical gradient nehmen?
 % Convolutions and Deconvolutions genauer erklären?!
 
-\subsection{U-Net} \label{SubSec:U-Net}
+\subsubsection{U-Net} \label{SubSubSec:U-Net}
 The U-Net~\cite{U-Net} architecture is an extension of the usual CNN structure often used for image segmentation, however, it can also be applied to image registration tasks. It adopts symmetrical contractive and expansive paths with skip connections between them as seen in Figure~\ref{fig:U-NetArchitecture}. The encoding blocks on the left extract important features from the image using convolution layers and max pooling, which are then stored in the latent space in the middle. From there it is reconstructed using upsampling and (de-)convolutions in the decoding blocks on the right. Additionally, skip connections are used to improve the spatial resolution of the segmentation. This architecture allows effective feature learning from a small number of training datasets~\cite{Fu2020}. 
 
 \begin{figure}[h] %tpb
@@ -597,16 +601,16 @@ The U-Net~\cite{U-Net} architecture is an extension of the usual CNN structure o
 	\label{fig:U-NetArchitecture}
 \end{figure}
 
-\subsection{Autoencoders} \label{SubSec:Autoencoders}
+\subsubsection{Autoencoders} \label{SubSubSec:Autoencoders}
 An autoencoder (AE) is a type of CNNs that learns to reconstruct an image from its input without supervision. AEs usually consists of an encoder which extracts the input features, which are stored a low-dimensional latent state space, similar to a U-Net, and a decoder which restore the original input from the latent space. To prevent an AE from learning an identity function, regularized autoencoders were invented, which can be used for e.g. denoising AEs. Variational AEs (VAEs) are generative models that learn latent representation using a variational approach, which constrains the variability of the outputs. VAEs can been used for anomaly detection and image generation~\cite{Fu2020}.
 
-\subsection{Generative Adversarial Networks} \label{SubSec:GANs}
+\subsubsection{Generative Adversarial Networks} \label{SubSubSec:GANs}
 Generative adversarial networks (GANs) consist of two competing networks, a generator and a discriminator. The generator is trained to generate artificial data that approximate a target data distribution from a low-dimensional latent space similar to an AE. The discriminator is trained to distinguish the artificial data from actual data. The discriminator encourages the generator to predict realistic data by penalizing unrealistic predictions via learning. Therefore, the discriminative loss could be considered as a dynamic network-based loss term. The generator and discriminator both are getting better during training to reach Nash equilibrium. In medical imaging, GANs have been used to perform image synthesis for inter- or intra-modality, such as MRI to synthetic CT and vise versa. In medical image registration, GANs are usually used to either provide additional regularization or translate multi-modal registration to uni-modal registration~\cite{Fu2020}.
 
-\section{Deep Learning for Image Registration} \label{Sec:DLImageRegistration}
+\subsection{Deep Learning for Image Registration} \label{SubSec:DLImageRegistration}
 Recently, there has been a surge in the use of deep learning based approaches for medical image registration. Their success is largely due to their ability to perform fast inference, and the flexibility to leverage auxiliary information such as anatomical masks as part of the training process. The most effective methods, such as \emph{VoxelMorph}~\cite{Voxelmorph}, typically employ a U-Net style architecture to estimate dense spatial deformation fields. These methods require only one forward pass during inference, making them orders of magnitude faster than traditional iterative methods. Following the success of \emph{VoxelMorph}, numerous deep neural networks have been proposed for various registration tasks~\cite{Fourier-Net+}. Other approaches also utilize CNNs, AEs and GANs. Typical strategies are discussed in more detail in the following sections.
 
-\subsection{Supervised Registration} \label{SubSec:SupervisedRegistration}
+\subsubsection{Supervised Registration} \label{SubSubSec:SupervisedRegistration}
 Supervised registration describes training a network with a ground truth displacement field that is either real (created by hand) or synthetic (generated via traditional iterative registration algorithms). Thus the loss can easily be calculated as the difference in the displacement fields of the network prediction and the ground truth (see Figure~\ref{fig:SupervisedRegistration} for a visual overview). These methods have achieved notable results with real displacement fields as supervision. However, this approach is very limited by the size and the diversity of the dataset. As the displacement fields are often calculated by conventional algorithms their effectiveness might be limited for difficult problems with which the traditional algorithms struggle. Fully supervised methods are widely studied and have notable results, but the generation of real or synthetic displacement fields is hard, and these displacements fields might be different from the real ground truth, which can impact the accuracy and efficiency of these kinds of methods~\cite{Zou2022}. Notable approaches include \emph{BIRNet}~\cite{BIRNet} and \emph{LAPNet}~\cite{LAPNet}, however the latter works in the k-space domain.
 
 \begin{figure}[h] %tpb
@@ -618,7 +622,7 @@ Supervised registration describes training a network with a ground truth displac
 \end{figure}
 
 
-\subsection{Unsupervised Registration} \label{SubSec:UnsupervisedRegistration}
+\subsubsection{Unsupervised Registration} \label{SubSubSec:UnsupervisedRegistration}
 As the preparation of the ground truth displacement field for supervised methods is inconvenient, limitations in generalizing results in different domains and various registration tasks are inevitable. Thus, unsupervised registration has a more convenient training process with paired images as inputs, but without a ground truth. Generally, unsupervised learning consists of similarity-based (see Figure~\ref{fig:UnsupervisedRegistration}) and GAN-based methods (see Figure~\ref{fig:GANRegistration}), where the loss function computes the similarity between the aligned images and the smoothness of the displacement field, rather than the difference to a ground truth~\cite{Zou2022}. Well known example are \emph{IC-Net}~\cite{IC-Net},  \emph{VoxelMorph}~\cite{Voxelmorph}, \emph{TransMorph}~\cite{TransMorph} and \emph{SYMNet}~\cite{SYM-Net}.
 
 \begin{figure}[h] %tpb
@@ -637,14 +641,14 @@ As the preparation of the ground truth displacement field for supervised methods
 	\label{fig:GANRegistration}
 \end{figure}
 
-\section{Network Training and Testing} \label{Sec:NetworkTrainingAndTesting}
+\subsection{Network Training and Testing} \label{SubSec:NetworkTrainingAndTesting}
 In order to train any neural network, a large amount of data is needed. This data can take many forms such as videos, images, audio, text and many more. However, the total data set is usually devided into three subsets: the training, validation and testing subset. 
 
-\subsection{Training and Back-Propagation}
+\subsubsection{Training and Back-Propagation}
 The first subset is used for, as the name suggests, the training of the network. This if often the largest of the subsets and should include at lot of variance for the network to learn well. Neural networks in general learn by adapting their weights to perform on increasingly better at a specific task and on a specific dataset/domain. This is done in a process called back-propagation, where the loss calculated between the current output of the model, which is acquired by a simple forward pass through the network, and the desired output is propagated backwards through the model and the weights are optimized using e.g. gradiant decent or similar methods. \\
 The second subsets is also used during the training, but is not learned, i.e. no back-propagation is performed. This is done to validate the networks training process and to prevent potential overfitting. Overfitting is a common problem, especially for larger networks, where the network learns every example from the training set, but no general properties as intended. To prevent this, the unseen validation data can be repeatedly used, as it is not learned by the network, to see whether the network improves on unseen data. Once it has been trained for a long time and the validation performance stagnates, or in the worst case even drops, the training process can be stopped. This is known as early stopping and is a very common strategy to prevent overfitting while optimizing training time.\\
 
-\subsection{Testing and Evaluation Metrics} \label{SubSec:TestingEvalutionMetrics}
+\subsubsection{Testing and Evaluation Metrics} \label{SubSubSec:TestingEvalutionMetrics}
 The last subset is the testing set, which is used for the final evaluation of the models performance. These usually include tests for the networks performance, as well as memory consumption and inference/execution time. It is important that the test set has not been used for training and is completely unseen by the network. This may sound trivial, but for datasets with a lot of patients providing data all of the data of the patient should be withheld for the testing, which can easily be overlooked.\\
 Different metrics can be used for evaluation of a networks registration performance including similarity metrics computed on the images as well as properties of the generated displacement fields. \\
 The mean squared error (MSE) is calculated between a fixed (ground truth) image and the warped image giving a pixel-wise comparison:
@@ -688,10 +692,10 @@ for a point $p$ and encode the local stretching, shearing and rotating of the di
 %%%%%  Methodology %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-%\chapter{Methodology}
-%In this chapter the main part of the actual work is discussed.
+\chapter{Materials and Methods}
+In this chapter, the networks, data and experiments are discussed.
 
-\chapter{Data}	\label{Ch:Data}
+\section{Data}	\label{Sec:Data}
 In the following chapter, the datasets used in this thesis are presented and potential pre-processing steps, as well as uses, discussed. 
 %The first dataset called \emph{OASIS}, containing MRI brain scans, was used in the original publications for training and evaluation of both \emph{Fourier-Net} and \emph{Fourier-Net+}. It was thus used to get familiar with these networks and their respective work-flows as well as reproducing some results from the paper to ensure that the code works as intended.\\ 
 For our major experiment the \emph{CMRxRecon} dataset was used. The cardiac MRI k-space data was used for extending the networks to frame-to-frame registration in order for them to be integrated into a motion reconstruction pipeline. It already contains subsampled data, but does not provide segmentations for multi-coil data.\\
@@ -721,12 +725,10 @@ Thus a third dataset, the \emph{ACDC} cardiac dataset, was used. While it contai
 %	\label{fig:OASIS}
 %\end{figure}
 
-\section{CMRxRecon Dataset} \label{Sec:CMRxRecon}
+\subsection{CMRxRecon Dataset} \label{SubSec:CMRxRecon}
 The \emph{CMRxRecon} dataset~\cite{CMRxRecon} from the \emph{CMRxRecon2023} challenge specializes in Cardiac magnetic resonance imaging (CMR). The dataset includes 
 %multi-contrast k-space data, consisting of cardiac cine, $\text{T}_1$/$\text{T}_2$-mapping, tagging, phase-contrast (i.e., flow2d), and dark-blood imaging
-fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. One of the goals of the challenge is the reconstruction from subsampling and motion correction for the heart movement.
-
-\subsection{Image Reconstruction} \label{SubSec:ImageReconstruction}
+fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. One of the goals of the challenge is the reconstruction from subsampling and motion correction for the heart movement.\\
 As the data was recorded in the k-space (see Figure~\ref{fig:k-space}) and stored as \emph{.mat} files we first need to reconstruct the images to use them for training and testing of \emph{Fourier-Net/Fourier-Net+}. For this, multi-coil reconstruction algorithms like \emph{SENSE}~\cite{SENSE1} can be used. The sensitivity of the different coils can be seen in Figure~\ref{fig:Coils}, where each coil focuses on a specific area of the image. These images are then stitched together in reconstruction to produce a combined image with great overall contrast.
 %, while Figure~\ref{fig:ImageSlice} contains the complete reconstructed image. 
 The dataset, as mentioned before, contains fully sampled as well as subsampled k-space data (see Figure~\ref{fig:fullySampled} and Figure~\ref{fig:subSampled}), with the latter being typically used to accelerate the MRI acquisition process. This is done by not using all of the available k-space data, but rather masking the signal to achieve the subsampling. The center region of the k-space is always fully sampled, but the outer regions are subsampled depending on the sampling strategy~\cite{SamplingStrategies}. The dataset contains subsampled k-space data for 4x, 8x and 10x acceleration with the latter of course leading to more distortions in the reconstructed image as the subsampling can induce image reconstruction artifacts. This can be seen in Figure~\ref{fig:subSampledImage}, where the image reconstructed from 4x accelerated ($R=4$) k-space data seems blurred when compared to the fully sampled ($R=0$) one in Figure~\ref{fig:fullySampledImage}. 
@@ -874,7 +876,7 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 %	\label{fig:ImageCropping}
 %\end{figure}
 
-\section{ACDC Dataset} \label{Sec:ACDC}
+\subsection{ACDC Dataset} \label{SubSec:ACDC}
 The \emph{ACDC} dataset~\cite{ACDC} from the \emph{Automated Cardiac Diagnosis Challenge (ACDC)} during the \emph{MICCAI 2017} conference. It contains cardiac cine-MRI short-axis data from 150 subjects that were divided into 5 subgroups (4 pathological, 1 healthy). For each subject systolic (see Figure~\ref{fig:Image_ACDC_systolic}) and diastolic frames (see Figure~\ref{fig:Image_ACDC_diastolic}) are provided with corresponding segmentations (see Figure~\ref{fig:Segmentation_ACDC_systolic} and ~\ref{fig:Segmentation_ACDC_diastolic}), which enables direct comparison via e.g. the Dice score. The segmentations contain only four values with 0, 1, 2 and 3 representing pixels located in the background, in the RV cavity, in the myocardium, and in the LV cavity. The frames themselves are 3D volumes with size $216 \times 256 \times 10$, thus ten image slices can be extracted which each have size $216 \times 256$. The same holds true for the segmentation, which means that both the image data and segmentations can generated in the same manner.\\
 For the training data, the original 4D data was used as we do not require the segmentations for the end-systolic and end-diastolic frames. As the 4D data has size $216 \times 256 \times 10 \times 30$ we can extract 30 frames for each of the ten slices. These can be sorted into 251376 image pairs for training. For the validation and test data the end-systolic and end-diastolic frames with their segmentations were used given us 641 image pairs each as we can only have these two frames to align.
 
@@ -910,10 +912,10 @@ For the training data, the original 4D data was used as we do not require the se
 \end{figure}
 
 
-\chapter{Network Architectures} \label{Ch:NetworkArchitecture}
+\section{Network Architectures} \label{Sec:NetworkArchitecture}
 As a starting point \emph{Fourier-Net}~\cite{Fourier-Net} and its successor \emph{Fourier-Net+}~\cite{Fourier-Net+} were used. These networks, which are explained in the following pages, enable fast and accurate registration while needing less resources compared to similar approaches. These attributes are very beneficial for a potential application like motion correction because the current networks, e.g. \emph{LAPNet}~\cite{LAPNet}, are usually supervised and require large computational resources.
 
-\section{Fourier-Net}	\label{Sec:Fourier-Net}
+\subsection{Fourier-Net}	\label{SubSec:Fourier-Net}
 \emph{Fourier-Net} is a new unsupervised approach that aims to learn a low-dimensional representation of the displacement field in a band-limited Fourier domain instead of the full field in the spatial domain. This band-limited representation is then decoded by a model-driven decoder to the dense, full-resolution displacement field in the spatial domain. This allows for fewer parameters and computational operations, resulting in faster inference speeds~\cite{Fourier-Net}. The architecture is based on the U-Net~\cite{U-Net}, like most deep registration approaches, but replaces the expanding path with a parameter-free model-driven decoder as mentioned before. The encoder of \emph{Fourier-Net} consists of a CNN, which takes two images (fixed and moving) as inputs. The output is a displacement field that is then converted from the spatial domain into the Fourier domain via an discrete Fourier transformation (DFT). From there, this band-limiting representation 
 %of the displacement field 
 is padded with zeros to the full resolution of the original displacement field. The field is then recovered by using the inverse DFT (iDFT) to convert it back into the spatial domain. This displacement field is then used to warp the moving image into the fixed image. Additionally, squaring and scaling layers~\cite{Dalca2018} can be added before warping the image in order to encourage a diffeomorphism in final deformation. 
@@ -926,7 +928,7 @@ is padded with zeros to the full resolution of the original displacement field. 
 	\label{fig:Fourier-Net}
 \end{figure}
 
-\subsection{Encoder}	\label{SubSec:Encoder}
+\subsubsection{Encoder}	\label{SubSubSec:Encoder}
 The encoder of \emph{Fourier-Net} consists of a CNN that generates the displacement field between the two inputs followed by a DFT layer that produces a band-limited representation of the full displacement field. The fully convolutional neural network (FCN) from \emph{SYMNet}~\cite{SYM-Net} was modified to function as the CNN of the encoder. Its (original) architecture (see Figure~\ref{fig:SYMNet}) is again based on the \emph{U-Net} with a contracting and expanding path. 
 \begin{figure}[htpb]
 	\centering
@@ -958,7 +960,7 @@ as:
 with the DFT layer $\mathcal{F}$, full-resolution spatial displacement field $\phi$ and the complex band-limited displacement field $\mathbb{B}_\phi$. The low dimensional representation $\mathbb{S}_\phi$ actually contains all the information of the band-limited Fourier coefficients in $\mathbb{B}_\phi$. As such, \emph{Fourier-Net} does not need to learn the coefficients of $\mathbb{B}_\phi$, but instead only the real-valued coefficients in $\mathbb{S}_\phi$, which is the low dimensional spatial representation of the full-resolution spatial displacement field $\phi$, which is then reconstructed by the decoder. 
 
 
-\subsection{Decoder} \label{SubSec:Decoder}
+\subsubsection{Decoder} \label{SubSubSec:Decoder}
 The decoder contains no learnable parameters, instead the usual expansive path is replaced with a zero-padding layer, an iDFT layer, and an optional squaring and scaling layer. \\
 The output from the encoder is a band-limited representation $\mathbb{B}_\phi$ in the frequency domain of the low dimensional displacement field $\mathbb{S}_\phi$ in the spatial domain. To recover the full-resolution displacement field $\phi$ in the spatial domain, we first pad the patch $\mathbb{B}_\phi$, containing mostly low frequency signals, to the original image resolution with zeros. We then feed the zero-padded complex-valued coefficients, denoted as $\mathcal{F}(\phi)$, to an iDFT layer consisting of two steps: shifting the Fourier coefficients from centers to corners and then applying the iDFT to convert them into the spatial domain:
 \begin{equation} \label{eq:iDFT}
@@ -982,7 +984,7 @@ As both padding and iDFT layers are differentiable, \emph{Fourier-Net} can be op
 	\label{fig:DecoderDisplacementField}
 \end{figure} 
 
-\subsection{Diffeomorphic Transforms} \label{SubSec:DiffeomorphicTransforms}
+\subsubsection{Diffeomorphic Transforms} \label{SubSubSec:DiffeomorphicTransforms}
 Diffeomorphic deformations are differentiable and invertible, thus preserving topology, which is a desirable property for transformations. $\phi: \mathbb{R}^N \rightarrow \mathbb{R}^N$ represents the deformation that maps the coordinates from one image to coordinates in another image, as long as both images have the dimension $N$. When using a stationary velocity field representation like e.g. \emph{DARTEL}~\cite{DARTEL}, the deformation field is defined through the following ordinary differential equation (ODE)~\cite{Dalca2018}:
 \begin{equation}
 	\frac{\partial \phi^{(t)}}{\partial t} = v(\phi^{(t)}),
@@ -997,7 +999,7 @@ As diffeomorphic deformations are defined as smooth and invertible deformations,
 Thus, the diffeomorphic deformation can be efficiently calculated. When used, the specific version is then called \emph{Fourier-Net Diff} to differentiate it from the baseline version.
 
 
-\subsection{Spatial Transformer} \label{SubSec:SpatialTransformer}
+\subsubsection{Spatial Transformer} \label{SubSubSec:SpatialTransformer}
 The warping layer of \emph{Fourier-Net} utilizes the \emph{Spatial Transformer}~\cite{SpatialTransformer}, which allows for spatial image manipulation within the network. This is a differentiable and learnable module for neural networks which applies a spatial transformation to a feature map during a single forward pass. The spatial transformer mechanism is split into three parts as seen in Figure~\ref{fig:SpatialTransformer}. First is the localization network, which takes the input and outputs the parameters for the transformation. These are then used to create a sample grid using the grid generator. Lastly, the sampler produces the output feature map based on the input at the grid points.\\
 From the input feature map $U \in \mathbb{R}^{H \times W \times C}$ with width $W$, height $H$ and channels $C$ the localization network $f_{\text{loc}}$ computes the parameters $\theta = f_{\text{loc}}(U)$ of the transformation $\mathcal{T}_\theta$ which is later applied to the feature map. Thus the size of $\theta$ varies depending on the transformation. 
 %(e.g. 6D for an affine transformation). 
@@ -1017,7 +1019,7 @@ with $\Phi_x$ and $\Phi_y$ being the parameters for a generic sampling  kernel $
 \end{figure}
 
 
-\subsection{Loss Function} \label{SubSec:LossFunction}
+\subsubsection{Loss Function} \label{SubSubSec:LossFunction}
 The loss function consists of two parts to enable unsupervised learning, which are balanced using the scalar parameter $\lambda$. The first, $\mathcal{L}_{1}$, measures the similarity between the fixed image and the moving image after warping, while the second, $\mathcal{L}_{2}$, ensures a smooth displacement field. Thus, the unsupervised loss $\mathcal{L}$ can be calculated as follows:
 \begin{equation}	\label{eq:unsupervisedLoss}
 	\begin{split} 
@@ -1069,7 +1071,7 @@ When using the squaring and scaling layers, thus making the deformation of the m
 %\subsection{Training on CMRxRecon}
 %For the further experiments we used the \emph{CMRxRecon} dataset. We reconstructed 2D images and trained the network similar to the \emph{OASIS} dataset.
 
-\section{Fourier Net+} \label{Sec:Fourier-Net+}
+\subsection{Fourier Net+} \label{SubSec:Fourier-Net+}
 \emph{Fourier-Net+}, as the name suggests, is an extension of Fourier-Net which takes the band-limited spatial representation of the images as input, instead of their original full-resolution counterparts. This leads to further reduction in the number of convolutional layers in the contracting path of the network, resulting in a decrease of parameters, memory usage, and computational operations. This makes \emph{Fourier-Net+} even more efficient than its predecessor~\cite{Fourier-Net+}.\\
 As seen in Figure~\ref{fig:Fourier-Net+}, the network architecture is almost the same as for \emph{Fourier-Net} (see Figure~\ref{fig:Fourier-Net} for comparison). However, while the decoder, and thus the loss function, remain the same, the encoder is slightly altered to make the network even more efficient. For this, similarly to the decoder, a DFT is used, however this time the idea is applied to the input images. These are first transformed into the Fourier domain, then low-pass filtered by center-cropping and finally reconstructed from their band-limited representation back into the spatial domain via an iDFT. The two images, now compressed, are the input for the encoder of \emph{Fourier-Net}, meaning the CNN and following DFT. However, due to the band-limiting before the CNN, the latter can be made much more light-weight, thus reducing computational cost. This is visualized in Figure~\ref{fig:Fourier-Net+CNN}. Thus, \emph{Fourier-Net+} too is overall lighter than the baseline \emph{Fourier-Net} in terms of the number of parameters and computations. However, such a light network may face limitations in accurately capturing complex deformations. To counter this potential weakness, the authors propose a cascaded version of \emph{Fourier-Net+}, which uses multiple versions of \emph{Fourier-Net+} cascaded one after the other to achieve a better overall displacement field~\cite{Fourier-Net+}. A schematic for this can be seen in Figure~\ref{fig:Fourier-Net+Cascaded}.
 
@@ -1081,7 +1083,7 @@ As seen in Figure~\ref{fig:Fourier-Net+}, the network architecture is almost the
 	\label{fig:Fourier-Net+}
 \end{figure}
 
-\subsection{Changes to the Encoder} \label{SubSec:ChangesEncoder}
+\subsubsection{Changes to the Encoder} \label{SubSubSec:ChangesEncoder}
 In order to further reduce the amount of computational operations, \emph{Fourier-Net+} discards the early layers of the encoder. Instead, a DFT $\mathcal{F}(I_M)$ followed by a center-crop to produce the band-limited representation $\mathbb{B}_{I_M}$ in the frequency domain and iDFT are used to get the spatial patch $\mathbb{S}_{I_M}$, while the rest of the encoder from \emph{Fourier-Net} stays the same. The input $I_M$ is thus compressed to a lower resolution (i.e. band-limited) using the frequency space, which reduces the computational cost. This process is visualized in Figure~\ref{fig:Fourier-Net+EncoderCompression}. The encoder of \emph{Fourier-Net+} has several convolutional layers less in the contracting path compared to \emph{Fourier-Net}, which leads to a further accelerated registration process while reducing the memory footprint. These advantages are visualized in Figure~\ref{fig:Fourier-Net+CNN} where the amount of different layers between a conventional \emph{U-Net}, \emph{Fourier-Net} (with the smaller decoder) and \emph{Fourier-Net+} (with a smaller encoder and decoder) are shown.
 \begin{figure}[htpb]
 	\centering
@@ -1098,7 +1100,7 @@ In order to further reduce the amount of computational operations, \emph{Fourier
 	\label{fig:Fourier-Net+CNN}
 \end{figure}
 
-\subsection{Effects of Cascading} \label{SubSec:EffectsCascading}
+\subsubsection{Effects of Cascading} \label{SubSubSec:EffectsCascading}
 As seen in the previous section, \emph{Fourier-Net+} is lighter than \emph{Fourier-Net} due to the band-limited representation of both images and deformations lowering the number of parameters and computations. This, however, can lead to limitations when trying to accurately capture complex deformations. To this end, a cascaded version of \emph{Fourier-Net+} called \emph{K$\times$Fourier-Net+} (see Figure~\ref{fig:Fourier-Net+Cascaded}), with $K$ denoting the amount of cascades, can be used where the the warped image of one cascade is used as the moving image of the next. It is important to note that the weights are not shared between cascades. The squaring and scaling layers, in case a diffeomorphic deformation is wanted, are applied after the last cascade. The same is true for the calculation of the loss function.\\
 In order to more accurately describe this version of \emph{Fourier-Net+} one can look at the in- and outputs of the different cascades. The first cascade of \emph{K$\times$Fourier-Net+} has the moving image $I_M$ and fixed image $I_F$ as inputs. While the latter always stays the same for all cascades the warped image $I_M^{w(1)}$ from the first cascade is used as input for the second cascade instead of the original moving image. Thus, in general $I_M^{w(k-1)}$ and $I_F$ are the inputs for a cascade $k \in [1, K]$ with output $\delta \phi^{(k)}$. Furthermore, $I_M^{w(k)}$ can be defined as:
 \begin{equation}
@@ -1118,85 +1120,85 @@ Thus, the output displacement field of the $K$-th cascade $\phi^{(K)}$ is the fi
 	\label{fig:Fourier-Net+Cascaded}
 \end{figure}
 
-\chapter{Experiments} \label{Ch:Experiments}
+\section{Experiments} \label{Sec:Experiments}
 In the following chapter the different experiments that were conducted are described and explained. 
 %First was frame-to-frame registration on cardiac data from the \emph{CMRxRecon} dataset to lay the basis for later experiments with a motion-correcting reconstruction pipeline.
 First, experiments were conducted on the \emph{CMRxRecon} dataset to find the optimal parameters for our model. As this dataset lacks ground truth segmentations, the \emph{ACDC} dataset was used to extend these tests.
 
 
-\section{Parameter Studies on the CMRxRecon Dataset} \label{Sec:ParameterStudies}
+\subsection{Parameter Studies on the CMRxRecon Dataset} \label{SubSec:ParameterStudies}
 As a first step, frame-to-frame registration on the \emph{CMRxRecon} dataset was tested. The goal of these initial experiments was to examine whether the network could learn to align the cardiac image pairs despite the movement between the frames. To start, different parameters were tested in order to find the optimal model parameters for the \emph{CMRxRecon} dataset. 
 %This would hopefully form the basis to use the networks in a motion-corrected reconstruction pipeline later. 
 \\
 As discussed in section~\ref{SubSec:Pre-Processing}, the CMR images were cropped to extract the moving cardiac region. This was done for both the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) data. Image pairs for each slice from each patient of the training set were generated to train the network. In order to evaluate the training progress the mean MSE and mean SSIM metrics calculated the validation data at each checkpoint (usually every 1000 iterations). The best model parameters, as determined by the metrics, were saved in a separate folder. To further evaluate the training success the unseen test data containing new patients was used. To benchmark the networks training success the MSE and SSIM were again used, but the mean inference time and the percentage of non-positive Jacobian determinant of deformation ($\% \, |J_{\phi}|\leq0$) were also calculated. The procedure, however, was slightly altered for the subsampled data as only the displacement field of the model was used to align the corresponding fully sampled image pairs. The evaluation metrics were then calculated on these images for better comparability.
 
-\subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:Fourier-NetvsFourier-Net+}
+\subsubsection{Fourier-Net versus Fourier-Net+} \label{SubSubSec:Fourier-NetvsFourier-Net+}
 First, the baseline network \emph{Fourier-Net} was compared to its newer version \emph{4xFourier-Net+} once with both using the diffeomorphic version and once without the transform. Thus the effect of the diffeomorphic deformation can be compared to the normal transformation on \emph{Fourier-Net} and \emph{4xFourier-Net+}. All of the experiments were conducted on the fully sampled data as the subsampling should not effect the tested properties. The other parameters were also kept constant with a learning rate of $0.0001$, MSE-loss and $\lambda = 0.01$. FT crop in \emph{4xFourier-Net+} was set to $24 \times 24$.
 
 
-\subsection{Starting Channel Size} \label{SubSec:StartingChannels}
+\subsubsection{Starting Channel Size} \label{SubSubSec:StartingChannels}
 Next, the impact of the starting channels was examined. For this, \emph{4xFourier-Net+} was trained with MSE-loss, a learning rate of $0.0001$, $\lambda = 0.01$, FT crop of $24 \times 24$ and no diffeomorphic transform. The experiments were again only conducted on the fully sampled data. Three different channel sizes were used for training \emph{Fourier-Net+}: $8$, $16$ and $32$. Due to the early stopping the networks were trained for 17, 17 and 10 epochs respectively. 
 %\\Similarly, \emph{Fourier-Net} was tested with the same parameters for channel sizes $8$, $16$ and $32$. These were trained for y epochs.
 
 
-\subsection{Quantitative Comparison with NiftyReg} \label{SubSec:QuantitativeComparisonNiftyReg}
+\subsubsection{Quantitative Comparison with NiftyReg} \label{SubSubSec:QuantitativeComparisonNiftyReg}
 To establish a baseline, the similarity metrics were calculated between the unaligned test data. \emph{4xFourier-Net+} was then trained with the MSE-loss, 8 channels, $\lambda = 0.01$ and a learning rate of $0.0001$. \emph{NiftyReg}, a traditional registration algorithm that iteratively optimizes the displacement~\cite{NiftiReg}, was used for comparison. \emph{NiftyReg} provides the warped image for the fully sampled data directly, but for the subsampled data the control point grid produced by \emph{NiftyReg} was used to resample the corresponding fully sampled data for comparability. Thus only the fully sampled test data is needed for an unregistrated baseline as the subsampled data is only used to produce the displacement which is then used to warp the fully sampled data. 
 %The MSE of the registration methods should thus not exceed  $0.000535$ and the SSIM should be higher than $0.91714$.
 
 
-\section{Parameter Tests on the ACDC Dataset}
+\subsection{Parameter Tests on the ACDC Dataset}
 As the evaluation on the \emph{CMRxRecon} dataset is limited to image similarity measures, further testing was done on the \emph{ACDC} dataset which contains cardiac data with segmentations. These can be used to better evaluate the registration performance by using e.g. the Dice score.
 
 
-\subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:Fourier-NetvsFourier-Net+}
+\subsubsection{Fourier-Net versus Fourier-Net+} \label{SubSubSec:Fourier-NetvsFourier-Net+}
 First, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} are compared for both normal and diffeomorphic versions. Additionally, network versions creating dense instead of band-limited displacements were used a baseline for the best achievable performance. The registration performance was evaluated on the test set using the percentage of Dice scores calculated with and without the background label, percentage of SSIM, MSE multiplied by $10^-3$ (denoted by m for milli) and the percentage of negative Jacobian determinant of deformation. The mean inference time on the GPU together with memory consumption for each model are also added to the comparison with the latter containing number of trainable model parameters, mult-add operations (in millions or billion as denoted by M or G) and the total memory in Megabyte (MB). The latter is only given for the normal versions as the diffeomorphic version require the same amount of memory as well as the baseline dense versions. The first network was trained for a maximum of 15 epochs with early stopping activating after 3 epochs without improvement of the validation Dice score. The other variants were than trained with the same number of epochs, which worked out to be only 6 epochs due to the large training set in the experiments without any data augmentation. All networks were trained on the fully sampled \emph{ACDC} data with MSE as the unsupervised similarity loss, a channel size of 8, learning rate of 0.0001 and $\lambda=0.01$. \emph{Fourier-Net+} and \emph{4xFourier-Net} used a FT crop size of $48 \times 48$ for these experiments. All of these parameters were constant for the diffeomorphic and dense versions of the networks. The results and subsequent discussion can be found in section~\ref{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}.
 
 
-\subsection{Starting Channel Size} \label{SubSec:StartingChannelsACDC}
+\subsubsection{Starting Channel Size} \label{SubSubSec:StartingChannelsACDC}
 Next, the impact of the starting channels on the \emph{ACDC} data was examined as these dictate the number of features that the network uses. For this, \emph{Fourier-Net+} and \emph{4xFourier-Net+} was trained with MSE-loss, a learning rate of $0.0001$, $\lambda = 0.01$, FT crop of $24 \times 24$ and no diffeomorphic transform. The experiments were again only conducted on the fully sampled data. Four different channel sizes were used for training: $8$, $16$, $32$ and $64$. The first network variant was trained with early stopping, which ended at 6 epochs. For better comparability, the other network variants were also trained with the same number of epochs. The registration performance was evaluated on the test set using the percentage of the Dice score calculated once on all labels, once without the background using only the cardiac labels, as well as the percentage of SSIM, MSE multiplied by $10^-3$ and the percentage of negative Jacobian determinant of deformation. Additionally the number of network parameters, number of mult-add operations (in millions or billion as denoted by M or G) and memory consumption in Megabyte (MB) are listed for all network variants to better compare the relationship between registration performance and memory consumption to potentially find a optimal configuration for both performance and efficiency. The mean inference time was measured on GPU in seconds. The results and subsequent discussion can be found in section~\ref{SubSec:ResultsStartingChannelsACDC}.
 
 
-\subsection{Fourier-Transform Crop Size} \label{SubSec:FTCropSize}
+\subsubsection{Fourier-Transform Crop Size} \label{SubSubSec:FTCropSize}
 The FT crop size, used for compressing the input images, is a parameter specific to \emph{Fourier-Net+} and \emph{4xFourier-Net+}. Four different sizes of the FT crop were analyzed: $80 \times 168$, $40 \times 84$, $48 \times 48$ and $24 \times 24$. A larger crop would obviously compress the images less, thus leading to less efficiency, however, a very small crop, while very efficient, might lose some of the image details leading to a decrease in performance. The experiments were again only conducted on the fully sampled data as one would expect similar results on subsampled data. The network variants were trained with MSE as the unsupervised similarity loss, a channel size of 8, learning rate of 0.0001 and $\lambda=0.01$. Again, the networks were trained for only 5 epochs, as this is were the first model ended training due to early stopping. The registration performance was evaluated on the test set using the Dice score calculated once on all labels, once without the background, as well as the SSIM, MSE and the percentage of negative Jacobian determinant of deformation. Additionally, the number of network parameters, number of mult-add operations in millions (M) and memory consumption in Megabyte (MB) are listed for all network variants to better compare the relationship between registration performance and memory consumption to potentially find a optimal configuration for both performance and efficiency. The mean inference time was measured on GPU in seconds. The results and subsequent discussion can be found in section~\ref{SubSec:ResultsFTCropSize}.
 
 
-\subsection{Comparison with VoxelMorph} \label{SubSec:ComparisonVoxelMorph}
+\subsubsection{Comparison with VoxelMorph} \label{SubSubSec:ComparisonVoxelMorph}
 After finding parameters which optimize registration performance while trying to minimize memory consumption, a comparison to another commonly used registration network should be made. For this, a diffeomorphic version~\cite{VoxelMorphDiff} of the well known \emph{VoxelMorph}~\cite{Voxelmorph} was used with integration steps $T=7$. It was trained with the default number of layers, MSE as the similarity loss, a learning rate of 0.0001, $\lambda=0.01$ and provides a dense displacement field to align the image pair. For comparison \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were trained for 6 epochs with MSE as the unsupervised similarity loss, a channel size of 16, learning rate of 0.0001 and $\lambda=0.01$ as well as a FT crop size of $48 \times 48$, which provide a good balance of performance and memory imprint for the networks. To evaluate registration performance, the Dice score was again computed for all labels and without the background as well as the similarity metrics SSIM, MSE and the percentage of negative Jacobian determinant of deformation. All networks were trained on the fully sampled \emph{ACDC} data. The inference times of all networks were computed on the GPU and the number of network parameters, number of mult-add operations in billions (G) and memory consumption in Megabyte (MB) are also given to further compare the efficiency of the networks. The results can be seen in section~\ref{SubSec:ResultsComparisonVoxelMorph}.
 
 
-\subsection{Dense Displacement on Accelerated Data} \label{SubSec:DenseDisplacementAcc}
+\subsubsection{Dense Displacement on Accelerated Data} \label{SubSubSec:DenseDisplacementAcc}
 The difference between a dense displacement field and a band-limited one was already explored in section~\ref{SubSec:Fourier-NetvsFourier-Net+}. This, however, only includes fully sampled data, not accelerated data. This section explores potential performance changes on the latter with the hypothesis that the network variants with the dense displacement will perform worse than the variants with the band-limited displacement field for strongly subsampled data. This expectation stems from the fact that frequencies outside the center region of the k-space are dropped for the accelerated data thus reducing the advantage of the dense displacement in comparison to the band-limited (i.e. center-cropped) displacement. \\
 The tests again included \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}, which were all trained for 6 epochs with MSE as the unsupervised similarity loss, a channel size of 16, learning rate of 0.0001 and $\lambda=0.01$. The registration performance was evaluated on the test set using the Dice score calculated once on all labels, once without the background, as well as the SSIM, MSE and the percentage of negative Jacobian determinant of deformation. Additionally, the number of network parameters, number of mult-add operations in millions (M) and memory consumption in Megabyte (MB) are given.
 
-\subsection{Comparison on Subsampled Data} \label{SubSec:ComparisonSubsampling}
+\subsubsection{Comparison on Subsampled Data} \label{SubSubSec:ComparisonSubsampling}
 After comparing \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} with both dense and band-limited displacement fields as well as another comparison with \emph{VoxelMorph} on fully sampled data 
 %to access the difference in registration performance and memory consumption 
 an extension to subsampled data needs to be made. For this \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were compared to a baseline consisting of the unaligned test image pairs as well as \emph{NiftyReg}, \emph{VoxelMorph} and \emph{LAPNet}. Thus, observations of the performance on accelerated data can be made as well as comparisons to the aligned baseline (which all methods should aim to beat), a traditional registration algorithm, a dense registration network working in the image domain and a another dense network which works in the k-space domain.\\
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were trained for 6 epochs with MSE as the unsupervised similarity loss, a channel size of 16, learning rate of 0.0001 and $\lambda=0.01$ as well as a FT crop size of $48 \times 48$ for all subsampling data. VoxelMorph was trained with default layers and MSE as the similarity loss, a learning rate of 0.0001 and $\lambda=0.01$. Three different acceleration factors were tested: $R=4$, $R=8$ and $R=10$. For reference, the data for the fully sampled data ($R=0$) is also provided. The registration performance of all methods was evaluated on the test set using the Dice score calculated once on all labels, once without the background, as well as the SSIM and MSE as image metrics. All times are computed on CPU for better comparability as \emph{NiftyReg} currently only works on CPU as the GPU capable versions were deprecated and the other networks would gain an unfair time advantage when ran on GPU. The baseline obviously has no time associated as it only denotes the metrics on the test data before registration. The results and an comprehensive discussion are provided in section~\ref{SubSec:ResultsComparisonSubsampling}.
 
 
-\section{K-Space and Contrastive Loss Experiments} \label{Sec:K-SpaceAndContrastiveLossExperiments}
+\subsection{K-Space and Contrastive Loss Experiments} \label{SubSec:K-SpaceAndContrastiveLossExperiments}
 In this section, changes to the network training and loss function are discussed.
 
-\subsection{K-Space Loss} \label{SubSec:K-SpaceLoss}
+\subsubsection{K-Space Loss} \label{SubSubSec:K-SpaceLoss}
 As seen in the section~\ref{SubSec:ResultsComparisonSubsampling}, the performance in terms of Dice decreases for all methods on highly subsampled/accelerated data due to reconstruction artifacts present in the image domain as a consequence of the missing frequencies in the k-space domain. However, since the goal is to maintain performance on subsampled data, it might prove useful to use k-space information for the loss calculation and thus for the network training as it should not contain artifacts compared to the image domain. This would act as a kind of data consistency contraint during training. In order to achieve this, the similarity loss for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} was calculated not on the warped and fixed images, but instead on their corresponding masked k-spaces. This could hopefully still provide the network with useful information during training that is free of any aliasing artifacts, which are limiting the performance on subsampled data. The k-spaces were masked as to only compare the sampled frequencies to avoid large differences between the deleted frequencies of the fixed image with potential interpolated frequencies of the warped image. \\
 For this both MSE and the relativeL2-loss were used for the experiments with the same parameters as before (channel size 16, 0.0001 learning rate and $\lambda = 0.01$). The smoothness regularization was not changed. Results can be seen in section~\ref{SubSec:ResultsK-SpaceLoss}.
 
 %\subsection{Changes to the Network Architecture}
 %Next, a change to the network architecture was tested that changed the domain from image to k-space in hopes of avoiding the reconstruction artifacts present in highly accelerated images. For this we first looked at \emph{LAPNet} which works on k-space data, but is trained in a supervised manner. As a first test, we tried to train it in an unsupervised method with the same pipeline as \emph{Fourier-Net}. To achieve this we needed to generate $33 \times 33$ crops of the k-spaces as LAPNet iteratively predicts the displacement for the center-pixel of each crop, thus producing a dense displacement for the whole image.
 
-\subsection{Contrastive Learning} \label{SubSec:ContrastiveLearning}
+\subsubsection{Contrastive Learning} \label{SubSubSec:ContrastiveLearning}
 Another idea to improve the networks learning on subsampled data was to use contrastive learning to pull the features for displacements on accelerated data closer to the features of the fully sampled data. This would only require a bit more training time as the network would first be given the fully sampled data to generate the features for the displacement (taken from the second to last step in the encoder) and then be subsampled data to calculate the image similarity loss as usual. However, instead of the smoothness regularization for the displacement, the InfoNTC~\cite{InfoNCE} aka the constrative loss is used to pull the features of the subsampled data closer to those of the fully sampled data at the same position in the image as positive pairs. All other positions are used as negative training pairs. For computational efficiency only every 10th point was chosen for this.\\
 It is important to weigh the contrastive loss appropriately to not overpower the image similarity loss. For this \emph{Fourier-Net} was trained with MSE as the images similarity, an channel size of 16, learning rate of $0.0001$ and four different weightings: \\
 $\lambda = \{0.0001, 0.0005, 0.001, 0.005\}$. The results can be seen in section~\ref{SubSec:ContrastiveLearningResults}.
 
-\section{Integration into a Motion-Compensated Reconstruction Pipeline} \label{Sec:IntegrationMotion-CompensatedReconstructionPipeline}
+\subsection{Integration into a Motion-Compensated Reconstruction Pipeline} \label{SubSec:IntegrationMotion-CompensatedReconstructionPipeline}
 Describe qualitative test to see whether the network can be used to improve a reconstruction pipeline for cardiac data.
 
-\subsection{Training Networks}
+\subsubsection{Training Networks}
 Before implementing the reconstruction pipeline we tested the domain translation capabilities of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}.
 
-\subsection{Reconstruction Pipeline}
+\subsubsection{Reconstruction Pipeline}
 After ensuring that the previous results were translatable to the new data, the reconstruction pipeline had to be evaluated. As discussed in section~\ref{Sec:Motion-CompensatedReconstruction}, neural networks can be used in motion-compensated MRI reconstruction pipelines for either the reconstruction or the corrected of motion between the frames. As \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were already trained for frame-to-frame registration, they could be easily used for the latter. ESPIRiT~\cite{ESPIRiT} was used to simulate the coil sensitivity maps needed for a SENSE-type reconstruction from the provided k-space data using an eigenvalue decomposition. For the SENSE reconstruction iterative conjugate gradient was used as it is very memory effectiv due to \emph{Fourier-Net+} being a very small network and the fact that no big network is needed for the actual reconstruction as a lightweight algorithm does the work. \\ 
 This experiment was conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. To simulate this motion or mis-triggering, a similar strategy to~\cite{Oksuz2020} was used, swapping $z=\{16,32\}$ k-space lines between the frames in k-space. These new fully sampled frames were then subsampled using the subsampling masks before an inverse FT to generate the corrupted images for the pipeline. An overview of the whole reconstruction pipeline  can be seen in Figure~\ref{fig:ReconstructionPipeline}.\\
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an inverse FT for frame-to-frame registration using the optimal settings obtained in sections~\ref{Sec:ParameterStudies} and~\ref{Sec:K-SpaceAndContrastiveLossExperiments} (MSE-loss, 16 channels, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:TestingEvalutionMetrics}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ReconstructionPipelineResults}.
@@ -1211,12 +1213,12 @@ This experiment was conducted on the \emph{CMRxRecon} dataset as it provides the
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Results and Discussion %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%% Results %%
+%%%%%%%%%%%%%
 
-\chapter{Results and Discussion} \label{Ch:ResultsDiscussion}
-In this chapter, the results for the experiment described in the previous chapter will be examined. Possible implications will be discussed to determine the effectiveness of this new method.
+\chapter{Results} \label{Ch:Results}
+In this chapter, the results for the experiment described in the previous chapter will be examined. 
 
 %\section{Frame-to-Frame Registration} \label{Sec:Frame-to-FrameRegistration}
 %As mentioned in section~\ref{Sec:Frame-to-Frame_CMRxRecon}, frame-to-frame registration on the \emph{CMRxRecon} dataset was the first set of experiments. Goal of these initial tests was to examine whether the network could learn to align the cardiac image despite the movement between the frames. 
@@ -1945,9 +1947,9 @@ After ensuring that the previous results were translatable to the new data, the 
 		\midrule
 		\multirow{5}{*}{\rotatebox{90}{$R=4$}} & Baseline & $52.754 \pm 7.725$ & $27.534 \pm 2.175$ & $74.379 \pm 5.869$ & $0.202 \pm 0.129$ \\  
 		 & VoxelMorph & \textcolor{red}{$52.747 \pm 7.658$} & \textcolor{red}{$27.512 \pm 2.188$} & \textcolor{red}{$74.349 \pm 5.900$} & \textcolor{red}{$0.203 \pm 0.129$} \\  
-		 & Fourier-Net & $52.802 \pm 7.708$ & $27.536 \pm 2.197$ & $74.421 \pm 5.937$ & $0.202 \pm 0.128$ \\  
+		 & Fourier-Net & \textcolor{blue}{$52.802 \pm 7.708$} & \textcolor{blue}{$27.536 \pm 2.197$} & \textcolor{blue}{$74.421 \pm 5.937$} & \textcolor{blue}{$0.202 \pm 0.128$} \\  
 		 & Fourier-Net+ & \textcolor{red}{$52.725 \pm 7.724$} & \textcolor{red}{$27.522 \pm 2.198$} & \textcolor{red}{$74.366 \pm 5.892$} & \textcolor{red}{$0.203 \pm 0.129$} \\   
-		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\  
+		 & 4xFourier-Net+ & \textcolor{red}{$52.711 \pm 7.718$} & \textcolor{red}{$27.500 \pm 2.205$} & \textcolor{red}{$74.353 \pm 5.986$} & \textcolor{red}{$0.204 \pm 0.132$} \\  
 		
 		% 8x Accelerated (R=8) 
 		\midrule
@@ -1955,7 +1957,7 @@ After ensuring that the previous results were translatable to the new data, the 
 		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\  
 		 & Fourier-Net & $50.152 \pm 7.325$ & $27.178 \pm 2.202$ & $74.094 \pm 5.826$ & $0.220 \pm 0.140$ \\  
 		 & Fourier-Net+ & $50.159 \pm 7.362$ & $27.196 \pm 2.221$ & $74.119 \pm 5.853$ & $0.220 \pm 0.141$ \\   
-		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
+		 & 4xFourier-Net+ & $50.128 \pm 7.276$ & $27.165 \pm 2.201$ & $74.054 \pm 5.842$ & $0.220 \pm 0.137$ \\ 
 		 	 
 		% 10x Accelerated (R=10) 		 		
 		\midrule		
@@ -1963,10 +1965,19 @@ After ensuring that the previous results were translatable to the new data, the 
 		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\  
 		 & Fourier-Net & \textcolor{red}{$49.255 \pm 7.011$} & \textcolor{red}{$27.024 \pm 2.168$} & \textcolor{red}{$73.952 \pm 5.793$} & $0.227 \pm 0.141$ \\  
 		 & Fourier-Net+ & \textcolor{red}{$49.296 \pm 7.001$} & $27.045 \pm 2.172$ & \textcolor{red}{$74.028 \pm 5.784$} & $0.226 \pm 0.140$ \\   
-		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
+		 & 4xFourier-Net+ & \textcolor{red}{$49.287 \pm 7.066$} & \textcolor{red}{$27.032 \pm 2.176$} & \textcolor{red}{$74.022 \pm 5.820$} & $0.227 \pm 0.143$ \\ 
 		 \bottomrule
 	\end{tabular}
 \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Discussion %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Discussion}
+Possible implications will be discussed to determine the effectiveness of this new method.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%  Conclusion %%%%%
