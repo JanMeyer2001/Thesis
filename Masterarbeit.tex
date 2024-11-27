@@ -1226,120 +1226,120 @@ In this chapter, the results for the experiment described in the previous chapte
 %\section{Frame-to-Frame Registration} \label{Sec:Frame-to-FrameRegistration}
 %As mentioned in section~\ref{Sec:Frame-to-Frame_CMRxRecon}, frame-to-frame registration on the \emph{CMRxRecon} dataset was the first set of experiments. Goal of these initial tests was to examine whether the network could learn to align the cardiac image despite the movement between the frames. 
 
-
-\section{Parameter Studies on the CMRxRecon Dataset} \label{Sec:ParameterStudies}
-Different parameters were tested in order to find the optimal model parameters for usage on the \emph{CMRxRecon} dataset. After some tests on the fully sampled data, a comparison with the traditional iterative algorithm \emph{NiftyReg} was conducted on both the fully sampled and subsampled data.
-
-\subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:ResultsFourier-NetvsFourier-Net+CMRxRecon}
-First, the baseline network \emph{Fourier-Net} was compared to its more efficient successor \emph{4xFourier-Net+} with both using the diffeomorphic version as we can then compare the effect of the diffeomorphic deformation compared to the normal transformation on \emph{4xFourier-Net+}. However, this effect should be similar for \emph{Fourier-Net}. All of the experiments were conducted on the fully sampled data as the subsampling should not effect the tested properties. The baseline MSE (note that all MSE values are multiplied by $10^-3$ as denoted by the m) for unregistrated test images is $0.535$ and the SSIM percentage ($\%$ SSIM) is $91.71$. The results for \emph{Fourier-Net} and \emph{4xFourier-Net+} can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+CMRxRecon}. \\
-The \emph{Fourier-Net} model without the diffeomorphic transform was trained for 17 epochs, while the diffeomorphic version trained for 100 epochs. Despite this, the latter is only marginally better in terms of MSE and SSIM. The percentage of negative Jacobian determinants was actually better for the normal transformation compared to the diffeomorphic one. The normal \emph{4xFourier-Net+} model trained for 37 epochs, while the diffeomorphic version trained for 100 epochs. \emph{4xFourier-Net+} performs slightly worse than \emph{Fourier-Net}, however it is more efficient.
-
-
-\begin{table}[htpb]
-	\centering
-	\caption{Results for \emph{Fourier-Net} and \emph{4xFourier-Net+} on the fully sampled \emph{CMRxRecon} test data with a diffeomorphic transform.}
-	\label{tab:Fourier-NetvsFourier-Net+CMRxRecon}
-	\begin{tabular}{c c c c c} %
-		\toprule
-		Model & MSE (m) & $\%$ SSIM & $\% \, |J_{\phi}|\leq0$ & Time [s] \\
-		\midrule
-		Fourier-Net & $0.319 \pm 0.352$ &  $93.29 \pm 3.85$ & $0.0022 \pm 0.0183$ & 0.0025\\ 
-		4xFourier-Net+ & $0.352 \pm 0.449$ & $93.08 \pm 4.09$ & $0.0003 \pm 0.0057$ & 0.0123\\ 
-		\midrule
-		Diff-Fourier-Net & $0.318 \pm 0.388$ &  $93.39 \pm 3.82$ & $0.0273 \pm 0.0897$ & 0.0028\\ 
-		Diff-4xFourier-Net+ & $0.352 \pm 0.448$ & $93.08 \pm 4.11$ & $0.0029 \pm 0.0214$ & 0.0103\\  
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-
-\subsection{Starting Channel Size} \label{SubSec:ResultsStartingChannelsCMRxRecon}
-Next, the impact of the starting channels was examined. For this, \emph{4xFourier-Net+} was trained with three different channel sizes: $8$, $16$, $32$ and $64$. 
-%Due to the early stopping the \emph{Fourier-Net} variants were trained for 17, x, x and x epochs, while the channel sizes: $8$, $16$, $32$ and $64$. 
-Due to the early stopping the \emph{4xFourier-Net+} variants were trained for x, 17 and 10 epochs respectively. The results can be seen in Table~\ref{tab:StartingChannelsFourierNet+CMRxRecon} with the inference time for each version being calculated on the GPU.
-% and~\ref{tab:StartingChannelsFourierNet}. 
-Despite training for the least amount of epochs channel size $32$ performs the best for \emph{4xFourier-Net+}.
-
-\begin{table}[htpb]
-	\centering
-	\caption{Results for three different starting channel sizes of  \emph{4xFourier-Net+} on the fully sampled \emph{CMRxRecon} test data.}
-	\label{tab:StartingChannelsFourierNet+CMRxRecon}
-	\begin{tabular}{c c c c c} %
-		\toprule
-		Starting Channels & MSE (m) & $\%$ SSIM & $\% \, |J_{\phi}|\leq0$ & Time [s]\\
-		\midrule
-		8 & $0.352 \pm 0.449$ & $93.08 \pm 4.09$ & $0.0003 \pm 0.0057$ & 0.0123\\ 
-		16 & $0.347 \pm 0.439$ & $93.12 \pm 4.04$ & $0.0003 \pm 0.0059$ & 0.0113\\  
-		32 & $0.344 \pm 0.429$ & $93.13 \pm 4.01$ & $0.0008 \pm 0.0098$ & 0.0106\\  
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-\subsection{Quantitative Comparison with NiftyReg}  \label{SubSec:ResultsQuantitativeComparisonNiftyReg}
-For this first quantitative test similarity metrics such as MSE and SSIM were used to judge image similarity as an indicator for proper image alignment. The results can be seen in Table~\ref{tab:BenchmarkNiftyReg} with the SSIM given in percent $\%$ and the MSE multiplied by $10^-3$ for better readability (this is denoted by m for milli although the MSE has no unit strictly speaking). They are further visualized in Figure~\ref{fig:TestBenchmark_MSE_Boxplots} for the MSE and Figure~\ref{fig:TestBenchmark_SSIM_Boxplots} for the SSIM results. \\ \emph{Fourier-Net+} needed about 0.0104 seconds (s) per frame pair for registration with $|J|_{<0}\% < 0.001$ for all levels of subsampling, while \emph{NiftyReg} took up to 15~s for aligning an image pair. The results for \emph{Fourier-Net+} look good on their own as the metrics are stable even for the subsampled data compared to the fully sampled data. However, its baseline performance is slightly worse than \emph{NiftyReg} except for $R=10$, where both perform worse than the unalinged baseline of the test data, however \emph{4xFourier-Net+} is slightly better than \emph{NiftyReg}. Overall, the network is much faster than the iterative registration algorithm as expected, but the latter performs better in terms of similarity metrics.
-
-\begin{table}[htpb]
-	\centering
-	\caption{Benchmark results for \emph{4xFourier-Net+} and \emph{NiftiReg} on the \emph{CMRxRecon} test data.}
-	\label{tab:BenchmarkNiftyReg}
-	\begin{tabular}{c c c c} % c
-		\toprule
-		Subsampling & Method & MSE (m) & $\%$ SSIM \\
-		
-		\midrule
-		\multirow{2}{*}{$R=0$} & 4xFourier-Net+ & $0.435 \pm 0.554$ &  $92.35 \pm 4.59$\\   
-		 & NiftyReg & $0.514 \pm 0.771$ & $93.97 \pm 3.91$ \\
-		
-		\midrule
-		\multirow{2}{*}{$R=4$} & 4xFourier-Net+ & $0.482 \pm 0.626$ & $91.81 \pm 5.01$\\ 
-		 & NiftyReg & $0.551 \pm 0.798$ & $92.38 \pm 4.94$ \\
-		
-		\midrule
-		\multirow{2}{*}{$R=8$} & 4xFourier-Net+ & $0.479 \pm 0.620$ & $91.74 \pm 5.12$\\ 
-		 & NiftyReg & $0.565 \pm 0.803$ & $92.06 \pm 5.09$ \\
-
-		\midrule
-		\multirow{2}{*}{$R=10$} & 4xFourier-Net+ & $0.491 \pm 0.640$ & $91.59 \pm 5.23$\\  
-		 & NiftyReg & $0.926 \pm 2.867$ & $90.66 \pm 10.32$ \\
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-%\begin{figure}[htpb]
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\includegraphics[width=.85\linewidth]{TestBenchmark_MSE_Boxplots.png} 
-%	\caption{MSE results of \emph{Fourier-Net+} and \emph{NiftyReg} on the test set for fully sampled and subsampled (Acc4, Acc8, Acc10) data.}
-%	\label{fig:TestBenchmark_MSE_Boxplots}
-%\end{figure}
+%% removed on 27.11.2024
+%\section{Parameter Studies on the CMRxRecon Dataset} \label{Sec:ParameterStudies}
+%Different parameters were tested in order to find the optimal model parameters for usage on the \emph{CMRxRecon} dataset. After some tests on the fully sampled data, a comparison with the traditional iterative algorithm \emph{NiftyReg} was conducted on both the fully sampled and subsampled data.
 %
-%\begin{figure}[htpb]
+%\subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:ResultsFourier-NetvsFourier-Net+CMRxRecon}
+%First, the baseline network \emph{Fourier-Net} was compared to its more efficient successor \emph{4xFourier-Net+} with both using the diffeomorphic version as we can then compare the effect of the diffeomorphic deformation compared to the normal transformation on \emph{4xFourier-Net+}. However, this effect should be similar for \emph{Fourier-Net}. All of the experiments were conducted on the fully sampled data as the subsampling should not effect the tested properties. The baseline MSE (note that all MSE values are multiplied by $10^-3$ as denoted by the m) for unregistrated test images is $0.535$ and the SSIM percentage ($\%$ SSIM) is $91.71$. The results for \emph{Fourier-Net} and \emph{4xFourier-Net+} can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+CMRxRecon}. \\
+%The \emph{Fourier-Net} model without the diffeomorphic transform was trained for 17 epochs, while the diffeomorphic version trained for 100 epochs. Despite this, the latter is only marginally better in terms of MSE and SSIM. The percentage of negative Jacobian determinants was actually better for the normal transformation compared to the diffeomorphic one. The normal \emph{4xFourier-Net+} model trained for 37 epochs, while the diffeomorphic version trained for 100 epochs. \emph{4xFourier-Net+} performs slightly worse than \emph{Fourier-Net}, however it is more efficient.
+%
+%
+%\begin{table}[htpb]
+%	\centering
+%	\caption{Results for \emph{Fourier-Net} and \emph{4xFourier-Net+} on the fully sampled \emph{CMRxRecon} test data with a diffeomorphic transform.}
+%	\label{tab:Fourier-NetvsFourier-Net+CMRxRecon}
+%	\begin{tabular}{c c c c c} %
+%		\toprule
+%		Model & MSE (m) & $\%$ SSIM & $\% \, |J_{\phi}|\leq0$ & Time [s] \\
+%		\midrule
+%		Fourier-Net & $0.319 \pm 0.352$ &  $93.29 \pm 3.85$ & $0.0022 \pm 0.0183$ & 0.0025\\ 
+%		4xFourier-Net+ & $0.352 \pm 0.449$ & $93.08 \pm 4.09$ & $0.0003 \pm 0.0057$ & 0.0123\\ 
+%		\midrule
+%		Diff-Fourier-Net & $0.318 \pm 0.388$ &  $93.39 \pm 3.82$ & $0.0273 \pm 0.0897$ & 0.0028\\ 
+%		Diff-4xFourier-Net+ & $0.352 \pm 0.448$ & $93.08 \pm 4.11$ & $0.0029 \pm 0.0214$ & 0.0103\\  
+%		\bottomrule
+%	\end{tabular}
+%\end{table}
+%
+%
+%\subsection{Starting Channel Size} \label{SubSec:ResultsStartingChannelsCMRxRecon}
+%Next, the impact of the starting channels was examined. For this, \emph{4xFourier-Net+} was trained with three different channel sizes: $8$, $16$, $32$ and $64$. 
+%%Due to the early stopping the \emph{Fourier-Net} variants were trained for 17, x, x and x epochs, while the channel sizes: $8$, $16$, $32$ and $64$. 
+%Due to the early stopping the \emph{4xFourier-Net+} variants were trained for x, 17 and 10 epochs respectively. The results can be seen in Table~\ref{tab:StartingChannelsFourierNet+CMRxRecon} with the inference time for each version being calculated on the GPU.
+%% and~\ref{tab:StartingChannelsFourierNet}. 
+%Despite training for the least amount of epochs channel size $32$ performs the best for \emph{4xFourier-Net+}.
+%
+%\begin{table}[htpb]
+%	\centering
+%	\caption{Results for three different starting channel sizes of  \emph{4xFourier-Net+} on the fully sampled \emph{CMRxRecon} test data.}
+%	\label{tab:StartingChannelsFourierNet+CMRxRecon}
+%	\begin{tabular}{c c c c c} %
+%		\toprule
+%		Starting Channels & MSE (m) & $\%$ SSIM & $\% \, |J_{\phi}|\leq0$ & Time [s]\\
+%		\midrule
+%		8 & $0.352 \pm 0.449$ & $93.08 \pm 4.09$ & $0.0003 \pm 0.0057$ & 0.0123\\ 
+%		16 & $0.347 \pm 0.439$ & $93.12 \pm 4.04$ & $0.0003 \pm 0.0059$ & 0.0113\\  
+%		32 & $0.344 \pm 0.429$ & $93.13 \pm 4.01$ & $0.0008 \pm 0.0098$ & 0.0106\\  
+%		\bottomrule
+%	\end{tabular}
+%\end{table}
+%
+%\subsection{Quantitative Comparison with NiftyReg}  \label{SubSec:ResultsQuantitativeComparisonNiftyReg}
+%For this first quantitative test similarity metrics such as MSE and SSIM were used to judge image similarity as an indicator for proper image alignment. The results can be seen in Table~\ref{tab:BenchmarkNiftyReg} with the SSIM given in percent $\%$ and the MSE multiplied by $10^-3$ for better readability (this is denoted by m for milli although the MSE has no unit strictly speaking). They are further visualized in Figure~\ref{fig:TestBenchmark_MSE_Boxplots} for the MSE and Figure~\ref{fig:TestBenchmark_SSIM_Boxplots} for the SSIM results. \\ \emph{Fourier-Net+} needed about 0.0104 seconds (s) per frame pair for registration with $|J|_{<0}\% < 0.001$ for all levels of subsampling, while \emph{NiftyReg} took up to 15~s for aligning an image pair. The results for \emph{Fourier-Net+} look good on their own as the metrics are stable even for the subsampled data compared to the fully sampled data. However, its baseline performance is slightly worse than \emph{NiftyReg} except for $R=10$, where both perform worse than the unalinged baseline of the test data, however \emph{4xFourier-Net+} is slightly better than \emph{NiftyReg}. Overall, the network is much faster than the iterative registration algorithm as expected, but the latter performs better in terms of similarity metrics.
+%
+%\begin{table}[htpb]
+%	\centering
+%	\caption{Benchmark results for \emph{4xFourier-Net+} and \emph{NiftiReg} on the \emph{CMRxRecon} test data.}
+%	\label{tab:BenchmarkNiftyReg}
+%	\begin{tabular}{c c c c} % c
+%		\toprule
+%		Subsampling & Method & MSE (m) & $\%$ SSIM \\
+%		
+%		\midrule
+%		\multirow{2}{*}{$R=0$} & 4xFourier-Net+ & $0.435 \pm 0.554$ &  $92.35 \pm 4.59$\\   
+%		 & NiftyReg & $0.514 \pm 0.771$ & $93.97 \pm 3.91$ \\
+%		
+%		\midrule
+%		\multirow{2}{*}{$R=4$} & 4xFourier-Net+ & $0.482 \pm 0.626$ & $91.81 \pm 5.01$\\ 
+%		 & NiftyReg & $0.551 \pm 0.798$ & $92.38 \pm 4.94$ \\
+%		
+%		\midrule
+%		\multirow{2}{*}{$R=8$} & 4xFourier-Net+ & $0.479 \pm 0.620$ & $91.74 \pm 5.12$\\ 
+%		 & NiftyReg & $0.565 \pm 0.803$ & $92.06 \pm 5.09$ \\
+%
+%		\midrule
+%		\multirow{2}{*}{$R=10$} & 4xFourier-Net+ & $0.491 \pm 0.640$ & $91.59 \pm 5.23$\\  
+%		 & NiftyReg & $0.926 \pm 2.867$ & $90.66 \pm 10.32$ \\
+%		\bottomrule
+%	\end{tabular}
+%\end{table}
+%
+%%\begin{figure}[htpb]
+%%	\centering
+%%	\graphicspath{{images/}{\main/images/}}
+%%	\includegraphics[width=.85\linewidth]{TestBenchmark_MSE_Boxplots.png} 
+%%	\caption{MSE results of \emph{Fourier-Net+} and \emph{NiftyReg} on the test set for fully sampled and subsampled (Acc4, Acc8, Acc10) data.}
+%%	\label{fig:TestBenchmark_MSE_Boxplots}
+%%\end{figure}
+%%
+%%\begin{figure}[htpb]
+%%	\centering
+%%	\graphicspath{{images/}{\main/images/}}
+%%	\includegraphics[width=.85\linewidth]{TestBenchmark_SSIM_Boxplots.png} 
+%%	\caption{SSIM results of \emph{Fourier-Net+} and \emph{NiftyReg} on the test set for fully sampled and subsampled (Acc4, Acc8, Acc10) data.}
+%%	\label{fig:TestBenchmark_SSIM_Boxplots}
+%%\end{figure}
+%
+%\begin{figure}[h] %tpb
 %	\centering
 %	\graphicspath{{images/}{\main/images/}}
-%	\includegraphics[width=.85\linewidth]{TestBenchmark_SSIM_Boxplots.png} 
-%	\caption{SSIM results of \emph{Fourier-Net+} and \emph{NiftyReg} on the test set for fully sampled and subsampled (Acc4, Acc8, Acc10) data.}
-%	\label{fig:TestBenchmark_SSIM_Boxplots}
+%	\begin{subfigure}{0.495\textwidth}
+%    		\includegraphics[width=\textwidth]{TestBenchmark_MSE_Boxplots.png}
+%    		\caption{Boxplot of MSE results.}
+%    		\label{fig:TestBenchmark_MSE_Boxplots}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.495\textwidth}
+%    		\includegraphics[width=\textwidth]{TestBenchmark_SSIM_Boxplots.png}
+%    		\caption{Boxplot of SSIM results.}
+%    		\label{fig:TestBenchmark_SSIM_Boxplots}
+%	\end{subfigure}
+%	\caption{Boxplots for MSE and SSIM results of the test set for fully sampled and subsampled ($R=4$, $R=8$, $R=10$) data for both \emph{Fourier-Net+} and \emph{NiftyReg}.}
+%	\label{fig:TestBenchmark_Boxplots}
 %\end{figure}
 
-\begin{figure}[h] %tpb
-	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\begin{subfigure}{0.495\textwidth}
-    		\includegraphics[width=\textwidth]{TestBenchmark_MSE_Boxplots.png}
-    		\caption{Boxplot of MSE results.}
-    		\label{fig:TestBenchmark_MSE_Boxplots}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.495\textwidth}
-    		\includegraphics[width=\textwidth]{TestBenchmark_SSIM_Boxplots.png}
-    		\caption{Boxplot of SSIM results.}
-    		\label{fig:TestBenchmark_SSIM_Boxplots}
-	\end{subfigure}
-	\caption{Boxplots for MSE and SSIM results of the test set for fully sampled and subsampled ($R=4$, $R=8$, $R=10$) data for both \emph{Fourier-Net+} and \emph{NiftyReg}.}
-	\label{fig:TestBenchmark_Boxplots}
-\end{figure}
-
-\section{Further Tests on the ACDC Dataset}
+\section{Tests on the ACDC Dataset}
 Due to the limitations of the \emph{CMRxRecon} dataset in terms of segmentations, the registration performance is further evaluated on the \emph{ACDC} dataset. Some of the parameter studies done on \emph{CMRxRecon} were repeated, others were added to further test the networks ability.
 
 \subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}
@@ -1810,67 +1810,71 @@ For $R=8$, the displacements for all methods become more global due to the stron
 %	\label{fig:Boxplot_DiceScores}
 %\end{figure}
 
-\section{K-Space and Contrastive Loss Experiments}
-To address the decreased performance on subsampled data, changes to the loss function for training the networks were considered. The results of these different tests are presented in the following sections.
-
-\subsection{K-Space Loss} \label{SubSec:ResultsK-SpaceLoss}
-To avoid the artifacts caused by subsampling when reconstructing the image, one could try to calculate the similarity loss directly in the k-space domain. It should noted, however, that the loss now has to be calculated on complex values. Two types of k-space loss were tested: MSE and relativeL2. Both networks were trained for 6 epochs and the results can be seen in Table~\ref{tab:KSpaceLossFourierNetAcc4}.\\
-The relativeL2-loss performs better than MSE in every evaluation metric except for MSE (which was expected). However, both types of k-space loss perform worse than the baseline \emph{Fourier-Net} version with the image similarity loss. This might be due to problems caused by the domain transfer, which might hamper the k-space losses effectiveness as the networks are tasked with learning another transform.
-
-\begin{table}[h] %tpb
-	%\scriptsize
-	\centering
-	\caption{Results for different k-space losses for \emph{Fourier-Net} on the $R=4$ \emph{ACDC} test data compared to a version trained with the normal image similarity loss.}
-	\label{tab:KSpaceLossFourierNetAcc4}
-	\begin{tabular}{c c c c} %
-		\toprule
-		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{k-space loss - Fourier-Net} \\
-		\cline{2-4}
-		 & None & MSE & relativeL2 \\		
-		\midrule
-		$\%$ Dice & $76.55 \pm 13.89$ & $71.05 \pm 14.29$ & $73.43 \pm 13.56$ \\
-		$\%$ Dice* & $67.90 \pm 19.44$ & $61.93 \pm 18.94$ & $64.73 \pm 18.39$ \\
-		$\%$ SSIM & $82.93 \pm 8.12$ & $89.79 \pm 4.81$ & $90.19 \pm 4.42$ \\
-		MSE (m) & $0.10 \pm 0.06$ & $0.05 \pm 0.03$ & $0.08 \pm 0.10$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.19 \pm 0.23$ & $11.62 \pm 6.45$ & $5.42 \pm 3.47$ \\
-		\bottomrule
-	\end{tabular}	
-\end{table}
 
 
-\subsection{Contrastive Learning} \label{SubSec:ContrastiveLearningResults}
-Next, the contrastive loss, calculated on the displacement features, were tested. Six different weightings were tested and each network was trained for 6 epochs. The results can be seen in Table~\ref{tab:ContrastiveLossFourierNetAcc4}. \\
-The weighting of $\lambda=0.005$ produced the best results in terms of Dice (with and without the background). However, the achieved registration performance is still worse than the baseline \emph{Fourier-Net} using smoothness regularization. One possible explanation is that the removal of the smoothness constraint leads to unrealistic displacements as the percentage of non-positive Jabobian determinants is quite high for all networks trained with the contrastive loss implying folding artifacts in the displacement. This could in turn negatively impact the registration performance as these displacements do not respect physical contraints. This can also be seen in Figure~\ref{fig:TestExamplesContrastiveLoss}. If the weighting is too low the displacement is not localized and the network tries to correct the aliasing artifacts, which is unwanted. However, for a very high weighting ($\lambda = 0.05$) the network is unable to learn a useful displacement as the image similarity loss is overshadowed by the contrastive loss. Almost all of the weightings show cracks or strange deformations in the segmentations.\\
-Experiments trying to change the sampling density of the displacement features as well as adding a smoothness constraint failed to provide better solutions. The latter seemed to simply confuse the networks leading to very unrealistic displacements during training while the sampling density seemed to barely affects the networks learning. Thus this idea was again dropped as the normal networks already performed decently.
+%% removed on 27.11.2024
+%\section{K-Space and Contrastive Loss Experiments}
+%To address the decreased performance on subsampled data, changes to the loss function for training the networks were considered. The results of these different tests are presented in the following sections.
+%
+%\subsection{K-Space Loss} \label{SubSec:ResultsK-SpaceLoss}
+%To avoid the artifacts caused by subsampling when reconstructing the image, one could try to calculate the similarity loss directly in the k-space domain. It should noted, however, that the loss now has to be calculated on complex values. Two types of k-space loss were tested: MSE and relativeL2. Both networks were trained for 6 epochs and the results can be seen in Table~\ref{tab:KSpaceLossFourierNetAcc4}.\\
+%The relativeL2-loss performs better than MSE in every evaluation metric except for MSE (which was expected). However, both types of k-space loss perform worse than the baseline \emph{Fourier-Net} version with the image similarity loss. This might be due to problems caused by the domain transfer, which might hamper the k-space losses effectiveness as the networks are tasked with learning another transform.
+%
+%\begin{table}[h] %tpb
+%	%\scriptsize
+%	\centering
+%	\caption{Results for different k-space losses for \emph{Fourier-Net} on the $R=4$ \emph{ACDC} test data compared to a version trained with the normal image similarity loss.}
+%	\label{tab:KSpaceLossFourierNetAcc4}
+%	\begin{tabular}{c c c c} %
+%		\toprule
+%		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{k-space loss - Fourier-Net} \\
+%		\cline{2-4}
+%		 & None & MSE & relativeL2 \\		
+%		\midrule
+%		$\%$ Dice & $76.55 \pm 13.89$ & $71.05 \pm 14.29$ & $73.43 \pm 13.56$ \\
+%		$\%$ Dice* & $67.90 \pm 19.44$ & $61.93 \pm 18.94$ & $64.73 \pm 18.39$ \\
+%		$\%$ SSIM & $82.93 \pm 8.12$ & $89.79 \pm 4.81$ & $90.19 \pm 4.42$ \\
+%		MSE (m) & $0.10 \pm 0.06$ & $0.05 \pm 0.03$ & $0.08 \pm 0.10$ \\
+%		$\% \, |J_{\phi}|\leq0$ & $0.19 \pm 0.23$ & $11.62 \pm 6.45$ & $5.42 \pm 3.47$ \\
+%		\bottomrule
+%	\end{tabular}	
+%\end{table}
+%
+%
+%\subsection{Contrastive Learning} \label{SubSec:ContrastiveLearningResults}
+%Next, the contrastive loss, calculated on the displacement features, were tested. Six different weightings were tested and each network was trained for 6 epochs. The results can be seen in Table~\ref{tab:ContrastiveLossFourierNetAcc4}. \\
+%The weighting of $\lambda=0.005$ produced the best results in terms of Dice (with and without the background). However, the achieved registration performance is still worse than the baseline \emph{Fourier-Net} using smoothness regularization. One possible explanation is that the removal of the smoothness constraint leads to unrealistic displacements as the percentage of non-positive Jabobian determinants is quite high for all networks trained with the contrastive loss implying folding artifacts in the displacement. This could in turn negatively impact the registration performance as these displacements do not respect physical contraints. This can also be seen in Figure~\ref{fig:TestExamplesContrastiveLoss}. If the weighting is too low the displacement is not localized and the network tries to correct the aliasing artifacts, which is unwanted. However, for a very high weighting ($\lambda = 0.05$) the network is unable to learn a useful displacement as the image similarity loss is overshadowed by the contrastive loss. Almost all of the weightings show cracks or strange deformations in the segmentations.\\
+%Experiments trying to change the sampling density of the displacement features as well as adding a smoothness constraint failed to provide better solutions. The latter seemed to simply confuse the networks leading to very unrealistic displacements during training while the sampling density seemed to barely affects the networks learning. Thus this idea was again dropped as the normal networks already performed decently.
+%
+%
+%\begin{table}[h] %tpb
+%	\scriptsize
+%	\centering
+%	\caption{Results for different weightings $\lambda$ of the InfoNCE contrastive loss for \emph{Fourier-Net} on the $R=4$ \emph{ACDC} test data.}
+%	\label{tab:ContrastiveLossFourierNetAcc4}
+%	\begin{tabular}{c c c c c c c} %
+%		\toprule
+%		\multirow{2}{*}{Metrics} & \multicolumn{6}{c}{Contrastive loss weighting - Fourier-Net} \\
+%		\cline{2-7}
+%		 & $\lambda=0$ & $\lambda=0.0005$ & $\lambda=0.001$ & $\lambda=0.005$ & $\lambda=0.01$ & $\lambda=0.05$ \\		
+%		\midrule
+%		$\%$ Dice & $72.16 \pm 14.05$ & $72.47 \pm 13.90$ & $72.09 \pm 13.73$ & $74.07 \pm 14.07$ & $73.96 \pm 14.03$ & $69.32 \pm 16.68$ \\
+%		$\%$ Dice* & $63.15 \pm 18.63$ & $63.51 \pm 18.62$ & $63.02 \pm 18.57$ & $65.25 \pm 18.99$ & $64.98 \pm 18.92$ & $58.02 \pm 22.81$ \\
+%		$\%$ SSIM & $90.72 \pm 4.33$ & $87.95 \pm 5.52$ & $86.62 \pm 6.04$ & $81.87 \pm 8.14$ & $79.00 \pm 9.40$ & $74.41 \pm 11.51$ \\
+%		MSE (m) & $0.04 \pm 0.03$ & $0.07 \pm 0.05$ & $0.08 \pm 0.06$ & $0.12 \pm 0.08$ & $0.15 \pm 0.10$ & $0.30 \pm 0.20$ \\
+%		$\% \, |J_{\phi}|\leq0$ & $8.89 \pm 5.25$ & $5.83 \pm 4.02$ & $5.35 \pm 3.85$ & $1.15 \pm 0.89$ & $1.31 \pm 1.06$ & $5.09 \pm 4.15$ \\
+%		\bottomrule
+%	\end{tabular}	
+%\end{table}
+%
+%\begin{figure}[h]
+%	\centering
+%	\graphicspath{{images/}{\main/images/}}
+%	\includegraphics[width=\textwidth]{ContrastiveLoss_Mode1.png}	
+%	\caption{Examples of warped images, segmentations and flow fields for different weightings $\lambda$ of the contrastive lossin \emph{Fourier-Net} as well as the original image pair for $R=4$ \emph{ACDC} test data.}
+%	\label{fig:TestExamplesContrastiveLoss}
+%\end{figure}
 
-
-\begin{table}[h] %tpb
-	\scriptsize
-	\centering
-	\caption{Results for different weightings $\lambda$ of the InfoNCE contrastive loss for \emph{Fourier-Net} on the $R=4$ \emph{ACDC} test data.}
-	\label{tab:ContrastiveLossFourierNetAcc4}
-	\begin{tabular}{c c c c c c c} %
-		\toprule
-		\multirow{2}{*}{Metrics} & \multicolumn{6}{c}{Contrastive loss weighting - Fourier-Net} \\
-		\cline{2-7}
-		 & $\lambda=0$ & $\lambda=0.0005$ & $\lambda=0.001$ & $\lambda=0.005$ & $\lambda=0.01$ & $\lambda=0.05$ \\		
-		\midrule
-		$\%$ Dice & $72.16 \pm 14.05$ & $72.47 \pm 13.90$ & $72.09 \pm 13.73$ & $74.07 \pm 14.07$ & $73.96 \pm 14.03$ & $69.32 \pm 16.68$ \\
-		$\%$ Dice* & $63.15 \pm 18.63$ & $63.51 \pm 18.62$ & $63.02 \pm 18.57$ & $65.25 \pm 18.99$ & $64.98 \pm 18.92$ & $58.02 \pm 22.81$ \\
-		$\%$ SSIM & $90.72 \pm 4.33$ & $87.95 \pm 5.52$ & $86.62 \pm 6.04$ & $81.87 \pm 8.14$ & $79.00 \pm 9.40$ & $74.41 \pm 11.51$ \\
-		MSE (m) & $0.04 \pm 0.03$ & $0.07 \pm 0.05$ & $0.08 \pm 0.06$ & $0.12 \pm 0.08$ & $0.15 \pm 0.10$ & $0.30 \pm 0.20$ \\
-		$\% \, |J_{\phi}|\leq0$ & $8.89 \pm 5.25$ & $5.83 \pm 4.02$ & $5.35 \pm 3.85$ & $1.15 \pm 0.89$ & $1.31 \pm 1.06$ & $5.09 \pm 4.15$ \\
-		\bottomrule
-	\end{tabular}	
-\end{table}
-
-\begin{figure}[h]
-	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\textwidth]{ContrastiveLoss_Mode1.png}	
-	\caption{Examples of warped images, segmentations and flow fields for different weightings $\lambda$ of the contrastive lossin \emph{Fourier-Net} as well as the original image pair for $R=4$ \emph{ACDC} test data.}
-	\label{fig:TestExamplesContrastiveLoss}
-\end{figure}
 
 \section{Integration into a Motion-Compensated Reconstruction Pipeline} \label{Sec:ResultsIntegrationMotion-CompensatedReconstructionPipeline}
 Stuff.
