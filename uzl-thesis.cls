@@ -508,7 +508,7 @@
 \UzLStyle{
   %
   section/.uzl style inherits from = structure,
-  section font/.append code = \Large,
+  section font/.append code = \LARGE,
   section layout/.code = {%
     \rightskip 0pt plus1fil%
     \uzl@is@sectrue
@@ -529,21 +529,43 @@
 % Subsections
 %
 %%%
-                                 
-\newcommand\subsection{\@startsection{subsection}{2}{\z@}%
-                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
-                                     {1.5ex \@plus .2ex}%
-                                     {\normalfont\parindent0pt\leavevmode\UzLStyle{subsection font,subsection layout,subsection color}}}
+           
+
+\newcommand\subsection{%
+  \@startsection{subsection}%
+  {1}% depth
+  {\z@}% general indent
+  {-4.25ex \@plus -1ex \@minus -.2ex}% pre skip
+  {1.75ex \@plus.2ex}% post skip
+  {%
+    \normalfont\parindent0pt\leavevmode\UzLStyle{subsection font,subsection layout,subsection color}%
+  }% font
+}
+
+\newif\ifuzl@is@sec
+           
+%% Old code for subsections without numbers                         
+%\newcommand\subsection{\@startsection{subsection}{2}{\z@}%
+%                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+%                                     {1.5ex \@plus .2ex}%
+%                                     {\normalfont\parindent0pt\leavevmode\UzLStyle{subsection font,subsection layout,subsection color}}}
 
 \UzLStyle{
   %
   subsection/.uzl style inherits from = section,
-  subsection font/.append code = \large,
+  subsection font/.append code = \Large,
   subsection layout/.code = {%
     \rightskip 0pt plus1fil%
     \uzl@is@secfalse
     \uzl@sec@layout
   }
+}
+
+\let\uzl@sec@layout\relax
+\def\uzl@centersec{%
+  \leftskip5mm plus1fill%
+  \rightskip5mm plus 1fill%
+  \def\@hangfrom##1{\ifuzl@is@sec##1\@@par\nobreak\smallskip\nobreak\fi}%
 }
 
 
