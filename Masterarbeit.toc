@@ -62,31 +62,39 @@
 \contentsline {subsection}{\numberline {3.2.1}ACDC Dataset}{35}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}CMRxRecon Dataset}{35}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Experiments}{37}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Parameter Studies on the CMRxRecon Dataset}{38}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Parameter Tests on the ACDC Dataset}{38}{subsection.3.3.1}%
 \contentsline {subsubsection}{Fourier-Net versus Fourier-Net+}{38}{section*.53}%
 \contentsline {subsubsection}{Starting Channel Size}{38}{section*.54}%
-\contentsline {subsubsection}{Quantitative Comparison with NiftyReg}{38}{section*.55}%
-\contentsline {subsection}{\numberline {3.3.2}Parameter Tests on the ACDC Dataset}{39}{subsection.3.3.2}%
-\contentsline {subsubsection}{Fourier-Net versus Fourier-Net+}{39}{section*.56}%
-\contentsline {subsubsection}{Starting Channel Size}{39}{section*.57}%
-\contentsline {subsubsection}{Fourier-Transform Crop Size}{40}{section*.58}%
-\contentsline {subsubsection}{Comparison with VoxelMorph}{40}{section*.59}%
-\contentsline {subsubsection}{Dense Displacement on Accelerated Data}{41}{section*.60}%
-\contentsline {subsubsection}{Comparison on Subsampled Data}{41}{section*.61}%
-\contentsline {subsection}{\numberline {3.3.3}Integration into a Motion-Compensated Reconstruction Pipeline}{42}{subsection.3.3.3}%
-\contentsline {subsubsection}{Training Networks}{42}{section*.62}%
-\contentsline {subsubsection}{Reconstruction Pipeline}{42}{section*.63}%
-\contentsline {chapter}{\numberline {4}Results}{44}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tests on the ACDC Dataset}{44}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{44}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{47}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{47}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{49}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{50}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{53}{subsection.4.1.6}%
-\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{59}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Training Networks}{59}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{59}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5}Discussion}{61}{chapter.5}%
+\contentsline {subsubsection}{Fourier-Transform Crop Size}{39}{section*.55}%
+\contentsline {subsubsection}{Comparison with VoxelMorph}{39}{section*.56}%
+\contentsline {subsubsection}{Dense Displacement on Accelerated Data}{40}{section*.57}%
+\contentsline {subsubsection}{Comparison on Subsampled Data}{40}{section*.58}%
+\contentsline {subsection}{\numberline {3.3.2}Integration into a Motion-Compensated Reconstruction Pipeline}{41}{subsection.3.3.2}%
+\contentsline {subsubsection}{Domain Translation}{41}{section*.59}%
+\contentsline {subsubsection}{Reconstruction Pipeline}{41}{section*.60}%
+\contentsline {chapter}{\numberline {4}Results}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Parameter Tests on the ACDC Dataset}{43}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{43}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{46}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{46}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{48}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{49}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{52}{subsection.4.1.6}%
+\contentsline {subsubsection}{Cardiac Labels}{53}{section*.70}%
+\contentsline {subsubsection}{Visual Examination}{56}{section*.72}%
+\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{58}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Domain Translation}{58}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{58}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Discussion}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{60}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{60}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{60}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{60}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{60}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{60}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{61}{subsection.5.1.6}%
+\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{61}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{61}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{61}{subsection.5.2.2}%
 \contentsline {chapter}{\numberline {6}Conclusion}{62}{chapter.6}%
-\contentsline {chapter}{Bibliography}{63}{chapter*.77}%
+\contentsline {chapter}{Bibliography}{63}{chapter*.76}%
