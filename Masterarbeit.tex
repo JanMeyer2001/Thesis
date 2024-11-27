@@ -695,223 +695,6 @@ for a point $p$ and encode the local stretching, shearing and rotating of the di
 \chapter{Materials and Methods}
 In this chapter, the networks, data and experiments are discussed.
 
-\section{Data}	\label{Sec:Data}
-In the following chapter, the datasets used in this thesis are presented and potential pre-processing steps, as well as uses, discussed. 
-%The first dataset called \emph{OASIS}, containing MRI brain scans, was used in the original publications for training and evaluation of both \emph{Fourier-Net} and \emph{Fourier-Net+}. It was thus used to get familiar with these networks and their respective work-flows as well as reproducing some results from the paper to ensure that the code works as intended.\\ 
-For our major experiment the \emph{CMRxRecon} dataset was used. The cardiac MRI k-space data was used for extending the networks to frame-to-frame registration in order for them to be integrated into a motion reconstruction pipeline. It already contains subsampled data, but does not provide segmentations for multi-coil data.\\
-Thus a third dataset, the \emph{ACDC} cardiac dataset, was used. While it contains no k-space data segmentations are given for end-systolic and end-diastolic frames, which can thus be used for the evaluation of registration performance. Most parameter studies and optimizations of the networks were done with this dataset.
-
-%%%% Removed on 21.10.2024
-%\section{OASIS Dataset} \label{Sec:OASIS}
-%The \emph{OASIS-1} dataset~\cite{OASIS} contains $\text{T}_1$-weighted MRI brain scans from 454 subjects and was mainly used for training and testing the original \emph{Fourier-Net/Fourier-Net+}. The brain scans were further pre-processed by~\cite{HyperMorph} for the \emph{Learn2Reg}-Challenge~\cite{Learn2Reg}. This enables subject-to-subject brain registration, as all MRI scans were bias-corrected, skull-stripped, aligned, and cropped to the size of $160 \times 192 \times 224$. The images were stored in the \emph{NIFTI} format,  which makes it really easy to use. Examples can be seen in Figures~\ref{fig:image1} and \ref{fig:image2} with slices from the center of the x-, y- and z-axis.
-%
-%\begin{figure}[h]%tpb
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.45\textwidth}
-%    		\includegraphics[width=\textwidth]{image2.png}
-%    		%\caption{Example Image from the Dataset with corresponding labels.}
-%		\caption{}    		
-%    		\label{fig:image2}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.45\textwidth}
-%    		\includegraphics[width=\textwidth]{image1.png}
-%    		%\caption{Another example Image from the Dataset with corresponding labels.}
-%		\caption{}    		
-%    		\label{fig:image1}
-%	\end{subfigure}
-%	\caption{Example images (upper row) from the \emph{OASIS} dataset with corresponding labels (bottom row).}
-%	\label{fig:OASIS}
-%\end{figure}
-
-\subsection{CMRxRecon Dataset} \label{SubSec:CMRxRecon}
-The \emph{CMRxRecon} dataset~\cite{CMRxRecon} from the \emph{CMRxRecon2023} challenge specializes in Cardiac magnetic resonance imaging (CMR). The dataset includes 
-%multi-contrast k-space data, consisting of cardiac cine, $\text{T}_1$/$\text{T}_2$-mapping, tagging, phase-contrast (i.e., flow2d), and dark-blood imaging
-fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. One of the goals of the challenge is the reconstruction from subsampling and motion correction for the heart movement.\\
-As the data was recorded in the k-space (see Figure~\ref{fig:k-space}) and stored as \emph{.mat} files we first need to reconstruct the images to use them for training and testing of \emph{Fourier-Net/Fourier-Net+}. For this, multi-coil reconstruction algorithms like \emph{SENSE}~\cite{SENSE1} can be used. The sensitivity of the different coils can be seen in Figure~\ref{fig:Coils}, where each coil focuses on a specific area of the image. These images are then stitched together in reconstruction to produce a combined image with great overall contrast.
-%, while Figure~\ref{fig:ImageSlice} contains the complete reconstructed image. 
-The dataset, as mentioned before, contains fully sampled as well as subsampled k-space data (see Figure~\ref{fig:fullySampled} and Figure~\ref{fig:subSampled}), with the latter being typically used to accelerate the MRI acquisition process. This is done by not using all of the available k-space data, but rather masking the signal to achieve the subsampling. The center region of the k-space is always fully sampled, but the outer regions are subsampled depending on the sampling strategy~\cite{SamplingStrategies}. The dataset contains subsampled k-space data for 4x, 8x and 10x acceleration with the latter of course leading to more distortions in the reconstructed image as the subsampling can induce image reconstruction artifacts. This can be seen in Figure~\ref{fig:subSampledImage}, where the image reconstructed from 4x accelerated ($R=4$) k-space data seems blurred when compared to the fully sampled ($R=0$) one in Figure~\ref{fig:fullySampledImage}. 
-%An example image can be seen in Figure~\ref{fig:Subsampling} where the k-space of the original image is subsampled with a random mask leading to heavy blurring artifacts after the reconstruction.
-For all experiments the short-axis  view data was used. As image sizes between patients can vary slightly, interpolation was used to standardize the images to a size of $246 \times 512$ to avoid further problems with e.g. 
-%ensure coherent sizes between images to avoid problems with the network and 
-loss calculation. Additionally, min-max-normalization is used to standardize the data range for all images to $[0,1]$ as this was also varying. The reconstructed images were stored for every image slice for every patient. Thus, all frames for a specific image slice were in a single folder to enable easy access for later data load-in for frame-to-frame registration.
-
-\begin{figure}[h]%tpb
-	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\linewidth]{CoilsHorizontal.png} 
-	\caption{MRI images for three different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}.}
-	\label{fig:Coils}
-\end{figure}
-
-
-\begin{figure}[h]%tpb
-	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{k-space_fullysampled.png}
-    		\caption{Example for a fully sampled k-space with the low frequencies in the middle.}
-    		\label{fig:fullySampled}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{k-space_subsampled.png}
-    		\caption{Example of a subsampled k-space for 4x acceleration.}
-    		\label{fig:subSampled}
-	\end{subfigure}\\
-	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{image_fullysampled.png}
-    		\caption{Corresponding image reconstructed from the fully sampled k-space.}
-    		\label{fig:fullySampledImage}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{image_subsampled.png}
-    		\caption{Corresponding image reconstructed from the subsampled k-space.}
-    		\label{fig:subSampledImage}
-	\end{subfigure}
-	\caption{Fully sampled and subsampled k-space data from the from the \emph{CMRxRecon} dataset~\cite{CMRxRecon} with corresponding images.}
-	\label{fig:k-space}
-\end{figure}
-
-
-%\begin{figure}[htpb]
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=.75\textwidth]{Coils.png}
-%    		\caption{MRI images for three different coils.}
-%    		\label{fig:Coils}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{ImageSlice.png}
-%    		\caption{Reconstructed image from the three different coils.}
-%    		\label{fig:ImageSlice}
-%	\end{subfigure}
-%	\caption{Example from the \emph{CMRxRecon} dataset.}
-%	\label{fig:CMRxRecon}
-%\end{figure}
-
-%\begin{figure}[htpb]
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\includegraphics[width=.5\linewidth]{ImageSlice.png} 
-%	\caption{Reconstructed image slice from the different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}.}
-%	\label{fig:ImageSlice}
-%\end{figure}
-
-%\begin{figure}[htpb]
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\includegraphics[width=\linewidth]{Subsampling.png} 
-%	\caption{Example for blurring artifacts encountered during image reconstruction after subsampling the k-space.}
-%	\label{fig:Subsampling}
-%\end{figure}
-
-
-%%%% Removed on 21.10.2024
-%\subsection{Pre-Processing} \label{SubSec:Pre-Processing}
-%As seen before, a large part of the image is just black background that contains no usable information. The interesting cardiac region in the image, however, is much smaller and thus image cropping can be used to extract it. The fairly large image size can thus be cut down without losing important image information, which also helps with memory efficiency. One problem however remains: image alignment. Whereas in the \emph{OASIS} dataset the brain scan were already aligned, the cardiac data in the \emph{CMRxRecon} dataset is not. Thus, one cannot simply center-crop all images as the cardiac region might be located in very different parts of the image. To resolve this issue, adaptive cropping with automatic detection of the cardiac region in the images is needed. \\
-%To begin, some assumption about the data needs to be made: First, the cardiac region is at the same position for all slices and frames from one patient. Second, most of the movement happens in the cardiac region between frames. From the latter we can conclude that we need to examine the frames, thus the difference between consecutive frames is calculated and averaged for each slice. According to the first assumption this process is repeated for all slices and their results summed to create a sort of heatmap as seen in Figure~\ref{fig:SumDifferences} with a clearly higher intensity in the cardiac region compared to the background. To further isolate this region a simple thresholding is performed followed by an opening operation, which removes any smaller fragments still left in the image. The cardiac region is now clearly separated from the rest of the image as seen in Figure~\ref{fig:MaskCropping}. The only step left is to calculate the approximate center of this region and create a crop around it. To drastically reduce the image size a cropping factor of one third was used, reducing the image size from $246 \times 512$ to $82 \times 170$. The result of this drastic crop can be seen in Figure~\ref{fig:ImageCropped} when compared to the original image in Figure~\ref{fig:fullImage}. Note, however, that the cropped image in Figure~\ref{fig:ImageCropping} appears larger than it actually is, when compared to the original, to allow for a more detailed look. Thus both images are not presented to scale, but in order to show the most image detail.
-%
-%\begin{figure}[h]%tpb
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{FullImage.png}
-%    		\caption{The original full-size image.}
-%    		\label{fig:fullImage}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{ImageCrop.png}
-%    		\caption{The corresponding cropped image.}
-%    		\label{fig:ImageCropped}
-%	\end{subfigure}
-%	\\
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{DifferencesSlices.png}
-%    		\caption{Sum of the differences between slices and their respective frames with the cardiac region in the middle.}
-%    		\label{fig:SumDifferences}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{MaskForCropping.png}
-%    		\caption{Mask of the cardiac region generated from the sum of differences by thresholding and opening.}
-%    		\label{fig:MaskCropping}
-%	\end{subfigure}
-%	\caption{Cropping of an example image by locating the movement between frames for each slice. Note that the cropped image appears larger than it actually is compared to the original.}
-%	\label{fig:ImageCropping}
-%\end{figure}
-
-%\begin{figure}[htpb]
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{FullImage.png}
-%    		\caption{The original full-size image.}
-%    		\label{fig:fullImage}
-%	\end{subfigure}
-%	\\
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{DifferencesSlices.png}
-%    		\caption{Sum of the differences between slices and their respective frames with the cardiac region in the middle.}
-%    		\label{fig:SumDifferences}
-%	\end{subfigure}
-%	\\
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{MaskForCropping.png}
-%    		\caption{Mask of the cardiac region generated from the sum of differences by thresholding and opening.}
-%    		\label{fig:MaskCropping}
-%	\end{subfigure}
-%	\\
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{ImageCrop.png}
-%    		\caption{The corresponding cropped image.}
-%    		\label{fig:ImageCropped}
-%	\end{subfigure}
-%	\caption{Cropping of an example image by locating the movement between frames for each slice. Note that the cropped image appears larger than it actually is compared to the original.}
-%	\label{fig:ImageCropping}
-%\end{figure}
-
-\subsection{ACDC Dataset} \label{SubSec:ACDC}
-The \emph{ACDC} dataset~\cite{ACDC} from the \emph{Automated Cardiac Diagnosis Challenge (ACDC)} during the \emph{MICCAI 2017} conference. It contains cardiac cine-MRI short-axis data from 150 subjects that were divided into 5 subgroups (4 pathological, 1 healthy). For each subject systolic (see Figure~\ref{fig:Image_ACDC_systolic}) and diastolic frames (see Figure~\ref{fig:Image_ACDC_diastolic}) are provided with corresponding segmentations (see Figure~\ref{fig:Segmentation_ACDC_systolic} and ~\ref{fig:Segmentation_ACDC_diastolic}), which enables direct comparison via e.g. the Dice score. The segmentations contain only four values with 0, 1, 2 and 3 representing pixels located in the background, in the RV cavity, in the myocardium, and in the LV cavity. The frames themselves are 3D volumes with size $216 \times 256 \times 10$, thus ten image slices can be extracted which each have size $216 \times 256$. The same holds true for the segmentation, which means that both the image data and segmentations can generated in the same manner.\\
-For the training data, the original 4D data was used as we do not require the segmentations for the end-systolic and end-diastolic frames. As the 4D data has size $216 \times 256 \times 10 \times 30$ we can extract 30 frames for each of the ten slices. These can be sorted into 251376 image pairs for training. For the validation and test data the end-systolic and end-diastolic frames with their segmentations were used given us 641 image pairs each as we can only have these two frames to align.
-
-\begin{figure}[h]%tpb
-	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\begin{subfigure}{0.4\textwidth}
-    		\includegraphics[width=\textwidth]{Image_ACDC_systolic.png}
-    		\caption{Image of systolic phase.}
-    		\label{fig:Image_ACDC_systolic}
-	\end{subfigure}
-	\hfill
-	\graphicspath{{images/}{\main/images/}}
-	\begin{subfigure}{0.4\textwidth}
-    		\includegraphics[width=\textwidth]{Image_ACDC_diastolic.png}
-    		\caption{Image of diastolic phase.}
-    		\label{fig:Image_ACDC_diastolic}
-	\end{subfigure} 
-	\\
-	\begin{subfigure}{0.4\textwidth}
-    		\includegraphics[width=\textwidth]{Segmentation_ACDC_systolic.png}
-    		\caption{Segmentation of systolic phase.}
-    		\label{fig:Segmentation_ACDC_systolic}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.4\textwidth}
-    		\includegraphics[width=\textwidth]{Segmentation_ACDC_diastolic.png}
-    		\caption{Segmentation of diastolic phase.}
-    		\label{fig:Segmentation_ACDC_diastolic}
-	\end{subfigure}
-	\caption{Example images for systolic (a) and diastolic frames (b) with corresponding segmentations (c),(d) taken from the \emph{ACDC} dataset~\cite{ACDC}.}
-	\label{fig:}
-\end{figure}
-
-
 \section{Network Architectures} \label{Sec:NetworkArchitecture}
 As a starting point \emph{Fourier-Net}~\cite{Fourier-Net} and its successor \emph{Fourier-Net+}~\cite{Fourier-Net+} were used. These networks, which are explained in the following pages, enable fast and accurate registration while needing less resources compared to similar approaches. These attributes are very beneficial for a potential application like motion correction because the current networks, e.g. \emph{LAPNet}~\cite{LAPNet}, are usually supervised and require large computational resources.
 
@@ -1119,6 +902,226 @@ Thus, the output displacement field of the $K$-th cascade $\phi^{(K)}$ is the fi
 	\caption{Cascaded version of \emph{Fourier-Net+} taken from~\cite{Fourier-Net+}.}
 	\label{fig:Fourier-Net+Cascaded}
 \end{figure}
+
+
+\section{Datasets}	\label{Sec:Datasets}
+In the following chapter, the datasets used in this thesis are presented and potential pre-processing steps, as well as uses, discussed. 
+%The first dataset called \emph{OASIS}, containing MRI brain scans, was used in the original publications for training and evaluation of both \emph{Fourier-Net} and \emph{Fourier-Net+}. It was thus used to get familiar with these networks and their respective work-flows as well as reproducing some results from the paper to ensure that the code works as intended.\\ 
+The \emph{ACDC} cardiac dataset was mainly used for ablation studies and parameter tests. While it contains no k-space data, segmentations are given for the end-systolic and end-diastolic frames of the test set, which can be used to evaluate the registration performance. \\
+The \emph{CMRxRecon} dataset was used for the downstream-tests regarding MR image reconstruction. The cardiac MRI k-space data was used for extending the networks to frame-to-frame registration in order for them to be integrated into a motion reconstruction pipeline. It contains subsampled data, but does not provide segmentations for multi-coil data.
+
+%%%% Removed on 21.10.2024
+%\section{OASIS Dataset} \label{Sec:OASIS}
+%The \emph{OASIS-1} dataset~\cite{OASIS} contains $\text{T}_1$-weighted MRI brain scans from 454 subjects and was mainly used for training and testing the original \emph{Fourier-Net/Fourier-Net+}. The brain scans were further pre-processed by~\cite{HyperMorph} for the \emph{Learn2Reg}-Challenge~\cite{Learn2Reg}. This enables subject-to-subject brain registration, as all MRI scans were bias-corrected, skull-stripped, aligned, and cropped to the size of $160 \times 192 \times 224$. The images were stored in the \emph{NIFTI} format,  which makes it really easy to use. Examples can be seen in Figures~\ref{fig:image1} and \ref{fig:image2} with slices from the center of the x-, y- and z-axis.
+%
+%\begin{figure}[h]%tpb
+%	\centering
+%	\graphicspath{{images/}{\main/images/}}
+%	\begin{subfigure}{0.45\textwidth}
+%    		\includegraphics[width=\textwidth]{image2.png}
+%    		%\caption{Example Image from the Dataset with corresponding labels.}
+%		\caption{}    		
+%    		\label{fig:image2}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.45\textwidth}
+%    		\includegraphics[width=\textwidth]{image1.png}
+%    		%\caption{Another example Image from the Dataset with corresponding labels.}
+%		\caption{}    		
+%    		\label{fig:image1}
+%	\end{subfigure}
+%	\caption{Example images (upper row) from the \emph{OASIS} dataset with corresponding labels (bottom row).}
+%	\label{fig:OASIS}
+%\end{figure}
+
+
+\subsection{ACDC Dataset} \label{SubSec:ACDC}
+The \emph{ACDC} dataset~\cite{ACDC} from the \emph{Automated Cardiac Diagnosis Challenge (ACDC)} during the \emph{MICCAI 2017} conference. It contains cardiac cine-MRI short-axis data from 150 subjects that were divided into 5 subgroups (4 pathological, 1 healthy). For each subject systolic (see Figure~\ref{fig:Image_ACDC_systolic}) and diastolic frames (see Figure~\ref{fig:Image_ACDC_diastolic}) are provided with corresponding segmentations (see Figure~\ref{fig:Segmentation_ACDC_systolic} and ~\ref{fig:Segmentation_ACDC_diastolic}), which enables direct comparison via e.g. the Dice score. The segmentations contain only four values with 0, 1, 2 and 3 representing pixels located in the background, in the RV cavity, in the myocardium, and in the LV cavity. The frames themselves are 3D volumes with size $216 \times 256 \times 10$, thus ten image slices can be extracted which each have size $216 \times 256$. The same holds true for the segmentation, which means that both the image data and segmentations can generated in the same manner.\\
+For the training data, the original 4D data was used as we do not require the segmentations for the end-systolic and end-diastolic frames. As the 4D data has size $216 \times 256 \times 10 \times 30$ we can extract 30 frames for each of the ten slices. These can be sorted into 251376 image pairs for training. For the validation and test data the end-systolic and end-diastolic frames with their segmentations were used given us 641 image pairs each as we can only have these two frames to align.
+
+\begin{figure}[h]%tpb
+	\centering
+	\graphicspath{{images/}{\main/images/}}
+	\begin{subfigure}{0.4\textwidth}
+    		\includegraphics[width=\textwidth]{Image_ACDC_systolic.png}
+    		\caption{Image of systolic phase.}
+    		\label{fig:Image_ACDC_systolic}
+	\end{subfigure}
+	\hfill
+	\graphicspath{{images/}{\main/images/}}
+	\begin{subfigure}{0.4\textwidth}
+    		\includegraphics[width=\textwidth]{Image_ACDC_diastolic.png}
+    		\caption{Image of diastolic phase.}
+    		\label{fig:Image_ACDC_diastolic}
+	\end{subfigure} 
+	\\
+	\begin{subfigure}{0.4\textwidth}
+    		\includegraphics[width=\textwidth]{Segmentation_ACDC_systolic.png}
+    		\caption{Segmentation of systolic phase.}
+    		\label{fig:Segmentation_ACDC_systolic}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.4\textwidth}
+    		\includegraphics[width=\textwidth]{Segmentation_ACDC_diastolic.png}
+    		\caption{Segmentation of diastolic phase.}
+    		\label{fig:Segmentation_ACDC_diastolic}
+	\end{subfigure}
+	\caption{Example images for systolic (a) and diastolic frames (b) with corresponding segmentations (c),(d) taken from the \emph{ACDC} dataset~\cite{ACDC}.}
+	\label{fig:}
+\end{figure}
+
+
+\subsection{CMRxRecon Dataset} \label{SubSec:CMRxRecon}
+The \emph{CMRxRecon} dataset~\cite{CMRxRecon} from the \emph{CMRxRecon2023} challenge specializes in Cardiac magnetic resonance imaging (CMR). The dataset includes 
+%multi-contrast k-space data, consisting of cardiac cine, $\text{T}_1$/$\text{T}_2$-mapping, tagging, phase-contrast (i.e., flow2d), and dark-blood imaging
+fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. One of the goals of the challenge is the reconstruction from subsampling and motion correction for the heart movement.\\
+As the data was recorded in the k-space (see Figure~\ref{fig:k-space}) and stored as \emph{.mat} files we first need to reconstruct the images to use them for training and testing of \emph{Fourier-Net/Fourier-Net+}. For this, multi-coil reconstruction algorithms like \emph{SENSE}~\cite{SENSE1} can be used. The sensitivity of the different coils can be seen in Figure~\ref{fig:Coils}, where each coil focuses on a specific area of the image. These images are then stitched together in reconstruction to produce a combined image with great overall contrast.
+%, while Figure~\ref{fig:ImageSlice} contains the complete reconstructed image. 
+The dataset, as mentioned before, contains fully sampled as well as subsampled k-space data (see Figure~\ref{fig:fullySampled} and Figure~\ref{fig:subSampled}), with the latter being typically used to accelerate the MRI acquisition process. This is done by not using all of the available k-space data, but rather masking the signal to achieve the subsampling. The center region of the k-space is always fully sampled, but the outer regions are subsampled depending on the sampling strategy~\cite{SamplingStrategies}. The dataset contains subsampled k-space data for 4x, 8x and 10x acceleration with the latter of course leading to more distortions in the reconstructed image as the subsampling can induce image reconstruction artifacts. This can be seen in Figure~\ref{fig:subSampledImage}, where the image reconstructed from 4x accelerated ($R=4$) k-space data seems blurred when compared to the fully sampled ($R=0$) one in Figure~\ref{fig:fullySampledImage}. 
+%An example image can be seen in Figure~\ref{fig:Subsampling} where the k-space of the original image is subsampled with a random mask leading to heavy blurring artifacts after the reconstruction.
+For all experiments the short-axis  view data was used. As image sizes between patients can vary slightly, interpolation was used to standardize the images to a size of $246 \times 512$ to avoid further problems with e.g. 
+%ensure coherent sizes between images to avoid problems with the network and 
+loss calculation. Additionally, min-max-normalization is used to standardize the data range for all images to $[0,1]$ as this was also varying. The reconstructed images were stored for every image slice for every patient. Thus, all frames for a specific image slice were in a single folder to enable easy access for later data load-in for frame-to-frame registration.
+
+\begin{figure}[h]%tpb
+	\centering
+	\graphicspath{{images/}{\main/images/}}
+	\includegraphics[width=\linewidth]{CoilsHorizontal.png} 
+	\caption{MRI images for three different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}.}
+	\label{fig:Coils}
+\end{figure}
+
+
+\begin{figure}[h]%tpb
+	\centering
+	\graphicspath{{images/}{\main/images/}}
+	\begin{subfigure}{0.45\textwidth}
+    		\includegraphics[width=\textwidth]{k-space_fullysampled.png}
+    		\caption{Example for a fully sampled k-space with the low frequencies in the middle.}
+    		\label{fig:fullySampled}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+    		\includegraphics[width=\textwidth]{k-space_subsampled.png}
+    		\caption{Example of a subsampled k-space for 4x acceleration.}
+    		\label{fig:subSampled}
+	\end{subfigure}\\
+	\begin{subfigure}{0.45\textwidth}
+    		\includegraphics[width=\textwidth]{image_fullysampled.png}
+    		\caption{Corresponding image reconstructed from the fully sampled k-space.}
+    		\label{fig:fullySampledImage}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+    		\includegraphics[width=\textwidth]{image_subsampled.png}
+    		\caption{Corresponding image reconstructed from the subsampled k-space.}
+    		\label{fig:subSampledImage}
+	\end{subfigure}
+	\caption{Fully sampled and subsampled k-space data from the from the \emph{CMRxRecon} dataset~\cite{CMRxRecon} with corresponding images.}
+	\label{fig:k-space}
+\end{figure}
+
+
+%\begin{figure}[htpb]
+%	\centering
+%	\graphicspath{{images/}{\main/images/}}
+%	\begin{subfigure}{0.4\textwidth}
+%    		\includegraphics[width=.75\textwidth]{Coils.png}
+%    		\caption{MRI images for three different coils.}
+%    		\label{fig:Coils}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.4\textwidth}
+%    		\includegraphics[width=\textwidth]{ImageSlice.png}
+%    		\caption{Reconstructed image from the three different coils.}
+%    		\label{fig:ImageSlice}
+%	\end{subfigure}
+%	\caption{Example from the \emph{CMRxRecon} dataset.}
+%	\label{fig:CMRxRecon}
+%\end{figure}
+
+%\begin{figure}[htpb]
+%	\centering
+%	\graphicspath{{images/}{\main/images/}}
+%	\includegraphics[width=.5\linewidth]{ImageSlice.png} 
+%	\caption{Reconstructed image slice from the different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}.}
+%	\label{fig:ImageSlice}
+%\end{figure}
+
+%\begin{figure}[htpb]
+%	\centering
+%	\graphicspath{{images/}{\main/images/}}
+%	\includegraphics[width=\linewidth]{Subsampling.png} 
+%	\caption{Example for blurring artifacts encountered during image reconstruction after subsampling the k-space.}
+%	\label{fig:Subsampling}
+%\end{figure}
+
+
+%%%% Removed on 21.10.2024
+%\subsection{Pre-Processing} \label{SubSec:Pre-Processing}
+%As seen before, a large part of the image is just black background that contains no usable information. The interesting cardiac region in the image, however, is much smaller and thus image cropping can be used to extract it. The fairly large image size can thus be cut down without losing important image information, which also helps with memory efficiency. One problem however remains: image alignment. Whereas in the \emph{OASIS} dataset the brain scan were already aligned, the cardiac data in the \emph{CMRxRecon} dataset is not. Thus, one cannot simply center-crop all images as the cardiac region might be located in very different parts of the image. To resolve this issue, adaptive cropping with automatic detection of the cardiac region in the images is needed. \\
+%To begin, some assumption about the data needs to be made: First, the cardiac region is at the same position for all slices and frames from one patient. Second, most of the movement happens in the cardiac region between frames. From the latter we can conclude that we need to examine the frames, thus the difference between consecutive frames is calculated and averaged for each slice. According to the first assumption this process is repeated for all slices and their results summed to create a sort of heatmap as seen in Figure~\ref{fig:SumDifferences} with a clearly higher intensity in the cardiac region compared to the background. To further isolate this region a simple thresholding is performed followed by an opening operation, which removes any smaller fragments still left in the image. The cardiac region is now clearly separated from the rest of the image as seen in Figure~\ref{fig:MaskCropping}. The only step left is to calculate the approximate center of this region and create a crop around it. To drastically reduce the image size a cropping factor of one third was used, reducing the image size from $246 \times 512$ to $82 \times 170$. The result of this drastic crop can be seen in Figure~\ref{fig:ImageCropped} when compared to the original image in Figure~\ref{fig:fullImage}. Note, however, that the cropped image in Figure~\ref{fig:ImageCropping} appears larger than it actually is, when compared to the original, to allow for a more detailed look. Thus both images are not presented to scale, but in order to show the most image detail.
+%
+%\begin{figure}[h]%tpb
+%	\centering
+%	\graphicspath{{images/}{\main/images/}}
+%	\begin{subfigure}{0.4\textwidth}
+%    		\includegraphics[width=\textwidth]{FullImage.png}
+%    		\caption{The original full-size image.}
+%    		\label{fig:fullImage}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.4\textwidth}
+%    		\includegraphics[width=\textwidth]{ImageCrop.png}
+%    		\caption{The corresponding cropped image.}
+%    		\label{fig:ImageCropped}
+%	\end{subfigure}
+%	\\
+%	\begin{subfigure}{0.4\textwidth}
+%    		\includegraphics[width=\textwidth]{DifferencesSlices.png}
+%    		\caption{Sum of the differences between slices and their respective frames with the cardiac region in the middle.}
+%    		\label{fig:SumDifferences}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.4\textwidth}
+%    		\includegraphics[width=\textwidth]{MaskForCropping.png}
+%    		\caption{Mask of the cardiac region generated from the sum of differences by thresholding and opening.}
+%    		\label{fig:MaskCropping}
+%	\end{subfigure}
+%	\caption{Cropping of an example image by locating the movement between frames for each slice. Note that the cropped image appears larger than it actually is compared to the original.}
+%	\label{fig:ImageCropping}
+%\end{figure}
+
+%\begin{figure}[htpb]
+%	\centering
+%	\graphicspath{{images/}{\main/images/}}
+%	\begin{subfigure}{0.6\textwidth}
+%    		\includegraphics[width=\textwidth]{FullImage.png}
+%    		\caption{The original full-size image.}
+%    		\label{fig:fullImage}
+%	\end{subfigure}
+%	\\
+%	\begin{subfigure}{0.6\textwidth}
+%    		\includegraphics[width=\textwidth]{DifferencesSlices.png}
+%    		\caption{Sum of the differences between slices and their respective frames with the cardiac region in the middle.}
+%    		\label{fig:SumDifferences}
+%	\end{subfigure}
+%	\\
+%	\begin{subfigure}{0.6\textwidth}
+%    		\includegraphics[width=\textwidth]{MaskForCropping.png}
+%    		\caption{Mask of the cardiac region generated from the sum of differences by thresholding and opening.}
+%    		\label{fig:MaskCropping}
+%	\end{subfigure}
+%	\\
+%	\begin{subfigure}{0.6\textwidth}
+%    		\includegraphics[width=\textwidth]{ImageCrop.png}
+%    		\caption{The corresponding cropped image.}
+%    		\label{fig:ImageCropped}
+%	\end{subfigure}
+%	\caption{Cropping of an example image by locating the movement between frames for each slice. Note that the cropped image appears larger than it actually is compared to the original.}
+%	\label{fig:ImageCropping}
+%\end{figure}
+
 
 \section{Experiments} \label{Sec:Experiments}
 In the following chapter the different experiments that were conducted are described and explained. 

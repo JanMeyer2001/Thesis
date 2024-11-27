@@ -48,27 +48,27 @@
 \contentsline {subsubsection}{Training and Back-Propagation}{23}{section*.33}%
 \contentsline {subsubsection}{Testing and Evaluation Metrics}{23}{section*.34}%
 \contentsline {chapter}{\numberline {3}Materials and Methods}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data}{26}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}CMRxRecon Dataset}{26}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}ACDC Dataset}{27}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Network Architectures}{28}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Fourier-Net}{28}{subsection.3.2.1}%
-\contentsline {subsubsection}{Encoder}{29}{section*.39}%
-\contentsline {subsubsection}{Decoder}{32}{section*.41}%
-\contentsline {subsubsection}{Diffeomorphic Transforms}{33}{section*.43}%
-\contentsline {subsubsection}{Spatial Transformer}{34}{section*.44}%
-\contentsline {subsubsection}{Loss Function}{35}{section*.46}%
-\contentsline {subsection}{\numberline {3.2.2}Fourier Net+}{36}{subsection.3.2.2}%
-\contentsline {subsubsection}{Changes to the Encoder}{37}{section*.48}%
-\contentsline {subsubsection}{Effects of Cascading}{38}{section*.51}%
+\contentsline {section}{\numberline {3.1}Network Architectures}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Fourier-Net}{26}{subsection.3.1.1}%
+\contentsline {subsubsection}{Encoder}{27}{section*.36}%
+\contentsline {subsubsection}{Decoder}{29}{section*.38}%
+\contentsline {subsubsection}{Diffeomorphic Transforms}{30}{section*.40}%
+\contentsline {subsubsection}{Spatial Transformer}{31}{section*.41}%
+\contentsline {subsubsection}{Loss Function}{32}{section*.43}%
+\contentsline {subsection}{\numberline {3.1.2}Fourier Net+}{33}{subsection.3.1.2}%
+\contentsline {subsubsection}{Changes to the Encoder}{34}{section*.45}%
+\contentsline {subsubsection}{Effects of Cascading}{35}{section*.48}%
+\contentsline {section}{\numberline {3.2}Datasets}{35}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}ACDC Dataset}{36}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}CMRxRecon Dataset}{36}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Experiments}{38}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Parameter Studies on the CMRxRecon Dataset}{39}{subsection.3.3.1}%
 \contentsline {subsubsection}{Fourier-Net versus Fourier-Net+}{39}{section*.53}%
 \contentsline {subsubsection}{Starting Channel Size}{39}{section*.54}%
-\contentsline {subsubsection}{Quantitative Comparison with NiftyReg}{40}{section*.55}%
+\contentsline {subsubsection}{Quantitative Comparison with NiftyReg}{39}{section*.55}%
 \contentsline {subsection}{\numberline {3.3.2}Parameter Tests on the ACDC Dataset}{40}{subsection.3.3.2}%
 \contentsline {subsubsection}{Fourier-Net versus Fourier-Net+}{40}{section*.56}%
-\contentsline {subsubsection}{Starting Channel Size}{41}{section*.57}%
+\contentsline {subsubsection}{Starting Channel Size}{40}{section*.57}%
 \contentsline {subsubsection}{Fourier-Transform Crop Size}{41}{section*.58}%
 \contentsline {subsubsection}{Comparison with VoxelMorph}{41}{section*.59}%
 \contentsline {subsubsection}{Dense Displacement on Accelerated Data}{42}{section*.60}%

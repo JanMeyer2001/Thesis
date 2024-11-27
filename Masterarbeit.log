@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  27 NOV 2024 10:35
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  27 NOV 2024 10:43
  restricted system commands enabled.
 **Masterarbeit.tex
 (./Masterarbeit.tex
@@ -3132,187 +3132,183 @@ Underfull \hbox (badness 10000) in paragraph at lines 648--650
 [22<./images/SupervisedRegistrationGraph.jpg><./images/UnsupervisedRegistrationG
 raph.jpg>] [23<./images/GANRegistrationGraph.jpg>] [24] [25]
 Chapter 3.
-[26
 
-]
-<images/CoilsHorizontal.png, id=554, 358.4592pt x 50.589pt>
-File: images/CoilsHorizontal.png Graphic file (type png)
-<use images/CoilsHorizontal.png>
-Package luatex.def Info: images/CoilsHorizontal.png  used on input line 743.
-(luatex.def)             Requested size: 426.79135pt x 60.23561pt.
-<images/k-space_fullysampled.png, id=557, 462.528pt x 231.264pt>
-File: images/k-space_fullysampled.png Graphic file (type png)
-<use images/k-space_fullysampled.png>
-Package luatex.def Info: images/k-space_fullysampled.png  used on input line 75
-3.
-(luatex.def)             Requested size: 192.0548pt x 96.02922pt.
-<images/k-space_subsampled.png, id=558, 462.528pt x 231.264pt>
-File: images/k-space_subsampled.png Graphic file (type png)
-<use images/k-space_subsampled.png>
-Package luatex.def Info: images/k-space_subsampled.png  used on input line 759.
-
-(luatex.def)             Requested size: 192.0548pt x 96.02922pt.
-<images/image_fullysampled.png, id=559, 440.847pt x 209.583pt>
-File: images/image_fullysampled.png Graphic file (type png)
-<use images/image_fullysampled.png>
-Package luatex.def Info: images/image_fullysampled.png  used on input line 764.
-
-(luatex.def)             Requested size: 192.0548pt x 91.30217pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 765--765
-[]\TU/Alegreya(0)/m/n/10.9 (c) |Cor-re-spond-ing im-age re-con-structed
- []
-
-<images/image_subsampled.png, id=560, 440.847pt x 209.583pt>
-File: images/image_subsampled.png Graphic file (type png)
-<use images/image_subsampled.png>
-Package luatex.def Info: images/image_subsampled.png  used on input line 770.
-(luatex.def)             Requested size: 192.0548pt x 91.30217pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--771
-[]\TU/Alegreya(0)/m/n/10.9 (d) |Cor-re-spond-ing im-age re-con-structed
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/Image_ACDC_systolic.png, id=568, 462.528pt x 346.896pt>
-File: images/Image_ACDC_systolic.png Graphic file (type png)
-<use images/Image_ACDC_systolic.png>
-Package luatex.def Info: images/Image_ACDC_systolic.png  used on input line 887
-.
-(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
-<images/Image_ACDC_diastolic.png, id=569, 462.528pt x 346.896pt>
-File: images/Image_ACDC_diastolic.png Graphic file (type png)
-<use images/Image_ACDC_diastolic.png>
-Package luatex.def Info: images/Image_ACDC_diastolic.png  used on input line 89
-4.
-(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
-<images/Segmentation_ACDC_systolic.png, id=570, 462.528pt x 346.896pt>
-File: images/Segmentation_ACDC_systolic.png Graphic file (type png)
-<use images/Segmentation_ACDC_systolic.png>
-Package luatex.def Info: images/Segmentation_ACDC_systolic.png  used on input l
-ine 900.
-(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
-<images/Segmentation_ACDC_diastolic.png, id=571, 462.528pt x 346.896pt>
-File: images/Segmentation_ACDC_diastolic.png Graphic file (type png)
-<use images/Segmentation_ACDC_diastolic.png>
-Package luatex.def Info: images/Segmentation_ACDC_diastolic.png  used on input 
-line 906.
-(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (3.62949pt too wide) in paragraph at lines 916--917
+Overfull \hbox (3.62949pt too wide) in paragraph at lines 699--700
 \TU/Alegreya(0)/m/n/12 works, e.g. \TU/Alegreya(0)/m/it/12 LAP-Net \TU/Alegreya
 (0)/m/n/12 [[]󰋉󰋈[]], are usu-ally su-per-vised and re-quire large com-pu-t
 a-tional re-sources. 
  []
 
-[27<./images/CoilsHorizontal.png>] [28<./images/k-space_fullysampled.png><./imag
-es/k-space_subsampled.png><./images/image_fullysampled.png><./images/image_subsa
-mpled.png>]
-<images/ArchitectureFourier-Net.png, id=599, 1351.0475pt x 513.92pt>
+<images/ArchitectureFourier-Net.png, id=542, 1351.0475pt x 513.92pt>
 File: images/ArchitectureFourier-Net.png Graphic file (type png)
 <use images/ArchitectureFourier-Net.png>
 Package luatex.def Info: images/ArchitectureFourier-Net.png  used on input line
- 926.
+ 709.
 (luatex.def)             Requested size: 426.79135pt x 162.34047pt.
-<images/SYMNetArchitectureFCN.png, id=604, 1032.85875pt x 676.02562pt>
+<images/SYMNetArchitectureFCN.png, id=547, 1032.85875pt x 676.02562pt>
 File: images/SYMNetArchitectureFCN.png Graphic file (type png)
 <use images/SYMNetArchitectureFCN.png>
-Package luatex.def Info: images/SYMNetArchitectureFCN.png  used on input line 9
-36.
+Package luatex.def Info: images/SYMNetArchitectureFCN.png  used on input line 7
+19.
 (luatex.def)             Requested size: 426.79135pt x 279.3385pt.
 
-Overfull \hbox (7.52713pt too wide) in paragraph at lines 932--947
+Overfull \hbox (7.52713pt too wide) in paragraph at lines 715--730
 \TU/Alegreya(0)/m/n/12 which are suit-able when both in-put and out-put are com-
 plex val-ues, how-ever these complex-
  []
 
 
-Overfull \hbox (2.50871pt too wide) in paragraph at lines 932--947
+Overfull \hbox (2.50871pt too wide) in paragraph at lines 715--730
 \TU/Alegreya(0)/m/n/12 valued op-er-a-tions sac-ri-fice com-pu-ta-tional ef-fi-c
 iency. Other ap-proaches like \TU/Alegreya(0)/m/it/12 Deep-Flash \TU/Alegreya(0
 )/m/n/12 [[]󰋊󰋅[]]
  []
 
 
-Overfull \hbox (0.38713pt too wide) in paragraph at lines 932--947
+Overfull \hbox (0.38713pt too wide) in paragraph at lines 715--730
 \TU/Alegreya(0)/m/n/12 ever, in-creases train-ing and in-fer-ence cost. To bridg
 e the do-main gap be-tween real-valued
  []
 
-[29<./images/Image_ACDC_systolic.png><./images/Image_ACDC_diastolic.png><./image
-s/Segmentation_ACDC_systolic.png><./images/Segmentation_ACDC_diastolic.png>]
-[30<./images/ArchitectureFourier-Net.png><./images/SYMNetArchitectureFCN.png>]
-[31]
-<images/DecoderDisplacementField.png, id=647, 493.845pt x 405.01312pt>
+[26
+
+] [27<./images/ArchitectureFourier-Net.png>] [28<./images/SYMNetArchitectureFCN.
+png>]
+<images/DecoderDisplacementField.png, id=588, 493.845pt x 405.01312pt>
 File: images/DecoderDisplacementField.png Graphic file (type png)
 <use images/DecoderDisplacementField.png>
 Package luatex.def Info: images/DecoderDisplacementField.png  used on input lin
-e 982.
+e 765.
 (luatex.def)             Requested size: 277.41176pt x 227.51031pt.
- [32] [33<./images/DecoderDisplacementField.png>] [34]
-<images/SpatialTransformer.png, id=690, 609.77812pt x 260.47313pt>
+ [29] [30<./images/DecoderDisplacementField.png>] [31]
+<images/SpatialTransformer.png, id=635, 609.77812pt x 260.47313pt>
 File: images/SpatialTransformer.png Graphic file (type png)
 <use images/SpatialTransformer.png>
-Package luatex.def Info: images/SpatialTransformer.png  used on input line 1016
-.
+Package luatex.def Info: images/SpatialTransformer.png  used on input line 799.
+
 (luatex.def)             Requested size: 426.79135pt x 182.31404pt.
- [35<./images/SpatialTransformer.png>]
-Overfull \hbox (13.11916pt too wide) in paragraph at lines 1075--1077
+ [32<./images/SpatialTransformer.png>]
+Overfull \hbox (13.11916pt too wide) in paragraph at lines 858--860
 \TU/Alegreya(0)/m/n/12 limited spa-tial rep-re-sen-ta-tion of the im-ages as in-
 put, in-stead of their orig-i-nal full-resolution
  []
 
-<images/ArchitectureFourier-Net+.png, id=710, 1075.01625pt x 356.0803pt>
+<images/ArchitectureFourier-Net+.png, id=654, 1075.01625pt x 356.0803pt>
 File: images/ArchitectureFourier-Net+.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+.png>
 Package luatex.def Info: images/ArchitectureFourier-Net+.png  used on input lin
-e 1081.
+e 864.
 (luatex.def)             Requested size: 426.79135pt x 141.36465pt.
-<images/CompressionEncoder.png, id=715, 490.83376pt x 391.4625pt>
+<images/CompressionEncoder.png, id=659, 490.83376pt x 391.4625pt>
 File: images/CompressionEncoder.png Graphic file (type png)
 <use images/CompressionEncoder.png>
-Package luatex.def Info: images/CompressionEncoder.png  used on input line 1091
-.
+Package luatex.def Info: images/CompressionEncoder.png  used on input line 874.
+
 (luatex.def)             Requested size: 213.39568pt x 170.18922pt.
-<images/ArchitectureFourier-Net+CNN.png, id=718, 1078.0275pt x 218.31563pt>
+<images/ArchitectureFourier-Net+CNN.png, id=662, 1078.0275pt x 218.31563pt>
 File: images/ArchitectureFourier-Net+CNN.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+CNN.png>
 Package luatex.def Info: images/ArchitectureFourier-Net+CNN.png  used on input 
-line 1098.
+line 881.
 (luatex.def)             Requested size: 426.79135pt x 86.43193pt.
-[36] [37<./images/ArchitectureFourier-Net+.png><./images/CompressionEncoder.png>
+[33] [34<./images/ArchitectureFourier-Net+.png><./images/CompressionEncoder.png>
 ]
-<images/ArchitectureFourier-Net+Cascaded.png, id=744, 1409.265pt x 287.0725pt>
+<images/ArchitectureFourier-Net+Cascaded.png, id=690, 1409.265pt x 287.0725pt>
 File: images/ArchitectureFourier-Net+Cascaded.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+Cascaded.png>
 Package luatex.def Info: images/ArchitectureFourier-Net+Cascaded.png  used on i
-nput line 1118.
+nput line 901.
 (luatex.def)             Requested size: 426.79135pt x 86.93715pt.
+ [35<./images/ArchitectureFourier-Net+CNN.png>]
+<images/Image_ACDC_systolic.png, id=708, 462.528pt x 346.896pt>
+File: images/Image_ACDC_systolic.png Graphic file (type png)
+<use images/Image_ACDC_systolic.png>
+Package luatex.def Info: images/Image_ACDC_systolic.png  used on input line 946
+.
+(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
+<images/Image_ACDC_diastolic.png, id=709, 462.528pt x 346.896pt>
+File: images/Image_ACDC_diastolic.png Graphic file (type png)
+<use images/Image_ACDC_diastolic.png>
+Package luatex.def Info: images/Image_ACDC_diastolic.png  used on input line 95
+3.
+(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
+<images/Segmentation_ACDC_systolic.png, id=710, 462.528pt x 346.896pt>
+File: images/Segmentation_ACDC_systolic.png Graphic file (type png)
+<use images/Segmentation_ACDC_systolic.png>
+Package luatex.def Info: images/Segmentation_ACDC_systolic.png  used on input l
+ine 959.
+(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
+<images/Segmentation_ACDC_diastolic.png, id=711, 462.528pt x 346.896pt>
+File: images/Segmentation_ACDC_diastolic.png Graphic file (type png)
+<use images/Segmentation_ACDC_diastolic.png>
+Package luatex.def Info: images/Segmentation_ACDC_diastolic.png  used on input 
+line 965.
+(luatex.def)             Requested size: 170.71393pt x 128.0372pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36<./images/ArchitectureFourier-Net+Cascaded.png>] [37<./images/Image_ACDC_syst
+olic.png><./images/Image_ACDC_diastolic.png><./images/Segmentation_ACDC_systolic
+.png><./images/Segmentation_ACDC_diastolic.png>]
+<images/CoilsHorizontal.png, id=742, 358.4592pt x 50.589pt>
+File: images/CoilsHorizontal.png Graphic file (type png)
+<use images/CoilsHorizontal.png>
+Package luatex.def Info: images/CoilsHorizontal.png  used on input line 989.
+(luatex.def)             Requested size: 426.79135pt x 60.23561pt.
+<images/k-space_fullysampled.png, id=745, 462.528pt x 231.264pt>
+File: images/k-space_fullysampled.png Graphic file (type png)
+<use images/k-space_fullysampled.png>
+Package luatex.def Info: images/k-space_fullysampled.png  used on input line 99
+9.
+(luatex.def)             Requested size: 192.0548pt x 96.02922pt.
+<images/k-space_subsampled.png, id=746, 462.528pt x 231.264pt>
+File: images/k-space_subsampled.png Graphic file (type png)
+<use images/k-space_subsampled.png>
+Package luatex.def Info: images/k-space_subsampled.png  used on input line 1005
+.
+(luatex.def)             Requested size: 192.0548pt x 96.02922pt.
+<images/image_fullysampled.png, id=747, 440.847pt x 209.583pt>
+File: images/image_fullysampled.png Graphic file (type png)
+<use images/image_fullysampled.png>
+Package luatex.def Info: images/image_fullysampled.png  used on input line 1010
+.
+(luatex.def)             Requested size: 192.0548pt x 91.30217pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
+[]\TU/Alegreya(0)/m/n/10.9 (c) |Cor-re-spond-ing im-age re-con-structed
+ []
+
+<images/image_subsampled.png, id=748, 440.847pt x 209.583pt>
+File: images/image_subsampled.png Graphic file (type png)
+<use images/image_subsampled.png>
+Package luatex.def Info: images/image_subsampled.png  used on input line 1016.
+(luatex.def)             Requested size: 192.0548pt x 91.30217pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1017
+[]\TU/Alegreya(0)/m/n/10.9 (d) |Cor-re-spond-ing im-age re-con-structed
+ []
 
 
 LaTeX Warning: Reference `SubSec:Pre-Processing' on page 38 undefined on input 
-line 1133.
+line 1136.
 
-[38<./images/ArchitectureFourier-Net+CNN.png>] [39<./images/ArchitectureFourier-
-Net+Cascaded.png>] [40] [41]
+[38<./images/CoilsHorizontal.png><./images/k-space_fullysampled.png><./images/k-
+space_subsampled.png><./images/image_fullysampled.png><./images/image_subsampled
+.png>] [39] [40] [41]
 
 LaTeX Warning: Reference `SubSec:Fourier-NetvsFourier-Net+' on page 42 undefine
-d on input line 1170.
+d on input line 1173.
 
 
-Overfull \hbox (1.48141pt too wide) in paragraph at lines 1170--1172
+Overfull \hbox (1.48141pt too wide) in paragraph at lines 1173--1175
 \TU/Alegreya(0)/m/n/12 The tests again in-cluded \TU/Alegreya(0)/m/it/12 Fourier
 -Net\TU/Alegreya(0)/m/n/12 , \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(
 0)/m/n/12 and \TU/Alegreya(0)/m/it/12 󰋐xFourier-Net+\TU/Alegreya(0)/m/n/12 , which were all trained
  []
 
 
-Overfull \hbox (2.80876pt too wide) in paragraph at lines 1174--1178
+Overfull \hbox (2.80876pt too wide) in paragraph at lines 1177--1181
 \TU/Alegreya(0)/m/n/12 is-tra-tion net-work work-ing in the im-age do-main and 
 a an-other dense net-work which works
  []
@@ -3320,72 +3316,71 @@ a an-other dense net-work which works
 [42] [43]
 
 LaTeX Warning: Reference `Sec:Motion-CompensatedReconstruction' on page 44 unde
-fined on input line 1202.
+fined on input line 1205.
 
 
 LaTeX Warning: Reference `Sec:K-SpaceAndContrastiveLossExperiments' on page 44 
-undefined on input line 1204.
+undefined on input line 1207.
 
 
 LaTeX Warning: Reference `SubSec:TestingEvalutionMetrics' on page 44 undefined 
-on input line 1204.
+on input line 1207.
 
 
-Overfull \hbox (2.24478pt too wide) in paragraph at lines 1202--1205
+Overfull \hbox (2.24478pt too wide) in paragraph at lines 1205--1208
 \TU/Alegreya(0)/m/n/12 the lat-ter. ES-PIRiT [[]󰋇󰋋[]] was used to sim-u-la
 te the coil sen-si-tiv-ity maps needed for a SENSE-
  []
 
-[44]
-<images/ReconstructionPipelineEvaluation.png, id=832, 511.9125pt x 386.94562pt>
+<images/ReconstructionPipelineEvaluation.png, id=828, 511.9125pt x 386.94562pt>
 
 File: images/ReconstructionPipelineEvaluation.png Graphic file (type png)
 <use images/ReconstructionPipelineEvaluation.png>
 Package luatex.def Info: images/ReconstructionPipelineEvaluation.png  used on i
-nput line 1210.
+nput line 1213.
 (luatex.def)             Requested size: 426.79135pt x 322.60542pt.
- [45<./images/ReconstructionPipelineEvaluation.png>]
+[44] [45<./images/ReconstructionPipelineEvaluation.png>]
 Chapter 4.
 
-Overfull \hbox (15.31511pt too wide) in paragraph at lines 1231--1233
+Overfull \hbox (15.31511pt too wide) in paragraph at lines 1234--1236
 \TU/Alegreya(0)/m/n/12 First, the base-line net-work \TU/Alegreya(0)/m/it/12 Fou
 rier-Net \TU/Alegreya(0)/m/n/12 was com-pared to its more ef-fi-cient suc-ces-so
 r \TU/Alegreya(0)/m/it/12 󰋐xFourier-
  []
 
-LaTeX Font Info:    Calculating math sizes for size <10.9> on input line 1239.
+LaTeX Font Info:    Calculating math sizes for size <10.9> on input line 1242.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 1239.
+(Font)              scaled to size 10.9pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 7.62996pt on input line 1239.
+(Font)              scaled to size 7.62996pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 5.45pt on input line 1239.
+(Font)              scaled to size 5.45pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 10.9pt on input line 1239.
+(Font)              scaled to size 10.9pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 7.62996pt on input line 1239.
+(Font)              scaled to size 7.62996pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 5.45pt on input line 1239.
+(Font)              scaled to size 5.45pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 11.99005pt on input line 1239.
+(Font)              scaled to size 11.99005pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 8.39299pt on input line 1239.
+(Font)              scaled to size 8.39299pt on input line 1242.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 5.99503pt on input line 1239.
+(Font)              scaled to size 5.99503pt on input line 1242.
 [46
 
 ]
-<images/TestBenchmark_MSE_Boxplots.png, id=856, 722.7pt x 433.62pt>
+<images/TestBenchmark_MSE_Boxplots.png, id=862, 722.7pt x 433.62pt>
 File: images/TestBenchmark_MSE_Boxplots.png Graphic file (type png)
 <use images/TestBenchmark_MSE_Boxplots.png>
 Package luatex.def Info: images/TestBenchmark_MSE_Boxplots.png  used on input l
-ine 1325.
+ine 1328.
 (luatex.def)             Requested size: 211.25963pt x 126.75229pt.
-<images/TestBenchmark_SSIM_Boxplots.png, id=857, 722.7pt x 433.62pt>
+<images/TestBenchmark_SSIM_Boxplots.png, id=863, 722.7pt x 433.62pt>
 File: images/TestBenchmark_SSIM_Boxplots.png Graphic file (type png)
 <use images/TestBenchmark_SSIM_Boxplots.png>
 Package luatex.def Info: images/TestBenchmark_SSIM_Boxplots.png  used on input 
-line 1331.
+line 1334.
 (luatex.def)             Requested size: 211.25963pt x 126.75229pt.
 
 
@@ -3393,7 +3388,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47] [48<./images/TestBenchmark_MSE_Boxplots.png><./images/TestBenchmark_SSIM_Bo
 xplots.png>] [49]
-Overfull \hbox (9.29347pt too wide) in paragraph at lines 1410--1413
+Overfull \hbox (9.29347pt too wide) in paragraph at lines 1413--1416
 \TU/Alegreya(0)/m/n/12 Next, the im-pact of the start-ing chan-nels was ex-am-in
 ed. For this, \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(0)/m/n/12 and \
 TU/Alegreya(0)/m/it/12 󰋐xFourier-
@@ -3408,7 +3403,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [52] [53]
-Overfull \hbox (13.28703pt too wide) in paragraph at lines 1524--1531
+Overfull \hbox (13.28703pt too wide) in paragraph at lines 1527--1534
 \TU/Alegreya(0)/m/it/12 Fourier-Net \TU/Alegreya(0)/m/n/12 com-pared to the dens
 e ver-sion, while the band-limited \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Ale
 greya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 󰋐xFourier-
@@ -3417,10 +3412,10 @@ greya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 󰋐xFourier-
 [54] [55] [56]
 
 LaTeX Warning: Reference `SubSec:ComparisonVoxelMorph' on page 57 undefined on 
-input line 1633.
+input line 1636.
 
 
-Overfull \hbox (0.36066pt too wide) in paragraph at lines 1633--1655
+Overfull \hbox (0.36066pt too wide) in paragraph at lines 1636--1658
 \TU/Alegreya(0)/m/n/12 base-line. \TU/Alegreya(0)/m/it/12 Vox-el-Morph \TU/Aleg
 reya(0)/m/n/12 per-forms best in terms of SSIM, fol-lowed by \TU/Alegreya(0)/m/
 it/12 Fourier-Net \TU/Alegreya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 Ni󰀗tyReg
@@ -3428,7 +3423,7 @@ it/12 Fourier-Net \TU/Alegreya(0)/m/n/12 and \TU/Alegreya(0)/m/it/12 Ni󰀗tyReg
  []
 
 
-Overfull \hbox (7.89664pt too wide) in paragraph at lines 1633--1655
+Overfull \hbox (7.89664pt too wide) in paragraph at lines 1636--1658
 \TU/Alegreya(0)/m/n/12 tions for the mov-ing and fixed im-age ob-vi-ously re-mai
 n the same. \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(0)/m/n/12 and \TU
 /Alegreya(0)/m/it/12 󰋐xFourier-
@@ -3436,67 +3431,67 @@ n the same. \TU/Alegreya(0)/m/it/12 Fourier-Net+ \TU/Alegreya(0)/m/n/12 and \TU
 
 [57] [58] [59]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 9.25pt on input line 1658.
-LaTeX Font Info:    Calculating math sizes for size <9.25> on input line 1662.
+(Font)              scaled to size 9.25pt on input line 1661.
+LaTeX Font Info:    Calculating math sizes for size <9.25> on input line 1665.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 9.25pt on input line 1662.
+(Font)              scaled to size 9.25pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 6.47496pt on input line 1662.
+(Font)              scaled to size 6.47496pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 4.625pt on input line 1662.
+(Font)              scaled to size 4.625pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 9.25pt on input line 1662.
+(Font)              scaled to size 9.25pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 6.47496pt on input line 1662.
+(Font)              scaled to size 6.47496pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/b/n' will be
-(Font)              scaled to size 4.625pt on input line 1662.
+(Font)              scaled to size 4.625pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 10.17505pt on input line 1662.
+(Font)              scaled to size 10.17505pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 7.12248pt on input line 1662.
+(Font)              scaled to size 7.12248pt on input line 1665.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 5.08752pt on input line 1662.
-<images/Boxplot_DiceScores_LV-Cavity.png, id=954, 867.24pt x 433.62pt>
+(Font)              scaled to size 5.08752pt on input line 1665.
+<images/Boxplot_DiceScores_LV-Cavity.png, id=960, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package luatex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
- line 1708.
+ line 1711.
 (luatex.def)             Requested size: 341.43437pt x 170.71892pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=955, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_Myocardium.png, id=961, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package luatex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
-t line 1714.
+t line 1717.
 (luatex.def)             Requested size: 341.43437pt x 170.71892pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=956, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_RV-Cavity.png, id=962, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package luatex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
- line 1720.
+ line 1723.
 (luatex.def)             Requested size: 341.43437pt x 170.71892pt.
  [60]
-<images/TestExamples_Mode0.png, id=961, 1962.8532pt x 709.6914pt>
+<images/TestExamples_Mode0.png, id=967, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
-Package luatex.def Info: images/TestExamples_Mode0.png  used on input line 1761
+Package luatex.def Info: images/TestExamples_Mode0.png  used on input line 1764
 .
 (luatex.def)             Requested size: 426.79135pt x 154.30249pt.
-<images/TestExamples_Mode1.png, id=962, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode1.png, id=968, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
-Package luatex.def Info: images/TestExamples_Mode1.png  used on input line 1762
+Package luatex.def Info: images/TestExamples_Mode1.png  used on input line 1765
 .
 (luatex.def)             Requested size: 426.79135pt x 148.33151pt.
-<images/TestExamples_Mode2.png, id=963, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode2.png, id=969, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
-Package luatex.def Info: images/TestExamples_Mode2.png  used on input line 1763
+Package luatex.def Info: images/TestExamples_Mode2.png  used on input line 1766
 .
 (luatex.def)             Requested size: 426.79135pt x 148.33151pt.
-<images/TestExamples_Mode3.png, id=964, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode3.png, id=970, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
-Package luatex.def Info: images/TestExamples_Mode3.png  used on input line 1764
+Package luatex.def Info: images/TestExamples_Mode3.png  used on input line 1767
 .
 (luatex.def)             Requested size: 426.79135pt x 148.33151pt.
  [61<./images/Boxplot_DiceScores_LV-Cavity.png><./images/Boxplot_DiceScores_Myoc
@@ -3506,19 +3501,19 @@ Overfull \vbox (8.80626pt too high) has occurred while \output is active []
 
 [62<./images/TestExamples_Mode0.png><./images/TestExamples_Mode1.png><./images/T
 estExamples_Mode2.png><./images/TestExamples_Mode3.png>] [63]
-<images/ContrastiveLoss_Mode1.png, id=991, 2178.9405pt x 709.6914pt>
+<images/ContrastiveLoss_Mode1.png, id=997, 2178.9405pt x 709.6914pt>
 File: images/ContrastiveLoss_Mode1.png Graphic file (type png)
 <use images/ContrastiveLoss_Mode1.png>
 Package luatex.def Info: images/ContrastiveLoss_Mode1.png  used on input line 1
-867.
+870.
 (luatex.def)             Requested size: 426.79135pt x 139.0011pt.
  [64<./images/ContrastiveLoss_Mode1.png>]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 10.9pt on input line 1886.
+(Font)              scaled to size 10.9pt on input line 1889.
 
 
 LaTeX Warning: Reference `SubSec:TestingEvalutionMetrics' on page 65 undefined 
-on input line 1908.
+on input line 1911.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3538,36 +3533,36 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Using 'family-given' now.
 
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 1991.
+(Font)              scaled to size 12.0pt on input line 1994.
 [69
 
 ] [70]
-Underfull \hbox (badness 4403) in paragraph at lines 1991--1991
+Underfull \hbox (badness 4403) in paragraph at lines 1994--1994
 []\TU/Alegreya(0)/m/n/12 Strittmat-ter, A., Car-oli, A., and Zöll-ner, F. G.  
 A Mul-ti-stage Rigid-A󰀌fine-
  []
 
 [71]
-Underfull \hbox (badness 1661) in paragraph at lines 1991--1991
+Underfull \hbox (badness 1661) in paragraph at lines 1994--1994
 \TU/Alegreya(0)/m/it/12 Com-puter Sci-ence\TU/Alegreya(0)/m/n/12 . Springer In-t
 er-na-tional Pub-lish-ing, 󰋇󰋅󰋆󰋍, pp. 󰋌󰋇󰋎–󰋌󰋈󰋍. \
 TU/Alegreya(0)/m/sc/12 󰁳󰃑󰀹󰂘\TU/Alegreya(0)/m/n/12 :
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 1991--1991
+Underfull \hbox (badness 1635) in paragraph at lines 1994--1994
 \TU/Alegreya(0)/m/n/12 work for Statis-tics on Dif-feo-mor-phisms. In: \TU/Aleg
 reya(0)/m/it/12 Lec-ture Notes in Com-puter Sci-ence\TU/Alegreya(0)/m/n/12 .
  []
 
 [72]
-Underfull \hbox (badness 2970) in paragraph at lines 1991--1991
+Underfull \hbox (badness 2970) in paragraph at lines 1994--1994
 []\TU/Alegreya(0)/m/n/12 Jader-berg, M., Si-monyan, K., Zis-ser-man, A., and Kav
 ukcuoglu, K.  Spa-tial
  []
 
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 12.29993pt on input line 1991.
+(Font)              scaled to size 12.29993pt on input line 1994.
 [73] (./Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
@@ -3580,8 +3575,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 604DA2F531E18B397CF89E900D12E255;3779.
+
+Package rerunfilecheck Warning: File `Masterarbeit.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Masterarbeit.out':
+(rerunfilecheck)             Before: 604DA2F531E18B397CF89E900D12E255;3779
+(rerunfilecheck)             After:  6F8AD2C3AE85B1B5DE752706C3CAF51E;3799.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                Masterarbeit
@@ -3593,16 +3594,28 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45310 strings out of 477259
- 195341,2373549 words of node,token memory allocated
+ 45317 strings out of 477259
+ 195339,2373549 words of node,token memory allocated
  1161 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 171 attribute
 , 71 glue_spec, 87 attribute_list, 2 write, 12 pdf_action nodes
    avail lists: 1:5,2:2835,3:558,4:220,5:2321,6:62,7:16564,8:73,9:933,10:24,11:1
 086
- 65202 multiletter control sequences out of 65536+600000
- 306 fonts using 93917183 bytes
+ 65203 multiletter control sequences out of 65536+600000
+ 306 fonts using 93917031 bytes
  102i,14n,128p,3041b,2944s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.36'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.45'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.38'
+
+warning  (pdf backend): unreferenced destination with name 'equation.3.2.4'
+
+warning  (pdf backend): unreferenced destination with name 'equation.3.2.1'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.40'
 <C:/Program Files/MiKTeX/fonts/opentype/public/lm/lmmono12-regular.otf><C:/Progr
 am Files/MiKTeX/fonts/opentype/public/lm/lmmonoprop10-regular.otf><C:/Program Fi
 les/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Progr
@@ -3620,9 +3633,9 @@ KTeX/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf><C:/Program Files/MiKTeX
 /fonts/opentype/huerta/alegreya/AlegreyaSans-Bold.otf><C:/Program Files/MiKTeX/f
 onts/opentype/huerta/alegreya/AlegreyaSans-Italic.otf><C:/Program Files/MiKTeX/f
 onts/opentype/huerta/alegreya/AlegreyaSans-Regular.otf>
-Output written on Masterarbeit.pdf (79 pages, 10249314 bytes).
+Output written on Masterarbeit.pdf (79 pages, 10249863 bytes).
 
-PDF statistics: 1233 PDF objects out of 1440 (max. 8388607)
- 306 named destinations out of 1000 (max. 131072)
+PDF statistics: 1239 PDF objects out of 1440 (max. 8388607)
+ 312 named destinations out of 1000 (max. 131072)
  176 words of extra memory for PDF output out of 10000 (max. 100000000)
 
