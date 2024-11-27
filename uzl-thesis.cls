@@ -649,8 +649,10 @@
 \UzLStyle{
   chapter leaders/.code={\hfill},%\kern1ex\leaders\hrule\hfill},
   section leaders/.code={},
+  subsection leaders/.code={},
   chapter in toc/.uzl style inherits from = structure,
-  section in toc/.uzl style inherits from = plain
+  section in toc/.uzl style inherits from = plain,
+  subsection in toc/.uzl style inherits from = plain
 }
 
 
