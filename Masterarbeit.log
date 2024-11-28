@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  27 NOV 2024 17:03
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2024.4.12)  28 NOV 2024 10:13
  restricted system commands enabled.
 **Masterarbeit.tex
 (./Masterarbeit.tex
@@ -3466,15 +3466,15 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45240 strings out of 477259
+ 45238 strings out of 477259
  125007,2373549 words of node,token memory allocated
  1161 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 171 attribute
 , 71 glue_spec, 87 attribute_list, 2 write, 12 pdf_action nodes
-   avail lists: 1:4,2:2883,3:519,4:236,5:1258,6:60,7:12285,8:73,9:904,10:24,11:9
+   avail lists: 1:4,2:2907,3:519,4:264,5:1258,6:59,7:12285,8:73,9:904,10:24,11:9
 97
- 65156 multiletter control sequences out of 65536+600000
- 305 fonts using 93791095 bytes
+ 65154 multiletter control sequences out of 65536+600000
+ 305 fonts using 93790639 bytes
  102i,14n,128p,3041b,2944s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/opentype/public/lm/lmmonoprop10-regular.otf><C:/P
 rogram Files/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf>
@@ -3492,7 +3492,7 @@ ram Files/MiKTeX/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><C:/Program
 es/MiKTeX/fonts/opentype/huerta/alegreya/AlegreyaSans-Bold.otf><C:/Program Files
 /MiKTeX/fonts/opentype/huerta/alegreya/AlegreyaSans-Italic.otf><C:/Program Files
 /MiKTeX/fonts/opentype/huerta/alegreya/AlegreyaSans-Regular.otf>
-Output written on Masterarbeit.pdf (73 pages, 8670215 bytes).
+Output written on Masterarbeit.pdf (73 pages, 8670390 bytes).
 
 PDF statistics: 1191 PDF objects out of 1200 (max. 8388607)
  291 named destinations out of 1000 (max. 131072)
