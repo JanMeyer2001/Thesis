@@ -1149,6 +1149,66 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Pan2024}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PJ}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Jiazhen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Wenqi},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rueckert},
+         familyi={R\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Küstner},
+         familyi={K\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hammernik},
+         familyi={H\bibinitperiod},
+         given={Kerstin},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{PJ+1}
+    \strng{fullhash}{PJHWRDKTHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tmi.2024.3364504
+    \endverb
+    \field{issn}{1558-254X}
+    \field{number}{7}
+    \field{pages}{2420\bibrangedash 2433}
+    \field{title}{Motion-Compensated MR CINE Reconstruction With
+  Reconstruction-Driven Motion Estimation}
+    \field{volume}{43}
+    \verb{file}
+    \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semes
+    \verb ter/Masterarbeit/Literatur/Motion-compensated MR CINE reconstruction
+    \verb with reconstruction-driven motion estimation.pdf:PDF
+    \endverb
+    \field{journaltitle}{IEEE Transactions on Medical Imaging}
+    \field{month}{07}
+    \field{year}{2024}
+  \endentry
+
   \entry{Zou2024}{article}{}
     \name{author}{1}{}{%
       {{hash=ZQ}{%

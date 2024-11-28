@@ -23,49 +23,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'field_info' (item size: 4) to 13120 items.
 Database file #1: Masterarbeit-blx.bib
 Database file #2: Bibliography.bib
-Warning--I didn't find a database entry for "Pan2024"
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 57 entries,
+You've used 58 entries,
             6399 wiz_defined-function locations,
-            1700 strings with 32822 characters,
-and the built_in function-call counts, 830809 in all, are:
-= -- 74686
-> -- 9761
-< -- 2677
-+ -- 28449
-- -- 4407
-* -- 61542
-:= -- 103570
+            1707 strings with 33229 characters,
+and the built_in function-call counts, 844368 in all, are:
+= -- 75887
+> -- 9962
+< -- 2759
++ -- 28929
+- -- 4483
+* -- 62441
+:= -- 105125
 add.period$ -- 0
-call.type$ -- 57
-change.case$ -- 1409
-chr.to.int$ -- 280
-cite$ -- 112
-duplicate$ -- 86610
-empty$ -- 65811
-format.name$ -- 6160
-if$ -- 162052
+call.type$ -- 58
+change.case$ -- 1467
+chr.to.int$ -- 286
+cite$ -- 114
+duplicate$ -- 88120
+empty$ -- 66841
+format.name$ -- 6261
+if$ -- 164761
 int.to.chr$ -- 0
-int.to.str$ -- 174
+int.to.str$ -- 177
 missing$ -- 0
-newline$ -- 3388
-num.names$ -- 3275
-pop$ -- 23454
+newline$ -- 3447
+num.names$ -- 3366
+pop$ -- 23855
 preamble$ -- 1
-purify$ -- 2121
+purify$ -- 2190
 quote$ -- 0
-skip$ -- 13865
+skip$ -- 14204
 stack$ -- 0
-substring$ -- 144079
-swap$ -- 12848
-text.length$ -- 1975
+substring$ -- 146168
+swap$ -- 13114
+text.length$ -- 2010
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1926
+type$ -- 1960
 warning$ -- 0
-while$ -- 12787
+while$ -- 12991
 width$ -- 0
-write$ -- 3332
-(There was 1 warning)
+write$ -- 3390
