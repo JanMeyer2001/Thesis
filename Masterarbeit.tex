@@ -45,7 +45,7 @@
 \usepackage{subcaption}	% for subfigures
 \usepackage{float}		% for float (figures, tables) positioning 
 \usepackage{multirow}	% for multirow in tables
-\usepackage{booktabs} 	% for toprule, etc. in tables
+\usepackage{booktabs} 	% for toprule, cmidrule, etc. in tables
 
 
 
@@ -1355,7 +1355,7 @@ Now to the difference between the dense and band-limited displacement. Overall, 
 	\begin{tabular}{c c c c} %
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
 		$\%$ Dice & $78.22 \pm 13.84$ & $78.43 \pm 13.96$ & $79.34 \pm 14.03$\\
@@ -1379,7 +1379,7 @@ Now to the difference between the dense and band-limited displacement. Overall, 
 		Memory [MB]   & 97.63   	& 5.81   	& 21.90 \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
 		$\%$ Dice & $77.95 \pm 14.71$ & $75.35 \pm 14.28$ & $76.59 \pm 14.84$\\
@@ -1419,7 +1419,7 @@ The inference time is not heavily impacted by channel size as the times remain v
 	\begin{tabular}{c c c c c} %
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{Starting Channels - Fourier-Net+} \\
-		\cline{2-5}
+		\cmidrule(lr){2-5}
 		 & 8 & 16 & 32 & 64 \\		
 		\midrule
 		$\%$ Dice & $75.50 \pm 13.79$ & $76.88 \pm 13.86$ & $77.66 \pm 13.60$ & $77.81 \pm 13.76$ \\
@@ -1433,7 +1433,7 @@ The inference time is not heavily impacted by channel size as the times remain v
 		Memory [MB] 	  & 2.25 	& 4.64 		& 11.22 		& 31.57 \\
 		\midrule		
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{Starting Channels - 4xFourier-Net+} \\
-		\cline{2-5} 
+		\cmidrule(lr){2-5} 
 		 & 8 & 16 & 32 & 64 \\		
 		\midrule
 		$\%$ Dice & $77.54 \pm 13.73$ & $77.90 \pm 13.92$ & $78.33 \pm 14.14$ & $78.74 \pm 13.91$ \\
@@ -1463,7 +1463,7 @@ The number of parameters does not change for different crop sizes as the network
 	\begin{tabular}{c c c c c} %
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{FT crop size - Fourier-Net+} \\
-		\cline{2-5}
+		\cmidrule(lr){2-5}
 		 & $80 \times 168$ & $40 \times 84$ & $48 \times 48$ & $24 \times 24$ \\		
 		\midrule
 		$\%$ Dice & $78.24 \pm 14.43$ & $76.61 \pm 13.90$ & $75.27 \pm 13.49$ & $73.77 \pm 14.42$ \\
@@ -1477,7 +1477,7 @@ The number of parameters does not change for different crop sizes as the network
 		Memory [MB] 	  & 9.51   & 2.97   & 2.25   & 1.12 \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{FT crop size - 4xFourier-Net+} \\
-		\cline{2-5}
+		\cmidrule(lr){2-5}
 		 & $80 \times 168$ & $40 \times 84$ & $48 \times 48$ & $24 \times 24$ \\		
 		\midrule
 		$\%$ Dice & $78.12 \pm 15.01$ & $77.49 \pm 14.67$ & $74.95 \pm 14.15$ & $72.58 \pm 14.67$ \\
@@ -1537,7 +1537,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 	\begin{tabular}{c c c c} %
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
 		$\%$ Dice & $77.37 \pm 13.92$ & $76.90 \pm 14.12$ & $77.35 \pm 14.04$\\
@@ -1548,7 +1548,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 		Time [s] 	  & 0.0085 & 0.0083 & 0.0263  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
 		$\%$ Dice & $76.55 \pm 13.89$ & $76.20 \pm 13.57$ & $77.23 \pm 13.73$\\
@@ -1570,7 +1570,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 	\begin{tabular}{c c c c} %
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
 		$\%$ Dice & $77.48 \pm 14.00$ & $77.30 \pm 13.72$ & $77.80 \pm 14.02$\\
@@ -1581,7 +1581,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 		Time [s] 	  & 0.0115 & 0.0108 & 0.0385  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
 		$\%$ Dice & $75.52 \pm 13.69$ & $75.76 \pm 13.43$ & $76.56 \pm 13.47$\\
@@ -1603,7 +1603,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 	\begin{tabular}{c c c c} %
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
 		$\%$ Dice & $77.39 \pm 13.89$ & $77.31 \pm 13.82$ & $77.43 \pm 13.99$\\
@@ -1614,7 +1614,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 		Time [s] 	  & 0.0280 & 0.0095 & 0.0183  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
 		$\%$ Dice & $76.87 \pm 13.97$ & $76.10 \pm 13.83$ & $76.98 \pm 13.57$\\
@@ -1827,7 +1827,7 @@ For $R=8$, the displacements for all methods become more global due to the stron
 %	\begin{tabular}{c c c c} %
 %		\toprule
 %		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{k-space loss - Fourier-Net} \\
-%		\cline{2-4}
+%		\cmidrule(lr){2-4}
 %		 & None & MSE & relativeL2 \\		
 %		\midrule
 %		$\%$ Dice & $76.55 \pm 13.89$ & $71.05 \pm 14.29$ & $73.43 \pm 13.56$ \\
@@ -1854,7 +1854,7 @@ For $R=8$, the displacements for all methods become more global due to the stron
 %	\begin{tabular}{c c c c c c c} %
 %		\toprule
 %		\multirow{2}{*}{Metrics} & \multicolumn{6}{c}{Contrastive loss weighting - Fourier-Net} \\
-%		\cline{2-7}
+%		\cmidrule(lr){2-7}
 %		 & $\lambda=0$ & $\lambda=0.0005$ & $\lambda=0.001$ & $\lambda=0.005$ & $\lambda=0.01$ & $\lambda=0.05$ \\		
 %		\midrule
 %		$\%$ Dice & $72.16 \pm 14.05$ & $72.47 \pm 13.90$ & $72.09 \pm 13.73$ & $74.07 \pm 14.07$ & $73.96 \pm 14.03$ & $69.32 \pm 16.68$ \\
@@ -1890,7 +1890,7 @@ Compared \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} train
 	\begin{tabular}{c c c c} %
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Trained on \emph{ACDC}} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
 		$\%$ SSIM & $98.21 \pm 1.07$ & $97.88 \pm 1.04$ & $97.88 \pm 1.04$\\
@@ -1899,7 +1899,7 @@ Compared \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} train
 		Time [s] 	  & 0.0038 & 0.0037 & 0.0185  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Trained on \emph{CMRxRecon}} \\
-		\cline{2-4} 
+		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
 		$\%$ SSIM & $97.99 \pm 1.04$ & $97.88 \pm 1.06$ & $97.88 \pm 1.07$\\
@@ -1920,7 +1920,7 @@ After ensuring that the previous results were translatable to the new data, the 
 	\begin{tabular}{c c c c c c} 
 		\toprule
 		 & \multirow{2}{*}{Methods} & \multicolumn{4}{c}{Motion-correction for motion $z=16$} \\
-		\cline{3-6} 
+		\cmidrule(lr){3-6} 
 		 & & $\%$ HaarPSI & PSNR [dB] & $\%$ SSIM & MSE (m)\\
 		
 		% 4x Accelerated (R=4) 				 		
