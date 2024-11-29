@@ -1,4 +1,4 @@
-\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.3}%
 \contentsline {section}{\numberline {1.1}Challenges of MRI Acquisition}{1}{section.4}%
 \contentsline {section}{\numberline {1.2}Related Work}{1}{section.5}%
@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {2.3.2.1}Supervised Registration}{21}{subsubsection.57}%
 \contentsline {subsubsection}{\numberline {2.3.2.2}Unsupervised Registration}{22}{subsubsection.59}%
 \contentsline {subsection}{\numberline {2.3.3}Network Training and Testing}{22}{subsection.62}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{22}{subsubsection.63}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{23}{subsubsection.63}%
 \contentsline {subsubsection}{\numberline {2.3.3.2}Testing and Evaluation Metrics}{24}{subsubsection.64}%
 \contentsline {chapter}{\numberline {3}Materials and Methods}{27}{chapter.70}%
 \contentsline {section}{\numberline {3.1}Network Architectures}{27}{section.71}%
@@ -53,7 +53,7 @@
 \contentsline {section}{\numberline {3.2}Datasets}{37}{section.107}%
 \contentsline {subsection}{\numberline {3.2.1}ACDC Dataset}{38}{subsection.108}%
 \contentsline {subsection}{\numberline {3.2.2}CMRxRecon Dataset}{38}{subsection.110}%
-\contentsline {section}{\numberline {3.3}Experiments}{39}{section.113}%
+\contentsline {section}{\numberline {3.3}Experiments}{40}{section.113}%
 \contentsline {subsection}{\numberline {3.3.1}Parameter Tests on the ACDC Dataset}{40}{subsection.114}%
 \contentsline {subsubsection}{\numberline {3.3.1.1}Fourier-Net versus Fourier-Net+}{41}{subsubsection.115}%
 \contentsline {subsubsection}{\numberline {3.3.1.2}Starting Channel Size}{41}{subsubsection.116}%
