@@ -1,93 +1,93 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.3}%
 \contentsline {section}{\numberline {1.1}Challenges of MRI Acquisition}{1}{section.4}%
-\contentsline {section}{\numberline {1.2}Related Work}{1}{section.5}%
+\contentsline {section}{\numberline {1.2}Related Work}{2}{section.5}%
 \contentsline {section}{\numberline {1.3}Contributions and Structure of the Thesis}{2}{section.6}%
-\contentsline {chapter}{\numberline {2}Fundamentals}{3}{chapter.7}%
-\contentsline {section}{\numberline {2.1}Magnetic Resonance Imaging}{3}{section.8}%
-\contentsline {subsection}{\numberline {2.1.1}Magnetic Excitation and Relaxation}{3}{subsection.10}%
-\contentsline {subsubsection}{\numberline {2.1.1.1}Radio Frequency Excitation}{3}{subsubsection.11}%
-\contentsline {subsubsection}{\numberline {2.1.1.2}Magnetic Relaxation}{5}{subsubsection.13}%
-\contentsline {subsection}{\numberline {2.1.2}Image Acquisition and the Concept of K-Space}{6}{subsection.17}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}Gradient Echo Sequence}{6}{subsubsection.18}%
-\contentsline {subsubsection}{\numberline {2.1.2.2}Spin Echo Sequence}{7}{subsubsection.20}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}Introduction to K-Space}{7}{subsubsection.22}%
-\contentsline {subsubsection}{\numberline {2.1.2.4}Rectilinear K-Space Sampling}{9}{subsubsection.25}%
-\contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{10}{subsubsection.26}%
-\contentsline {subsection}{\numberline {2.1.3}Imaging Acceleration}{12}{subsection.27}%
-\contentsline {subsubsection}{\numberline {2.1.3.1}Parallel Imaging}{12}{subsubsection.29}%
-\contentsline {subsubsection}{\numberline {2.1.3.2}Compressed Sensing}{14}{subsubsection.31}%
-\contentsline {subsubsection}{\numberline {2.1.3.3}Deep Learning Based Subsampling}{15}{subsubsection.32}%
-\contentsline {subsection}{\numberline {2.1.4}Motion-Compensated Image Reconstruction}{15}{subsection.33}%
-\contentsline {subsubsection}{\numberline {2.1.4.1}Intraview and Interview Motion}{15}{subsubsection.34}%
-\contentsline {subsubsection}{\numberline {2.1.4.2}Reconstruction Pipelines}{16}{subsubsection.35}%
-\contentsline {section}{\numberline {2.2}Image Transformations and Registration}{16}{section.36}%
-\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{16}{subsection.37}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Rigid Transformations}{17}{subsubsection.38}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Affine Transformations}{17}{subsubsection.40}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Non-Linear Transformations}{17}{subsubsection.45}%
-\contentsline {subsection}{\numberline {2.2.2}Image Registration}{18}{subsection.47}%
-\contentsline {section}{\numberline {2.3}Deep Learning}{19}{section.49}%
-\contentsline {subsection}{\numberline {2.3.1}Deep Learning Architectures}{19}{subsection.50}%
-\contentsline {subsubsection}{\numberline {2.3.1.1}Convolutional Neural Networks}{19}{subsubsection.51}%
-\contentsline {subsubsection}{\numberline {2.3.1.2}U-Net}{20}{subsubsection.52}%
-\contentsline {subsubsection}{\numberline {2.3.1.3}Autoencoders}{20}{subsubsection.54}%
-\contentsline {subsubsection}{\numberline {2.3.1.4}Generative Adversarial Networks}{21}{subsubsection.55}%
-\contentsline {subsection}{\numberline {2.3.2}Deep Learning for Image Registration}{21}{subsection.56}%
-\contentsline {subsubsection}{\numberline {2.3.2.1}Supervised Registration}{21}{subsubsection.57}%
-\contentsline {subsubsection}{\numberline {2.3.2.2}Unsupervised Registration}{22}{subsubsection.59}%
-\contentsline {subsection}{\numberline {2.3.3}Network Training and Testing}{22}{subsection.62}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{22}{subsubsection.63}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}Testing and Evaluation Metrics}{24}{subsubsection.64}%
-\contentsline {chapter}{\numberline {3}Materials and Methods}{27}{chapter.70}%
-\contentsline {section}{\numberline {3.1}Network Architectures}{27}{section.71}%
-\contentsline {subsection}{\numberline {3.1.1}Fourier-Net}{27}{subsection.72}%
-\contentsline {subsubsection}{\numberline {3.1.1.1}Encoder}{28}{subsubsection.74}%
-\contentsline {subsubsection}{\numberline {3.1.1.2}Decoder}{30}{subsubsection.79}%
-\contentsline {subsubsection}{\numberline {3.1.1.3}Diffeomorphic Transforms}{31}{subsubsection.84}%
-\contentsline {subsubsection}{\numberline {3.1.1.4}Spatial Transformer}{32}{subsubsection.89}%
-\contentsline {subsubsection}{\numberline {3.1.1.5}Loss Function}{33}{subsubsection.92}%
-\contentsline {subsection}{\numberline {3.1.2}Fourier Net+}{34}{subsection.98}%
-\contentsline {subsubsection}{\numberline {3.1.2.1}Changes to the Encoder}{35}{subsubsection.100}%
-\contentsline {subsubsection}{\numberline {3.1.2.2}Effects of Cascading}{35}{subsubsection.103}%
-\contentsline {section}{\numberline {3.2}Datasets}{37}{section.107}%
-\contentsline {subsection}{\numberline {3.2.1}ACDC Dataset}{38}{subsection.108}%
-\contentsline {subsection}{\numberline {3.2.2}CMRxRecon Dataset}{38}{subsection.110}%
-\contentsline {section}{\numberline {3.3}Experiments}{40}{section.113}%
-\contentsline {subsection}{\numberline {3.3.1}Parameter Tests on the ACDC Dataset}{40}{subsection.114}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Fourier-Net versus Fourier-Net+}{41}{subsubsection.115}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Starting Channel Size}{41}{subsubsection.116}%
-\contentsline {subsubsection}{\numberline {3.3.1.3}Fourier-Transform Crop Size}{42}{subsubsection.117}%
-\contentsline {subsubsection}{\numberline {3.3.1.4}Comparison with VoxelMorph}{42}{subsubsection.118}%
-\contentsline {subsubsection}{\numberline {3.3.1.5}Dense Displacement on Accelerated Data}{42}{subsubsection.119}%
-\contentsline {subsubsection}{\numberline {3.3.1.6}Comparison on Subsampled Data}{43}{subsubsection.120}%
-\contentsline {subsection}{\numberline {3.3.2}Integration into a Motion-Compensated Reconstruction Pipeline}{44}{subsection.121}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Domain Translation}{44}{subsubsection.122}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Reconstruction Pipeline}{44}{subsubsection.123}%
-\contentsline {chapter}{\numberline {4}Results}{47}{chapter.125}%
-\contentsline {section}{\numberline {4.1}Parameter Tests on the ACDC Dataset}{47}{section.126}%
-\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{47}{subsection.127}%
-\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{50}{subsection.129}%
-\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{50}{subsection.131}%
-\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{52}{subsection.133}%
-\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{53}{subsection.135}%
-\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{57}{subsection.139}%
-\contentsline {subsubsection}{\numberline {4.1.6.1}Cardiac Labels}{58}{subsubsection.141}%
-\contentsline {subsubsection}{\numberline {4.1.6.2}Visual Examination}{61}{subsubsection.143}%
-\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{63}{section.145}%
-\contentsline {subsection}{\numberline {4.2.1}Domain Translation}{63}{subsection.146}%
-\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{63}{subsection.148}%
-\contentsline {chapter}{\numberline {5}Discussion}{67}{chapter.150}%
-\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{67}{section.151}%
-\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{67}{subsection.152}%
-\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{67}{subsection.153}%
-\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{67}{subsection.154}%
-\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{67}{subsection.155}%
-\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{68}{subsection.156}%
-\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{68}{subsection.157}%
-\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{69}{section.158}%
-\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{69}{subsection.159}%
-\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{69}{subsection.160}%
-\contentsline {section}{\numberline {5.3}Limitations and Outlook}{69}{section.161}%
-\contentsline {chapter}{\numberline {6}Conclusion}{71}{chapter.162}%
+\contentsline {chapter}{\numberline {2}Fundamentals}{5}{chapter.7}%
+\contentsline {section}{\numberline {2.1}Magnetic Resonance Imaging}{5}{section.8}%
+\contentsline {subsection}{\numberline {2.1.1}Magnetic Excitation and Relaxation}{5}{subsection.10}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Radio Frequency Excitation}{5}{subsubsection.11}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Magnetic Relaxation}{7}{subsubsection.13}%
+\contentsline {subsection}{\numberline {2.1.2}Image Acquisition and the Concept of K-Space}{8}{subsection.17}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Gradient Echo Sequence}{8}{subsubsection.18}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Spin Echo Sequence}{9}{subsubsection.20}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Introduction to K-Space}{9}{subsubsection.22}%
+\contentsline {subsubsection}{\numberline {2.1.2.4}Rectilinear K-Space Sampling}{11}{subsubsection.25}%
+\contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{12}{subsubsection.26}%
+\contentsline {subsection}{\numberline {2.1.3}Imaging Acceleration}{14}{subsection.27}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Parallel Imaging}{14}{subsubsection.29}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Compressed Sensing}{16}{subsubsection.31}%
+\contentsline {subsubsection}{\numberline {2.1.3.3}Deep Learning Based Subsampling}{17}{subsubsection.32}%
+\contentsline {subsection}{\numberline {2.1.4}Motion-Compensated Image Reconstruction}{17}{subsection.33}%
+\contentsline {subsubsection}{\numberline {2.1.4.1}Intraview and Interview Motion}{17}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {2.1.4.2}Reconstruction Pipelines}{18}{subsubsection.35}%
+\contentsline {section}{\numberline {2.2}Image Transformations and Registration}{18}{section.36}%
+\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{18}{subsection.37}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Rigid Transformations}{19}{subsubsection.38}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Affine Transformations}{19}{subsubsection.40}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Non-Linear Transformations}{19}{subsubsection.45}%
+\contentsline {subsection}{\numberline {2.2.2}Image Registration}{20}{subsection.47}%
+\contentsline {section}{\numberline {2.3}Deep Learning}{21}{section.49}%
+\contentsline {subsection}{\numberline {2.3.1}Deep Learning Architectures}{21}{subsection.50}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Convolutional Neural Networks}{21}{subsubsection.51}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}U-Net}{22}{subsubsection.52}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}Autoencoders}{22}{subsubsection.54}%
+\contentsline {subsubsection}{\numberline {2.3.1.4}Generative Adversarial Networks}{23}{subsubsection.55}%
+\contentsline {subsection}{\numberline {2.3.2}Deep Learning for Image Registration}{23}{subsection.56}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Supervised Registration}{23}{subsubsection.57}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Unsupervised Registration}{24}{subsubsection.59}%
+\contentsline {subsection}{\numberline {2.3.3}Network Training and Testing}{24}{subsection.62}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{24}{subsubsection.63}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Testing and Evaluation Metrics}{26}{subsubsection.64}%
+\contentsline {chapter}{\numberline {3}Materials and Methods}{29}{chapter.70}%
+\contentsline {section}{\numberline {3.1}Network Architectures}{29}{section.71}%
+\contentsline {subsection}{\numberline {3.1.1}Fourier-Net}{29}{subsection.72}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}Encoder}{30}{subsubsection.74}%
+\contentsline {subsubsection}{\numberline {3.1.1.2}Decoder}{32}{subsubsection.79}%
+\contentsline {subsubsection}{\numberline {3.1.1.3}Diffeomorphic Transforms}{33}{subsubsection.84}%
+\contentsline {subsubsection}{\numberline {3.1.1.4}Spatial Transformer}{34}{subsubsection.89}%
+\contentsline {subsubsection}{\numberline {3.1.1.5}Loss Function}{35}{subsubsection.92}%
+\contentsline {subsection}{\numberline {3.1.2}Fourier Net+}{36}{subsection.98}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Changes to the Encoder}{37}{subsubsection.100}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Effects of Cascading}{37}{subsubsection.103}%
+\contentsline {section}{\numberline {3.2}Datasets}{39}{section.107}%
+\contentsline {subsection}{\numberline {3.2.1}ACDC Dataset}{40}{subsection.108}%
+\contentsline {subsection}{\numberline {3.2.2}CMRxRecon Dataset}{40}{subsection.110}%
+\contentsline {section}{\numberline {3.3}Experiments}{42}{section.113}%
+\contentsline {subsection}{\numberline {3.3.1}Parameter Tests on the ACDC Dataset}{42}{subsection.114}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Fourier-Net versus Fourier-Net+}{43}{subsubsection.115}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Starting Channel Size}{43}{subsubsection.116}%
+\contentsline {subsubsection}{\numberline {3.3.1.3}Fourier-Transform Crop Size}{44}{subsubsection.117}%
+\contentsline {subsubsection}{\numberline {3.3.1.4}Comparison with VoxelMorph}{44}{subsubsection.118}%
+\contentsline {subsubsection}{\numberline {3.3.1.5}Dense Displacement on Accelerated Data}{44}{subsubsection.119}%
+\contentsline {subsubsection}{\numberline {3.3.1.6}Comparison on Subsampled Data}{45}{subsubsection.120}%
+\contentsline {subsection}{\numberline {3.3.2}Integration into a Motion-Compensated Reconstruction Pipeline}{46}{subsection.121}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Domain Translation}{46}{subsubsection.122}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Reconstruction Pipeline}{46}{subsubsection.123}%
+\contentsline {chapter}{\numberline {4}Results}{49}{chapter.125}%
+\contentsline {section}{\numberline {4.1}Parameter Tests on the ACDC Dataset}{49}{section.126}%
+\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{49}{subsection.127}%
+\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{52}{subsection.129}%
+\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{52}{subsection.131}%
+\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{54}{subsection.133}%
+\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{55}{subsection.135}%
+\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{59}{subsection.139}%
+\contentsline {subsubsection}{\numberline {4.1.6.1}Cardiac Labels}{60}{subsubsection.141}%
+\contentsline {subsubsection}{\numberline {4.1.6.2}Visual Examination}{63}{subsubsection.143}%
+\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{65}{section.145}%
+\contentsline {subsection}{\numberline {4.2.1}Domain Translation}{65}{subsection.146}%
+\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{65}{subsection.148}%
+\contentsline {chapter}{\numberline {5}Discussion}{69}{chapter.150}%
+\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{69}{section.151}%
+\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{69}{subsection.152}%
+\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{69}{subsection.153}%
+\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{69}{subsection.154}%
+\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{69}{subsection.155}%
+\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{70}{subsection.156}%
+\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{70}{subsection.157}%
+\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{71}{section.158}%
+\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{71}{subsection.159}%
+\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{71}{subsection.160}%
+\contentsline {section}{\numberline {5.3}Limitations and Outlook}{71}{section.161}%
+\contentsline {chapter}{\numberline {6}Conclusion}{73}{chapter.162}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
