@@ -77,17 +77,17 @@
 \contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{63}{section.145}%
 \contentsline {subsection}{\numberline {4.2.1}Domain Translation}{63}{subsection.146}%
 \contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{63}{subsection.148}%
-\contentsline {chapter}{\numberline {5}Discussion}{65}{chapter.150}%
-\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{65}{section.151}%
-\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{65}{subsection.152}%
-\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{65}{subsection.153}%
-\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{65}{subsection.154}%
-\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{65}{subsection.155}%
-\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{65}{subsection.156}%
-\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{65}{subsection.157}%
-\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{66}{section.158}%
-\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{66}{subsection.159}%
-\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{66}{subsection.160}%
-\contentsline {section}{\numberline {5.3}Limitations and Outlook}{66}{section.161}%
-\contentsline {chapter}{\numberline {6}Conclusion}{67}{chapter.162}%
+\contentsline {chapter}{\numberline {5}Discussion}{67}{chapter.150}%
+\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{67}{section.151}%
+\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{67}{subsection.152}%
+\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{67}{subsection.153}%
+\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{67}{subsection.154}%
+\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{67}{subsection.155}%
+\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{67}{subsection.156}%
+\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{67}{subsection.157}%
+\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{68}{section.158}%
+\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{68}{subsection.159}%
+\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{68}{subsection.160}%
+\contentsline {section}{\numberline {5.3}Limitations and Outlook}{68}{section.161}%
+\contentsline {chapter}{\numberline {6}Conclusion}{69}{chapter.162}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

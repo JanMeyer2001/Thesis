@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  29 NOV 2024 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  29 NOV 2024 19:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,7 +629,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count411
 \LT@p@ftn=\toks28
 )
-Class scrbook Info: longtable captions redefined on input line 30.
+Class scrbook Info: longtable captions redefined on input line 29.
 
 (C:\Program Files\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box61
@@ -645,7 +645,7 @@ Package: ulem 2019/11/18
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 45.
+(scrhack)             need that hack, on input line 44.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
@@ -881,7 +881,7 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 60.
+Package scrhack Info: loading listings hack on input line 59.
 
 (C:\Program Files\MiKTeX\tex/latex/koma-script\listings.hak
 File: listings.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package l
@@ -983,34 +983,34 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (Masterarbeit.aux)
 \openout1 = `Masterarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-Package scrbase Info: activating english \partname on input line 128.
-Package scrbase Info: activating english \chaptername on input line 128.
-Package scrbase Info: activating english \appendixname on input line 128.
-Package scrbase Info: activating english \figurename on input line 128.
-Package scrbase Info: activating english \tablename on input line 128.
-Package scrbase Info: activating english \contentsname on input line 128.
-Package scrbase Info: activating english \listfigurename on input line 128.
-Package scrbase Info: activating english \listtablename on input line 128.
-Package scrbase Info: activating english \bibname on input line 128.
-Package scrbase Info: activating english \indexname on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+Package scrbase Info: activating english \partname on input line 127.
+Package scrbase Info: activating english \chaptername on input line 127.
+Package scrbase Info: activating english \appendixname on input line 127.
+Package scrbase Info: activating english \figurename on input line 127.
+Package scrbase Info: activating english \tablename on input line 127.
+Package scrbase Info: activating english \contentsname on input line 127.
+Package scrbase Info: activating english \listfigurename on input line 127.
+Package scrbase Info: activating english \listtablename on input line 127.
+Package scrbase Info: activating english \bibname on input line 127.
+Package scrbase Info: activating english \indexname on input line 127.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1033,8 +1033,8 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 128.
-Package biblatex Info: Reference segment=0 on input line 128.
+Package biblatex Info: Reference section=0 on input line 127.
+Package biblatex Info: Reference segment=0 on input line 127.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count460
@@ -1066,7 +1066,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 128.
+Package hyperref Info: Link coloring ON on input line 127.
  (Masterarbeit.out)
 (Masterarbeit.out)
 \@outlinefile=\write4
@@ -1079,7 +1079,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 128.
+(scrbook)           before \begin{document} on input line 127.
  (C:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
@@ -1110,7 +1110,7 @@ Package scrhack Info: \landscape patched to make \textheight change optional on
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 \c@lstlisting=\count467
-Package scrhack Info: undefining \float@addtolists on input line 128.
+Package scrhack Info: undefining \float@addtolists on input line 127.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1607,7 +1607,14 @@ Overfull \vbox (46.21942pt too high) has occurred while \output is active []
 
 [62 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
 es/TestExamples_Mode2.png> <./images/TestExamples_Mode3.png>]
-Underfull \hbox (badness 1308) in paragraph at lines 483--483
+Overfull \hbox (8.29655pt too wide) in paragraph at lines 443--444
+\OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
+/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/
+n/12 and \OT1/cmr/m/it/12 4xFourier-
+ []
+
+[63]
+Underfull \hbox (badness 1308) in paragraph at lines 484--484
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
@@ -1616,7 +1623,10 @@ Fourier-Net+ \OT1/cmr/m/n/12 and
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (chapters/Discussion.tex [63] [64]
+) (chapters/Discussion.tex [64] [65] [66
+
+
+]
 chapter 5.
 
 Overfull \hbox (1.98323pt too wide) in paragraph at lines 6--7
@@ -1624,37 +1634,34 @@ Overfull \hbox (1.98323pt too wide) in paragraph at lines 6--7
 ef-fec-tive-ness of this new method. 
  []
 
-[65
-
-
-]) (chapters/Conclusion.tex [66]
+[67]) (chapters/Conclusion.tex [68]
 chapter 6.
-) [67
+) [69
 
 
-] [68
+] [70
 
 
 ]
-Overfull \hbox (3.86661pt too wide) in paragraph at lines 183--183
+Overfull \hbox (3.86661pt too wide) in paragraph at lines 182--182
 []\OT1/cmr/m/n/10 Mark A. Gris-wold et al. \  Gen-er-al-ized au-to-cal-i-brat-i
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
-[69]
-Overfull \hbox (3.00894pt too wide) in paragraph at lines 183--183
+[71]
+Overfull \hbox (3.00894pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
 
-[70]
-Overfull \hbox (20.21523pt too wide) in paragraph at lines 183--183
+[72]
+Overfull \hbox (20.21523pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
  []
 
-[71] [72] (Masterarbeit.aux)
+[73] [74] (Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1665,16 +1672,13 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 \openout1 = `Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29180 strings out of 475248
- 534354 string characters out of 5767627
+ 29182 strings out of 475248
+ 534368 string characters out of 5767627
  1953785 words of memory out of 5000000
  50005 multiletter control sequences out of 15000+600000
  569999 words of font info for 81 fonts, out of 8000000 for 9000
@@ -1697,9 +1701,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (80 pages, 8840960 bytes).
+Output written on Masterarbeit.pdf (82 pages, 8843833 bytes).
 PDF statistics:
- 1332 PDF objects out of 1440 (max. 8388607)
- 300 named destinations out of 1000 (max. 500000)
+ 1343 PDF objects out of 1440 (max. 8388607)
+ 302 named destinations out of 1000 (max. 500000)
  599 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -440,11 +440,12 @@ For $R=8$, the displacements for all methods become more global due to the stron
 
 
 \section{Integration into a Motion-Compensated Reconstruction Pipeline} \label{Sec:ResultsIntegrationMotion-CompensatedReconstructionPipeline}
-Stuff.
+After assessing the registration performance of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}, a final down-stream task to gauge the applicability of these networks was conducted in the form of an motion-compensated reconstruction pipeline where the networks are used to correct the moment between frames.
 
 \subsection{Domain Translation} \label{SubSec:ResultsDomainTranslation}
-Trained \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} again on the accelerated \emph{CMRxRecon} data (without crops). \\
-Compared \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} trained for 6 epochs on \emph{ACDC} to \emph{Fourier-Net+} trained for 14 epochs on \emph{CMRxRecon} to evaluate the domain translation capabilities of \emph{Fourier-Net+}. All other network parameters are the same.
+First, the domain gap between the \emph{ACDC} and \emph{CMRxRecon} dataset was of interest. To estimate the generalizability of our previous results on the new cardiac dataset 
+\emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were trained again on the accelerated \emph{CMRxRecon} data. They were then compared to the \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} version which were previously trained for 6 epochs on \emph{ACDC}. All other network parameters were held constant for comparability. The results can be seen in Table~\ref{tab:DomainTranslation_ACDC_CMRxRecon}.\\
+For ...
 
 \begin{table}[H] %tpb
 	%\scriptsize
