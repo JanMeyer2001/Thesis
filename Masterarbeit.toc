@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {2.3.2.1}Supervised Registration}{21}{subsubsection.57}%
 \contentsline {subsubsection}{\numberline {2.3.2.2}Unsupervised Registration}{22}{subsubsection.59}%
 \contentsline {subsection}{\numberline {2.3.3}Network Training and Testing}{22}{subsection.62}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{23}{subsubsection.63}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{22}{subsubsection.63}%
 \contentsline {subsubsection}{\numberline {2.3.3.2}Testing and Evaluation Metrics}{24}{subsubsection.64}%
 \contentsline {chapter}{\numberline {3}Materials and Methods}{27}{chapter.70}%
 \contentsline {section}{\numberline {3.1}Network Architectures}{27}{section.71}%
