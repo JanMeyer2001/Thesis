@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  29 NOV 2024 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  29 NOV 2024 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1634,12 +1634,34 @@ Overfull \hbox (1.98323pt too wide) in paragraph at lines 6--7
 ef-fec-tive-ness of this new method. 
  []
 
-[67]) (chapters/Conclusion.tex [68]
+
+Overfull \hbox (13.25761pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/n/12 In a first com-par-a-tive study, the per-for-mance of \OT1/cmr/
+m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
+/12 and \OT1/cmr/m/it/12 4xFourier-
+ []
+
+
+LaTeX Warning: Reference `SubSec:ResultsDenseDisplacementAcc' on page 67 undefi
+ned on input line 24.
+
+[67]
+Overfull \hbox (9.07988pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/n/12 In sec-tion [][]4.1.6[][] the reg-is-tra-tion per-for-mance of 
+\OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT
+1/cmr/m/n/12 and \OT1/cmr/m/it/12 4xFourier-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68])
+(chapters/Conclusion.tex [69] [70
+
+
+]
 chapter 6.
-) [69
-
-
-] [70
+) [71] [72
 
 
 ]
@@ -1648,20 +1670,20 @@ Overfull \hbox (3.86661pt too wide) in paragraph at lines 182--182
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
-[71]
+[73]
 Overfull \hbox (3.00894pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
 
-[72]
+[74]
 Overfull \hbox (20.21523pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
  []
 
-[73] [74] (Masterarbeit.aux)
+[75] [76] (Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1677,10 +1699,10 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29182 strings out of 475248
- 534368 string characters out of 5767627
+ 29185 strings out of 475248
+ 534418 string characters out of 5767627
  1953785 words of memory out of 5000000
- 50005 multiletter control sequences out of 15000+600000
+ 50006 multiletter control sequences out of 15000+600000
  569999 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1701,9 +1723,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (82 pages, 8843833 bytes).
+Output written on Masterarbeit.pdf (84 pages, 8847049 bytes).
 PDF statistics:
- 1343 PDF objects out of 1440 (max. 8388607)
- 302 named destinations out of 1000 (max. 500000)
+ 1356 PDF objects out of 1440 (max. 8388607)
+ 304 named destinations out of 1000 (max. 500000)
  599 words of extra memory for PDF output out of 10000 (max. 10000000)
 

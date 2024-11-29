@@ -83,11 +83,11 @@
 \contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{67}{subsection.153}%
 \contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{67}{subsection.154}%
 \contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{67}{subsection.155}%
-\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{67}{subsection.156}%
-\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{67}{subsection.157}%
-\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{68}{section.158}%
-\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{68}{subsection.159}%
-\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{68}{subsection.160}%
-\contentsline {section}{\numberline {5.3}Limitations and Outlook}{68}{section.161}%
-\contentsline {chapter}{\numberline {6}Conclusion}{69}{chapter.162}%
+\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{68}{subsection.156}%
+\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{68}{subsection.157}%
+\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{69}{section.158}%
+\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{69}{subsection.159}%
+\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{69}{subsection.160}%
+\contentsline {section}{\numberline {5.3}Limitations and Outlook}{69}{section.161}%
+\contentsline {chapter}{\numberline {6}Conclusion}{71}{chapter.162}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
