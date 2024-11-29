@@ -3,12 +3,22 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Masterarbeit.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: ./chapters/Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: ./chapters/Fundamentals.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: ./chapters/Methods.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: ./chapters/Results.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: ./chapters/Discussion.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: ./chapters/Conclusion.aux
 I found no \citation commands---while reading file Masterarbeit.aux
 I found no \bibdata command---while reading file Masterarbeit.aux
 I found no \bibstyle command---while reading file Masterarbeit.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            84 strings with 525 characters,
+            89 strings with 646 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

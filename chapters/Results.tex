@@ -3,8 +3,8 @@
 %%%%%%%%%%%%%
 
 \chapter{Results} \label{Ch:Results}
-In this chapter, the results for the experiment described in the previous chapter will be examined. 
-
+In this chapter, the results for the experiment described in section~\ref{Sec:Experiments} will be examined. This includes parameter tests on the \emph{ACDC} dataset as well as a motion-compensated reconstruction pipeline on the \emph{CMRxRecon} dataset.
+ 
 \section{Parameter Tests on the ACDC Dataset} \label{Sec:ResultsParameterTestsACDC}
 Due to the limitations of the \emph{CMRxRecon} dataset in terms of segmentations, the registration performance is further evaluated on the \emph{ACDC} dataset. Some of the parameter studies done on \emph{CMRxRecon} were repeated, others were added to further test the networks ability.
 
@@ -307,7 +307,8 @@ For $R=10$, \emph{4xFourier-Net+} performs best in terms of Dice with the backgr
 
 \begin{table}[h] %tpb
 	%\tiny
-	\scriptsize
+	%\scriptsize
+	\footnotesize
 	\centering
 	\caption{Test results for \emph{NiftiReg} (NR), \emph{VoxelMorph} (VM), \emph{Fourier-Net} (F-Net), \emph{Fourier-Net+} (F-Net+) and \emph{4xFourier-Net+} (4xF-Net+) on the \emph{ACDC} test data from fully sampled ($R=0$) to $R=10$ with an unaligned baseline for comparison. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
 	\label{tab:ComparisonSubsamplingACDC}
@@ -477,6 +478,7 @@ Compared \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} train
 After ensuring that the previous results were translatable to the new data, the reconstruction pipeline had to be evaluated. As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSubSec:TestingEvalutionMetrics}) and HaarPSI~\cite{HaarPSI} were also added. After ensuring that the reconstruction pipeline worked, the input images were further corrupted as the cardiac motion present was not deemed severe enough. To simulate motion or mis-triggering a similar strategy to~\cite{Oksuz2020} was used, swapping $z=\{16,32\}$ k-space lines between the frames. Results for the motion-compensated reconstruction using \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} is shown in Table~\ref{tab:ComparisonReconstructionCMRxRecon}.
 
 \begin{table}[h] %tpb
+	\footnotesize
 	\centering
 	\caption{Reconstruction results \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
 	\label{tab:ComparisonReconstructionCMRxRecon}

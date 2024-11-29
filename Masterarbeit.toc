@@ -42,7 +42,7 @@
 \contentsline {chapter}{\numberline {3}Materials and Methods}{27}{chapter.70}%
 \contentsline {section}{\numberline {3.1}Network Architectures}{27}{section.71}%
 \contentsline {subsection}{\numberline {3.1.1}Fourier-Net}{27}{subsection.72}%
-\contentsline {subsubsection}{\numberline {3.1.1.1}Encoder}{27}{subsubsection.74}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}Encoder}{28}{subsubsection.74}%
 \contentsline {subsubsection}{\numberline {3.1.1.2}Decoder}{30}{subsubsection.79}%
 \contentsline {subsubsection}{\numberline {3.1.1.3}Diffeomorphic Transforms}{31}{subsubsection.84}%
 \contentsline {subsubsection}{\numberline {3.1.1.4}Spatial Transformer}{32}{subsubsection.89}%

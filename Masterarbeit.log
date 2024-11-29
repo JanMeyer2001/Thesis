@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  29 NOV 2024 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  29 NOV 2024 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,7 +981,8 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
  (Masterarbeit.aux
-(chapters/Introduction.aux))
+(chapters/Introduction.aux) (chapters/Fundamentals.aux) (chapters/Methods.aux)
+(chapters/Results.aux) (chapters/Discussion.aux) (chapters/Conclusion.aux))
 \openout1 = `Masterarbeit.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
@@ -1297,7 +1298,10 @@ LaTeX Warning: Citation 'Fourier-Net' on page 2 undefined on input line 21.
 
 LaTeX Warning: Citation 'Fourier-Net+' on page 2 undefined on input line 21.
 
-) [2] (chapters/Fundamentals.tex
+) [2]
+\openout2 = `./chapters/Fundamentals.aux'.
+
+ (chapters/Fundamentals.tex
 chapter 2.
 
 LaTeX Warning: Citation 'Serai2021' on page 3 undefined on input line 9.
@@ -1326,6 +1330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
  []
 
 [3
+
 
 
 
@@ -1782,7 +1787,13 @@ LaTeX Warning: Citation 'DARTEL' on page 25 undefined on input line 599.
 
 LaTeX Warning: Citation 'Chen2023' on page 25 undefined on input line 599.
 
-) (chapters/Methods.tex [25] [26
+) [25]
+\openout2 = `./chapters/Methods.aux'.
+
+ (chapters/Methods.tex [26
+
+
+
 
 
 ]
@@ -1847,13 +1858,8 @@ LaTeX Warning: Citation 'Trabelsi2017' on page 27 undefined on input line 39.
 
 LaTeX Warning: Citation 'DeepFlash' on page 27 undefined on input line 39.
 
-[27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28 <./images/ArchitectureFourier-Net.png>]
-Underfull \vbox (badness 1430) has occurred while \output is active []
-
- [29 <./images/SYMNetArchitectureFCN.png>]
+[27] [28 <./images/ArchitectureFourier-Net.png>] [29 <./images/SYMNetArchitectu
+reFCN.png>]
 
 LaTeX Warning: Citation 'Fourier-Net' on page 30 undefined on input line 70.
 
@@ -2184,8 +2190,14 @@ LaTeX Warning: Citation 'Kuestner2022' on page 44 undefined on input line 525.
 
 LaTeX Warning: Citation 'Kuestner2022' on page 44 undefined on input line 525.
 
-) (chapters/Results.tex [44] [45 <./images/ReconstructionPipelineEvaluation.png
->] [46
+) [44] [45 <./images/ReconstructionPipelineEvaluation.png>]
+\openout2 = `./chapters/Results.aux'.
+
+
+(chapters/Results.tex [46
+
+
+
 
 
 ]
@@ -2219,24 +2231,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3058) has occurred while \output is active []
 
  [55]
-[56] [57] [58]
-<images/Boxplot_DiceScores_LV-Cavity.png, id=645, 867.24pt x 433.62pt>
+[56] [57]
+Overfull \hbox (15.06609pt too wide) in paragraph at lines 315--355
+ [][] 
+ []
+
+[58]
+<images/Boxplot_DiceScores_LV-Cavity.png, id=648, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
- line 370.
+ line 371.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=646, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_Myocardium.png, id=649, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
-t line 376.
+t line 377.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=647, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_RV-Cavity.png, id=650, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
- line 382.
+ line 383.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2246,28 +2263,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceScores_M
 yocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
-<images/TestExamples_Mode0.png, id=661, 1962.8532pt x 709.6914pt>
+<images/TestExamples_Mode0.png, id=664, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
-Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 432.
+Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 433.
 
 (pdftex.def)             Requested size: 441.01773pt x 159.44626pt.
-<images/TestExamples_Mode1.png, id=662, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode1.png, id=665, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
-Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 433.
+Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 434.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode2.png, id=663, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode2.png, id=666, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
-Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 434.
+Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 435.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode3.png, id=664, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode3.png, id=667, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
-Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 435.
+Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 436.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
 
@@ -2280,27 +2297,25 @@ Overfull \vbox (46.21942pt too high) has occurred while \output is active []
 [62 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
 es/TestExamples_Mode2.png> <./images/TestExamples_Mode3.png>]
 
-LaTeX Warning: Citation 'HaarPSI' on page 63 undefined on input line 477.
+LaTeX Warning: Citation 'HaarPSI' on page 63 undefined on input line 478.
 
 
-LaTeX Warning: Citation 'Oksuz2020' on page 63 undefined on input line 477.
+LaTeX Warning: Citation 'Oksuz2020' on page 63 undefined on input line 478.
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 481--481
+Underfull \hbox (badness 1308) in paragraph at lines 483--483
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (10.03029pt too wide) in paragraph at lines 483--540
- [][] 
- []
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (chapters/Discussion.tex [63] [64]
+) [63] [64]
+\openout2 = `./chapters/Discussion.aux'.
+
+ (chapters/Discussion.tex
 chapter 5.
 
 Overfull \hbox (1.98323pt too wide) in paragraph at lines 6--7
@@ -2311,16 +2326,27 @@ ef-fec-tive-ness of this new method.
 [65
 
 
-]) (chapters/Conclusion.tex [66]
+
+
+
+]) [66]
+\openout2 = `./chapters/Conclusion.aux'.
+
+ (chapters/Conclusion.tex
 chapter 6.
-)
+) [67
+
+
+
+
+
+]
 
 LaTeX Warning: Empty bibliography on input line 181.
 
-[67
-
-
-] (Masterarbeit.aux (chapters/Introduction.aux))
+(Masterarbeit.aux (chapters/Introduction.aux) (chapters/Fundamentals.aux)
+(chapters/Methods.aux) (chapters/Results.aux) (chapters/Discussion.aux)
+(chapters/Conclusion.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -2328,6 +2354,9 @@ L3 programming layer <2020/03/25>
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -2341,29 +2370,31 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28901 strings out of 475248
- 525399 string characters out of 5767627
+ 28995 strings out of 475248
+ 528880 string characters out of 5767627
  1953785 words of memory out of 5000000
- 49788 multiletter control sequences out of 15000+600000
- 567512 words of font info for 71 fonts, out of 8000000 for 9000
+ 49861 multiletter control sequences out of 15000+600000
+ 569184 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/
-MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (75 pages, 8704044 bytes).
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb>
+Output written on Masterarbeit.pdf (75 pages, 8719878 bytes).
 PDF statistics:
- 973 PDF objects out of 1000 (max. 8388607)
+ 984 PDF objects out of 1000 (max. 8388607)
  238 named destinations out of 1000 (max. 500000)
  599 words of extra memory for PDF output out of 10000 (max. 10000000)
 
