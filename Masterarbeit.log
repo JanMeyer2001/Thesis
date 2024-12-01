@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  1 DEC 2024 17:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  1 DEC 2024 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1194,69 +1194,78 @@ chapter 1.
 
 
 
-]) (chapters/Fundamentals.tex [2] [3] [4
+]
+
+LaTeX Warning: Reference `SubSec:ImagingAcceleration' on page 2 undefined on in
+put line 30.
+
+) (chapters/Fundamentals.tex [2] [3] [4
 
 
 ]
 chapter 2.
-<images/MRI-Schematic.png, id=237, 639.13782pt x 345.54094pt>
+<images/MRI-Schematic.png, id=236, 639.13782pt x 345.54094pt>
 File: images/MRI-Schematic.png Graphic file (type png)
 <use images/MRI-Schematic.png>
 Package pdftex.def Info: images/MRI-Schematic.png  used on input line 14.
 (pdftex.def)             Requested size: 441.01773pt x 238.43404pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
 
  []
 
 [5] [6 <./images/MRI-Schematic.png>] [7]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 58.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 61.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 58.
-
-Missing character: There is no ° in font cmr12!
-<images/GradientEcho.png, id=273, 408.02437pt x 246.1697pt>
-File: images/GradientEcho.png Graphic file (type png)
-<use images/GradientEcho.png>
-Package pdftex.def Info: images/GradientEcho.png  used on input line 66.
-(pdftex.def)             Requested size: 441.01773pt x 266.08842pt.
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 72.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 72.
-
-Missing character: There is no ° in font cmr12!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 72.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 72.
-
-Missing character: There is no ° in font cmr12!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 72.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 72.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 61.
 
 Missing character: There is no ° in font cmr12!
 [8]
+<images/GradientEcho.png, id=280, 408.02437pt x 246.1697pt>
+File: images/GradientEcho.png Graphic file (type png)
+<use images/GradientEcho.png>
+Package pdftex.def Info: images/GradientEcho.png  used on input line 69.
+(pdftex.def)             Requested size: 441.01773pt x 266.08842pt.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+Missing character: There is no ° in font cmr12!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+Missing character: There is no ° in font cmr12!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+Missing character: There is no ° in font cmr12!
 <images/SpinEcho.png, id=285, 414.79968pt x 179.92218pt>
 File: images/SpinEcho.png Graphic file (type png)
 <use images/SpinEcho.png>
-Package pdftex.def Info: images/SpinEcho.png  used on input line 78.
+Package pdftex.def Info: images/SpinEcho.png  used on input line 81.
 (pdftex.def)             Requested size: 441.01773pt x 191.30136pt.
+
+Underfull \vbox (badness 5245) has occurred while \output is active []
+
  [9 <./images/GradientEcho.png>]
-Underfull \vbox (badness 1342) has occurred while \output is active []
+Underfull \vbox (badness 2318) has occurred while \output is active []
 
  [10 <./images/SpinEcho.png>]
 <images/2D_MRI_Measurement.png, id=309, 661.9689pt x 350.4184pt>
 File: images/2D_MRI_Measurement.png Graphic file (type png)
 <use images/2D_MRI_Measurement.png>
-Package pdftex.def Info: images/2D_MRI_Measurement.png  used on input line 162.
+Package pdftex.def Info: images/2D_MRI_Measurement.png  used on input line 130.
 
 (pdftex.def)             Requested size: 441.01773pt x 233.46375pt.
 
@@ -1267,24 +1276,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/constant_k-space_gradient.png Graphic file (type png)
 <use images/constant_k-space_gradient.png>
 Package pdftex.def Info: images/constant_k-space_gradient.png  used on input li
-ne 171.
+ne 139.
 (pdftex.def)             Requested size: 196.25612pt x 274.30658pt.
 <images/refocusing_k-sapce_pulse.png, id=315, 187.45032pt x 267.24844pt>
 File: images/refocusing_k-sapce_pulse.png Graphic file (type png)
 <use images/refocusing_k-sapce_pulse.png>
 Package pdftex.def Info: images/refocusing_k-sapce_pulse.png  used on input lin
-e 177.
+e 145.
 (pdftex.def)             Requested size: 196.25612pt x 279.81987pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Underfull \vbox (badness 3219) has occurred while \output is active []
-
- [12 <./images/2D_MRI_Measurement.png>]
+[11] [12 <./images/2D_MRI_Measurement.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <./images/constant_k-space_gradient.png> <./images/refocusing_k-sapce_puls
@@ -1292,54 +1295,61 @@ e.png>]
 <images/ExamplesSubsampling.png, id=352, 787.44188pt x 331.2375pt>
 File: images/ExamplesSubsampling.png Graphic file (type png)
 <use images/ExamplesSubsampling.png>
-Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 307
+Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 275
 .
 (pdftex.def)             Requested size: 441.01773pt x 185.51195pt.
 
-[14 <./images/ExamplesSubsampling.png>] [15] [16] [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2529) has occurred while \output is active []
 
- [18]
-[19] [20] [21]
+ [14 <./images/ExamplesSubsampling.png>] [15] [16] [17] [18] [19] [20] [21]
 <images/U-NetArchitecture.png, id=471, 677.53125pt x 463.7325pt>
 File: images/U-NetArchitecture.png Graphic file (type png)
 <use images/U-NetArchitecture.png>
-Package pdftex.def Info: images/U-NetArchitecture.png  used on input line 510.
+Package pdftex.def Info: images/U-NetArchitecture.png  used on input line 478.
 (pdftex.def)             Requested size: 330.76329pt x 226.39594pt.
- [22 <./images/U-NetArchitecture.png>] [23]
-<images/SupervisedRegistrationGraph.jpg, id=500, 2460.19125pt x 827.09pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22]
+Underfull \vbox (badness 2205) has occurred while \output is active []
+
+ [23 <./images/U-NetArchitecture.png>]
+<images/SupervisedRegistrationGraph.jpg, id=498, 2460.19125pt x 827.09pt>
 File: images/SupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/SupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/SupervisedRegistrationGraph.jpg  used on input 
-line 530.
+line 498.
 (pdftex.def)             Requested size: 441.01773pt x 148.26399pt.
-<images/UnsupervisedRegistrationGraph.jpg, id=510, 3329.43875pt x 935.495pt>
+<images/UnsupervisedRegistrationGraph.jpg, id=508, 3329.43875pt x 935.495pt>
 File: images/UnsupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/UnsupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/UnsupervisedRegistrationGraph.jpg  used on inpu
-t line 542.
+t line 510.
 (pdftex.def)             Requested size: 441.01773pt x 123.90253pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/GANRegistrationGraph.jpg, id=513, 3366.5775pt x 1457.445pt>
+<images/GANRegistrationGraph.jpg, id=511, 3366.5775pt x 1457.445pt>
 File: images/GANRegistrationGraph.jpg Graphic file (type jpg)
 <use images/GANRegistrationGraph.jpg>
-Package pdftex.def Info: images/GANRegistrationGraph.jpg  used on input line 55
-0.
+Package pdftex.def Info: images/GANRegistrationGraph.jpg  used on input line 51
+8.
 (pdftex.def)             Requested size: 441.01773pt x 190.92001pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 559--561
+Underfull \vbox (badness 2582) has occurred while \output is active []
+
+ [24 <./images/SupervisedRegistrationGraph.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
 
  []
 
-[24 <./images/SupervisedRegistrationGraph.jpg>] [25 <./images/UnsupervisedRegis
-trationGraph.jpg> <./images/GANRegistrationGraph.jpg>] [26])
-(chapters/Methods.tex [27] [28
+[25 <./images/UnsupervisedRegistrationGraph.jpg> <./images/GANRegistrationGraph
+.jpg>] [26]) (chapters/Methods.tex [27] [28
 
 
 ]
@@ -1701,10 +1711,10 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29192 strings out of 475248
- 534587 string characters out of 5767627
+ 29193 strings out of 475248
+ 534629 string characters out of 5767627
  1955785 words of memory out of 5000000
- 50007 multiletter control sequences out of 15000+600000
+ 50008 multiletter control sequences out of 15000+600000
  569999 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1725,7 +1735,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (86 pages, 8852914 bytes).
+Output written on Masterarbeit.pdf (86 pages, 8853301 bytes).
 PDF statistics:
  1373 PDF objects out of 1440 (max. 8388607)
  310 named destinations out of 1000 (max. 500000)
