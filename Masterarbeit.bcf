@@ -2546,6 +2546,7 @@
     <bcf:citekey order="163" intorder="1">Voxelmorph</bcf:citekey>
     <bcf:citekey order="164" intorder="1">HaarPSI</bcf:citekey>
     <bcf:citekey order="165" intorder="1">Oksuz2020</bcf:citekey>
+    <bcf:citekey order="166" intorder="1">LAPNet</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
