@@ -1117,6 +1117,64 @@
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Generalized Reconstruction by Inversion of Coupled Systems (GRICS).pdf:PDF
       \endverb
     \endentry
+    \entry{Pan2024}{article}{}
+      \name{author}{5}{}{%
+        {{hash=579dfa588da8b644da2518750d58db40}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jiazhen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8342474cdf96412e7ca69818123f6f54}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Wenqi},
+           giveni={W\bibinitperiod}}}%
+        {{hash=92712fbc7c7c3c1daa0630f54b19b582}{%
+           family={Rueckert},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
+           family={Küstner},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=09bd4cf1c5543a070103d769da228d4d}{%
+           family={Hammernik},
+           familyi={H\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{fullhash}{f8a83a557ec9f30b8bc5200a57d91e5e}
+      \strng{bibnamehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{authorbibnamehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{authornamehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{authorfullhash}{f8a83a557ec9f30b8bc5200a57d91e5e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-254X}
+      \field{journaltitle}{IEEE Transactions on Medical Imaging}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Motion-Compensated MR CINE Reconstruction With Reconstruction-Driven Motion Estimation}
+      \field{volume}{43}
+      \field{year}{2024}
+      \field{pages}{2420\bibrangedash 2433}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/tmi.2024.3364504
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Motion-compensated MR CINE reconstruction with reconstruction-driven motion estimation.pdf:PDF
+      \endverb
+    \endentry
     \entry{Zou2024}{article}{}
       \name{author}{1}{}{%
         {{hash=524fdea59fe67149a11c641456748831}{%
@@ -3312,7 +3370,6 @@
       \keyw{Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
   \enddatalist
-  \missing{Pan2024}
 \endrefsection
 \endinput
 

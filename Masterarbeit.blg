@@ -1,17 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Masterarbeit.blg'
-[101] biber-MSWIN64:340> INFO - === 
-[149] Biber.pm:419> INFO - Reading 'Masterarbeit.bcf'
-[265] Biber.pm:979> INFO - Found 57 citekeys in bib section 0
-[276] Biber.pm:4419> INFO - Processing section 0
-[288] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
-[354] bibtex.pm:1713> INFO - LaTeX decoding ...
-[472] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
-[815] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[815] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[815] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[815] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[850] bbl.pm:660> INFO - Writing 'Masterarbeit.bbl' with encoding 'UTF-8'
-[901] bbl.pm:763> INFO - Output to Masterarbeit.bbl
-[902] Biber.pm:131> WARN - I didn't find a database entry for 'Pan2024' (section 0)
-[902] Biber.pm:133> INFO - WARNINGS: 1
+[118] biber-MSWIN64:340> INFO - === 
+[170] Biber.pm:419> INFO - Reading 'Masterarbeit.bcf'
+[314] Biber.pm:979> INFO - Found 57 citekeys in bib section 0
+[328] Biber.pm:4419> INFO - Processing section 0
+[341] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[414] bibtex.pm:1713> INFO - LaTeX decoding ...
+[550] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[987] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[987] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[987] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[987] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1028] bbl.pm:660> INFO - Writing 'Masterarbeit.bbl' with encoding 'UTF-8'
+[1092] bbl.pm:763> INFO - Output to Masterarbeit.bbl

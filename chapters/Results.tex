@@ -189,7 +189,7 @@ In this test, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} 
 \end{table}
 
 
-\subsection{Dense Displacement on Accelerated Data} \label{SubSec:DenseDisplacementAcc}
+\subsection{Dense Displacement on Accelerated Data} \label{SubSec:ResultsDenseDisplacementAcc}
 The difference between a dense displacement field and a band-limited one was already explored in section~\ref{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}. However, the results in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDC} only include fully sampled data, not accelerated data. These new tests again included \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}, but are extended to subsampled data. Results for $R=4$ can be seen in Table~\ref{tab:DenseDisplacementAcc4}, for $R=8$ in Table~\ref{tab:DenseDisplacementAcc8} and for $R=10$ in Table~\ref{tab:DenseDisplacementAcc10}. \\
 For $R=4$, the dense version of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} performed better than the band-limited version in terms of Dice though the differences are less than a percent with and less than two percent without the background label. The same is true for the SSIM and MSE values with the dense versions being better. The percentage of non-positive Jabobian determinants is higher for the band-limited \emph{Fourier-Net}, while band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} show almost no folding. 
 %While this at first seems like a positive metric it can also indicate a lack of complex displacements which could explain the lower performance. 
@@ -476,7 +476,10 @@ For ...
 \end{table}
 
 \subsection{Reconstruction Pipeline} \label{SubSec:ResultsReconstructionPipeline}
-After ensuring that the previous results were translatable to the new data, the reconstruction pipeline had to be evaluated. As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSubSec:TestingEvalutionMetrics}) and HaarPSI~\cite{HaarPSI} were also added. After ensuring that the reconstruction pipeline worked, the input images were further corrupted as the cardiac motion present was not deemed severe enough. To simulate motion or mis-triggering a similar strategy to~\cite{Oksuz2020} was used, swapping $z=\{16,32\}$ k-space lines between the frames. Results for the motion-compensated reconstruction using \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} is shown in Table~\ref{tab:ComparisonReconstructionCMRxRecon}.
+After ensuring that the previous results were translatable to the new data, the reconstruction pipeline had to be evaluated. As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSubSec:TestingEvalutionMetrics}) and HaarPSI~\cite{HaarPSI} were also added. 
+
+\subsubsection{K-Space Line Swapping}
+After ensuring that the reconstruction pipeline worked, the input images were further corrupted as the cardiac motion present was not deemed severe enough. To simulate motion or mis-triggering a similar strategy to~\cite{Oksuz2020} was used, swapping $z=\{16,32\}$ k-space lines between the frames. Results for the motion-compensated reconstruction using \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} is shown in Table~\ref{tab:ComparisonReconstructionCMRxRecon}.
 
 \begin{table}[h] %tpb
 	\footnotesize
@@ -538,6 +541,46 @@ After ensuring that the previous results were translatable to the new data, the 
 		 & Fourier-Net & \textcolor{red}{$49.255 \pm 7.011$} & \textcolor{red}{$27.024 \pm 2.168$} & \textcolor{red}{$73.952 \pm 5.793$} & $0.227 \pm 0.141$ \\  
 		 & Fourier-Net+ & \textcolor{red}{$49.296 \pm 7.001$} & \textcolor{blue}{$27.045 \pm 2.172$} & \textcolor{red}{$74.028 \pm 5.784$} & \textcolor{blue}{$0.226 \pm 0.140$} \\   
 		 & 4xFourier-Net+ & \textcolor{red}{$49.287 \pm 7.066$} & \textcolor{red}{$27.032 \pm 2.176$} & \textcolor{red}{$74.022 \pm 5.820$} & $0.227 \pm 0.143$ \\ 
+		 \bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Simulated Lung Movement}
+As the results still did not look great, a second test with simulated movement was conducted. This time, multiple frames with simulated random deformations were introduced to simulate lung movement in the image, which is then to be removed with the networks.
+
+
+\begin{table}[h] %tpb
+	\footnotesize
+	\centering
+	\caption{Reconstruction results \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
+	\label{tab:ComparisonReconstructionCMRxRecon}
+	\begin{tabular}{c c c c c c} 
+		\toprule
+		 & Methods & $\%$ HaarPSI & PSNR [dB] & $\%$ SSIM & MSE (m)\\
+		
+		% 4x Accelerated (R=4) 				 		
+		\midrule
+		\multirow{5}{*}{\rotatebox{90}{$R=4$}} & Baseline & $28.913 \pm 3.807$ & $23.297 \pm 1.654$ & $70.392 \pm 4.468$ & $0.503 \pm 0.196$ \\  
+		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
+		 & Fourier-Net & $28.881 \pm 3.780$ & $23.292 \pm 1.647$ & $70.380 \pm 4.458$ & $0.503 \pm 0.196$ \\  
+		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
+		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
+		
+		% 8x Accelerated (R=8) 
+		\midrule
+		\multirow{5}{*}{\rotatebox{90}{$R=8$}} & Baseline & $28.572 \pm 3.773$ & $23.173 \pm 1.686$ & $70.603 \pm 4.533$ & $0.519 \pm 0.207$ \\  
+		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
+		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
+		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
+		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
+		 	 
+		% 10x Accelerated (R=10) 		 		
+		\midrule		
+		\multirow{5}{*}{\rotatebox{90}{$R=10$}} & Baseline & $-$ & $-$ & $-$ & $-$ \\  
+		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
+		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
+		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
+		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
 		 \bottomrule
 	\end{tabular}
 \end{table}
