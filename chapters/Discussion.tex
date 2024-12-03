@@ -40,7 +40,13 @@ As a final down-stream task, the usage of \emph{Fourier-Net}, \emph{Fourier-Net+
 First, the domain translation between the \emph{ACDC} and \emph{CMRxRecon} datasets was tested for the networks. As seen in section~\ref{SubSec:ResultsDomainTranslation}, the results for all networks are very similar. The mean values of all metrics for \emph{Fourier-Net+} and \emph{4xFourier-Net+} were the same with only a small difference in inference time between the networks. The same is true for the MSE and percentage of non-positive Jabobian determinants of \emph{Fourier-Net}, however, the SSIM is slightly better for the version trained on \emph{ACDC} with a difference of about $0.2 \%$. Thus, overall, no domain gap was observed.
 
 \subsection{Reconstruction Pipeline} \label{SubSec:DiscussionReconstructionPipeline}
+Next, a reconstruction pipeline was build and tested using two different methods for simulating motion in an MRI image.
 
+\subsubsection{K-Space Line Swapping}
+For k-space line swapping...
+
+\subsubsection{Simulated Lung Movement}
+Simulated Lung Movement...
 
 \section{Limitations and Outlook}
 While the registration performance of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} was very good on the \emph{ACDC} dataset, beating traditional algorithms and other neural networks, further comparisons with other more advanced networks such as LAPNet~\cite{LAPNet} on another cardiac dataset would be interesting. While three different reduction factors were used for most of the experiment, even higher acceleration could be an interesting test for the networks adaptability. In general, all network versions were specific to their acceleration. A test for the generalization of the learned properties would be interesting as the networks could be applied to another acceleration as they were trained on. In the best case a network could be trained on all of the data with different reduction factors to hopefully generalize the results for all accelerations. This would make an application to real world problems far easier as a single network could be used for a range of different data.Changes and additions to the network architecture and training of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} might also be interesting to further optimize the performance.\\

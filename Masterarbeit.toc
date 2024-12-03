@@ -90,6 +90,8 @@
 \contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{72}{section.161}%
 \contentsline {subsection}{\numberline {5.2.1}Domain Translation}{72}{subsection.162}%
 \contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{72}{subsection.163}%
-\contentsline {section}{\numberline {5.3}Limitations and Outlook}{72}{section.164}%
-\contentsline {chapter}{\numberline {6}Conclusion}{73}{chapter.165}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}K-Space Line Swapping}{72}{subsubsection.164}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Simulated Lung Movement}{72}{subsubsection.165}%
+\contentsline {section}{\numberline {5.3}Limitations and Outlook}{72}{section.166}%
+\contentsline {chapter}{\numberline {6}Conclusion}{75}{chapter.167}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
