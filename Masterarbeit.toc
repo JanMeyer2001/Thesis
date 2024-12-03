@@ -22,7 +22,7 @@
 \contentsline {subsubsection}{\numberline {2.1.4.1}Intraview and Interview Motion}{17}{subsubsection.34}%
 \contentsline {subsubsection}{\numberline {2.1.4.2}Reconstruction Pipelines}{18}{subsubsection.35}%
 \contentsline {section}{\numberline {2.2}Image Transformations and Registration}{18}{section.36}%
-\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{19}{subsection.37}%
+\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{18}{subsection.37}%
 \contentsline {subsubsection}{\numberline {2.2.1.1}Rigid Transformations}{19}{subsubsection.38}%
 \contentsline {subsubsection}{\numberline {2.2.1.2}Affine Transformations}{19}{subsubsection.40}%
 \contentsline {subsubsection}{\numberline {2.2.1.3}Non-Linear Transformations}{19}{subsubsection.45}%
@@ -31,13 +31,13 @@
 \contentsline {subsection}{\numberline {2.3.1}Deep Learning Architectures}{21}{subsection.50}%
 \contentsline {subsubsection}{\numberline {2.3.1.1}Convolutional Neural Networks}{21}{subsubsection.51}%
 \contentsline {subsubsection}{\numberline {2.3.1.2}U-Net}{22}{subsubsection.52}%
-\contentsline {subsubsection}{\numberline {2.3.1.3}Autoencoders}{23}{subsubsection.54}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}Autoencoders}{22}{subsubsection.54}%
 \contentsline {subsubsection}{\numberline {2.3.1.4}Generative Adversarial Networks}{23}{subsubsection.55}%
 \contentsline {subsection}{\numberline {2.3.2}Deep Learning for Image Registration}{23}{subsection.56}%
 \contentsline {subsubsection}{\numberline {2.3.2.1}Supervised Registration}{23}{subsubsection.57}%
 \contentsline {subsubsection}{\numberline {2.3.2.2}Unsupervised Registration}{24}{subsubsection.59}%
 \contentsline {subsection}{\numberline {2.3.3}Network Training and Testing}{24}{subsection.62}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{25}{subsubsection.63}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{24}{subsubsection.63}%
 \contentsline {subsubsection}{\numberline {2.3.3.2}Testing and Evaluation Metrics}{26}{subsubsection.64}%
 \contentsline {chapter}{\numberline {3}Materials and Methods}{29}{chapter.70}%
 \contentsline {section}{\numberline {3.1}Network Architectures}{29}{section.71}%
