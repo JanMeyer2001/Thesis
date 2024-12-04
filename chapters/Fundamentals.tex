@@ -8,7 +8,7 @@ In this chapter, the foundations of the thesis are explained. Starting with the 
 \section{Magnetic Resonance Imaging} \label{Sec:MRI}
 MRI is a non-invasive, radiation-free, tomographic imaging technology based on measurements of a magnetic field.  An MRI machine comprises four main components, as seen in Figure~\ref{fig:MRISchematic}. The first component is a strong magnet powerful enough to generate a static magnetic field $B_0$ that is required to induce nuclear proton polarization. The second is a radio frequency (RF) system which generates an alternating magnetic field $B_1$ at the resonant frequency $f$ and detects the MR signal that is returned from the patient. The third component is the set of gradient systems (oriented orthogonally in X, Y and Z directions) that generates linear magnetic field variations, which are then superimposed upon $B_0$ and are used to spatially encode the MR signal. In clinical MR scanners, the three gradient sets and whole-body RF coils are typically concentrically positioned inside the bore of the magnet. The fourth component is a computer providing the user interface, generating images to be displayed and interpreted on the console~\cite{Serai2021}.
 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
  	\centering
  	\includegraphics[width=\linewidth]{./Images/MRI-Schematic.png} 
  	\caption{Schematic of an MRI scanner taken from~\cite{Serai2021}.}
@@ -62,7 +62,7 @@ The pulse sequence is repeated a number of times to acquire the entire image.
 %The time between two excitation pulses is called the repetition time. 
 Changing the TR, TE, and flip angles of a GE sequence influences the contrast weighting. $\text{T}^*_2$-weighted contrast can be achieved by using small flip angles and a long TE and moderate TR. By using large flip angles, a short TR and a short TE, a $\text{T}_1$-weighted signal can be acquired. Using small flip angles in combination with a long TR and a short TE generates proton density contrast~\cite{PulseSequences}.%\\
 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\includegraphics[width=\linewidth]{./Images/GradientEcho.pdf} 
 	\caption{Schematic of an gradient echo sequence taken from~\cite{PulseSequences}.}
@@ -73,7 +73,7 @@ Changing the TR, TE, and flip angles of a GE sequence influences the contrast we
 With a spin echo (SE) sequence, pure $\text{T}_2$-weighted contrast can be generated. When a $90°$ pulse rotates the magnetization into the transverse plane, the resulting FID signal quickly decays due to the strong $\text{T}^*_2$ dephasing. If after a time $\frac{\text{TE}}{2}$ a $180°$ pulse is applied, the spins will be flipped and start to rephase. After another time, $\frac{\text{TE}}{2}$, a measurable echo signal is created. The spin dephasing due to static magnetic field inhomogeneities is compensated by inverting the spins with the $180°$ refocusing pulse. This process is visualized in Figure~\ref{fig:SpinEcho}.\\
 Consequently, the decay of the signal at time TE will solely originate from the $\text{T}_2$ relaxation. A SE sequence can also be used to generate proton density or $\text{T}_1$-weighted signals by using a short TE and a long or short TR, respectively~\cite{PulseSequences}.
 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\includegraphics[width=\linewidth]{./Images/SpinEcho.pdf} 
 	\caption{Schematic of an spin echo sequence taken from~\cite{PulseSequences}.}
@@ -264,7 +264,7 @@ To alleviate the slow image acquisition times of the MR imaging, different MRI a
 %higher frequencies and fully scanning the center region. 
 The amount of k-space lines that are zeroed out are usually given by a reduction factor $R$. While there are different subsampling techniques, most involve fully sampling a center region containing the lower frequencies and dropping higher frequencies. These are deemed less important as they contain mostly details and fine image structures, whereas the low frequencies encode the general image structure and contrast. All of these methods create artifacts, like image blur, during image reconstruction, as seen in Figure~\ref{fig:ExamplesSubsampling}. In order to still reconstruct images with as few artifacts as possible, different technologies have been developed such as parallel imaging and compressed sensing, which are discussed in the following sections.
 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=\linewidth]{ExamplesSubsampling.png} 

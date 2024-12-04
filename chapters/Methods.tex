@@ -13,7 +13,7 @@ As a starting point, \emph{Fourier-Net}~\cite{Fourier-Net} and its successor \em
 %of the displacement field 
 is padded with zeros to the full resolution of the original displacement field. The field is then recovered by using the inverse DFT (iDFT) to convert it back into the spatial domain. This displacement field is then used to warp the moving image into the fixed image. Additionally, squaring and scaling layers~\cite{Dalca2018} can be added before warping the image in order to encourage a diffeomorphism in final deformation. 
 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=\linewidth]{ArchitectureFourier-Net.png} 
@@ -23,7 +23,7 @@ is padded with zeros to the full resolution of the original displacement field. 
 
 \subsubsection{Encoder}	\label{SubSubSec:Encoder}
 The encoder of \emph{Fourier-Net} consists of a CNN that generates the displacement field between the two inputs followed by a DFT layer that produces a band-limited representation of the full displacement field. The fully convolutional neural network (FCN) from \emph{SYMNet}~\cite{SYM-Net} was modified to function as the CNN of the encoder. Its (original) architecture (see Figure~\ref{fig:SYMNet}) is again based on the \emph{U-Net} with a contracting and expanding path. 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=\linewidth]{SYMNetArchitectureFCN.png} 
@@ -69,7 +69,7 @@ with $n \in [0, \frac{H}{a}-1]$ and $m \in [0, \frac{W}{b}-1]$ being the indices
 \end{equation}
 because most entries of $\mathcal{F}(\phi)$ are zeros, and the remaining values are exactly the same as in $\mathbb{B}_\phi$, which means that $\mathbb{S}_\phi$ contains all the information $\phi$ can provide. For this, however, $\mathbb{B}_\phi$ needs to be padded to the original image size first in order to get the full-resolution displacement and not a low dimensional representation. This ultimately shows that there is a unique mapping between $\mathbb{S}_\phi$ and $\phi$, which means that it is reasonable to use a network to learn $\mathbb{S}_\phi$ directly from image pairs and then reconstruct the displacement field in a very efficient manner~\cite{Fourier-Net}. The complete reconstruction process is visualized in Figure~\ref{fig:DecoderDisplacementField}.\\
 As both padding and iDFT layers are differentiable, \emph{Fourier-Net} can be optimized via back-propagation. For \emph{Diff-Fourier-Net} extra squaring and squaring layers~\cite{Dalca2018} are needed in the decoder turning the displacement field into a stationary velocity field. Typically seven scaling and squaring layers are used to impose such a diffeomorphism~\cite{Fourier-Net,Dalca2018}.
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=.65\linewidth]{DecoderDisplacementField.png} 
@@ -103,7 +103,7 @@ In order to perform a spatial transformation of the input feature map $U$, the s
 	V_i^c = \sum^{H}_{n} \sum^{W}_{m} U_{nm}^c k(x_i^s - m; \Phi_x) k(y_i^s - n; \Phi_y),
 \end{equation}
 with $\Phi_x$ and $\Phi_y$ being the parameters for a generic sampling  kernel $k$ that defines the image interpolation, $U_{nm}^c$ is the value of the input feature maps at location $(n,m)$ in the channel $c \in [1, ..., C]$ and $V_i^c$ is the value for every pixel $i \in [1, ..., H'W']$ for the output feature map. Any sampling kernel can be used, as long as (sub-) gradients can be defined with respect to $(x_i^s, y_i^s)$ to allow the loss gradients to flow back not only to the input feature map, but also to the sampling grid coordinates and therefore back to the transformation parameters $\theta$ and localization network, thus enabling back-propagation~\cite{SpatialTransformer}.
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=\linewidth]{SpatialTransformer.png} 
@@ -141,7 +141,7 @@ When using the squaring and scaling layers, thus making the deformation of the m
 %\subsection{Training on OASIS}
 %We first trained \emph{Fourier-Net} and \emph{Fourier-Net+} with the \emph{OASIS} dataset, as it was used in the original publication. \emph{Fourier-Net}/\emph{Fourier-Net+} can work with both 2D and 3D inputs, however the latter are harder to visualize. As the \emph{OASIS} dataset provides 3D volumes with annotations, 2D image data can be obtained by slicing the 3D volumes (see Figure~\ref{fig:OASIS} with matching labels for Dice-Score calculation. Thus we can easily visualize the training success of the 2D network by looking at the difference between images before and after registration in addition to the Dice-Score, which can also be calculated for 3D data. Examples for this can be seen in Figure~\ref{fig:DifferencesTrainingProgress} with two examples from different stages of the training process. Despite the example in Figure~\ref{fig:Training29600it} being the far harder example to align the network performs better than before (see Figure~\ref{fig:Training800it}) due to the training progress.
 %
-%\begin{figure}[htpb]
+%\begin{figure}[h] %tpb
 %	\centering
 %	\graphicspath{{images/}{\main/images/}}
 %	\begin{subfigure}{0.45\textwidth}
@@ -168,7 +168,7 @@ When using the squaring and scaling layers, thus making the deformation of the m
 \emph{Fourier-Net+}, as the name suggests, is an extension of Fourier-Net which takes the band-limited spatial representation of the images as input, instead of their original full-resolution counterparts. This leads to further reduction in the number of convolutional layers in the contracting path of the network, resulting in a decrease of parameters, memory usage, and computational operations. This makes \emph{Fourier-Net+} even more efficient than its predecessor~\cite{Fourier-Net+}.\\
 As seen in Figure~\ref{fig:Fourier-Net+}, the network architecture is almost the same as for \emph{Fourier-Net} (see Figure~\ref{fig:Fourier-Net} for comparison). However, while the decoder, and thus the loss function, remain the same, the encoder is slightly altered to make the network even more efficient. For this, similarly to the decoder, a DFT is used, however this time the idea is applied to the input images. These are first transformed into the Fourier domain, then low-pass filtered by center-cropping and finally reconstructed from their band-limited representation back into the spatial domain via an iDFT. The two images, now compressed, are the input for the encoder of \emph{Fourier-Net}, meaning the CNN and following DFT. However, due to the band-limiting before the CNN, the latter can be made much more light-weight, thus reducing computational cost. This is visualized in Figure~\ref{fig:Fourier-Net+CNN}. Thus, \emph{Fourier-Net+} too is overall lighter than the baseline \emph{Fourier-Net} in terms of the number of parameters and computations. However, such a light network may face limitations in accurately capturing complex deformations. To counter this potential weakness, the authors propose a cascaded version of \emph{Fourier-Net+}, which uses multiple versions of \emph{Fourier-Net+} cascaded one after the other to achieve a better overall displacement field~\cite{Fourier-Net+}. A schematic for this can be seen in Figure~\ref{fig:Fourier-Net+Cascaded}.
 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=\linewidth]{ArchitectureFourier-Net+.png} 
@@ -178,14 +178,14 @@ As seen in Figure~\ref{fig:Fourier-Net+}, the network architecture is almost the
 
 \subsubsection{Changes to the Encoder} \label{SubSubSec:ChangesEncoder}
 In order to further reduce the amount of computational operations, \emph{Fourier-Net+} discards the early layers of the encoder. Instead, a DFT $\mathcal{F}(I_M)$ followed by a center-crop to produce the band-limited representation $\mathbb{B}_{I_M}$ in the frequency domain and iDFT are used to get the spatial patch $\mathbb{S}_{I_M}$, while the rest of the encoder from \emph{Fourier-Net} stays the same. The input $I_M$ is thus compressed to a lower resolution (i.e. band-limited) using the frequency space, which reduces the computational cost. This process is visualized in Figure~\ref{fig:Fourier-Net+EncoderCompression}. The encoder of \emph{Fourier-Net+} has several convolutional layers less in the contracting path compared to \emph{Fourier-Net}, which leads to a further accelerated registration process while reducing the memory footprint. These advantages are visualized in Figure~\ref{fig:Fourier-Net+CNN} where the amount of different layers between a conventional \emph{U-Net}, \emph{Fourier-Net} (with the smaller decoder) and \emph{Fourier-Net+} (with a smaller encoder and decoder) are shown.
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=.5\linewidth]{CompressionEncoder.png} 
 	\caption{Compression in the frequency domain of the encoder used in \emph{Fourier-Net+} taken from~\cite{Fourier-Net+}.}
 	\label{fig:Fourier-Net+EncoderCompression}
 \end{figure}
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=\linewidth]{ArchitectureFourier-Net+CNN.png} 
@@ -205,7 +205,7 @@ with $\phi^{(k)}$ being the displacement field computed by composing the outputs
 \end{equation}
 Thus, the output displacement field of the $K$-th cascade $\phi^{(K)}$ is the final displacement which is then used to warp $I_M$, the original moving image, in order to compute the loss~\cite{Fourier-Net+}.
 
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\includegraphics[width=\linewidth]{ArchitectureFourier-Net+Cascaded.png} 
@@ -332,7 +332,7 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 \end{figure}
 
 
-%\begin{figure}[htpb]
+%\begin{figure}[h] %tpb
 %	\centering
 %	\graphicspath{{images/}{\main/images/}}
 %	\begin{subfigure}{0.4\textwidth}
@@ -350,7 +350,7 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 %	\label{fig:CMRxRecon}
 %\end{figure}
 
-%\begin{figure}[htpb]
+%\begin{figure}[h] %tpb
 %	\centering
 %	\graphicspath{{images/}{\main/images/}}
 %	\includegraphics[width=.5\linewidth]{ImageSlice.png} 
@@ -358,7 +358,7 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 %	\label{fig:ImageSlice}
 %\end{figure}
 
-%\begin{figure}[htpb]
+%\begin{figure}[h] %tpb
 %	\centering
 %	\graphicspath{{images/}{\main/images/}}
 %	\includegraphics[width=\linewidth]{Subsampling.png} 
@@ -402,7 +402,7 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 %	\label{fig:ImageCropping}
 %\end{figure}
 
-%\begin{figure}[htpb]
+%\begin{figure}[h] %tpb
 %	\centering
 %	\graphicspath{{images/}{\main/images/}}
 %	\begin{subfigure}{0.6\textwidth}
@@ -518,7 +518,7 @@ Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides th
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an inverse FT for frame-to-frame registration using the optimal settings obtained in section~\ref{SubSec:ParameterTestsACDC} (MSE-loss, 16 channels, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:NetworkTrainingAndTesting}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ResultsReconstructionPipeline}.
 
 %% Line Swapping next to each other
-%\begin{figure}[htpb]
+%\begin{figure}[h] %tpb
 %	\centering
 %	\begin{subfigure}{0.3\textwidth}
 %    		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
