@@ -542,7 +542,7 @@ Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides th
 %\end{figure}
 
 % Line Swapping under each other
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\begin{subfigure}{0.8\textwidth}
     		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
@@ -566,17 +566,34 @@ Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides th
 \end{figure}
 
 % lung motion 2x2
-\begin{figure}[htpb]
+\begin{figure}[h] %tpb
 	\centering
 	\includegraphics[width=\linewidth]{./Images/LungMotion.png} 
-	\caption{Images corrupted with simulated lung motion for the same cardiac frame.}
+	\caption{$L=4$ images corrupted with simulated lung motion for the same cardiac frame.}
 	\label{fig:LungMotion}
 \end{figure}
 
-% pipeline for line swapping
-\begin{figure}[htpb]
+% general reconstruction pipeline with synthetic motion-corrupted 
+\begin{figure}[h] %tpb
 	\centering
-	\includegraphics[width=\linewidth]{./Images/ReconstructionPipelineEvaluation.png} 
-	\caption{Overview of the general reconstruction pipeline using \emph{Fourier-Net+} as a registration network (inspired by~\cite{Kuestner2022}).}
-	\label{fig:ReconstructionPipeline}
+	\includegraphics[width=\linewidth]{./Images/GeneralReconstructionPipeline.pdf} 
+	\caption{Overview of the generalized reconstruction pipeline in a) using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}). The k-space data is corrupted with synthetic motion, either through swapping $z$ random line (steps shown in b) or by via $L$ random deformation frames to simulate lung motion (shown in c)).}
+	\label{fig:GeneralReconstructionPipeline}
 \end{figure}
+
+%% pipeline for line swapping
+%\begin{figure}[h] %tpb
+%	\centering
+%	\includegraphics[width=\linewidth]{./Images/ReconstructionPipelineLineSwapping.pdf} 
+%	\caption{Overview of the reconstruction pipeline with k-space line swapping to simulate motion using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}).}
+%	\label{fig:ReconstructionPipelineLineSwapping}
+%\end{figure}
+%
+%% pipeline for lung motion
+%\begin{figure}[h] %tpb
+%	\centering
+%	\includegraphics[width=\linewidth]{./Images/ReconstructionPipelineLungMotion.pdf} 
+%	\caption{Overview of the reconstruction pipeline with $L$ simulated lung motion frames using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}).}
+%	\label{fig:ReconstructionPipelineLungMotion}
+%\end{figure}
+
