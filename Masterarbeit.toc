@@ -64,34 +64,34 @@
 \contentsline {subsection}{\numberline {3.3.2}Integration into a Motion-Compensated Reconstruction Pipeline}{46}{subsection.121}%
 \contentsline {subsubsection}{\numberline {3.3.2.1}Domain Translation}{46}{subsubsection.122}%
 \contentsline {subsubsection}{\numberline {3.3.2.2}Reconstruction Pipeline}{46}{subsubsection.123}%
-\contentsline {chapter}{\numberline {4}Results}{49}{chapter.125}%
-\contentsline {section}{\numberline {4.1}Parameter Tests on the ACDC Dataset}{49}{section.126}%
-\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{49}{subsection.127}%
-\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{52}{subsection.129}%
-\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{52}{subsection.131}%
-\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{53}{subsection.133}%
-\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{55}{subsection.135}%
-\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{59}{subsection.139}%
-\contentsline {subsubsection}{\numberline {4.1.6.1}Cardiac Labels}{60}{subsubsection.141}%
-\contentsline {subsubsection}{\numberline {4.1.6.2}Visual Examination}{63}{subsubsection.143}%
-\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{65}{section.145}%
-\contentsline {subsection}{\numberline {4.2.1}Domain Translation}{65}{subsection.146}%
-\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{65}{subsection.148}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}K-Space Line Swapping}{66}{subsubsection.149}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Simulated Lung Movement}{66}{subsubsection.151}%
-\contentsline {chapter}{\numberline {5}Discussion}{69}{chapter.153}%
-\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{69}{section.154}%
-\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{69}{subsection.155}%
-\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{70}{subsection.156}%
-\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{70}{subsection.157}%
-\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{70}{subsection.158}%
-\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{71}{subsection.159}%
-\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{71}{subsection.160}%
-\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{72}{section.161}%
-\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{72}{subsection.162}%
-\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{72}{subsection.163}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}K-Space Line Swapping}{72}{subsubsection.164}%
-\contentsline {subsubsection}{\numberline {5.2.2.2}Simulated Lung Movement}{72}{subsubsection.165}%
-\contentsline {section}{\numberline {5.3}Limitations and Outlook}{72}{section.166}%
-\contentsline {chapter}{\numberline {6}Conclusion}{75}{chapter.167}%
+\contentsline {chapter}{\numberline {4}Results}{51}{chapter.127}%
+\contentsline {section}{\numberline {4.1}Parameter Tests on the ACDC Dataset}{51}{section.128}%
+\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{51}{subsection.129}%
+\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{54}{subsection.131}%
+\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{54}{subsection.133}%
+\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{55}{subsection.135}%
+\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{57}{subsection.137}%
+\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{61}{subsection.141}%
+\contentsline {subsubsection}{\numberline {4.1.6.1}Cardiac Labels}{62}{subsubsection.143}%
+\contentsline {subsubsection}{\numberline {4.1.6.2}Visual Examination}{65}{subsubsection.145}%
+\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{67}{section.147}%
+\contentsline {subsection}{\numberline {4.2.1}Domain Translation}{67}{subsection.148}%
+\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{67}{subsection.150}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}K-Space Line Swapping}{68}{subsubsection.151}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Simulated Lung Movement}{68}{subsubsection.153}%
+\contentsline {chapter}{\numberline {5}Discussion}{71}{chapter.155}%
+\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{71}{section.156}%
+\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{71}{subsection.157}%
+\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{72}{subsection.158}%
+\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{72}{subsection.159}%
+\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{72}{subsection.160}%
+\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{73}{subsection.161}%
+\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{73}{subsection.162}%
+\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{74}{section.163}%
+\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{74}{subsection.164}%
+\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{74}{subsection.165}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}K-Space Line Swapping}{74}{subsubsection.166}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Simulated Lung Movement}{74}{subsubsection.167}%
+\contentsline {section}{\numberline {5.3}Limitations and Outlook}{74}{section.168}%
+\contentsline {chapter}{\numberline {6}Conclusion}{77}{chapter.169}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

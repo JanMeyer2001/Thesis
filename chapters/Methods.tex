@@ -514,14 +514,69 @@ Before implementing the reconstruction pipeline the domain translation capabilit
 
 \subsubsection{Reconstruction Pipeline} \label{SubSubSec:ReconstructionPipeline}
 After testing whether that the previous results are translatable to the new data, the reconstruction pipeline had to be build and evaluated. As discussed in section~\ref{Sec:Motion-CompensatedReconstruction}, neural networks can be used in motion-compensated MRI reconstruction pipelines for either the reconstruction or the corrected of motion between the frames. As \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were already trained for frame-to-frame registration, they could be easily used for the latter. ESPIRiT~\cite{ESPIRiT} was used to simulate the coil sensitivity maps needed for a SENSE-type reconstruction from the provided k-space data using an eigenvalue decomposition. For the SENSE reconstruction iterative conjugate gradient was used as it is very memory effective due to \emph{Fourier-Net+} being a very small network and the fact that no big network is needed for the actual reconstruction as a lightweight algorithm does the work. \\ 
-Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. To simulate this motion or mis-triggering, two strategies were tested. First, a similar strategy to~\cite{Oksuz2020} was used, swapping $z=\{16,32\}$ k-space lines between the frames in k-space. These new fully sampled frames were then subsampled using the subsampling masks before an inverse FT to generate the corrupted images for the pipeline. An overview of this augmentation incorporated into the reconstruction pipeline can be seen in Figure~\ref{fig:ReconstructionPipeline}. Second, a simulation of lung movement by randomly deforming the images and then using an FT to generate the corrupted k-space data. This was done for $L=4$ additional lung motion frames for each cardiac frame.\\
+Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. To simulate this motion or mis-triggering, two strategies were tested. First, a similar strategy to~\cite{Oksuz2020} was used, swapping $z$ k-space lines between the frames in k-space. These new fully sampled frames were then subsampled using the subsampling masks before an inverse FT to generate the corrupted images for the pipeline. An example for $z=\{16,32\}$ can be seen in Figure~\ref{fig:LineSwapping}. Second, a simulation of lung movement by randomly deforming the images and then using an FT to generate the corrupted k-space data. This was done for $L=4$ additional lung motion frames for each cardiac frame as seen in Figure~\ref{fig:LungMotion}. An overview of this augmentation incorporated into the reconstruction pipeline can be seen in Figure~\ref{fig:ReconstructionPipeline}.\\
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an inverse FT for frame-to-frame registration using the optimal settings obtained in section~\ref{SubSec:ParameterTestsACDC} (MSE-loss, 16 channels, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:NetworkTrainingAndTesting}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ResultsReconstructionPipeline}.
 
+%% Line Swapping next to each other
+%\begin{figure}[htpb]
+%	\centering
+%	\begin{subfigure}{0.3\textwidth}
+%    		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
+%    		\caption{Original image.}
+%    		\label{fig:LineSwappingOriginal}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.3\textwidth}
+%    		\includegraphics[width=\textwidth]{./Images/LineSwapping16.png}
+%    		\caption{Line swapping $z=16$.}
+%    		\label{fig:LineSwapping16}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.3\textwidth}
+%    		\includegraphics[width=\textwidth]{./Images/LineSwapping32.png}
+%    		\caption{Line swapping $z=32$.}
+%    		\label{fig:LineSwapping32}
+%	\end{subfigure}
+%	\caption{Examples for line swapping with $R=4$ subsampling compared to the original fully sampled image.}
+%	\label{fig:LineSwapping}
+%\end{figure}
 
+% Line Swapping under each other
 \begin{figure}[htpb]
 	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\linewidth]{ReconstructionPipelineEvaluation.png} 
+	\begin{subfigure}{0.8\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
+    		\caption{Original image.}
+    		\label{fig:LineSwappingOriginal}
+	\end{subfigure}
+	\\
+	\begin{subfigure}{0.8\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LineSwapping16.png}
+    		\caption{Line swapping $z=16$.}
+    		\label{fig:LineSwapping16}
+	\end{subfigure}
+	\\
+	\begin{subfigure}{0.8\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LineSwapping32.png}
+    		\caption{Line swapping $z=32$.}
+    		\label{fig:LineSwapping32}
+	\end{subfigure}
+	\caption{Examples for line swapping with $R=4$ subsampling compared to the original fully sampled image.}
+	\label{fig:LineSwapping}
+\end{figure}
+
+% lung motion 2x2
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=\linewidth]{./Images/LungMotion.png} 
+	\caption{Images corrupted with simulated lung motion for the same cardiac frame.}
+	\label{fig:LungMotion}
+\end{figure}
+
+% pipeline for line swapping
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=\linewidth]{./Images/ReconstructionPipelineEvaluation.png} 
 	\caption{Overview of the general reconstruction pipeline using \emph{Fourier-Net+} as a registration network (inspired by~\cite{Kuestner2022}).}
 	\label{fig:ReconstructionPipeline}
 \end{figure}

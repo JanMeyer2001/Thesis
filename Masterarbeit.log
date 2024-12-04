@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  3 DEC 2024 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  4 DEC 2024 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1199,56 +1199,56 @@ chapter 1.
 
 ]
 chapter 2.
-<images/MRI-Schematic.png, id=237, 639.13782pt x 345.54094pt>
-File: images/MRI-Schematic.png Graphic file (type png)
-<use images/MRI-Schematic.png>
-Package pdftex.def Info: images/MRI-Schematic.png  used on input line 14.
+<./Images/MRI-Schematic.png, id=237, 639.13782pt x 345.54094pt>
+File: ./Images/MRI-Schematic.png Graphic file (type png)
+<use ./Images/MRI-Schematic.png>
+Package pdftex.def Info: ./Images/MRI-Schematic.png  used on input line 13.
 (pdftex.def)             Requested size: 441.01773pt x 238.43404pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--32
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
 
  []
 
-[5] [6 <./images/MRI-Schematic.png>] [7]
+[5] [6 <./Images/MRI-Schematic.png>] [7]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 61.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 60.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 61.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 60.
 
 Missing character: There is no ° in font cmr12!
 [8]
 <./Images/GradientEcho.pdf, id=281, 882.03545pt x 506.45905pt>
 File: ./Images/GradientEcho.pdf Graphic file (type pdf)
 <use ./Images/GradientEcho.pdf>
-Package pdftex.def Info: ./Images/GradientEcho.pdf  used on input line 68.
+Package pdftex.def Info: ./Images/GradientEcho.pdf  used on input line 67.
 (pdftex.def)             Requested size: 441.01773pt x 253.2289pt.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 74.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 74.
-
-Missing character: There is no ° in font cmr12!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 74.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 74.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
 
 Missing character: There is no ° in font cmr12!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 74.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 74.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
+
+Missing character: There is no ° in font cmr12!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
 
 Missing character: There is no ° in font cmr12!
 <./Images/SpinEcho.pdf, id=286, 853.58266pt x 358.50471pt>
 File: ./Images/SpinEcho.pdf Graphic file (type pdf)
 <use ./Images/SpinEcho.pdf>
-Package pdftex.def Info: ./Images/SpinEcho.pdf  used on input line 79.
+Package pdftex.def Info: ./Images/SpinEcho.pdf  used on input line 78.
 (pdftex.def)             Requested size: 441.01773pt x 185.23099pt.
 [9 <./Images/GradientEcho.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1258,7 +1258,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./Images/2D_MRI_Measurement.png Graphic file (type png)
 <use ./Images/2D_MRI_Measurement.png>
 Package pdftex.def Info: ./Images/2D_MRI_Measurement.png  used on input line 12
-7.
+6.
 (pdftex.def)             Requested size: 441.01773pt x 233.46375pt.
 
 
@@ -1267,13 +1267,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./Images/ConstantGradient.pdf, id=327, 165.61874pt x 221.32687pt>
 File: ./Images/ConstantGradient.pdf Graphic file (type pdf)
 <use ./Images/ConstantGradient.pdf>
-Package pdftex.def Info: ./Images/ConstantGradient.pdf  used on input line 135.
+Package pdftex.def Info: ./Images/ConstantGradient.pdf  used on input line 134.
 
 (pdftex.def)             Requested size: 196.25612pt x 262.28127pt.
 <./Images/RefocusingPulse.pdf, id=328, 165.61874pt x 221.32687pt>
 File: ./Images/RefocusingPulse.pdf Graphic file (type pdf)
 <use ./Images/RefocusingPulse.pdf>
-Package pdftex.def Info: ./Images/RefocusingPulse.pdf  used on input line 141.
+Package pdftex.def Info: ./Images/RefocusingPulse.pdf  used on input line 140.
 (pdftex.def)             Requested size: 196.25612pt x 262.28127pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1287,7 +1287,7 @@ ltiple pdfs with page group included in a single page
 <images/ExamplesSubsampling.png, id=372, 787.44188pt x 331.2375pt>
 File: images/ExamplesSubsampling.png Graphic file (type png)
 <use images/ExamplesSubsampling.png>
-Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 271
+Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 270
 .
 (pdftex.def)             Requested size: 441.01773pt x 185.51195pt.
  [14 <./images/ExamplesSubsampling.png>] [15] [16] [17] [18] [19] [20]
@@ -1295,20 +1295,20 @@ Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 271
 <images/U-NetArchitecture.png, id=491, 677.53125pt x 463.7325pt>
 File: images/U-NetArchitecture.png Graphic file (type png)
 <use images/U-NetArchitecture.png>
-Package pdftex.def Info: images/U-NetArchitecture.png  used on input line 474.
+Package pdftex.def Info: images/U-NetArchitecture.png  used on input line 473.
 (pdftex.def)             Requested size: 330.76329pt x 226.39594pt.
  [22 <./images/U-NetArchitecture.png>] [23]
 <images/SupervisedRegistrationGraph.jpg, id=520, 2460.19125pt x 827.09pt>
 File: images/SupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/SupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/SupervisedRegistrationGraph.jpg  used on input 
-line 494.
+line 493.
 (pdftex.def)             Requested size: 441.01773pt x 148.26399pt.
 <images/UnsupervisedRegistrationGraph.jpg, id=530, 3329.43875pt x 935.495pt>
 File: images/UnsupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/UnsupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/UnsupervisedRegistrationGraph.jpg  used on inpu
-t line 506.
+t line 505.
 (pdftex.def)             Requested size: 441.01773pt x 123.90253pt.
 
 
@@ -1318,13 +1318,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/GANRegistrationGraph.jpg Graphic file (type jpg)
 <use images/GANRegistrationGraph.jpg>
 Package pdftex.def Info: images/GANRegistrationGraph.jpg  used on input line 51
-4.
+3.
 (pdftex.def)             Requested size: 441.01773pt x 190.92001pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--525
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
 
  []
 
@@ -1480,64 +1480,86 @@ LaTeX Warning: Reference `Sec:Motion-CompensatedReconstruction' on page 46 unde
 fined on input line 516.
 
 [46]
-<images/ReconstructionPipelineEvaluation.png, id=823, 511.9125pt x 386.94562pt>
-
-File: images/ReconstructionPipelineEvaluation.png Graphic file (type png)
-<use images/ReconstructionPipelineEvaluation.png>
-Package pdftex.def Info: images/ReconstructionPipelineEvaluation.png  used on i
-nput line 524.
+<./Images/LineSwappingOriginal.png, id=827, 362.7954pt x 176.3388pt>
+File: ./Images/LineSwappingOriginal.png Graphic file (type png)
+<use ./Images/LineSwappingOriginal.png>
+Package pdftex.def Info: ./Images/LineSwappingOriginal.png  used on input line 
+546.
+(pdftex.def)             Requested size: 352.81552pt x 171.49239pt.
+<./Images/LineSwapping16.png, id=828, 362.7954pt x 176.3388pt>
+File: ./Images/LineSwapping16.png Graphic file (type png)
+<use ./Images/LineSwapping16.png>
+Package pdftex.def Info: ./Images/LineSwapping16.png  used on input line 552.
+(pdftex.def)             Requested size: 352.81552pt x 171.49239pt.
+<./Images/LineSwapping32.png, id=829, 362.7954pt x 176.3388pt>
+File: ./Images/LineSwapping32.png Graphic file (type png)
+<use ./Images/LineSwapping32.png>
+Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 558.
+(pdftex.def)             Requested size: 352.81552pt x 171.49239pt.
+<./Images/LungMotion.png, id=830, 1156.32pt x 563.706pt>
+File: ./Images/LungMotion.png Graphic file (type png)
+<use ./Images/LungMotion.png>
+Package pdftex.def Info: ./Images/LungMotion.png  used on input line 569.
+(pdftex.def)             Requested size: 441.01773pt x 214.99323pt.
+<./Images/ReconstructionPipelineEvaluation.png, id=831, 511.9125pt x 386.94562p
+t>
+File: ./Images/ReconstructionPipelineEvaluation.png Graphic file (type png)
+<use ./Images/ReconstructionPipelineEvaluation.png>
+Package pdftex.def Info: ./Images/ReconstructionPipelineEvaluation.png  used on
+ input line 576.
 (pdftex.def)             Requested size: 441.01773pt x 333.35718pt.
-) (chapters/Results.tex [47 <./images/ReconstructionPipelineEvaluation.png>] [4
-8
+) (chapters/Results.tex [47] [48 <./Images/LineSwappingOriginal.png> <./Images/
+LineSwapping16.png> <./Images/LineSwapping32.png>] [49 <./Images/LungMotion.png
+> <./Images/ReconstructionPipelineEvaluation.png>] [50
 
 
 ]
 chapter 4.
-[49]
+[51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
+ [52]
 Overfull \vbox (5.41568pt too high) has occurred while \output is active []
 
 
-[51]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[52]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
+[57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
-[58] [59]
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+[60] [61]
 Overfull \hbox (15.06609pt too wide) in paragraph at lines 322--362
  [][] 
  []
 
-[60]
-<images/Boxplot_DiceScores_LV-Cavity.png, id=918, 867.24pt x 433.62pt>
+[62]
+<images/Boxplot_DiceScores_LV-Cavity.png, id=938, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
  line 378.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=919, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_Myocardium.png, id=939, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
 t line 384.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=920, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_RV-Cavity.png, id=940, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
@@ -1546,30 +1568,30 @@ Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceScores_M
+ [64 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceScores_M
 yocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
-<images/TestExamples_Mode0.png, id=933, 1962.8532pt x 709.6914pt>
+<images/TestExamples_Mode0.png, id=953, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
 Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 440.
 
 (pdftex.def)             Requested size: 441.01773pt x 159.44626pt.
-<images/TestExamples_Mode1.png, id=934, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode1.png, id=954, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
 Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 441.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode2.png, id=935, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode2.png, id=955, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
 Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 442.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode3.png, id=936, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode3.png, id=956, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
 Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 443.
@@ -1578,11 +1600,11 @@ Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 443.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [65]
 Overfull \vbox (46.21942pt too high) has occurred while \output is active []
 
 
-[64 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
+[66 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
 es/TestExamples_Mode2.png> <./images/TestExamples_Mode3.png>]
 Overfull \hbox (8.29655pt too wide) in paragraph at lines 450--451
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
@@ -1590,7 +1612,7 @@ Overfull \hbox (8.29655pt too wide) in paragraph at lines 450--451
 n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[65]
+[67]
 Underfull \hbox (badness 1308) in paragraph at lines 494--494
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
@@ -1610,7 +1632,7 @@ Fourier-Net+ \OT1/cmr/m/n/12 and
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (chapters/Discussion.tex [66] [67] [68]
+) (chapters/Discussion.tex [68] [69] [70]
 chapter 5.
 
 Overfull \hbox (1.98323pt too wide) in paragraph at lines 6--7
@@ -1625,10 +1647,10 @@ m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
 /12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[69
+[71
 
 
-] [70]
+] [72]
 Overfull \hbox (9.07988pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/12 In sec-tion [][]4.1.6[][] the reg-is-tra-tion per-for-mance of 
 \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT
@@ -1638,13 +1660,13 @@ Overfull \hbox (9.07988pt too wide) in paragraph at lines 32--33
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71])
-(chapters/Conclusion.tex [72] [73] [74
+ [73])
+(chapters/Conclusion.tex [74] [75] [76
 
 
 ]
 chapter 6.
-) [75] [76
+) [77] [78
 
 
 ]
@@ -1653,20 +1675,20 @@ Overfull \hbox (3.86661pt too wide) in paragraph at lines 182--182
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
-[77]
+[79]
 Overfull \hbox (3.00894pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
 
-[78]
+[80]
 Overfull \hbox (20.21523pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
  []
 
-[79] [80] (Masterarbeit.aux)
+[81] [82] (Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1685,11 +1707,11 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29184 strings out of 475248
- 534345 string characters out of 5767627
+ 29225 strings out of 475248
+ 535517 string characters out of 5767627
  1955785 words of memory out of 5000000
- 49995 multiletter control sequences out of 15000+600000
- 569999 words of font info for 81 fonts, out of 8000000 for 9000
+ 50032 multiletter control sequences out of 15000+600000
+ 571247 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
@@ -1709,9 +1731,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (88 pages, 8986593 bytes).
+Output written on Masterarbeit.pdf (90 pages, 9535546 bytes).
 PDF statistics:
- 1406 PDF objects out of 1440 (max. 8388607)
- 314 named destinations out of 1000 (max. 500000)
- 599 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1426 PDF objects out of 1440 (max. 8388607)
+ 318 named destinations out of 1000 (max. 500000)
+ 619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
