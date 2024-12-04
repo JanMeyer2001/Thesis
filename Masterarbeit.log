@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  4 DEC 2024 14:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  4 DEC 2024 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1484,29 +1484,29 @@ fined on input line 516.
 File: ./Images/LineSwappingOriginal.png Graphic file (type png)
 <use ./Images/LineSwappingOriginal.png>
 Package pdftex.def Info: ./Images/LineSwappingOriginal.png  used on input line 
-546.
+548.
 (pdftex.def)             Requested size: 352.81552pt x 171.49239pt.
 <./Images/LineSwapping16.png, id=828, 362.7954pt x 176.3388pt>
 File: ./Images/LineSwapping16.png Graphic file (type png)
 <use ./Images/LineSwapping16.png>
-Package pdftex.def Info: ./Images/LineSwapping16.png  used on input line 552.
+Package pdftex.def Info: ./Images/LineSwapping16.png  used on input line 554.
 (pdftex.def)             Requested size: 352.81552pt x 171.49239pt.
 <./Images/LineSwapping32.png, id=829, 362.7954pt x 176.3388pt>
 File: ./Images/LineSwapping32.png Graphic file (type png)
 <use ./Images/LineSwapping32.png>
-Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 558.
+Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 560.
 (pdftex.def)             Requested size: 352.81552pt x 171.49239pt.
 <./Images/LungMotion.png, id=830, 1156.32pt x 563.706pt>
 File: ./Images/LungMotion.png Graphic file (type png)
 <use ./Images/LungMotion.png>
-Package pdftex.def Info: ./Images/LungMotion.png  used on input line 569.
+Package pdftex.def Info: ./Images/LungMotion.png  used on input line 571.
 (pdftex.def)             Requested size: 441.01773pt x 214.99323pt.
 <./Images/ReconstructionPipelineEvaluation.png, id=831, 511.9125pt x 386.94562p
 t>
 File: ./Images/ReconstructionPipelineEvaluation.png Graphic file (type png)
 <use ./Images/ReconstructionPipelineEvaluation.png>
 Package pdftex.def Info: ./Images/ReconstructionPipelineEvaluation.png  used on
- input line 576.
+ input line 579.
 (pdftex.def)             Requested size: 441.01773pt x 333.35718pt.
 ) (chapters/Results.tex [47] [48 <./Images/LineSwappingOriginal.png> <./Images/
 LineSwapping16.png> <./Images/LineSwapping32.png>] [49 <./Images/LungMotion.png
@@ -1731,7 +1731,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (90 pages, 9535546 bytes).
+Output written on Masterarbeit.pdf (90 pages, 9518073 bytes).
 PDF statistics:
  1426 PDF objects out of 1440 (max. 8388607)
  318 named destinations out of 1000 (max. 500000)
