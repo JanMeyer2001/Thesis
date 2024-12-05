@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  5 DEC 2024 17:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  5 DEC 2024 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1687,18 +1687,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70]
 [71]
-Overfull \hbox (9.07988pt too wide) in paragraph at lines 37--39
+Overfull \hbox (9.07988pt too wide) in paragraph at lines 37--41
 \OT1/cmr/m/n/12 In sec-tion [][]4.1.6[][] the reg-is-tra-tion per-for-mance of 
 \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT
 1/cmr/m/n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[72] [73]) (chapters/Conclusion.tex [74]
+[72] [73]) (chapters/Conclusion.tex [74] [75] [76
+
+
+]
 chapter 6.
-) [75
-
-
-] [76
+) [77] [78
 
 
 ]
@@ -1707,20 +1707,20 @@ Overfull \hbox (3.86661pt too wide) in paragraph at lines 182--182
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
-[77]
+[79]
 Overfull \hbox (3.00894pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
 
-[78]
+[80]
 Overfull \hbox (20.21523pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
  []
 
-[79] [80] (Masterarbeit.aux)
+[81] [82] (Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1739,9 +1739,9 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29224 strings out of 475248
- 535541 string characters out of 5767627
- 1955785 words of memory out of 5000000
+ 29226 strings out of 475248
+ 535555 string characters out of 5767627
+ 1954785 words of memory out of 5000000
  50033 multiletter control sequences out of 15000+600000
  571247 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1763,9 +1763,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (88 pages, 10456149 bytes).
+Output written on Masterarbeit.pdf (90 pages, 10458251 bytes).
 PDF statistics:
- 1466 PDF objects out of 1728 (max. 8388607)
- 316 named destinations out of 1000 (max. 500000)
+ 1474 PDF objects out of 1728 (max. 8388607)
+ 318 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 

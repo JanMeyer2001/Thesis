@@ -93,5 +93,5 @@
 \contentsline {subsubsection}{\numberline {5.2.2.1}K-Space Line Swapping}{73}{subsubsection.166}%
 \contentsline {subsubsection}{\numberline {5.2.2.2}Simulated Lung Movement}{74}{subsubsection.167}%
 \contentsline {section}{\numberline {5.3}Limitations and Outlook}{74}{section.168}%
-\contentsline {chapter}{\numberline {6}Conclusion}{75}{chapter.169}%
+\contentsline {chapter}{\numberline {6}Conclusion}{77}{chapter.169}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
