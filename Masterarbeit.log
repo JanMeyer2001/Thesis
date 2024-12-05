@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  5 DEC 2024 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  5 DEC 2024 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1554,10 +1554,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [53]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
-[55]
+Underfull \vbox (badness 4621) has occurred while \output is active []
+
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
@@ -1671,14 +1677,15 @@ m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70]
-Overfull \hbox (9.07988pt too wide) in paragraph at lines 35--36
+[71]
+Overfull \hbox (9.07988pt too wide) in paragraph at lines 36--37
 \OT1/cmr/m/n/12 In sec-tion [][]4.1.6[][] the reg-is-tra-tion per-for-mance of 
 \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT
 1/cmr/m/n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[71]
-Underfull \vbox (badness 3158) has occurred while \output is active []
+
+Underfull \vbox (badness 1147) has occurred while \output is active []
 
  [72])
 (chapters/Conclusion.tex [73] [74]
@@ -1751,7 +1758,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (88 pages, 10455286 bytes).
+Output written on Masterarbeit.pdf (88 pages, 10455649 bytes).
 PDF statistics:
  1466 PDF objects out of 1728 (max. 8388607)
  316 named destinations out of 1000 (max. 500000)
