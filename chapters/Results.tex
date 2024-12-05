@@ -12,15 +12,15 @@ Due to the limitations of the \emph{CMRxRecon} dataset in terms of segmentations
 Again, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} are compared in terms of registration performance and inference time (on GPU) together with their diffeomorphic versions, however, versions with dense instead of band-limited displacements are also added as a baseline for peak performance as these utilize all of the k-space information. The memory consumption is also added to the comparison with the number of parameters, mult-add operations and the total memory. The latter is only given for the dense and normal versions as the diffeomorphic version required roughly the same amount of memory as the normal ones, while the dense versions have a slightly larger encoder. 
 %All \emph{Fourier-Net+} and \emph{4xFourier-Net} variants use a FT crop size of $48 \times 48$. All networks used MSE-loss etc.
 Note that all network variants were trained for 6 epochs. The results can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDC}.\\
-For the dense displacement variants the diffeomorphic transform increases the performance in terms of Dice score (with and without the background label) slightly for \emph{Fourier-Net} and \emph{4xFourier-Net}, but decreases for \emph{Fourier-Net+}. The SSIM decreases for all models slightly, while the MSE stays about the same. Unsurprisingly, the percentage of non-positive Jabobian determinants goes down for the diffeomorphic variants. The times between the baseline and diffeomorphic versions do not vary a lot with the \emph{Fourier-Net} being faster without the diffeomorphis, while \emph{Fourier-Net+} and \emph{4xFourier-Net} are faster. \\
-The results for the band-limited versions are very similar with \emph{Fourier-Net} and \emph{Fourier-Net+} performing slightly worse in terms of Dice (with background) with the diffeomorphis, while \emph{4xFourier-Net} performs better by almost 2$\%$. When excluding the background label \emph{Fourier-Net} again performs slightly worse, but \emph{Fourier-Net+} and \emph{4xFourier-Net} both improve, the latter with almost 3$\%$ more than the baseline version. These changes are not consistent with the dense displacement versions, however, the band-limited \emph{4xFourier-Net} version might be an outlier, as all of the other models are not affected as much by the diffeomorphic transform. The SSIM values slightly decrease for \emph{Fourier-Net} and \emph{Fourier-Net+} with the diffeomorphism, but again improve slightly for \emph{4xFourier-Net}. The MSE is slightly better for \emph{Fourier-Net} and \emph{4xFourier-Net}, but a bit worse for \emph{Fourier-Net+}. The percentage of non-positive Jabobian determinants again decreases for the diffeomorphic variants, which is consistent with the previous observations on the dense displacement versions. The times again vary slightly with \emph{Fourier-Net} and \emph{Fourier-Net+} being a bit slower, while \emph{4xFourier-Net} is quite a bit faster.\\
-Now to the difference between the dense and band-limited displacement. Overall, the dense displacement versions perform better in terms of Dice score for all models both with and without the background label. 
+For the dense displacement variants, the diffeomorphic transform increases the Dice score (with and without the background label) slightly for \emph{Fourier-Net} and \emph{4xFourier-Net}, but decreases for \emph{Fourier-Net+}. The SSIM decreases for all models slightly, while the MSE remains. Unsurprisingly, the percentage of non-positive Jabobian determinants is lower for the diffeomorphic variants. Times for the baseline and diffeomorphic versions are similar with the \emph{Fourier-Net} being faster without the diffeomorphism, while \emph{Fourier-Net+} and \emph{4xFourier-Net} are faster. \\
+The results for the band-limited versions are very similar with \emph{Fourier-Net} and \emph{Fourier-Net+} having a lower Dice (with background) with the diffeomorphism, while \emph{4xFourier-Net} increases by almost 2$\%$. When excluding the background label \emph{Fourier-Net} is again slightly worse, but \emph{Fourier-Net+} and \emph{4xFourier-Net} both improve, the latter with almost 3$\%$ Dice more than the baseline version. The SSIM values are slightly lower for \emph{Fourier-Net} and \emph{Fourier-Net+} with the diffeomorphism, but again higher for \emph{4xFourier-Net}. The MSE is slightly lower for \emph{Fourier-Net} and \emph{4xFourier-Net}, but a bit higher for \emph{Fourier-Net+}. The percentage of non-positive Jabobian determinants again decreases for the diffeomorphic variants. The times again vary slightly with \emph{Fourier-Net} and \emph{Fourier-Net+} being a bit slower, while \emph{4xFourier-Net} is a lot faster.\\
+Now to the difference between the dense and band-limited displacement. Overall, the dense displacement versions have a higher Dice score for all models both with and without the background label. 
 %This is to be expected as the dense displacement versions can use all of the available k-space data for the registration task, while the band-limited versions have only a limited amount of k-space data, directly impacting and limiting their performance. 
-The dense displacement is also better in the SSIM and MSE metrics, however the difference is not quite as large as with the Dice scores. 
+The dense displacements also have better SSIM and MSE metrics, however the difference is not quite as large as with the Dice scores. 
 %As the differences between the frames is not quite as large, the weaker registration performance does not impact this metric as much as the Dice score, which is focused on the moving cardiac region. The same is true for the MSE, but the dense displacement is again far superior. 
-Only in terms of the percentage of non-positive Jabobian determinants does the band-limited displacement actually perform better. 
+Only the percentage of non-positive Jabobian determinants is notably lower for the band-limited displacement. 
 %as the band-limiting probably allows for only a smaller deformation. However, the difference is still very small, especially for the diffeomorhpic versions, and it could be argued that a better registration performance at the cost of some image folding is an acceptable trade-off. 
-In terms of inference time the dense displacement variants are surprisingly slightly faster despite having a larger encoder, however all of the model are in the low milliseconds ($<40$~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder as discussed before and thus have a lot more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
+In terms of inference time, the dense displacement variants are slightly faster despite having a larger encoder, however all of the model are in the low milliseconds ($<40$~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder, as discussed before, and thus have a lot more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
 
 \begin{table}[H] %htpb
 	%\scriptsize
@@ -572,17 +572,17 @@ As the results still did not look great, a second test with simulated movement w
 		% 4x Accelerated (R=4) 				 		
 		\midrule
 		\multirow{5}{*}{\rotatebox{90}{$R=4$}} & Baseline & $28.882 \pm 3.802$ & $23.291 \pm 1.654$ & $70.375 \pm 4.467$ & $0.504 \pm 0.197$ \\  
-		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
-		 & Fourier-Net & $28.881 \pm 3.780$ & $23.292 \pm 1.647$ & $70.380 \pm 4.458$ & $0.503 \pm 0.196$ \\  
-		 & Fourier-Net+ & $28.883 \pm 3.782$ & $23.289 \pm 1.644$ & $70.377 \pm 4.470$ & $0.504 \pm 0.196$ \\    
-		 & 4xFourier-Net+ & $28.908 \pm 3.794$ & $23.290 \pm 1.648$ & $70.338 \pm 4.470$ & $0.504 \pm 0.197$ \\ 
+		 & VoxelMorph & $54.177 \pm 7.495$ & $28.347 \pm 2.369$ & $79.873 \pm 4.878$ & $0.174 \pm 0.138$ \\ 
+		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
+		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
+		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
 		
 		% 8x Accelerated (R=8) 
 		\midrule
 		\multirow{5}{*}{\rotatebox{90}{$R=8$}} & Baseline & $28.572 \pm 3.773$ & $23.173 \pm 1.686$ & $70.603 \pm 4.533$ & $0.519 \pm 0.207$ \\  
 		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
 		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
-		 & Fourier-Net+ & $28.609 \pm 3.791$ & $23.179 \pm 1.696$ & $70.608 \pm 4.550$ & $0.519 \pm 0.209$ \\    
+		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
 		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
 		 	 
 		% 10x Accelerated (R=10) 		 		
@@ -590,7 +590,7 @@ As the results still did not look great, a second test with simulated movement w
 		\multirow{5}{*}{\rotatebox{90}{$R=10$}} & Baseline & $28.486 \pm 3.766$ & $23.132 \pm 1.695$ & $70.742 \pm 4.436$ & $0.524 \pm 0.211$ \\  
 		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
 		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
-		 & Fourier-Net+ & $28.498 \pm 3.815$ & $23.129 \pm 1.700$ & $70.742 \pm 4.449$ & $0.525 \pm 0.212$ \\    
+		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
 		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
 		 \bottomrule
 	\end{tabular}
