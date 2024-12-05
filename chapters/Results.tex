@@ -195,11 +195,11 @@ In this test, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} 
 
 \subsection{Dense Displacement on Accelerated Data} \label{SubSec:ResultsDenseDisplacementAcc}
 The difference between a dense displacement field and a band-limited one was already explored in section~\ref{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}. However, the results in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDC} only include fully sampled data, not accelerated data. These new tests again included \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}, but are extended to subsampled data. Results for $R=4$ can be seen in Table~\ref{tab:DenseDisplacementAcc4}, for $R=8$ in Table~\ref{tab:DenseDisplacementAcc8} and for $R=10$ in Table~\ref{tab:DenseDisplacementAcc10}. \\
-For $R=4$, the dense version of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} performed better than the band-limited version in terms of Dice though the differences are less than a percent with and less than two percent without the background label. The same is true for the SSIM and MSE values with the dense versions being better. The percentage of non-positive Jabobian determinants is higher for the band-limited \emph{Fourier-Net}, while band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} show almost no folding. 
+For $R=4$, the dense version of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have higher Dice scores than the band-limited versions, though the differences are less than a percent with and less than two percent without the background label. The same is true for the SSIM and MSE values with the dense versions being better. The percentage of non-positive Jabobian determinants is higher for the band-limited \emph{Fourier-Net}, while band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} show almost no folding. 
 %While this at first seems like a positive metric it can also indicate a lack of complex displacements which could explain the lower performance. 
 Band-limited \emph{Fourier-Net} and \emph{Fourier-Net+} are faster, likely due to the smaller network size as the encoder lack some layers compared to the dense versions, however, band-limited \emph{4xFourier-Net+} is slightly slower than its dense counterpart.\\
-For $R=8$, all band-limited networks perform worse in terms of Dice, SSIM and MSE. The percentage of non-positive Jabobian determinants is again higher for the band-limited \emph{Fourier-Net} compared to the dense version, while the band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} show almost no folding. The band-limited networks are again faster with the exception of \emph{4xFourier-Net+} which is a bit slower compared to the dense version. \\
-For $R=10$, the dense networks again perform better in terms of Dice and SSIM compared to the band-limited versions. For the MSE band-limited \emph{Fourier-Net} is just as good as its dense counterpart, while band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} are again slightly worse compared to the dense versions. The percentage of non-positive Jabobian determinants for the band-limited \emph{Fourier-Net} is equal to the percentage of the dense version, while band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} again show almost no folding. Band-limited \emph{Fourier-Net} and \emph{4xFourier-Net+} are faster in terms of inference time, while the band-limited version of \emph{Fourier-Net+} is about as fast as the dense version.
+For $R=8$, all band-limited networks have a lower Dice and SSIM values with a higher MSE. The percentage of non-positive Jabobian determinants is again higher for the band-limited \emph{Fourier-Net} compared to the dense version, while the band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} show almost no folding. The band-limited networks are again faster with the exception of \emph{4xFourier-Net+} which is a bit slower compared to the dense version. \\
+For $R=10$, the dense networks again have higher Dice and SSIM values compared to the band-limited versions. For the MSE, band-limited \emph{Fourier-Net} has similar values to its dense counterpart, while band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} are again slightly higher compared to the dense versions. The percentage of non-positive Jabobian determinants for the band-limited \emph{Fourier-Net} is equal to the percentage of the dense version, while band-limited \emph{Fourier-Net+} and \emph{4xFourier-Net+} again show almost no folding. Band-limited \emph{Fourier-Net} and \emph{4xFourier-Net+} are faster in terms of inference time, while the band-limited version of \emph{Fourier-Net+} is about as fast as the dense version.
 
 
 \begin{table}[h] %tpb
@@ -235,7 +235,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 \end{table}
 
 
-\begin{table}[H] %tpb
+\begin{table}[h] %tpb
 	%\scriptsize
 	\centering
 	\caption{Results for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} with both dense and band-limited displacement fields on the $R=8$ \emph{ACDC} test data.}
@@ -268,7 +268,7 @@ For $R=10$, the dense networks again perform better in terms of Dice and SSIM co
 \end{table}
 
 
-\begin{table}[H] %tpb
+\begin{table}[h] %tpb
 	%\scriptsize
 	\centering
 	\caption{Results for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} with both dense and band-limited displacement fields on the $R=10$ \emph{ACDC} test data.}
