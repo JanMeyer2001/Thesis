@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  5 DEC 2024 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  5 DEC 2024 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1687,13 +1687,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70]
 [71]
-Overfull \hbox (9.07988pt too wide) in paragraph at lines 37--38
+Overfull \hbox (9.07988pt too wide) in paragraph at lines 37--39
 \OT1/cmr/m/n/12 In sec-tion [][]4.1.6[][] the reg-is-tra-tion per-for-mance of 
 \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT
 1/cmr/m/n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[72]) (chapters/Conclusion.tex [73] [74]
+[72] [73]) (chapters/Conclusion.tex [74]
 chapter 6.
 ) [75
 
@@ -1741,7 +1741,7 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 Here is how much of TeX's memory you used:
  29224 strings out of 475248
  535541 string characters out of 5767627
- 1954785 words of memory out of 5000000
+ 1955785 words of memory out of 5000000
  50033 multiletter control sequences out of 15000+600000
  571247 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1763,7 +1763,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (88 pages, 10455829 bytes).
+Output written on Masterarbeit.pdf (88 pages, 10456149 bytes).
 PDF statistics:
  1466 PDF objects out of 1728 (max. 8388607)
  316 named destinations out of 1000 (max. 500000)
