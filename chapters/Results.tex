@@ -560,7 +560,7 @@ As the results still did not look great, a second test with simulated movement w
 \begin{table}[h] %tpb
 	\footnotesize
 	\centering
-	\caption{Reconstruction results \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
+	\caption{Reconstruction results \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motion-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
 	\label{tab:ComparisonReconstructionCMRxRecon}
 	\begin{tabular}{c c c c c c} 
 		\toprule
@@ -570,25 +570,25 @@ As the results still did not look great, a second test with simulated movement w
 		\midrule
 		\multirow{5}{*}{\rotatebox{90}{$R=4$}} & Baseline & $28.882 \pm 3.802$ & $23.291 \pm 1.654$ & $70.375 \pm 4.467$ & $0.504 \pm 0.197$ \\  
 		 & VoxelMorph & $54.177 \pm 7.495$ & $28.347 \pm 2.369$ & $79.873 \pm 4.878$ & $0.174 \pm 0.138$ \\ 
-		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
-		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
-		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
+		 & Fourier-Net & $59.886 \pm 8.876$ & $29.399 \pm 2.766$ & $82.731 \pm 5.296$ & $0.141 \pm 0.127$ \\  
+		 & Fourier-Net+ & $59.868 \pm 8.824$ & $29.303 \pm 2.761$ & $82.572 \pm 5.037$ & $0.146 \pm 0.142$  \\    
+		 & 4xFourier-Net+ & $59.884 \pm 8.875$ & $29.365 \pm 2.764$ & $82.704 \pm 5.293$ & $0.144 \pm 0.141$ \\ 
 		
 		% 8x Accelerated (R=8) 
 		\midrule
 		\multirow{5}{*}{\rotatebox{90}{$R=8$}} & Baseline & $28.572 \pm 3.773$ & $23.173 \pm 1.686$ & $70.603 \pm 4.533$ & $0.519 \pm 0.207$ \\  
 		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
-		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
-		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
-		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
+		 & Fourier-Net & $55.326 \pm 8.415$ & $28.465 \pm 2.846$ & $81.383 \pm 5.489$ & $0.191 \pm 0.129$ \\  
+		 & Fourier-Net+ & $55.406 \pm 8.432$ & $28.519 \pm 2.799$ & $81.447 \pm 5.478$ & $0.178 \pm 0.162$ \\    
+		 & 4xFourier-Net+ & $55.402 \pm 8.463$ & $28.508 \pm 2.916$ & $81.436 \pm 5.329$ & $0.181 \pm 0.153$ \\ 
 		 	 
 		% 10x Accelerated (R=10) 		 		
 		\midrule		
 		\multirow{5}{*}{\rotatebox{90}{$R=10$}} & Baseline & $28.486 \pm 3.766$ & $23.132 \pm 1.695$ & $70.742 \pm 4.436$ & $0.524 \pm 0.211$ \\  
 		 & VoxelMorph & $-$ & $-$ & $-$ & $-$ \\ 
-		 & Fourier-Net & $-$ & $-$ & $-$ & $-$ \\  
-		 & Fourier-Net+ & $-$ & $-$ & $-$ & $-$ \\    
-		 & 4xFourier-Net+ & $-$ & $-$ & $-$ & $-$ \\ 
+		 & Fourier-Net & $54.012 \pm 8.046$ & $28.217 \pm 2.758$ & $81.224 \pm 5.323$ & $0.193 \pm 0.162$ \\  
+		 & Fourier-Net+ & $54.025 \pm 8.053$ & $28.228 \pm 2.745$ & $81.264 \pm 5.331$ & $0.189 \pm 0.164$ \\    
+		 & 4xFourier-Net+ & $54.016 \pm 8.064$ & $28.223 \pm 2.691$ & $81.236 \pm 5.237$ & $0.191 \pm 0.148$ \\ 
 		 \bottomrule
 	\end{tabular}
 \end{table}
