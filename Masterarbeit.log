@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  8 DEC 2024 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  8 DEC 2024 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,13 +1165,30 @@ o_IMI.pdf> <./images/Slogan_Uni_Luebeck.pdf>]) [2
 (otherincludes/Kurzfassung.tex [4
 
 
-]) [5] [6
+])
+Overfull \hbox (4.76472pt too wide) in paragraph at lines 6--147
+\OT1/cmr/m/n/12 schnelle Bild-Registrierung von un-ter-abge-tasteter MRT-Daten 
+un-ter-sucht. Diese Forsch-
+ []
+
+
+Overfull \hbox (29.29962pt too wide) in paragraph at lines 6--147
+\OT1/cmr/m/n/12 ungsfrage wurde aus mehreren Blick-winkeln be-tra-chtet und un-
+ter-sucht Reg-istrierungsqualit^^?at
+ []
+
+
+Overfull \hbox (2.9292pt too wide) in paragraph at lines 6--147
+\OT1/cmr/m/n/12 Grund-la-gen von MR Bildge-b-gung, Deep Learn-ing und Bild-Regi
+strierung wer-den erkl^^?art
+ []
+
+[5] [6
 
 
 ] (Masterarbeit.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
@@ -1782,7 +1799,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (92 pages, 24204263 bytes).
+Output written on Masterarbeit.pdf (92 pages, 24205067 bytes).
 PDF statistics:
  1519 PDF objects out of 1728 (max. 8388607)
  327 named destinations out of 1000 (max. 500000)
