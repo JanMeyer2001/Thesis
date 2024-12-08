@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  8 DEC 2024 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  8 DEC 2024 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1658,44 +1658,41 @@ Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [66]
+[67]
 Underfull \hbox (badness 1308) in paragraph at lines 567--567
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[66]
-<./Images/ResultsReconstruction_mode1.png, id=1042, 1452.627pt x 353.52075pt>
+[68]
+<./Images/ResultsReconstruction_mode1.png, id=1050, 1452.627pt x 353.52075pt>
 File: ./Images/ResultsReconstruction_mode1.png Graphic file (type png)
 <use ./Images/ResultsReconstruction_mode1.png>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.png  used on inpu
 t line 609.
 (pdftex.def)             Requested size: 441.01773pt x 107.3301pt.
-<./Images/ResultsReconstruction_mode2.png, id=1043, 1452.627pt x 353.52075pt>
+<./Images/ResultsReconstruction_mode2.png, id=1051, 1452.627pt x 353.52075pt>
 File: ./Images/ResultsReconstruction_mode2.png Graphic file (type png)
 <use ./Images/ResultsReconstruction_mode2.png>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.png  used on inpu
 t line 610.
 (pdftex.def)             Requested size: 441.01773pt x 107.3301pt.
-<./Images/ResultsReconstruction_mode3.png, id=1044, 1452.627pt x 353.52075pt>
+<./Images/ResultsReconstruction_mode3.png, id=1052, 1452.627pt x 353.52075pt>
 File: ./Images/ResultsReconstruction_mode3.png Graphic file (type png)
 <use ./Images/ResultsReconstruction_mode3.png>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.png  used on inpu
 t line 611.
 (pdftex.def)             Requested size: 441.01773pt x 107.3301pt.
+) (chapters/Discussion.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (chapters/Discussion.tex [67] [68 <./Images/ResultsReconstruction_mode1.png> 
-<./Images/ResultsReconstruction_mode2.png> <./Images/ResultsReconstruction_mode
-3.png>] [69] [70]
+ [69]
+[70 <./Images/ResultsReconstruction_mode1.png> <./Images/ResultsReconstruction_
+mode2.png> <./Images/ResultsReconstruction_mode3.png>]
 chapter 5.
 
 Overfull \hbox (13.25761pt too wide) in paragraph at lines 12--19
@@ -1718,12 +1715,12 @@ Overfull \hbox (9.07988pt too wide) in paragraph at lines 37--41
 1/cmr/m/n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[74] [75] [76] [77]) (chapters/Conclusion.tex [78]
+[74] [75] [76]) (chapters/Conclusion.tex [77] [78
+
+
+]
 chapter 6.
-) [79
-
-
-] [80
+) [79] [80
 
 
 ]
@@ -1754,9 +1751,6 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1766,7 +1760,7 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 Here is how much of TeX's memory you used:
  29262 strings out of 475248
  536772 string characters out of 5767627
- 1955785 words of memory out of 5000000
+ 1951785 words of memory out of 5000000
  50060 multiletter control sequences out of 15000+600000
  571247 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1788,7 +1782,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (92 pages, 24204545 bytes).
+Output written on Masterarbeit.pdf (92 pages, 24202772 bytes).
 PDF statistics:
  1519 PDF objects out of 1728 (max. 8388607)
  327 named destinations out of 1000 (max. 500000)
