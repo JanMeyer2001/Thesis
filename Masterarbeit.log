@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  9 DEC 2024 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  9 DEC 2024 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1549,74 +1549,79 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
 [46] [47]
-<./Images/GeneralReconstructionPipeline.pdf, id=860, 688.55669pt x 438.17244pt>
+<./Images/GeneralReconstructionPipeline.pdf, id=859, 688.55669pt x 438.17244pt>
 
 File: ./Images/GeneralReconstructionPipeline.pdf Graphic file (type pdf)
 <use ./Images/GeneralReconstructionPipeline.pdf>
 Package pdftex.def Info: ./Images/GeneralReconstructionPipeline.pdf  used on in
-put line 476.
+put line 477.
 (pdftex.def)             Requested size: 441.01773pt x 280.65672pt.
-) (chapters/Results.tex [48 <./Images/GeneralReconstructionPipeline.pdf>]
-chapter 4.
-[49
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (chapters/Results.tex [48] [49 <./Images/GeneralReconstructionPipeline.pdf>]
+[50
 
 
 ]
+chapter 4.
+[51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
+ [52]
 Overfull \vbox (5.41568pt too high) has occurred while \output is active []
 
-
-[51]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[52]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [53]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[54]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[55]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [56]
 Underfull \vbox (badness 4621) has occurred while \output is active []
-
- [55]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [58]
-Underfull \vbox (badness 5189) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
-<images/Boxplot_DiceScores_LV-Cavity.png, id=995, 867.24pt x 433.62pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[60]
+Underfull \vbox (badness 5189) has occurred while \output is active []
+
+ [61]
+<images/Boxplot_DiceScores_LV-Cavity.png, id=1003, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
  line 376.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=996, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_Myocardium.png, id=1004, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
 t line 382.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=997, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_RV-Cavity.png, id=1005, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
@@ -1625,30 +1630,30 @@ Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceScores_M
+ [63 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceScores_M
 yocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
-<images/TestExamples_Mode0.png, id=1010, 1962.8532pt x 709.6914pt>
+<images/TestExamples_Mode0.png, id=1018, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
 Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 438.
 
 (pdftex.def)             Requested size: 441.01773pt x 159.44626pt.
-<images/TestExamples_Mode1.png, id=1011, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode1.png, id=1019, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
 Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 439.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode2.png, id=1012, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode2.png, id=1020, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
 Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 440.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode3.png, id=1013, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode3.png, id=1021, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
 Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 441.
@@ -1657,11 +1662,11 @@ Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 441.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
+ [64]
 Overfull \vbox (46.21942pt too high) has occurred while \output is active []
 
 
-[63 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
+[65 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
 es/TestExamples_Mode2.png> <./images/TestExamples_Mode3.png>]
 Overfull \hbox (8.29655pt too wide) in paragraph at lines 448--449
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
@@ -1672,8 +1677,8 @@ n/12 and \OT1/cmr/m/it/12 4xFourier-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
-[65]
+ [66]
+[67]
 Underfull \hbox (badness 1308) in paragraph at lines 497--497
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
@@ -1683,30 +1688,30 @@ Fourier-Net+ \OT1/cmr/m/n/12 and
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
-[67]
+ [68]
+[69]
 Underfull \hbox (badness 1308) in paragraph at lines 568--568
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
-[68]
-<./Images/ResultsReconstruction_mode1.pdf, id=1064, 9076.42899pt x 2207.93388pt
+[70]
+<./Images/ResultsReconstruction_mode1.pdf, id=1072, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
 t line 610.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode2.pdf, id=1065, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode2.pdf, id=1073, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
 t line 611.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode3.pdf, id=1066, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode3.pdf, id=1074, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
@@ -1716,8 +1721,8 @@ t line 612.
 ) (chapters/Discussion.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
-[70 <./Images/ResultsReconstruction_mode1.pdf> <./Images/ResultsReconstruction_
+ [71]
+[72 <./Images/ResultsReconstruction_mode1.pdf> <./Images/ResultsReconstruction_
 mode2.pdf
 
 pdfTeX warning: pdflatex (file ./Images/ResultsReconstruction_mode2.pdf): PDF i
@@ -1735,26 +1740,26 @@ m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
 /12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[71
+[73
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
-[73]
+ [74]
+[75]
 Overfull \hbox (9.07988pt too wide) in paragraph at lines 37--41
 \OT1/cmr/m/n/12 In sec-tion [][]4.1.6[][] the reg-is-tra-tion per-for-mance of 
 \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT
 1/cmr/m/n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[74] [75] [76]) (chapters/Conclusion.tex [77] [78
-
-
-]
+[76] [77] [78]) (chapters/Conclusion.tex [79] [80]
 chapter 6.
-) [79] [80
+) [81
+
+
+] [82
 
 
 ]
@@ -1763,44 +1768,35 @@ Overfull \hbox (3.86661pt too wide) in paragraph at lines 182--182
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
-[81]
+[83]
 Overfull \hbox (3.00894pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
 
-[82]
+[84]
 Overfull \hbox (20.21523pt too wide) in paragraph at lines 182--182
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
  []
 
-[83] [84] (Masterarbeit.aux)
+[85] [86] (Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Masterarbeit
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 \openout1 = `Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29294 strings out of 475248
- 537573 string characters out of 5767627
+ 29301 strings out of 475248
+ 537745 string characters out of 5767627
  1953785 words of memory out of 5000000
- 50089 multiletter control sequences out of 15000+600000
+ 50094 multiletter control sequences out of 15000+600000
  571247 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1821,9 +1817,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (92 pages, 26083119 bytes).
+Output written on Masterarbeit.pdf (94 pages, 26086419 bytes).
 PDF statistics:
- 1567 PDF objects out of 1728 (max. 8388607)
- 330 named destinations out of 1000 (max. 500000)
+ 1577 PDF objects out of 1728 (max. 8388607)
+ 332 named destinations out of 1000 (max. 500000)
  689 words of extra memory for PDF output out of 10000 (max. 10000000)
 

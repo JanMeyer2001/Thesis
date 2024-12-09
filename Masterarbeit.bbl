@@ -3193,58 +3193,6 @@
       \endverb
       \keyw{Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
-    \entry{VoxelMorphDiff}{article}{}
-      \name{author}{4}{}{%
-        {{hash=12c00fda76155269bb61e99d3fa595a1}{%
-           family={Dalca},
-           familyi={D\bibinitperiod},
-           given={Adrian\bibnamedelima V.},
-           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=15f7da450585afd174c12e0405a3af3b}{%
-           family={Balakrishnan},
-           familyi={B\bibinitperiod},
-           given={Guha},
-           giveni={G\bibinitperiod}}}%
-        {{hash=f81cd6997c90145de6eca30657467351}{%
-           family={Guttag},
-           familyi={G\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=885ad74f7e4e07ac204c4f7ea0af8dee}{%
-           family={Sabuncu},
-           familyi={S\bibinitperiod},
-           given={Mert\bibnamedelima R.},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier BV}%
-      }
-      \strng{namehash}{b283fbe071a9b6ca75652191ba56e17a}
-      \strng{fullhash}{c4a9c7f46c93c70c0a72c3d025e766fd}
-      \strng{bibnamehash}{b283fbe071a9b6ca75652191ba56e17a}
-      \strng{authorbibnamehash}{b283fbe071a9b6ca75652191ba56e17a}
-      \strng{authornamehash}{b283fbe071a9b6ca75652191ba56e17a}
-      \strng{authorfullhash}{c4a9c7f46c93c70c0a72c3d025e766fd}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1361-8415}
-      \field{journaltitle}{Medical Image Analysis}
-      \field{month}{10}
-      \field{title}{Unsupervised learning of probabilistic diffeomorphic registration for images and surfaces}
-      \field{volume}{57}
-      \field{year}{2019}
-      \field{pages}{226\bibrangedash 236}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1016/j.media.2019.07.006
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Unsupervised Learning of Probabilistic Diffeomorphic Registration for Images and Surfaces.pdf:PDF
-      \endverb
-    \endentry
     \entry{Oksuz2020}{article}{}
       \name{author}{9}{}{%
         {{hash=d5ca6d10ea22ca61038318b25a876d85}{%
@@ -3321,6 +3269,58 @@
       \endverb
       \verb{file}
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Deep Learning Based Detection and Correction of Cardiac MR Motion Artefacts During Reconstruction for High-Quality Segmentation.pdf:PDF
+      \endverb
+    \endentry
+    \entry{VoxelMorphDiff}{article}{}
+      \name{author}{4}{}{%
+        {{hash=12c00fda76155269bb61e99d3fa595a1}{%
+           family={Dalca},
+           familyi={D\bibinitperiod},
+           given={Adrian\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=15f7da450585afd174c12e0405a3af3b}{%
+           family={Balakrishnan},
+           familyi={B\bibinitperiod},
+           given={Guha},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f81cd6997c90145de6eca30657467351}{%
+           family={Guttag},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=885ad74f7e4e07ac204c4f7ea0af8dee}{%
+           family={Sabuncu},
+           familyi={S\bibinitperiod},
+           given={Mert\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{b283fbe071a9b6ca75652191ba56e17a}
+      \strng{fullhash}{c4a9c7f46c93c70c0a72c3d025e766fd}
+      \strng{bibnamehash}{b283fbe071a9b6ca75652191ba56e17a}
+      \strng{authorbibnamehash}{b283fbe071a9b6ca75652191ba56e17a}
+      \strng{authornamehash}{b283fbe071a9b6ca75652191ba56e17a}
+      \strng{authorfullhash}{c4a9c7f46c93c70c0a72c3d025e766fd}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-8415}
+      \field{journaltitle}{Medical Image Analysis}
+      \field{month}{10}
+      \field{title}{Unsupervised learning of probabilistic diffeomorphic registration for images and surfaces}
+      \field{volume}{57}
+      \field{year}{2019}
+      \field{pages}{226\bibrangedash 236}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.media.2019.07.006
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Unsupervised Learning of Probabilistic Diffeomorphic Registration for Images and Surfaces.pdf:PDF
       \endverb
     \endentry
     \entry{HaarPSI}{article}{}

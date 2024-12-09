@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Masterarbeit.blg'
-[150] biber-MSWIN64:340> INFO - === 
-[224] Biber.pm:419> INFO - Reading 'Masterarbeit.bcf'
-[368] Biber.pm:979> INFO - Found 57 citekeys in bib section 0
-[380] Biber.pm:4419> INFO - Processing section 0
-[405] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
-[470] bibtex.pm:1713> INFO - LaTeX decoding ...
-[585] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
-[947] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[947] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[947] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[947] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[1006] bbl.pm:660> INFO - Writing 'Masterarbeit.bbl' with encoding 'UTF-8'
-[1053] bbl.pm:763> INFO - Output to Masterarbeit.bbl
+[153] biber-MSWIN64:340> INFO - === 
+[225] Biber.pm:419> INFO - Reading 'Masterarbeit.bcf'
+[347] Biber.pm:979> INFO - Found 57 citekeys in bib section 0
+[359] Biber.pm:4419> INFO - Processing section 0
+[385] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[451] bibtex.pm:1713> INFO - LaTeX decoding ...
+[572] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[953] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[953] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[953] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[953] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1015] bbl.pm:660> INFO - Writing 'Masterarbeit.bbl' with encoding 'UTF-8'
+[1067] bbl.pm:763> INFO - Output to Masterarbeit.bbl
