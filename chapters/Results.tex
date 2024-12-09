@@ -316,6 +316,7 @@ For $R=10$, \emph{4xFourier-Net+} has the highest Dice score with the background
 	\centering
 	\caption{Test results for \emph{NiftiReg} (NR), \emph{VoxelMorph} (VM), \emph{Fourier-Net} (F-Net), \emph{Fourier-Net+} (F-Net+) and \emph{4xFourier-Net+} (4xF-Net+) on the \emph{ACDC} test data from fully sampled ($R=0$) to $R=10$ with an unaligned baseline for comparison. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
 	\label{tab:ComparisonSubsamplingACDC}
+	\resizebox{\textwidth}{!}{
 	\begin{tabular}{c c c c c c c c} 
 		\toprule
 		 & Method & $\%$ DICE & $\%$ DICE* & $\%$ SSIM & MSE (m) & $\% \, |J_{\phi}|\leq0$ & Time [s] \\
@@ -355,7 +356,7 @@ For $R=10$, \emph{4xFourier-Net+} has the highest Dice score with the background
 		 & F-Net+ & $76.10 \pm 13.83$ & $66.27 \pm 19.20$ & $90.32 \pm 3.29$ & $0.12 \pm 0.12$ & $0.01 \pm 0.05$ & \textcolor{blue}{0.0059}\\ 
 		 & 4xF-Net+ & \textcolor{blue}{$76.98 \pm 13.57$} & $67.40 \pm 18.90$ & $90.42 \pm 3.33$ & $0.11 \pm 0.11$ & \textcolor{blue}{$0.00 \pm 0.03$} & 0.0275\\ 
 		 \bottomrule
-	\end{tabular}
+	\end{tabular}}
 \end{table}
 
 
