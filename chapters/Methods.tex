@@ -285,20 +285,20 @@ For the training data, the original 4D data was used as we do not require the se
 \subsection{CMRxRecon Dataset} \label{SubSec:CMRxRecon}
 The \emph{CMRxRecon} dataset~\cite{CMRxRecon} from the \emph{CMRxRecon2023} challenge specializes in Cardiac magnetic resonance imaging (CMR). The dataset includes 
 %multi-contrast k-space data, consisting of cardiac cine, $\text{T}_1$/$\text{T}_2$-mapping, tagging, phase-contrast (i.e., flow2d), and dark-blood imaging
-fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. One of the goals of the challenge is the reconstruction from subsampling and motion correction for the heart movement.\\
-As the data was recorded in the k-space (see Figure~\ref{fig:k-space}) and stored as \emph{.mat} files we first need to reconstruct the images to use them for training and testing of \emph{Fourier-Net/Fourier-Net+}. For this, multi-coil reconstruction algorithms like \emph{SENSE}~\cite{SENSE1} can be used. The sensitivity of the different coils can be seen in Figure~\ref{fig:Coils}, where each coil focuses on a specific area of the image. These images are then stitched together in reconstruction to produce a combined image with great overall contrast.
+fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines from the center region. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. In contrast to the \emph{ACDC} dataset, \emph{CMRxRecon} contains not images, but raw k-space data. One of the goals of the challenge is the reconstruction from subsampling and motion correction for the heart movement.\\
+As the data was recorded in the k-space (see Figure~\ref{fig:k-space}) and stored as \emph{.mat} files it first needs to reconstructed to images in order to use them for training and testing of neural networks. First, a iFT needs to be performed to get from k-space to image space, however the multi-coil data needs further treatment. The effect of different coil sensitivities in their respective images can be seen in Figure~\ref{fig:Coils}, where each coil focuses on a specific area of the image. These images are then stitched together in reconstruction to produce a coil-combined image with great overall contrast. Often the simple root sum-of-squares (RSS) is used where the resulting image is simply the root of the sum of the squared coil images as the name suggests. \\
 %, while Figure~\ref{fig:ImageSlice} contains the complete reconstructed image. 
-The dataset, as mentioned before, contains fully sampled as well as subsampled k-space data (see Figure~\ref{fig:fullySampled} and Figure~\ref{fig:subSampled}), with the latter being typically used to accelerate the MRI acquisition process. This is done by not using all of the available k-space data, but rather masking the signal to achieve the subsampling. The center region of the k-space is always fully sampled, but the outer regions are subsampled depending on the sampling strategy~\cite{SamplingStrategies}. The dataset contains subsampled k-space data for 4x, 8x and 10x acceleration with the latter of course leading to more distortions in the reconstructed image as the subsampling can induce image reconstruction artifacts. This can be seen in Figure~\ref{fig:subSampledImage}, where the image reconstructed from 4x accelerated ($R=4$) k-space data seems blurred when compared to the fully sampled ($R=0$) one in Figure~\ref{fig:fullySampledImage}. 
+The dataset, as mentioned before, contains fully sampled as well as subsampled k-space data (see Figure~\ref{fig:fullySampled} and Figure~\ref{fig:subSampled}), with the latter being typically used to accelerate the MRI acquisition process. This is done by not using all of the available k-space data, but rather masking the signal to achieve the subsampling. The center region of the k-space is always fully sampled, but the outer regions are subsampled depending on the sampling strategy~\cite{SamplingStrategies}. The dataset contains subsampled k-space data for 4x, 8x and 10x acceleration with the latter of course leading to more distortions in the reconstructed image as the subsampling can induce image reconstruction artifacts. This can be seen in Figure~\ref{fig:subSampledImage}, where the image reconstructed from 4x accelerated ($R=4$) k-space data seems blurred when compared to the fully sampled ($R=0$) one in Figure~\ref{fig:fullySampledImage}. \\
 %An example image can be seen in Figure~\ref{fig:Subsampling} where the k-space of the original image is subsampled with a random mask leading to heavy blurring artifacts after the reconstruction.
-For all experiments the short-axis  view data was used. As image sizes between patients can vary slightly, interpolation was used to standardize the images to a size of $246 \times 512$ to avoid further problems with e.g. 
+For all experiments, the short-axis view data was used. As image sizes between patients can vary slightly, interpolation was used to standardize the images to a size of $246 \times 512$ to avoid further problems with e.g. 
 %ensure coherent sizes between images to avoid problems with the network and 
-loss calculation. Additionally, min-max-normalization is used to standardize the data range for all images to $[0,1]$ as this was also varying. The reconstructed images were stored for every image slice for every patient. Thus, all frames for a specific image slice were in a single folder to enable easy access for later data load-in for frame-to-frame registration.
+loss calculation. Additionally, min-max-normalization is used to standardize the data range for all images to $[0,1]$ as this could also vary. The reconstructed images were stored for every image slice for every patient. Thus, all frames for a specific image slice were in a single folder to enable easy access for later data load-in for frame-to-frame registration.
 
 \begin{figure}[h]%tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\linewidth]{CoilsHorizontal.png} 
-	\caption{MRI images for three different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}.}
+	\includegraphics[width=\linewidth]{Coils.png} 
+	\caption{MRI images for three different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there.}
 	\label{fig:Coils}
 \end{figure}
 
@@ -308,157 +308,123 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 	\graphicspath{{images/}{\main/images/}}
 	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{k-space_fullysampled.png}
-    		\caption{Example for a fully sampled k-space with low frequencies in the center.}
+    		\caption{A fully sampled k-space with low frequencies in the center and higher frequencies in the outer regions.}
     		\label{fig:fullySampled}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{k-space_subsampled.png}
-    		\caption{Example of a subsampled k-space for 4x acceleration.}
+    		\caption{A 4x accelerated k-space. The center region remains fully sampled while higher frequencies are omitted.}
     		\label{fig:subSampled}
 	\end{subfigure}\\
 	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{image_fullysampled.png}
-    		\caption{Corresponding image reconstructed from the fully sampled k-space.}
+    		\caption{Corresponding high quality image reconstructed from the fully sampled k-space.}
     		\label{fig:fullySampledImage}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{image_subsampled.png}
-    		\caption{Corresponding image reconstructed from the subsampled k-space.}
+    		\caption{Corresponding image reconstructed from the subsampled k-space with blurring artifacts.}
     		\label{fig:subSampledImage}
 	\end{subfigure}
-	\caption{Fully sampled and subsampled k-space data from the from the \emph{CMRxRecon} dataset~\cite{CMRxRecon} with corresponding images.}
+	\caption{Fully sampled and subsampled k-space data from the from the \emph{CMRxRecon} dataset~\cite{CMRxRecon} with corresponding images (empty background was cropped out).}
 	\label{fig:k-space}
 \end{figure}
 
+\subsection{Simulated Motion} \label{SubSec:SimulatedMotion}
+In order to test the motion-compensated reconstruction pipeline, strongly motion-corrupted data is needed. As none of the datasets described previously meet these demands, the motion needed to be simulated manually. To simulate this motion or mis-triggering, two different strategies were used. 
 
+\subsubsection{K-space Line Swapping}
+First, a strategy similar to~\cite{Oksuz2020} was used, swapping $z$ k-space lines between the frames in k-space. The frames used for this all stem from the same slice and the information is swapped for all coils. The new fully sampled frames were then subsampled to the needed acceleration using the subsampling masks. Then, an iFT and RSS was used to generate the corrupted images. An example for $z=\{16,32\}$ can be seen in Figure~\ref{fig:LineSwapping}. 
+
+
+% Line Swapping next to each other
+\begin{figure}[h] %tpb
+	\centering
+	\begin{subfigure}{0.325\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
+    		\caption{Original image.}
+    		\label{fig:LineSwappingOriginal}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.325\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LineSwapping16.png}
+    		\caption{Line swapping $z=16$.}
+    		\label{fig:LineSwapping16}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.325\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LineSwapping32.png}
+    		\caption{Line swapping $z=32$.}
+    		\label{fig:LineSwapping32}
+	\end{subfigure}
+	\caption{Examples for line swapping for $z=\{16,32\}$ with $R=4$ subsampling compared to the original fully sampled image.}
+	\label{fig:LineSwapping}
+\end{figure}
+
+%% Line Swapping under each other
 %\begin{figure}[h] %tpb
 %	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=.75\textwidth]{Coils.png}
-%    		\caption{MRI images for three different coils.}
-%    		\label{fig:Coils}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{ImageSlice.png}
-%    		\caption{Reconstructed image from the three different coils.}
-%    		\label{fig:ImageSlice}
-%	\end{subfigure}
-%	\caption{Example from the \emph{CMRxRecon} dataset.}
-%	\label{fig:CMRxRecon}
-%\end{figure}
-
-%\begin{figure}[h] %tpb
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\includegraphics[width=.5\linewidth]{ImageSlice.png} 
-%	\caption{Reconstructed image slice from the different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}.}
-%	\label{fig:ImageSlice}
-%\end{figure}
-
-%\begin{figure}[h] %tpb
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\includegraphics[width=\linewidth]{Subsampling.png} 
-%	\caption{Example for blurring artifacts encountered during image reconstruction after subsampling the k-space.}
-%	\label{fig:Subsampling}
-%\end{figure}
-
-
-%%%% Removed on 21.10.2024
-%\subsection{Pre-Processing} \label{SubSec:Pre-Processing}
-%As seen before, a large part of the image is just black background that contains no usable information. The interesting cardiac region in the image, however, is much smaller and thus image cropping can be used to extract it. The fairly large image size can thus be cut down without losing important image information, which also helps with memory efficiency. One problem however remains: image alignment. Whereas in the \emph{OASIS} dataset the brain scan were already aligned, the cardiac data in the \emph{CMRxRecon} dataset is not. Thus, one cannot simply center-crop all images as the cardiac region might be located in very different parts of the image. To resolve this issue, adaptive cropping with automatic detection of the cardiac region in the images is needed. \\
-%To begin, some assumption about the data needs to be made: First, the cardiac region is at the same position for all slices and frames from one patient. Second, most of the movement happens in the cardiac region between frames. From the latter we can conclude that we need to examine the frames, thus the difference between consecutive frames is calculated and averaged for each slice. According to the first assumption this process is repeated for all slices and their results summed to create a sort of heatmap as seen in Figure~\ref{fig:SumDifferences} with a clearly higher intensity in the cardiac region compared to the background. To further isolate this region a simple thresholding is performed followed by an opening operation, which removes any smaller fragments still left in the image. The cardiac region is now clearly separated from the rest of the image as seen in Figure~\ref{fig:MaskCropping}. The only step left is to calculate the approximate center of this region and create a crop around it. To drastically reduce the image size a cropping factor of one third was used, reducing the image size from $246 \times 512$ to $82 \times 170$. The result of this drastic crop can be seen in Figure~\ref{fig:ImageCropped} when compared to the original image in Figure~\ref{fig:fullImage}. Note, however, that the cropped image in Figure~\ref{fig:ImageCropping} appears larger than it actually is, when compared to the original, to allow for a more detailed look. Thus both images are not presented to scale, but in order to show the most image detail.
-%
-%\begin{figure}[h]%tpb
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{FullImage.png}
-%    		\caption{The original full-size image.}
-%    		\label{fig:fullImage}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{ImageCrop.png}
-%    		\caption{The corresponding cropped image.}
-%    		\label{fig:ImageCropped}
+%	\begin{subfigure}{0.8\textwidth}
+%    		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
+%    		\caption{Original image.}
+%    		\label{fig:LineSwappingOriginal}
 %	\end{subfigure}
 %	\\
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{DifferencesSlices.png}
-%    		\caption{Sum of the differences between slices and their respective frames with the cardiac region in the middle.}
-%    		\label{fig:SumDifferences}
+%	\begin{subfigure}{0.8\textwidth}
+%    		\includegraphics[width=\textwidth]{./Images/LineSwapping16.png}
+%    		\caption{Line swapping $z=16$.}
+%    		\label{fig:LineSwapping16}
 %	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.4\textwidth}
-%    		\includegraphics[width=\textwidth]{MaskForCropping.png}
-%    		\caption{Mask of the cardiac region generated from the sum of differences by thresholding and opening.}
-%    		\label{fig:MaskCropping}
+%	\\
+%	\begin{subfigure}{0.8\textwidth}
+%    		\includegraphics[width=\textwidth]{./Images/LineSwapping32.png}
+%    		\caption{Line swapping $z=32$.}
+%    		\label{fig:LineSwapping32}
 %	\end{subfigure}
-%	\caption{Cropping of an example image by locating the movement between frames for each slice. Note that the cropped image appears larger than it actually is compared to the original.}
-%	\label{fig:ImageCropping}
+%	\caption{Examples for line swapping with $R=4$ subsampling compared to the original fully sampled image.}
+%	\label{fig:LineSwapping}
 %\end{figure}
 
-%\begin{figure}[h] %tpb
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{FullImage.png}
-%    		\caption{The original full-size image.}
-%    		\label{fig:fullImage}
-%	\end{subfigure}
-%	\\
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{DifferencesSlices.png}
-%    		\caption{Sum of the differences between slices and their respective frames with the cardiac region in the middle.}
-%    		\label{fig:SumDifferences}
-%	\end{subfigure}
-%	\\
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{MaskForCropping.png}
-%    		\caption{Mask of the cardiac region generated from the sum of differences by thresholding and opening.}
-%    		\label{fig:MaskCropping}
-%	\end{subfigure}
-%	\\
-%	\begin{subfigure}{0.6\textwidth}
-%    		\includegraphics[width=\textwidth]{ImageCrop.png}
-%    		\caption{The corresponding cropped image.}
-%    		\label{fig:ImageCropped}
-%	\end{subfigure}
-%	\caption{Cropping of an example image by locating the movement between frames for each slice. Note that the cropped image appears larger than it actually is compared to the original.}
-%	\label{fig:ImageCropping}
-%\end{figure}
+\subsubsection{Lung Motion}
+Second, a simulation of lung movement was performed by randomly deforming the images and then generating the motion-corrupted k-space data from them. For this, a random displacement generator from~\cite{LAPNet} was used to generate random displacements in image space with a maximum velocity of 0.1. These displacements were then applied to each coil image before using an FT to convert from image to k-space, thereby generate the motion-corrupted multi-coil k-space data. This was done for $L=4$ additional lung motion frames for each cardiac frame. An example of such additional frames with artificial lung movement can be as seen in Figure~\ref{fig:LungMotion}.
+
+% lung motion 2x2
+\begin{figure}[h] %tpb 
+	\centering
+	\begin{subfigure}{0.475\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LungMotion1.png}
+    		%\caption{First subfigure.}
+    		\label{fig:LungMotion1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.475\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LungMotion2.png}
+    		%\caption{Second subfigure.}
+    		\label{fig:LungMotion2}
+	\end{subfigure}
+	\\
+	\begin{subfigure}{0.475\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LungMotion3.png}
+    		%\caption{First subfigure.}
+    		\label{fig:LungMotion3}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.475\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/LungMotion4.png}
+    		%\caption{Second subfigure.}
+    		\label{fig:LungMotion4}
+	\end{subfigure}
+	\caption{$L=4$ images corrupted with simulated lung motion for the same cardiac frame (background was cropped out).}
+	\label{fig:LungMotion}
+\end{figure}
 
 
 \section{Experiments} \label{Sec:Experiments}
 In the following chapter the different experiments that were conducted are described and explained. 
 %First was frame-to-frame registration on cardiac data from the \emph{CMRxRecon} dataset to lay the basis for later experiments with a motion-correcting reconstruction pipeline.
 First, experiments were conducted on the \emph{ACDC} dataset to find the optimal parameters for our model using ground truth segmentations. Then a motion-compensated reconstruction pipeline was used as an down-stream task on the \emph{CMRxRecon} dataset.
-
-
-%% removed on 27.11.2024
-%\subsection{Parameter Studies on the CMRxRecon Dataset} \label{SubSec:ParameterStudies}
-%As a first step, frame-to-frame registration on the \emph{CMRxRecon} dataset was tested. The goal of these initial experiments was to examine whether the network could learn to align the cardiac image pairs despite the movement between the frames. To start, different parameters were tested in order to find the optimal model parameters for the \emph{CMRxRecon} dataset. 
-%%This would hopefully form the basis to use the networks in a motion-corrected reconstruction pipeline later. 
-%\\
-%As discussed in section~\ref{SubSec:CMRxRecon}, the CMR images were cropped to extract the moving cardiac region. This was done for both the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) data. Image pairs for each slice from each patient of the training set were generated to train the network. In order to evaluate the training progress the mean MSE and mean SSIM metrics calculated the validation data at each checkpoint (usually every 1000 iterations). The best model parameters, as determined by the metrics, were saved in a separate folder. To further evaluate the training success the unseen test data containing new patients was used. To benchmark the networks training success the MSE and SSIM were again used, but the mean inference time and the percentage of non-positive Jacobian determinant of deformation ($\% \, |J_{\phi}|\leq0$) were also calculated. The procedure, however, was slightly altered for the subsampled data as only the displacement field of the model was used to align the corresponding fully sampled image pairs. The evaluation metrics were then calculated on these images for better comparability.
-%
-%\subsubsection{Fourier-Net versus Fourier-Net+} \label{SubSubSec:Fourier-NetvsFourier-Net+}
-%First, the baseline network \emph{Fourier-Net} was compared to its newer version \emph{4xFourier-Net+} once with both using the diffeomorphic version and once without the transform. Thus the effect of the diffeomorphic deformation can be compared to the normal transformation on \emph{Fourier-Net} and \emph{4xFourier-Net+}. All of the experiments were conducted on the fully sampled data as the subsampling should not effect the tested properties. The other parameters were also kept constant with a learning rate of $0.0001$, MSE-loss and $\lambda = 0.01$. FT crop in \emph{4xFourier-Net+} was set to $24 \times 24$.
-%
-%
-%\subsubsection{Starting Channel Size} \label{SubSubSec:StartingChannels}
-%Next, the impact of the starting channels was examined. For this, \emph{4xFourier-Net+} was trained with MSE-loss, a learning rate of $0.0001$, $\lambda = 0.01$, FT crop of $24 \times 24$ and no diffeomorphic transform. The experiments were again only conducted on the fully sampled data. Three different channel sizes were used for training \emph{Fourier-Net+}: $8$, $16$ and $32$. Due to the early stopping the networks were trained for 17, 17 and 10 epochs respectively. 
-%%\\Similarly, \emph{Fourier-Net} was tested with the same parameters for channel sizes $8$, $16$ and $32$. These were trained for y epochs.
-%
-%
-%\subsubsection{Quantitative Comparison with NiftyReg} \label{SubSubSec:QuantitativeComparisonNiftyReg}
-%To establish a baseline, the similarity metrics were calculated between the unaligned test data. \emph{4xFourier-Net+} was then trained with the MSE-loss, 8 channels, $\lambda = 0.01$ and a learning rate of $0.0001$. \emph{NiftyReg}, a traditional registration algorithm that iteratively optimizes the displacement~\cite{NiftiReg}, was used for comparison. \emph{NiftyReg} provides the warped image for the fully sampled data directly, but for the subsampled data the control point grid produced by \emph{NiftyReg} was used to resample the corresponding fully sampled data for comparability. Thus only the fully sampled test data is needed for an unregistrated baseline as the subsampled data is only used to produce the displacement which is then used to warp the fully sampled data. 
-%%The MSE of the registration methods should thus not exceed  $0.000535$ and the SSIM should be higher than $0.91714$.
 
 
 \subsection{Parameter Tests on the ACDC Dataset} \label{SubSec:ParameterTestsACDC}
@@ -491,21 +457,6 @@ After comparing \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+
 an extension to subsampled data needs to be made. For this \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were compared to a baseline consisting of the unaligned test image pairs as well as \emph{NiftyReg}, \emph{VoxelMorph} and \emph{LAPNet}. Thus, observations of the performance on accelerated data can be made as well as comparisons to the aligned baseline (which all methods should aim to beat), a traditional registration algorithm, a dense registration network working in the image domain and a another dense network which works in the k-space domain.\\
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were trained for 6 epochs with MSE as the unsupervised similarity loss, a channel size of 16, learning rate of 0.0001 and $\lambda=0.01$ as well as a FT crop size of $48 \times 48$ for all subsampling data. VoxelMorph was trained with default layers and MSE as the similarity loss, a learning rate of 0.0001 and $\lambda=0.01$. Three different acceleration factors were tested: $R=4$, $R=8$ and $R=10$. For reference, the data for the fully sampled data ($R=0$) is also provided. The registration performance of all methods was evaluated on the test set using the Dice score calculated once on all labels, once without the background, as well as the SSIM and MSE as image metrics. All times are computed on CPU for better comparability as \emph{NiftyReg} currently only works on CPU as the GPU capable versions were deprecated and the other networks would gain an unfair time advantage when ran on GPU. The baseline obviously has no time associated as it only denotes the metrics on the test data before registration. The results and an comprehensive discussion are provided in section~\ref{SubSec:ResultsComparisonSubsampling}.
 
-%% removed on 27.11.2024
-%\subsection{K-Space and Contrastive Loss Experiments} \label{SubSec:K-SpaceAndContrastiveLossExperiments}
-%In this section, changes to the network training and loss function are discussed.
-%
-%\subsubsection{K-Space Loss} \label{SubSubSec:K-SpaceLoss}
-%As seen in the section~\ref{SubSec:ResultsComparisonSubsampling}, the performance in terms of Dice decreases for all methods on highly subsampled/accelerated data due to reconstruction artifacts present in the image domain as a consequence of the missing frequencies in the k-space domain. However, since the goal is to maintain performance on subsampled data, it might prove useful to use k-space information for the loss calculation and thus for the network training as it should not contain artifacts compared to the image domain. This would act as a kind of data consistency contraint during training. In order to achieve this, the similarity loss for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} was calculated not on the warped and fixed images, but instead on their corresponding masked k-spaces. This could hopefully still provide the network with useful information during training that is free of any aliasing artifacts, which are limiting the performance on subsampled data. The k-spaces were masked as to only compare the sampled frequencies to avoid large differences between the deleted frequencies of the fixed image with potential interpolated frequencies of the warped image. \\
-%For this both MSE and the relativeL2-loss were used for the experiments with the same parameters as before (channel size 16, 0.0001 learning rate and $\lambda = 0.01$). The smoothness regularization was not changed. Results can be seen in section~\ref{SubSec:ResultsK-SpaceLoss}.
-%
-%%\subsection{Changes to the Network Architecture}
-%%Next, a change to the network architecture was tested that changed the domain from image to k-space in hopes of avoiding the reconstruction artifacts present in highly accelerated images. For this we first looked at \emph{LAPNet} which works on k-space data, but is trained in a supervised manner. As a first test, we tried to train it in an unsupervised method with the same pipeline as \emph{Fourier-Net}. To achieve this we needed to generate $33 \times 33$ crops of the k-spaces as LAPNet iteratively predicts the displacement for the center-pixel of each crop, thus producing a dense displacement for the whole image.
-%
-%\subsubsection{Contrastive Learning} \label{SubSubSec:ContrastiveLearning}
-%Another idea to improve the networks learning on subsampled data was to use contrastive learning to pull the features for displacements on accelerated data closer to the features of the fully sampled data. This would only require a bit more training time as the network would first be given the fully sampled data to generate the features for the displacement (taken from the second to last step in the encoder) and then be subsampled data to calculate the image similarity loss as usual. However, instead of the smoothness regularization for the displacement, the InfoNTC~\cite{InfoNCE} aka the constrative loss is used to pull the features of the subsampled data closer to those of the fully sampled data at the same position in the image as positive pairs. All other positions are used as negative training pairs. For computational efficiency only every 10th point was chosen for this.\\
-%It is important to weigh the contrastive loss appropriately to not overpower the image similarity loss. For this \emph{Fourier-Net} was trained with MSE as the images similarity, an channel size of 16, learning rate of $0.0001$ and four different weightings: \\
-%$\lambda = \{0.0001, 0.0005, 0.001, 0.005\}$. The results can be seen in section~\ref{SubSec:ContrastiveLearningResults}.
 
 \subsection{Integration into a Motion-Compensated Reconstruction Pipeline} \label{SubSec:IntegrationMotion-CompensatedReconstructionPipeline}
 Describe qualitative test to see whether the network can be used to improve a reconstruction pipeline for cardiac data.
@@ -515,64 +466,9 @@ Before implementing the reconstruction pipeline the domain translation capabilit
 
 \subsubsection{Reconstruction Pipeline} \label{SubSubSec:ReconstructionPipeline}
 After testing whether that the previous results are translatable to the new data, the reconstruction pipeline had to be build and evaluated. As discussed in section~\ref{SubSec:Motion-CompensatedReconstruction}, neural networks can be used in motion-compensated MRI reconstruction pipelines for either the reconstruction or the corrected of motion between the frames. As \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were already trained for frame-to-frame registration, they could be easily used for the latter. ESPIRiT~\cite{ESPIRiT} was used to simulate the coil sensitivity maps needed for a SENSE-type reconstruction from the provided k-space data using an eigenvalue decomposition. For the SENSE reconstruction iterative conjugate gradient was used as it is very memory effective due to \emph{Fourier-Net+} being a very small network and the fact that no big network is needed for the actual reconstruction as a lightweight algorithm does the work. \\ 
-Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. To simulate this motion or mis-triggering, two strategies were tested. First, a similar strategy to~\cite{Oksuz2020} was used, swapping $z$ k-space lines between the frames in k-space. These new fully sampled frames were then subsampled using the subsampling masks before an inverse FT to generate the corrupted images for the pipeline. An example for $z=\{16,32\}$ can be seen in Figure~\ref{fig:LineSwapping}. Second, a simulation of lung movement by randomly deforming the images and then using an FT to generate the corrupted k-space data. This was done for $L=4$ additional lung motion frames for each cardiac frame as seen in Figure~\ref{fig:LungMotion}. An overview of this augmentation incorporated into the reconstruction pipeline can be seen in Figure~\ref{fig:ReconstructionPipeline}.\\
+Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. This process is detailed in section~\ref{SubSec:SimulatedMotion}. An overview of this augmentation incorporated into the reconstruction pipeline can be seen in Figure~\ref{fig:GeneralReconstructionPipeline}.\\
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an inverse FT for frame-to-frame registration using the optimal settings obtained in section~\ref{SubSec:ParameterTestsACDC} (MSE-loss, 16 channels, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:NetworkTrainingAndTesting}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ResultsReconstructionPipeline}.
 
-%% Line Swapping next to each other
-%\begin{figure}[h] %tpb
-%	\centering
-%	\begin{subfigure}{0.3\textwidth}
-%    		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
-%    		\caption{Original image.}
-%    		\label{fig:LineSwappingOriginal}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.3\textwidth}
-%    		\includegraphics[width=\textwidth]{./Images/LineSwapping16.png}
-%    		\caption{Line swapping $z=16$.}
-%    		\label{fig:LineSwapping16}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.3\textwidth}
-%    		\includegraphics[width=\textwidth]{./Images/LineSwapping32.png}
-%    		\caption{Line swapping $z=32$.}
-%    		\label{fig:LineSwapping32}
-%	\end{subfigure}
-%	\caption{Examples for line swapping with $R=4$ subsampling compared to the original fully sampled image.}
-%	\label{fig:LineSwapping}
-%\end{figure}
-
-% Line Swapping under each other
-\begin{figure}[h] %tpb
-	\centering
-	\begin{subfigure}{0.8\textwidth}
-    		\includegraphics[width=\textwidth]{./Images/LineSwappingOriginal.png}
-    		\caption{Original image.}
-    		\label{fig:LineSwappingOriginal}
-	\end{subfigure}
-	\\
-	\begin{subfigure}{0.8\textwidth}
-    		\includegraphics[width=\textwidth]{./Images/LineSwapping16.png}
-    		\caption{Line swapping $z=16$.}
-    		\label{fig:LineSwapping16}
-	\end{subfigure}
-	\\
-	\begin{subfigure}{0.8\textwidth}
-    		\includegraphics[width=\textwidth]{./Images/LineSwapping32.png}
-    		\caption{Line swapping $z=32$.}
-    		\label{fig:LineSwapping32}
-	\end{subfigure}
-	\caption{Examples for line swapping with $R=4$ subsampling compared to the original fully sampled image.}
-	\label{fig:LineSwapping}
-\end{figure}
-
-% lung motion 2x2
-\begin{figure}[h] %tpb
-	\centering
-	\includegraphics[width=\linewidth]{./Images/LungMotion.png} 
-	\caption{$L=4$ images corrupted with simulated lung motion for the same cardiac frame.}
-	\label{fig:LungMotion}
-\end{figure}
 
 % general reconstruction pipeline with synthetic motion-corrupted 
 \begin{figure}[h] %tpb
