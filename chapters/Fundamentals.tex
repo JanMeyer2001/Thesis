@@ -292,9 +292,9 @@ algortihm will not be able to recover an un-aliased image.
 In practice, the largest achievable acceleration factor is usually smaller than the theoretical limit because coil sensitivities overlap and are not orthogonal~\cite{AdvancesPI}.\\
 One common feature of PI is the amplification of noise in the reconstructed image, though with varying degrees:
 \begin{equation} \label{eq:SNR-SENSE}
-	SNR_{SENSE}(x,y) = \frac{SNR_{full}(x,y)}{\sqrt{R} \cdot g(x,y)},
+	\text{SNR}_{\text{SENSE}}(x,y) = \frac{\text{SNR}_{full}(x,y)}{\sqrt{R} \cdot g(x,y)},
 \end{equation}
-where the geometry factor $g(x,y)$ describes the spatial pattern of noise enhancement, $SNR_{SENSE}(x,y)$ the SNR in the reconstructed SENSE image and $SNR_{full}(x,y)$ the SNR of the fully sampled image. In addition to the g-factor losses, which depend on variables like number of coils, array configuration, etc., the SNR decreases with the square root of the acceleration factor $R$, which is known as Fourier averaging.\\
+where the geometry factor $g(x,y)$ describes the spatial pattern of noise enhancement, $\text{SNR}_{\text{SENSE}}(x,y)$ the SNR in the reconstructed SENSE image and $\text{SNR}_{full}(x,y)$ the SNR of the fully sampled image. In addition to the g-factor losses, which depend on variables like number of coils, array configuration, etc., the SNR decreases with the square root of the acceleration factor $R$, which is known as Fourier averaging.\\
 %It depends on many variables, including the number of coils, array configuration, coil loading, and scan plane orientation. The signal-to-noise ratio (SNR) in the reconstructed SENSE image is related to that of the fully sampled image according to
 While SENSE unfolds aliased signals in the image domain, generalized partially parallel acquisitions (GRAPPA)~\cite{GRAPPA} synthesizes missing data points directly in k-space. 
 %As described above and shown in Fig. 3, collecting data with multiple inhomogeneous receiver coils weights the magnetization by each coil’s sensitivity profile. In k-space

@@ -103,6 +103,7 @@ In order to perform a spatial transformation of the input feature map $U$, the s
 	V_i^c = \sum^{H}_{n} \sum^{W}_{m} U_{nm}^c k(x_i^s - m; \Phi_x) k(y_i^s - n; \Phi_y),
 \end{equation}
 with $\Phi_x$ and $\Phi_y$ being the parameters for a generic sampling  kernel $k$ that defines the image interpolation, $U_{nm}^c$ is the value of the input feature maps at location $(n,m)$ in the channel $c \in [1, ..., C]$ and $V_i^c$ is the value for every pixel $i \in [1, ..., H'W']$ for the output feature map. Any sampling kernel can be used, as long as (sub-) gradients can be defined with respect to $(x_i^s, y_i^s)$ to allow the loss gradients to flow back not only to the input feature map, but also to the sampling grid coordinates and therefore back to the transformation parameters $\theta$ and localization network, thus enabling back-propagation~\cite{SpatialTransformer}.
+
 \begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
@@ -181,7 +182,7 @@ In order to further reduce the amount of computational operations, \emph{Fourier
 \begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=.5\linewidth]{CompressionEncoder.png} 
+	\includegraphics[width=.65\linewidth]{CompressionEncoder.png} 
 	\caption{Compression in the frequency domain of the encoder used in \emph{Fourier-Net+} taken from~\cite{Fourier-Net+}.}
 	\label{fig:Fourier-Net+EncoderCompression}
 \end{figure}
@@ -252,26 +253,26 @@ For the training data, the original 4D data was used as we do not require the se
 \begin{figure}[h]%tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{Image_ACDC_systolic.png}
     		\caption{Image of systolic phase.}
     		\label{fig:Image_ACDC_systolic}
 	\end{subfigure}
 	\hfill
 	\graphicspath{{images/}{\main/images/}}
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{Image_ACDC_diastolic.png}
     		\caption{Image of diastolic phase.}
     		\label{fig:Image_ACDC_diastolic}
 	\end{subfigure} 
 	\\
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{Segmentation_ACDC_systolic.png}
     		\caption{Segmentation of systolic phase.}
     		\label{fig:Segmentation_ACDC_systolic}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.45\textwidth}
     		\includegraphics[width=\textwidth]{Segmentation_ACDC_diastolic.png}
     		\caption{Segmentation of diastolic phase.}
     		\label{fig:Segmentation_ACDC_diastolic}
@@ -469,7 +470,7 @@ First, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} are comp
 
 
 \subsubsection{Starting Channel Size} \label{SubSubSec:StartingChannelsACDC}
-Next, the impact of the starting channels on the \emph{ACDC} data was examined as these dictate the number of features that the network uses. For this, \emph{Fourier-Net+} and \emph{4xFourier-Net+} was trained with MSE-loss, a learning rate of $0.0001$, $\lambda = 0.01$, FT crop of $24 \times 24$ and no diffeomorphic transform. The experiments were again only conducted on the fully sampled data. Four different channel sizes were used for training: $8$, $16$, $32$ and $64$. The first network variant was trained with early stopping, which ended at 6 epochs. For better comparability, the other network variants were also trained with the same number of epochs. The registration performance was evaluated on the test set using the percentage of the Dice score calculated once on all labels, once without the background using only the cardiac labels, as well as the percentage of SSIM, MSE multiplied by $10^-3$ and the percentage of negative Jacobian determinant of deformation. Additionally the number of network parameters, number of mult-add operations (in millions or billion as denoted by M or G) and memory consumption in Megabyte (MB) are listed for all network variants to better compare the relationship between registration performance and memory consumption to potentially find a optimal configuration for both performance and efficiency. The mean inference time was measured on GPU in seconds. The results and subsequent discussion can be found in section~\ref{SubSec:ResultsStartingChannelsACDC}.
+Next, the impact of the starting channels on the \emph{ACDC} data was examined as these dictate the number of features that the network uses. For this, \emph{Fourier-Net+} and \emph{4xFourier-Net+} was trained with MSE-loss, a learning rate of $0.0001$, $\lambda = 0.01$, FT crop of $24 \times 24$ and no diffeomorphic transform. The experiments were again only conducted on the fully sampled data. Four different channel sizes were used for training: $8$, $16$, $32$ and $64$. The first network variant was trained with early stopping, which ended at 6 epochs. For better comparability, the other network variants were also trained with the same number of epochs. The registration performance was evaluated on the test set using the percentage of the Dice score calculated once on all labels, once without the background using only the cardiac labels, as well as the percentage of SSIM, MSE multiplied by $10^{-3}$ and the percentage of negative Jacobian determinant of deformation. Additionally the number of network parameters, number of mult-add operations (in millions or billion as denoted by M or G) and memory consumption in Megabyte (MB) are listed for all network variants to better compare the relationship between registration performance and memory consumption to potentially find a optimal configuration for both performance and efficiency. The mean inference time was measured on GPU in seconds. The results and subsequent discussion can be found in section~\ref{SubSec:ResultsStartingChannelsACDC}.
 
 
 \subsubsection{Fourier-Transform Crop Size} \label{SubSubSec:FTCropSize}
@@ -513,7 +514,7 @@ Describe qualitative test to see whether the network can be used to improve a re
 Before implementing the reconstruction pipeline the domain translation capabilities of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were tested. For this the three networks, previously trained on \emph{ACDC}, were trained again from scratch on \emph{CMRxRecon}. They were then compared on the \emph{CMRxRecon} test data to see how similar the performance would be as the cardiac scans of the two datasets are fairly similar.
 
 \subsubsection{Reconstruction Pipeline} \label{SubSubSec:ReconstructionPipeline}
-After testing whether that the previous results are translatable to the new data, the reconstruction pipeline had to be build and evaluated. As discussed in section~\ref{Sec:Motion-CompensatedReconstruction}, neural networks can be used in motion-compensated MRI reconstruction pipelines for either the reconstruction or the corrected of motion between the frames. As \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were already trained for frame-to-frame registration, they could be easily used for the latter. ESPIRiT~\cite{ESPIRiT} was used to simulate the coil sensitivity maps needed for a SENSE-type reconstruction from the provided k-space data using an eigenvalue decomposition. For the SENSE reconstruction iterative conjugate gradient was used as it is very memory effective due to \emph{Fourier-Net+} being a very small network and the fact that no big network is needed for the actual reconstruction as a lightweight algorithm does the work. \\ 
+After testing whether that the previous results are translatable to the new data, the reconstruction pipeline had to be build and evaluated. As discussed in section~\ref{SubSec:Motion-CompensatedReconstruction}, neural networks can be used in motion-compensated MRI reconstruction pipelines for either the reconstruction or the corrected of motion between the frames. As \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were already trained for frame-to-frame registration, they could be easily used for the latter. ESPIRiT~\cite{ESPIRiT} was used to simulate the coil sensitivity maps needed for a SENSE-type reconstruction from the provided k-space data using an eigenvalue decomposition. For the SENSE reconstruction iterative conjugate gradient was used as it is very memory effective due to \emph{Fourier-Net+} being a very small network and the fact that no big network is needed for the actual reconstruction as a lightweight algorithm does the work. \\ 
 Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. To simulate this motion or mis-triggering, two strategies were tested. First, a similar strategy to~\cite{Oksuz2020} was used, swapping $z$ k-space lines between the frames in k-space. These new fully sampled frames were then subsampled using the subsampling masks before an inverse FT to generate the corrupted images for the pipeline. An example for $z=\{16,32\}$ can be seen in Figure~\ref{fig:LineSwapping}. Second, a simulation of lung movement by randomly deforming the images and then using an FT to generate the corrupted k-space data. This was done for $L=4$ additional lung motion frames for each cardiac frame as seen in Figure~\ref{fig:LungMotion}. An overview of this augmentation incorporated into the reconstruction pipeline can be seen in Figure~\ref{fig:ReconstructionPipeline}.\\
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an inverse FT for frame-to-frame registration using the optimal settings obtained in section~\ref{SubSec:ParameterTestsACDC} (MSE-loss, 16 channels, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:NetworkTrainingAndTesting}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ResultsReconstructionPipeline}.
 
