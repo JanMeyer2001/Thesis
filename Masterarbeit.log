@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  9 DEC 2024 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  9 DEC 2024 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -190,6 +190,20 @@ Package: babel 2023/09/29 v3.95 The Babel package
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
+Package babel Info: Main language set with 'main='. Except if you have
+(babel)             problems, prefer the default mechanism for setting
+(babel)             the main language, ie, as the last declared.
+(babel)             Reported on input line 4203.
+
+(C:\Program Files\MiKTeX\tex/latex/babel-german\ngerman.ldf
+Language: ngerman 2024/01/19 v2.14 German support for babel (post-1996 orthogra
+phy)
+
+(C:\Program Files\MiKTeX\tex/latex/babel-german\ngermanb.ldf
+Language: ngermanb 2024/01/19 v2.14 German support for babel (post-1996 orthogr
+aphy)
+Package babel Info: Making " an active character on input line 122.
+))
 (C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
@@ -202,6 +216,10 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
+)
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/de\babel-ngerman.tex
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
 )
 (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
@@ -1017,6 +1035,23 @@ Package biblatex Info: ... file 'english.lbx' found.
 (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
+File: ngerman.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1165,33 +1200,16 @@ o_IMI.pdf> <./images/Slogan_Uni_Luebeck.pdf>]) [2
 (otherincludes/Kurzfassung.tex [4
 
 
-])
-Overfull \hbox (28.00337pt too wide) in paragraph at lines 6--147
-\OT1/cmr/m/n/12 schnelle Bild-Registrierung von un-ter-abge-tasteter MRT-Daten 
-un-ter-sucht. Diese Forschungs-
- []
-
-
-Overfull \hbox (23.3594pt too wide) in paragraph at lines 6--147
-\OT1/cmr/m/n/12 frage wurde aus mehreren Blick-winkeln be-tra-chtet und un-ter-
-sucht die Reg-istrierungsqualit^^?at
- []
-
-
-Overfull \hbox (2.9292pt too wide) in paragraph at lines 6--147
-\OT1/cmr/m/n/12 Grund-la-gen von MR Bildge-b-gung, Deep Learn-ing und Bild-Regi
-strierung wer-den erkl^^?art
- []
-
-[5] [6
+]) [5] [6
 
 
 ] (Masterarbeit.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1790,10 +1808,6 @@ onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1801,13 +1815,13 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29305 strings out of 475248
- 537824 string characters out of 5767627
+ 29478 strings out of 475248
+ 541203 string characters out of 5767627
  1953785 words of memory out of 5000000
- 50098 multiletter control sequences out of 15000+600000
+ 50250 multiletter control sequences out of 15000+600000
  571546 words of font info for 87 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 108i,20n,107p,10929b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1143 hyphenation exceptions out of 8191
+ 108i,20n,107p,10929b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/ty
@@ -1825,7 +1839,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (94 pages, 26089535 bytes).
+Output written on Masterarbeit.pdf (94 pages, 26089631 bytes).
 PDF statistics:
  1581 PDF objects out of 1728 (max. 8388607)
  332 named destinations out of 1000 (max. 500000)
