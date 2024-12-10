@@ -47,7 +47,7 @@ $\text{T}_2$ relaxation results in the loss of transverse magnetization caused b
 where $S(\text{TE})$ is the signal intensity measured at each $TE$ and
 $S_0$ is the initial signal intensity at time $t=0$.
 
-\subsection{Image Acquisition and the Concept of K-Space} \label{SubSec:ImageAcquisitionAndK-Space}
+\subsection{Image Acquisition and the Concept of k-Space} \label{SubSec:ImageAcquisitionAndK-Space}
 After discussing the physical mechanisms behind MRI, it is time to look at the actual process of acquiring the image as well as the concept of the k-space. 
 %\subsection{Image Acquisition and Pulse Sequences}
 The image contrast in MR imaging arises from tissues generating MR signals with different intensities due to their physical properties. Contrast weighting of the MR signal is obtained by the design of pulse sequences, which consist of repetitive trains of RF pulses. Two of the most common pulse sequences are gradient echo 
@@ -81,7 +81,7 @@ Consequently, the decay of the signal at time TE will solely originate from the 
 \end{figure}
 
 
-\subsubsection{Introduction to K-Space}
+\subsubsection{Introduction to k-Space}
 The concept of the k-space is a generalization of the simple relation of a time-variant signal to a spectrum of two or more dimensions. An 2D image is related to a 2D k-space data set by a 2D FT, as seen in Figure~\ref{fig:2D_MRI_Measurement}
 %, same as a 1D spectrum is related to the 1D signal by a normal (1D) FT. A 2D FT can be achieved by applying the (1D) FT successively row-by-row and column-by-column. 
 As the FT is an information-preserving operation, the k-space data contains exactly the same information as the image data. Thus, in order to get the full image information, the full k-space data needs to be measured. The task of forming an image by this approach is then converted to the task of finding a way to measure the necessary corresponding k-space data. 
@@ -277,7 +277,7 @@ Parallel imaging (PI) is a robust method for accelerating the acquisition of MRI
 %are now supplied with nearly every modern clinical scanner. Phased arrays 
 contain multiple independent receiver channels. Each coil element is most sensitive to the magnetization closest to it and less sensitive to magnetization further away. 
 %The spatial sensitivity can be visualized as the coil’s sensitivity profile (Fig. 3). Note that in these maps, the coil sensitivity falls off rapidly with increasing distance from the coil. 
-Individually, each coil has high local SNR but inhomogeneous coverage. To expand the FOV while maintaining high SNR, several coils are organized in an array. The images from each channel are usually combined into a single image with relatively homogeneous intensity by taking e.g. a root sum-of-squares (RSS) combination.
+Individually, each coil has high local SNR but inhomogeneous coverage. To expand the FOV while maintaining high SNR, several coils are organized in an array. The images from each channel are usually combined into a single image with relatively homogeneous intensity by taking e.g. a root sum-of-squares (RSS) combination~\cite{DeepMRIReconstructionSubsampling}.
 % or using more advanced methods that preserve SNR [14]. Dedicated surface coil arrays are provided for different parts of the body. Coil arrays can have up to 32 [15,16], 64 [17], or 96 [18] channels for brain imaging or 128 channels for cardiac imaging [19], although most high-count arrays are still in research development.
 %Intuitively, every coil can be used to generate a unique view of the object, which provides additional spatial information that can partially replace gradient encoding to reduce scan time. Each coil detects signals from the object weighted by the coil’s sensitivity profile. This weighting can be modeled as a multiplication of the coil sensitivity profile and the magnetization. The use of a coil with an inhomogeneous sensitivity also affects k-space. Multiplication in the image domain is equivalent to convolution in the frequency domain. Therefore, in k-space the Fourier Transform of the image is convolved with the spectrum of each coil’s sensitivity profile.
 Theoretically, the maximum acceleration factor is limited by the number of coils, 

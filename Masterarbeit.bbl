@@ -19,6 +19,726 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Chen2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0c475071538366636655ccf385c755e7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=cda7ab58324a69413816838fdd4c39ad}{%
+           family={Diaz-Pinto},
+           familyi={D\bibinithyphendelim P\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9c60e6f3a023d47086ecf66dafcdc305}{%
+           family={Ravikumar},
+           familyi={R\bibinitperiod},
+           given={Nishant},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1a646ae010320b6078bc4ef1eaae06e8}{%
+           family={Frangi},
+           familyi={F\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{984254469a8650bea7f6b6da591072bc}
+      \strng{fullhash}{22cffc6b8da8b59883bab0efda0e78e4}
+      \strng{bibnamehash}{984254469a8650bea7f6b6da591072bc}
+      \strng{authorbibnamehash}{984254469a8650bea7f6b6da591072bc}
+      \strng{authornamehash}{984254469a8650bea7f6b6da591072bc}
+      \strng{authorfullhash}{22cffc6b8da8b59883bab0efda0e78e4}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2516-1091}
+      \field{journaltitle}{Progress in Biomedical Engineering}
+      \field{month}{12}
+      \field{title}{Deep learning in medical image registration}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1088/2516-1091/abd37c
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/1. Chen, Xiang, et al. 'Deep learning in medical image registration'.pdf:PDF
+      \endverb
+    \endentry
+    \entry{U-Net}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=8e46da9de9e53ea5d37089897d69cdd9}{%
+           family={Ronneberger},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authornamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Medical Image Computing and Computer-Assisted Intervention – MICCAI 2015}
+      \field{isbn}{9783319245744}
+      \field{issn}{1611-3349}
+      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
+      \field{year}{2015}
+      \field{pages}{234\bibrangedash 241}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-319-24574-4_28
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/U-Net.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Kuestner2022}{article}{}
+      \name{author}{11}{}{%
+        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
+           family={Küstner},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=579dfa588da8b644da2518750d58db40}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jiazhen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7f23a8bf12a3b13d6fac9050bae1d59f}{%
+           family={Gilliam},
+           familyi={G\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f6b8d1c88902fb26f504534e20486314}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Haikun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ec16c2bf2dfd08e2b50fb0e3caaec831}{%
+           family={Cruz},
+           familyi={C\bibinitperiod},
+           given={Gastao},
+           giveni={G\bibinitperiod}}}%
+        {{hash=09bd4cf1c5543a070103d769da228d4d}{%
+           family={Hammernik},
+           familyi={H\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1252ed25137fd3fb056e3e8d74b4c481}{%
+           family={Blu},
+           familyi={B\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=92712fbc7c7c3c1daa0630f54b19b582}{%
+           family={Rueckert},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0eb6c49819d338cfdee3cae72bc3dffd}{%
+           family={Botnar},
+           familyi={B\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod}}}%
+        {{hash=745aad50d91ffc4d79f3fefb03b2fb79}{%
+           family={Prieto},
+           familyi={P\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=44057a4595775314689a9661ca5fb074}{%
+           family={Gatidis},
+           familyi={G\bibinitperiod},
+           given={Sergios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Now Publishers}%
+      }
+      \strng{namehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{fullhash}{1b2ac71efa0bed6bce369ab800b2df48}
+      \strng{bibnamehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{authorbibnamehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{authornamehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{authorfullhash}{1b2ac71efa0bed6bce369ab800b2df48}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2048-7703}
+      \field{journaltitle}{APSIPA Transactions on Signal and Information Processing}
+      \field{number}{1}
+      \field{title}{Self-Supervised Motion-Corrected Image Reconstruction Network for 4D Magnetic Resonance Imaging of the Body Trunk}
+      \field{volume}{11}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1561/116.00000039
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Self-Supervised motion-corrected image reconstruction network for 4D magnetic resonance imaging of the body trunk.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Ghoul2024}{article}{}
+      \name{author}{9}{}{%
+        {{hash=49e9c12f8b0030a273e04b5bba509ae0}{%
+           family={Ghoul},
+           familyi={G\bibinitperiod},
+           given={Aya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=579dfa588da8b644da2518750d58db40}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jiazhen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ea9274cff7341eb7fb7530e5d409c3d4}{%
+           family={Lingg},
+           familyi={L\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=88d441a7f1103c59ad14f08384f00f5b}{%
+           family={Kübler},
+           familyi={K\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cf1b9d4abe7c85176ff0a9ae4c61a19a}{%
+           family={Krumm},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=09bd4cf1c5543a070103d769da228d4d}{%
+           family={Hammernik},
+           familyi={H\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=92712fbc7c7c3c1daa0630f54b19b582}{%
+           family={Rueckert},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=44057a4595775314689a9661ca5fb074}{%
+           family={Gatidis},
+           familyi={G\bibinitperiod},
+           given={Sergios},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
+           family={Küstner},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{c93de2f7e35f678236a135e195098ae3}
+      \strng{fullhash}{b657177fca74fb1ab6b4f06f3272bcab}
+      \strng{bibnamehash}{c93de2f7e35f678236a135e195098ae3}
+      \strng{authorbibnamehash}{c93de2f7e35f678236a135e195098ae3}
+      \strng{authornamehash}{c93de2f7e35f678236a135e195098ae3}
+      \strng{authorfullhash}{b657177fca74fb1ab6b4f06f3272bcab}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-254X}
+      \field{journaltitle}{IEEE Transactions on Medical Imaging}
+      \field{title}{Attention-aware non-rigid image registration for accelerated MR imaging}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/tmi.2024.3385024
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Attention-aware non-rigid image registration for accelerated MR imaging.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Pan2024}{article}{}
+      \name{author}{5}{}{%
+        {{hash=579dfa588da8b644da2518750d58db40}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jiazhen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8342474cdf96412e7ca69818123f6f54}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Wenqi},
+           giveni={W\bibinitperiod}}}%
+        {{hash=92712fbc7c7c3c1daa0630f54b19b582}{%
+           family={Rueckert},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
+           family={Küstner},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=09bd4cf1c5543a070103d769da228d4d}{%
+           family={Hammernik},
+           familyi={H\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{fullhash}{f8a83a557ec9f30b8bc5200a57d91e5e}
+      \strng{bibnamehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{authorbibnamehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{authornamehash}{d7d81a01170538ddf182c8e196c2154c}
+      \strng{authorfullhash}{f8a83a557ec9f30b8bc5200a57d91e5e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-254X}
+      \field{journaltitle}{IEEE Transactions on Medical Imaging}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Motion-Compensated MR CINE Reconstruction With Reconstruction-Driven Motion Estimation}
+      \field{volume}{43}
+      \field{year}{2024}
+      \field{pages}{2420\bibrangedash 2433}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/tmi.2024.3364504
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Motion-compensated MR CINE reconstruction with reconstruction-driven motion estimation.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Haskins2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e082b1c9ef8bd6139b7da239d084823e}{%
+           family={Haskins},
+           familyi={H\bibinitperiod},
+           given={Grant},
+           giveni={G\bibinitperiod}}}%
+        {{hash=86d57157748f6fbbd00fd90889de7488}{%
+           family={Kruger},
+           familyi={K\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c807ad8f27945fb31e269bb9f20f3e81}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Pingkun},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{3e9052e1f257ddb36066b529fdbe3052}
+      \strng{fullhash}{3e9052e1f257ddb36066b529fdbe3052}
+      \strng{bibnamehash}{3e9052e1f257ddb36066b529fdbe3052}
+      \strng{authorbibnamehash}{3e9052e1f257ddb36066b529fdbe3052}
+      \strng{authornamehash}{3e9052e1f257ddb36066b529fdbe3052}
+      \strng{authorfullhash}{3e9052e1f257ddb36066b529fdbe3052}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-1769}
+      \field{journaltitle}{Machine Vision and Applications}
+      \field{month}{1}
+      \field{number}{1–2}
+      \field{title}{Deep learning in medical image registration: a survey}
+      \field{volume}{31}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1007/s00138-020-01060-x
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Deep learning in Medical Image Registration - a survey.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Liu2013}{article}{}
+      \name{author}{7}{}{%
+        {{hash=0b07af422f6616fac129405a8b4b1de4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=733256c2452217b6cec8912fa1abf4eb}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ddedc642570ccb6c4254f8363c88c308}{%
+           family={Degnan},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cbef96880de0820ea601a0bbb9e07e46}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Shiyue},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d08ccd05396a1f921e2cdaa181641a8a}{%
+           family={Gillard},
+           familyi={G\bibinitperiod},
+           given={Jonathan\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4e10a4553b6aaf7d4b57f2e08a5c95b3}{%
+           family={Teng},
+           familyi={T\bibinitperiod},
+           given={Zhongzhao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=11e00670bd9a8f49cb37ca3a05a6bdc6}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jianping},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{ef34355bba6fd21b02862fcb80dc4c98}
+      \strng{fullhash}{a4cdd7f7f74cd42c1b10ea3b5ca673c8}
+      \strng{bibnamehash}{ef34355bba6fd21b02862fcb80dc4c98}
+      \strng{authorbibnamehash}{ef34355bba6fd21b02862fcb80dc4c98}
+      \strng{authornamehash}{ef34355bba6fd21b02862fcb80dc4c98}
+      \strng{authorfullhash}{a4cdd7f7f74cd42c1b10ea3b5ca673c8}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-0743}
+      \field{journaltitle}{The International Journal of Cardiovascular Imaging}
+      \field{month}{5}
+      \field{number}{7}
+      \field{title}{Comparison of high-resolution MRI with CT angiography and digital subtraction angiography for the evaluation of middle cerebral artery atherosclerotic steno-occlusive disease}
+      \field{volume}{29}
+      \field{year}{2013}
+      \field{pages}{1491\bibrangedash 1498}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/s10554-013-0237-3
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Comparison of high-resolution MRI with CT angiography and digital subtraction angiography for the evaluation of middle cerebral artery atherosclerotic.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Brown2014}{book}{}
+      \name{author}{5}{}{%
+        {{hash=f160b82b5c491ab12b83c9f179c1c88c}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d9b4cd254b77561141198db528950fb6}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Yu‐Chung\bibnamedelima N.},
+           giveni={Y\bibinithyphendelim C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8b354f0a68c9985b04db352f4c31e1dc}{%
+           family={Haacke},
+           familyi={H\bibinitperiod},
+           given={E.\bibnamedelimi Mark},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b1ec4a71c2d452fd36939d8c6780cdd4}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7e8586de48ca089266cd61938b8dcc38}{%
+           family={Venkatesan},
+           familyi={V\bibinitperiod},
+           given={Ramesh},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{f9342337369630d0d366b18dd534e22b}
+      \strng{fullhash}{0a5491dc963d926614948dfd21ee363f}
+      \strng{bibnamehash}{f9342337369630d0d366b18dd534e22b}
+      \strng{authorbibnamehash}{f9342337369630d0d366b18dd534e22b}
+      \strng{authornamehash}{f9342337369630d0d366b18dd534e22b}
+      \strng{authorfullhash}{0a5491dc963d926614948dfd21ee363f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781118633953}
+      \field{month}{4}
+      \field{title}{Magnetic Resonance Imaging: Physical Principles and Sequence Design}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1002/9781118633953
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Magnetic Resonance Imaging - Physical Principles and Sequence Design.pdf:PDF
+      \endverb
+    \endentry
+    \entry{SamplingStrategies}{article}{}
+      \name{author}{1}{}{%
+        {{hash=26d59ef91b6bbdca37a45f7c0b748043}{%
+           family={Hennig},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{26d59ef91b6bbdca37a45f7c0b748043}
+      \strng{fullhash}{26d59ef91b6bbdca37a45f7c0b748043}
+      \strng{bibnamehash}{26d59ef91b6bbdca37a45f7c0b748043}
+      \strng{authorbibnamehash}{26d59ef91b6bbdca37a45f7c0b748043}
+      \strng{authornamehash}{26d59ef91b6bbdca37a45f7c0b748043}
+      \strng{authorfullhash}{26d59ef91b6bbdca37a45f7c0b748043}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-1084}
+      \field{journaltitle}{European Radiology}
+      \field{month}{7}
+      \field{number}{6}
+      \field{title}{K-space sampling strategies}
+      \field{volume}{9}
+      \field{year}{1999}
+      \field{pages}{1020\bibrangedash 1031}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s003300050788
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/K-space Sampling strategies.pdf:PDF
+      \endverb
+    \endentry
+    \entry{DeepMRIReconstructionSubsampling}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=1ec9cfb8950918b4c2ee2fc8b2fa871f}{%
+           family={Yiasemis},
+           familyi={Y\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4c010ac6c1c5c921a51c6cdbe507b7b1}{%
+           family={Sánchez},
+           familyi={S\bibinitperiod},
+           given={Clara\bibnamedelima I.},
+           giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=0d6565d8150fcd2e3a76d227e3dbb8f8}{%
+           family={Sonke},
+           familyi={S\bibinitperiod},
+           given={Jan-Jakob},
+           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=04cdefff41603b02ff703c998e106964}{%
+           family={Teuwen},
+           familyi={T\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{d830c6520e460c4c6d896303d47472a9}
+      \strng{fullhash}{8c8a9ea766f1671d73a5911f6d3a5136}
+      \strng{bibnamehash}{d830c6520e460c4c6d896303d47472a9}
+      \strng{authorbibnamehash}{d830c6520e460c4c6d896303d47472a9}
+      \strng{authornamehash}{d830c6520e460c4c6d896303d47472a9}
+      \strng{authorfullhash}{8c8a9ea766f1671d73a5911f6d3a5136}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On Retrospective k-space Subsampling schemes For Deep MRI Reconstruction}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2301.08365
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/On Retrospective k-space Subsampling schemes For Deep MRI Reconstruction.pdf:PDF
+      \endverb
+      \keyw{Image and Video Processing (eess.IV),Computer Vision and Pattern Recognition (cs.CV),Medical Physics (physics.med-ph),FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Computer and information sciences,FOS: Computer and information sciences,FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{Shannon}{article}{}
+      \name{author}{1}{}{%
+        {{hash=22e2130b8d96f93daba648ff62af869b}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={C.E.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{fullhash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{bibnamehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{authorbibnamehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{authornamehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{authorfullhash}{22e2130b8d96f93daba648ff62af869b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0096-8390}
+      \field{journaltitle}{Proceedings of the IRE}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Communication in the Presence of Noise}
+      \field{volume}{37}
+      \field{year}{1949}
+      \field{pages}{10\bibrangedash 21}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/jrproc.1949.232969
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Communication In The Presence Of Noise.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Chen2023}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=0398ee1b43eafda9e254f985ac1caab7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Junyu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c018845f17e8226e1c781d8dcd9d8ea0}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yihao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=601482170eabde80dae6e817c61dda00}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Shuwen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2698426bd5e15d68a33818d96bf81686}{%
+           family={Bian},
+           familyi={B\bibinitperiod},
+           given={Zhangxing},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9f3edad07b1fd8871ac1a51b2f58c3cf}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={Shalini},
+           giveni={S\bibinitperiod}}}%
+        {{hash=704c30626a1ffbbb2784665228abc4e7}{%
+           family={Carass},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8bfa40ef9412e1b582dfe0ab4e517639}{%
+           family={Prince},
+           familyi={P\bibinitperiod},
+           given={Jerry\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=384ae4e26306092cc1e56e64da6e92e3}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{c495981a1bf18aecc28ab7830e91e809}
+      \strng{fullhash}{2d6400c5be53ce2c2f722205f8a7445c}
+      \strng{bibnamehash}{c495981a1bf18aecc28ab7830e91e809}
+      \strng{authorbibnamehash}{c495981a1bf18aecc28ab7830e91e809}
+      \strng{authornamehash}{c495981a1bf18aecc28ab7830e91e809}
+      \strng{authorfullhash}{2d6400c5be53ce2c2f722205f8a7445c}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A survey on deep learning in medical image registration: new technologies, uncertainty, evaluation metrics, and beyond}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2307.15615
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/A survey on deep learning in medical image registration - new technologies, uncertainty, evaluation metrics and beyond.pdf:PDF
+      \endverb
+      \keyw{Image and Video Processing (eess.IV),Computer Vision and Pattern Recognition (cs.CV),FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{GRICS}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2eb43f369cffa083fa92889f864e5dfa}{%
+           family={Odille},
+           familyi={O\bibinitperiod},
+           given={Freddy},
+           giveni={F\bibinitperiod}}}%
+        {{hash=07a095ef78d59b5a01cf900d396b6087}{%
+           family={Vuissoz},
+           familyi={V\bibinitperiod},
+           given={Pierre‐André},
+           giveni={P\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=c55eaaa49c5bef86c6af8b616b4e04ac}{%
+           family={Marie},
+           familyi={M\bibinitperiod},
+           given={Pierre‐Yves},
+           giveni={P\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=b7dd7d113dac1de277b949f9b0525f2a}{%
+           family={Felblinger},
+           familyi={F\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{d2fb8614913fdbb0eefdbe928adbb959}
+      \strng{fullhash}{8e7691654e39232fbe2527e4cd96dcdf}
+      \strng{bibnamehash}{d2fb8614913fdbb0eefdbe928adbb959}
+      \strng{authorbibnamehash}{d2fb8614913fdbb0eefdbe928adbb959}
+      \strng{authornamehash}{d2fb8614913fdbb0eefdbe928adbb959}
+      \strng{authorfullhash}{8e7691654e39232fbe2527e4cd96dcdf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1522-2594}
+      \field{journaltitle}{Magnetic Resonance in Medicine}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{Generalized Reconstruction by Inversion of Coupled Systems (GRICS) applied to free‐breathing MRI}
+      \field{volume}{60}
+      \field{year}{2008}
+      \field{pages}{146\bibrangedash 157}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/mrm.21623
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Generalized Reconstruction by Inversion of Coupled Systems (GRICS).pdf:PDF
+      \endverb
+    \endentry
     \entry{Fourier-Net}{inproceedings}{}
       \name{author}{9}{}{%
         {{hash=819f5c6c5f73fe8c40cf756b9424bff0}{%
@@ -132,8 +852,8 @@
       \strng{authornamehash}{f5ac75966f835c1bb89666af6b40dd7e}
       \strng{authorfullhash}{87de4c245dbe2760e79c5a96af654504}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Fourier-Net+: Leveraging Band-Limited Representation for Efficient 3D Medical Image Registration}
@@ -184,8 +904,8 @@
       \strng{authorbibnamehash}{5a6bf062ecead13dec48f4fd916c589f}
       \strng{authornamehash}{5a6bf062ecead13dec48f4fd916c589f}
       \strng{authorfullhash}{30a1093febe486cd97cb05218145932f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -221,8 +941,8 @@
       \strng{authorbibnamehash}{c085572f860d99d03a37c331ee13ff68}
       \strng{authornamehash}{c085572f860d99d03a37c331ee13ff68}
       \strng{authorfullhash}{c085572f860d99d03a37c331ee13ff68}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Inverse-Consistent Deep Networks for Unsupervised Deformable Image Registration}
@@ -257,8 +977,8 @@
       \strng{authorbibnamehash}{31a11b90d7e1c21beef0074efb8cee90}
       \strng{authornamehash}{31a11b90d7e1c21beef0074efb8cee90}
       \strng{authorfullhash}{31a11b90d7e1c21beef0074efb8cee90}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
@@ -324,8 +1044,8 @@
       \strng{authorbibnamehash}{86a2cf98cd18331f2865af1549aec441}
       \strng{authornamehash}{86a2cf98cd18331f2865af1549aec441}
       \strng{authorfullhash}{98537b85d71749b3aefa4cb7402034f0}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0169-2607}
@@ -342,101 +1062,6 @@
       \endverb
       \verb{file}
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Fast Free-Form Defomation using GPUs.pdf:PDF
-      \endverb
-    \endentry
-    \entry{Chen2020}{article}{}
-      \name{author}{4}{}{%
-        {{hash=0c475071538366636655ccf385c755e7}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Xiang},
-           giveni={X\bibinitperiod}}}%
-        {{hash=cda7ab58324a69413816838fdd4c39ad}{%
-           family={Diaz-Pinto},
-           familyi={D\bibinithyphendelim P\bibinitperiod},
-           given={Andres},
-           giveni={A\bibinitperiod}}}%
-        {{hash=9c60e6f3a023d47086ecf66dafcdc305}{%
-           family={Ravikumar},
-           familyi={R\bibinitperiod},
-           given={Nishant},
-           giveni={N\bibinitperiod}}}%
-        {{hash=1a646ae010320b6078bc4ef1eaae06e8}{%
-           family={Frangi},
-           familyi={F\bibinitperiod},
-           given={Alejandro},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{984254469a8650bea7f6b6da591072bc}
-      \strng{fullhash}{22cffc6b8da8b59883bab0efda0e78e4}
-      \strng{bibnamehash}{984254469a8650bea7f6b6da591072bc}
-      \strng{authorbibnamehash}{984254469a8650bea7f6b6da591072bc}
-      \strng{authornamehash}{984254469a8650bea7f6b6da591072bc}
-      \strng{authorfullhash}{22cffc6b8da8b59883bab0efda0e78e4}
-      \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2516-1091}
-      \field{journaltitle}{Progress in Biomedical Engineering}
-      \field{month}{12}
-      \field{title}{Deep learning in medical image registration}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.1088/2516-1091/abd37c
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/1. Chen, Xiang, et al. 'Deep learning in medical image registration'.pdf:PDF
-      \endverb
-    \endentry
-    \entry{Haskins2020}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e082b1c9ef8bd6139b7da239d084823e}{%
-           family={Haskins},
-           familyi={H\bibinitperiod},
-           given={Grant},
-           giveni={G\bibinitperiod}}}%
-        {{hash=86d57157748f6fbbd00fd90889de7488}{%
-           family={Kruger},
-           familyi={K\bibinitperiod},
-           given={Uwe},
-           giveni={U\bibinitperiod}}}%
-        {{hash=c807ad8f27945fb31e269bb9f20f3e81}{%
-           family={Yan},
-           familyi={Y\bibinitperiod},
-           given={Pingkun},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{3e9052e1f257ddb36066b529fdbe3052}
-      \strng{fullhash}{3e9052e1f257ddb36066b529fdbe3052}
-      \strng{bibnamehash}{3e9052e1f257ddb36066b529fdbe3052}
-      \strng{authorbibnamehash}{3e9052e1f257ddb36066b529fdbe3052}
-      \strng{authornamehash}{3e9052e1f257ddb36066b529fdbe3052}
-      \strng{authorfullhash}{3e9052e1f257ddb36066b529fdbe3052}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1432-1769}
-      \field{journaltitle}{Machine Vision and Applications}
-      \field{month}{1}
-      \field{number}{1–2}
-      \field{title}{Deep learning in medical image registration: a survey}
-      \field{volume}{31}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.1007/s00138-020-01060-x
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Deep learning in Medical Image Registration - a survey.pdf:PDF
       \endverb
     \endentry
     \entry{Fu2020}{article}{}
@@ -481,8 +1106,8 @@
       \strng{authorbibnamehash}{5b657967e8657f801f30fa50697aae4c}
       \strng{authornamehash}{5b657967e8657f801f30fa50697aae4c}
       \strng{authorfullhash}{525a20079a6875de488e49d0b8f9dc62}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-6560}
@@ -533,8 +1158,8 @@
       \strng{authorbibnamehash}{0fd69f3dba36080c461db911a81a022c}
       \strng{authornamehash}{0fd69f3dba36080c461db911a81a022c}
       \strng{authorfullhash}{5ae14d3870c2c3473c3bc53e764274e5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2234-943X}
@@ -549,73 +1174,6 @@
       \verb{file}
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/A review of deep learning-based deformable medical image registration.pdf:PDF
       \endverb
-    \endentry
-    \entry{Chen2023}{misc}{}
-      \name{author}{8}{}{%
-        {{hash=0398ee1b43eafda9e254f985ac1caab7}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Junyu},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c018845f17e8226e1c781d8dcd9d8ea0}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Yihao},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=601482170eabde80dae6e817c61dda00}{%
-           family={Wei},
-           familyi={W\bibinitperiod},
-           given={Shuwen},
-           giveni={S\bibinitperiod}}}%
-        {{hash=2698426bd5e15d68a33818d96bf81686}{%
-           family={Bian},
-           familyi={B\bibinitperiod},
-           given={Zhangxing},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=9f3edad07b1fd8871ac1a51b2f58c3cf}{%
-           family={Subramanian},
-           familyi={S\bibinitperiod},
-           given={Shalini},
-           giveni={S\bibinitperiod}}}%
-        {{hash=704c30626a1ffbbb2784665228abc4e7}{%
-           family={Carass},
-           familyi={C\bibinitperiod},
-           given={Aaron},
-           giveni={A\bibinitperiod}}}%
-        {{hash=8bfa40ef9412e1b582dfe0ab4e517639}{%
-           family={Prince},
-           familyi={P\bibinitperiod},
-           given={Jerry\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=384ae4e26306092cc1e56e64da6e92e3}{%
-           family={Du},
-           familyi={D\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{c495981a1bf18aecc28ab7830e91e809}
-      \strng{fullhash}{2d6400c5be53ce2c2f722205f8a7445c}
-      \strng{bibnamehash}{c495981a1bf18aecc28ab7830e91e809}
-      \strng{authorbibnamehash}{c495981a1bf18aecc28ab7830e91e809}
-      \strng{authornamehash}{c495981a1bf18aecc28ab7830e91e809}
-      \strng{authorfullhash}{2d6400c5be53ce2c2f722205f8a7445c}
-      \field{extraname}{2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A survey on deep learning in medical image registration: new technologies, uncertainty, evaluation metrics, and beyond}
-      \field{year}{2023}
-      \verb{doi}
-      \verb 10.48550/ARXIV.2307.15615
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/A survey on deep learning in medical image registration - new technologies, uncertainty, evaluation metrics and beyond.pdf:PDF
-      \endverb
-      \keyw{Image and Video Processing (eess.IV),Computer Vision and Pattern Recognition (cs.CV),FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
     \entry{Serai2021}{article}{}
       \name{author}{1}{}{%
@@ -635,8 +1193,8 @@
       \strng{authorbibnamehash}{2fa743af95cf12109ee5da93a10d0328}
       \strng{authornamehash}{2fa743af95cf12109ee5da93a10d0328}
       \strng{authorfullhash}{2fa743af95cf12109ee5da93a10d0328}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1432-1998}
@@ -653,44 +1211,6 @@
       \endverb
       \verb{file}
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Pediatric Body MRI.pdf:PDF
-      \endverb
-    \endentry
-    \entry{SamplingStrategies}{article}{}
-      \name{author}{1}{}{%
-        {{hash=26d59ef91b6bbdca37a45f7c0b748043}{%
-           family={Hennig},
-           familyi={H\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{26d59ef91b6bbdca37a45f7c0b748043}
-      \strng{fullhash}{26d59ef91b6bbdca37a45f7c0b748043}
-      \strng{bibnamehash}{26d59ef91b6bbdca37a45f7c0b748043}
-      \strng{authorbibnamehash}{26d59ef91b6bbdca37a45f7c0b748043}
-      \strng{authornamehash}{26d59ef91b6bbdca37a45f7c0b748043}
-      \strng{authorfullhash}{26d59ef91b6bbdca37a45f7c0b748043}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1432-1084}
-      \field{journaltitle}{European Radiology}
-      \field{month}{7}
-      \field{number}{6}
-      \field{title}{K-space sampling strategies}
-      \field{volume}{9}
-      \field{year}{1999}
-      \field{pages}{1020\bibrangedash 1031}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1007/s003300050788
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/K-space Sampling strategies.pdf:PDF
       \endverb
     \endentry
     \entry{PulseSequences}{misc}{}
@@ -713,8 +1233,8 @@
       \strng{authorbibnamehash}{d8f23c8835d0000e440567a397827d62}
       \strng{authornamehash}{d8f23c8835d0000e440567a397827d62}
       \strng{authorfullhash}{d8f23c8835d0000e440567a397827d62}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Model-based reconstruction of accelerated quantitative magnetic resonance imaging (MRI)}
@@ -754,8 +1274,8 @@
       \strng{authorbibnamehash}{524cf38c82bbf6932a4372219979c43d}
       \strng{authornamehash}{524cf38c82bbf6932a4372219979c43d}
       \strng{authorfullhash}{524cf38c82bbf6932a4372219979c43d}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0079-6565}
@@ -806,8 +1326,8 @@
       \strng{authorbibnamehash}{7a2041121a350b5e9bca5471ba85b507}
       \strng{authornamehash}{7a2041121a350b5e9bca5471ba85b507}
       \strng{authorfullhash}{97d0181558a0abb6a5950e55426926d1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1053-5888}
@@ -858,8 +1378,8 @@
       \strng{authorbibnamehash}{a7c05d8e056e00c5d73ce0b011882fca}
       \strng{authornamehash}{a7c05d8e056e00c5d73ce0b011882fca}
       \strng{authorfullhash}{1a0505ed6b4be047f4009b9dd07687d5}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2586}
@@ -930,8 +1450,8 @@
       \strng{authorbibnamehash}{5c29e01454e75042b5b1210baf90d7cc}
       \strng{authornamehash}{5c29e01454e75042b5b1210baf90d7cc}
       \strng{authorfullhash}{121c6ab7538108b84e76b06228719f52}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1002,9 +1522,9 @@
       \strng{editorbibnamehash}{77d1f759936b145c92c43ca974ac419d}
       \strng{editornamehash}{77d1f759936b145c92c43ca974ac419d}
       \strng{editorfullhash}{77d1f759936b145c92c43ca974ac419d}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Medical Imaging 2022: Physics of Medical Imaging}
@@ -1016,163 +1536,6 @@
       \endverb
       \verb{file}
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Deep MRI reconstruction with radial subsampling.pdf:PDF
-      \endverb
-    \endentry
-    \entry{DeepMRIReconstructionSubsampling}{misc}{}
-      \name{author}{4}{}{%
-        {{hash=1ec9cfb8950918b4c2ee2fc8b2fa871f}{%
-           family={Yiasemis},
-           familyi={Y\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod}}}%
-        {{hash=4c010ac6c1c5c921a51c6cdbe507b7b1}{%
-           family={Sánchez},
-           familyi={S\bibinitperiod},
-           given={Clara\bibnamedelima I.},
-           giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=0d6565d8150fcd2e3a76d227e3dbb8f8}{%
-           family={Sonke},
-           familyi={S\bibinitperiod},
-           given={Jan-Jakob},
-           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
-        {{hash=04cdefff41603b02ff703c998e106964}{%
-           family={Teuwen},
-           familyi={T\bibinitperiod},
-           given={Jonas},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{d830c6520e460c4c6d896303d47472a9}
-      \strng{fullhash}{8c8a9ea766f1671d73a5911f6d3a5136}
-      \strng{bibnamehash}{d830c6520e460c4c6d896303d47472a9}
-      \strng{authorbibnamehash}{d830c6520e460c4c6d896303d47472a9}
-      \strng{authornamehash}{d830c6520e460c4c6d896303d47472a9}
-      \strng{authorfullhash}{8c8a9ea766f1671d73a5911f6d3a5136}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{On Retrospective k-space Subsampling schemes For Deep MRI Reconstruction}
-      \field{year}{2023}
-      \verb{doi}
-      \verb 10.48550/ARXIV.2301.08365
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/On Retrospective k-space Subsampling schemes For Deep MRI Reconstruction.pdf:PDF
-      \endverb
-      \keyw{Image and Video Processing (eess.IV),Computer Vision and Pattern Recognition (cs.CV),Medical Physics (physics.med-ph),FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Computer and information sciences,FOS: Computer and information sciences,FOS: Physical sciences,FOS: Physical sciences}
-    \endentry
-    \entry{GRICS}{article}{}
-      \name{author}{4}{}{%
-        {{hash=2eb43f369cffa083fa92889f864e5dfa}{%
-           family={Odille},
-           familyi={O\bibinitperiod},
-           given={Freddy},
-           giveni={F\bibinitperiod}}}%
-        {{hash=07a095ef78d59b5a01cf900d396b6087}{%
-           family={Vuissoz},
-           familyi={V\bibinitperiod},
-           given={Pierre‐André},
-           giveni={P\bibinithyphendelim A\bibinitperiod}}}%
-        {{hash=c55eaaa49c5bef86c6af8b616b4e04ac}{%
-           family={Marie},
-           familyi={M\bibinitperiod},
-           given={Pierre‐Yves},
-           giveni={P\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=b7dd7d113dac1de277b949f9b0525f2a}{%
-           family={Felblinger},
-           familyi={F\bibinitperiod},
-           given={Jacques},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley}%
-      }
-      \strng{namehash}{d2fb8614913fdbb0eefdbe928adbb959}
-      \strng{fullhash}{8e7691654e39232fbe2527e4cd96dcdf}
-      \strng{bibnamehash}{d2fb8614913fdbb0eefdbe928adbb959}
-      \strng{authorbibnamehash}{d2fb8614913fdbb0eefdbe928adbb959}
-      \strng{authornamehash}{d2fb8614913fdbb0eefdbe928adbb959}
-      \strng{authorfullhash}{8e7691654e39232fbe2527e4cd96dcdf}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1522-2594}
-      \field{journaltitle}{Magnetic Resonance in Medicine}
-      \field{month}{6}
-      \field{number}{1}
-      \field{title}{Generalized Reconstruction by Inversion of Coupled Systems (GRICS) applied to free‐breathing MRI}
-      \field{volume}{60}
-      \field{year}{2008}
-      \field{pages}{146\bibrangedash 157}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1002/mrm.21623
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Generalized Reconstruction by Inversion of Coupled Systems (GRICS).pdf:PDF
-      \endverb
-    \endentry
-    \entry{Pan2024}{article}{}
-      \name{author}{5}{}{%
-        {{hash=579dfa588da8b644da2518750d58db40}{%
-           family={Pan},
-           familyi={P\bibinitperiod},
-           given={Jiazhen},
-           giveni={J\bibinitperiod}}}%
-        {{hash=8342474cdf96412e7ca69818123f6f54}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Wenqi},
-           giveni={W\bibinitperiod}}}%
-        {{hash=92712fbc7c7c3c1daa0630f54b19b582}{%
-           family={Rueckert},
-           familyi={R\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
-           family={Küstner},
-           familyi={K\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=09bd4cf1c5543a070103d769da228d4d}{%
-           family={Hammernik},
-           familyi={H\bibinitperiod},
-           given={Kerstin},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
-      }
-      \strng{namehash}{d7d81a01170538ddf182c8e196c2154c}
-      \strng{fullhash}{f8a83a557ec9f30b8bc5200a57d91e5e}
-      \strng{bibnamehash}{d7d81a01170538ddf182c8e196c2154c}
-      \strng{authorbibnamehash}{d7d81a01170538ddf182c8e196c2154c}
-      \strng{authornamehash}{d7d81a01170538ddf182c8e196c2154c}
-      \strng{authorfullhash}{f8a83a557ec9f30b8bc5200a57d91e5e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1558-254X}
-      \field{journaltitle}{IEEE Transactions on Medical Imaging}
-      \field{month}{7}
-      \field{number}{7}
-      \field{title}{Motion-Compensated MR CINE Reconstruction With Reconstruction-Driven Motion Estimation}
-      \field{volume}{43}
-      \field{year}{2024}
-      \field{pages}{2420\bibrangedash 2433}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/tmi.2024.3364504
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Motion-compensated MR CINE reconstruction with reconstruction-driven motion estimation.pdf:PDF
       \endverb
     \endentry
     \entry{Zou2024}{article}{}
@@ -1192,8 +1555,8 @@
       \strng{authorbibnamehash}{524fdea59fe67149a11c641456748831}
       \strng{authornamehash}{524fdea59fe67149a11c641456748831}
       \strng{authorfullhash}{524fdea59fe67149a11c641456748831}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1573-4056}
@@ -1232,8 +1595,8 @@
       \strng{authorbibnamehash}{3cbf4347f862480645fe3b9db5210a99}
       \strng{authornamehash}{3cbf4347f862480645fe3b9db5210a99}
       \strng{authorfullhash}{3cbf4347f862480645fe3b9db5210a99}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1432-1998}
@@ -1277,8 +1640,8 @@
       \strng{authorbibnamehash}{ad85321a9ee5596fdb4610e3599a9d49}
       \strng{authornamehash}{ad85321a9ee5596fdb4610e3599a9d49}
       \strng{authorfullhash}{ad85321a9ee5596fdb4610e3599a9d49}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -1316,8 +1679,8 @@
       \strng{authorbibnamehash}{162f18b3de739dfc5ae12afe69966428}
       \strng{authornamehash}{162f18b3de739dfc5ae12afe69966428}
       \strng{authorfullhash}{162f18b3de739dfc5ae12afe69966428}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1360,8 +1723,8 @@
       \strng{authorbibnamehash}{72d406d321f15c753fda2acc80473d91}
       \strng{authornamehash}{72d406d321f15c753fda2acc80473d91}
       \strng{authorfullhash}{72d406d321f15c753fda2acc80473d91}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1409,8 +1772,8 @@
       \strng{authorbibnamehash}{82f37f5adccfedfdb445af0f14ff026d}
       \strng{authornamehash}{82f37f5adccfedfdb445af0f14ff026d}
       \strng{authorfullhash}{aef1cdf4cdba7e2f2450f6d849c25c3d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1451,8 +1814,8 @@
       \strng{authorbibnamehash}{4383c8a6a85a7f9f491e7cc783a7842d}
       \strng{authornamehash}{4383c8a6a85a7f9f491e7cc783a7842d}
       \strng{authorfullhash}{4383c8a6a85a7f9f491e7cc783a7842d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1523,8 +1886,8 @@
       \strng{authorbibnamehash}{8b7445530c2e71de1abcaa323614fd54}
       \strng{authornamehash}{8b7445530c2e71de1abcaa323614fd54}
       \strng{authorfullhash}{c5baf32959adee3dae37f28e6e00d4db}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1575,8 +1938,8 @@
       \strng{authorbibnamehash}{aeea1fd9496580d3bd13a3b2aeef7d84}
       \strng{authornamehash}{aeea1fd9496580d3bd13a3b2aeef7d84}
       \strng{authorfullhash}{8ef44d988f5e8df98d4935cfc9e05676}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1624,8 +1987,8 @@
       \strng{authorbibnamehash}{ec24b1837aab5cb9578c40e48caa107c}
       \strng{authornamehash}{ec24b1837aab5cb9578c40e48caa107c}
       \strng{authorfullhash}{6fa705d79a61b82524b9c0840881f62e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -1678,8 +2041,8 @@
       \strng{authorbibnamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
       \strng{authornamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
       \strng{authorfullhash}{c79cd9e480909b4c139727702f77f7ce}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Lecture Notes in Computer Science}
@@ -1694,91 +2057,6 @@
       \endverb
       \verb{file}
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Learning MRI k-Space Subsampling Pattern Using Progressive Weight Pruning.pdf:PDF
-      \endverb
-    \endentry
-    \entry{Kuestner2022}{article}{}
-      \name{author}{11}{}{%
-        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
-           family={Küstner},
-           familyi={K\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=579dfa588da8b644da2518750d58db40}{%
-           family={Pan},
-           familyi={P\bibinitperiod},
-           given={Jiazhen},
-           giveni={J\bibinitperiod}}}%
-        {{hash=7f23a8bf12a3b13d6fac9050bae1d59f}{%
-           family={Gilliam},
-           familyi={G\bibinitperiod},
-           given={Christopher},
-           giveni={C\bibinitperiod}}}%
-        {{hash=f6b8d1c88902fb26f504534e20486314}{%
-           family={Qi},
-           familyi={Q\bibinitperiod},
-           given={Haikun},
-           giveni={H\bibinitperiod}}}%
-        {{hash=ec16c2bf2dfd08e2b50fb0e3caaec831}{%
-           family={Cruz},
-           familyi={C\bibinitperiod},
-           given={Gastao},
-           giveni={G\bibinitperiod}}}%
-        {{hash=09bd4cf1c5543a070103d769da228d4d}{%
-           family={Hammernik},
-           familyi={H\bibinitperiod},
-           given={Kerstin},
-           giveni={K\bibinitperiod}}}%
-        {{hash=1252ed25137fd3fb056e3e8d74b4c481}{%
-           family={Blu},
-           familyi={B\bibinitperiod},
-           given={Thierry},
-           giveni={T\bibinitperiod}}}%
-        {{hash=92712fbc7c7c3c1daa0630f54b19b582}{%
-           family={Rueckert},
-           familyi={R\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=0eb6c49819d338cfdee3cae72bc3dffd}{%
-           family={Botnar},
-           familyi={B\bibinitperiod},
-           given={René},
-           giveni={R\bibinitperiod}}}%
-        {{hash=745aad50d91ffc4d79f3fefb03b2fb79}{%
-           family={Prieto},
-           familyi={P\bibinitperiod},
-           given={Claudia},
-           giveni={C\bibinitperiod}}}%
-        {{hash=44057a4595775314689a9661ca5fb074}{%
-           family={Gatidis},
-           familyi={G\bibinitperiod},
-           given={Sergios},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Now Publishers}%
-      }
-      \strng{namehash}{80601f83f37a68fd67fffa7198a837c3}
-      \strng{fullhash}{1b2ac71efa0bed6bce369ab800b2df48}
-      \strng{bibnamehash}{80601f83f37a68fd67fffa7198a837c3}
-      \strng{authorbibnamehash}{80601f83f37a68fd67fffa7198a837c3}
-      \strng{authornamehash}{80601f83f37a68fd67fffa7198a837c3}
-      \strng{authorfullhash}{1b2ac71efa0bed6bce369ab800b2df48}
-      \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2048-7703}
-      \field{journaltitle}{APSIPA Transactions on Signal and Information Processing}
-      \field{number}{1}
-      \field{title}{Self-Supervised Motion-Corrected Image Reconstruction Network for 4D Magnetic Resonance Imaging of the Body Trunk}
-      \field{volume}{11}
-      \field{year}{2022}
-      \verb{doi}
-      \verb 10.1561/116.00000039
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Self-Supervised motion-corrected image reconstruction network for 4D magnetic resonance imaging of the body trunk.pdf:PDF
       \endverb
     \endentry
     \entry{LowRank+SparseMRI}{article}{}
@@ -1808,8 +2086,8 @@
       \strng{authorbibnamehash}{dfc005cb51927f9f39ada0e8b80fd733}
       \strng{authornamehash}{dfc005cb51927f9f39ada0e8b80fd733}
       \strng{authorfullhash}{dfc005cb51927f9f39ada0e8b80fd733}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0740-3194}
@@ -1855,8 +2133,8 @@
       \strng{authorbibnamehash}{1683357ef1ac18c65f8756bb1c8b76e4}
       \strng{authornamehash}{1683357ef1ac18c65f8756bb1c8b76e4}
       \strng{authorfullhash}{1683357ef1ac18c65f8756bb1c8b76e4}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2076-3417}
@@ -1957,8 +2235,8 @@
       \strng{authorbibnamehash}{6fd0ac195d0f0de964cd129c37380fa8}
       \strng{authornamehash}{6fd0ac195d0f0de964cd129c37380fa8}
       \strng{authorfullhash}{2b4d2061f01eb708e16c9c8872699f52}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1051-0443}
@@ -2031,8 +2309,8 @@
       \strng{authornamehash}{c1803d11b23e2003babfff4b51ba7a12}
       \strng{authorfullhash}{ba6dc282c7f58845189c9a83645d51f7}
       \field{extraname}{3}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1699-3055}
@@ -2105,8 +2383,8 @@
       \strng{authorbibnamehash}{652a6809e20c11661a157aeb57820cfe}
       \strng{authornamehash}{652a6809e20c11661a157aeb57820cfe}
       \strng{authorfullhash}{32aed4975cf57934b2ee6e549aa0af71}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1651-226X}
@@ -2162,8 +2440,8 @@
       \strng{authorbibnamehash}{7665d00389e8d1036b8c311b4d8b1693}
       \strng{authornamehash}{7665d00389e8d1036b8c311b4d8b1693}
       \strng{authorfullhash}{b21c92318635bd93f481b9478f461257}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-6560}
@@ -2214,8 +2492,8 @@
       \strng{authorbibnamehash}{5fd3778b4ced93728837c026a291bf63}
       \strng{authornamehash}{5fd3778b4ced93728837c026a291bf63}
       \strng{authorfullhash}{03cce08bc4ee944424ac36adcd388f6f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1053-8119}
@@ -2256,8 +2534,8 @@
       \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
       \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
       \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Adam: A Method for Stochastic Optimization}
@@ -2269,51 +2547,6 @@
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Adam.pdf:PDF
       \endverb
       \keyw{Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
-    \endentry
-    \entry{U-Net}{inbook}{}
-      \name{author}{3}{}{%
-        {{hash=8e46da9de9e53ea5d37089897d69cdd9}{%
-           family={Ronneberger},
-           familyi={R\bibinitperiod},
-           given={Olaf},
-           giveni={O\bibinitperiod}}}%
-        {{hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
-           family={Fischer},
-           familyi={F\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod}}}%
-        {{hash=b452a32296958371572717940f900884}{%
-           family={Brox},
-           familyi={B\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{authornamehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Medical Image Computing and Computer-Assisted Intervention – MICCAI 2015}
-      \field{isbn}{9783319245744}
-      \field{issn}{1611-3349}
-      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
-      \field{year}{2015}
-      \field{pages}{234\bibrangedash 241}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1007/978-3-319-24574-4_28
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/U-Net.pdf:PDF
-      \endverb
     \endentry
     \entry{BIRNet}{article}{}
       \name{author}{4}{}{%
@@ -2347,8 +2580,8 @@
       \strng{authorbibnamehash}{e293d480f6ecf606d54a6f730a017ef7}
       \strng{authornamehash}{e293d480f6ecf606d54a6f730a017ef7}
       \strng{authorfullhash}{3875dc69a3726c6331a5e4149dc6dfaa}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-8415}
@@ -2430,8 +2663,8 @@
       \strng{authornamehash}{80601f83f37a68fd67fffa7198a837c3}
       \strng{authorfullhash}{2626681cab0dcb5ce813f3a7e448b08f}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -2493,8 +2726,8 @@
       \strng{authornamehash}{c495981a1bf18aecc28ab7830e91e809}
       \strng{authorfullhash}{286b8d083826203ea492a58ce5c7f6d8}
       \field{extraname}{4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-8415}

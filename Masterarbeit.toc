@@ -4,16 +4,16 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.3}%
 \contentsline {section}{\numberline {1.1}Motivation and Challenges of MRI Acquisition}{1}{section.4}%
 \contentsline {section}{\numberline {1.2}Related Work}{2}{section.5}%
-\contentsline {section}{\numberline {1.3}Contributions and Structure of the Thesis}{2}{section.6}%
+\contentsline {section}{\numberline {1.3}Contributions and Structure of the Thesis}{3}{section.6}%
 \contentsline {chapter}{\numberline {2}Fundamentals}{5}{chapter.7}%
 \contentsline {section}{\numberline {2.1}Magnetic Resonance Imaging}{5}{section.8}%
 \contentsline {subsection}{\numberline {2.1.1}Magnetic Excitation and Relaxation}{5}{subsection.10}%
 \contentsline {subsubsection}{\numberline {2.1.1.1}Radio Frequency Excitation}{5}{subsubsection.11}%
 \contentsline {subsubsection}{\numberline {2.1.1.2}Magnetic Relaxation}{7}{subsubsection.13}%
-\contentsline {subsection}{\numberline {2.1.2}Image Acquisition and the Concept of K-Space}{8}{subsection.17}%
+\contentsline {subsection}{\numberline {2.1.2}Image Acquisition and the Concept of k-Space}{8}{subsection.17}%
 \contentsline {subsubsection}{\numberline {2.1.2.1}Gradient Echo Sequence}{8}{subsubsection.18}%
 \contentsline {subsubsection}{\numberline {2.1.2.2}Spin Echo Sequence}{9}{subsubsection.20}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}Introduction to K-Space}{9}{subsubsection.22}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Introduction to k-Space}{9}{subsubsection.22}%
 \contentsline {subsubsection}{\numberline {2.1.2.4}Rectilinear K-Space Sampling}{11}{subsubsection.25}%
 \contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{12}{subsubsection.26}%
 \contentsline {subsection}{\numberline {2.1.3}Imaging Acceleration and Reconstruction}{14}{subsection.27}%
