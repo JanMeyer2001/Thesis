@@ -87,22 +87,22 @@
 \contentsline {subsubsection}{\numberline {4.2.2.3}Visual Examination}{70}{subsubsection.158}%
 \contentsline {chapter}{\numberline {5}Discussion}{73}{chapter.160}%
 \contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{73}{section.161}%
-\contentsline {subsection}{\numberline {5.1.1}Fourier-Net versus Fourier-Net+}{73}{subsection.162}%
-\contentsline {subsection}{\numberline {5.1.2}Starting Channel Size}{74}{subsection.163}%
-\contentsline {subsection}{\numberline {5.1.3}Fourier-Transform Crop Size}{75}{subsection.164}%
-\contentsline {subsection}{\numberline {5.1.4}Comparison with VoxelMorph}{75}{subsection.165}%
-\contentsline {subsection}{\numberline {5.1.5}Dense Displacements}{75}{subsection.166}%
-\contentsline {subsection}{\numberline {5.1.6}Comparison on Subsampled Data}{76}{subsection.167}%
+\contentsline {subsubsection}{\numberline {5.1.0.1}Fourier-Net versus Fourier-Net+}{73}{subsubsection.162}%
+\contentsline {subsubsection}{\numberline {5.1.0.2}Starting Channel Size}{74}{subsubsection.163}%
+\contentsline {subsubsection}{\numberline {5.1.0.3}Fourier-Transform Crop Size}{74}{subsubsection.164}%
+\contentsline {subsubsection}{\numberline {5.1.0.4}Comparison with VoxelMorph}{75}{subsubsection.165}%
+\contentsline {subsubsection}{\numberline {5.1.0.5}Dense Displacements}{75}{subsubsection.166}%
+\contentsline {subsubsection}{\numberline {5.1.0.6}Comparison on Subsampled Data}{76}{subsubsection.167}%
 \contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{77}{section.168}%
 \contentsline {subsection}{\numberline {5.2.1}Domain Translation}{77}{subsection.169}%
 \contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{77}{subsection.170}%
 \contentsline {subsubsection}{\numberline {5.2.2.1}K-Space Line Swapping}{77}{subsubsection.171}%
 \contentsline {subsubsection}{\numberline {5.2.2.2}Simulated Lung Movement}{78}{subsubsection.172}%
 \contentsline {subsubsection}{\numberline {5.2.2.3}Visual Examination}{78}{subsubsection.173}%
-\contentsline {section}{\numberline {5.3}Efficiency and Performance Trade-offs}{79}{section.174}%
+\contentsline {section}{\numberline {5.3}Efficiency and Performance Trade-offs}{78}{section.174}%
 \contentsline {section}{\numberline {5.4}Limitations and Outlook}{79}{section.175}%
-\contentsline {subsection}{\numberline {5.4.1}Extending the Scope of the Experiments and Network Training}{79}{subsection.176}%
-\contentsline {subsection}{\numberline {5.4.2}Challenges of Evaluation}{80}{subsection.177}%
-\contentsline {subsection}{\numberline {5.4.3}Future Work}{80}{subsection.178}%
+\contentsline {subsubsection}{\numberline {5.4.0.1}Extending the Scope of the Experiments and Network Training}{79}{subsubsection.176}%
+\contentsline {subsubsection}{\numberline {5.4.0.2}Challenges of Evaluation}{80}{subsubsection.177}%
+\contentsline {subsubsection}{\numberline {5.4.0.3}Future Work}{80}{subsubsection.178}%
 \contentsline {chapter}{\numberline {6}Conclusion}{81}{chapter.179}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
