@@ -18,10 +18,10 @@
 \contentsline {subsubsection}{\numberline {2.1.2.4}Rectilinear K-Space Sampling}{12}{subsubsection.25}%
 \contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{13}{subsubsection.26}%
 \contentsline {subsection}{\numberline {2.1.3}Imaging Acceleration and Reconstruction}{14}{subsection.27}%
-\contentsline {subsubsection}{\numberline {2.1.3.1}Parallel Imaging}{15}{subsubsection.29}%
-\contentsline {subsubsection}{\numberline {2.1.3.2}Compressed Sensing}{17}{subsubsection.31}%
-\contentsline {subsubsection}{\numberline {2.1.3.3}Deep Learning Based Subsampling}{17}{subsubsection.32}%
-\contentsline {subsection}{\numberline {2.1.4}Motion-Compensated Image Reconstruction}{17}{subsection.33}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Image Acceleration via k-Space Subsampling}{14}{subsubsection.28}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Parallel Imaging}{15}{subsubsection.30}%
+\contentsline {subsubsection}{\numberline {2.1.3.3}Compressed Sensing}{17}{subsubsection.32}%
+\contentsline {subsection}{\numberline {2.1.4}Motion-Compensated Image Reconstruction}{18}{subsection.33}%
 \contentsline {subsubsection}{\numberline {2.1.4.1}Motion in MRI}{18}{subsubsection.34}%
 \contentsline {subsubsection}{\numberline {2.1.4.2}Reconstruction Pipelines}{18}{subsubsection.35}%
 \contentsline {section}{\numberline {2.2}Image Transformations and Registration}{19}{section.36}%

@@ -49,13 +49,7 @@ This technique often requires multiple patient BHs during data acquisition, whic
 \end{figure}
 
 \subsection{Image Acquisition and the Concept of k-Space} \label{SubSec:ImageAcquisitionAndK-Space}
-After discussing the physical mechanisms behind MRI, it is time to look at the actual process of acquiring the image as well as the concept of the k-space. 
-%\subsection{Image Acquisition and Pulse Sequences}
-The image contrast in MR imaging arises from tissues generating MR signals with different intensities due to their physical properties. Contrast weighting of the MR signal is obtained by the design of pulse sequences, which consist of repetitive trains of RF pulses. Two of the most common pulse sequences are gradient echo 
-%(GE) 
-and spin echo 
-%(SE) 
-sequences. %\\
+After discussing the physical mechanisms behind MRI, it is time to look at the actual process of acquiring the image as well as the concept of the k-space. The image contrast in MR imaging arises from tissues generating MR signals with different intensities due to their physical properties. Contrast weighting of the MR signal is obtained by the design of pulse sequences, which consist of repetitive trains of RF pulses. Two of the most common pulse sequences are gradient echo and spin echo sequences. 
 
 \subsubsection{Gradient Echo Sequence}
 In a gradient echo (GE) sequence, the free induction decay (FID) signal is manipulated by a bi-polar gradient. The excitation pulse tilts the magnetization by $\alpha$ degrees. For $\alpha = 90\degree$ the longitudinal magnetization is rotated in the transverse plane. The data is sampled during a gradient echo at the echo time (TE) after the excitation pulse. This gradient echo is achieved by dephasing the spins with a negative gradient before they are rephased by an opposite gradient with opposite polarity to generate an echo. A schematic overview of the process can be seen in Figure~\ref{fig:GradientEcho}. \\
@@ -200,9 +194,12 @@ For an insufficient field of view of the k-space data, misregistration artifacts
 %This limitation is especially severe for cardiac imaging, where the size of the field of view of a short axis plane can be considerable. Limitation of the field of view by the use of surface coils with limited sensitivity range is therefore mandatory for many applications of non-rectilinear trajectories.
 
 \subsection{Imaging Acceleration and Reconstruction} \label{SubSec:ImagingAccelerationReconstruction}
-To alleviate the slow image acquisition times of the MR imaging, different MRI acceleration techniques are used. Most of these included scanning less k-space lines during signal acquisition, omitting certain frequencies by zero-padding.
-%higher frequencies and fully scanning the center region. 
-The amount of k-space lines that are zeroed out are usually given by a reduction factor $R$. While there are different subsampling techniques, most involve fully sampling a center region containing the lower frequencies and dropping higher frequencies. These are deemed less important as they contain mostly details and fine image structures, whereas the low frequencies encode the general image structure and contrast. All of these methods create artifacts, like image blur, during image reconstruction, as seen in Figure~\ref{fig:ExamplesSubsampling}. In order to still reconstruct images with as few artifacts as possible, different technologies have been developed such as parallel imaging and compressed sensing, which are discussed in the following sections.
+Next, k-space subsampling for imaging acceleration as well as reconstruction algorithms for avoiding artifacts are discussed.
+
+\subsubsection{Image Acceleration via k-Space Subsampling} \label{SubSubSec:AccelerationSubsampling}
+To alleviate the slow image acquisition times of the MR imaging, different MRI acceleration techniques can be used. Most of these included scanning less k-space lines during signal acquisition, omitting certain frequencies by zero-padding. The amount of k-space lines that are zeroed out are usually given by a reduction factor $R$, defined as the ratio between the number of k-space points in
+the fully-sampled data compared to the undersampled data~\cite{AdvancesPI,ParallelMRI}. While there are different subsampling techniques, most involve fully sampling a center region containing the lower frequencies and dropping higher frequencies. These are deemed less important as they contain mostly details and fine image structures, whereas the low frequencies encode the general image structure and contrast~\cite{SamplingStrategies}. All of these methods create artifacts, like image blur, during image reconstruction, as seen in Figure~\ref{fig:ExamplesSubsampling}. The more lines are missing/zeroed, the more intense these artifacts become. In order to still reconstruct images with as few artifacts as possible, different reconstruction algorithms have been developed such as parallel imaging and compressed sensing, which are discussed in the following sections. \\
+Recently there has been proposals to more efficiently subsample the k-space by using neural network to find better patterns. These try to learn new subsampling strategies in a data-driven manner (pruning unimportant k-space frequencies)~\cite{MRISubsamplingPruning} as well as deep learning based radial~\cite{DeepMRIReconstructionRadialSubsampling} and other non-Cartesian~\cite{DeepMRIReconstructionSubsampling} subsampling for MRI acceleration. These promise better image quality and easier reconstruction for the same amount of deleted k-space data. However, these have yet to be used in a clinical application.
 
 \begin{figure}[h] %tpb
 	\centering
@@ -213,7 +210,7 @@ The amount of k-space lines that are zeroed out are usually given by a reduction
 \end{figure}
 
 \subsubsection{Parallel Imaging}
-Parallel imaging (PI) is a robust method for accelerating the acquisition of MRI data by subsampling the k-space data using an array of receiver coils. One of several PI algorithms can then be used to reconstruct artifact-free images from either the aliased images (SENSE-type reconstruction) or from the under-sampled data (GRAPPA-type reconstruction). PI requires special hardware known as phased array coils that 
+Parallel imaging (PI) is a robust method for accelerating the acquisition of MRI data by subsampling the k-space data while still being able to reconstruct high quality images using an array of receiver coils. One of several PI algorithms can then be used to reconstruct artifact-free images from either the aliased images (SENSE-type reconstruction) or from the under-sampled k-space data (GRAPPA-type reconstruction). PI requires special hardware known as phased array coils that 
 %are now supplied with nearly every modern clinical scanner. Phased arrays 
 contain multiple independent receiver channels. Each coil element is most sensitive to the magnetization closest to it and less sensitive to magnetization further away. 
 %The spatial sensitivity can be visualized as the coil’s sensitivity profile (Fig. 3). Note that in these maps, the coil sensitivity falls off rapidly with increasing distance from the coil. 
@@ -258,9 +255,6 @@ The idea behind compressed sensing (CS) is that sparse or compressible signals c
 In MRI, the sampled linear combinations are the individual Fourier coefficients (k-space samples) and CS is able to make accurate reconstructions from a small subset of k-space, rather than an entire k-space grid~\cite{CS-MRI}. It should be noted that unlike PI approaches, the k-space is incoherently sampled; thus, noise-like artefacts appear in the image when a direct inverse Fourier transform is performed. To remove the artefacts caused by the undersampling, iterative reconstruction is used. There are a number of sparsifying transforms that can be used for CS such as wavelets, which are very common, and total variation, which enforces the sparsity of the image gradients. The advantages of total variation include its simplicity, rotation invariance, and capability of preserving edges and providing good image quality~\cite{PulseSequences}. There are also several methods combining CS and PI trying to achieve higher acceleration factors~\cite{PI+CS, PI+CS2}.
 %, but with the addition of regularization that enforces sparsity by penalizing coefficients in some domain (e.g. Wavelet, finite difference) with a $L_1$-norm
 
-\subsubsection{Deep Learning Based Subsampling} \label{SubSubSec:DeepLearningBasedSubsampling}
-There are also approaches for learning new subsampling strategies in a data-driven manner (pruning unimportant k-space frequencies)~\cite{MRISubsamplingPruning} as well as deep learning based radial~\cite{DeepMRIReconstructionRadialSubsampling} and non-Cartesian~\cite{DeepMRIReconstructionSubsampling} subsampling for MRI acceleration.
-
 
 \subsection{Motion-Compensated Image Reconstruction} \label{SubSec:Motion-CompensatedReconstruction}
 Patient motion during acquisition is one of the major impediments of high-quality MRI scans. This is especially true for thoracic and abdominal imaging, as organs move during breathing. Steps can be taken during or after the reconstruction to mitigate motion artifacts.
@@ -281,7 +275,7 @@ There are two major parts of a motion-compensated reconstruction pipeline: a non
 
 
 \section{Image Transformations and Registration} \label{Sec:ImageTransformationsAndRegistration}
-In this chapter, a brief overview over the different kinds of image transformations is given, followed by an introduction into the challenges of image registration.\\
+In this chapter, a brief overview over different kinds of image transformations is given, followed by an introduction into the challenges of image registration.\\
 The goal of image registration is to compute a transformation that aligns two images - moving and fixed. This transformation is then applied to the moving image to create an warped image that more closely resembles the fixed image. But first, the different kinds of image transformations must be discussed.
 
 \subsection{Image Transformations} \label{SubSec:ImageTransformations}

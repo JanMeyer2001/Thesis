@@ -2796,6 +2796,61 @@
       \verb 10.1002/mrm.1910350417
       \endverb
     \endentry
+    \entry{MRISubsamplingPruning}{inbook}{}
+      \name{author}{5}{}{%
+        {{hash=625bb99cd1cfccb83ee4631652389f6e}{%
+           family={Xuan},
+           familyi={X\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=13855accfb0d223a4ff8a83e318357f0}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Shanhui},
+           giveni={S\bibinitperiod}}}%
+        {{hash=184d4c4c7d9b3172e9d818692fa81689}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Zhong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b05219a6acab0132847dc1d15a7fc0ef}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=1cfc48ebce2e875176eb9724a1ee4671}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Shu},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
+      \strng{fullhash}{c79cd9e480909b4c139727702f77f7ce}
+      \strng{bibnamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
+      \strng{authorbibnamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
+      \strng{authornamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
+      \strng{authorfullhash}{c79cd9e480909b4c139727702f77f7ce}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Lecture Notes in Computer Science}
+      \field{isbn}{9783030597139}
+      \field{issn}{1611-3349}
+      \field{title}{Learning MRI k-Space Subsampling Pattern Using Progressive Weight Pruning}
+      \field{year}{2020}
+      \field{pages}{178\bibrangedash 187}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-030-59713-9_18
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Learning MRI k-Space Subsampling Pattern Using Progressive Weight Pruning.pdf:PDF
+      \endverb
+    \endentry
     \entry{SENSE1}{article}{}
       \name{author}{4}{}{%
         {{hash=09c259dd8792829bc2a9ab6e477b06a9}{%
@@ -2994,8 +3049,8 @@
       \strng{authorbibnamehash}{aeea1fd9496580d3bd13a3b2aeef7d84}
       \strng{authornamehash}{aeea1fd9496580d3bd13a3b2aeef7d84}
       \strng{authorfullhash}{8ef44d988f5e8df98d4935cfc9e05676}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -3043,8 +3098,8 @@
       \strng{authorbibnamehash}{ec24b1837aab5cb9578c40e48caa107c}
       \strng{authornamehash}{ec24b1837aab5cb9578c40e48caa107c}
       \strng{authorfullhash}{6fa705d79a61b82524b9c0840881f62e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -3058,61 +3113,6 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1002/mrm.22463
-      \endverb
-    \endentry
-    \entry{MRISubsamplingPruning}{inbook}{}
-      \name{author}{5}{}{%
-        {{hash=625bb99cd1cfccb83ee4631652389f6e}{%
-           family={Xuan},
-           familyi={X\bibinitperiod},
-           given={Kai},
-           giveni={K\bibinitperiod}}}%
-        {{hash=13855accfb0d223a4ff8a83e318357f0}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Shanhui},
-           giveni={S\bibinitperiod}}}%
-        {{hash=184d4c4c7d9b3172e9d818692fa81689}{%
-           family={Xue},
-           familyi={X\bibinitperiod},
-           given={Zhong},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=b05219a6acab0132847dc1d15a7fc0ef}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Qian},
-           giveni={Q\bibinitperiod}}}%
-        {{hash=1cfc48ebce2e875176eb9724a1ee4671}{%
-           family={Liao},
-           familyi={L\bibinitperiod},
-           given={Shu},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
-      \strng{fullhash}{c79cd9e480909b4c139727702f77f7ce}
-      \strng{bibnamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
-      \strng{authorbibnamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
-      \strng{authornamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
-      \strng{authorfullhash}{c79cd9e480909b4c139727702f77f7ce}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Lecture Notes in Computer Science}
-      \field{isbn}{9783030597139}
-      \field{issn}{1611-3349}
-      \field{title}{Learning MRI k-Space Subsampling Pattern Using Progressive Weight Pruning}
-      \field{year}{2020}
-      \field{pages}{178\bibrangedash 187}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1007/978-3-030-59713-9_18
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Learning MRI k-Space Subsampling Pattern Using Progressive Weight Pruning.pdf:PDF
       \endverb
     \endentry
     \entry{LowRank+SparseMRI}{article}{}
