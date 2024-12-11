@@ -2005,6 +2005,555 @@
       \endverb
       \keyw{Image and Video Processing (eess.IV),Computer Vision and Pattern Recognition (cs.CV),Machine Learning (cs.LG),FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
+    \entry{KuestnerCINE}{article}{}
+      \name{author}{11}{}{%
+        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
+           family={Küstner},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0ea7f7a1dde7d003b345f952e10a40ff}{%
+           family={Fuin},
+           familyi={F\bibinitperiod},
+           given={Niccolo},
+           giveni={N\bibinitperiod}}}%
+        {{hash=09bd4cf1c5543a070103d769da228d4d}{%
+           family={Hammernik},
+           familyi={H\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3d9f202e1cc6d0fe4ef0dbdddfab7f63}{%
+           family={Bustin},
+           familyi={B\bibinitperiod},
+           given={Aurelien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f6b8d1c88902fb26f504534e20486314}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Haikun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fc64414da0c5684e9abad95e7003d2e2}{%
+           family={Hajhosseiny},
+           familyi={H\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=01ca896ebaf03d43c95d6ed9eb9ac40b}{%
+           family={Masci},
+           familyi={M\bibinitperiod},
+           given={Pier\bibnamedelima Giorgio},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=91c07ff5d8a82598f0a3b86baa2216fc}{%
+           family={Neji},
+           familyi={N\bibinitperiod},
+           given={Radhouene},
+           giveni={R\bibinitperiod}}}%
+        {{hash=92712fbc7c7c3c1daa0630f54b19b582}{%
+           family={Rueckert},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7c0b058413293bfb28ab77141bbac2bf}{%
+           family={Botnar},
+           familyi={B\bibinitperiod},
+           given={René\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=745aad50d91ffc4d79f3fefb03b2fb79}{%
+           family={Prieto},
+           familyi={P\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{fullhash}{3a2c07f039f965d08e9cee30fcd56058}
+      \strng{bibnamehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{authorbibnamehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{authornamehash}{80601f83f37a68fd67fffa7198a837c3}
+      \strng{authorfullhash}{3a2c07f039f965d08e9cee30fcd56058}
+      \field{extraname}{3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{CINENet: deep learning-based 3D cardiac CINE MRI reconstruction with multi-coil complex-valued 4D spatio-temporal convolutions}
+      \field{volume}{10}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1038/s41598-020-70551-8
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/CINENet - deep learning-based 3D cardiac CINE MRI reconstruction with multi-coil complex-valued 4D spatio-temporal convolutions.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Kramer2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=36f6bbbd67aa63899dbdafb2cded8429}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={Christopher\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4b2508c72de6f48458b3defeb9dcc8cc}{%
+           family={Barkhausen},
+           familyi={B\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fc2a186ce2c47ba82b5ef5f5a7d548f7}{%
+           family={Bucciarelli-Ducci},
+           familyi={B\bibinithyphendelim D\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d4f1bc3528f49eea813f46917c9f4cce}{%
+           family={Flamm},
+           familyi={F\bibinitperiod},
+           given={Scott\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=525c038e5a10d46a8c538f108dcdee06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Raymond\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2da1cea0efdb5ded21ae87f4987c0e37}{%
+           family={Nagel},
+           familyi={N\bibinitperiod},
+           given={Eike},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{5ba0a3a87fabf38e97d3a371b6bc628d}
+      \strng{fullhash}{43355089c2f7234437536fecd661ec5f}
+      \strng{bibnamehash}{5ba0a3a87fabf38e97d3a371b6bc628d}
+      \strng{authorbibnamehash}{5ba0a3a87fabf38e97d3a371b6bc628d}
+      \strng{authornamehash}{5ba0a3a87fabf38e97d3a371b6bc628d}
+      \strng{authorfullhash}{43355089c2f7234437536fecd661ec5f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1097-6647}
+      \field{journaltitle}{Journal of Cardiovascular Magnetic Resonance}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Standardized cardiovascular magnetic resonance imaging (CMR) protocols: 2020 update}
+      \field{volume}{22}
+      \field{year}{2020}
+      \field{pages}{17}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12968-020-00607-1
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Standardized CMR protocols.pdf:PDF
+      \endverb
+    \endentry
+    \entry{CineReview1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7ba67052589d8fb6f9da5bd2ac4ff44a}{%
+           family={Ridgway},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
+      \strng{fullhash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
+      \strng{bibnamehash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
+      \strng{authorbibnamehash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
+      \strng{authornamehash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
+      \strng{authorfullhash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1097-6647}
+      \field{journaltitle}{Journal of Cardiovascular Magnetic Resonance}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Cardiovascular magnetic resonance physics for clinicians: part I}
+      \field{volume}{12}
+      \field{year}{2010}
+      \field{pages}{71}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1532-429x-12-71
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/1532-429X-12-71Cardiovascular magnetic resonance physics for clinicians - part I.pdf:PDF
+      \endverb
+    \endentry
+    \entry{CineReview2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5b950c457568941b56b5234e3e9bdc6c}{%
+           family={Biglands},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=dda43a84b44f35a0608a77eb20d5b73b}{%
+           family={Radjenovic},
+           familyi={R\bibinitperiod},
+           given={Aleksandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7ba67052589d8fb6f9da5bd2ac4ff44a}{%
+           family={Ridgway},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{c83ca1928c6b6dc5629f69e954344992}
+      \strng{fullhash}{c83ca1928c6b6dc5629f69e954344992}
+      \strng{bibnamehash}{c83ca1928c6b6dc5629f69e954344992}
+      \strng{authorbibnamehash}{c83ca1928c6b6dc5629f69e954344992}
+      \strng{authornamehash}{c83ca1928c6b6dc5629f69e954344992}
+      \strng{authorfullhash}{c83ca1928c6b6dc5629f69e954344992}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1097-6647}
+      \field{journaltitle}{Journal of Cardiovascular Magnetic Resonance}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Cardiovascular magnetic resonance physics for clinicians: part II}
+      \field{volume}{14}
+      \field{year}{2012}
+      \field{pages}{78}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1532-429x-14-66
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Cardiovascular magnetic resonance physics for clinicians - part II.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Lin2022}{article}{}
+      \name{author}{9}{}{%
+        {{hash=91ab7372f36b83a7b8f77fe41e7d28e1}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3baa52303699c58710860ed1ed79c9bb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yanyu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c33641e67eeaefc87b7821dc9b51ff90}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5c7819e24d6e587e9e4e3e553ed2714c}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Likun},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5f6efb69316771fb071fd6397d5679f0}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yajing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=743bbc15afaf07fe65b146827e53688d}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Jianing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d4409324c90e53d77604736846d47801}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a5f98d0a7c68ae0eb9ea6d93f1895b0c}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Zhengyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2193e715128540928e9951a7017a36a3}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yining},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{ac189be547107a5811f98b5a7c308a7e}
+      \strng{fullhash}{3fcf47351454bb2d0f7a07192590d403}
+      \strng{bibnamehash}{ac189be547107a5811f98b5a7c308a7e}
+      \strng{authorbibnamehash}{ac189be547107a5811f98b5a7c308a7e}
+      \strng{authornamehash}{ac189be547107a5811f98b5a7c308a7e}
+      \strng{authorfullhash}{3fcf47351454bb2d0f7a07192590d403}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-1084}
+      \field{journaltitle}{European Radiology}
+      \field{month}{11}
+      \field{number}{4}
+      \field{title}{Free-breathing cardiac cine MRI with compressed sensing real-time imaging and retrospective motion correction: clinical feasibility and validation}
+      \field{volume}{33}
+      \field{year}{2022}
+      \field{pages}{2289\bibrangedash 2300}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s00330-022-09210-7
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Free-breathing cardiac cine MRI with compressed sensing real-time imaging and retrospective motion correction.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Lanzer1985}{article}{}
+      \name{author}{6}{}{%
+        {{hash=73db40ab447406f3026ef12511b17b87}{%
+           family={Lanzer},
+           familyi={L\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7bddac4e2fc04ca1499af64157b23b19}{%
+           family={Barta},
+           familyi={B\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=44e90a7c68f39a34db5eaa2c24d153e4}{%
+           family={Botvinick},
+           familyi={B\bibinitperiod},
+           given={E\bibnamedelima H},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=25216a2c543ac83dc63ca705215a0494}{%
+           family={Wiesendanger},
+           familyi={W\bibinitperiod},
+           given={H\bibnamedelima U},
+           giveni={H\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=0c41145ded1b474f8d5ac89cd0e0f0ac}{%
+           family={Modin},
+           familyi={M\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4f2791c7c81d73f3cecf2cbd57344839}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={C\bibnamedelima B},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Radiological Society of North America (RSNA)}%
+      }
+      \strng{namehash}{b90ecf6bbd2a18c054a8f50488b7ad44}
+      \strng{fullhash}{03355863ee95ad35029c7133bf10f958}
+      \strng{bibnamehash}{b90ecf6bbd2a18c054a8f50488b7ad44}
+      \strng{authorbibnamehash}{b90ecf6bbd2a18c054a8f50488b7ad44}
+      \strng{authornamehash}{b90ecf6bbd2a18c054a8f50488b7ad44}
+      \strng{authorfullhash}{03355863ee95ad35029c7133bf10f958}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1527-1315}
+      \field{journaltitle}{Radiology}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{ECG-synchronized cardiac MR imaging: method and evaluation.}
+      \field{volume}{155}
+      \field{year}{1985}
+      \field{pages}{681\bibrangedash 686}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1148/radiology.155.3.4001369
+      \endverb
+    \endentry
+    \entry{Chew2020}{article}{}
+      \name{author}{15}{}{%
+        {{hash=0d067850daf949310230f99c5d1b9fc2}{%
+           family={Chew},
+           familyi={C\bibinitperiod},
+           given={Pei\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4707d6b6f9a28c66046f930986f82091}{%
+           family={Swoboda},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=3b411b98bb5e3ff125a44cd95bb5060b}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Carrie},
+           giveni={C\bibinitperiod}}}%
+        {{hash=923efc65998bdd8303640c56f75b2350}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Pankaj},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fc831f76d8a6e76876932443401f2271}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Abigail\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=e359354e8ce8c9c4ad6dba4bc997b65b}{%
+           family={Ibeggazene},
+           familyi={I\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d9fe9b0a0cd4bc47a7f5fbd4b6a83492}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Louise\bibnamedelimb A.\bibnamedelimi E.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=5a7cb58d48a493149786be22b079bf3f}{%
+           family={Craven},
+           familyi={C\bibinitperiod},
+           given={Thomas\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=3df2c3c6636199ce40c6bc2eae494a2d}{%
+           family={Foley},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ea89af4b7a28232aa3f286d121152c39}{%
+           family={Fent},
+           familyi={F\bibinitperiod},
+           given={Graham\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=68d4e3dbcf1e089e450cffeec5e96342}{%
+           family={Saunderson},
+           familyi={S\bibinitperiod},
+           given={Christopher\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=cfcd0412b66d5458cd5e45ad09fb0bbf}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2ca6af29d24165ecffc769104369a880}{%
+           family={Plein},
+           familyi={P\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9e7439442afda9470012989cf875af21}{%
+           family={Birch},
+           familyi={B\bibinitperiod},
+           given={Karen\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0489a7f83f971d8fbd6dbd414bfb17fa}{%
+           family={Greenwood},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AME Publishing Company}%
+      }
+      \strng{namehash}{811a0fa1beda7a44d28af9c78514b544}
+      \strng{fullhash}{01d00b453f90494a8acf55c84b832cb9}
+      \strng{bibnamehash}{811a0fa1beda7a44d28af9c78514b544}
+      \strng{authorbibnamehash}{811a0fa1beda7a44d28af9c78514b544}
+      \strng{authornamehash}{811a0fa1beda7a44d28af9c78514b544}
+      \strng{authorfullhash}{01d00b453f90494a8acf55c84b832cb9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2223-4306}
+      \field{journaltitle}{Quantitative Imaging in Medicine and Surgery}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Feasibility and reproducibility of a cardiovascular magnetic resonance free-breathing, multi-shot, navigated image acquisition technique for ventricular volume quantification during continuous exercise}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{1837\bibrangedash 1851}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.21037/qims-20-117
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Feasibility and reproducibility of a CMR free-breathing, multi-shot, navigated image acquisition technique.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Wang2021}{article}{}
+      \name{author}{8}{}{%
+        {{hash=4e756aede91c8bca22c3346ce030a366}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Keyan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3de35a3d9c5a16487feaf1cd9b8dbc07}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wenbo},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e31e0ac116d96c8e62c6a7039319ff0f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shuman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8ef78d9bdd2d36b2eacb4e641c6eb794}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Xiaoming},
+           giveni={X\bibinitperiod}}}%
+        {{hash=be895d21f52a6ba83434c45f3325b0fc}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Michaela},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d4409324c90e53d77604736846d47801}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ffb97d2db5a68752cd441b0c6741f3e9}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c80a428484d609b2d7978ecca79bab8e}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Jingliang},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{050d54c78be225fd7bbd2ec9534be1e7}
+      \strng{fullhash}{a00b2de2a2aaab1ff21a940a5ef1ceaa}
+      \strng{bibnamehash}{050d54c78be225fd7bbd2ec9534be1e7}
+      \strng{authorbibnamehash}{050d54c78be225fd7bbd2ec9534be1e7}
+      \strng{authornamehash}{050d54c78be225fd7bbd2ec9534be1e7}
+      \strng{authorfullhash}{a00b2de2a2aaab1ff21a940a5ef1ceaa}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1471-2261}
+      \field{journaltitle}{BMC Cardiovascular Disorders}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Prognosis in patients with coronary heart disease and breath-holding limitations: a free-breathing cardiac magnetic resonance protocol at 3.0 T}
+      \field{volume}{21}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1186/s12872-021-02402-x
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Prognosis in patients with coronary heart disease and breath-holding limitations.pdf:PDF
+      \endverb
+    \endentry
     \entry{Bardo2021}{article}{}
       \name{author}{2}{}{%
         {{hash=d5e27d3044304e2a46d3cd936e22e2bf}{%
@@ -2028,8 +2577,8 @@
       \strng{authorbibnamehash}{3cbf4347f862480645fe3b9db5210a99}
       \strng{authornamehash}{3cbf4347f862480645fe3b9db5210a99}
       \strng{authorfullhash}{3cbf4347f862480645fe3b9db5210a99}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1432-1998}
@@ -2073,8 +2622,8 @@
       \strng{authorbibnamehash}{ad85321a9ee5596fdb4610e3599a9d49}
       \strng{authornamehash}{ad85321a9ee5596fdb4610e3599a9d49}
       \strng{authorfullhash}{ad85321a9ee5596fdb4610e3599a9d49}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -2112,8 +2661,8 @@
       \strng{authorbibnamehash}{162f18b3de739dfc5ae12afe69966428}
       \strng{authornamehash}{162f18b3de739dfc5ae12afe69966428}
       \strng{authorfullhash}{162f18b3de739dfc5ae12afe69966428}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2156,8 +2705,8 @@
       \strng{authorbibnamehash}{72d406d321f15c753fda2acc80473d91}
       \strng{authornamehash}{72d406d321f15c753fda2acc80473d91}
       \strng{authorfullhash}{72d406d321f15c753fda2acc80473d91}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2191,8 +2740,8 @@
       \strng{authorbibnamehash}{1f365458c3aaf6f260d52b26cca8cabf}
       \strng{authornamehash}{1f365458c3aaf6f260d52b26cca8cabf}
       \strng{authorfullhash}{1f365458c3aaf6f260d52b26cca8cabf}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4687}
@@ -2230,8 +2779,8 @@
       \strng{authorbibnamehash}{6e07de47409c57ce0039cc715bc1758c}
       \strng{authornamehash}{6e07de47409c57ce0039cc715bc1758c}
       \strng{authorfullhash}{6e07de47409c57ce0039cc715bc1758c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2279,8 +2828,8 @@
       \strng{authorbibnamehash}{82f37f5adccfedfdb445af0f14ff026d}
       \strng{authornamehash}{82f37f5adccfedfdb445af0f14ff026d}
       \strng{authorfullhash}{aef1cdf4cdba7e2f2450f6d849c25c3d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2321,8 +2870,8 @@
       \strng{authorbibnamehash}{4383c8a6a85a7f9f491e7cc783a7842d}
       \strng{authornamehash}{4383c8a6a85a7f9f491e7cc783a7842d}
       \strng{authorfullhash}{4383c8a6a85a7f9f491e7cc783a7842d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2393,8 +2942,8 @@
       \strng{authorbibnamehash}{8b7445530c2e71de1abcaa323614fd54}
       \strng{authornamehash}{8b7445530c2e71de1abcaa323614fd54}
       \strng{authorfullhash}{c5baf32959adee3dae37f28e6e00d4db}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2445,8 +2994,8 @@
       \strng{authorbibnamehash}{aeea1fd9496580d3bd13a3b2aeef7d84}
       \strng{authornamehash}{aeea1fd9496580d3bd13a3b2aeef7d84}
       \strng{authorfullhash}{8ef44d988f5e8df98d4935cfc9e05676}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2494,8 +3043,8 @@
       \strng{authorbibnamehash}{ec24b1837aab5cb9578c40e48caa107c}
       \strng{authornamehash}{ec24b1837aab5cb9578c40e48caa107c}
       \strng{authorfullhash}{6fa705d79a61b82524b9c0840881f62e}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2548,8 +3097,8 @@
       \strng{authorbibnamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
       \strng{authornamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
       \strng{authorfullhash}{c79cd9e480909b4c139727702f77f7ce}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Lecture Notes in Computer Science}
@@ -2593,8 +3142,8 @@
       \strng{authorbibnamehash}{dfc005cb51927f9f39ada0e8b80fd733}
       \strng{authornamehash}{dfc005cb51927f9f39ada0e8b80fd733}
       \strng{authorfullhash}{dfc005cb51927f9f39ada0e8b80fd733}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0740-3194}
@@ -2656,8 +3205,8 @@
       \strng{authorbibnamehash}{172520fc4330e49bed5c6ffb7f103ada}
       \strng{authornamehash}{172520fc4330e49bed5c6ffb7f103ada}
       \strng{authorfullhash}{e3049f85e2ec476d26d35095ebf2afd3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2334-0118}
@@ -2714,8 +3263,8 @@
       \strng{authorbibnamehash}{7d3f51a0d8084bddcf42aab022d9bc98}
       \strng{authornamehash}{7d3f51a0d8084bddcf42aab022d9bc98}
       \strng{authorfullhash}{8db79b5a750faa73e9c605cf221f24a5}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0278-0062}
@@ -2772,8 +3321,8 @@
       \strng{authorbibnamehash}{4f2752bf86707f7a044aaba76a7d6e5b}
       \strng{authornamehash}{4f2752bf86707f7a044aaba76a7d6e5b}
       \strng{authorfullhash}{7135978b7bc226100b6b6f7a338842c9}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2844,8 +3393,8 @@
       \strng{authorbibnamehash}{046d5355784f2058638fd656904d9671}
       \strng{authornamehash}{046d5355784f2058638fd656904d9671}
       \strng{authorfullhash}{c2d86fd73feaa2255a5e8d6d40d554e3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2902,8 +3451,8 @@
       \strng{authorbibnamehash}{fc0750a795c17c938f23876106a673c9}
       \strng{authornamehash}{fc0750a795c17c938f23876106a673c9}
       \strng{authorfullhash}{0b266f8867aca7bb7a14f04ea51d5381}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2045-2322}
@@ -3963,8 +4512,8 @@
       \strng{authorbibnamehash}{3d61f40939893e2344523180026291cf}
       \strng{authornamehash}{3d61f40939893e2344523180026291cf}
       \strng{authorfullhash}{04b671b2687404a358e65eb15f282a9d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -4135,8 +4684,9 @@
       \strng{authorbibnamehash}{e9b41efb8dbe8eb02b031512d061eeec}
       \strng{authornamehash}{e9b41efb8dbe8eb02b031512d061eeec}
       \strng{authorfullhash}{a1949afc90e17b861dca47766b90e548}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{CMRxRecon: An open cardiac MRI dataset for the competition of accelerated image reconstruction}
@@ -4207,8 +4757,8 @@
       \strng{authorbibnamehash}{ddfb2de199067e7c95251493cb7fa3ac}
       \strng{authornamehash}{ddfb2de199067e7c95251493cb7fa3ac}
       \strng{authorfullhash}{dc4058c2fd3e88c6f2ad010dcebaf742}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -4260,8 +4810,8 @@
       \strng{authornamehash}{b283fbe071a9b6ca75652191ba56e17a}
       \strng{authorfullhash}{c4a9c7f46c93c70c0a72c3d025e766fd}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-8415}
