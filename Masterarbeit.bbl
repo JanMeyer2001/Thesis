@@ -2796,6 +2796,106 @@
       \verb 10.1002/mrm.1910350417
       \endverb
     \endentry
+    \entry{Cohen1990}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cb7b5729b5f9c0b92c0e41cd2b6a76fd}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b2af58367ad9759d8c31b5c859b93c84}{%
+           family={Weisskoff},
+           familyi={W\bibinitperiod},
+           given={Robert\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=470e7de1fad4e47f1a5fbc6299653e9b}{%
+           family={Rzedzian},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=0c7212ed22db4de7c74526a45539d17d}{%
+           family={Kantor},
+           familyi={K\bibinitperiod},
+           given={Howard\bibnamedelima L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{0b9e337e833ed26d8763129ee3afc54f}
+      \strng{fullhash}{53349ed448ef612ed009e74ab2fc62d0}
+      \strng{bibnamehash}{0b9e337e833ed26d8763129ee3afc54f}
+      \strng{authorbibnamehash}{0b9e337e833ed26d8763129ee3afc54f}
+      \strng{authornamehash}{0b9e337e833ed26d8763129ee3afc54f}
+      \strng{authorfullhash}{53349ed448ef612ed009e74ab2fc62d0}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1522-2594}
+      \field{journaltitle}{Magnetic Resonance in Medicine}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Sensory stimulation by time‐varying magnetic fields}
+      \field{volume}{14}
+      \field{year}{1990}
+      \field{pages}{409\bibrangedash 414}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1002/mrm.1910140226
+      \endverb
+    \endentry
+    \entry{Ham1997}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d4dbf0703d0cdd5b4ea2e01e41f8105d}{%
+           family={Ham},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi L.\bibnamedelimi G.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=f121d9bb57b2e97357eb0c7a559b7dfd}{%
+           family={Engels},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi M.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=73900ccbcfb8d2190bcf188b9c0c298a}{%
+           family={Wiel},
+           familyi={W\bibinitperiod},
+           given={G.\bibnamedelimi T.},
+           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod},
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=28a388698bd54f8337dcf3e9cef8ae66}{%
+           family={Machielsen},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{b0cc5cb15079b6e08bc2e88c55e8a0f7}
+      \strng{fullhash}{eeeb1c44a70e174ae7277ba42001daae}
+      \strng{bibnamehash}{b0cc5cb15079b6e08bc2e88c55e8a0f7}
+      \strng{authorbibnamehash}{b0cc5cb15079b6e08bc2e88c55e8a0f7}
+      \strng{authornamehash}{b0cc5cb15079b6e08bc2e88c55e8a0f7}
+      \strng{authorfullhash}{eeeb1c44a70e174ae7277ba42001daae}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1522-2586}
+      \field{journaltitle}{Journal of Magnetic Resonance Imaging}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Peripheral nerve stimulation during MRI: Effects of high gradient amplitudes and switching rates}
+      \field{volume}{7}
+      \field{year}{1997}
+      \field{pages}{933\bibrangedash 937}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1002/jmri.1880070524
+      \endverb
+    \endentry
     \entry{MRISubsamplingPruning}{inbook}{}
       \name{author}{5}{}{%
         {{hash=625bb99cd1cfccb83ee4631652389f6e}{%
@@ -2883,8 +2983,8 @@
       \strng{authorbibnamehash}{82f37f5adccfedfdb445af0f14ff026d}
       \strng{authornamehash}{82f37f5adccfedfdb445af0f14ff026d}
       \strng{authorfullhash}{aef1cdf4cdba7e2f2450f6d849c25c3d}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2925,8 +3025,8 @@
       \strng{authorbibnamehash}{4383c8a6a85a7f9f491e7cc783a7842d}
       \strng{authornamehash}{4383c8a6a85a7f9f491e7cc783a7842d}
       \strng{authorfullhash}{4383c8a6a85a7f9f491e7cc783a7842d}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -2997,8 +3097,8 @@
       \strng{authorbibnamehash}{8b7445530c2e71de1abcaa323614fd54}
       \strng{authornamehash}{8b7445530c2e71de1abcaa323614fd54}
       \strng{authorfullhash}{c5baf32959adee3dae37f28e6e00d4db}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -4296,8 +4396,8 @@
       \strng{authorbibnamehash}{6373e6f74e9bf37ec2dc2f2504c49358}
       \strng{authornamehash}{6373e6f74e9bf37ec2dc2f2504c49358}
       \strng{authorfullhash}{85b8fc272dd220a33e8e918f7e76618e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ArXiv}
