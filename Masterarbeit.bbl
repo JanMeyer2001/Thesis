@@ -4423,6 +4423,129 @@
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/TransMorph.pdf:PDF
       \endverb
     \endentry
+    \entry{SSIM}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cc4aadc875d7abdbaf96dfa4a83d8b77}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6192fbf30c45211fdfc67652236bec72}{%
+           family={Bovik},
+           familyi={B\bibinitperiod},
+           given={A.C.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=84051ed6c4d99d3ccc763a9bfdfd28a8}{%
+           family={Sheikh},
+           familyi={S\bibinitperiod},
+           given={H.R.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=071228688c89a654d8f1b7ca8d022a6f}{%
+           family={Simoncelli},
+           familyi={S\bibinitperiod},
+           given={E.P.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{fullhash}{5404630126e6caa42a11bff978c2bbdf}
+      \strng{bibnamehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{authorbibnamehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{authornamehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{authorfullhash}{5404630126e6caa42a11bff978c2bbdf}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1057-7149}
+      \field{journaltitle}{IEEE Transactions on Image Processing}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Image Quality Assessment: From Error Visibility to Structural Similarity}
+      \field{volume}{13}
+      \field{year}{2004}
+      \field{pages}{600\bibrangedash 612}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/tip.2003.819861
+      \endverb
+    \endentry
+    \entry{Xiao2021}{article}{}
+      \name{author}{8}{}{%
+        {{hash=260705c33d1076cb0a85e1cee55d3024}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Haonan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2a029f886e05ffe8d730782d389a884c}{%
+           family={Teng},
+           familyi={T\bibinitperiod},
+           given={Xinzhi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=26cd3f82970561f0f35f8d18f53e1b44}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chenyang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=93df928f56f95c1d11ae2b102402cce6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2895377bea218674932f8add609211f2}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Ge},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a5a406d588836976934a611935e34ddf}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Ruijie},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4be3a7080769a01b5a9027ae92b8c440}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Dinggang},
+           giveni={D\bibinitperiod}}}%
+        {{hash=45295000fa65abd3d041c054376e60d9}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AME Publishing Company}%
+      }
+      \strng{namehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{fullhash}{6fc2d99c64e2341335c4d86a75830b0e}
+      \strng{bibnamehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{authorbibnamehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{authornamehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{authorfullhash}{6fc2d99c64e2341335c4d86a75830b0e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2223-4306}
+      \field{journaltitle}{Quantitative Imaging in Medicine and Surgery}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{A review of deep learning-based three-dimensional medical image registration methods}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{4895\bibrangedash 4916}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.21037/qims-21-175
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Review of Deep Learning based 3D Medical Image Registration Methods.pdf:PDF
+      \endverb
+    \endentry
     \entry{Dalca2018}{inbook}{}
       \name{author}{4}{}{%
         {{hash=12c00fda76155269bb61e99d3fa595a1}{%
@@ -4941,7 +5064,7 @@
       \strng{authorbibnamehash}{e9b41efb8dbe8eb02b031512d061eeec}
       \strng{authornamehash}{e9b41efb8dbe8eb02b031512d061eeec}
       \strng{authorfullhash}{a1949afc90e17b861dca47766b90e548}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -4955,6 +5078,60 @@
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/CMRxRecon.pdf:PDF
       \endverb
       \keyw{Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{Roemer1990}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2fb84872bb86f8094c208707107b3828}{%
+           family={Roemer},
+           familyi={R\bibinitperiod},
+           given={P.\bibnamedelimi B.},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=7f9d39b16f3925c485bc025a78f9be8f}{%
+           family={Edelstein},
+           familyi={E\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8170ddd747613aa8a12ef9f2349aaace}{%
+           family={Hayes},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=df940673aed31f5388095958f48a70b7}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ccfa4990ab60422529716a87686d6d94}{%
+           family={Mueller},
+           familyi={M\bibinitperiod},
+           given={O.\bibnamedelimi M.},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{41f2f9e59d8773eebddd026a96436691}
+      \strng{fullhash}{6fd3567e3354fa0541dd43a6a278bcd1}
+      \strng{bibnamehash}{41f2f9e59d8773eebddd026a96436691}
+      \strng{authorbibnamehash}{41f2f9e59d8773eebddd026a96436691}
+      \strng{authornamehash}{41f2f9e59d8773eebddd026a96436691}
+      \strng{authorfullhash}{6fd3567e3354fa0541dd43a6a278bcd1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1522-2594}
+      \field{journaltitle}{Magnetic Resonance in Medicine}
+      \field{month}{11}
+      \field{number}{2}
+      \field{title}{The NMR phased array}
+      \field{volume}{16}
+      \field{year}{1990}
+      \field{pages}{192\bibrangedash 225}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1002/mrm.1910160203
+      \endverb
     \endentry
     \entry{VoxelMorphDiff}{article}{}
       \name{author}{4}{}{%
