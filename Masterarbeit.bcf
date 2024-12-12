@@ -2412,8 +2412,8 @@
     <bcf:citekey order="38" intorder="2">CS-MRI</bcf:citekey>
     <bcf:citekey order="38" intorder="3">ParallelMRI</bcf:citekey>
     <bcf:citekey order="38" intorder="4">GRAPPA</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">DeepMRIReconstructionRadialSubsampling</bcf:citekey>
-    <bcf:citekey order="39" intorder="2">DeepMRIReconstructionSubsampling</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">DeepMRIReconstructionSubsampling</bcf:citekey>
+    <bcf:citekey order="39" intorder="2">DeepMRIReconstructionRadialSubsampling</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Oksuz2020</bcf:citekey>
     <bcf:citekey order="41" intorder="1">Kuestner2022</bcf:citekey>
     <bcf:citekey order="42" intorder="1">GRICS</bcf:citekey>
