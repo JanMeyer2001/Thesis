@@ -594,6 +594,36 @@
 \abx@aux@cite{0}{Fourier-Net+}
 \abx@aux@segm{0}{0}{Fourier-Net+}
 \BKM@entry{id=20,dest={73756273656374696F6E2E3734},srcline={11}}{332E312E315C30343050726F626C656D5C303430466F726D756C6174696F6E}
+\abx@aux@cite{0}{DARTEL}
+\abx@aux@segm{0}{0}{DARTEL}
+\abx@aux@cite{0}{Vercauteren2009}
+\abx@aux@segm{0}{0}{Vercauteren2009}
+\abx@aux@cite{0}{NiftiReg}
+\abx@aux@segm{0}{0}{NiftiReg}
+\abx@aux@cite{0}{LAP}
+\abx@aux@segm{0}{0}{LAP}
+\abx@aux@cite{0}{FLASH}
+\abx@aux@segm{0}{0}{FLASH}
+\abx@aux@cite{0}{Chen2023}
+\abx@aux@segm{0}{0}{Chen2023}
+\abx@aux@cite{0}{LAPNet}
+\abx@aux@segm{0}{0}{LAPNet}
+\abx@aux@cite{0}{DeepFlash}
+\abx@aux@segm{0}{0}{DeepFlash}
+\abx@aux@cite{0}{Chen2020}
+\abx@aux@segm{0}{0}{Chen2020}
+\abx@aux@cite{0}{Zou2022}
+\abx@aux@segm{0}{0}{Zou2022}
+\abx@aux@cite{0}{Voxelmorph}
+\abx@aux@segm{0}{0}{Voxelmorph}
+\abx@aux@cite{0}{IC-Net}
+\abx@aux@segm{0}{0}{IC-Net}
+\abx@aux@cite{0}{SYM-Net}
+\abx@aux@segm{0}{0}{SYM-Net}
+\abx@aux@cite{0}{Fourier-Net}
+\abx@aux@segm{0}{0}{Fourier-Net}
+\abx@aux@cite{0}{Fourier-Net+}
+\abx@aux@segm{0}{0}{Fourier-Net+}
 \BKM@entry{id=21,dest={73756273656374696F6E2E3735},srcline={14}}{332E312E325C303430466F75726965722D4E6574}
 \abx@aux@cite{0}{Fourier-Net}
 \abx@aux@segm{0}{0}{Fourier-Net}
@@ -609,8 +639,6 @@
 \newlabel{Sec:NetworkArchitecture}{{3.1}{29}{Efficient Registration using Neural Networks}{section.73}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Problem Formulation}{29}{subsection.74}\protected@file@percent }
 \newlabel{SubSec:ProblemFormulation}{{3.1.1}{29}{Problem Formulation}{subsection.74}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Fourier-Net}{29}{subsection.75}\protected@file@percent }
-\newlabel{SubSec:Fourier-Net}{{3.1.2}{29}{Fourier-Net}{subsection.75}{}}
 \abx@aux@cite{0}{Fourier-Net}
 \abx@aux@segm{0}{0}{Fourier-Net}
 \abx@aux@cite{0}{Fourier-Net}
@@ -623,24 +651,25 @@
 \abx@aux@segm{0}{0}{Trabelsi2017}
 \abx@aux@cite{0}{DeepFlash}
 \abx@aux@segm{0}{0}{DeepFlash}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Fourier-Net}{30}{subsection.75}\protected@file@percent }
+\newlabel{SubSec:Fourier-Net}{{3.1.2}{30}{Fourier-Net}{subsection.75}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture of \emph  {Fourier-Net} taken from~\blx@tocontentsinit {0}\cite {Fourier-Net}. The encoder takes two images as an input and produces a band-limited displacement which is then padded and transformed to image space in the decoder. This output is the full-resolution displacement which is then used to warp the moving image for loss calculation based on its similarity to the fixed image.}}{30}{figure.caption.76}\protected@file@percent }
 \newlabel{fig:Fourier-Net}{{3.1}{30}{Architecture of \emph {Fourier-Net} taken from~\cite {Fourier-Net}. The encoder takes two images as an input and produces a band-limited displacement which is then padded and transformed to image space in the decoder. This output is the full-resolution displacement which is then used to warp the moving image for loss calculation based on its similarity to the fixed image}{figure.caption.76}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.1}Encoder}{30}{subsubsection.77}\protected@file@percent }
 \newlabel{SubSubSec:Encoder}{{3.1.2.1}{30}{Encoder}{subsubsection.77}{}}
+\newlabel{eq:DFT}{{3.1}{31}{Encoder}{equation.78}{}}
 \abx@aux@cite{0}{SYM-Net}
 \abx@aux@segm{0}{0}{SYM-Net}
 \abx@aux@cite{0}{SYM-Net}
 \abx@aux@segm{0}{0}{SYM-Net}
 \abx@aux@cite{0}{ScaleAndSquare}
 \abx@aux@segm{0}{0}{ScaleAndSquare}
-\newlabel{eq:DFT}{{3.1}{31}{Encoder}{equation.78}{}}
-\newlabel{eq:FCN}{{3.2}{31}{Encoder}{equation.79}{}}
-\newlabel{eq:encoder}{{3.3}{31}{Encoder}{equation.80}{}}
+\newlabel{eq:FCN}{{3.2}{32}{Encoder}{equation.79}{}}
+\newlabel{eq:encoder}{{3.3}{32}{Encoder}{equation.80}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Architecture of the FCN from \emph  {SYMNet}~\blx@tocontentsinit {0}\cite {SYM-Net}. The contracting path of the encoder on the left is connected to the expanding path of the decoder on the right via skip connections. The blocks in blue and purple indicate the feature maps from the encoder and decoder respectively. }}{32}{figure.caption.81}\protected@file@percent }
 \newlabel{fig:SYMNet}{{3.2}{32}{Architecture of the FCN from \emph {SYMNet}~\cite {SYM-Net}. The contracting path of the encoder on the left is connected to the expanding path of the decoder on the right via skip connections. The blocks in blue and purple indicate the feature maps from the encoder and decoder respectively}{figure.caption.81}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.2}Decoder}{32}{subsubsection.82}\protected@file@percent }
 \newlabel{SubSubSec:Decoder}{{3.1.2.2}{32}{Decoder}{subsubsection.82}{}}
-\newlabel{eq:iDFT}{{3.4}{32}{Decoder}{equation.83}{}}
 \abx@aux@cite{0}{Fourier-Net}
 \abx@aux@segm{0}{0}{Fourier-Net}
 \abx@aux@cite{0}{ScaleAndSquare}
@@ -659,35 +688,35 @@
 \abx@aux@segm{0}{0}{DARTEL}
 \abx@aux@cite{0}{Dalca2018}
 \abx@aux@segm{0}{0}{Dalca2018}
+\newlabel{eq:iDFT}{{3.4}{33}{Decoder}{equation.83}{}}
+\newlabel{eq:decoder}{{3.5}{33}{Decoder}{equation.84}{}}
 \abx@aux@cite{0}{ScaleAndSquare}
 \abx@aux@segm{0}{0}{ScaleAndSquare}
 \abx@aux@cite{0}{Dalca2018}
 \abx@aux@segm{0}{0}{Dalca2018}
 \abx@aux@cite{0}{ScaleAndSquare}
 \abx@aux@segm{0}{0}{ScaleAndSquare}
-\newlabel{eq:decoder}{{3.5}{33}{Decoder}{equation.84}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.3}Diffeomorphic Transforms}{33}{subsubsection.87}\protected@file@percent }
-\newlabel{SubSubSec:DiffeomorphicTransforms}{{3.1.2.3}{33}{Diffeomorphic Transforms}{subsubsection.87}{}}
-\abx@aux@cite{0}{SpatialTransformer}
-\abx@aux@segm{0}{0}{SpatialTransformer}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Reconstruction of the band-limited displacement field via the decoder taken from~\blx@tocontentsinit {0}\cite {Fourier-Net+}. The band-limited representation $\mathbb  {B}_\phi $ is padded with zeros to the desired spatial resolution $\mathcal  {F}(\phi )$ and then transformed to the full-resolution displacement $\phi $ using an iDFT.}}{34}{figure.caption.86}\protected@file@percent }
 \newlabel{fig:DecoderDisplacementField}{{3.3}{34}{Reconstruction of the band-limited displacement field via the decoder taken from~\cite {Fourier-Net+}. The band-limited representation $\mathbb {B}_\phi $ is padded with zeros to the desired spatial resolution $\mathcal {F}(\phi )$ and then transformed to the full-resolution displacement $\phi $ using an iDFT}{figure.caption.86}{}}
-\abx@aux@cite{0}{SpatialTransformer}
-\abx@aux@segm{0}{0}{SpatialTransformer}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.3}Diffeomorphic Transforms}{34}{subsubsection.87}\protected@file@percent }
+\newlabel{SubSubSec:DiffeomorphicTransforms}{{3.1.2.3}{34}{Diffeomorphic Transforms}{subsubsection.87}{}}
 \abx@aux@cite{0}{SpatialTransformer}
 \abx@aux@segm{0}{0}{SpatialTransformer}
 \abx@aux@cite{0}{SpatialTransformer}
 \abx@aux@segm{0}{0}{SpatialTransformer}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.4}Spatial Transformer}{35}{subsubsection.92}\protected@file@percent }
 \newlabel{SubSubSec:SpatialTransformer}{{3.1.2.4}{35}{Spatial Transformer}{subsubsection.92}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.5}Loss Function}{35}{subsubsection.95}\protected@file@percent }
-\newlabel{SubSubSec:LossFunction}{{3.1.2.5}{35}{Loss Function}{subsubsection.95}{}}
+\abx@aux@cite{0}{SpatialTransformer}
+\abx@aux@segm{0}{0}{SpatialTransformer}
+\abx@aux@cite{0}{SpatialTransformer}
+\abx@aux@segm{0}{0}{SpatialTransformer}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Architecture of the \emph  {Spatial Transformer} taken from~\blx@tocontentsinit {0}\cite {SpatialTransformer}. The input feature map $U$ is passed to a localization network which outputs the transformation parameters $\theta $. The regular spatial grid $G$ over $V$ is transformed to the sampling grid $\mathcal  {T}_\theta (G)$, which is applied to $U$ producing the warped output feature map $V$.}}{36}{figure.caption.94}\protected@file@percent }
 \newlabel{fig:SpatialTransformer}{{3.4}{36}{Architecture of the \emph {Spatial Transformer} taken from~\cite {SpatialTransformer}. The input feature map $U$ is passed to a localization network which outputs the transformation parameters $\theta $. The regular spatial grid $G$ over $V$ is transformed to the sampling grid $\mathcal {T}_\theta (G)$, which is applied to $U$ producing the warped output feature map $V$}{figure.caption.94}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.5}Loss Function}{36}{subsubsection.95}\protected@file@percent }
+\newlabel{SubSubSec:LossFunction}{{3.1.2.5}{36}{Loss Function}{subsubsection.95}{}}
 \newlabel{eq:unsupervisedLoss}{{3.9}{36}{Loss Function}{equation.96}{}}
 \newlabel{eq:L1-LossDisp}{{3.10}{36}{Loss Function}{equation.97}{}}
-\newlabel{eq:L2-LossDisp}{{3.11}{36}{Loss Function}{equation.98}{}}
-\BKM@entry{id=22,dest={73756273656374696F6E2E313031},srcline={170}}{332E312E335C303430466F75726965725C3034304E65742B}
+\BKM@entry{id=22,dest={73756273656374696F6E2E313031},srcline={144}}{332E312E335C303430466F75726965725C3034304E65742B}
 \abx@aux@cite{0}{Fourier-Net+}
 \abx@aux@segm{0}{0}{Fourier-Net+}
 \abx@aux@cite{0}{Fourier-Net+}
@@ -696,12 +725,11 @@
 \abx@aux@segm{0}{0}{Fourier-Net+}
 \abx@aux@cite{0}{Fourier-Net+}
 \abx@aux@segm{0}{0}{Fourier-Net+}
+\newlabel{eq:L2-LossDisp}{{3.11}{37}{Loss Function}{equation.98}{}}
 \newlabel{eq:L1-LossVeloc}{{3.12}{37}{Loss Function}{equation.99}{}}
 \newlabel{eq:L2-LossVeloc}{{3.13}{37}{Loss Function}{equation.100}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Fourier Net+}{37}{subsection.101}\protected@file@percent }
 \newlabel{SubSec:Fourier-Net+}{{3.1.3}{37}{Fourier Net+}{subsection.101}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3.1}Changes to the Encoder}{37}{subsubsection.103}\protected@file@percent }
-\newlabel{SubSubSec:ChangesEncoder}{{3.1.3.1}{37}{Changes to the Encoder}{subsubsection.103}{}}
 \abx@aux@cite{0}{Fourier-Net+}
 \abx@aux@segm{0}{0}{Fourier-Net+}
 \abx@aux@cite{0}{Fourier-Net+}
@@ -712,6 +740,8 @@
 \abx@aux@segm{0}{0}{Fourier-Net+}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Architecture of \emph  {Fourier-Net+} taken from~\blx@tocontentsinit {0}\cite {Fourier-Net+}. The encoder has a additional compression step to reduce the input size of the images compared to \emph  {Fourier-Net}. This is achieved by center-cropping the k-space of the images obtained via a DFT and then reconstructing them via an iDFT to get a compressed version of the inputs without the higher frequencies present. The rest of the network is the same as for \emph  {Fourier-Net}.}}{38}{figure.caption.102}\protected@file@percent }
 \newlabel{fig:Fourier-Net+}{{3.5}{38}{Architecture of \emph {Fourier-Net+} taken from~\cite {Fourier-Net+}. The encoder has a additional compression step to reduce the input size of the images compared to \emph {Fourier-Net}. This is achieved by center-cropping the k-space of the images obtained via a DFT and then reconstructing them via an iDFT to get a compressed version of the inputs without the higher frequencies present. The rest of the network is the same as for \emph {Fourier-Net}}{figure.caption.102}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3.1}Changes to the Encoder}{38}{subsubsection.103}\protected@file@percent }
+\newlabel{SubSubSec:ChangesEncoder}{{3.1.3.1}{38}{Changes to the Encoder}{subsubsection.103}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3.2}Effects of Cascading}{38}{subsubsection.106}\protected@file@percent }
 \newlabel{SubSubSec:EffectsCascading}{{3.1.3.2}{38}{Effects of Cascading}{subsubsection.106}{}}
 \abx@aux@cite{0}{Fourier-Net+}
@@ -720,46 +750,43 @@
 \abx@aux@segm{0}{0}{Fourier-Net+}
 \abx@aux@cite{0}{Fourier-Net+}
 \abx@aux@segm{0}{0}{Fourier-Net+}
-\BKM@entry{id=23,dest={73656374696F6E2E313130},srcline={222}}{332E325C3034304D6F74696F6E2D436F6D70656E73617465645C3034305265636F6E737472756374696F6E}
-\BKM@entry{id=24,dest={73656374696F6E2E313131},srcline={226}}{332E335C3034304461746173657473}
+\BKM@entry{id=23,dest={73656374696F6E2E313130},srcline={196}}{332E325C3034304461746173657473}
 \abx@aux@cite{0}{ACDC}
 \abx@aux@segm{0}{0}{ACDC}
 \abx@aux@cite{0}{CMRxRecon}
 \abx@aux@segm{0}{0}{CMRxRecon}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Compression in the frequency domain of the encoder used in \emph  {Fourier-Net+} taken from~\blx@tocontentsinit {0}\cite {Fourier-Net+}. The frequencies $\mathcal  {F}(I_M)$ are obtained via a DFT and then center-cropped to obtain a band-limited version $\mathbb  {B}_{I_M}$. The compressed image $\mathbb  {S}_{I_M}$ is then reconstructed via a iDFT.}}{39}{figure.caption.104}\protected@file@percent }
 \newlabel{fig:Fourier-Net+EncoderCompression}{{3.6}{39}{Compression in the frequency domain of the encoder used in \emph {Fourier-Net+} taken from~\cite {Fourier-Net+}. The frequencies $\mathcal {F}(I_M)$ are obtained via a DFT and then center-cropped to obtain a band-limited version $\mathbb {B}_{I_M}$. The compressed image $\mathbb {S}_{I_M}$ is then reconstructed via a iDFT}{figure.caption.104}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Motion-Compensated Reconstruction}{39}{section.110}\protected@file@percent }
-\newlabel{Sec:Motion-CompensatedReconstruction}{{3.2}{39}{Motion-Compensated Reconstruction}{section.110}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Datasets}{39}{section.111}\protected@file@percent }
-\newlabel{Sec:Datasets}{{3.3}{39}{Datasets}{section.111}{}}
-\BKM@entry{id=25,dest={73756273656374696F6E2E313132},srcline={230}}{332E332E315C303430414344435C30343044617461736574}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Datasets}{39}{section.110}\protected@file@percent }
+\newlabel{Sec:Datasets}{{3.2}{39}{Datasets}{section.110}{}}
+\BKM@entry{id=24,dest={73756273656374696F6E2E313131},srcline={200}}{332E322E315C303430414344435C30343044617461736574}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Architecture of the CNN for a typical U-Net, \emph  {Fourier-Net} and \emph  {Fourier-Net+} taken from~\blx@tocontentsinit {0}\cite {Fourier-Net+}. The latter have far less trainable network parameters due to only computing a band-limited displacement. \emph  {Fourier-Net+} additionally has a smaller encoder due to compressing the input images.}}{40}{figure.caption.105}\protected@file@percent }
 \newlabel{fig:Fourier-Net+CNN}{{3.7}{40}{Architecture of the CNN for a typical U-Net, \emph {Fourier-Net} and \emph {Fourier-Net+} taken from~\cite {Fourier-Net+}. The latter have far less trainable network parameters due to only computing a band-limited displacement. \emph {Fourier-Net+} additionally has a smaller encoder due to compressing the input images}{figure.caption.105}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Cascaded version of \emph  {Fourier-Net+} taken from~\blx@tocontentsinit {0}\cite {Fourier-Net+}. Multiple instances of \emph  {Fourier-Net+} can be cascaded with independent weights for better performance as the network itself is very memory efficient.}}{40}{figure.caption.109}\protected@file@percent }
 \newlabel{fig:Fourier-Net+Cascaded}{{3.8}{40}{Cascaded version of \emph {Fourier-Net+} taken from~\cite {Fourier-Net+}. Multiple instances of \emph {Fourier-Net+} can be cascaded with independent weights for better performance as the network itself is very memory efficient}{figure.caption.109}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}ACDC Dataset}{40}{subsection.112}\protected@file@percent }
-\newlabel{SubSec:ACDC}{{3.3.1}{40}{ACDC Dataset}{subsection.112}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}ACDC Dataset}{40}{subsection.111}\protected@file@percent }
+\newlabel{SubSec:ACDC}{{3.2.1}{40}{ACDC Dataset}{subsection.111}{}}
 \abx@aux@cite{0}{ACDC}
 \abx@aux@segm{0}{0}{ACDC}
 \abx@aux@cite{0}{ACDC}
 \abx@aux@segm{0}{0}{ACDC}
-\BKM@entry{id=26,dest={73756273656374696F6E2E313134},srcline={267}}{332E332E325C303430434D52785265636F6E5C30343044617461736574}
+\BKM@entry{id=25,dest={73756273656374696F6E2E313133},srcline={237}}{332E322E325C303430434D52785265636F6E5C30343044617461736574}
 \abx@aux@cite{0}{Roemer1990}
 \abx@aux@segm{0}{0}{Roemer1990}
 \abx@aux@cite{0}{SamplingStrategies}
 \abx@aux@segm{0}{0}{SamplingStrategies}
-\newlabel{fig:Image_ACDC_systolic}{{3.9a}{41}{Image of systolic phase}{figure.caption.113}{}}
-\newlabel{sub@fig:Image_ACDC_systolic}{{a}{41}{Image of systolic phase}{figure.caption.113}{}}
-\newlabel{fig:Image_ACDC_diastolic}{{3.9b}{41}{Image of diastolic phase}{figure.caption.113}{}}
-\newlabel{sub@fig:Image_ACDC_diastolic}{{b}{41}{Image of diastolic phase}{figure.caption.113}{}}
-\newlabel{fig:Segmentation_ACDC_systolic}{{3.9c}{41}{Segmentation of systolic phase}{figure.caption.113}{}}
-\newlabel{sub@fig:Segmentation_ACDC_systolic}{{c}{41}{Segmentation of systolic phase}{figure.caption.113}{}}
-\newlabel{fig:Segmentation_ACDC_diastolic}{{3.9d}{41}{Segmentation of diastolic phase}{figure.caption.113}{}}
-\newlabel{sub@fig:Segmentation_ACDC_diastolic}{{d}{41}{Segmentation of diastolic phase}{figure.caption.113}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Example images for systolic (a) and diastolic frames (b) with corresponding segmentations (c),(d) taken from the \emph  {ACDC} dataset~\blx@tocontentsinit {0}\cite {ACDC}.}}{41}{figure.caption.113}\protected@file@percent }
-\newlabel{fig:}{{3.9}{41}{Example images for systolic (a) and diastolic frames (b) with corresponding segmentations (c),(d) taken from the \emph {ACDC} dataset~\cite {ACDC}}{figure.caption.113}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}CMRxRecon Dataset}{41}{subsection.114}\protected@file@percent }
-\newlabel{SubSec:CMRxRecon}{{3.3.2}{41}{CMRxRecon Dataset}{subsection.114}{}}
+\newlabel{fig:Image_ACDC_systolic}{{3.9a}{41}{Image of systolic phase}{figure.caption.112}{}}
+\newlabel{sub@fig:Image_ACDC_systolic}{{a}{41}{Image of systolic phase}{figure.caption.112}{}}
+\newlabel{fig:Image_ACDC_diastolic}{{3.9b}{41}{Image of diastolic phase}{figure.caption.112}{}}
+\newlabel{sub@fig:Image_ACDC_diastolic}{{b}{41}{Image of diastolic phase}{figure.caption.112}{}}
+\newlabel{fig:Segmentation_ACDC_systolic}{{3.9c}{41}{Segmentation of systolic phase}{figure.caption.112}{}}
+\newlabel{sub@fig:Segmentation_ACDC_systolic}{{c}{41}{Segmentation of systolic phase}{figure.caption.112}{}}
+\newlabel{fig:Segmentation_ACDC_diastolic}{{3.9d}{41}{Segmentation of diastolic phase}{figure.caption.112}{}}
+\newlabel{sub@fig:Segmentation_ACDC_diastolic}{{d}{41}{Segmentation of diastolic phase}{figure.caption.112}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Example images for systolic (a) and diastolic frames (b) with corresponding segmentations (c),(d) taken from the \emph  {ACDC} dataset~\blx@tocontentsinit {0}\cite {ACDC}.}}{41}{figure.caption.112}\protected@file@percent }
+\newlabel{fig:}{{3.9}{41}{Example images for systolic (a) and diastolic frames (b) with corresponding segmentations (c),(d) taken from the \emph {ACDC} dataset~\cite {ACDC}}{figure.caption.112}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}CMRxRecon Dataset}{41}{subsection.113}\protected@file@percent }
+\newlabel{SubSec:CMRxRecon}{{3.2.2}{41}{CMRxRecon Dataset}{subsection.113}{}}
 \abx@aux@cite{0}{CMRxRecon}
 \abx@aux@segm{0}{0}{CMRxRecon}
 \abx@aux@cite{0}{CMRxRecon}
@@ -768,75 +795,79 @@
 \abx@aux@segm{0}{0}{CMRxRecon}
 \abx@aux@cite{0}{CMRxRecon}
 \abx@aux@segm{0}{0}{CMRxRecon}
-\BKM@entry{id=27,dest={73756273656374696F6E2E313137},srcline={317}}{332E332E335C30343053696D756C617465645C3034304D6F74696F6E}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces MRI images for three different coils from the \emph  {CMRxRecon} dataset~\blx@tocontentsinit {0}\cite {CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there. Note that the sensitivities are slightly corrupted as the coils were compressed to 10 coils for all the scans.}}{42}{figure.caption.115}\protected@file@percent }
-\newlabel{fig:Coils}{{3.10}{42}{MRI images for three different coils from the \emph {CMRxRecon} dataset~\cite {CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there. Note that the sensitivities are slightly corrupted as the coils were compressed to 10 coils for all the scans}{figure.caption.115}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Simulated Motion}{42}{subsection.117}\protected@file@percent }
-\newlabel{SubSec:SimulatedMotion}{{3.3.3}{42}{Simulated Motion}{subsection.117}{}}
+\BKM@entry{id=26,dest={73756273656374696F6E2E313136},srcline={287}}{332E322E335C30343053696D756C617465645C3034304D6F74696F6E}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces MRI images for three different coils from the \emph  {CMRxRecon} dataset~\blx@tocontentsinit {0}\cite {CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there. Note that the sensitivities are slightly corrupted as the coils were compressed to 10 coils for all the scans.}}{42}{figure.caption.114}\protected@file@percent }
+\newlabel{fig:Coils}{{3.10}{42}{MRI images for three different coils from the \emph {CMRxRecon} dataset~\cite {CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there. Note that the sensitivities are slightly corrupted as the coils were compressed to 10 coils for all the scans}{figure.caption.114}{}}
 \abx@aux@cite{0}{Oksuz2020}
 \abx@aux@segm{0}{0}{Oksuz2020}
 \abx@aux@cite{0}{LAPNet}
 \abx@aux@segm{0}{0}{LAPNet}
-\newlabel{fig:fullySampled}{{3.11a}{43}{A fully sampled k-space with low frequencies in the center and higher frequencies in the outer regions}{figure.caption.116}{}}
-\newlabel{sub@fig:fullySampled}{{a}{43}{A fully sampled k-space with low frequencies in the center and higher frequencies in the outer regions}{figure.caption.116}{}}
-\newlabel{fig:subSampled}{{3.11b}{43}{A 4x accelerated k-space. The center region remains fully sampled while higher frequencies are omitted}{figure.caption.116}{}}
-\newlabel{sub@fig:subSampled}{{b}{43}{A 4x accelerated k-space. The center region remains fully sampled while higher frequencies are omitted}{figure.caption.116}{}}
-\newlabel{fig:fullySampledImage}{{3.11c}{43}{Corresponding high quality image reconstructed from the fully sampled k-space}{figure.caption.116}{}}
-\newlabel{sub@fig:fullySampledImage}{{c}{43}{Corresponding high quality image reconstructed from the fully sampled k-space}{figure.caption.116}{}}
-\newlabel{fig:subSampledImage}{{3.11d}{43}{Corresponding image reconstructed from the subsampled k-space with blurring and aliasing artifacts}{figure.caption.116}{}}
-\newlabel{sub@fig:subSampledImage}{{d}{43}{Corresponding image reconstructed from the subsampled k-space with blurring and aliasing artifacts}{figure.caption.116}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Fully sampled and subsampled k-space data from the from the \emph  {CMRxRecon} dataset~\blx@tocontentsinit {0}\cite {CMRxRecon} with corresponding images (empty background was cropped out).}}{43}{figure.caption.116}\protected@file@percent }
-\newlabel{fig:k-space}{{3.11}{43}{Fully sampled and subsampled k-space data from the from the \emph {CMRxRecon} dataset~\cite {CMRxRecon} with corresponding images (empty background was cropped out)}{figure.caption.116}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3.1}K-space Line Swapping}{43}{subsubsection.118}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3.2}Non-Linear Lung Transformations}{43}{subsubsection.120}\protected@file@percent }
-\BKM@entry{id=28,dest={73656374696F6E2E313232},srcline={406}}{332E345C3034304578706572696D656E7473}
-\BKM@entry{id=29,dest={73756273656374696F6E2E313233},srcline={412}}{332E342E315C30343041626C6174696F6E5C303430537475646965735C303430616E645C303430506172616D657465725C3034305465737473}
-\newlabel{fig:LineSwappingOriginal}{{3.12a}{44}{Original image}{figure.caption.119}{}}
-\newlabel{sub@fig:LineSwappingOriginal}{{a}{44}{Original image}{figure.caption.119}{}}
-\newlabel{fig:LineSwapping16}{{3.12b}{44}{Line swapping $z=16$}{figure.caption.119}{}}
-\newlabel{sub@fig:LineSwapping16}{{b}{44}{Line swapping $z=16$}{figure.caption.119}{}}
-\newlabel{fig:LineSwapping32}{{3.12c}{44}{Line swapping $z=32$}{figure.caption.119}{}}
-\newlabel{sub@fig:LineSwapping32}{{c}{44}{Line swapping $z=32$}{figure.caption.119}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Examples for line swapping for $z=\{16,32\}$ with $R=4$ subsampling compared to the original fully sampled image.}}{44}{figure.caption.119}\protected@file@percent }
-\newlabel{fig:LineSwapping}{{3.12}{44}{Examples for line swapping for $z=\{16,32\}$ with $R=4$ subsampling compared to the original fully sampled image}{figure.caption.119}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Experiments}{44}{section.122}\protected@file@percent }
-\newlabel{Sec:Experiments}{{3.4}{44}{Experiments}{section.122}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Ablation Studies and Parameter Tests}{44}{subsection.123}\protected@file@percent }
-\newlabel{SubSec:ParameterTestsACDC}{{3.4.1}{44}{Ablation Studies and Parameter Tests}{subsection.123}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.1}Fourier-Net versus Fourier-Net+}{44}{subsubsection.124}\protected@file@percent }
-\newlabel{SubSubSec:Fourier-NetvsFourier-Net+}{{3.4.1.1}{44}{Fourier-Net versus Fourier-Net+}{subsubsection.124}{}}
-\newlabel{fig:LungMotion1}{{\caption@xref {fig:LungMotion1}{ on input line 381}}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\newlabel{sub@fig:LungMotion1}{{}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\newlabel{fig:LungMotion2}{{\caption@xref {fig:LungMotion2}{ on input line 387}}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\newlabel{sub@fig:LungMotion2}{{}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\newlabel{fig:LungMotion3}{{\caption@xref {fig:LungMotion3}{ on input line 393}}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\newlabel{sub@fig:LungMotion3}{{}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\newlabel{fig:LungMotion4}{{\caption@xref {fig:LungMotion4}{ on input line 399}}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\newlabel{sub@fig:LungMotion4}{{}{45}{Non-Linear Lung Transformations}{figure.caption.121}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces $L=4$ images with simulated lung motion for the same cardiac frame (background was cropped out).}}{45}{figure.caption.121}\protected@file@percent }
-\newlabel{fig:LungMotion}{{3.13}{45}{$L=4$ images with simulated lung motion for the same cardiac frame (background was cropped out)}{figure.caption.121}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.2}Starting Channel Size}{45}{subsubsection.125}\protected@file@percent }
-\newlabel{SubSubSec:StartingChannelsACDC}{{3.4.1.2}{45}{Starting Channel Size}{subsubsection.125}{}}
+\newlabel{fig:fullySampled}{{3.11a}{43}{A fully sampled k-space with low frequencies in the center and higher frequencies in the outer regions}{figure.caption.115}{}}
+\newlabel{sub@fig:fullySampled}{{a}{43}{A fully sampled k-space with low frequencies in the center and higher frequencies in the outer regions}{figure.caption.115}{}}
+\newlabel{fig:subSampled}{{3.11b}{43}{A 4x accelerated k-space. The center region remains fully sampled while higher frequencies are omitted}{figure.caption.115}{}}
+\newlabel{sub@fig:subSampled}{{b}{43}{A 4x accelerated k-space. The center region remains fully sampled while higher frequencies are omitted}{figure.caption.115}{}}
+\newlabel{fig:fullySampledImage}{{3.11c}{43}{Corresponding high quality image reconstructed from the fully sampled k-space}{figure.caption.115}{}}
+\newlabel{sub@fig:fullySampledImage}{{c}{43}{Corresponding high quality image reconstructed from the fully sampled k-space}{figure.caption.115}{}}
+\newlabel{fig:subSampledImage}{{3.11d}{43}{Corresponding image reconstructed from the subsampled k-space with blurring and aliasing artifacts}{figure.caption.115}{}}
+\newlabel{sub@fig:subSampledImage}{{d}{43}{Corresponding image reconstructed from the subsampled k-space with blurring and aliasing artifacts}{figure.caption.115}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Fully sampled and subsampled k-space data from the from the \emph  {CMRxRecon} dataset~\blx@tocontentsinit {0}\cite {CMRxRecon} with corresponding images (empty background was cropped out).}}{43}{figure.caption.115}\protected@file@percent }
+\newlabel{fig:k-space}{{3.11}{43}{Fully sampled and subsampled k-space data from the from the \emph {CMRxRecon} dataset~\cite {CMRxRecon} with corresponding images (empty background was cropped out)}{figure.caption.115}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Simulated Motion}{43}{subsection.116}\protected@file@percent }
+\newlabel{SubSec:SimulatedMotion}{{3.2.3}{43}{Simulated Motion}{subsection.116}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.1}K-space Line Swapping}{43}{subsubsection.117}\protected@file@percent }
+\BKM@entry{id=27,dest={73656374696F6E2E313231},srcline={376}}{332E335C3034304578706572696D656E7473}
+\BKM@entry{id=28,dest={73756273656374696F6E2E313232},srcline={382}}{332E332E315C30343041626C6174696F6E5C303430537475646965735C303430616E645C303430506172616D657465725C3034305465737473}
+\newlabel{fig:LineSwappingOriginal}{{3.12a}{44}{Original image}{figure.caption.118}{}}
+\newlabel{sub@fig:LineSwappingOriginal}{{a}{44}{Original image}{figure.caption.118}{}}
+\newlabel{fig:LineSwapping16}{{3.12b}{44}{Line swapping $z=16$}{figure.caption.118}{}}
+\newlabel{sub@fig:LineSwapping16}{{b}{44}{Line swapping $z=16$}{figure.caption.118}{}}
+\newlabel{fig:LineSwapping32}{{3.12c}{44}{Line swapping $z=32$}{figure.caption.118}{}}
+\newlabel{sub@fig:LineSwapping32}{{c}{44}{Line swapping $z=32$}{figure.caption.118}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Examples for line swapping for $z=\{16,32\}$ with $R=4$ subsampling compared to the original fully sampled image.}}{44}{figure.caption.118}\protected@file@percent }
+\newlabel{fig:LineSwapping}{{3.12}{44}{Examples for line swapping for $z=\{16,32\}$ with $R=4$ subsampling compared to the original fully sampled image}{figure.caption.118}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.2}Non-Linear Lung Transformations}{44}{subsubsection.119}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Experiments}{44}{section.121}\protected@file@percent }
+\newlabel{Sec:Experiments}{{3.3}{44}{Experiments}{section.121}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Ablation Studies and Parameter Tests}{44}{subsection.122}\protected@file@percent }
+\newlabel{SubSec:ParameterTestsACDC}{{3.3.1}{44}{Ablation Studies and Parameter Tests}{subsection.122}{}}
+\newlabel{fig:LungMotion1}{{\caption@xref {fig:LungMotion1}{ on input line 351}}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\newlabel{sub@fig:LungMotion1}{{}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\newlabel{fig:LungMotion2}{{\caption@xref {fig:LungMotion2}{ on input line 357}}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\newlabel{sub@fig:LungMotion2}{{}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\newlabel{fig:LungMotion3}{{\caption@xref {fig:LungMotion3}{ on input line 363}}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\newlabel{sub@fig:LungMotion3}{{}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\newlabel{fig:LungMotion4}{{\caption@xref {fig:LungMotion4}{ on input line 369}}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\newlabel{sub@fig:LungMotion4}{{}{45}{Non-Linear Lung Transformations}{figure.caption.120}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces $L=4$ images with simulated lung motion for the same cardiac frame (background was cropped out).}}{45}{figure.caption.120}\protected@file@percent }
+\newlabel{fig:LungMotion}{{3.13}{45}{$L=4$ images with simulated lung motion for the same cardiac frame (background was cropped out)}{figure.caption.120}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}Fourier-Net versus Fourier-Net+}{45}{subsubsection.123}\protected@file@percent }
+\newlabel{SubSubSec:Fourier-NetvsFourier-Net+}{{3.3.1.1}{45}{Fourier-Net versus Fourier-Net+}{subsubsection.123}{}}
 \abx@aux@cite{0}{VoxelMorphDiff}
 \abx@aux@segm{0}{0}{VoxelMorphDiff}
 \abx@aux@cite{0}{Voxelmorph}
 \abx@aux@segm{0}{0}{Voxelmorph}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.3}Fourier-Transform Crop Size}{46}{subsubsection.126}\protected@file@percent }
-\newlabel{SubSubSec:FTCropSize}{{3.4.1.3}{46}{Fourier-Transform Crop Size}{subsubsection.126}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.4}Comparison with VoxelMorph}{46}{subsubsection.127}\protected@file@percent }
-\newlabel{SubSubSec:ComparisonVoxelMorph}{{3.4.1.4}{46}{Comparison with VoxelMorph}{subsubsection.127}{}}
-\BKM@entry{id=30,dest={73756273656374696F6E2E313239},srcline={436}}{332E342E325C303430526567697374726174696F6E5C303430506572666F726D616E63655C3034306F6E5C30343053756273616D706C65645C30343044617461}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}Starting Channel Size}{46}{subsubsection.124}\protected@file@percent }
+\newlabel{SubSubSec:StartingChannelsACDC}{{3.3.1.2}{46}{Starting Channel Size}{subsubsection.124}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.3}Fourier-Transform Crop Size}{46}{subsubsection.125}\protected@file@percent }
+\newlabel{SubSubSec:FTCropSize}{{3.3.1.3}{46}{Fourier-Transform Crop Size}{subsubsection.125}{}}
+\BKM@entry{id=29,dest={73756273656374696F6E2E313238},srcline={406}}{332E332E325C303430526567697374726174696F6E5C303430506572666F726D616E63655C3034306F6E5C30343053756273616D706C65645C30343044617461}
 \abx@aux@cite{0}{NiftiReg}
 \abx@aux@segm{0}{0}{NiftiReg}
 \abx@aux@cite{0}{Voxelmorph}
 \abx@aux@segm{0}{0}{Voxelmorph}
 \abx@aux@cite{0}{LAPNet}
 \abx@aux@segm{0}{0}{LAPNet}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.5}Dense Displacement on Accelerated Data}{47}{subsubsection.128}\protected@file@percent }
-\newlabel{SubSubSec:DenseDisplacementAcc}{{3.4.1.5}{47}{Dense Displacement on Accelerated Data}{subsubsection.128}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Registration Performance on Subsampled Data}{47}{subsection.129}\protected@file@percent }
-\newlabel{SubSubSec:ComparisonSubsampling}{{3.4.2}{47}{Registration Performance on Subsampled Data}{subsection.129}{}}
-\BKM@entry{id=31,dest={73756273656374696F6E2E313330},srcline={443}}{332E342E335C3034304D6F74696F6E2D436F6D70656E73617465645C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.4}Comparison with VoxelMorph}{47}{subsubsection.126}\protected@file@percent }
+\newlabel{SubSubSec:ComparisonVoxelMorph}{{3.3.1.4}{47}{Comparison with VoxelMorph}{subsubsection.126}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.5}Dense Displacement on Accelerated Data}{47}{subsubsection.127}\protected@file@percent }
+\newlabel{SubSubSec:DenseDisplacementAcc}{{3.3.1.5}{47}{Dense Displacement on Accelerated Data}{subsubsection.127}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Registration Performance on Subsampled Data}{47}{subsection.128}\protected@file@percent }
+\newlabel{SubSubSec:ComparisonSubsampling}{{3.3.2}{47}{Registration Performance on Subsampled Data}{subsection.128}{}}
+\BKM@entry{id=30,dest={73756273656374696F6E2E313239},srcline={413}}{332E332E335C3034304D6F74696F6E2D436F6D70656E73617465645C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Motion-Compensated Reconstruction Pipeline}{48}{subsection.129}\protected@file@percent }
+\newlabel{SubSec:IntegrationMotion-CompensatedReconstructionPipeline}{{3.3.3}{48}{Motion-Compensated Reconstruction Pipeline}{subsection.129}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3.1}Domain Translation}{48}{subsubsection.130}\protected@file@percent }
+\newlabel{SubSubSec:DomainTranslation}{{3.3.3.1}{48}{Domain Translation}{subsubsection.130}{}}
 \abx@aux@cite{0}{ESPIRiT}
 \abx@aux@segm{0}{0}{ESPIRiT}
 \abx@aux@cite{0}{ESPIRiT}
@@ -845,155 +876,145 @@
 \abx@aux@segm{0}{0}{SENSE1}
 \abx@aux@cite{0}{HaarPSI}
 \abx@aux@segm{0}{0}{HaarPSI}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Motion-Compensated Reconstruction Pipeline}{48}{subsection.130}\protected@file@percent }
-\newlabel{SubSec:IntegrationMotion-CompensatedReconstructionPipeline}{{3.4.3}{48}{Motion-Compensated Reconstruction Pipeline}{subsection.130}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3.1}Domain Translation}{48}{subsubsection.131}\protected@file@percent }
-\newlabel{SubSubSec:DomainTranslation}{{3.4.3.1}{48}{Domain Translation}{subsubsection.131}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3.2}Reconstruction Performance on Motion-Corrupted Data}{48}{subsubsection.132}\protected@file@percent }
-\newlabel{SubSubSec:ReconstructionPipeline}{{3.4.3.2}{48}{Reconstruction Performance on Motion-Corrupted Data}{subsubsection.132}{}}
-\abx@aux@cite{0}{Kuestner2022}
-\abx@aux@segm{0}{0}{Kuestner2022}
-\abx@aux@cite{0}{Kuestner2022}
-\abx@aux@segm{0}{0}{Kuestner2022}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Overview of the generalized reconstruction pipeline in a) using \emph  {Fourier-Net+} as a registration network (Figure inspired by~\blx@tocontentsinit {0}\cite {Kuestner2022}). The k-space data is corrupted with synthetic motion, either through swapping $z$ random line (steps shown in b) or by via $L$ random deformation frames to simulate lung motion (shown in c)).}}{50}{figure.caption.133}\protected@file@percent }
-\newlabel{fig:GeneralReconstructionPipeline}{{3.14}{50}{Overview of the generalized reconstruction pipeline in a) using \emph {Fourier-Net+} as a registration network (Figure inspired by~\cite {Kuestner2022}). The k-space data is corrupted with synthetic motion, either through swapping $z$ random line (steps shown in b) or by via $L$ random deformation frames to simulate lung motion (shown in c))}{figure.caption.133}{}}
-\BKM@entry{id=32,dest={636861707465722E313334},srcline={5}}{345C303430526573756C7473}
-\BKM@entry{id=33,dest={73656374696F6E2E313335},srcline={8}}{342E315C303430506172616D657465725C30343054657374735C3034306F6E5C3034307468655C303430414344435C30343044617461736574}
-\BKM@entry{id=34,dest={73756273656374696F6E2E313336},srcline={11}}{342E312E315C303430466F75726965722D4E65745C3034307665727375735C303430466F75726965722D4E65742B}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{51}{chapter.134}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3.2}Reconstruction Performance on Motion-Corrupted Data}{49}{subsubsection.131}\protected@file@percent }
+\newlabel{SubSubSec:ReconstructionPipeline}{{3.3.3.2}{49}{Reconstruction Performance on Motion-Corrupted Data}{subsubsection.131}{}}
+\BKM@entry{id=31,dest={636861707465722E313332},srcline={5}}{345C303430526573756C7473}
+\BKM@entry{id=32,dest={73656374696F6E2E313333},srcline={8}}{342E315C303430506172616D657465725C30343054657374735C3034306F6E5C3034307468655C303430414344435C30343044617461736574}
+\BKM@entry{id=33,dest={73756273656374696F6E2E313334},srcline={11}}{342E312E315C303430466F75726965722D4E65745C3034307665727375735C303430466F75726965722D4E65742B}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{50}{chapter.132}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
-\newlabel{Ch:Results}{{4}{51}{Results}{chapter.134}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Parameter Tests on the ACDC Dataset}{51}{section.135}\protected@file@percent }
-\newlabel{Sec:ResultsParameterTestsACDC}{{4.1}{51}{Parameter Tests on the ACDC Dataset}{section.135}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{51}{subsection.136}\protected@file@percent }
-\newlabel{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}{{4.1.1}{51}{Fourier-Net versus Fourier-Net+}{subsection.136}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields as well as diffeomorphic transforms on the fully sampled \emph  {ACDC} test data.}}{53}{table.caption.137}\protected@file@percent }
-\newlabel{tab:Fourier-NetvsFourier-Net+ACDC}{{4.1}{53}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields as well as diffeomorphic transforms on the fully sampled \emph {ACDC} test data}{table.caption.137}{}}
-\BKM@entry{id=35,dest={73756273656374696F6E2E313338},srcline={84}}{342E312E325C3034305374617274696E675C3034304368616E6E656C5C30343053697A65}
-\BKM@entry{id=36,dest={73756273656374696F6E2E313430},srcline={127}}{342E312E335C303430466F75726965722D5472616E73666F726D5C30343043726F705C30343053697A65}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{54}{subsection.138}\protected@file@percent }
-\newlabel{SubSec:ResultsStartingChannelsACDC}{{4.1.2}{54}{Starting Channel Size}{subsection.138}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{54}{subsection.140}\protected@file@percent }
-\newlabel{SubSec:ResultsFTCropSize}{{4.1.3}{54}{Fourier-Transform Crop Size}{subsection.140}{}}
-\BKM@entry{id=37,dest={73756273656374696F6E2E313432},srcline={169}}{342E312E345C303430436F6D70617269736F6E5C303430776974685C303430566F78656C4D6F727068}
+\newlabel{Ch:Results}{{4}{50}{Results}{chapter.132}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Parameter Tests on the ACDC Dataset}{50}{section.133}\protected@file@percent }
+\newlabel{Sec:ResultsParameterTestsACDC}{{4.1}{50}{Parameter Tests on the ACDC Dataset}{section.133}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Fourier-Net versus Fourier-Net+}{50}{subsection.134}\protected@file@percent }
+\newlabel{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}{{4.1.1}{50}{Fourier-Net versus Fourier-Net+}{subsection.134}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields as well as diffeomorphic transforms on the fully sampled \emph  {ACDC} test data.}}{52}{table.caption.135}\protected@file@percent }
+\newlabel{tab:Fourier-NetvsFourier-Net+ACDC}{{4.1}{52}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields as well as diffeomorphic transforms on the fully sampled \emph {ACDC} test data}{table.caption.135}{}}
+\BKM@entry{id=34,dest={73756273656374696F6E2E313336},srcline={84}}{342E312E325C3034305374617274696E675C3034304368616E6E656C5C30343053697A65}
+\BKM@entry{id=35,dest={73756273656374696F6E2E313338},srcline={127}}{342E312E335C303430466F75726965722D5472616E73666F726D5C30343043726F705C30343053697A65}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Starting Channel Size}{53}{subsection.136}\protected@file@percent }
+\newlabel{SubSec:ResultsStartingChannelsACDC}{{4.1.2}{53}{Starting Channel Size}{subsection.136}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Fourier-Transform Crop Size}{53}{subsection.138}\protected@file@percent }
+\newlabel{SubSec:ResultsFTCropSize}{{4.1.3}{53}{Fourier-Transform Crop Size}{subsection.138}{}}
+\BKM@entry{id=36,dest={73756273656374696F6E2E313430},srcline={169}}{342E312E345C303430436F6D70617269736F6E5C303430776974685C303430566F78656C4D6F727068}
 \abx@aux@cite{0}{Voxelmorph}
 \abx@aux@segm{0}{0}{Voxelmorph}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Results for different starting channel sizes of \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the fully sampled \emph  {ACDC} test data.}}{55}{table.caption.139}\protected@file@percent }
-\newlabel{tab:StartingChannelsFourierNet+ACDC}{{4.2}{55}{Results for different starting channel sizes of \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the fully sampled \emph {ACDC} test data}{table.caption.139}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{55}{subsection.142}\protected@file@percent }
-\newlabel{SubSec:ResultsComparisonVoxelMorph}{{4.1.4}{55}{Comparison with VoxelMorph}{subsection.142}{}}
-\BKM@entry{id=38,dest={73756273656374696F6E2E313434},srcline={196}}{342E312E355C30343044656E73655C303430446973706C6163656D656E745C3034306F6E5C303430416363656C6572617465645C30343044617461}
-\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Results for four different FT crop sizes for \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} examined on the fully sampled \emph  {ACDC} test data.}}{56}{table.caption.141}\protected@file@percent }
-\newlabel{tab:FTCropSize}{{4.3}{56}{Results for four different FT crop sizes for \emph {Fourier-Net+} and \emph {4xFourier-Net+} examined on the fully sampled \emph {ACDC} test data}{table.caption.141}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Comparison of \emph  {Fourier-Net}, \emph  {Fourier-Net+}, \emph  {4xFourier-Net+} and \emph  {VoxelMorph} with similarity metrics and memory consumption on the fully sampled \emph  {ACDC} test data.}}{57}{table.caption.143}\protected@file@percent }
-\newlabel{tab:CompareVoxelMorph}{{4.4}{57}{Comparison of \emph {Fourier-Net}, \emph {Fourier-Net+}, \emph {4xFourier-Net+} and \emph {VoxelMorph} with similarity metrics and memory consumption on the fully sampled \emph {ACDC} test data}{table.caption.143}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{57}{subsection.144}\protected@file@percent }
-\newlabel{SubSec:ResultsDenseDisplacementAcc}{{4.1.5}{57}{Dense Displacement on Accelerated Data}{subsection.144}{}}
-\BKM@entry{id=39,dest={73756273656374696F6E2E313438},srcline={304}}{342E312E365C303430436F6D70617269736F6E5C3034306F6E5C30343053756273616D706C65645C30343044617461}
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=4$ \emph  {ACDC} test data.}}{58}{table.caption.145}\protected@file@percent }
-\newlabel{tab:DenseDisplacementAcc4}{{4.5}{58}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=4$ \emph {ACDC} test data}{table.caption.145}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{58}{subsection.148}\protected@file@percent }
-\newlabel{SubSec:ResultsComparisonSubsampling}{{4.1.6}{58}{Comparison on Subsampled Data}{subsection.148}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=8$ \emph  {ACDC} test data.}}{59}{table.caption.146}\protected@file@percent }
-\newlabel{tab:DenseDisplacementAcc8}{{4.6}{59}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=8$ \emph {ACDC} test data}{table.caption.146}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=10$ \emph  {ACDC} test data.}}{60}{table.caption.147}\protected@file@percent }
-\newlabel{tab:DenseDisplacementAcc10}{{4.7}{60}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=10$ \emph {ACDC} test data}{table.caption.147}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.6.1}Cardiac Labels}{60}{subsubsection.150}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces Test results for \emph  {NiftiReg} (NR), \emph  {VoxelMorph} (VM), \emph  {Fourier-Net} (F-Net), \emph  {Fourier-Net+} (F-Net+) and \emph  {4xFourier-Net+} (4xF-Net+) on the \emph  {ACDC} test data from fully sampled ($R=0$) to $R=10$ with an unaligned baseline for comparison. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}}{61}{table.caption.149}\protected@file@percent }
-\newlabel{tab:ComparisonSubsamplingACDC}{{4.8}{61}{Test results for \emph {NiftiReg} (NR), \emph {VoxelMorph} (VM), \emph {Fourier-Net} (F-Net), \emph {Fourier-Net+} (F-Net+) and \emph {4xFourier-Net+} (4xF-Net+) on the \emph {ACDC} test data from fully sampled ($R=0$) to $R=10$ with an unaligned baseline for comparison. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red}{table.caption.149}{}}
-\newlabel{fig:Boxplot_DiceScores_LV-Cavity}{{4.1a}{63}{Boxplot of the Dice scores for the left ventricle cavity}{figure.caption.151}{}}
-\newlabel{sub@fig:Boxplot_DiceScores_LV-Cavity}{{a}{63}{Boxplot of the Dice scores for the left ventricle cavity}{figure.caption.151}{}}
-\newlabel{fig:Boxplot_DiceScores_Myocardium}{{4.1b}{63}{Boxplot of the Dice scores for the myocardium}{figure.caption.151}{}}
-\newlabel{sub@fig:Boxplot_DiceScores_Myocardium}{{b}{63}{Boxplot of the Dice scores for the myocardium}{figure.caption.151}{}}
-\newlabel{fig:Boxplot_DiceScores_RV-Cavity}{{4.1c}{63}{Boxplot of the Dice scores for right ventricle cavity}{figure.caption.151}{}}
-\newlabel{sub@fig:Boxplot_DiceScores_RV-Cavity}{{c}{63}{Boxplot of the Dice scores for right ventricle cavity}{figure.caption.151}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Boxplots of Dice scores (split by label excluding the background) for all models on fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph  {ACDC} test data.}}{63}{figure.caption.151}\protected@file@percent }
-\newlabel{fig:Boxplots_DiceScores}{{4.1}{63}{Boxplots of Dice scores (split by label excluding the background) for all models on fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph {ACDC} test data}{figure.caption.151}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.6.2}Visual Examination}{64}{subsubsection.152}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Examples of warped images, segmentations and flow fields for \emph  {NiftiReg}, \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} together with the original image pair from the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph  {ACDC} test data.}}{65}{figure.caption.153}\protected@file@percent }
-\newlabel{fig:TestExamples}{{4.2}{65}{Examples of warped images, segmentations and flow fields for \emph {NiftiReg}, \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} together with the original image pair from the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph {ACDC} test data}{figure.caption.153}{}}
-\BKM@entry{id=40,dest={73656374696F6E2E313534},srcline={447}}{342E325C303430496E746567726174696F6E5C303430696E746F5C303430615C3034304D6F74696F6E2D436F6D70656E73617465645C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
-\BKM@entry{id=41,dest={73756273656374696F6E2E313535},srcline={450}}{342E322E315C303430446F6D61696E5C3034305472616E736C6174696F6E}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{66}{section.154}\protected@file@percent }
-\newlabel{Sec:ResultsIntegrationMotion-CompensatedReconstructionPipeline}{{4.2}{66}{Integration into a Motion-Compensated Reconstruction Pipeline}{section.154}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Domain Translation}{66}{subsection.155}\protected@file@percent }
-\newlabel{SubSec:ResultsDomainTranslation}{{4.2.1}{66}{Domain Translation}{subsection.155}{}}
-\BKM@entry{id=42,dest={73756273656374696F6E2E313537},srcline={484}}{342E322E325C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Results for different starting channel sizes of \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the fully sampled \emph  {ACDC} test data.}}{54}{table.caption.137}\protected@file@percent }
+\newlabel{tab:StartingChannelsFourierNet+ACDC}{{4.2}{54}{Results for different starting channel sizes of \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the fully sampled \emph {ACDC} test data}{table.caption.137}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{54}{subsection.140}\protected@file@percent }
+\newlabel{SubSec:ResultsComparisonVoxelMorph}{{4.1.4}{54}{Comparison with VoxelMorph}{subsection.140}{}}
+\BKM@entry{id=37,dest={73756273656374696F6E2E313432},srcline={196}}{342E312E355C30343044656E73655C303430446973706C6163656D656E745C3034306F6E5C303430416363656C6572617465645C30343044617461}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Results for four different FT crop sizes for \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} examined on the fully sampled \emph  {ACDC} test data.}}{55}{table.caption.139}\protected@file@percent }
+\newlabel{tab:FTCropSize}{{4.3}{55}{Results for four different FT crop sizes for \emph {Fourier-Net+} and \emph {4xFourier-Net+} examined on the fully sampled \emph {ACDC} test data}{table.caption.139}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Comparison of \emph  {Fourier-Net}, \emph  {Fourier-Net+}, \emph  {4xFourier-Net+} and \emph  {VoxelMorph} with similarity metrics and memory consumption on the fully sampled \emph  {ACDC} test data.}}{56}{table.caption.141}\protected@file@percent }
+\newlabel{tab:CompareVoxelMorph}{{4.4}{56}{Comparison of \emph {Fourier-Net}, \emph {Fourier-Net+}, \emph {4xFourier-Net+} and \emph {VoxelMorph} with similarity metrics and memory consumption on the fully sampled \emph {ACDC} test data}{table.caption.141}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{56}{subsection.142}\protected@file@percent }
+\newlabel{SubSec:ResultsDenseDisplacementAcc}{{4.1.5}{56}{Dense Displacement on Accelerated Data}{subsection.142}{}}
+\BKM@entry{id=38,dest={73756273656374696F6E2E313436},srcline={304}}{342E312E365C303430436F6D70617269736F6E5C3034306F6E5C30343053756273616D706C65645C30343044617461}
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=4$ \emph  {ACDC} test data.}}{57}{table.caption.143}\protected@file@percent }
+\newlabel{tab:DenseDisplacementAcc4}{{4.5}{57}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=4$ \emph {ACDC} test data}{table.caption.143}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}Comparison on Subsampled Data}{57}{subsection.146}\protected@file@percent }
+\newlabel{SubSec:ResultsComparisonSubsampling}{{4.1.6}{57}{Comparison on Subsampled Data}{subsection.146}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=8$ \emph  {ACDC} test data.}}{58}{table.caption.144}\protected@file@percent }
+\newlabel{tab:DenseDisplacementAcc8}{{4.6}{58}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=8$ \emph {ACDC} test data}{table.caption.144}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=10$ \emph  {ACDC} test data.}}{59}{table.caption.145}\protected@file@percent }
+\newlabel{tab:DenseDisplacementAcc10}{{4.7}{59}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} with both dense and band-limited displacement fields on the $R=10$ \emph {ACDC} test data}{table.caption.145}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.6.1}Cardiac Labels}{59}{subsubsection.148}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces Test results for \emph  {NiftiReg} (NR), \emph  {VoxelMorph} (VM), \emph  {Fourier-Net} (F-Net), \emph  {Fourier-Net+} (F-Net+) and \emph  {4xFourier-Net+} (4xF-Net+) on the \emph  {ACDC} test data from fully sampled ($R=0$) to $R=10$ with an unaligned baseline for comparison. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}}{60}{table.caption.147}\protected@file@percent }
+\newlabel{tab:ComparisonSubsamplingACDC}{{4.8}{60}{Test results for \emph {NiftiReg} (NR), \emph {VoxelMorph} (VM), \emph {Fourier-Net} (F-Net), \emph {Fourier-Net+} (F-Net+) and \emph {4xFourier-Net+} (4xF-Net+) on the \emph {ACDC} test data from fully sampled ($R=0$) to $R=10$ with an unaligned baseline for comparison. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red}{table.caption.147}{}}
+\newlabel{fig:Boxplot_DiceScores_LV-Cavity}{{4.1a}{62}{Boxplot of the Dice scores for the left ventricle cavity}{figure.caption.149}{}}
+\newlabel{sub@fig:Boxplot_DiceScores_LV-Cavity}{{a}{62}{Boxplot of the Dice scores for the left ventricle cavity}{figure.caption.149}{}}
+\newlabel{fig:Boxplot_DiceScores_Myocardium}{{4.1b}{62}{Boxplot of the Dice scores for the myocardium}{figure.caption.149}{}}
+\newlabel{sub@fig:Boxplot_DiceScores_Myocardium}{{b}{62}{Boxplot of the Dice scores for the myocardium}{figure.caption.149}{}}
+\newlabel{fig:Boxplot_DiceScores_RV-Cavity}{{4.1c}{62}{Boxplot of the Dice scores for right ventricle cavity}{figure.caption.149}{}}
+\newlabel{sub@fig:Boxplot_DiceScores_RV-Cavity}{{c}{62}{Boxplot of the Dice scores for right ventricle cavity}{figure.caption.149}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Boxplots of Dice scores (split by label excluding the background) for all models on fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph  {ACDC} test data.}}{62}{figure.caption.149}\protected@file@percent }
+\newlabel{fig:Boxplots_DiceScores}{{4.1}{62}{Boxplots of Dice scores (split by label excluding the background) for all models on fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph {ACDC} test data}{figure.caption.149}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.6.2}Visual Examination}{63}{subsubsection.150}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Examples of warped images, segmentations and flow fields for \emph  {NiftiReg}, \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} together with the original image pair from the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph  {ACDC} test data.}}{64}{figure.caption.151}\protected@file@percent }
+\newlabel{fig:TestExamples}{{4.2}{64}{Examples of warped images, segmentations and flow fields for \emph {NiftiReg}, \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} together with the original image pair from the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph {ACDC} test data}{figure.caption.151}{}}
+\BKM@entry{id=39,dest={73656374696F6E2E313532},srcline={447}}{342E325C303430496E746567726174696F6E5C303430696E746F5C303430615C3034304D6F74696F6E2D436F6D70656E73617465645C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
+\BKM@entry{id=40,dest={73756273656374696F6E2E313533},srcline={450}}{342E322E315C303430446F6D61696E5C3034305472616E736C6174696F6E}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Integration into a Motion-Compensated Reconstruction Pipeline}{65}{section.152}\protected@file@percent }
+\newlabel{Sec:ResultsIntegrationMotion-CompensatedReconstructionPipeline}{{4.2}{65}{Integration into a Motion-Compensated Reconstruction Pipeline}{section.152}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Domain Translation}{65}{subsection.153}\protected@file@percent }
+\newlabel{SubSec:ResultsDomainTranslation}{{4.2.1}{65}{Domain Translation}{subsection.153}{}}
+\BKM@entry{id=41,dest={73756273656374696F6E2E313535},srcline={484}}{342E322E325C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
 \abx@aux@cite{0}{HaarPSI}
 \abx@aux@segm{0}{0}{HaarPSI}
 \abx@aux@cite{0}{Oksuz2020}
 \abx@aux@segm{0}{0}{Oksuz2020}
-\@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} trained on the $R=4$ \emph  {ACDC} and \emph  {CMRxRecon} data and tested on the $R=4$ \emph  {CMRxRecon} test data.}}{67}{table.caption.156}\protected@file@percent }
-\newlabel{tab:DomainTranslation_ACDC_CMRxRecon}{{4.9}{67}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} trained on the $R=4$ \emph {ACDC} and \emph {CMRxRecon} data and tested on the $R=4$ \emph {CMRxRecon} test data}{table.caption.156}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{67}{subsection.157}\protected@file@percent }
-\newlabel{SubSec:ResultsReconstructionPipeline}{{4.2.2}{67}{Reconstruction Pipeline}{subsection.157}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.1}K-Space Line Swapping}{67}{subsubsection.158}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces Reconstruction results \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the \emph  {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}}{69}{table.caption.159}\protected@file@percent }
-\newlabel{tab:ComparisonReconstructionCMRxReconLineSwapping}{{4.10}{69}{Reconstruction results \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the \emph {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red}{table.caption.159}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.2}Simulated Lung Movement}{69}{subsubsection.160}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.11}{\ignorespaces Reconstruction results \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the \emph  {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motion-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}}{70}{table.caption.161}\protected@file@percent }
-\newlabel{tab:ComparisonReconstructionCMRxReconLungMovement}{{4.11}{70}{Reconstruction results \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the \emph {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motion-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red}{table.caption.161}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.3}Visual Examination}{70}{subsubsection.162}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Test Examples for the results of the reconstruction pipeline from \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the \emph  {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$.}}{72}{figure.caption.163}\protected@file@percent }
-\newlabel{fig:ResultsReconstruction}{{4.3}{72}{Test Examples for the results of the reconstruction pipeline from \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the \emph {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$}{figure.caption.163}{}}
-\BKM@entry{id=43,dest={636861707465722E313634},srcline={5}}{355C30343044697363757373696F6E}
-\BKM@entry{id=44,dest={73656374696F6E2E313635},srcline={8}}{352E315C303430506172616D657465725C30343054657374735C3034306F6E5C3034307468655C303430414344435C30343044617461736574}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{73}{chapter.164}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces Results for \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} trained on the $R=4$ \emph  {ACDC} and \emph  {CMRxRecon} data and tested on the $R=4$ \emph  {CMRxRecon} test data.}}{66}{table.caption.154}\protected@file@percent }
+\newlabel{tab:DomainTranslation_ACDC_CMRxRecon}{{4.9}{66}{Results for \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} trained on the $R=4$ \emph {ACDC} and \emph {CMRxRecon} data and tested on the $R=4$ \emph {CMRxRecon} test data}{table.caption.154}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Reconstruction Pipeline}{66}{subsection.155}\protected@file@percent }
+\newlabel{SubSec:ResultsReconstructionPipeline}{{4.2.2}{66}{Reconstruction Pipeline}{subsection.155}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.1}K-Space Line Swapping}{66}{subsubsection.156}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces Reconstruction results \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the \emph  {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}}{68}{table.caption.157}\protected@file@percent }
+\newlabel{tab:ComparisonReconstructionCMRxReconLineSwapping}{{4.10}{68}{Reconstruction results \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the \emph {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red}{table.caption.157}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.2}Simulated Lung Movement}{68}{subsubsection.158}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.11}{\ignorespaces Reconstruction results \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the \emph  {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motion-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}}{69}{table.caption.159}\protected@file@percent }
+\newlabel{tab:ComparisonReconstructionCMRxReconLungMovement}{{4.11}{69}{Reconstruction results \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the \emph {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motion-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red}{table.caption.159}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.3}Visual Examination}{69}{subsubsection.160}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Test Examples for the results of the reconstruction pipeline from \emph  {VoxelMorph}, \emph  {Fourier-Net}, \emph  {Fourier-Net+} and \emph  {4xFourier-Net+} on the \emph  {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$.}}{71}{figure.caption.161}\protected@file@percent }
+\newlabel{fig:ResultsReconstruction}{{4.3}{71}{Test Examples for the results of the reconstruction pipeline from \emph {VoxelMorph}, \emph {Fourier-Net}, \emph {Fourier-Net+} and \emph {4xFourier-Net+} on the \emph {CMRxRecon} test data for $R=4$, $R=8$ and $R=10$}{figure.caption.161}{}}
+\BKM@entry{id=42,dest={636861707465722E313632},srcline={5}}{355C30343044697363757373696F6E}
+\BKM@entry{id=43,dest={73656374696F6E2E313633},srcline={8}}{352E315C303430506172616D657465725C30343054657374735C3034306F6E5C3034307468655C303430414344435C30343044617461736574}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{72}{chapter.162}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
-\newlabel{Ch:Discussion}{{5}{73}{Discussion}{chapter.164}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{73}{section.165}\protected@file@percent }
-\newlabel{Sec:DiscussionParameterTestsACDC}{{5.1}{73}{Parameter Tests on the ACDC Dataset}{section.165}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.1}Fourier-Net versus Fourier-Net+}{73}{subsubsection.166}\protected@file@percent }
-\newlabel{SubSubSec:DiscussionFourier-NetvsFourier-Net+ACDC}{{5.1.0.1}{73}{Fourier-Net versus Fourier-Net+}{subsubsection.166}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.2}Starting Channel Size}{74}{subsubsection.167}\protected@file@percent }
-\newlabel{SubSubSec:DiscussionStartingChannelsACDC}{{5.1.0.2}{74}{Starting Channel Size}{subsubsection.167}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.3}Fourier-Transform Crop Size}{74}{subsubsection.168}\protected@file@percent }
-\newlabel{SubSubSec:DiscussionFTCropSize}{{5.1.0.3}{74}{Fourier-Transform Crop Size}{subsubsection.168}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.4}Comparison with VoxelMorph}{75}{subsubsection.169}\protected@file@percent }
-\newlabel{SubSubSec:DiscussionComparisonVoxelMorph}{{5.1.0.4}{75}{Comparison with VoxelMorph}{subsubsection.169}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.5}Dense Displacements}{75}{subsubsection.170}\protected@file@percent }
-\newlabel{SubSubSec:DiscussionDenseDisplacements}{{5.1.0.5}{75}{Dense Displacements}{subsubsection.170}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.6}Comparison on Subsampled Data}{76}{subsubsection.171}\protected@file@percent }
-\newlabel{SubSubSec:DiscussionComparisonSubsampling}{{5.1.0.6}{76}{Comparison on Subsampled Data}{subsubsection.171}{}}
-\BKM@entry{id=45,dest={73656374696F6E2E313732},srcline={43}}{352E325C303430496E746567726174696F6E5C303430696E746F5C303430615C3034304D6F74696F6E2D436F6D70656E73617465645C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
-\BKM@entry{id=46,dest={73756273656374696F6E2E313733},srcline={46}}{352E322E315C303430446F6D61696E5C3034305472616E736C6174696F6E}
-\BKM@entry{id=47,dest={73756273656374696F6E2E313734},srcline={49}}{352E322E325C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{77}{section.172}\protected@file@percent }
-\newlabel{Sec:DiscussionIntegrationMotion-CompensatedReconstructionPipeline}{{5.2}{77}{Integration into a Motion-Compensated Reconstruction Pipeline}{section.172}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{77}{subsection.173}\protected@file@percent }
-\newlabel{SubSec:DiscussionDomainTranslation}{{5.2.1}{77}{Domain Translation}{subsection.173}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{77}{subsection.174}\protected@file@percent }
-\newlabel{SubSec:DiscussionReconstructionPipeline}{{5.2.2}{77}{Reconstruction Pipeline}{subsection.174}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.1}K-Space Line Swapping}{77}{subsubsection.175}\protected@file@percent }
-\BKM@entry{id=48,dest={73656374696F6E2E313738},srcline={61}}{352E335C303430456666696369656E63795C303430616E645C303430506572666F726D616E63655C30343054726164652D6F666673}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.2}Simulated Lung Movement}{78}{subsubsection.176}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.3}Visual Examination}{78}{subsubsection.177}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Efficiency and Performance Trade-offs}{78}{section.178}\protected@file@percent }
-\newlabel{Sec:EfficiencyPerformanceTrade-offs}{{5.3}{78}{Efficiency and Performance Trade-offs}{section.178}{}}
-\BKM@entry{id=49,dest={73656374696F6E2E313739},srcline={66}}{352E345C3034304C696D69746174696F6E735C303430616E645C3034304F75746C6F6F6B}
+\newlabel{Ch:Discussion}{{5}{72}{Discussion}{chapter.162}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Parameter Tests on the ACDC Dataset}{72}{section.163}\protected@file@percent }
+\newlabel{Sec:DiscussionParameterTestsACDC}{{5.1}{72}{Parameter Tests on the ACDC Dataset}{section.163}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.1}Fourier-Net versus Fourier-Net+}{72}{subsubsection.164}\protected@file@percent }
+\newlabel{SubSubSec:DiscussionFourier-NetvsFourier-Net+ACDC}{{5.1.0.1}{72}{Fourier-Net versus Fourier-Net+}{subsubsection.164}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.2}Starting Channel Size}{73}{subsubsection.165}\protected@file@percent }
+\newlabel{SubSubSec:DiscussionStartingChannelsACDC}{{5.1.0.2}{73}{Starting Channel Size}{subsubsection.165}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.3}Fourier-Transform Crop Size}{73}{subsubsection.166}\protected@file@percent }
+\newlabel{SubSubSec:DiscussionFTCropSize}{{5.1.0.3}{73}{Fourier-Transform Crop Size}{subsubsection.166}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.4}Comparison with VoxelMorph}{74}{subsubsection.167}\protected@file@percent }
+\newlabel{SubSubSec:DiscussionComparisonVoxelMorph}{{5.1.0.4}{74}{Comparison with VoxelMorph}{subsubsection.167}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.5}Dense Displacements}{74}{subsubsection.168}\protected@file@percent }
+\newlabel{SubSubSec:DiscussionDenseDisplacements}{{5.1.0.5}{74}{Dense Displacements}{subsubsection.168}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.0.6}Comparison on Subsampled Data}{75}{subsubsection.169}\protected@file@percent }
+\newlabel{SubSubSec:DiscussionComparisonSubsampling}{{5.1.0.6}{75}{Comparison on Subsampled Data}{subsubsection.169}{}}
+\BKM@entry{id=44,dest={73656374696F6E2E313730},srcline={43}}{352E325C303430496E746567726174696F6E5C303430696E746F5C303430615C3034304D6F74696F6E2D436F6D70656E73617465645C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
+\BKM@entry{id=45,dest={73756273656374696F6E2E313731},srcline={46}}{352E322E315C303430446F6D61696E5C3034305472616E736C6174696F6E}
+\BKM@entry{id=46,dest={73756273656374696F6E2E313732},srcline={49}}{352E322E325C3034305265636F6E737472756374696F6E5C303430506970656C696E65}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Integration into a Motion-Compensated Reconstruction Pipeline}{76}{section.170}\protected@file@percent }
+\newlabel{Sec:DiscussionIntegrationMotion-CompensatedReconstructionPipeline}{{5.2}{76}{Integration into a Motion-Compensated Reconstruction Pipeline}{section.170}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Domain Translation}{76}{subsection.171}\protected@file@percent }
+\newlabel{SubSec:DiscussionDomainTranslation}{{5.2.1}{76}{Domain Translation}{subsection.171}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Reconstruction Pipeline}{76}{subsection.172}\protected@file@percent }
+\newlabel{SubSec:DiscussionReconstructionPipeline}{{5.2.2}{76}{Reconstruction Pipeline}{subsection.172}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.1}K-Space Line Swapping}{76}{subsubsection.173}\protected@file@percent }
+\BKM@entry{id=47,dest={73656374696F6E2E313736},srcline={61}}{352E335C303430456666696369656E63795C303430616E645C303430506572666F726D616E63655C30343054726164652D6F666673}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.2}Simulated Lung Movement}{77}{subsubsection.174}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.3}Visual Examination}{77}{subsubsection.175}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Efficiency and Performance Trade-offs}{77}{section.176}\protected@file@percent }
+\newlabel{Sec:EfficiencyPerformanceTrade-offs}{{5.3}{77}{Efficiency and Performance Trade-offs}{section.176}{}}
+\BKM@entry{id=48,dest={73656374696F6E2E313737},srcline={66}}{352E345C3034304C696D69746174696F6E735C303430616E645C3034304F75746C6F6F6B}
 \abx@aux@cite{0}{LAPNet}
 \abx@aux@segm{0}{0}{LAPNet}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Limitations and Outlook}{79}{section.179}\protected@file@percent }
-\newlabel{Sec:LimitationsOutlook}{{5.4}{79}{Limitations and Outlook}{section.179}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.0.1}Extending the Scope of the Experiments and Network Training}{79}{subsubsection.180}\protected@file@percent }
-\newlabel{SubSubSec:ExtendingScopeExperimentsNetworkTraining}{{5.4.0.1}{79}{Extending the Scope of the Experiments and Network Training}{subsubsection.180}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.0.2}Challenges of Evaluation}{80}{subsubsection.181}\protected@file@percent }
-\newlabel{SubSubSec:ChallengesEvaluation}{{5.4.0.2}{80}{Challenges of Evaluation}{subsubsection.181}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.0.3}Future Work}{80}{subsubsection.182}\protected@file@percent }
-\newlabel{SubSubSec:FutureWork}{{5.4.0.3}{80}{Future Work}{subsubsection.182}{}}
-\BKM@entry{id=50,dest={636861707465722E313833},srcline={5}}{365C303430436F6E636C7573696F6E}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{81}{chapter.183}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Limitations and Outlook}{78}{section.177}\protected@file@percent }
+\newlabel{Sec:LimitationsOutlook}{{5.4}{78}{Limitations and Outlook}{section.177}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.0.1}Extending the Scope of the Experiments and Network Training}{78}{subsubsection.178}\protected@file@percent }
+\newlabel{SubSubSec:ExtendingScopeExperimentsNetworkTraining}{{5.4.0.1}{78}{Extending the Scope of the Experiments and Network Training}{subsubsection.178}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.0.2}Challenges of Evaluation}{79}{subsubsection.179}\protected@file@percent }
+\newlabel{SubSubSec:ChallengesEvaluation}{{5.4.0.2}{79}{Challenges of Evaluation}{subsubsection.179}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.0.3}Future Work}{79}{subsubsection.180}\protected@file@percent }
+\newlabel{SubSubSec:FutureWork}{{5.4.0.3}{79}{Future Work}{subsubsection.180}{}}
+\BKM@entry{id=49,dest={636861707465722E313831},srcline={5}}{365C303430436F6E636C7573696F6E}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{80}{chapter.181}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
-\newlabel{Ch:Conclusion}{{6}{81}{Conclusion}{chapter.183}{}}
+\newlabel{Ch:Conclusion}{{6}{80}{Conclusion}{chapter.181}{}}
 \abx@aux@read@bbl@mdfivesum{17068F452BBF6B45FB80544824B6EB57}
 \abx@aux@defaultrefcontext{0}{Brown2014}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Serai2021}{none/global//global/global}
@@ -1088,4 +1109,4 @@
 \global\@namedef{scr@dte@section@lastmaxnumwidth}{19.71361pt}
 \global\@namedef{scr@dte@subsection@lastmaxnumwidth}{28.8524pt}
 \@writefile{toc}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
-\gdef \@abspage@last{93}
+\gdef \@abspage@last{92}

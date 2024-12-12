@@ -9,7 +9,7 @@ In this chapter, the materials and methods at the core of this thesis are discus
 As a starting point, \emph{Fourier-Net}~\cite{Fourier-Net} and its successor \emph{Fourier-Net+}~\cite{Fourier-Net+} were used. These networks, which are explained in the following pages, enable fast and accurate registration while needing less resources compared to similar approaches. These attributes are very beneficial for a potential application like motion correction because the current networks, e.g. \emph{LAPNet}, are usually supervised and require large computational resources.
 
 \subsection{Problem Formulation} \label{SubSec:ProblemFormulation}
-
+While there are many different traditional iterative algorithms that are proven to work~\cite{DARTEL,Vercauteren2009,NiftiReg,LAP,FLASH} these all suffer from heavy computational requirements and long registration times~\cite{Chen2023} as discussed previously in section~\ref{Sec:RelatedWork}. While neural networks like~\cite{LAPNet,DeepFlash} could be trained in a supervised manner using these conventional algorithms as a basis to alleviate the time problems~\cite{Chen2020}, these were still very memory intensive as well as being unwieldy to train~\cite{Zou2022}. While unsupervised networks like~\cite{Voxelmorph,IC-Net,SYM-Net} could circumvent the latter problem, memory efficiency remained a difficult problem. All of these networks and algorithms predict a dense displacement, some even use complex values which essentially kills their performance. However, a new type of architecture has recently been proposed~\cite{Fourier-Net,Fourier-Net+} that is far more efficient due to predicting only a band-limited displacement, without the need for complex values, while promising similar performance. These networks will be discussed in the next sections.
 
 \subsection{Fourier-Net}	\label{SubSec:Fourier-Net}
 \emph{Fourier-Net} is a new unsupervised approach that aims to learn a low-dimensional representation of the displacement field in a band-limited Fourier domain instead of the full field in the spatial domain. This band-limited representation is then decoded by a model-driven decoder to the dense, full-resolution displacement field in the spatial domain. The zero-padding is necessary to keep the spatial resolution in image space without adding any further information. This band-limiting allows for fewer parameters and computational operations, resulting in faster inference speeds~\cite{Fourier-Net}. The architecture is based on the U-Net, like many deep registration approaches, but replaces the expanding path with a parameter-free model-driven decoder o save memory as mentioned before. The encoder of \emph{Fourier-Net} consists of a CNN, which takes two images (fixed and moving) as inputs. The output is a displacement field that is then converted from the spatial domain into the Fourier domain via an discrete Fourier transformation (DFT). From there, this band-limiting representation 
@@ -140,32 +140,6 @@ When using the squaring and scaling layers, thus making the deformation of the m
 	\mathcal{L}_{2} (v(\Theta)) = \frac{1}{N} \sum^{N}_{i=1} || \nabla v_i(\Theta) ||^2_2  \bigg .
 \end{equation}
 
-% Should go into Chapter Experiments, but is unimportant anyway...
-%\subsection{Training on OASIS}
-%We first trained \emph{Fourier-Net} and \emph{Fourier-Net+} with the \emph{OASIS} dataset, as it was used in the original publication. \emph{Fourier-Net}/\emph{Fourier-Net+} can work with both 2D and 3D inputs, however the latter are harder to visualize. As the \emph{OASIS} dataset provides 3D volumes with annotations, 2D image data can be obtained by slicing the 3D volumes (see Figure~\ref{fig:OASIS} with matching labels for Dice-Score calculation. Thus we can easily visualize the training success of the 2D network by looking at the difference between images before and after registration in addition to the Dice-Score, which can also be calculated for 3D data. Examples for this can be seen in Figure~\ref{fig:DifferencesTrainingProgress} with two examples from different stages of the training process. Despite the example in Figure~\ref{fig:Training29600it} being the far harder example to align the network performs better than before (see Figure~\ref{fig:Training800it}) due to the training progress.
-%
-%\begin{figure}[h] %tpb
-%	\centering
-%	\graphicspath{{images/}{\main/images/}}
-%	\begin{subfigure}{0.45\textwidth}
-%		\centering
-%    		\includegraphics[width=\textwidth]{results1.png}
-%    		\caption{Training progress after 800 iterations.}
-%    		\label{fig:Training800it}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}{0.45\textwidth}
-%		\centering
-%    		\includegraphics[width=\textwidth]{results2.png}
-%    		\caption{Training progress after 29600 iterations.}
-%    		\label{fig:Training29600it}
-%	\end{subfigure}
-%	\caption{Differences between moving and fixed images before and after registration.}
-%	\label{fig:DifferencesTrainingProgress}
-%\end{figure}
-%
-%\subsection{Training on CMRxRecon}
-%For the further experiments we used the \emph{CMRxRecon} dataset. We reconstructed 2D images and trained the network similar to the \emph{OASIS} dataset.
 
 \subsection{Fourier Net+} \label{SubSec:Fourier-Net+}
 \emph{Fourier-Net+}, as the name suggests, is an extension of Fourier-Net which takes the band-limited spatial representation of the images as input, instead of their original full-resolution counterparts. This leads to further reduction in the number of convolutional layers in the contracting path of the network, resulting in a decrease of parameters, memory usage, and computational operations. This makes \emph{Fourier-Net+} even more efficient than its predecessor~\cite{Fourier-Net+}.\\
@@ -217,10 +191,6 @@ Thus, the output displacement field of the $K$-th cascade $\phi^{(K)}$ is the fi
 	\caption{Cascaded version of \emph{Fourier-Net+} taken from~\cite{Fourier-Net+}. Multiple instances of \emph{Fourier-Net+} can be cascaded with independent weights for better performance as the network itself is very memory efficient.}
 	\label{fig:Fourier-Net+Cascaded}
 \end{figure}
-
-
-\section{Motion-Compensated Reconstruction} \label{Sec:Motion-CompensatedReconstruction}
-Stuff...
 
 
 \section{Datasets}	\label{Sec:Datasets}
@@ -452,28 +422,4 @@ As discussed in section~\ref{SubSec:Motion-CompensatedReconstruction}, neural ne
 Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides the needed k-space data (both fully sampled and accelerated) as well as the subsampling masks required for reconstruction. However, the cardiac scans only show a small amount of movement between frames due to cardiac movement no larger movement of e.g. the lung. Thus, the input images were further motion-corrupted as the cardiac motion present was deemed not severe enough. This process is detailed in section~\ref{SubSec:SimulatedMotion}. An overview of this augmentation incorporated into the reconstruction pipeline can be seen in Figure~\ref{fig:GeneralReconstructionPipeline}.\\
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an iFT for frame-to-frame registration using the optimal settings obtained in section~\ref{SubSec:ParameterTestsACDC} (MSE-loss, 16 channels, $48 \times 48$ FT crop, learning rate 0.0001, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:NetworkTrainingAndTesting}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ResultsReconstructionPipeline}.
 
-
-% general reconstruction pipeline with synthetic motion-corrupted 
-\begin{figure}[h] %tpb
-	\centering
-	\includegraphics[width=\linewidth]{./Images/GeneralReconstructionPipeline.pdf} 
-	\caption{Overview of the generalized reconstruction pipeline in a) using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}). The k-space data is corrupted with synthetic motion, either through swapping $z$ random line (steps shown in b) or by via $L$ random deformation frames to simulate lung motion (shown in c)).}
-	\label{fig:GeneralReconstructionPipeline}
-\end{figure}
-
-%% pipeline for line swapping
-%\begin{figure}[h] %tpb
-%	\centering
-%	\includegraphics[width=\linewidth]{./Images/ReconstructionPipelineLineSwapping.pdf} 
-%	\caption{Overview of the reconstruction pipeline with k-space line swapping to simulate motion using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}).}
-%	\label{fig:ReconstructionPipelineLineSwapping}
-%\end{figure}
-%
-%% pipeline for lung motion
-%\begin{figure}[h] %tpb
-%	\centering
-%	\includegraphics[width=\linewidth]{./Images/ReconstructionPipelineLungMotion.pdf} 
-%	\caption{Overview of the reconstruction pipeline with $L$ simulated lung motion frames using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}).}
-%	\label{fig:ReconstructionPipelineLungMotion}
-%\end{figure}
 
