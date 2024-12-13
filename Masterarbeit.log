@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  13 DEC 2024 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  13 DEC 2024 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,7 +1277,7 @@ chapter 1.
 
 ] [2]) (chapters/Fundamentals.tex [3] [4]
 chapter 2.
-<./Images/MRI-Schematic.png, id=285, 639.13782pt x 345.54094pt>
+<./Images/MRI-Schematic.png, id=283, 639.13782pt x 345.54094pt>
 File: ./Images/MRI-Schematic.png Graphic file (type png)
 <use ./Images/MRI-Schematic.png>
 Package pdftex.def Info: ./Images/MRI-Schematic.png  used on input line 13.
@@ -1294,7 +1294,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--31
 
 
 ] [6 <./Images/MRI-Schematic.png>] [7]
-<./Images/CineWorkFlow.pdf, id=339, 415.41025pt x 159.33543pt>
+<./Images/CineWorkFlow.pdf, id=337, 415.41025pt x 159.33543pt>
 File: ./Images/CineWorkFlow.pdf Graphic file (type pdf)
 <use ./Images/CineWorkFlow.pdf>
 Package pdftex.def Info: ./Images/CineWorkFlow.pdf  used on input line 46.
@@ -1304,31 +1304,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
-<./Images/GradientEcho.pdf, id=363, 882.03545pt x 506.45905pt>
+<./Images/GradientEcho.pdf, id=361, 882.03545pt x 506.45905pt>
 File: ./Images/GradientEcho.pdf Graphic file (type pdf)
 <use ./Images/GradientEcho.pdf>
 Package pdftex.def Info: ./Images/GradientEcho.pdf  used on input line 60.
 (pdftex.def)             Requested size: 441.01773pt x 253.2289pt.
 [9 <./Images/GradientEcho.pdf>]
-<./Images/SpinEcho.pdf, id=384, 853.58266pt x 358.50471pt>
+<./Images/SpinEcho.pdf, id=382, 853.58266pt x 358.50471pt>
 File: ./Images/SpinEcho.pdf Graphic file (type pdf)
 <use ./Images/SpinEcho.pdf>
 Package pdftex.def Info: ./Images/SpinEcho.pdf  used on input line 71.
 (pdftex.def)             Requested size: 441.01773pt x 185.23099pt.
  [10 <./Images/SpinEcho.pdf>] [11]
-<./Images/2D_MRI_Measurement.png, id=416, 661.9689pt x 350.4184pt>
+<./Images/2D_MRI_Measurement.png, id=414, 661.9689pt x 350.4184pt>
 File: ./Images/2D_MRI_Measurement.png Graphic file (type png)
 <use ./Images/2D_MRI_Measurement.png>
 Package pdftex.def Info: ./Images/2D_MRI_Measurement.png  used on input line 11
 9.
 (pdftex.def)             Requested size: 441.01773pt x 233.46375pt.
-<./Images/ConstantGradient.pdf, id=421, 165.61874pt x 221.32687pt>
+<./Images/ConstantGradient.pdf, id=419, 165.61874pt x 221.32687pt>
 File: ./Images/ConstantGradient.pdf Graphic file (type pdf)
 <use ./Images/ConstantGradient.pdf>
 Package pdftex.def Info: ./Images/ConstantGradient.pdf  used on input line 127.
 
 (pdftex.def)             Requested size: 196.25612pt x 262.28127pt.
-<./Images/RefocusingPulse.pdf, id=422, 165.61874pt x 221.32687pt>
+<./Images/RefocusingPulse.pdf, id=420, 165.61874pt x 221.32687pt>
 File: ./Images/RefocusingPulse.pdf Graphic file (type pdf)
 <use ./Images/RefocusingPulse.pdf>
 Package pdftex.def Info: ./Images/RefocusingPulse.pdf  used on input line 133.
@@ -1343,7 +1343,7 @@ mages/RefocusingPulse.pdf
 pdfTeX warning: pdflatex (file ./Images/RefocusingPulse.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >] [14]
-<images/ExamplesSubsampling.png, id=485, 787.44188pt x 331.2375pt>
+<images/ExamplesSubsampling.png, id=483, 787.44188pt x 331.2375pt>
 File: images/ExamplesSubsampling.png Graphic file (type png)
 <use images/ExamplesSubsampling.png>
 Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 209
@@ -1351,19 +1351,19 @@ Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 209
 (pdftex.def)             Requested size: 441.01773pt x 185.51195pt.
  [15 <./images/ExamplesSubsampling.png>] [16] [17] [18] [19] [20]
 [21] [22]
-<images/U-NetArchitecture.png, id=630, 677.53125pt x 463.7325pt>
+<images/U-NetArchitecture.png, id=628, 677.53125pt x 463.7325pt>
 File: images/U-NetArchitecture.png Graphic file (type png)
 <use images/U-NetArchitecture.png>
 Package pdftex.def Info: images/U-NetArchitecture.png  used on input line 383.
 (pdftex.def)             Requested size: 330.76329pt x 226.39594pt.
  [23 <./images/U-NetArchitecture.png>] [24]
-<images/SupervisedRegistrationGraph.jpg, id=656, 2460.19125pt x 827.09pt>
+<images/SupervisedRegistrationGraph.jpg, id=654, 2460.19125pt x 827.09pt>
 File: images/SupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/SupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/SupervisedRegistrationGraph.jpg  used on input 
 line 403.
 (pdftex.def)             Requested size: 441.01773pt x 148.26399pt.
-<images/UnsupervisedRegistrationGraph.jpg, id=666, 3329.43875pt x 935.495pt>
+<images/UnsupervisedRegistrationGraph.jpg, id=664, 3329.43875pt x 935.495pt>
 File: images/UnsupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/UnsupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/UnsupervisedRegistrationGraph.jpg  used on inpu
@@ -1373,7 +1373,7 @@ t line 415.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/GANRegistrationGraph.jpg, id=669, 3366.5775pt x 1457.445pt>
+<images/GANRegistrationGraph.jpg, id=667, 3366.5775pt x 1457.445pt>
 File: images/GANRegistrationGraph.jpg Graphic file (type jpg)
 <use images/GANRegistrationGraph.jpg>
 Package pdftex.def Info: images/GANRegistrationGraph.jpg  used on input line 42
@@ -1400,21 +1400,21 @@ chapter 3.
 
 
 ]
-<images/ArchitectureFourier-Net.png, id=736, 1351.0475pt x 513.92pt>
+<images/ArchitectureFourier-Net.png, id=734, 1351.0475pt x 513.92pt>
 File: images/ArchitectureFourier-Net.png Graphic file (type png)
 <use images/ArchitectureFourier-Net.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net.png  used on input line
  22.
 (pdftex.def)             Requested size: 441.01773pt x 167.7513pt.
  [30 <./images/ArchitectureFourier-Net.png>] [31]
-<images/SYMNetArchitectureFCN.png, id=759, 1032.85875pt x 676.02562pt>
+<images/SYMNetArchitectureFCN.png, id=757, 1032.85875pt x 676.02562pt>
 File: images/SYMNetArchitectureFCN.png Graphic file (type png)
 <use images/SYMNetArchitectureFCN.png>
 Package pdftex.def Info: images/SYMNetArchitectureFCN.png  used on input line 5
 1.
 (pdftex.def)             Requested size: 441.01773pt x 288.65323pt.
  [32 <./images/SYMNetArchitectureFCN.png>]
-<images/DecoderDisplacementField.png, id=779, 493.845pt x 405.01312pt>
+<images/DecoderDisplacementField.png, id=777, 493.845pt x 405.01312pt>
 File: images/DecoderDisplacementField.png Graphic file (type png)
 <use images/DecoderDisplacementField.png>
 Package pdftex.def Info: images/DecoderDisplacementField.png  used on input lin
@@ -1425,14 +1425,14 @@ e 77.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [33] [34 <./images/DecoderDisplacementField.png>] [35]
-<images/SpatialTransformer.png, id=819, 609.77812pt x 260.47313pt>
+<images/SpatialTransformer.png, id=817, 609.77812pt x 260.47313pt>
 File: images/SpatialTransformer.png Graphic file (type png)
 <use images/SpatialTransformer.png>
 Package pdftex.def Info: images/SpatialTransformer.png  used on input line 112.
 
 (pdftex.def)             Requested size: 441.01773pt x 188.39104pt.
  [36 <./images/SpatialTransformer.png>]
-<images/ArchitectureFourier-Net+.png, id=836, 1075.01625pt x 356.0803pt>
+<images/ArchitectureFourier-Net+.png, id=834, 1075.01625pt x 356.0803pt>
 File: images/ArchitectureFourier-Net+.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+.png  used on input lin
@@ -1443,7 +1443,7 @@ e 151.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [37]
-<images/CompressionEncoder.png, id=852, 490.83376pt x 391.4625pt>
+<images/CompressionEncoder.png, id=850, 490.83376pt x 391.4625pt>
 File: images/CompressionEncoder.png Graphic file (type png)
 <use images/CompressionEncoder.png>
 Package pdftex.def Info: images/CompressionEncoder.png  used on input line 162.
@@ -1453,7 +1453,7 @@ Package pdftex.def Info: images/CompressionEncoder.png  used on input line 162.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/ArchitectureFourier-Net+CNN.png, id=855, 1078.0275pt x 218.31563pt>
+<images/ArchitectureFourier-Net+CNN.png, id=853, 1078.0275pt x 218.31563pt>
 File: images/ArchitectureFourier-Net+CNN.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+CNN.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+CNN.png  used on input 
@@ -1463,7 +1463,7 @@ line 170.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [38 <./images/ArchitectureFourier-Net+.png>]
-<images/ArchitectureFourier-Net+Cascaded.png, id=868, 1409.265pt x 287.0725pt>
+<images/ArchitectureFourier-Net+Cascaded.png, id=866, 1409.265pt x 287.0725pt>
 File: images/ArchitectureFourier-Net+Cascaded.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+Cascaded.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+Cascaded.png  used on i
@@ -1475,31 +1475,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [39 <./images/CompressionEncoder.png>] [40 <./images/ArchitectureFourier-Net+CN
 N.png> <./images/ArchitectureFourier-Net+Cascaded.png>]
-<./Images/Image_ACDC_systolic.png, id=893, 462.528pt x 346.896pt>
+<./Images/Image_ACDC_systolic.png, id=891, 462.528pt x 346.896pt>
 File: ./Images/Image_ACDC_systolic.png Graphic file (type png)
 <use ./Images/Image_ACDC_systolic.png>
 Package pdftex.def Info: ./Images/Image_ACDC_systolic.png  used on input line 2
 08.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/Image_ACDC_diastolic.png, id=894, 462.528pt x 346.896pt>
+<./Images/Image_ACDC_diastolic.png, id=892, 462.528pt x 346.896pt>
 File: ./Images/Image_ACDC_diastolic.png Graphic file (type png)
 <use ./Images/Image_ACDC_diastolic.png>
 Package pdftex.def Info: ./Images/Image_ACDC_diastolic.png  used on input line 
 214.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/Segmentation_ACDC_systolic.png, id=895, 462.528pt x 346.896pt>
+<./Images/Segmentation_ACDC_systolic.png, id=893, 462.528pt x 346.896pt>
 File: ./Images/Segmentation_ACDC_systolic.png Graphic file (type png)
 <use ./Images/Segmentation_ACDC_systolic.png>
 Package pdftex.def Info: ./Images/Segmentation_ACDC_systolic.png  used on input
  line 220.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/Segmentation_ACDC_diastolic.png, id=896, 462.528pt x 346.896pt>
+<./Images/Segmentation_ACDC_diastolic.png, id=894, 462.528pt x 346.896pt>
 File: ./Images/Segmentation_ACDC_diastolic.png Graphic file (type png)
 <use ./Images/Segmentation_ACDC_diastolic.png>
 Package pdftex.def Info: ./Images/Segmentation_ACDC_diastolic.png  used on inpu
 t line 226.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/ManuelSubsampling_ACDC_R=4.png, id=899, 167.6664pt x 140.2038pt>
+<./Images/ManuelSubsampling_ACDC_R=4.png, id=897, 167.6664pt x 140.2038pt>
 File: ./Images/ManuelSubsampling_ACDC_R=4.png Graphic file (type png)
 <use ./Images/ManuelSubsampling_ACDC_R=4.png>
 Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=4.png  used on input
@@ -1510,7 +1510,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--238
 [][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
  []
 
-<./Images/ManuelSubsampling_ACDC_R=8.png, id=900, 167.6664pt x 140.2038pt>
+<./Images/ManuelSubsampling_ACDC_R=8.png, id=898, 167.6664pt x 140.2038pt>
 File: ./Images/ManuelSubsampling_ACDC_R=8.png Graphic file (type png)
 <use ./Images/ManuelSubsampling_ACDC_R=8.png>
 Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=8.png  used on input
@@ -1521,7 +1521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 [][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
  []
 
-<./Images/ManuelSubsampling_ACDC_R=10.png, id=901, 167.6664pt x 140.2038pt>
+<./Images/ManuelSubsampling_ACDC_R=10.png, id=899, 167.6664pt x 140.2038pt>
 File: ./Images/ManuelSubsampling_ACDC_R=10.png Graphic file (type png)
 <use ./Images/ManuelSubsampling_ACDC_R=10.png>
 Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=10.png  used on inpu
@@ -1533,32 +1533,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [41 <./Images/Image_ACDC_systolic.png> <./Images/Image_ACDC_diastolic.png> <./I
 mages/Segmentation_ACDC_systolic.png> <./Images/Segmentation_ACDC_diastolic.png
 >]
-<images/Coils.png, id=919, 440.847pt x 76.24484pt>
+<images/Coils.png, id=917, 440.847pt x 76.24484pt>
 File: images/Coils.png Graphic file (type png)
 <use images/Coils.png>
 Package pdftex.def Info: images/Coils.png  used on input line 273.
 (pdftex.def)             Requested size: 441.01773pt x 76.27373pt.
  [42 <./Images/ManuelSubsampling_ACDC_R=4.png> <./Images/ManuelSubsampling_ACDC
 _R=8.png> <./Images/ManuelSubsampling_ACDC_R=10.png>]
-<images/k-space_fullysampled.png, id=933, 462.528pt x 231.264pt>
+<images/k-space_fullysampled.png, id=931, 462.528pt x 231.264pt>
 File: images/k-space_fullysampled.png Graphic file (type png)
 <use images/k-space_fullysampled.png>
 Package pdftex.def Info: images/k-space_fullysampled.png  used on input line 28
 3.
 (pdftex.def)             Requested size: 198.45662pt x 99.22984pt.
-<images/k-space_subsampled.png, id=934, 462.528pt x 231.264pt>
+<images/k-space_subsampled.png, id=932, 462.528pt x 231.264pt>
 File: images/k-space_subsampled.png Graphic file (type png)
 <use images/k-space_subsampled.png>
 Package pdftex.def Info: images/k-space_subsampled.png  used on input line 289.
 
 (pdftex.def)             Requested size: 198.45662pt x 99.22984pt.
-<images/image_fullysampled.png, id=935, 267.399pt x 166.221pt>
+<images/image_fullysampled.png, id=933, 267.399pt x 166.221pt>
 File: images/image_fullysampled.png Graphic file (type png)
 <use images/image_fullysampled.png>
 Package pdftex.def Info: images/image_fullysampled.png  used on input line 294.
 
 (pdftex.def)             Requested size: 198.45662pt x 123.36682pt.
-<images/image_subsampled.png, id=936, 267.399pt x 166.221pt>
+<images/image_subsampled.png, id=934, 267.399pt x 166.221pt>
 File: images/image_subsampled.png Graphic file (type png)
 <use images/image_subsampled.png>
 Package pdftex.def Info: images/image_subsampled.png  used on input line 300.
@@ -1567,18 +1567,18 @@ Package pdftex.def Info: images/image_subsampled.png  used on input line 300.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Images/LineSwappingOriginal.png, id=941, 216.81pt x 176.3388pt>
+<./Images/LineSwappingOriginal.png, id=939, 216.81pt x 176.3388pt>
 File: ./Images/LineSwappingOriginal.png Graphic file (type png)
 <use ./Images/LineSwappingOriginal.png>
 Package pdftex.def Info: ./Images/LineSwappingOriginal.png  used on input line 
 319.
 (pdftex.def)             Requested size: 143.3294pt x 116.58038pt.
-<./Images/LineSwapping16.png, id=942, 216.81pt x 176.3388pt>
+<./Images/LineSwapping16.png, id=940, 216.81pt x 176.3388pt>
 File: ./Images/LineSwapping16.png Graphic file (type png)
 <use ./Images/LineSwapping16.png>
 Package pdftex.def Info: ./Images/LineSwapping16.png  used on input line 325.
 (pdftex.def)             Requested size: 143.3294pt x 116.58038pt.
-<./Images/LineSwapping32.png, id=943, 216.81pt x 176.3388pt>
+<./Images/LineSwapping32.png, id=941, 216.81pt x 176.3388pt>
 File: ./Images/LineSwapping32.png Graphic file (type png)
 <use ./Images/LineSwapping32.png>
 Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 331.
@@ -1586,22 +1586,22 @@ Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 331.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Images/LungMotion1.png, id=946, 440.847pt x 256.43805pt>
+<./Images/LungMotion1.png, id=944, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion1.png Graphic file (type png)
 <use ./Images/LungMotion1.png>
 Package pdftex.def Info: ./Images/LungMotion1.png  used on input line 370.
 (pdftex.def)             Requested size: 209.4861pt x 121.85628pt.
-<./Images/LungMotion2.png, id=947, 440.847pt x 256.43805pt>
+<./Images/LungMotion2.png, id=945, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion2.png Graphic file (type png)
 <use ./Images/LungMotion2.png>
 Package pdftex.def Info: ./Images/LungMotion2.png  used on input line 376.
 (pdftex.def)             Requested size: 209.4861pt x 121.85628pt.
-<./Images/LungMotion3.png, id=948, 440.847pt x 256.43805pt>
+<./Images/LungMotion3.png, id=946, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion3.png Graphic file (type png)
 <use ./Images/LungMotion3.png>
 Package pdftex.def Info: ./Images/LungMotion3.png  used on input line 382.
 (pdftex.def)             Requested size: 209.4861pt x 121.85628pt.
-<./Images/LungMotion4.png, id=949, 440.847pt x 256.43805pt>
+<./Images/LungMotion4.png, id=947, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion4.png Graphic file (type png)
 <use ./Images/LungMotion4.png>
 Package pdftex.def Info: ./Images/LungMotion4.png  used on input line 388.
@@ -1614,7 +1614,7 @@ pace_subsampled.png> <./images/image_fullysampled.png> <./images/image_subsampl
 ed.png>] [45 <./Images/LineSwappingOriginal.png> <./Images/LineSwapping16.png> 
 <./Images/LineSwapping32.png>] [46 <./Images/LungMotion1.png> <./Images/LungMot
 ion2.png> <./Images/LungMotion3.png> <./Images/LungMotion4.png>] [47] [48]
-<./Images/GeneralReconstructionPipeline.pdf, id=1020, 688.55669pt x 438.17244pt
+<./Images/GeneralReconstructionPipeline.pdf, id=1018, 688.55669pt x 438.17244pt
 >
 File: ./Images/GeneralReconstructionPipeline.pdf Graphic file (type pdf)
 <use ./Images/GeneralReconstructionPipeline.pdf>
@@ -1678,19 +1678,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [57] [58] [59] [60]
-<images/Boxplot_DiceScores_LV-Cavity.png, id=1162, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_LV-Cavity.png, id=1160, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
  line 378.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=1163, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_Myocardium.png, id=1161, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
 t line 384.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=1164, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_RV-Cavity.png, id=1162, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
@@ -1698,25 +1698,25 @@ Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
  [61] [62 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceSco
 res_Myocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
-<images/TestExamples_Mode0.png, id=1178, 1962.8532pt x 709.6914pt>
+<images/TestExamples_Mode0.png, id=1176, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
 Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 440.
 
 (pdftex.def)             Requested size: 441.01773pt x 159.44626pt.
-<images/TestExamples_Mode1.png, id=1179, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode1.png, id=1177, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
 Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 441.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode2.png, id=1180, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode2.png, id=1178, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
 Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 442.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode3.png, id=1181, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode3.png, id=1179, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
 Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 443.
@@ -1794,21 +1794,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 602--602
  []
 
 [69] [70]
-<./Images/ResultsReconstruction_mode1.pdf, id=1236, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode1.pdf, id=1234, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
 t line 614.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode2.pdf, id=1237, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode2.pdf, id=1235, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
 t line 615.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode3.pdf, id=1238, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode3.pdf, id=1236, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
@@ -1827,7 +1827,7 @@ nclusion: multiple pdfs with page group included in a single page
 >]
 chapter 5.
 
-Overfull \hbox (13.25761pt too wide) in paragraph at lines 12--19
+Overfull \hbox (13.25761pt too wide) in paragraph at lines 12--17
 \OT1/cmr/m/n/12 In a first com-par-a-tive study, the per-for-mance of \OT1/cmr/
 m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
 /12 and \OT1/cmr/m/it/12 4xFourier-
@@ -1836,19 +1836,7 @@ m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
 [73
 
 
-] [74] [75]
-Overfull \hbox (9.07988pt too wide) in paragraph at lines 37--41
-\OT1/cmr/m/n/12 In sec-tion [][]4.1.6[][] the reg-is-tra-tion per-for-mance of 
-\OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT
-1/cmr/m/n/12 and \OT1/cmr/m/it/12 4xFourier-
- []
-
-[76] [77] [78] [79]
-
-LaTeX Warning: Reference `SubSec:ExtendingScopeExperimentsNetworkTraining' on p
-age 80 undefined on input line 76.
-
-) (chapters/Conclusion.tex [80]
+] [74] [75] [76] [77] [78] [79]) (chapters/Conclusion.tex [80]
 chapter 6.
 ) [81
 
@@ -1882,7 +1870,7 @@ L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1891,10 +1879,10 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29809 strings out of 475248
- 549900 string characters out of 5767627
+ 29807 strings out of 475248
+ 549818 string characters out of 5767627
  1968785 words of memory out of 5000000
- 50537 multiletter control sequences out of 15000+600000
+ 50534 multiletter control sequences out of 15000+600000
  570910 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1915,9 +1903,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (93 pages, 26326882 bytes).
+Output written on Masterarbeit.pdf (93 pages, 26327038 bytes).
 PDF statistics:
- 1780 PDF objects out of 2073 (max. 8388607)
- 368 named destinations out of 1000 (max. 500000)
- 653 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1778 PDF objects out of 2073 (max. 8388607)
+ 369 named destinations out of 1000 (max. 500000)
+ 645 words of extra memory for PDF output out of 10000 (max. 10000000)
 

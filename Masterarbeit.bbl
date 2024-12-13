@@ -2517,8 +2517,8 @@
       \strng{authorbibnamehash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
       \strng{authornamehash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
       \strng{authorfullhash}{7ba67052589d8fb6f9da5bd2ac4ff44a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1097-6647}
@@ -2564,8 +2564,8 @@
       \strng{authorbibnamehash}{c83ca1928c6b6dc5629f69e954344992}
       \strng{authornamehash}{c83ca1928c6b6dc5629f69e954344992}
       \strng{authorfullhash}{c83ca1928c6b6dc5629f69e954344992}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1097-6647}
@@ -2626,8 +2626,8 @@
       \strng{authorbibnamehash}{b90ecf6bbd2a18c054a8f50488b7ad44}
       \strng{authornamehash}{b90ecf6bbd2a18c054a8f50488b7ad44}
       \strng{authorfullhash}{03355863ee95ad35029c7133bf10f958}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1527-1315}
@@ -2973,8 +2973,8 @@
       \strng{authorbibnamehash}{72d406d321f15c753fda2acc80473d91}
       \strng{authornamehash}{72d406d321f15c753fda2acc80473d91}
       \strng{authorfullhash}{72d406d321f15c753fda2acc80473d91}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -3008,8 +3008,8 @@
       \strng{authorbibnamehash}{1f365458c3aaf6f260d52b26cca8cabf}
       \strng{authornamehash}{1f365458c3aaf6f260d52b26cca8cabf}
       \strng{authorfullhash}{1f365458c3aaf6f260d52b26cca8cabf}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4687}
@@ -3047,8 +3047,8 @@
       \strng{authorbibnamehash}{6e07de47409c57ce0039cc715bc1758c}
       \strng{authornamehash}{6e07de47409c57ce0039cc715bc1758c}
       \strng{authorfullhash}{6e07de47409c57ce0039cc715bc1758c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -3201,8 +3201,8 @@
       \strng{authorbibnamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
       \strng{authornamehash}{1e5d9c33fa3458ddac53fd243f36f8b4}
       \strng{authorfullhash}{c79cd9e480909b4c139727702f77f7ce}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Lecture Notes in Computer Science}
@@ -4579,8 +4579,8 @@
       \strng{authornamehash}{b283fbe071a9b6ca75652191ba56e17a}
       \strng{authorfullhash}{c4a9c7f46c93c70c0a72c3d025e766fd}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Lecture Notes in Computer Science}
