@@ -200,37 +200,58 @@ The \emph{CMRxRecon} dataset~\cite{CMRxRecon} from the \emph{CMRxRecon2023} chal
 \subsection{ACDC Dataset} \label{SubSec:ACDC}
 The \emph{ACDC} dataset contains cardiac cine MRI short-axis data from 150 subjects that were divided into 5 subgroups (4 pathological, 1 healthy). For each subject systolic (see Figure~\ref{fig:Image_ACDC_systolic}) and diastolic frames (see Figure~\ref{fig:Image_ACDC_diastolic}) are provided with corresponding segmentations (see Figure~\ref{fig:Segmentation_ACDC_systolic} and ~\ref{fig:Segmentation_ACDC_diastolic}), which enables direct comparison via e.g. the Dice score. The segmentations contain only four values with 0, 1, 2 and 3 representing pixels located in the background, in the right ventricle (RV) cavity, in the myocardium, and in the left ventricle (LV) cavity. The frames themselves are 3D volumes with size $216 \times 256 \times 10$, thus ten image slices can be extracted which each have size $216 \times 256$. The same holds true for the segmentation, which means that both the image data and segmentations can generated in the same manner.\\
 For the training data, the original 4D data was used as we do not require the segmentations for the end-systolic and end-diastolic frames. As the 4D data has size $216 \times 256 \times 10 \times 30$ we can extract 30 frames for each of the ten slices. These can be sorted into 251376 image pairs for training. For the validation and test data the end-systolic and end-diastolic frames with their segmentations were used giving us 641 image pairs each.\\
-As the dataset only contained images reconstructed from fully sampled data, the data had to manually be subsampled. This was done by first getting the k-space data via a FFT and then subsampling the k-space for $=4$, $R=8$ and $R=10$ before going back to image space using a iFFT. This naive reconstruction lead to the typical artifacts that the networks will be tested against.
+As the dataset only contained images reconstructed from fully sampled data, the data had to manually be subsampled. This was done by first obtaining the k-space data via a FFT and then subsampling the k-space for $=4$, $R=8$ and $R=10$ before going back to image space using a iFFT. This naive reconstruction lead to the typical artifacts (see Figure~\ref{fig:ManuelSubsampling_ACDC}) that the networks will be tested against.
 
 \begin{figure}[h]%tpb
 	\centering
-	\graphicspath{{images/}{\main/images/}}
 	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{Image_ACDC_systolic.png}
+    		\includegraphics[width=\textwidth]{./Images/Image_ACDC_systolic.png}
     		\caption{Image of systolic phase.}
     		\label{fig:Image_ACDC_systolic}
 	\end{subfigure}
 	\hfill
-	\graphicspath{{images/}{\main/images/}}
 	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{Image_ACDC_diastolic.png}
+    		\includegraphics[width=\textwidth]{./Images/Image_ACDC_diastolic.png}
     		\caption{Image of diastolic phase.}
     		\label{fig:Image_ACDC_diastolic}
 	\end{subfigure} 
 	\\
 	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{Segmentation_ACDC_systolic.png}
+    		\includegraphics[width=\textwidth]{./Images/Segmentation_ACDC_systolic.png}
     		\caption{Segmentation of systolic phase.}
     		\label{fig:Segmentation_ACDC_systolic}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
-    		\includegraphics[width=\textwidth]{Segmentation_ACDC_diastolic.png}
+    		\includegraphics[width=\textwidth]{./Images/Segmentation_ACDC_diastolic.png}
     		\caption{Segmentation of diastolic phase.}
     		\label{fig:Segmentation_ACDC_diastolic}
 	\end{subfigure}
 	\caption{Example images for systolic (a) and diastolic frames (b) with corresponding segmentations (c),(d) taken from the \emph{ACDC} dataset~\cite{ACDC}.}
 	\label{fig:}
+\end{figure}
+
+\begin{figure}[h] %tpb
+	\centering
+	\begin{subfigure}{0.3\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/ManuelSubsampling_ACDC_R=4.png}
+    		\caption{Manuel subsampling for $R=4$.}
+    		\label{fig:ManuelSubsampling_ACDC_R=4}
+	\end{subfigure}
+	\hfill 
+	\begin{subfigure}{0.3\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/ManuelSubsampling_ACDC_R=8.png}
+    		\caption{Manuel subsampling for $R=8$.}
+    		\label{fig:ManuelSubsampling_ACDC_R=8}
+	\end{subfigure}
+	\hfill 
+	\begin{subfigure}{0.3\textwidth}
+    		\includegraphics[width=\textwidth]{./Images/ManuelSubsampling_ACDC_R=10.png}
+    		\caption{Manuel subsampling for $R=10$.}
+    		\label{fig:ManuelSubsampling_ACDC_R=10}
+	\end{subfigure}
+	\caption{Example images for the manual subsampling $R=4$, $R=8$, and $R=10$ of the \emph{ACDC} data.}
+	\label{fig:ManuelSubsampling_ACDC}
 \end{figure}
 
 
@@ -423,3 +444,10 @@ Two experiments were conducted on the \emph{CMRxRecon} dataset as it provides th
 \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have been pre-trained on image reconstructed from this data via an iFT for frame-to-frame registration using the optimal settings obtained in section~\ref{SubSec:ParameterTestsACDC} (MSE-loss, 16 channels, $48 \times 48$ FT crop, learning rate 0.0001, $\lambda=0.01$). As the \emph{CMRxRecon} dataset does not include segmentations for Dice calculation, image similarity metrics need to be utilized. For this, SSIM and MSE were used again, however, the PSNR (see section~\ref{SubSec:NetworkTrainingAndTesting}) and HaarPSI~\cite{HaarPSI} were also added. For comparison \emph{VoxelMorph} was used. The results can be seen in section~\ref{SubSec:ResultsReconstructionPipeline}.
 
 
+% general reconstruction pipeline with synthetic motion-corrupted 
+\begin{figure}[h] %tpb
+	\centering
+	\includegraphics[width=\linewidth]{./Images/GeneralReconstructionPipeline.pdf} 
+	\caption{Overview of the generalized reconstruction pipeline in a) using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}). The k-space data is corrupted with synthetic motion, either through swapping $z$ random line (steps shown in b) or by via $L$ random deformation frames to simulate lung motion (shown in c)).}
+	\label{fig:GeneralReconstructionPipeline}
+\end{figure}

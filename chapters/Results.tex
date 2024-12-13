@@ -3,31 +3,28 @@
 %%%%%%%%%%%%%
 
 \chapter{Results} \label{Ch:Results}
-In this chapter, the results for the experiment described in section~\ref{Sec:Experiments} will be examined. This includes parameter tests on the \emph{ACDC} dataset as well as a motion-compensated reconstruction pipeline on the \emph{CMRxRecon} dataset.
+In this chapter, the results for the experiment described in section~\ref{Sec:Experiments} are reported. This includes ablation studies, parameter tests and registration performance assessment on the \emph{ACDC} dataset as well as a motion-compensated reconstruction pipeline on the \emph{CMRxRecon} dataset.
  
-\section{Parameter Tests on the ACDC Dataset} \label{Sec:ResultsParameterTestsACDC}
-Due to the limitations of the \emph{CMRxRecon} dataset in terms of segmentations, the registration performance is further evaluated on the \emph{ACDC} dataset. Some of the parameter studies done on \emph{CMRxRecon} were repeated, others were added to further test the networks ability.
+\section{Ablation Studies and Parameter Tests} \label{Sec:ResultsParameterTestsACDC}
+In this section, the results for the ablation studies and parameter tests are described in section~\ref{SubSec:ParameterTestsACDC} are presented.
 
 \subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}
-Again, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} are compared in terms of registration performance and inference time (on GPU) together with their diffeomorphic versions, however, versions with dense instead of band-limited displacements are also added as a baseline for peak performance as these utilize all of the k-space information. The memory consumption is also added to the comparison with the number of parameters, mult-add operations and the total memory. The latter is only given for the dense and normal versions as the diffeomorphic version required roughly the same amount of memory as the normal ones, while the dense versions have a slightly larger encoder. 
-%All \emph{Fourier-Net+} and \emph{4xFourier-Net} variants use a FT crop size of $48 \times 48$. All networks used MSE-loss etc.
-Note that all network variants were trained for 6 epochs. The results can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDC}.\\
-For the dense displacement variants, the diffeomorphic transform increases the Dice score (with and without the background label) slightly for \emph{Fourier-Net} and \emph{4xFourier-Net}, but decreases for \emph{Fourier-Net+}. The SSIM decreases for all models slightly, while the MSE remains. Unsurprisingly, the percentage of non-positive Jabobian determinants is lower for the diffeomorphic variants. Times for the baseline and diffeomorphic versions are similar with the \emph{Fourier-Net} being faster without the diffeomorphism, while \emph{Fourier-Net+} and \emph{4xFourier-Net} are faster. \\
-The results for the band-limited versions are very similar with \emph{Fourier-Net} and \emph{Fourier-Net+} having a lower Dice (with background) with the diffeomorphism, while \emph{4xFourier-Net} increases by almost 2$\%$. When excluding the background label \emph{Fourier-Net} is again slightly worse, but \emph{Fourier-Net+} and \emph{4xFourier-Net} both improve, the latter with almost 3$\%$ Dice more than the baseline version. The SSIM values are slightly lower for \emph{Fourier-Net} and \emph{Fourier-Net+} with the diffeomorphism, but again higher for \emph{4xFourier-Net}. The MSE is slightly lower for \emph{Fourier-Net} and \emph{4xFourier-Net}, but a bit higher for \emph{Fourier-Net+}. The percentage of non-positive Jabobian determinants again decreases for the diffeomorphic variants. The times again vary slightly with \emph{Fourier-Net} and \emph{Fourier-Net+} being a bit slower, while \emph{4xFourier-Net} is a lot faster.\\
+First, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} were compared as described in section~\ref{SubSubSec:Fourier-NetvsFourier-Net+}. The results can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDC}. For the dense displacement variants, the diffeomorphic transform increases the Dice score (with and without the background label) slightly for \emph{Fourier-Net} and \emph{4xFourier-Net}, but decreases for \emph{Fourier-Net+}. The SSIM decreases for all models slightly, while the MSE remains unaffected. Unsurprisingly, the percentage of non-positive Jabobian determinants is lower for the diffeomorphic variants. Times for the baseline and diffeomorphic versions are similar with the \emph{Fourier-Net} being faster without the diffeomorphism by 1.2~ms, while \emph{Fourier-Net+} and \emph{4xFourier-Net} are faster with the diffeomorphism by 3.2~ms and 1.6~ms respectively. \\
+The results for the band-limited versions are very similar with \emph{Fourier-Net} and \emph{Fourier-Net+} having a lower Dice (with background) with the diffeomorphism, while \emph{4xFourier-Net} increases by almost 2$\%$. When excluding the background label \emph{Fourier-Net} is again slightly worse, but \emph{Fourier-Net+} and \emph{4xFourier-Net} both improve, the latter with almost 3$\%$ Dice more than the baseline version. The SSIM values are slightly lower for \emph{Fourier-Net} and \emph{Fourier-Net+} with the diffeomorphism, but again higher for \emph{4xFourier-Net}. The MSE is slightly lower for \emph{Fourier-Net} and \emph{4xFourier-Net}, but slightly higher for \emph{Fourier-Net+}. The percentage of non-positive Jabobian determinants again decreases for the diffeomorphic variants. The times again vary slightly with \emph{Fourier-Net} and \emph{Fourier-Net+} being slower by 0.5~ms and 6.2~ms, while \emph{4xFourier-Net} is a lot faster with 14.7~ms difference.\\
 Now to the difference between the dense and band-limited displacement. Overall, the dense displacement versions have a higher Dice score for all models both with and without the background label. 
 %This is to be expected as the dense displacement versions can use all of the available k-space data for the registration task, while the band-limited versions have only a limited amount of k-space data, directly impacting and limiting their performance. 
 The dense displacements also have better SSIM and MSE metrics, however the difference is not quite as large as with the Dice scores. 
 %As the differences between the frames is not quite as large, the weaker registration performance does not impact this metric as much as the Dice score, which is focused on the moving cardiac region. The same is true for the MSE, but the dense displacement is again far superior. 
 Only the percentage of non-positive Jabobian determinants is notably lower for the band-limited displacement. 
 %as the band-limiting probably allows for only a smaller deformation. However, the difference is still very small, especially for the diffeomorhpic versions, and it could be argued that a better registration performance at the cost of some image folding is an acceptable trade-off. 
-In terms of inference time, the dense displacement variants are slightly faster despite having a larger encoder, however all of the model are in the low milliseconds ($<40$~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder, as discussed before, and thus have a lot more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
+In terms of inference time, the dense displacement variants are slightly faster despite having a larger encoder, however all of the models are in the milliseconds (7~ms up to 33.5~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder, as discussed before, and thus have far more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
 
-\begin{table}[H] %htpb
+\begin{table}[h] %htpb
 	%\scriptsize
 	\centering
-	\caption{Results for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} with both dense and band-limited displacement fields as well as diffeomorphic transforms on the fully sampled \emph{ACDC} test data.}
+	\caption{Results for the \emph{Fourier-Net versus Fourier-Net+} experiment. The networks are compared using both dense and band-limited displacement fields as well as diffeomorphic transforms on the fully sampled \emph{ACDC} test data.}
 	\label{tab:Fourier-NetvsFourier-Net+ACDC}
-	\begin{tabular}{c c c c} %
+	\begin{tabularx}{\textwidth}{Y Y Y Y Y} 
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
 		\cmidrule(lr){2-4} 
@@ -38,21 +35,28 @@ In terms of inference time, the dense displacement variants are slightly faster 
 		$\%$ SSIM & $91.92 \pm 3.32$ & $89.09 \pm 4.10$ & $89.65 \pm 3.85$\\
 		MSE (m) & $0.09 \pm 0.06$ & $0.17 \pm 0.13$ & $0.15 \pm 0.12$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.53 \pm 0.52$ & $0.32 \pm 0.55$ & $0.04 \pm 0.09$ \\
-		Time [s] 	  & 0.0070 	& 0.0107 	& 0.0219 \\
+		Time [ms] 	  & 7.0 	& 10.7 	& 21.9 \\
 		\midrule
-		 & Diff-Fourier-Net & Diff-Fourier-Net+ & Diff-4xFourier-Net+\\		
+		 & \mbox{Diff-Fourier-Net} & \mbox{Diff-Fourier-Net+} & \mbox{Diff-4xFourier-Net+}\\		
 		\midrule
 		$\%$ Dice & $78.56 \pm 14.13$ & $77.88 \pm 13.81$ & $79.49 \pm 14.26$\\
 		$\%$ Dice* & $71.31 \pm 19.13$ & $70.19 \pm 18.82$ & $72.12 \pm 19.33$ \\
 		$\%$ SSIM & $91.79 \pm 3.38$ & $89.08 \pm 4.10$ & $89.62 \pm 3.98$\\
 		MSE (m) & $0.09 \pm 0.06$ & $0.16 \pm 0.13$ & $0.15 \pm 0.12$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.03 \pm 0.06$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [s] 	  & 0.0082  & 0.0075 & 0.0203 \\
+		Time [ms] 	  & 8.2  & 7.5 & 20.3 \\
 		\midrule
 		Parameters    & 645,216 	& 380,470 	& 1,521,880 \\
 		Mult-Adds (G) & 1.12  	& 0.04  		& 0.18 \\
 		Memory [MB]   & 97.63   	& 5.81   	& 21.90 \\
-		\midrule
+		\bottomrule
+	\end{tabularx}
+\end{table}
+% split table to fit better onto the pages
+\begin{table}[H]		
+	\centering
+	\begin{tabularx}{\textwidth}{Y Y Y Y Y}
+		\toprule	
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
@@ -62,35 +66,34 @@ In terms of inference time, the dense displacement variants are slightly faster 
 		$\%$ SSIM & $91.35 \pm 3.51$ & $88.42 \pm 3.94$ & $88.59 \pm 4.23$\\
 		MSE (m) & $1.00 \pm 0.71$ & $2.06 \pm 1.54$ & $1.92 \pm 1.46$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.36 \pm 0.38$ & $0.13 \pm 0.35$ & $0.03 \pm 0.12$ \\
-		Time [s] & 0.0145 & 0.0145 & 0.0335 \\
+		Time [ms] & 14.5 & 14.5 & 33.5 \\
 		\midrule
-		 & Diff-Fourier-Net & Diff-Fourier-Net+ & Diff-4xFourier-Net+\\		
+		 & \mbox{Diff-Fourier-Net} & \mbox{Diff-Fourier-Net+} & \mbox{Diff-4xFourier-Net+}\\		
 		\midrule
 		$\%$ Dice & $77.93 \pm 14.93$ & $75.17 \pm 13.43$ & $78.20 \pm 14.01$\\
 		$\%$ Dice* & $69.91 \pm 21.99$ & $65.67 \pm 18.61$ & $69.61 \pm 19.11$ \\
 		$\%$ SSIM & $91.24 \pm 3.56$ & $87.81 \pm 3.94$ & $88.81 \pm 4.13$\\
 		MSE (m) & $0.98 \pm 0.67$ & $2.29 \pm 1.61$ & $1.85 \pm 1.41$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.01 \pm 0.03$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [s] 	  & 0.0150  & 0.0207 & 0.0188 \\
+		Time [ms] 	  & 15.0  & 20.7 & 18.8 \\
 		\midrule
 		Parameters    & 434,519 & 75,429 & 301,716 \\
 		Mult-Adds (M) & 595.04  & 10.98  & 43.91 \\
 		Memory [MB]   & 44.69   & 2.25   & 7.66 \\
 		\bottomrule
-	\end{tabular}	
+	\end{tabularx}
 \end{table}
 
 
 \subsection{Starting Channel Size} \label{SubSec:ResultsStartingChannelsACDC}
-Next, the impact of the starting channels was examined. For this, \emph{Fourier-Net+} and \emph{4xFourier-Net+} were trained with four different channel sizes: $8$, $16$, $32$ and $64$. The memory consumption as well as inference time on the GPU were calculated to extend the evaluation given by the other metrics. All network variants were trained for 6~epochs. The results can be seen in Table~\ref{tab:StartingChannelsFourierNet+ACDC}.\\
-For both \emph{Fourier-Net+} and \emph{4xFourier-Net+} there is a clear increase in Dice (with and without the background label) for larger channel sizes. The SSIM and MSE metrics only increase marginally with larger channel size, while the percentage of non-positive Jabobian determinants decreases. The inference time is not heavily impacted by channel size as the times remain very similar for all sizes. The memory, however, increases exponentially when doubling the channel sizes as all layers are effected, not just the starting one as the name might suggest. Thus, the number of parameters drastically increases with starting size leading to an increase in Mult-Add and thus overall memory. As \emph{4xFourier-Net+} is just a cascaded version of \emph{Fourier-Net+} a channel size of 16 for the latter is about the same as channel size~8 for the cascaded version and so on. This can also be seen in the direct comparison between \emph{Fourier-Net+} and \emph{4xFourier-Net+}, where the latter has a better performance, but also needs more memory. While an increase of channel size also increases performance in terms of Dice (with the background label) by $0.36\%$, $0.43\%$ and $0.41\%$ for the latter, which is quite consistent, it can be observed that an increase of channel size for \emph{Fourier-Net+} has an bigger impact at the beginning ($1.38\%$, $0.78\%$ and $0.15\%$) and fades towards larger channels sizes. This effect can also be seen when excluding the background label ($0.69\%$, $0.78\%$ and $0.42\%$ for \emph{4xFourier-Net+} compared to $2.16\%$, $1.09\%$ and $0.10\%$ for \emph{Fourier-Net+}), but is less pronounced for the SSIM and MSE as these do not capture the difference in the cardiac regions as well. Note that all versions of \emph{Fourier-Net+} and \emph{4xFourier-Net+} are smaller in terms of total memory than \emph{Fourier-Net} with channel size~8 (44.69 MB), except for \emph{4xFourier-Net+} with channel size~64.
+Next, the impact of the starting channel size was examined as explained in section~\ref{SubSubSec:StartingChannelsACDC}. The results can be seen in Table~\ref{tab:StartingChannelsFourierNet+ACDC}. The Dice (with and without the background label) increased for both \emph{Fourier-Net+} and \emph{4xFourier-Net+} for larger channel sizes. A marginal increase in SSIM and MSE was observed, while the percentage of non-positive Jabobian determinants decreased. The inference time is not heavily impacted by channel size as the times remain very similar for all sizes. The number of parameters drastically increases with starting size leading to an increase in Mult-Add and thus overall memory. As \emph{4xFourier-Net+} is just a cascaded version of \emph{Fourier-Net+} a channel size of 16 for the latter is about the same as channel size~8 for the cascaded version and so on. This can also be seen in the direct comparison between \emph{Fourier-Net+} and \emph{4xFourier-Net+}, where the latter has a better performance, but also needs more memory. While an increase of channel size also increases performance in terms of Dice (with the background label) by $0.36\%$, $0.43\%$ and $0.41\%$ for the latter, which is quite consistent, it can be observed that an increase of channel size for \emph{Fourier-Net+} has an bigger impact at the beginning ($1.38\%$, $0.78\%$ and $0.15\%$) and fades towards larger channels sizes. This effect can also be seen when excluding the background label ($0.69\%$, $0.78\%$ and $0.42\%$ for \emph{4xFourier-Net+} compared to $2.16\%$, $1.09\%$ and $0.10\%$ for \emph{Fourier-Net+}), but is less pronounced for the SSIM and MSE as these do not capture the difference in the cardiac regions as well. Note that all versions of \emph{Fourier-Net+} and \emph{4xFourier-Net+} are smaller in terms of total memory than \emph{Fourier-Net} with channel size~8 (44.69 MB), except for \emph{4xFourier-Net+} with channel size~64.
 
 \begin{table}[h] %tpb
 	%\scriptsize
 	\centering
-	\caption{Results for different starting channel sizes of \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the fully sampled \emph{ACDC} test data.}
+	\caption{Results for the different starting channel sizes of \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the fully sampled \emph{ACDC} test data.}
 	\label{tab:StartingChannelsFourierNet+ACDC}
-	\begin{tabular}{c c c c c} %
+	\begin{tabularx}{\textwidth}{Y Y Y Y Y}
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{Starting Channels - Fourier-Net+} \\
 		\cmidrule(lr){2-5}
@@ -101,9 +104,9 @@ For both \emph{Fourier-Net+} and \emph{4xFourier-Net+} there is a clear increase
 		$\%$ SSIM & $88.05 \pm 3.89$ & $88.67 \pm 3.88$ & $88.83 \pm 3.83$ & $89.02 \pm 3.67$ \\
 		MSE (m) & $0.22 \pm 0.16$ & $0.20 \pm 0.15$ & $0.19 \pm 0.15$ & $0.19 \pm 0.15$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.07 \pm 0.25$ & $0.04 \pm 0.14$ & $0.01 \pm 0.04$ & $0.00 \pm 0.03$ \\
-		Time [s] 	  & 0.0072 & 0.0072 & 0.0080 & 0.0079 \\
+		Time [ms] 	  & 7.2 & 7.2 & 8.0 & 7.9 \\
 		Parameters 	  & 75,429 	& 300,477 	& 1,199,469 	& 4,793,037 \\
-		Mult-Adds (M) & 10.98 	& 42.89 		& 169.54 	& 674.10 \\
+		\mbox{Mult-Adds (M)} & 10.98 	& 42.89 		& 169.54 	& 674.10 \\
 		Memory [MB] 	  & 2.25 	& 4.64 		& 11.22 		& 31.57 \\
 		\midrule		
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{Starting Channels - 4xFourier-Net+} \\
@@ -115,25 +118,24 @@ For both \emph{Fourier-Net+} and \emph{4xFourier-Net+} there is a clear increase
 		$\%$ SSIM & $88.70 \pm 4.17$ & $88.89 \pm 4.05$ & $89.08 \pm 4.01$ & $89.29 \pm 3.74$ \\
 		MSE (m) & $0.19 \pm 0.14$ & $0.19 \pm 0.14$ & $0.18 \pm 0.14$ & $0.18 \pm 0.14$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.02 \pm 0.07$ & $0.01 \pm 0.04$ & $0.01 \pm 0.05$ & $0.00 \pm 0.00$ \\
-		Time [s] 	  & 0.0301 	& 0.0244 	& 0.0297 	& 0.0277 \\
+		Time [ms] 	  & 30.1 	& 24.4 	& 29.7 	& 27.7 \\
 		Parameters 	  & 301,716 	& 1,201,908 	& 4,797,876 	& 19,172,148 \\
-		Mult-Adds (G) & 0.04 	& 0.17 		& 0.68 		& 2.70 \\
+		\mbox{Mult-Adds (G)} & 0.04 	& 0.17 		& 0.68 		& 2.70 \\
 		Memory [MB] 	  & 7.66 	& 17.23 		& 43.56 		& 124.94 \\
 		\bottomrule
-	\end{tabular}	
+	\end{tabularx}
 \end{table}
 
 
 \subsection{Fourier-Transform Crop Size} \label{SubSec:ResultsFTCropSize}
-As a parameter specific to \emph{Fourier-Net+} and \emph{4xFourier-Net+}, the impact of the FT crop size used for compressing the images was analyzed. Four different sizes of the FT crop were used for training: $80 \times 168$, $40 \times 84$, $48 \times 48$ and $24 \times 24$. The experiments were again only conducted on the fully sampled data and each network trained for 5 epochs. The results can be seen in Table~\ref{tab:FTCropSize}. \\
-The Dice score, both with and without the background label, decreases drastically with a smaller crop size. The SSIM and MSE also get worse (SSIM decreases, MSE increases), however, the percentage of non-positive Jabobian determinants decreases for smaller crop sizes. It should be noted that the crop size of $48 \times 48$ is an outlier in this regard breaking the trend with a higher percentage as $40 \times 84$. The inference time also decreases slightly with a smaller crop size, although this is quite noisy as the time from $80 \times 168$ to $40 \times 84$ is halved for \emph{Fourier-Net+}, but the time needed for $48 \times 48$ and $24 \times 24$ increases again very slightly. For \emph{4xFourier-Net+} the time decrease for all smaller crop sizes, except for $24 \times 24$. The number of parameters does not change for different crop sizes as the networks themselves do not change, however the number of Mult-Adds and the total memory still change with the image size. Both decrease with a larger crop size as the image gets smaller. This effect is again not linear as a reduction in image size yields a larger reduction in memory going from $80 \times 168$ to $40 \times 84$ than from $48 \times 48$ to $24 \times 24$. 
+The results for the FT crop size experiment, as described in section~\ref{SubSubSec:FTCropSize}, can be seen in Table~\ref{tab:FTCropSize}. The Dice score, both with and without the background label, decreases drastically with a smaller crop size. The SSIM and MSE also get worse (SSIM decreases, MSE increases), however, the percentage of non-positive Jabobian determinants decreases for smaller crop sizes. It should be noted that the crop size of $48 \times 48$ is an outlier in this regard breaking the trend with a higher percentage as $40 \times 84$. The inference time also decreases slightly with a smaller crop size, although this is quite noisy as the time from $80 \times 168$ to $40 \times 84$ is halved for \emph{Fourier-Net+}, but the time needed for $48 \times 48$ and $24 \times 24$ increases again very slightly. For \emph{4xFourier-Net+} the time decrease for all smaller crop sizes, except for $24 \times 24$. The number of parameters does not change for different crop sizes as the networks themselves do not change, however the number of Mult-Adds and the total memory still change with the image size. Both decrease with a larger crop size as the image gets smaller. This effect is again not linear as a reduction in image size yields a larger reduction in memory going from $80 \times 168$ to $40 \times 84$ than from $48 \times 48$ to $24 \times 24$. 
 
 \begin{table}[h] %tpb
 	%\scriptsize
 	\centering
 	\caption{Results for four different FT crop sizes for \emph{Fourier-Net+} and \emph{4xFourier-Net+} examined on the fully sampled \emph{ACDC} test data.}
 	\label{tab:FTCropSize}
-	\begin{tabular}{c c c c c} %
+	\begin{tabularx}{\textwidth}{Y Y Y Y Y} 
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{FT crop size - Fourier-Net+} \\
 		\cmidrule(lr){2-5}
@@ -144,9 +146,9 @@ The Dice score, both with and without the background label, decreases drasticall
 		$\%$ SSIM & $89.81 \pm 4.09$ & $88.58 \pm 3.87$ & $87.98 \pm 3.91$ & $87.00 \pm 3.99$ \\
 		MSE (m) & $0.15 \pm 0.12$ & $0.20 \pm 0.15$ & $0.22 \pm 0.16$ & $0.27 \pm 0.19$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.22 \pm 0.46$ & $0.05 \pm 0.15$ & $0.09 \pm 0.25$ & $0.00 \pm 0.02$ \\		
-		Time [s] 	  & 0.0158 & 0.0077 & 0.0079 & 0.0081 \\
+		Time [ms] 	  & 15.8 & 7.7 & 7.9 & 8.1 \\
 		Parameters 	  & 75,429 & 75,429 & 75,429 & 75,429 \\
-		Mult-Adds (M) & 64.03  & 16.37  & 10.98  & 2.74 \\
+		\mbox{Mult-Adds (M)} & 64.03  & 16.37  & 10.98  & 2.74 \\
 		Memory [MB] 	  & 9.51   & 2.97   & 2.25   & 1.12 \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{FT crop size - 4xFourier-Net+} \\
@@ -158,38 +160,38 @@ The Dice score, both with and without the background label, decreases drasticall
 		$\%$ SSIM & $89.91 \pm 4.01$ & $89.03 \pm 3.98$ & $87.98 \pm 3.94$ & $87.02 \pm 3.95$ \\
 		MSE (m) & $1.45 \pm 1.11$ & $1.81 \pm 1.37$ & $2.22 \pm 1.61$ & $2.64 \pm 1.84$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.12 \pm 0.23$ & $0.03 \pm 0.15$ & $0.06 \pm 0.23$ & $0.02 \pm 0.15$ \\	
-		Time [s] 	 & 0.0390  & 0.0301  & 0.0277  & 0.0289 \\
+		Time [ms] 	 & 39.0  & 30.1  & 27.7  & 28.9 \\
 		Parameters 	 & 301,716 & 301,716 & 301,716 & 301,716 \\
-		Mult-Adds (M)& 256.14  & 65.50   & 43.91   & 10.98 \\
+		\mbox{Mult-Adds (M)} & 256.14  & 65.50   & 43.91   & 10.98 \\
 		Memory [MB] 	 & 36.70   & 10.54   & 7.66    & 3.15 \\
 		\bottomrule
-	\end{tabular}
+	\end{tabularx}
 \end{table}
 
 \subsection{Comparison with VoxelMorph} \label{SubSec:ResultsComparisonVoxelMorph}
-In this test, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} are compared to the famous \emph{VoxelMorph}~\cite{Voxelmorph}. This unsupervised network brought deep learning based registration approaches into the mainstream and computes a dense displacement field in contrast to the band-limited displacement of the other networks. From the previous experiments a FT crop size of $48 \times 48$ and channel size of 16 was chosen to strike a good balance between performance and memory efficiency. The experiment was only done on the fully sampled test data and all networks were trained for 6 epochs. The results can be seen in Table~\ref{tab:CompareVoxelMorph}.\\
-\emph{VoxelMorph} has the lowest Dice score with the background label, however it does have a higher value than \emph{Fourier-Net+} for the Dice without the background label. \emph{Fourier-Net} has the highest Dice scores (both with and without the background label), followed by \emph{4xFourier-Net+}. \emph{VoxelMorph} does have the best SSIM and MSE values, followed by \emph{Fourier-Net}. The percentage of non-positive Jabobian determinants for \emph{VoxelMorph} is high with $1\%$ while the other models are all under $0.5\%$. In terms of time, \emph{4xFourier-Net+} is slowest followed by \emph{VoxelMorph}, \emph{Fourier-Net} and \emph{Fourier-Net+}, although all models are pretty fast (less than 30~ms per image pair). The model with the least amount of parameters and Mult-Adds is \emph{VoxelMorph}, however it still requires quite a lot of memory with almost 40~MB. \emph{Fourier-Net} is the largest model in terms of model parameters, Mult-Adds and total memory (90~MB). \emph{Fourier-Net+} and \emph{4xFourier-Net+} both have a higher number of parameters and Mult-Adds, but a lower total amount of memory needed (5~MB and 17~MB). 
+Next was the comparison with \emph{VoxelMorph} as described in section~\ref{SubSubSec:ComparisonVoxelMorph}. The results can be seen in Table~\ref{tab:CompareVoxelMorph}. \emph{VoxelMorph} has the lowest Dice score with the background label, however it does have a higher value than \emph{Fourier-Net+} for the Dice without the background label. \emph{Fourier-Net} has the highest Dice scores (both with and without the background label), followed by \emph{4xFourier-Net+}. \emph{VoxelMorph} does have the best SSIM and MSE values, followed by \emph{Fourier-Net}. The percentage of non-positive Jabobian determinants for \emph{VoxelMorph} is high with $1\%$ while the other models are all under $0.5\%$. In terms of time, \emph{4xFourier-Net+} is slowest followed by \emph{VoxelMorph}, \emph{Fourier-Net} and \emph{Fourier-Net+}, although all models are pretty fast (less than 30~ms per image pair). The model with the least amount of parameters and Mult-Adds is \emph{VoxelMorph}, however it still requires quite a lot of memory with almost 40~MB. \emph{Fourier-Net} is the largest model in terms of model parameters, Mult-Adds and total memory (90~MB). \emph{Fourier-Net+} and \emph{4xFourier-Net+} both have a higher number of parameters and Mult-Adds, but a lower total amount of memory needed (5~MB and 17~MB). 
 
 \begin{table}[h] %tpb
 	%\scriptsize
 	\centering
 	\caption{Comparison of \emph{Fourier-Net}, \emph{Fourier-Net+}, \emph{4xFourier-Net+} and \emph{VoxelMorph} with similarity metrics and memory consumption on the fully sampled \emph{ACDC} test data.}
 	\label{tab:CompareVoxelMorph}
-	\begin{tabular}{c c c c c} %
+	
+	\begin{tabularx}{\textwidth}{Y Y Y Y Y} 
 		\toprule
-		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+ & VoxelMorph \\		
+		 & Fourier-Net & Fourier-Net+ & \mbox{4xFourier-Net+} & VoxelMorph \\		
 		\midrule
 		$\%$ Dice & $78.31 \pm 13.96$ & $76.88 \pm 13.86$ & $77.90 \pm 13.92$ & $75.84 \pm 13.46$ \\
 		$\%$ Dice* & $71.17 \pm 18.99$ & $67.86 \pm 19.06$ & $69.21 \pm 19.02$ & $68.25 \pm 18.36$ \\
 		$\%$ SSIM & $91.53 \pm 3.49$ & $88.67 \pm 3.88$ & $88.89 \pm 4.05$ & $93.53 \pm 3.30$ \\
 		MSE (m) & $0.09 \pm 0.07$ & $0.20 \pm 0.15$ & $0.19 \pm 0.14$ & $0.06 \pm 0.04$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.44 \pm 0.45$ & $0.04 \pm 0.14$ & $0.01 \pm 0.04$ & $1.00 \pm 0.57$ \\
-		Time [s] 	  & 0.0099    & 0.0071 	& 0.0244  	& 0.0145 \\
+		Time [ms] 	  & 9.9    & 7.1 	& 24.4  	& 14.5 \\
 		Parameters 	  & 1,735,447 & 300,477 	& 1,201,908 	& 84,322 \\
-		Mult-Adds (G) & 2.35      & 0.04289  & 0.17157  	& 0.00157 \\
+		\mbox{Mult-Adds (G)} & 2.35      & 0.04289  & 0.17157  	& 0.00157 \\
 		Memory [MB] 	  & 90.08     & 4.64   	& 17.23    	& 39.04 \\
 		\bottomrule
-	\end{tabular}		
+	\end{tabularx}	
 \end{table}
 
 
@@ -207,7 +209,7 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 	\centering
 	\caption{Results for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} with both dense and band-limited displacement fields on the $R=4$ \emph{ACDC} test data.}
 	\label{tab:DenseDisplacementAcc4}
-	\begin{tabular}{c c c c} %
+	\begin{tabularx}{\textwidth}{Y Y Y Y} 
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
 		\cmidrule(lr){2-4} 
@@ -218,7 +220,7 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		$\%$ SSIM & $84.75 \pm 7.01$ & $79.79 \pm 9.76$ & $80.32 \pm 9.37$\\
 		MSE (m) & $0.08 \pm 0.05$ & $0.15 \pm 0.12$ & $0.13 \pm 0.10$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.16 \pm 0.19$ & $0.11 \pm 0.21$ & $0.03 \pm 0.07$ \\
-		Time [s] 	  & 0.0085 & 0.0083 & 0.0263  \\
+		Time [ms] 	  & 8.5 & 8.3 & 26.3  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
 		\cmidrule(lr){2-4} 
@@ -229,9 +231,9 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		$\%$ SSIM & $82.93 \pm 8.12$ & $77.74 \pm 10.69$ & $77.96 \pm 10.57$\\
 		MSE (m) & $0.10 \pm 0.06$ & $0.19 \pm 0.14$ & $0.18 \pm 0.13$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.35 \pm 0.41$ & $0.01 \pm 0.05$ & $0.00 \pm 0.02$ \\
-		Time [s] 	  & 0.0069  	& 0.0065 	& 0.0312  \\
+		Time [ms] 	  & 6.9  	& 6.5 	& 31.2  \\
 		\bottomrule
-	\end{tabular}	
+	\end{tabularx}
 \end{table}
 
 
@@ -240,7 +242,7 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 	\centering
 	\caption{Results for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} with both dense and band-limited displacement fields on the $R=8$ \emph{ACDC} test data.}
 	\label{tab:DenseDisplacementAcc8}
-	\begin{tabular}{c c c c} %
+	\begin{tabularx}{\textwidth}{Y Y Y Y} 
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
 		\cmidrule(lr){2-4} 
@@ -251,7 +253,7 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		$\%$ SSIM & $90.08 \pm 3.05$ & $87.60 \pm 3.78$ & $87.91 \pm 3.64$\\
 		MSE (m) & $0.05 \pm 0.04$ & $0.10 \pm 0.10$ & $0.09 \pm 0.09$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.11 \pm 0.15$ & $0.06 \pm 0.13$ & $0.02 \pm 0.06$ \\
-		Time [s] 	  & 0.0115 & 0.0108 & 0.0385  \\
+		Time [ms] 	  & 11.5 & 10.8 & 38.5  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
 		\cmidrule(lr){2-4} 
@@ -262,9 +264,9 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		$\%$ SSIM & $89.51 \pm 3.34$ & $86.30 \pm 4.18$ & $86.29 \pm 4.23$\\
 		MSE (m) & $0.06 \pm 0.04$ & $0.13 \pm 0.11$ & $0.13 \pm 0.11$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.27 \pm 0.29$ & $0.03 \pm 0.11$ & $0.00 \pm 0.02$ \\
-		Time [s] 	  & 0.0090 & 0.0077 & 0.0466  \\
+		Time [ms] 	  & 9.0 & 7.7 & 46.6  \\
 		\bottomrule
-	\end{tabular}	
+	\end{tabularx}
 \end{table}
 
 
@@ -273,7 +275,7 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 	\centering
 	\caption{Results for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} with both dense and band-limited displacement fields on the $R=10$ \emph{ACDC} test data.}
 	\label{tab:DenseDisplacementAcc10}
-	\begin{tabular}{c c c c} %
+	\begin{tabularx}{\textwidth}{Y Y Y Y} 
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
 		\cmidrule(lr){2-4} 
@@ -284,7 +286,7 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		$\%$ SSIM & $92.92 \pm 2.68$ & $91.09 \pm 3.42$ & $91.33 \pm 3.29$\\
 		MSE (m) & $0.05 \pm 0.04$ & $0.09 \pm 0.09$ & $0.08 \pm 0.09$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.11 \pm 0.15$ & $0.06 \pm 0.11$ & $0.04 \pm 0.11$ \\
-		Time [s] 	  & 0.0280 & 0.0095 & 0.0183  \\
+		Time [ms] 	  & 28.0 & 9.5 & 18.3  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
 		\cmidrule(lr){2-4} 
@@ -295,9 +297,9 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		$\%$ SSIM & $92.77 \pm 2.74$ & $90.32 \pm 3.29$ & $90.42 \pm 3.33$\\
 		MSE (m) & $0.05 \pm 0.04$ & $0.12 \pm 0.12$ & $0.11 \pm 0.11$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.11 \pm 0.15$ & $0.01 \pm 0.05$ & $0.00 \pm 0.03$ \\
-		Time [s] 	  & 0.0081 & 0.0096 & 0.0279  \\
+		Time [ms] 	  & 8.1 & 9.6 & 27.9  \\
 		\bottomrule
-	\end{tabular}	
+	\end{tabularx}
 \end{table}
  
 %\newpage
@@ -424,7 +426,7 @@ To further evaluate the difference between the methods, one can look at the Dice
 %\end{figure}
 
 
-\subsubsection{Visual Examination}
+\subsubsection{Qualitative Results}
 In order to explain the differences observed between the methods previously, a visual examination can be used. There, one can look at the warped images and segmentations as well as the generated displacement fields visualized in Figure~\ref{fig:TestExamples}. For all acceleration factors, an example moving and fixed image can be compared to the warped images by the different methods. For further analysis, the corresponding segmentations (with corresponding Dice scores) and displacement fields generated by the methods are given.\\
 For $R=0$, \emph{Fourier-Net+} and \emph{4xFourier-Net+} have very localized displacements, centered on the cardiac region, leading to a very smooth warped segmentation compared to \emph{Fourier-Net} and \emph{VoxelMorph} where the cardiac labels mix in some regions. Despite this, \emph{Fourier-Net} still achieves the highest Dice score with an $16\%$ increase compared to the baseline. While \emph{NiftyReg} does produce a very smooth warped segmentation the actual displacements are very small and not localized on the cardiac region leading to the lowest Dice score of all methods.\\
 For $R=4$, the image artifacts due to the subsampling are very apparent. The segmentations for the moving and fixed image obviously remain the same.
@@ -457,7 +459,7 @@ For \emph{Fourier-Net+} and \emph{4xFourier-Net+}, the metrics barely change bet
 	\centering
 	\caption{Results for \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} trained on the $R=4$ \emph{ACDC} and \emph{CMRxRecon} data and tested on the $R=4$ \emph{CMRxRecon} test data.}
 	\label{tab:DomainTranslation_ACDC_CMRxRecon}
-	\begin{tabular}{c c c c} %
+	\begin{tabularx}{\textwidth}{Y Y Y Y} 
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Trained on \emph{ACDC}} \\
 		\cmidrule(lr){2-4} 
@@ -466,7 +468,7 @@ For \emph{Fourier-Net+} and \emph{4xFourier-Net+}, the metrics barely change bet
 		$\%$ SSIM & $98.21 \pm 1.07$ & $97.88 \pm 1.04$ & $97.88 \pm 1.04$\\
 		MSE (m) & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.03 \pm 0.09$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [s] 	  & 0.0038 & 0.0037 & 0.0185  \\
+		Time [ms] 	  & 3.8 & 3.7 & 18.5  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Trained on \emph{CMRxRecon}} \\
 		\cmidrule(lr){2-4} 
@@ -475,9 +477,9 @@ For \emph{Fourier-Net+} and \emph{4xFourier-Net+}, the metrics barely change bet
 		$\%$ SSIM & $97.99 \pm 1.04$ & $97.88 \pm 1.06$ & $97.88 \pm 1.07$\\
 		MSE (m) & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ \\
 		$\% \, |J_{\phi}|\leq0$ & $0.00 \pm 0.01$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [s] 	  & 0.0029 & 0.0043 & 0.0120  \\
+		Time [ms] 	  & 2.9 & 4.3 & 12.0  \\
 		\bottomrule
-	\end{tabular}	
+	\end{tabularx}	
 \end{table}
 
 
@@ -492,11 +494,12 @@ For $R=10$, \emph{4xFourier-Net+} performs best for all metrics with \emph{Fouri
 For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \emph{4xFourier-Net+} performs worse than baseline for PSNR, SSIM and MSE. For $R=8$, \emph{Fourier-Net+} has the highest HaarPSI, PSNR and SSIM values followed by \emph{Fourier-Net}. The mean MSE value is again the same for all methods and slightly lower than the baseline. For $R=10$, \emph{Fourier-Net+} again performs best for all metrics. Only \emph{Fourier-Net} has a lower SSIM than the baseline.
 
 \begin{table}[H] %tpb
-	\footnotesize
+	%\footnotesize
+	\small
 	\centering
 	\caption{Reconstruction results \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motino-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
 	\label{tab:ComparisonReconstructionCMRxReconLineSwapping}
-	\begin{tabular}{c c c c c c} 
+	\begin{tabularx}{\textwidth}{c Y Y Y Y Y} 
 		\toprule
 		 & \multirow{2}{*}{Methods} & \multicolumn{4}{c}{Motion-correction for $z=16$ swapped k-space lines} \\
 		\cmidrule(lr){3-6} 
@@ -508,7 +511,7 @@ For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \e
 		 & VoxelMorph & $56.909 \pm 8.118$ & \textcolor{blue}{$28.709 \pm 2.404$} & $78.090 \pm 5.903$ & $0.160 \pm 0.126$ \\  
 		 & Fourier-Net & \textcolor{blue}{$56.918 \pm 8.160$} & $28.706 \pm 2.401$ & \textcolor{blue}{$78.123 \pm 5.893$} & $0.160 \pm 0.126$ \\  
 		 & Fourier-Net+ & \textcolor{red}{$56.854 \pm 8.158$} & \textcolor{red}{$28.699 \pm 2.399$} & \textcolor{red}{$78.071 \pm 5.951$} & $0.160 \pm 0.126$ \\   
-		 & 4xFourier-Net+ & $56.903 \pm 8.109$ & $28.702 \pm 2.380$ & $78.085 \pm 5.877$ & $0.160 \pm 0.125$ \\  
+		 & \mbox{4xFourier-Net+} & $56.903 \pm 8.109$ & $28.702 \pm 2.380$ & $78.085 \pm 5.877$ & $0.160 \pm 0.125$ \\  
 		
 		% 8x Accelerated (R=8) 
 		\midrule
@@ -516,7 +519,7 @@ For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \e
 		 & VoxelMorph & $53.342 \pm 7.687$ & $28.110 \pm 2.405$ & $77.341 \pm 5.900$ & $0.183 \pm 0.139$ \\  
 		 & Fourier-Net & \textcolor{blue}{$53.394 \pm 7.681$} & $28.128 \pm 2.398$ & \textcolor{blue}{$77.416 \pm 5.927$} & $0.183 \pm 0.138$ \\  
 		 & Fourier-Net+ & $53.388 \pm 7.664$ & $28.118 \pm 2.404$ & $77.398 \pm 5.906$ & $0.183 \pm 0.138$ \\   
-		 & 4xFourier-Net+ & $53.376 \pm 7.688$ & \textcolor{blue}{$28.133 \pm 2.398$} & $77.402 \pm 5.936$ & \textcolor{blue}{$0.182 \pm 0.138$} \\ 
+		 & \mbox{4xFourier-Net+} & $53.376 \pm 7.688$ & \textcolor{blue}{$28.133 \pm 2.398$} & $77.402 \pm 5.936$ & \textcolor{blue}{$0.182 \pm 0.138$} \\ 
 		 	 
 		% 10x Accelerated (R=10) 		 		
 		\midrule		
@@ -524,7 +527,7 @@ For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \e
 		 & VoxelMorph & \textcolor{red}{$52.211 \pm 7.393$} & $27.907 \pm 2.368$ & $77.194 \pm 5.863$ & $0.191 \pm 0.140$ \\  
 		 & Fourier-Net & \textcolor{red}{$52.192 \pm 7.361$} & \textcolor{red}{$27.895 \pm 2.362$} & \textcolor{red}{$77.160 \pm 5.815$} & $0.191 \pm 0.139$ \\  
 		 & Fourier-Net+ & $52.240 \pm 7.379$ & $27.924 \pm 2.357$ & $77.244 \pm 5.866$ & \textcolor{blue}{$0.189 \pm 0.139$} \\   
-		 & 4xFourier-Net+ & \textcolor{blue}{$52.272 \pm 7.330$} & \textcolor{blue}{$27.931 \pm 2.349$} & \textcolor{blue}{$77.262 \pm 5.816$} & \textcolor{blue}{$0.189 \pm 0.137$} \\ 
+		 & \mbox{4xFourier-Net+} & \textcolor{blue}{$52.272 \pm 7.330$} & \textcolor{blue}{$27.931 \pm 2.349$} & \textcolor{blue}{$77.262 \pm 5.816$} & \textcolor{blue}{$0.189 \pm 0.137$} \\ 
 		 
 		 \midrule	
 		 & & \multicolumn{4}{c}{Motion-correction for $z=32$ swapped k-space lines} \\
@@ -534,7 +537,7 @@ For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \e
 		 & VoxelMorph & $52.747 \pm 7.658$ & $27.512 \pm 2.188$ & $74.349 \pm 5.900$ & $0.203 \pm 0.129$ \\  
 		 & Fourier-Net & \textcolor{blue}{$52.802 \pm 7.708$} & \textcolor{blue}{$27.536 \pm 2.197$} & \textcolor{blue}{$74.421 \pm 5.937$} & \textcolor{blue}{$0.202 \pm 0.128$} \\  
 		 & Fourier-Net+ & $52.725 \pm 7.724$ & $27.522 \pm 2.198$ & $74.366 \pm 5.892$ & $0.203 \pm 0.129$ \\   
-		 & 4xFourier-Net+ & $52.711 \pm 7.718$ & \textcolor{red}{$27.500 \pm 2.205$} & \textcolor{red}{$74.353 \pm 5.986$} & \textcolor{red}{$0.204 \pm 0.132$} \\  
+		 & \mbox{4xFourier-Net+} & $52.711 \pm 7.718$ & \textcolor{red}{$27.500 \pm 2.205$} & \textcolor{red}{$74.353 \pm 5.986$} & \textcolor{red}{$0.204 \pm 0.132$} \\  
 		
 		% 8x Accelerated (R=8) 
 		\midrule
@@ -542,7 +545,7 @@ For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \e
 		 & VoxelMorph & $50.091 \pm 7.301$ & $27.164 \pm 2.198$ & $74.060 \pm 5.890$ & $0.220 \pm 0.138$ \\  
 		 & Fourier-Net & $50.152 \pm 7.325$ & $27.178 \pm 2.202$ & $74.094 \pm 5.826$ & $0.220 \pm 0.140$ \\  
 		 & Fourier-Net+ & \textcolor{blue}{$50.159 \pm 7.362$} & \textcolor{blue}{$27.196 \pm 2.221$} & \textcolor{blue}{$74.119 \pm 5.853$} & $0.220 \pm 0.141$ \\   
-		 & 4xFourier-Net+ & $50.128 \pm 7.276$ & $27.165 \pm 2.201$ & $74.054 \pm 5.842$ & $0.220 \pm 0.137$ \\ 
+		 & \mbox{4xFourier-Net+} & $50.128 \pm 7.276$ & $27.165 \pm 2.201$ & $74.054 \pm 5.842$ & $0.220 \pm 0.137$ \\ 
 		 	 
 		% 10x Accelerated (R=10) 		 		
 		\midrule		
@@ -550,9 +553,9 @@ For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \e
 		 & VoxelMorph & $49.241 \pm 7.047$ & $27.026 \pm 2.179$ & $73.976 \pm 5.795$ & $0.227 \pm 0.142$ \\  
 		 & Fourier-Net & $49.255 \pm 7.011$ & $27.024 \pm 2.168$ & \textcolor{red}{$73.952 \pm 5.793$} & $0.227 \pm 0.141$ \\  
 		 & Fourier-Net+ & \textcolor{blue}{$49.296 \pm 7.001$} & \textcolor{blue}{$27.045 \pm 2.172$} & \textcolor{blue}{$74.028 \pm 5.784$} & \textcolor{blue}{$0.226 \pm 0.140$} \\   
-		 & 4xFourier-Net+ & $49.287 \pm 7.066$ & $27.032 \pm 2.176$ & $74.022 \pm 5.820$ & $0.227 \pm 0.143$ \\ 
+		 & \mbox{4xFourier-Net+} & $49.287 \pm 7.066$ & $27.032 \pm 2.176$ & $74.022 \pm 5.820$ & $0.227 \pm 0.143$ \\ 
 		 \bottomrule
-	\end{tabular}
+	\end{tabularx}
 \end{table}
 
 
@@ -563,11 +566,12 @@ For $R=8$, \emph{Fourier-Net+} overtakes \emph{Fourier-Net} for HaarPSI, PSNR, S
 The results for $R=10$ are very similar to $R=8$. \emph{Fourier-Net+} again has the highest HaarPSI, PSNR and SSIM followed by \emph{4xFourier-Net+} and \emph{Fourier-Net}. This time the decrease in metrics from $R=10$ compared to $R=8$ is not quite as large (about $0.5 \%$, $0.2 \%$ and $0.1 \%$ respectively). \emph{Fourier-Net+} also has the lowest MSE again followed by \emph{4xFourier-Net+} similar to $R=8$ as the metrics barely changed.
 
 \begin{table}[H] %tpb
-	\footnotesize
+	%\footnotesize
+	\small
 	\centering
 	\caption{Reconstruction results \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$ as well as an baseline without motion-correction. The best results for each metric and subsampling are highlighted in blue, while values worse than the unaligned baseline are marked with red.}
 	\label{tab:ComparisonReconstructionCMRxReconLungMovement}
-	\begin{tabular}{c c c c c c} 
+	\begin{tabularx}{\textwidth}{c Y Y Y Y Y} 
 		\toprule
 		 & Methods & $\%$ HaarPSI & PSNR [dB] & $\%$ SSIM & MSE (m)\\
 		
@@ -577,7 +581,7 @@ The results for $R=10$ are very similar to $R=8$. \emph{Fourier-Net+} again has 
 		 & VoxelMorph & $54.177 \pm 7.495$ & $28.347 \pm 2.369$ & $79.873 \pm 4.878$ & $0.174 \pm 0.138$ \\ 
 		 & Fourier-Net & \textcolor{blue}{$59.886 \pm 8.876$} & \textcolor{blue}{$29.399 \pm 2.766$} & \textcolor{blue}{$82.731 \pm 5.296$} & \textcolor{blue}{$0.141 \pm 0.127$} \\  
 		 & Fourier-Net+ & $59.868 \pm 8.824$ & $29.303 \pm 2.761$ & $82.572 \pm 5.037$ & $0.146 \pm 0.142$  \\    
-		 & 4xFourier-Net+ & $59.884 \pm 8.875$ & $29.365 \pm 2.764$ & $82.704 \pm 5.293$ & $0.144 \pm 0.141$ \\ 
+		 & \mbox{4xFourier-Net+} & $59.884 \pm 8.875$ & $29.365 \pm 2.764$ & $82.704 \pm 5.293$ & $0.144 \pm 0.141$ \\ 
 		
 		% 8x Accelerated (R=8) 
 		\midrule
@@ -585,7 +589,7 @@ The results for $R=10$ are very similar to $R=8$. \emph{Fourier-Net+} again has 
 		 & VoxelMorph & $50.537 \pm 7.213$ & $27.596 \pm 2.460$ & $78.848 \pm 5.121$ & $0.209 \pm 0.161$ \\ 
 		 & Fourier-Net & $55.326 \pm 8.415$ & $28.465 \pm 2.846$ & $81.383 \pm 5.489$ & $0.191 \pm 0.129$ \\  
 		 & Fourier-Net+ & \textcolor{blue}{$55.406 \pm 8.432$} & \textcolor{blue}{$28.519 \pm 2.799$} & \textcolor{blue}{$81.447 \pm 5.478$} & \textcolor{blue}{$0.178 \pm 0.162$} \\    
-		 & 4xFourier-Net+ & $55.402 \pm 8.463$ & $28.508 \pm 2.916$ & $81.436 \pm 5.329$ & $0.181 \pm 0.153$ \\ 
+		 & \mbox{4xFourier-Net+} & $55.402 \pm 8.463$ & $28.508 \pm 2.916$ & $81.436 \pm 5.329$ & $0.181 \pm 0.153$ \\ 
 		 	 
 		% 10x Accelerated (R=10) 		 		
 		\midrule		
@@ -593,9 +597,9 @@ The results for $R=10$ are very similar to $R=8$. \emph{Fourier-Net+} again has 
 		 & VoxelMorph & $49.072 \pm 6.854$ & $27.331 \pm 2.417$ & $78.756 \pm 4.962$ & $0.220 \pm 0.163$ \\ 
 		 & Fourier-Net & $54.012 \pm 8.046$ & $28.217 \pm 2.758$ & $81.224 \pm 5.323$ & $0.193 \pm 0.162$ \\  
 		 & Fourier-Net+ & \textcolor{blue}{$54.025 \pm 8.053$} & \textcolor{blue}{$28.228 \pm 2.745$} & \textcolor{blue}{$81.264 \pm 5.331$} & \textcolor{blue}{$0.189 \pm 0.164$} \\    
-		 & 4xFourier-Net+ & $54.016 \pm 8.064$ & $28.223 \pm 2.691$ & $81.236 \pm 5.237$ & $0.191 \pm 0.148$ \\ 
+		 & \mbox{4xFourier-Net+} & $54.016 \pm 8.064$ & $28.223 \pm 2.691$ & $81.236 \pm 5.237$ & $0.191 \pm 0.148$ \\ 
 		 \bottomrule
-	\end{tabular}
+	\end{tabularx}
 \end{table}
 
 \subsubsection{Visual Examination}

@@ -115,7 +115,11 @@ literate=
 \usepackage{float}		% for float (figures, tables) positioning 
 \usepackage{multirow}	% for multirow in tables
 \usepackage{booktabs} 	% for toprule, cmidrule, etc. in tables
+\usepackage{tabularx}	% for making tables textwidth without affecting font size
 \usepackage{gensymb}		% for degree symbal °
+
+%% command for centering in tabularx environment
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 %% Subsubsections ohne Nummern machen
 \renewcommand*{\subsubsectionformat}{}
