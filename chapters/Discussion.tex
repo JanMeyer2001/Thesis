@@ -41,7 +41,7 @@ Lastly, the visual examination needs to be discussed. \emph{Fourier-Net+} and \e
 
 
 \section{Integration into a Motion-Compensated Reconstruction Pipeline} \label{Sec:DiscussionIntegrationMotion-CompensatedReconstructionPipeline}
-As a final down-stream task, the usage of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} as part of an motion-compensated reconstruction pipeline was evaluated.
+As a final downstream task, the usage of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} as part of an motion-compensated reconstruction pipeline was evaluated.
 
 \subsubsection{Domain Translation} \label{SubSec:DiscussionDomainTranslation}
 First, the domain translation between the \emph{ACDC} and \emph{CMRxRecon} datasets was tested for the networks. As seen in section~\ref{SubSec:ResultsDomainTranslation}, the results for all networks are very similar. The mean values of all metrics for \emph{Fourier-Net+} and \emph{4xFourier-Net+} were the same with only a small difference in inference time between the networks. The same is true for the MSE and percentage of non-positive Jabobian determinants of \emph{Fourier-Net}, however, the SSIM is slightly better for the version trained on \emph{ACDC} with a difference of about $0.2 \%$. This might be due to the larger \emph{ACDC} training dataset or simply statistical fluctuation due to the random start weight which can lead to slightly better results in some cases. However, overall, no domain gap was observed.
