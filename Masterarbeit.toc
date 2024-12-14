@@ -93,19 +93,18 @@
 \contentsline {subsubsection}{\numberline {5.1.0.2}Starting Channel Size}{74}{subsubsection.168}%
 \contentsline {subsubsection}{\numberline {5.1.0.3}Fourier-Transform Crop Size}{75}{subsubsection.169}%
 \contentsline {subsubsection}{\numberline {5.1.0.4}Comparison with VoxelMorph}{75}{subsubsection.170}%
-\contentsline {subsubsection}{\numberline {5.1.0.5}Dense Displacements}{75}{subsubsection.171}%
+\contentsline {subsubsection}{\numberline {5.1.0.5}Dense Displacements}{76}{subsubsection.171}%
 \contentsline {section}{\numberline {5.2}Registration Performance on Subsampled Data}{76}{section.172}%
-\contentsline {subsubsection}{\numberline {5.2.0.1}Cardiac Labels}{76}{subsubsection.173}%
+\contentsline {subsubsection}{\numberline {5.2.0.1}Cardiac Labels}{77}{subsubsection.173}%
 \contentsline {subsubsection}{\numberline {5.2.0.2}Qualitative Results}{77}{subsubsection.174}%
 \contentsline {section}{\numberline {5.3}Integration into a Motion-Compensated Reconstruction Pipeline}{77}{section.175}%
 \contentsline {subsubsection}{\numberline {5.3.0.1}Domain Translation}{77}{subsubsection.176}%
 \contentsline {subsubsection}{\numberline {5.3.0.2}K-Space Line Swapping}{78}{subsubsection.177}%
 \contentsline {subsubsection}{\numberline {5.3.0.3}Simulated Lung Movement}{78}{subsubsection.178}%
-\contentsline {subsubsection}{\numberline {5.3.0.4}Qualitative Results}{78}{subsubsection.179}%
+\contentsline {subsubsection}{\numberline {5.3.0.4}Qualitative Results}{79}{subsubsection.179}%
 \contentsline {section}{\numberline {5.4}Efficiency and Performance Trade-offs}{79}{section.180}%
-\contentsline {section}{\numberline {5.5}Limitations and Outlook}{79}{section.181}%
+\contentsline {section}{\numberline {5.5}Limitations and Outlook}{80}{section.181}%
 \contentsline {subsubsection}{\numberline {5.5.0.1}Extending the Scope of the Experiments and Network Training}{80}{subsubsection.182}%
 \contentsline {subsubsection}{\numberline {5.5.0.2}Challenges of Evaluation}{80}{subsubsection.183}%
-\contentsline {subsubsection}{\numberline {5.5.0.3}Future Work}{80}{subsubsection.184}%
-\contentsline {chapter}{\numberline {6}Conclusion}{81}{chapter.185}%
+\contentsline {chapter}{\numberline {6}Conclusion}{82}{chapter.184}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
