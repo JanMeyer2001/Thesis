@@ -315,7 +315,9 @@ For $R=10$, \emph{4xFourier-Net+} has the highest Dice score with the background
 	\resizebox{\textwidth}{!}{
 	\begin{tabular}{c c c c c c c c} 
 		\toprule
-		 & Method & $\%$ DICE & $\%$ DICE* & $\%$ SSIM & MSE (m) & $\% \, |J_{\phi}|\leq0$ & Time [s] \\
+		  & \multirow{2}{*}{Methods} & \multicolumn{6}{c}{Metrics} \\
+		\cmidrule(lr){3-8} 
+		  & & $\%$ DICE $\uparrow$ & $\%$ DICE* $\uparrow$ & $\%$ SSIM $\uparrow$ & MSE (m) $\downarrow$ & $\% \, |J_{\phi}|\leq0 \downarrow$ & Time [s] $\downarrow$ \\
 		% Fully Sampled (R=0)
 		\midrule
 		\multirow{6}{*}{\rotatebox{90}{$R=0$}} & Baseline & $70.85 \pm 18.27$  & $60.35 \pm 25.24$ & $86.39 \pm 4.08$ & $0.33 \pm 0.23$ & - & -\\  
@@ -459,19 +461,19 @@ For \emph{Fourier-Net+} and \emph{4xFourier-Net+}, the metrics barely change bet
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
-		$\%$ SSIM & $98.21 \pm 1.07$ & $97.88 \pm 1.04$ & $97.88 \pm 1.04$\\
-		MSE (m) & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.03 \pm 0.09$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [ms] 	  & 3.8 & 3.7 & 18.5  \\
+		$\%$ SSIM $\uparrow$ & \textbf{98.21} $\pm$ \textbf{1.07} & $97.88 \pm 1.04$ & $97.88 \pm 1.04$\\
+		MSE (m) $\downarrow$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.03 \pm 0.09$ & \textbf{0.00} $\pm$ \textbf{0.00} & \textbf{0.00} $\pm$ \textbf{0.00} \\
+		Time [ms] $\downarrow$ 	  & 3.81 & \textbf{3.72} & 18.52  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Trained on \emph{CMRxRecon}} \\
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
-		$\%$ SSIM & $97.99 \pm 1.04$ & $97.88 \pm 1.06$ & $97.88 \pm 1.07$\\
-		MSE (m) & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.00 \pm 0.01$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [ms] 	  & 2.9 & 4.3 & 12.0  \\
+		$\%$ SSIM $\uparrow$ & \textbf{97.99} $\pm$ \textbf{1.04} & $97.88 \pm 1.06$ & $97.88 \pm 1.07$\\
+		MSE (m) $\downarrow$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ & $0.01 \pm 0.01$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.00 \pm 0.01$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
+		Time [ms] $\downarrow$ 	  & \textbf{2.86} & 4.32 & 12.61  \\
 		\bottomrule
 	\end{tabularx}	
 \end{table}
@@ -497,7 +499,7 @@ For $z=32$ and $R=4$, \emph{Fourier-Net} performs best for all metrics, while \e
 		\toprule
 		 & \multirow{2}{*}{Methods} & \multicolumn{4}{c}{Motion-correction for $z=16$ swapped k-space lines} \\
 		\cmidrule(lr){3-6} 
-		 & & $\%$ HaarPSI & PSNR [dB] & $\%$ SSIM & MSE (m)\\
+		 & & $\%$ HaarPSI $\uparrow$ & PSNR [dB] $\uparrow$ & $\%$ SSIM $\uparrow$ & MSE (m) $\downarrow$\\
 		
 		% 4x Accelerated (R=4) 				 		
 		\midrule
@@ -567,7 +569,9 @@ The results for $R=10$ are very similar to $R=8$. \emph{Fourier-Net+} again has 
 	\label{tab:ComparisonReconstructionCMRxReconLungMovement}
 	\begin{tabularx}{\textwidth}{c Y Y Y Y Y} 
 		\toprule
-		 & Methods & $\%$ HaarPSI & PSNR [dB] & $\%$ SSIM & MSE (m)\\
+		 & \multirow{2}{*}{Methods} & \multicolumn{4}{c}{Metrics} \\
+		\cmidrule(lr){3-6} 
+		  & & $\%$ HaarPSI $\uparrow$ & PSNR [dB] $\uparrow$ & $\%$ SSIM $\uparrow$ & MSE (m) $\downarrow$\\
 		
 		% 4x Accelerated (R=4) 				 		
 		\midrule

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  14 DEC 2024 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  14 DEC 2024 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1757,44 +1757,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
- line 372.
+ line 374.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
 <images/Boxplot_DiceScores_Myocardium.png, id=1161, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
-t line 378.
+t line 380.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
 <images/Boxplot_DiceScores_RV-Cavity.png, id=1162, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
- line 384.
+ line 386.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
  [61] [62 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceSco
 res_Myocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
 <images/TestExamples_Mode0.png, id=1176, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
-Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 434.
+Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 436.
 
 (pdftex.def)             Requested size: 441.01773pt x 159.44626pt.
 <images/TestExamples_Mode1.png, id=1177, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
-Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 435.
+Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 437.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
 <images/TestExamples_Mode2.png, id=1178, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
-Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 436.
+Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 438.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
 <images/TestExamples_Mode3.png, id=1179, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
-Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 437.
+Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 439.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
  [63]
@@ -1803,68 +1803,68 @@ Overfull \vbox (46.21942pt too high) has occurred while \output is active []
 
 [64 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
 es/TestExamples_Mode2.png> <./images/TestExamples_Mode3.png>]
-Overfull \hbox (8.29655pt too wide) in paragraph at lines 444--445
+Overfull \hbox (8.29655pt too wide) in paragraph at lines 446--447
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
 /m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/
 n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
 [65] [66]
-Underfull \hbox (badness 1308) in paragraph at lines 494--494
+Underfull \hbox (badness 1308) in paragraph at lines 496--496
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 554--554
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 554--554
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 554--554
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 554--554
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 554--554
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 554--554
  []|[]| 
  []
 
 [67] [68]
-Underfull \hbox (badness 1308) in paragraph at lines 566--566
+Underfull \hbox (badness 1308) in paragraph at lines 568--568
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 596--596
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 600--600
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 596--596
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 600--600
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 596--596
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 600--600
  []|[]| 
  []
 
@@ -1874,21 +1874,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 596--596
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
-t line 608.
+t line 612.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
 <./Images/ResultsReconstruction_mode2.pdf, id=1235, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
-t line 609.
+t line 613.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
 <./Images/ResultsReconstruction_mode3.pdf, id=1236, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.pdf  used on inpu
-t line 610.
+t line 614.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
 ) (chapters/Discussion.tex [71] [72 <./Images/ResultsReconstruction_mode1.pdf> 
 <./Images/ResultsReconstruction_mode2.pdf
@@ -1974,7 +1974,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (94 pages, 26329052 bytes).
+Output written on Masterarbeit.pdf (94 pages, 26329397 bytes).
 PDF statistics:
  1780 PDF objects out of 2073 (max. 8388607)
  369 named destinations out of 1000 (max. 500000)
