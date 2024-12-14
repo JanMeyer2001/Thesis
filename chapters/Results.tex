@@ -11,13 +11,7 @@ In this section, the results for the ablation studies and parameter tests are de
 \subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}
 First, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} were compared as described in section~\ref{SubSubSec:Fourier-NetvsFourier-Net+}. The results can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDC}. For the dense displacement variants, the diffeomorphic transform increases the Dice score (with and without the background label) slightly for \emph{Fourier-Net} and \emph{4xFourier-Net}, but decreases for \emph{Fourier-Net+}. The SSIM decreases for all models slightly, while the MSE remains unaffected. Unsurprisingly, the percentage of non-positive Jabobian determinants is lower for the diffeomorphic variants. Times for the baseline and diffeomorphic versions are similar with the \emph{Fourier-Net} being faster without the diffeomorphism by 1.2~ms, while \emph{Fourier-Net+} and \emph{4xFourier-Net} are faster with the diffeomorphism by 3.2~ms and 1.6~ms respectively. \\
 The results for the band-limited versions are very similar with \emph{Fourier-Net} and \emph{Fourier-Net+} having a lower Dice (with background) with the diffeomorphism, while \emph{4xFourier-Net} increases by almost 2$\%$. When excluding the background label \emph{Fourier-Net} is again slightly worse, but \emph{Fourier-Net+} and \emph{4xFourier-Net} both improve, the latter with almost 3$\%$ Dice more than the baseline version. The SSIM values are slightly lower for \emph{Fourier-Net} and \emph{Fourier-Net+} with the diffeomorphism, but again higher for \emph{4xFourier-Net}. The MSE is slightly lower for \emph{Fourier-Net} and \emph{4xFourier-Net}, but slightly higher for \emph{Fourier-Net+}. The percentage of non-positive Jabobian determinants again decreases for the diffeomorphic variants. The times again vary slightly with \emph{Fourier-Net} and \emph{Fourier-Net+} being slower by 0.5~ms and 6.2~ms, while \emph{4xFourier-Net} is a lot faster with 14.7~ms difference.\\
-Now to the difference between the dense and band-limited displacement. Overall, the dense displacement versions have a higher Dice score for all models both with and without the background label. 
-%This is to be expected as the dense displacement versions can use all of the available k-space data for the registration task, while the band-limited versions have only a limited amount of k-space data, directly impacting and limiting their performance. 
-The dense displacements also have better SSIM and MSE metrics, however the difference is not quite as large as with the Dice scores. 
-%As the differences between the frames is not quite as large, the weaker registration performance does not impact this metric as much as the Dice score, which is focused on the moving cardiac region. The same is true for the MSE, but the dense displacement is again far superior. 
-Only the percentage of non-positive Jabobian determinants is notably lower for the band-limited displacement. 
-%as the band-limiting probably allows for only a smaller deformation. However, the difference is still very small, especially for the diffeomorhpic versions, and it could be argued that a better registration performance at the cost of some image folding is an acceptable trade-off. 
-In terms of inference time, the dense displacement variants are slightly faster despite having a larger encoder, however all of the models are in the milliseconds (7~ms up to 33.5~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder, as discussed before, and thus have far more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
+Now to the difference between the dense and band-limited displacement. Overall, the dense displacement versions have a higher Dice score for all models both with and without the background label.  The dense displacements also have better SSIM and MSE metrics, however the difference is not quite as large as with the Dice scores.  Only the percentage of non-positive Jabobian determinants is notably lower for the band-limited displacement. In terms of inference time, the dense displacement variants are slightly faster despite having a larger encoder, however all of the models are in the milliseconds (7~ms up to 33.5~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder, as discussed before, and thus have far more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
 
 \begin{table}[h] %htpb
 	%\scriptsize
@@ -30,25 +24,25 @@ In terms of inference time, the dense displacement variants are slightly faster 
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
-		$\%$ Dice & $78.22 \pm 13.84$ & $78.43 \pm 13.96$ & $79.34 \pm 14.03$\\
-		$\%$ Dice* & $71.03 \pm 18.87$ & $70.50 \pm 19.17$ & $72.02 \pm 18.94$ \\
-		$\%$ SSIM & $91.92 \pm 3.32$ & $89.09 \pm 4.10$ & $89.65 \pm 3.85$\\
-		MSE (m) & $0.09 \pm 0.06$ & $0.17 \pm 0.13$ & $0.15 \pm 0.12$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.53 \pm 0.52$ & $0.32 \pm 0.55$ & $0.04 \pm 0.09$ \\
-		Time [ms] 	  & 7.0 	& 10.7 	& 21.9 \\
+		$\%$ Dice $\uparrow$ & $78.22 \pm 13.84$ & $78.43 \pm 13.96$ & \textbf{79.34} $\pm$ \textbf{14.03}\\
+		$\%$ Dice* $\uparrow$ & $71.03 \pm 18.87$ & $70.50 \pm 19.17$ & \textbf{72.02} $\pm$ \textbf{18.94} \\
+		$\%$ SSIM $\uparrow$ & \textbf{91.92} $\pm$ \textbf{3.32} & $89.09 \pm 4.10$ & $89.65 \pm 3.85$\\
+		MSE (m) $\downarrow$ & \textbf{0.09} $\pm$ \textbf{0.06} & $0.17 \pm 0.13$ & $0.15 \pm 0.12$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.53 \pm 0.52$ & $0.32 \pm 0.55$ & \textbf{0.04} $\pm$ \textbf{0.09} \\
+		Time [ms] $\downarrow$  & \textbf{7.03} 	& 10.74 	& 21.89 \\
 		\midrule
 		 & \mbox{Diff-Fourier-Net} & \mbox{Diff-Fourier-Net+} & \mbox{Diff-4xFourier-Net+}\\		
 		\midrule
-		$\%$ Dice & $78.56 \pm 14.13$ & $77.88 \pm 13.81$ & $79.49 \pm 14.26$\\
-		$\%$ Dice* & $71.31 \pm 19.13$ & $70.19 \pm 18.82$ & $72.12 \pm 19.33$ \\
-		$\%$ SSIM & $91.79 \pm 3.38$ & $89.08 \pm 4.10$ & $89.62 \pm 3.98$\\
-		MSE (m) & $0.09 \pm 0.06$ & $0.16 \pm 0.13$ & $0.15 \pm 0.12$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.03 \pm 0.06$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [ms] 	  & 8.2  & 7.5 & 20.3 \\
+		$\%$ Dice $\uparrow$ & $78.56 \pm 14.13$ & $77.88 \pm 13.81$ & \textbf{79.49} $\pm$ \textbf{14.26}\\
+		$\%$ Dice* $\uparrow$ & $71.31 \pm 19.13$ & $70.19 \pm 18.82$ & \textbf{72.12} $\pm$ \textbf{19.33} \\
+		$\%$ SSIM $\uparrow$ & \textbf{91.79} $\pm$ \textbf{3.38} & $89.08 \pm 4.10$ & $89.62 \pm 3.98$\\
+		MSE (m) $\downarrow$ & \textbf{0.09} $\pm$ \textbf{0.06} & $0.16 \pm 0.13$ & $0.15 \pm 0.12$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.03 \pm 0.06$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
+		Time [ms] $\downarrow$  & 8.16  & \textbf{7.46} & 20.33 \\
 		\midrule
-		Parameters    & 645,216 	& 380,470 	& 1,521,880 \\
-		Mult-Adds (G) & 1.12  	& 0.04  		& 0.18 \\
-		Memory [MB]   & 97.63   	& 5.81   	& 21.90 \\
+		Parameters $\downarrow$ & 645,216 & \textbf{380,470} & 1,521,880 \\
+		Mult-Adds (G) $\downarrow$ & 1.12  	& \textbf{0.04} 	& 0.18 \\
+		Memory [MB] $\downarrow$ & 97.63   & \textbf{5.81} 	& 21.90 \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -61,25 +55,25 @@ In terms of inference time, the dense displacement variants are slightly faster 
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
-		$\%$ Dice & $77.95 \pm 14.71$ & $75.35 \pm 14.28$ & $76.59 \pm 14.84$\\
-		$\%$ Dice* & $69.96 \pm 21.55$ & $64.74 \pm 21.12$ & $66.82 \pm 21.55$ \\
-		$\%$ SSIM & $91.35 \pm 3.51$ & $88.42 \pm 3.94$ & $88.59 \pm 4.23$\\
-		MSE (m) & $1.00 \pm 0.71$ & $2.06 \pm 1.54$ & $1.92 \pm 1.46$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.36 \pm 0.38$ & $0.13 \pm 0.35$ & $0.03 \pm 0.12$ \\
-		Time [ms] & 14.5 & 14.5 & 33.5 \\
+		$\%$ Dice $\uparrow$ & \textbf{77.95} $\pm$ \textbf{14.71} & $75.35 \pm 14.28$ & $76.59 \pm 14.84$\\
+		$\%$ Dice* $\uparrow$ & \textbf{69.96} $\pm$ \textbf{21.55} & $64.74 \pm 21.12$ & $66.82 \pm 21.55$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{91.35} $\pm$ \textbf{3.51} & $88.42 \pm 3.94$ & $88.59 \pm 4.23$\\
+		MSE (m) $\downarrow$ & \textbf{1.00} $\pm$ \textbf{0.71} & $2.06 \pm 1.54$ & $1.92 \pm 1.46$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.36 \pm 0.38$ & $0.13 \pm 0.35$ & \textbf{0.03} $\pm$ \textbf{0.12} \\
+		Time [ms] $\downarrow$ & \textbf{14.46} & \textbf{14.46} & 33.49 \\
 		\midrule
 		 & \mbox{Diff-Fourier-Net} & \mbox{Diff-Fourier-Net+} & \mbox{Diff-4xFourier-Net+}\\		
 		\midrule
-		$\%$ Dice & $77.93 \pm 14.93$ & $75.17 \pm 13.43$ & $78.20 \pm 14.01$\\
-		$\%$ Dice* & $69.91 \pm 21.99$ & $65.67 \pm 18.61$ & $69.61 \pm 19.11$ \\
-		$\%$ SSIM & $91.24 \pm 3.56$ & $87.81 \pm 3.94$ & $88.81 \pm 4.13$\\
-		MSE (m) & $0.98 \pm 0.67$ & $2.29 \pm 1.61$ & $1.85 \pm 1.41$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.01 \pm 0.03$ & $0.00 \pm 0.00$ & $0.00 \pm 0.00$ \\
-		Time [ms] 	  & 15.0  & 20.7 & 18.8 \\
+		$\%$ Dice $\uparrow$ & $77.93 \pm 14.93$ & $75.17 \pm 13.43$ & \textbf{78.20} $\pm$ \textbf{14.01}\\
+		$\%$ Dice* $\uparrow$ & \textbf{69.91} $\pm$ \textbf{21.99} & $65.67 \pm 18.61$ & $69.61 \pm 19.11$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{91.24} $\pm$ \textbf{3.56} & $87.81 \pm 3.94$ & $88.81 \pm 4.13$\\
+		MSE (m) $\downarrow$ & \textbf{0.98} $\pm$ \textbf{0.67} & $2.29 \pm 1.61$ & $1.85 \pm 1.41$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.01 \pm 0.03$ & \textbf{0.00} $\pm$ \textbf{0.00} & \textbf{0.00} $\pm$ \textbf{0.00} \\
+		Time [ms] $\downarrow$ 	  & \textbf{14.96}  & 20.72 & 18.81 \\
 		\midrule
-		Parameters    & 434,519 & 75,429 & 301,716 \\
-		Mult-Adds (M) & 595.04  & 10.98  & 43.91 \\
-		Memory [MB]   & 44.69   & 2.25   & 7.66 \\
+		Parameters $\downarrow$    & 434,519 & \textbf{75,429} & 301,716 \\
+		Mult-Adds (M) $\downarrow$ & 595.04  & \textbf{10.98}  & 43.91 \\
+		Memory [MB] $\downarrow$   & 44.69   & \textbf{2.25}   & 7.66 \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -99,29 +93,29 @@ Next, the impact of the starting channel size was examined as explained in secti
 		\cmidrule(lr){2-5}
 		 & 8 & 16 & 32 & 64 \\		
 		\midrule
-		$\%$ Dice & $75.50 \pm 13.79$ & $76.88 \pm 13.86$ & $77.66 \pm 13.60$ & $77.81 \pm 13.76$ \\
-		$\%$ Dice* & $65.70 \pm 18.96$ & $67.86 \pm 19.06$ & $68.95 \pm 18.65$ & $69.05 \pm 18.80$ \\
-		$\%$ SSIM & $88.05 \pm 3.89$ & $88.67 \pm 3.88$ & $88.83 \pm 3.83$ & $89.02 \pm 3.67$ \\
-		MSE (m) & $0.22 \pm 0.16$ & $0.20 \pm 0.15$ & $0.19 \pm 0.15$ & $0.19 \pm 0.15$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.07 \pm 0.25$ & $0.04 \pm 0.14$ & $0.01 \pm 0.04$ & $0.00 \pm 0.03$ \\
-		Time [ms] 	  & 7.2 & 7.2 & 8.0 & 7.9 \\
-		Parameters 	  & 75,429 	& 300,477 	& 1,199,469 	& 4,793,037 \\
-		\mbox{Mult-Adds (M)} & 10.98 	& 42.89 		& 169.54 	& 674.10 \\
-		Memory [MB] 	  & 2.25 	& 4.64 		& 11.22 		& 31.57 \\
+		$\%$ Dice $\uparrow$ & $75.50 \pm 13.79$ & $76.88 \pm 13.86$ & $77.66 \pm 13.60$ & \mbox{\textbf{77.81} $\pm$ \textbf{13.76}} \\
+		$\%$ Dice* $\uparrow$ & $65.70 \pm 18.96$ & $67.86 \pm 19.06$ & $68.95 \pm 18.65$ & \mbox{\textbf{69.05} $\pm$ \textbf{18.80}} \\
+		$\%$ SSIM $\uparrow$ & $88.05 \pm 3.89$ & $88.67 \pm 3.88$ & $88.83 \pm 3.83$ & \textbf{89.02} $\pm$ \textbf{3.67} \\
+		MSE (m) $\downarrow$ & $0.22 \pm 0.16$ & $0.20 \pm 0.15$ & \textbf{0.19} $\pm$ \textbf{0.15} & \textbf{0.19} $\pm$ \textbf{0.15} \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.07 \pm 0.25$ & $0.04 \pm 0.14$ & $0.01 \pm 0.04$ & \textbf{0.00} $\pm$ \textbf{0.03} \\
+		Time [ms] $\downarrow$ 	  & \textbf{7.18} & 7.77 & 7.99 & 7.79 \\
+		Parameters  $\downarrow$	  & \textbf{75,429} 	& 300,477 	& 1,199,469 	& 4,793,037 \\
+		\mbox{Mult-Adds (M) $\downarrow$}  & \textbf{10.98} 	& 42.89 		& 169.54 	& 674.10 \\
+		\mbox{Memory [MB] $\downarrow$} 	  & \textbf{2.25} 	& 4.64 		& 11.22 		& 31.57 \\
 		\midrule		
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{Starting Channels - 4xFourier-Net+} \\
 		\cmidrule(lr){2-5} 
 		 & 8 & 16 & 32 & 64 \\		
 		\midrule
-		$\%$ Dice & $77.54 \pm 13.73$ & $77.90 \pm 13.92$ & $78.33 \pm 14.14$ & $78.74 \pm 13.91$ \\
-		$\%$ Dice* & $68.52 \pm 18.62$ & $69.21 \pm 19.02$ & $69.99 \pm 19.21$ & $70.41 \pm 19.02$ \\
-		$\%$ SSIM & $88.70 \pm 4.17$ & $88.89 \pm 4.05$ & $89.08 \pm 4.01$ & $89.29 \pm 3.74$ \\
-		MSE (m) & $0.19 \pm 0.14$ & $0.19 \pm 0.14$ & $0.18 \pm 0.14$ & $0.18 \pm 0.14$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.02 \pm 0.07$ & $0.01 \pm 0.04$ & $0.01 \pm 0.05$ & $0.00 \pm 0.00$ \\
-		Time [ms] 	  & 30.1 	& 24.4 	& 29.7 	& 27.7 \\
-		Parameters 	  & 301,716 	& 1,201,908 	& 4,797,876 	& 19,172,148 \\
-		\mbox{Mult-Adds (G)} & 0.04 	& 0.17 		& 0.68 		& 2.70 \\
-		Memory [MB] 	  & 7.66 	& 17.23 		& 43.56 		& 124.94 \\
+		$\%$ Dice $\uparrow$ & $77.54 \pm 13.73$ & $77.90 \pm 13.92$ & $78.33 \pm 14.14$ & \mbox{\textbf{78.74} $\pm$ \textbf{13.91}} \\
+		$\%$ Dice* $\uparrow$ & $68.52 \pm 18.62$ & $69.21 \pm 19.02$ & $69.99 \pm 19.21$ & \mbox{\textbf{70.41} $\pm$ \textbf{19.02}} \\
+		$\%$ SSIM $\uparrow$ & $88.70 \pm 4.17$ & $88.89 \pm 4.05$ & $89.08 \pm 4.01$ & \textbf{89.29} $\pm$ \textbf{3.74} \\
+		MSE (m) $\downarrow$ & $0.19 \pm 0.14$ & $0.19 \pm 0.14$ & \textbf{0.18} $\pm$ \textbf{0.14} & \textbf{0.18} $\pm$ \textbf{0.14} \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.02 \pm 0.07$ & $0.01 \pm 0.04$ & $0.01 \pm 0.05$ & \textbf{0.00} $\pm$ \textbf{0.00} \\
+		Time [ms] $\downarrow$ 	  & 30.13 	& \textbf{24.61} 	& 29.65 	& 27.73 \\
+		Parameters $\downarrow$ 	  & \textbf{301,716} 	& 1,201,908 	& 4,797,876 	& 19,172,148 \\
+		\mbox{Mult-Adds (G) $\downarrow$} & \textbf{0.04} 	& 0.17 		& 0.68 		& 2.70 \\
+		\mbox{Memory [MB]  $\downarrow$}	  & \textbf{7.66} 	& 17.23 		& 43.56 		& 124.94 \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -141,29 +135,29 @@ The results for the FT crop size experiment, as described in section~\ref{SubSub
 		\cmidrule(lr){2-5}
 		 & $80 \times 168$ & $40 \times 84$ & $48 \times 48$ & $24 \times 24$ \\		
 		\midrule
-		$\%$ Dice & $78.24 \pm 14.43$ & $76.61 \pm 13.90$ & $75.27 \pm 13.49$ & $73.77 \pm 14.42$ \\
-		$\%$ Dice* & $70.66 \pm 19.70$ & $67.60 \pm 19.24$ & $65.48 \pm 18.76$ & $63.37 \pm 20.07$ \\
-		$\%$ SSIM & $89.81 \pm 4.09$ & $88.58 \pm 3.87$ & $87.98 \pm 3.91$ & $87.00 \pm 3.99$ \\
-		MSE (m) & $0.15 \pm 0.12$ & $0.20 \pm 0.15$ & $0.22 \pm 0.16$ & $0.27 \pm 0.19$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.22 \pm 0.46$ & $0.05 \pm 0.15$ & $0.09 \pm 0.25$ & $0.00 \pm 0.02$ \\		
-		Time [ms] 	  & 15.8 & 7.7 & 7.9 & 8.1 \\
-		Parameters 	  & 75,429 & 75,429 & 75,429 & 75,429 \\
-		\mbox{Mult-Adds (M)} & 64.03  & 16.37  & 10.98  & 2.74 \\
-		Memory [MB] 	  & 9.51   & 2.97   & 2.25   & 1.12 \\
+		$\%$ Dice $\uparrow$ & \mbox{\textbf{78.24} $\pm$ \textbf{14.43}} & $76.61 \pm 13.90$ & $75.27 \pm 13.49$ & $73.77 \pm 14.42$ \\
+		$\%$ Dice* $\uparrow$ & \mbox{\textbf{70.66} $\pm$ \textbf{19.70}} & $67.60 \pm 19.24$ & $65.48 \pm 18.76$ & $63.37 \pm 20.07$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{89.81} $\pm$ \textbf{4.09} & $88.58 \pm 3.87$ & $87.98 \pm 3.91$ & $87.00 \pm 3.99$ \\
+		MSE (m) $\downarrow$ & \textbf{0.15} $\pm$ \textbf{0.12} & $0.20 \pm 0.15$ & $0.22 \pm 0.16$ & $0.27 \pm 0.19$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.22 \pm 0.46$ & $0.05 \pm 0.15$ & $0.09 \pm 0.25$ & \textbf{0.00} $\pm$ \textbf{0.02} \\		
+		Time [ms]  $\downarrow$	  & \textbf{6.99} & 7.71 & 7.18 & 8.14 \\
+		Parameters  $\downarrow$	  & 75,429 & 75,429 & 75,429 & 75,429 \\
+		\mbox{Mult-Adds (M) $\downarrow$} & 64.03  & 16.37  & 10.98  & \textbf{2.74} \\
+		\mbox{Memory [MB]  $\downarrow$} 	  & 9.51   & 2.97   & 2.25   & \textbf{1.12} \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{4}{c}{FT crop size - 4xFourier-Net+} \\
 		\cmidrule(lr){2-5}
 		 & $80 \times 168$ & $40 \times 84$ & $48 \times 48$ & $24 \times 24$ \\		
 		\midrule
-		$\%$ Dice & $78.12 \pm 15.01$ & $77.49 \pm 14.67$ & $74.95 \pm 14.15$ & $72.58 \pm 14.67$ \\
-		$\%$ Dice* & $70.08 \pm 21.92$ & $68.03 \pm 21.57$ & $64.54 \pm 20.75$ & $61.19 \pm 21.63$ \\
-		$\%$ SSIM & $89.91 \pm 4.01$ & $89.03 \pm 3.98$ & $87.98 \pm 3.94$ & $87.02 \pm 3.95$ \\
-		MSE (m) & $1.45 \pm 1.11$ & $1.81 \pm 1.37$ & $2.22 \pm 1.61$ & $2.64 \pm 1.84$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.12 \pm 0.23$ & $0.03 \pm 0.15$ & $0.06 \pm 0.23$ & $0.02 \pm 0.15$ \\	
-		Time [ms] 	 & 39.0  & 30.1  & 27.7  & 28.9 \\
-		Parameters 	 & 301,716 & 301,716 & 301,716 & 301,716 \\
-		\mbox{Mult-Adds (M)} & 256.14  & 65.50   & 43.91   & 10.98 \\
-		Memory [MB] 	 & 36.70   & 10.54   & 7.66    & 3.15 \\
+		$\%$ Dice $\uparrow$ & \mbox{\textbf{78.12} $\pm$ \textbf{15.01}} & $77.49 \pm 14.67$ & $74.95 \pm 14.15$ & $72.58 \pm 14.67$ \\
+		$\%$ Dice* $\uparrow$ & \mbox{\textbf{70.08} $\pm$ \textbf{21.92}} & $68.03 \pm 21.57$ & $64.54 \pm 20.75$ & $61.19 \pm 21.63$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{89.91} $\pm$ \textbf{4.01} & $89.03 \pm 3.98$ & $87.98 \pm 3.94$ & $87.02 \pm 3.95$ \\
+		MSE (m) $\downarrow$ & \textbf{1.45} $\pm$ \textbf{1.11} & $1.81 \pm 1.37$ & $2.22 \pm 1.61$ & $2.64 \pm 1.84$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.12 \pm 0.23$ & $0.03 \pm 0.15$ & $0.06 \pm 0.23$ & \textbf{0.02} $\pm$ \textbf{0.15} \\	
+		Time [ms] $\downarrow$ 	 & 39.03  & 30.05  & 30.13  & \textbf{28.86} \\
+		Parameters  $\downarrow$	 & 301,716 & 301,716 & 301,716 & 301,716 \\
+		\mbox{Mult-Adds (M) $\downarrow$} & 256.14  & 65.50   & 43.91   & \textbf{10.98} \\
+		\mbox{Memory [MB]  $\downarrow$} 	 & 36.70   & 10.54   & 7.66    & \textbf{3.15} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -181,15 +175,15 @@ Next was the comparison with \emph{VoxelMorph} as described in section~\ref{SubS
 		\toprule
 		 & Fourier-Net & Fourier-Net+ & \mbox{4xFourier-Net+} & VoxelMorph \\		
 		\midrule
-		$\%$ Dice & $78.31 \pm 13.96$ & $76.88 \pm 13.86$ & $77.90 \pm 13.92$ & $75.84 \pm 13.46$ \\
-		$\%$ Dice* & $71.17 \pm 18.99$ & $67.86 \pm 19.06$ & $69.21 \pm 19.02$ & $68.25 \pm 18.36$ \\
-		$\%$ SSIM & $91.53 \pm 3.49$ & $88.67 \pm 3.88$ & $88.89 \pm 4.05$ & $93.53 \pm 3.30$ \\
-		MSE (m) & $0.09 \pm 0.07$ & $0.20 \pm 0.15$ & $0.19 \pm 0.14$ & $0.06 \pm 0.04$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.44 \pm 0.45$ & $0.04 \pm 0.14$ & $0.01 \pm 0.04$ & $1.00 \pm 0.57$ \\
-		Time [ms] 	  & 9.9    & 7.1 	& 24.4  	& 14.5 \\
-		Parameters 	  & 1,735,447 & 300,477 	& 1,201,908 	& 84,322 \\
-		\mbox{Mult-Adds (G)} & 2.35      & 0.04289  & 0.17157  	& 0.00157 \\
-		Memory [MB] 	  & 90.08     & 4.64   	& 17.23    	& 39.04 \\
+		$\%$ Dice $\uparrow$ & \mbox{\textbf{78.31} $\pm$ \textbf{13.96}} & $76.88 \pm 13.86$ & $77.90 \pm 13.92$ & $75.84 \pm 13.46$ \\
+		$\%$ Dice* $\uparrow$ & \mbox{\textbf{71.17} $\pm$ \textbf{18.99}} & $67.86 \pm 19.06$ & $69.21 \pm 19.02$ & $68.25 \pm 18.36$ \\
+		$\%$ SSIM $\uparrow$ & $91.53 \pm 3.49$ & $88.67 \pm 3.88$ & $88.89 \pm 4.05$ & \textbf{93.53} $\pm$ \textbf{3.30} \\
+		MSE (m) $\downarrow$ & $0.09 \pm 0.07$ & $0.20 \pm 0.15$ & $0.19 \pm 0.14$ & \textbf{0.06} $\pm$ \textbf{0.04} \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.24 \pm 0.45$ & $0.02 \pm 0.14$ & \textbf{0.00} $\pm$ \textbf{0.04} & $1.00 \pm 0.57$ \\
+		Time [ms] $\downarrow$ 	  & \textbf{7.58}    & 7.78 	& 24.61  	& 10.82 \\
+		Parameters $\downarrow$ 	  & 1,735,447 & 300,477 	& 1,201,908 	& \textbf{84,322} \\
+		\mbox{Mult-Adds (G) $\downarrow$} & 2.35      & 0.04289  & 0.17157  	& \textbf{0.00157} \\
+		\mbox{Memory [MB]  $\downarrow$} 	  & 90.08     & \textbf{4.64}   	& 17.23    	& 39.04 \\
 		\bottomrule
 	\end{tabularx}	
 \end{table}
@@ -215,23 +209,23 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
-		$\%$ Dice & $77.37 \pm 13.92$ & $76.90 \pm 14.12$ & $77.35 \pm 14.04$\\
-		$\%$ Dice* & $68.98 \pm 19.10$ & $68.39 \pm 19.30$ & $68.76 \pm 19.32$ \\
-		$\%$ SSIM & $84.75 \pm 7.01$ & $79.79 \pm 9.76$ & $80.32 \pm 9.37$\\
-		MSE (m) & $0.08 \pm 0.05$ & $0.15 \pm 0.12$ & $0.13 \pm 0.10$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.16 \pm 0.19$ & $0.11 \pm 0.21$ & $0.03 \pm 0.07$ \\
-		Time [ms] 	  & 8.5 & 8.3 & 26.3  \\
+		$\%$ Dice $\uparrow$ & \textbf{77.37} $\pm$ \textbf{13.92} & $76.90 \pm 14.12$ & $77.35 \pm 14.04$\\
+		$\%$ Dice* $\uparrow$ & \textbf{68.98} $\pm$ \textbf{19.10} & $68.39 \pm 19.30$ & $68.76 \pm 19.32$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{84.75} $\pm$ \textbf{7.01} & $79.79 \pm 9.76$ & $80.32 \pm 9.37$\\
+		MSE (m) $\downarrow$ & \textbf{0.08} $\pm$ \textbf{0.05} & $0.15 \pm 0.12$ & $0.13 \pm 0.10$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.16 \pm 0.19$ & $0.11 \pm 0.21$ & \textbf{0.03} $\pm$ \textbf{0.07} \\
+		Time [ms] $\downarrow$ 	  & 8.49 & \textbf{8.26} & 26.33  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
-		$\%$ Dice & $76.55 \pm 13.89$ & $76.20 \pm 13.57$ & $77.23 \pm 13.73$\\
-		$\%$ Dice* & $67.90 \pm 19.44$ & $66.30 \pm 19.01$ & $67.67 \pm 18.97$ \\
-		$\%$ SSIM & $82.93 \pm 8.12$ & $77.74 \pm 10.69$ & $77.96 \pm 10.57$\\
-		MSE (m) & $0.10 \pm 0.06$ & $0.19 \pm 0.14$ & $0.18 \pm 0.13$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.35 \pm 0.41$ & $0.01 \pm 0.05$ & $0.00 \pm 0.02$ \\
-		Time [ms] 	  & 6.9  	& 6.5 	& 31.2  \\
+		$\%$ Dice $\uparrow$ & $76.55 \pm 13.89$ & $76.20 \pm 13.57$ & \textbf{77.23} $\pm$ \textbf{13.73}\\
+		$\%$ Dice* $\uparrow$ & \textbf{67.90} $\pm$ \textbf{19.44} & $66.30 \pm 19.01$ & $67.67 \pm 18.97$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{82.93} $\pm$ \textbf{8.12} & $77.74 \pm 10.69$ & $77.96 \pm 10.57$\\
+		MSE (m) $\downarrow$ & \textbf{0.10} $\pm$ \textbf{0.06} & $0.19 \pm 0.14$ & $0.18 \pm 0.13$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.35 \pm 0.41$ & $0.01 \pm 0.05$ & \textbf{0.00} $\pm$ \textbf{0.02} \\
+		Time [ms] $\downarrow$ 	  & 6.89  	& \textbf{6.50} 	& 31.26  \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -248,23 +242,23 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
-		$\%$ Dice & $77.48 \pm 14.00$ & $77.30 \pm 13.72$ & $77.80 \pm 14.02$\\
-		$\%$ Dice* & $68.86 \pm 19.34$ & $68.39 \pm 19.15$ & $69.18 \pm 19.37$ \\
-		$\%$ SSIM & $90.08 \pm 3.05$ & $87.60 \pm 3.78$ & $87.91 \pm 3.64$\\
-		MSE (m) & $0.05 \pm 0.04$ & $0.10 \pm 0.10$ & $0.09 \pm 0.09$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.11 \pm 0.15$ & $0.06 \pm 0.13$ & $0.02 \pm 0.06$ \\
-		Time [ms] 	  & 11.5 & 10.8 & 38.5  \\
+		$\%$ Dice $\uparrow$ & $77.48 \pm 14.00$ & $77.30 \pm 13.72$ & \textbf{77.80} $\pm$ \textbf{14.02}\\
+		$\%$ Dice* $\uparrow$ & $68.86 \pm 19.34$ & $68.39 \pm 19.15$ & \textbf{69.18} $\pm$ \textbf{19.37} \\
+		$\%$ SSIM $\uparrow$ & \textbf{90.08} $\pm$ \textbf{3.05} & $87.60 \pm 3.78$ & $87.91 \pm 3.64$\\
+		MSE (m) $\downarrow$ & \textbf{0.05} $\pm$ \textbf{0.04} & $0.10 \pm 0.10$ & $0.09 \pm 0.09$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.11 \pm 0.15$ & $0.06 \pm 0.13$ & \textbf{0.02} $\pm$ \textbf{0.06} \\
+		Time [ms] $\downarrow$ 	  & 11.46 & \textbf{10.79} & 38.55  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
-		$\%$ Dice & $75.52 \pm 13.69$ & $75.76 \pm 13.43$ & $76.56 \pm 13.47$\\
-		$\%$ Dice* & $66.86 \pm 18.97$ & $65.45 \pm 18.63$ & $66.81 \pm 18.77$ \\
-		$\%$ SSIM & $89.51 \pm 3.34$ & $86.30 \pm 4.18$ & $86.29 \pm 4.23$\\
-		MSE (m) & $0.06 \pm 0.04$ & $0.13 \pm 0.11$ & $0.13 \pm 0.11$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.27 \pm 0.29$ & $0.03 \pm 0.11$ & $0.00 \pm 0.02$ \\
-		Time [ms] 	  & 9.0 & 7.7 & 46.6  \\
+		$\%$ Dice $\uparrow$ & $75.52 \pm 13.69$ & $75.76 \pm 13.43$ & \textbf{76.56} $\pm$ \textbf{13.47}\\
+		$\%$ Dice* $\uparrow$ & \textbf{66.86} $\pm$ \textbf{18.97} & $65.45 \pm 18.63$ & $66.81 \pm 18.77$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{89.51} $\pm$ \textbf{3.34} & $86.30 \pm 4.18$ & $86.29 \pm 4.23$\\
+		MSE (m) $\downarrow$ & \textbf{0.06} $\pm$ \textbf{0.04} & $0.13 \pm 0.11$ & $0.13 \pm 0.11$ \\
+		$\% \, |J_{\phi}|\leq0  \downarrow$ & $0.27 \pm 0.29$ & $0.03 \pm 0.11$ & \textbf{0.00} $\pm$ \textbf{0.02} \\
+		Time [ms] $\downarrow$ 	  & 8.97 & \textbf{7.71} & 46.58  \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -281,23 +275,23 @@ For $R=10$, the dense networks again have higher Dice and SSIM values compared t
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\	
 		\midrule
-		$\%$ Dice & $77.39 \pm 13.89$ & $77.31 \pm 13.82$ & $77.43 \pm 13.99$\\
-		$\%$ Dice* & $68.86 \pm 19.27$ & $68.69 \pm 19.07$ & $68.90 \pm 19.43$ \\
-		$\%$ SSIM & $92.92 \pm 2.68$ & $91.09 \pm 3.42$ & $91.33 \pm 3.29$\\
-		MSE (m) & $0.05 \pm 0.04$ & $0.09 \pm 0.09$ & $0.08 \pm 0.09$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.11 \pm 0.15$ & $0.06 \pm 0.11$ & $0.04 \pm 0.11$ \\
-		Time [ms] 	  & 28.0 & 9.5 & 18.3  \\
+		$\%$ Dice $\uparrow$ & $77.39 \pm 13.89$ & $77.31 \pm 13.82$ & \textbf{77.43} $\pm$ \textbf{13.99}\\
+		$\%$ Dice* $\uparrow$ & $68.86 \pm 19.27$ & $68.69 \pm 19.07$ & \textbf{68.90} $\pm$ \textbf{19.43} \\
+		$\%$ SSIM $\uparrow$ & \textbf{92.92} $\pm$ \textbf{2.68} & $91.09 \pm 3.42$ & $91.33 \pm 3.29$\\
+		MSE (m) $\downarrow$ & \textbf{0.05} $\pm$ \textbf{0.04} & $0.09 \pm 0.09$ & $0.08 \pm 0.09$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.11 \pm 0.15$ & $0.06 \pm 0.11$ & \textbf{0.04} $\pm$ \textbf{0.11} \\
+		Time [ms] $\downarrow$ 	  & 27.96 & \textbf{9.49} & 18.31  \\
 		\midrule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
 		\cmidrule(lr){2-4} 
 		 & Fourier-Net & Fourier-Net+ & 4xFourier-Net+\\		
 		\midrule
-		$\%$ Dice & $76.87 \pm 13.97$ & $76.10 \pm 13.83$ & $76.98 \pm 13.57$\\
-		$\%$ Dice* & $68.24 \pm 19.27$ & $66.27 \pm 19.20$ & $67.40 \pm 18.90$ \\
-		$\%$ SSIM & $92.77 \pm 2.74$ & $90.32 \pm 3.29$ & $90.42 \pm 3.33$\\
-		MSE (m) & $0.05 \pm 0.04$ & $0.12 \pm 0.12$ & $0.11 \pm 0.11$ \\
-		$\% \, |J_{\phi}|\leq0$ & $0.11 \pm 0.15$ & $0.01 \pm 0.05$ & $0.00 \pm 0.03$ \\
-		Time [ms] 	  & 8.1 & 9.6 & 27.9  \\
+		$\%$ Dice $\uparrow$ & $76.87 \pm 13.97$ & $76.10 \pm 13.83$ & \textbf{76.98} $\pm$ \textbf{13.57}\\
+		$\%$ Dice* $\uparrow$ & \textbf{68.24} $\pm$ \textbf{19.27} & $66.27 \pm 19.20$ & $67.40 \pm 18.90$ \\
+		$\%$ SSIM $\uparrow$ & \textbf{92.77} $\pm$ \textbf{2.74} & $90.32 \pm 3.29$ & $90.42 \pm 3.33$\\
+		MSE (m) $\downarrow$ & \textbf{0.05} $\pm$ \textbf{0.04} & $0.12 \pm 0.12$ & $0.11 \pm 0.11$ \\
+		$\% \, |J_{\phi}|\leq0 \downarrow$ & $0.11 \pm 0.15$ & $0.01 \pm 0.05$ & \textbf{0.00} $\pm$ \textbf{0.03} \\
+		Time [ms] $\downarrow$ 	  & \textbf{8.06} & 9.62 & 27.89  \\
 		\bottomrule
 	\end{tabularx}
 \end{table}

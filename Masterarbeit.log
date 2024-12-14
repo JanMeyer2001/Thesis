@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  14 DEC 2024 10:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  14 DEC 2024 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1631,42 +1631,117 @@ chapter 4.
 
 
 ]
-Overfull \hbox (5.20145pt too wide) in paragraph at lines 53--53
+Overfull \hbox (5.20145pt too wide) in paragraph at lines 47--47
  []|[]| 
  []
 
 
-Overfull \hbox (5.20145pt too wide) in paragraph at lines 84--84
+Overfull \hbox (5.20145pt too wide) in paragraph at lines 78--78
  []|[]| 
  []
 
 [52]
-Overfull \hbox (3.1609pt too wide) in paragraph at lines 126--126
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 120--120
  []|[]| 
  []
 
 
-Overfull \hbox (1.61371pt too wide) in paragraph at lines 126--126
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 120--120
+ []|[]| 
+ []
+
+
+Overfull \hbox (13.07755pt too wide) in paragraph at lines 120--120
+ []|[]| 
+ []
+
+
+Overfull \hbox (5.67068pt too wide) in paragraph at lines 120--120
+ []|[]| 
+ []
+
+
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 120--120
+ []|[]| 
+ []
+
+
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 120--120
+ []|[]| 
+ []
+
+
+Overfull \hbox (11.53035pt too wide) in paragraph at lines 120--120
+ []|[]| 
+ []
+
+
+Overfull \hbox (5.67068pt too wide) in paragraph at lines 120--120
  []|[]| 
  []
 
 [53] [54]
-Overfull \hbox (3.1609pt too wide) in paragraph at lines 168--168
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 162--162
  []|[]| 
  []
 
 
-Overfull \hbox (3.1609pt too wide) in paragraph at lines 168--168
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 162--162
+ []|[]| 
+ []
+
+
+Overfull \hbox (13.07755pt too wide) in paragraph at lines 162--162
+ []|[]| 
+ []
+
+
+Overfull \hbox (5.67068pt too wide) in paragraph at lines 162--162
+ []|[]| 
+ []
+
+
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 162--162
+ []|[]| 
+ []
+
+
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 162--162
+ []|[]| 
+ []
+
+
+Overfull \hbox (13.07755pt too wide) in paragraph at lines 162--162
+ []|[]| 
+ []
+
+
+Overfull \hbox (5.67068pt too wide) in paragraph at lines 162--162
  []|[]| 
  []
 
 [55]
-Overfull \hbox (4.24423pt too wide) in paragraph at lines 194--194
+Overfull \hbox (4.24423pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (1.61371pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 188--188
+ []|[]| 
+ []
+
+
+Overfull \hbox (2.46306pt too wide) in paragraph at lines 188--188
+ []|[]| 
+ []
+
+
+Overfull \hbox (11.53035pt too wide) in paragraph at lines 188--188
+ []|[]| 
+ []
+
+
+Overfull \hbox (5.67068pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
@@ -1682,44 +1757,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
- line 378.
+ line 372.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
 <images/Boxplot_DiceScores_Myocardium.png, id=1161, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
-t line 384.
+t line 378.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
 <images/Boxplot_DiceScores_RV-Cavity.png, id=1162, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
- line 390.
+ line 384.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
  [61] [62 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_DiceSco
 res_Myocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
 <images/TestExamples_Mode0.png, id=1176, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
-Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 440.
+Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 434.
 
 (pdftex.def)             Requested size: 441.01773pt x 159.44626pt.
 <images/TestExamples_Mode1.png, id=1177, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
-Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 441.
+Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 435.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
 <images/TestExamples_Mode2.png, id=1178, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
-Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 442.
+Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 436.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
 <images/TestExamples_Mode3.png, id=1179, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
-Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 443.
+Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 437.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
  [63]
@@ -1728,68 +1803,68 @@ Overfull \vbox (46.21942pt too high) has occurred while \output is active []
 
 [64 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
 es/TestExamples_Mode2.png> <./images/TestExamples_Mode3.png>]
-Overfull \hbox (8.29655pt too wide) in paragraph at lines 450--451
+Overfull \hbox (8.29655pt too wide) in paragraph at lines 444--445
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
 /m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/
 n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
 [65] [66]
-Underfull \hbox (badness 1308) in paragraph at lines 500--500
+Underfull \hbox (badness 1308) in paragraph at lines 494--494
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 558--558
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 558--558
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 558--558
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 558--558
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 558--558
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 558--558
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 552--552
  []|[]| 
  []
 
 [67] [68]
-Underfull \hbox (badness 1308) in paragraph at lines 572--572
+Underfull \hbox (badness 1308) in paragraph at lines 566--566
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 602--602
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 596--596
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 602--602
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 596--596
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 602--602
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 596--596
  []|[]| 
  []
 
@@ -1799,21 +1874,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 602--602
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
-t line 614.
+t line 608.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
 <./Images/ResultsReconstruction_mode2.pdf, id=1235, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
-t line 615.
+t line 609.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
 <./Images/ResultsReconstruction_mode3.pdf, id=1236, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.pdf  used on inpu
-t line 616.
+t line 610.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
 ) (chapters/Discussion.tex [71] [72 <./Images/ResultsReconstruction_mode1.pdf> 
 <./Images/ResultsReconstruction_mode2.pdf
@@ -1899,7 +1974,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (94 pages, 26327351 bytes).
+Output written on Masterarbeit.pdf (94 pages, 26329052 bytes).
 PDF statistics:
  1780 PDF objects out of 2073 (max. 8388607)
  369 named destinations out of 1000 (max. 500000)
