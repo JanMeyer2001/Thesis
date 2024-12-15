@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  15 DEC 2024 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  15 DEC 2024 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1796,10 +1796,6 @@ n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
 
-LaTeX Warning: Reference `SubSubSec:ReconstructionPipeline' on page 62 undefine
-d on input line 419.
-
-
 Underfull \hbox (badness 2653) in paragraph at lines 429--429
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
@@ -1836,12 +1832,7 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
  []|[]| 
  []
 
-[62]
-
-LaTeX Warning: Reference `SubSubSec:ReconstructionPipeline' on page 63 undefine
-d on input line 492.
-
-[63]
+[62] [63]
 Underfull \hbox (badness 1308) in paragraph at lines 498--498
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
@@ -1864,21 +1855,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
  []
 
 [64]
-<./Images/ResultsReconstruction_mode1.pdf, id=1204, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode1.pdf, id=1206, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
 t line 542.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode2.pdf, id=1205, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode2.pdf, id=1207, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
 t line 543.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode3.pdf, id=1206, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode3.pdf, id=1208, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
@@ -1954,10 +1945,10 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29770 strings out of 475248
- 548941 string characters out of 5767627
+ 29769 strings out of 475248
+ 548907 string characters out of 5767627
  1970785 words of memory out of 5000000
- 50510 multiletter control sequences out of 15000+600000
+ 50509 multiletter control sequences out of 15000+600000
  570910 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1978,9 +1969,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (88 pages, 26016088 bytes).
+Output written on Masterarbeit.pdf (88 pages, 25996200 bytes).
 PDF statistics:
- 1743 PDF objects out of 2073 (max. 8388607)
+ 1745 PDF objects out of 2073 (max. 8388607)
  356 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
