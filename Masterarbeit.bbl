@@ -1678,6 +1678,7 @@
       \strng{authorbibnamehash}{c085572f860d99d03a37c331ee13ff68}
       \strng{authornamehash}{c085572f860d99d03a37c331ee13ff68}
       \strng{authorfullhash}{c085572f860d99d03a37c331ee13ff68}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -4191,6 +4192,121 @@
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Fast inverse consistent deformable image registration method based on symmetric optical flow computation.pdf:PDF
       \endverb
     \endentry
+    \entry{Xu2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=04781755b274f6a533339605357d92a6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Wanni},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f616f2aedb65890925081fc2d5cf71a1}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={You-Lei},
+           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=de557894eac8685e5099c61d9bfde455}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Dongmei},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{3e9a14291f65b0a9a917c659a0b0ca74}
+      \strng{fullhash}{3e9a14291f65b0a9a917c659a0b0ca74}
+      \strng{bibnamehash}{3e9a14291f65b0a9a917c659a0b0ca74}
+      \strng{authorbibnamehash}{3e9a14291f65b0a9a917c659a0b0ca74}
+      \strng{authornamehash}{3e9a14291f65b0a9a917c659a0b0ca74}
+      \strng{authorfullhash}{3e9a14291f65b0a9a917c659a0b0ca74}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0169-2607}
+      \field{journaltitle}{Computer Methods and Programs in Biomedicine}
+      \field{month}{10}
+      \field{title}{ResNet and its application to medical image processing: Research progress and challenges}
+      \field{volume}{240}
+      \field{year}{2023}
+      \field{pages}{107660}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cmpb.2023.107660
+      \endverb
+    \endentry
+    \entry{Xiao2021}{article}{}
+      \name{author}{8}{}{%
+        {{hash=260705c33d1076cb0a85e1cee55d3024}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Haonan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2a029f886e05ffe8d730782d389a884c}{%
+           family={Teng},
+           familyi={T\bibinitperiod},
+           given={Xinzhi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=26cd3f82970561f0f35f8d18f53e1b44}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chenyang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=93df928f56f95c1d11ae2b102402cce6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2895377bea218674932f8add609211f2}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Ge},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a5a406d588836976934a611935e34ddf}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Ruijie},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4be3a7080769a01b5a9027ae92b8c440}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Dinggang},
+           giveni={D\bibinitperiod}}}%
+        {{hash=45295000fa65abd3d041c054376e60d9}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AME Publishing Company}%
+      }
+      \strng{namehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{fullhash}{6fc2d99c64e2341335c4d86a75830b0e}
+      \strng{bibnamehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{authorbibnamehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{authornamehash}{1ee35e8323e248845d1c82e6b264a6cf}
+      \strng{authorfullhash}{6fc2d99c64e2341335c4d86a75830b0e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2223-4306}
+      \field{journaltitle}{Quantitative Imaging in Medicine and Surgery}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{A review of deep learning-based three-dimensional medical image registration methods}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{4895\bibrangedash 4916}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.21037/qims-21-175
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Review of Deep Learning based 3D Medical Image Registration Methods.pdf:PDF
+      \endverb
+    \endentry
     \entry{CNN1}{inbook}{}
       \name{author}{2}{}{%
         {{hash=e836e29b780b33894bc57ec6063ba411}{%
@@ -4309,6 +4425,89 @@
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Adam.pdf:PDF
       \endverb
       \keyw{Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{Jia2022b}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=819f5c6c5f73fe8c40cf756b9424bff0}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=649c98014ba557e540a6a601e68cc80f}{%
+           family={Bartlett},
+           familyi={B\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a7de0f70bbba8d2450487eef71fc84c0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Tianyang},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9ac25ab8e3498db13c4ae6dac8a3635e}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Wenqi},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5d0a1f132b732841c3ee909c7672333b}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Zhaowen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d0bbbc49c2ed846a767379844b582290}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Jinming},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{f5ac75966f835c1bb89666af6b40dd7e}
+      \strng{fullhash}{bcfd3c4cd054c4d4fd6000c90864211d}
+      \strng{bibnamehash}{f5ac75966f835c1bb89666af6b40dd7e}
+      \strng{authorbibnamehash}{f5ac75966f835c1bb89666af6b40dd7e}
+      \strng{authornamehash}{f5ac75966f835c1bb89666af6b40dd7e}
+      \strng{authorfullhash}{bcfd3c4cd054c4d4fd6000c90864211d}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{U-Net vs Transformer: Is U-Net Outdated in Medical Image Registration?}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2208.04939
+      \endverb
+      \keyw{Image and Video Processing (eess.IV),Computer Vision and Pattern Recognition (cs.CV),FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{Zhang2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=facc531af74a8a6f7697ee9fb168f906}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Sixin},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{facc531af74a8a6f7697ee9fb168f906}
+      \strng{fullhash}{facc531af74a8a6f7697ee9fb168f906}
+      \strng{bibnamehash}{facc531af74a8a6f7697ee9fb168f906}
+      \strng{authorbibnamehash}{facc531af74a8a6f7697ee9fb168f906}
+      \strng{authornamehash}{facc531af74a8a6f7697ee9fb168f906}
+      \strng{authorfullhash}{facc531af74a8a6f7697ee9fb168f906}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On the Nash equilibrium of moment-matching GANs for stationary Gaussian processes}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2203.07136
+      \endverb
+      \keyw{Machine Learning (stat.ML),Computer Science and Game Theory (cs.GT),Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
     \entry{BIRNet}{article}{}
       \name{author}{4}{}{%
@@ -4457,8 +4656,8 @@
       \strng{authornamehash}{3deddfd5334afe8de95e47549d6b5a86}
       \strng{authorfullhash}{5404630126e6caa42a11bff978c2bbdf}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1057-7149}
@@ -4472,78 +4671,6 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1109/tip.2003.819861
-      \endverb
-    \endentry
-    \entry{Xiao2021}{article}{}
-      \name{author}{8}{}{%
-        {{hash=260705c33d1076cb0a85e1cee55d3024}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Haonan},
-           giveni={H\bibinitperiod}}}%
-        {{hash=2a029f886e05ffe8d730782d389a884c}{%
-           family={Teng},
-           familyi={T\bibinitperiod},
-           given={Xinzhi},
-           giveni={X\bibinitperiod}}}%
-        {{hash=26cd3f82970561f0f35f8d18f53e1b44}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Chenyang},
-           giveni={C\bibinitperiod}}}%
-        {{hash=93df928f56f95c1d11ae2b102402cce6}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Tian},
-           giveni={T\bibinitperiod}}}%
-        {{hash=2895377bea218674932f8add609211f2}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Ge},
-           giveni={G\bibinitperiod}}}%
-        {{hash=a5a406d588836976934a611935e34ddf}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Ruijie},
-           giveni={R\bibinitperiod}}}%
-        {{hash=4be3a7080769a01b5a9027ae92b8c440}{%
-           family={Shen},
-           familyi={S\bibinitperiod},
-           given={Dinggang},
-           giveni={D\bibinitperiod}}}%
-        {{hash=45295000fa65abd3d041c054376e60d9}{%
-           family={Cai},
-           familyi={C\bibinitperiod},
-           given={Jing},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AME Publishing Company}%
-      }
-      \strng{namehash}{1ee35e8323e248845d1c82e6b264a6cf}
-      \strng{fullhash}{6fc2d99c64e2341335c4d86a75830b0e}
-      \strng{bibnamehash}{1ee35e8323e248845d1c82e6b264a6cf}
-      \strng{authorbibnamehash}{1ee35e8323e248845d1c82e6b264a6cf}
-      \strng{authornamehash}{1ee35e8323e248845d1c82e6b264a6cf}
-      \strng{authorfullhash}{6fc2d99c64e2341335c4d86a75830b0e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2223-4306}
-      \field{journaltitle}{Quantitative Imaging in Medicine and Surgery}
-      \field{month}{12}
-      \field{number}{12}
-      \field{title}{A review of deep learning-based three-dimensional medical image registration methods}
-      \field{volume}{11}
-      \field{year}{2021}
-      \field{pages}{4895\bibrangedash 4916}
-      \range{pages}{22}
-      \verb{doi}
-      \verb 10.21037/qims-21-175
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Review of Deep Learning based 3D Medical Image Registration Methods.pdf:PDF
       \endverb
     \endentry
     \entry{Dalca2018}{inbook}{}

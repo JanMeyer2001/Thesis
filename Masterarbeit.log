@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  15 DEC 2024 11:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  15 DEC 2024 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1351,66 +1351,62 @@ Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 209
 (pdftex.def)             Requested size: 441.01773pt x 185.51195pt.
  [15 <./images/ExamplesSubsampling.png>] [16] [17] [18] [19] [20]
 [21] [22] [23]
-<images/SupervisedRegistrationGraph.jpg, id=639, 2460.19125pt x 827.09pt>
+<images/SupervisedRegistrationGraph.jpg, id=653, 2460.19125pt x 827.09pt>
 File: images/SupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/SupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/SupervisedRegistrationGraph.jpg  used on input 
-line 395.
+line 394.
 (pdftex.def)             Requested size: 441.01773pt x 148.26399pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24]
-<images/UnsupervisedRegistrationGraph.jpg, id=659, 3329.43875pt x 935.495pt>
+<images/UnsupervisedRegistrationGraph.jpg, id=663, 3329.43875pt x 935.495pt>
 File: images/UnsupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/UnsupervisedRegistrationGraph.jpg>
 Package pdftex.def Info: images/UnsupervisedRegistrationGraph.jpg  used on inpu
-t line 407.
+t line 406.
 (pdftex.def)             Requested size: 441.01773pt x 123.90253pt.
-<images/GANRegistrationGraph.jpg, id=662, 3366.5775pt x 1457.445pt>
-File: images/GANRegistrationGraph.jpg Graphic file (type jpg)
-<use images/GANRegistrationGraph.jpg>
-Package pdftex.def Info: images/GANRegistrationGraph.jpg  used on input line 41
-5.
-(pdftex.def)             Requested size: 441.01773pt x 190.92001pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<images/GANRegistrationGraph.jpg, id=666, 3366.5775pt x 1457.445pt>
+File: images/GANRegistrationGraph.jpg Graphic file (type jpg)
+<use images/GANRegistrationGraph.jpg>
+Package pdftex.def Info: images/GANRegistrationGraph.jpg  used on input line 41
+4.
+(pdftex.def)             Requested size: 441.01773pt x 190.92001pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--426
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
  []
 
 [25 <./images/SupervisedRegistrationGraph.jpg> <./images/UnsupervisedRegistrati
-onGraph.jpg>] [26 <./images/GANRegistrationGraph.jpg>]
-Overfull \hbox (4.9973pt too wide) in paragraph at lines 433--436
-\OT1/cmr/m/n/12 The MSE can also be used to cal-cu-late an-other use-ful met-ri
-c - the preak SNR (PSNR) [[][]8[][]],
- []
-
-[27]) (chapters/Methods.tex [28]
+onGraph.jpg>] [26 <./images/GANRegistrationGraph.jpg>]) (chapters/Methods.tex
+[27]
 chapter 3.
-[29
+[28
 
 
 ]
-<images/ArchitectureFourier-Net.png, id=731, 1351.0475pt x 513.92pt>
+<images/ArchitectureFourier-Net.png, id=733, 1351.0475pt x 513.92pt>
 File: images/ArchitectureFourier-Net.png Graphic file (type png)
 <use images/ArchitectureFourier-Net.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net.png  used on input line
  22.
 (pdftex.def)             Requested size: 441.01773pt x 167.7513pt.
- [30 <./images/ArchitectureFourier-Net.png>] [31]
-<images/SYMNetArchitectureFCN.png, id=754, 1032.85875pt x 676.02562pt>
+ [29 <./images/ArchitectureFourier-Net.png>] [30]
+<images/SYMNetArchitectureFCN.png, id=755, 1032.85875pt x 676.02562pt>
 File: images/SYMNetArchitectureFCN.png Graphic file (type png)
 <use images/SYMNetArchitectureFCN.png>
 Package pdftex.def Info: images/SYMNetArchitectureFCN.png  used on input line 5
 1.
 (pdftex.def)             Requested size: 441.01773pt x 288.65323pt.
- [32 <./images/SYMNetArchitectureFCN.png>]
-<images/DecoderDisplacementField.png, id=776, 493.845pt x 405.01312pt>
+ [31 <./images/SYMNetArchitectureFCN.png>]
+<images/DecoderDisplacementField.png, id=777, 493.845pt x 405.01312pt>
 File: images/DecoderDisplacementField.png Graphic file (type png)
 <use images/DecoderDisplacementField.png>
 Package pdftex.def Info: images/DecoderDisplacementField.png  used on input lin
@@ -1420,15 +1416,15 @@ e 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33] [34 <./images/DecoderDisplacementField.png>] [35]
-<images/SpatialTransformer.png, id=817, 609.77812pt x 260.47313pt>
+[32] [33 <./images/DecoderDisplacementField.png>] [34]
+<images/SpatialTransformer.png, id=816, 609.77812pt x 260.47313pt>
 File: images/SpatialTransformer.png Graphic file (type png)
 <use images/SpatialTransformer.png>
 Package pdftex.def Info: images/SpatialTransformer.png  used on input line 110.
 
 (pdftex.def)             Requested size: 441.01773pt x 188.39104pt.
- [36 <./images/SpatialTransformer.png>]
-<images/ArchitectureFourier-Net+.png, id=835, 1075.01625pt x 356.0803pt>
+ [35 <./images/SpatialTransformer.png>]
+<images/ArchitectureFourier-Net+.png, id=833, 1075.01625pt x 356.0803pt>
 File: images/ArchitectureFourier-Net+.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+.png  used on input lin
@@ -1438,8 +1434,8 @@ e 149.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37]
-<images/CompressionEncoder.png, id=852, 490.83376pt x 391.4625pt>
+[36]
+<images/CompressionEncoder.png, id=848, 490.83376pt x 391.4625pt>
 File: images/CompressionEncoder.png Graphic file (type png)
 <use images/CompressionEncoder.png>
 Package pdftex.def Info: images/CompressionEncoder.png  used on input line 160.
@@ -1449,7 +1445,7 @@ Package pdftex.def Info: images/CompressionEncoder.png  used on input line 160.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/ArchitectureFourier-Net+CNN.png, id=855, 1078.0275pt x 218.31563pt>
+<images/ArchitectureFourier-Net+CNN.png, id=851, 1078.0275pt x 218.31563pt>
 File: images/ArchitectureFourier-Net+CNN.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+CNN.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+CNN.png  used on input 
@@ -1458,8 +1454,8 @@ line 168.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[38 <./images/ArchitectureFourier-Net+.png>]
-<images/ArchitectureFourier-Net+Cascaded.png, id=869, 1409.265pt x 287.0725pt>
+[37 <./images/ArchitectureFourier-Net+.png>]
+<images/ArchitectureFourier-Net+Cascaded.png, id=865, 1409.265pt x 287.0725pt>
 File: images/ArchitectureFourier-Net+Cascaded.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+Cascaded.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+Cascaded.png  used on i
@@ -1469,33 +1465,33 @@ nput line 188.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39 <./images/CompressionEncoder.png>] [40 <./images/ArchitectureFourier-Net+CN
+[38 <./images/CompressionEncoder.png>] [39 <./images/ArchitectureFourier-Net+CN
 N.png> <./images/ArchitectureFourier-Net+Cascaded.png>]
-<./Images/Image_ACDC_systolic.png, id=898, 462.528pt x 346.896pt>
+<./Images/Image_ACDC_systolic.png, id=890, 462.528pt x 346.896pt>
 File: ./Images/Image_ACDC_systolic.png Graphic file (type png)
 <use ./Images/Image_ACDC_systolic.png>
 Package pdftex.def Info: ./Images/Image_ACDC_systolic.png  used on input line 2
 06.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/Image_ACDC_diastolic.png, id=899, 462.528pt x 346.896pt>
+<./Images/Image_ACDC_diastolic.png, id=891, 462.528pt x 346.896pt>
 File: ./Images/Image_ACDC_diastolic.png Graphic file (type png)
 <use ./Images/Image_ACDC_diastolic.png>
 Package pdftex.def Info: ./Images/Image_ACDC_diastolic.png  used on input line 
 212.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/Segmentation_ACDC_systolic.png, id=900, 462.528pt x 346.896pt>
+<./Images/Segmentation_ACDC_systolic.png, id=892, 462.528pt x 346.896pt>
 File: ./Images/Segmentation_ACDC_systolic.png Graphic file (type png)
 <use ./Images/Segmentation_ACDC_systolic.png>
 Package pdftex.def Info: ./Images/Segmentation_ACDC_systolic.png  used on input
  line 218.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/Segmentation_ACDC_diastolic.png, id=901, 462.528pt x 346.896pt>
+<./Images/Segmentation_ACDC_diastolic.png, id=893, 462.528pt x 346.896pt>
 File: ./Images/Segmentation_ACDC_diastolic.png Graphic file (type png)
 <use ./Images/Segmentation_ACDC_diastolic.png>
 Package pdftex.def Info: ./Images/Segmentation_ACDC_diastolic.png  used on inpu
 t line 224.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/ManuelSubsampling_ACDC_R=4.png, id=904, 167.6664pt x 140.2038pt>
+<./Images/ManuelSubsampling_ACDC_R=4.png, id=896, 167.6664pt x 140.2038pt>
 File: ./Images/ManuelSubsampling_ACDC_R=4.png Graphic file (type png)
 <use ./Images/ManuelSubsampling_ACDC_R=4.png>
 Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=4.png  used on input
@@ -1506,7 +1502,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--236
 [][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
  []
 
-<./Images/ManuelSubsampling_ACDC_R=8.png, id=905, 167.6664pt x 140.2038pt>
+<./Images/ManuelSubsampling_ACDC_R=8.png, id=897, 167.6664pt x 140.2038pt>
 File: ./Images/ManuelSubsampling_ACDC_R=8.png Graphic file (type png)
 <use ./Images/ManuelSubsampling_ACDC_R=8.png>
 Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=8.png  used on input
@@ -1517,7 +1513,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--242
 [][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
  []
 
-<./Images/ManuelSubsampling_ACDC_R=10.png, id=906, 167.6664pt x 140.2038pt>
+<./Images/ManuelSubsampling_ACDC_R=10.png, id=898, 167.6664pt x 140.2038pt>
 File: ./Images/ManuelSubsampling_ACDC_R=10.png Graphic file (type png)
 <use ./Images/ManuelSubsampling_ACDC_R=10.png>
 Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=10.png  used on inpu
@@ -1526,10 +1522,10 @@ t line 247.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41 <./Images/Image_ACDC_systolic.png> <./Images/Image_ACDC_diastolic.png> <./I
+[40 <./Images/Image_ACDC_systolic.png> <./Images/Image_ACDC_diastolic.png> <./I
 mages/Segmentation_ACDC_systolic.png> <./Images/Segmentation_ACDC_diastolic.png
 >]
-<images/Coils.png, id=926, 440.847pt x 76.24484pt>
+<images/Coils.png, id=916, 440.847pt x 76.24484pt>
 File: images/Coils.png Graphic file (type png)
 <use images/Coils.png>
 Package pdftex.def Info: images/Coils.png  used on input line 271.
@@ -1538,25 +1534,25 @@ Package pdftex.def Info: images/Coils.png  used on input line 271.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/k-space_fullysampled.png, id=929, 462.528pt x 231.264pt>
+<images/k-space_fullysampled.png, id=919, 462.528pt x 231.264pt>
 File: images/k-space_fullysampled.png Graphic file (type png)
 <use images/k-space_fullysampled.png>
 Package pdftex.def Info: images/k-space_fullysampled.png  used on input line 28
 1.
 (pdftex.def)             Requested size: 198.45662pt x 99.22984pt.
-<images/k-space_subsampled.png, id=930, 462.528pt x 231.264pt>
+<images/k-space_subsampled.png, id=920, 462.528pt x 231.264pt>
 File: images/k-space_subsampled.png Graphic file (type png)
 <use images/k-space_subsampled.png>
 Package pdftex.def Info: images/k-space_subsampled.png  used on input line 287.
 
 (pdftex.def)             Requested size: 198.45662pt x 99.22984pt.
-<images/image_fullysampled.png, id=931, 267.399pt x 166.221pt>
+<images/image_fullysampled.png, id=921, 267.399pt x 166.221pt>
 File: images/image_fullysampled.png Graphic file (type png)
 <use images/image_fullysampled.png>
 Package pdftex.def Info: images/image_fullysampled.png  used on input line 292.
 
 (pdftex.def)             Requested size: 198.45662pt x 123.36682pt.
-<images/image_subsampled.png, id=932, 267.399pt x 166.221pt>
+<images/image_subsampled.png, id=922, 267.399pt x 166.221pt>
 File: images/image_subsampled.png Graphic file (type png)
 <use images/image_subsampled.png>
 Package pdftex.def Info: images/image_subsampled.png  used on input line 298.
@@ -1564,20 +1560,20 @@ Package pdftex.def Info: images/image_subsampled.png  used on input line 298.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[42 <./Images/ManuelSubsampling_ACDC_R=4.png> <./Images/ManuelSubsampling_ACDC_
+[41 <./Images/ManuelSubsampling_ACDC_R=4.png> <./Images/ManuelSubsampling_ACDC_
 R=8.png> <./Images/ManuelSubsampling_ACDC_R=10.png>]
-<./Images/LineSwappingOriginal.png, id=948, 216.81pt x 176.3388pt>
+<./Images/LineSwappingOriginal.png, id=938, 216.81pt x 176.3388pt>
 File: ./Images/LineSwappingOriginal.png Graphic file (type png)
 <use ./Images/LineSwappingOriginal.png>
 Package pdftex.def Info: ./Images/LineSwappingOriginal.png  used on input line 
 317.
 (pdftex.def)             Requested size: 143.3294pt x 116.58038pt.
-<./Images/LineSwapping16.png, id=949, 216.81pt x 176.3388pt>
+<./Images/LineSwapping16.png, id=939, 216.81pt x 176.3388pt>
 File: ./Images/LineSwapping16.png Graphic file (type png)
 <use ./Images/LineSwapping16.png>
 Package pdftex.def Info: ./Images/LineSwapping16.png  used on input line 323.
 (pdftex.def)             Requested size: 143.3294pt x 116.58038pt.
-<./Images/LineSwapping32.png, id=950, 216.81pt x 176.3388pt>
+<./Images/LineSwapping32.png, id=940, 216.81pt x 176.3388pt>
 File: ./Images/LineSwapping32.png Graphic file (type png)
 <use ./Images/LineSwapping32.png>
 Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 329.
@@ -1586,22 +1582,22 @@ Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 329.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Images/LungMotion1.png, id=953, 440.847pt x 256.43805pt>
+<./Images/LungMotion1.png, id=943, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion1.png Graphic file (type png)
 <use ./Images/LungMotion1.png>
 Package pdftex.def Info: ./Images/LungMotion1.png  used on input line 368.
 (pdftex.def)             Requested size: 209.4861pt x 121.85628pt.
-<./Images/LungMotion2.png, id=954, 440.847pt x 256.43805pt>
+<./Images/LungMotion2.png, id=944, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion2.png Graphic file (type png)
 <use ./Images/LungMotion2.png>
 Package pdftex.def Info: ./Images/LungMotion2.png  used on input line 374.
 (pdftex.def)             Requested size: 209.4861pt x 121.85628pt.
-<./Images/LungMotion3.png, id=955, 440.847pt x 256.43805pt>
+<./Images/LungMotion3.png, id=945, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion3.png Graphic file (type png)
 <use ./Images/LungMotion3.png>
 Package pdftex.def Info: ./Images/LungMotion3.png  used on input line 380.
 (pdftex.def)             Requested size: 209.4861pt x 121.85628pt.
-<./Images/LungMotion4.png, id=956, 440.847pt x 256.43805pt>
+<./Images/LungMotion4.png, id=946, 440.847pt x 256.43805pt>
 File: ./Images/LungMotion4.png Graphic file (type png)
 <use ./Images/LungMotion4.png>
 Package pdftex.def Info: ./Images/LungMotion4.png  used on input line 386.
@@ -1609,12 +1605,12 @@ Package pdftex.def Info: ./Images/LungMotion4.png  used on input line 386.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43 <./images/Coils.png>] [44 <./images/k-space_fullysampled.png> <./images/k-s
+[42 <./images/Coils.png>] [43 <./images/k-space_fullysampled.png> <./images/k-s
 pace_subsampled.png> <./images/image_fullysampled.png> <./images/image_subsampl
-ed.png>] [45 <./Images/LineSwappingOriginal.png> <./Images/LineSwapping16.png> 
-<./Images/LineSwapping32.png>] [46 <./Images/LungMotion1.png> <./Images/LungMot
-ion2.png> <./Images/LungMotion3.png> <./Images/LungMotion4.png>] [47]
-<./Images/GeneralReconstructionPipeline.pdf, id=1031, 688.55669pt x 438.17244pt
+ed.png>] [44 <./Images/LineSwappingOriginal.png> <./Images/LineSwapping16.png> 
+<./Images/LineSwapping32.png>] [45 <./Images/LungMotion1.png> <./Images/LungMot
+ion2.png> <./Images/LungMotion3.png> <./Images/LungMotion4.png>] [46]
+<./Images/GeneralReconstructionPipeline.pdf, id=1014, 688.55669pt x 438.17244pt
 >
 File: ./Images/GeneralReconstructionPipeline.pdf Graphic file (type pdf)
 <use ./Images/GeneralReconstructionPipeline.pdf>
@@ -1625,9 +1621,9 @@ put line 437.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (chapters/Results.tex [48] [49 <./Images/GeneralReconstructionPipeline.pdf>]
+) (chapters/Results.tex [47] [48 <./Images/GeneralReconstructionPipeline.pdf>]
 chapter 4.
-[50
+[49
 
 
 ]
@@ -1640,7 +1636,7 @@ Overfull \hbox (5.20145pt too wide) in paragraph at lines 78--78
  []|[]| 
  []
 
-[51]
+[50]
 Overfull \hbox (2.46306pt too wide) in paragraph at lines 120--120
  []|[]| 
  []
@@ -1680,7 +1676,7 @@ Overfull \hbox (5.67068pt too wide) in paragraph at lines 120--120
  []|[]| 
  []
 
-[52] [53]
+[51] [52]
 Overfull \hbox (2.46306pt too wide) in paragraph at lines 162--162
  []|[]| 
  []
@@ -1720,7 +1716,7 @@ Overfull \hbox (5.67068pt too wide) in paragraph at lines 162--162
  []|[]| 
  []
 
-[54]
+[53]
 Overfull \hbox (4.24423pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
@@ -1745,7 +1741,7 @@ Overfull \hbox (5.67068pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
-[55]
+[54]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1755,61 +1751,61 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[56] [57]
+[55] [56]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[58]
-<images/Boxplot_DiceScores_LV-Cavity.png, id=1179, 867.24pt x 433.62pt>
+[57]
+<images/Boxplot_DiceScores_LV-Cavity.png, id=1149, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_LV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
  line 374.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=1180, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_Myocardium.png, id=1150, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
 <use images/Boxplot_DiceScores_Myocardium.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
 t line 380.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=1181, 867.24pt x 433.62pt>
+<images/Boxplot_DiceScores_RV-Cavity.png, id=1151, 867.24pt x 433.62pt>
 File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
 <use images/Boxplot_DiceScores_RV-Cavity.png>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
  line 386.
 (pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
- [59] [60] [61 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_Di
+ [58] [59] [60 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_Di
 ceScores_Myocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
-<images/TestExamples_Mode0.png, id=1202, 1962.8532pt x 709.6914pt>
+<images/TestExamples_Mode0.png, id=1169, 1962.8532pt x 709.6914pt>
 File: images/TestExamples_Mode0.png Graphic file (type png)
 <use images/TestExamples_Mode0.png>
 Package pdftex.def Info: images/TestExamples_Mode0.png  used on input line 406.
 
 (pdftex.def)             Requested size: 441.01773pt x 159.44626pt.
-<images/TestExamples_Mode1.png, id=1203, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode1.png, id=1170, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode1.png Graphic file (type png)
 <use images/TestExamples_Mode1.png>
 Package pdftex.def Info: images/TestExamples_Mode1.png  used on input line 407.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode2.png, id=1204, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode2.png, id=1171, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode2.png Graphic file (type png)
 <use images/TestExamples_Mode2.png>
 Package pdftex.def Info: images/TestExamples_Mode2.png  used on input line 408.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
-<images/TestExamples_Mode3.png, id=1205, 1962.8532pt x 682.2288pt>
+<images/TestExamples_Mode3.png, id=1172, 1962.8532pt x 682.2288pt>
 File: images/TestExamples_Mode3.png Graphic file (type png)
 <use images/TestExamples_Mode3.png>
 Package pdftex.def Info: images/TestExamples_Mode3.png  used on input line 409.
 
 (pdftex.def)             Requested size: 441.01773pt x 153.27625pt.
 
-[62]
+[61]
 Overfull \vbox (46.21942pt too high) has occurred while \output is active []
 
 
-[63 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
+[62 <./images/TestExamples_Mode0.png> <./images/TestExamples_Mode1.png> <./imag
 es/TestExamples_Mode2.png> <./images/TestExamples_Mode3.png>]
 Overfull \hbox (8.29655pt too wide) in paragraph at lines 416--417
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
@@ -1818,7 +1814,7 @@ n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
 
-LaTeX Warning: Reference `SubSubSec:ReconstructionPipeline' on page 64 undefine
+LaTeX Warning: Reference `SubSubSec:ReconstructionPipeline' on page 63 undefine
 d on input line 419.
 
 
@@ -1858,12 +1854,12 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
  []|[]| 
  []
 
-[64]
+[63]
 
-LaTeX Warning: Reference `SubSubSec:ReconstructionPipeline' on page 65 undefine
+LaTeX Warning: Reference `SubSubSec:ReconstructionPipeline' on page 64 undefine
 d on input line 492.
 
-[65]
+[64]
 Underfull \hbox (badness 1308) in paragraph at lines 498--498
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
@@ -1885,29 +1881,29 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
  []|[]| 
  []
 
-[66]
-<./Images/ResultsReconstruction_mode1.pdf, id=1245, 9076.42899pt x 2207.93388pt
+[65]
+<./Images/ResultsReconstruction_mode1.pdf, id=1209, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
 t line 542.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode2.pdf, id=1246, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode2.pdf, id=1210, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
 t line 543.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode3.pdf, id=1247, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode3.pdf, id=1211, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.pdf  used on inpu
 t line 544.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-) (chapters/Discussion.tex [67] [68 <./Images/ResultsReconstruction_mode1.pdf> 
+) (chapters/Discussion.tex [66] [67 <./Images/ResultsReconstruction_mode1.pdf> 
 <./Images/ResultsReconstruction_mode2.pdf
 
 pdfTeX warning: pdflatex (file ./Images/ResultsReconstruction_mode2.pdf): PDF i
@@ -1925,17 +1921,17 @@ m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
 /12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
-[69
+[68
 
 
-] [70] [71] [72]
+] [69] [70] [71]
 
-LaTeX Warning: Reference `SubSec:ResultsDomainTranslation' on page 73 undefined
+LaTeX Warning: Reference `SubSec:ResultsDomainTranslation' on page 72 undefined
  on input line 47.
 
-[73] [74] [75]) (chapters/Conclusion.tex [76] [77]
+[72] [73] [74]) (chapters/Conclusion.tex [75] [76]
 chapter 6.
-) [78
+) [77
 
 
 ]
@@ -1945,22 +1941,22 @@ onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
  []
 
-[79
+[78
 
 
-] [80]
+] [79]
 Overfull \hbox (3.86661pt too wide) in paragraph at lines 188--188
 []\OT1/cmr/m/n/10 Mark A. Gris-wold et al. \  Gen-er-al-ized au-to-cal-i-brat-i
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
-[81]
+[80]
 Overfull \hbox (3.00894pt too wide) in paragraph at lines 188--188
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
 
-[82] [83] [84] (Masterarbeit.aux)
+[81] [82] [83] (Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1969,9 +1965,6 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1979,241 +1972,33 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29834 strings out of 475248
- 550010 string characters out of 5767627
+ 29794 strings out of 475248
+ 549711 string characters out of 5767627
  1970785 words of memory out of 5000000
- 50519 multiletter control sequences out of 15000+600000
+ 50529 multiletter control sequences out of 15000+600000
  570910 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{figure.caption.159} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.157} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.155} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.152} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.150} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.148} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.146} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.142} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.140} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.138} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.131} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.121} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.119} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.116} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.113} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.109} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.105} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.102} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.94} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.76} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.86} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.81} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.63} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.60} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.179} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.176} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.170} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.167} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.161} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.160} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.153} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.147} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.143} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.141} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.139} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.137} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.134} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.133} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.132} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.130} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.123} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.122} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.117} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.114} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.111} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.110} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.101} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.75} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.73} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.72} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.64} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.58} has been referenced but does not exi
-st, replaced by a fixed one
-
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
-C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (90 pages, 26265003 bytes).
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Masterarbeit.pdf (89 pages, 26262653 bytes).
 PDF statistics:
- 1801 PDF objects out of 2073 (max. 8388607)
- 411 named destinations out of 1000 (max. 500000)
+ 1752 PDF objects out of 2073 (max. 8388607)
+ 361 named destinations out of 1000 (max. 500000)
  624 words of extra memory for PDF output out of 10000 (max. 10000000)
 
