@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  15 DEC 2024 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  15 DEC 2024 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1738,52 +1738,63 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [56]
-<images/Boxplot_DiceScores_LV-Cavity.png, id=1144, 867.24pt x 433.62pt>
-File: images/Boxplot_DiceScores_LV-Cavity.png Graphic file (type png)
-<use images/Boxplot_DiceScores_LV-Cavity.png>
-Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.png  used on input
+<images/Boxplot_DiceScores_LV-Cavity.pdf, id=1144, 887.72595pt x 438.17244pt>
+File: images/Boxplot_DiceScores_LV-Cavity.pdf Graphic file (type pdf)
+<use images/Boxplot_DiceScores_LV-Cavity.pdf>
+Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.pdf  used on input
  line 374.
-(pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_Myocardium.png, id=1145, 867.24pt x 433.62pt>
-File: images/Boxplot_DiceScores_Myocardium.png Graphic file (type png)
-<use images/Boxplot_DiceScores_Myocardium.png>
-Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.png  used on inpu
+(pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
+<images/Boxplot_DiceScores_Myocardium.pdf, id=1145, 887.72595pt x 438.17244pt>
+File: images/Boxplot_DiceScores_Myocardium.pdf Graphic file (type pdf)
+<use images/Boxplot_DiceScores_Myocardium.pdf>
+Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.pdf  used on inpu
 t line 380.
-(pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
-<images/Boxplot_DiceScores_RV-Cavity.png, id=1146, 867.24pt x 433.62pt>
-File: images/Boxplot_DiceScores_RV-Cavity.png Graphic file (type png)
-<use images/Boxplot_DiceScores_RV-Cavity.png>
-Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.png  used on input
+(pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
+<images/Boxplot_DiceScores_RV-Cavity.pdf, id=1146, 887.72595pt x 438.17244pt>
+File: images/Boxplot_DiceScores_RV-Cavity.pdf Graphic file (type pdf)
+<use images/Boxplot_DiceScores_RV-Cavity.pdf>
+Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.pdf  used on input
  line 386.
-(pdftex.def)             Requested size: 352.81552pt x 176.40912pt.
- [57] [58] [59 <./images/Boxplot_DiceScores_LV-Cavity.png> <./images/Boxplot_Di
-ceScores_Myocardium.png> <./images/Boxplot_DiceScores_RV-Cavity.png>]
-<images/TestExamples_Mode0.pdf, id=1164, 1957.54959pt x 734.08109pt>
+(pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
+ [57] [58]
+Overfull \vbox (25.32652pt too high) has occurred while \output is active []
+
+
+[59 <./images/Boxplot_DiceScores_LV-Cavity.pdf> <./images/Boxplot_DiceScores_My
+ocardium.pdf
+
+pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_Myocardium.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+> <./images/Boxplot_DiceScores_RV-Cavity.pdf
+
+pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_RV-Cavity.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]
+<images/TestExamples_Mode0.pdf, id=1171, 1957.54959pt x 734.08109pt>
 File: images/TestExamples_Mode0.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode0.pdf>
 Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 406.
 
 (pdftex.def)             Requested size: 441.01773pt x 165.37393pt.
-<images/TestExamples_Mode1.pdf, id=1165, 1957.54959pt x 705.62834pt>
+<images/TestExamples_Mode1.pdf, id=1172, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode1.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode1.pdf>
 Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 407.
 
 (pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
-<images/TestExamples_Mode2.pdf, id=1166, 1957.54959pt x 705.62834pt>
+<images/TestExamples_Mode2.pdf, id=1173, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode2.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode2.pdf>
 Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 408.
 
 (pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
-<images/TestExamples_Mode3.pdf, id=1167, 1957.54959pt x 705.62834pt>
+<images/TestExamples_Mode3.pdf, id=1174, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode3.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode3.pdf>
 Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 409.
 
 (pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
-
-[60]
+ [60]
 Overfull \vbox (69.21065pt too high) has occurred while \output is active []
 
 
@@ -1866,21 +1877,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
  []
 
 [64]
-<./Images/ResultsReconstruction_mode1.pdf, id=1215, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode1.pdf, id=1222, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
 t line 542.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode2.pdf, id=1216, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode2.pdf, id=1223, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
 t line 543.
 (pdftex.def)             Requested size: 441.01773pt x 107.26996pt.
-<./Images/ResultsReconstruction_mode3.pdf, id=1217, 9076.42899pt x 2207.93388pt
+<./Images/ResultsReconstruction_mode3.pdf, id=1224, 9076.42899pt x 2207.93388pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
@@ -1949,6 +1960,9 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1957,7 +1971,7 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  29769 strings out of 475248
- 549003 string characters out of 5767627
+ 549075 string characters out of 5767627
  1970785 words of memory out of 5000000
  50509 multiletter control sequences out of 15000+600000
  570910 words of font info for 85 fonts, out of 8000000 for 9000
@@ -1980,9 +1994,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (88 pages, 26100999 bytes).
+Output written on Masterarbeit.pdf (88 pages, 26131532 bytes).
 PDF statistics:
- 1754 PDF objects out of 2073 (max. 8388607)
+ 1761 PDF objects out of 2073 (max. 8388607)
  356 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
