@@ -1678,7 +1678,6 @@
       \strng{authorbibnamehash}{c085572f860d99d03a37c331ee13ff68}
       \strng{authornamehash}{c085572f860d99d03a37c331ee13ff68}
       \strng{authorfullhash}{c085572f860d99d03a37c331ee13ff68}
-      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -4135,63 +4134,6 @@
       \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Deformable image registration for radiation therapy - principle, methods, applications and evaluation.pdf:PDF
       \endverb
     \endentry
-    \entry{Yang2008}{article}{}
-      \name{author}{5}{}{%
-        {{hash=3826993ba9a127043ef5f87d1b8da037}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Deshan},
-           giveni={D\bibinitperiod}}}%
-        {{hash=8da3308712a917f8ddd6491d0a9814e8}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Hua},
-           giveni={H\bibinitperiod}}}%
-        {{hash=acf0cad0360d6a2e994312cff7dc4ba5}{%
-           family={Low},
-           familyi={L\bibinitperiod},
-           given={Daniel\bibnamedelima A},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=f967f6b51246cf632661681073e1b6d8}{%
-           family={Deasy},
-           familyi={D\bibinitperiod},
-           given={Joseph\bibnamedelima O},
-           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
-        {{hash=98349a49bd417b11103f8635f6a04b05}{%
-           family={Naqa},
-           familyi={N\bibinitperiod},
-           given={Issam\bibnamedelima El},
-           giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{7665d00389e8d1036b8c311b4d8b1693}
-      \strng{fullhash}{b21c92318635bd93f481b9478f461257}
-      \strng{bibnamehash}{7665d00389e8d1036b8c311b4d8b1693}
-      \strng{authorbibnamehash}{7665d00389e8d1036b8c311b4d8b1693}
-      \strng{authornamehash}{7665d00389e8d1036b8c311b4d8b1693}
-      \strng{authorfullhash}{b21c92318635bd93f481b9478f461257}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1361-6560}
-      \field{journaltitle}{Physics in Medicine and Biology}
-      \field{month}{10}
-      \field{number}{21}
-      \field{title}{A fast inverse consistent deformable image registration method based on symmetric optical flow computation}
-      \field{volume}{53}
-      \field{year}{2008}
-      \field{pages}{6143\bibrangedash 6165}
-      \range{pages}{23}
-      \verb{doi}
-      \verb 10.1088/0031-9155/53/21/017
-      \endverb
-      \verb{file}
-      \verb :C\:/Users/janme/Universität/Master Medizinische Informatik/4. Semester/Masterarbeit/Literatur/Fast inverse consistent deformable image registration method based on symmetric optical flow computation.pdf:PDF
-      \endverb
-    \endentry
     \entry{Xu2023}{article}{}
       \name{author}{3}{}{%
         {{hash=04781755b274f6a533339605357d92a6}{%
@@ -4479,35 +4421,6 @@
       \verb 10.48550/ARXIV.2208.04939
       \endverb
       \keyw{Image and Video Processing (eess.IV),Computer Vision and Pattern Recognition (cs.CV),FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Computer and information sciences,FOS: Computer and information sciences}
-    \endentry
-    \entry{Zhang2022}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=facc531af74a8a6f7697ee9fb168f906}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Sixin},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{facc531af74a8a6f7697ee9fb168f906}
-      \strng{fullhash}{facc531af74a8a6f7697ee9fb168f906}
-      \strng{bibnamehash}{facc531af74a8a6f7697ee9fb168f906}
-      \strng{authorbibnamehash}{facc531af74a8a6f7697ee9fb168f906}
-      \strng{authornamehash}{facc531af74a8a6f7697ee9fb168f906}
-      \strng{authorfullhash}{facc531af74a8a6f7697ee9fb168f906}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{On the Nash equilibrium of moment-matching GANs for stationary Gaussian processes}
-      \field{year}{2022}
-      \verb{doi}
-      \verb 10.48550/ARXIV.2203.07136
-      \endverb
-      \keyw{Machine Learning (stat.ML),Computer Science and Game Theory (cs.GT),Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
     \entry{BIRNet}{article}{}
       \name{author}{4}{}{%
