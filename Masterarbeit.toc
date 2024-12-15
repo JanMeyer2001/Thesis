@@ -79,7 +79,7 @@
 \contentsline {subsection}{\numberline {4.1.4}Comparison with VoxelMorph}{55}{subsection.143}%
 \contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{56}{subsection.145}%
 \contentsline {section}{\numberline {4.2}Registration Performance on Subsampled Data}{57}{section.149}%
-\contentsline {subsubsection}{\numberline {4.2.0.1}Cardiac Labels}{60}{subsubsection.151}%
+\contentsline {subsubsection}{\numberline {4.2.0.1}Cardiac Labels}{59}{subsubsection.151}%
 \contentsline {subsubsection}{\numberline {4.2.0.2}Qualitative Results}{63}{subsubsection.153}%
 \contentsline {section}{\numberline {4.3}Integration into a Motion-Compensated Reconstruction Pipeline}{65}{section.155}%
 \contentsline {subsection}{\numberline {4.3.1}Domain Translation}{65}{subsection.156}%
