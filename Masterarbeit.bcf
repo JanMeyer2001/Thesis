@@ -2666,9 +2666,7 @@
     <bcf:citekey order="263" intorder="1">HaarPSI</bcf:citekey>
     <bcf:citekey order="264" intorder="1">Kuestner2022</bcf:citekey>
     <bcf:citekey order="265" intorder="1">Kuestner2022</bcf:citekey>
-    <bcf:citekey order="266" intorder="1">HaarPSI</bcf:citekey>
-    <bcf:citekey order="267" intorder="1">Oksuz2020</bcf:citekey>
-    <bcf:citekey order="268" intorder="1">LAPNet</bcf:citekey>
+    <bcf:citekey order="266" intorder="1">LAPNet</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
