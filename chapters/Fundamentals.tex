@@ -375,15 +375,7 @@ Convolutional neural networks (CNNs) are a type of deep neural networks with reg
 % Convolutions and Deconvolutions genauer erklären?!
 
 \subsubsection{U-Net} \label{SubSubSec:U-Net}
-The U-Net~\cite{U-Net} architecture is an extension of the usual CNN structure often used for image segmentation, however, it can also be applied to image registration tasks. It adopts symmetrical contractive and expansive paths with skip connections between them as seen in Figure~\ref{fig:U-NetArchitecture}. The encoding blocks on the left extract important features from the image using convolution layers and max pooling, which are then stored in the latent space in the middle. From there it is reconstructed using upsampling and (de-)convolutions in the decoding blocks on the right. Additionally, skip connections are used to improve the spatial resolution of the segmentation. This architecture allows effective feature learning from a small number of training datasets~\cite{Fu2020}. 
-
-\begin{figure}[h] %tpb
-	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=.75\linewidth]{U-NetArchitecture.png} 
-	\caption{U-Net architecture taken from~\cite{U-Net} with an contractive path on the left and an expansive path on the right.}
-	\label{fig:U-NetArchitecture}
-\end{figure}
+The U-Net~\cite{U-Net} architecture is an extension of the usual CNN structure often used for image segmentation, however, it can also be applied to image registration tasks. It adopts symmetrical contractive and expansive paths with skip connections between them. The encoding blocks on the left extract important features from the image using convolution layers and max pooling, which are then stored in the latent space in the middle. From there it is reconstructed using upsampling and (de-)convolutions in the decoding blocks on the right. Additionally, skip connections are used to improve the spatial resolution of the segmentation. This architecture allows effective feature learning from a small number of training datasets~\cite{Fu2020}. 
 
 \subsubsection{Autoencoders} \label{SubSubSec:Autoencoders}
 An autoencoder (AE) is a type of CNNs that learns to reconstruct an image from its input without supervision. AEs usually consists of an encoder which extracts the input features, which are stored a low-dimensional latent state space, similar to a U-Net, and a decoder which restore the original input from the latent space. To prevent an AE from learning an identity function, regularized autoencoders were invented, which can be used for e.g. denoising AEs. Variational AEs (VAEs) are generative models that learn latent representation using a variational approach, which constrains the variability of the outputs. VAEs can been used for anomaly detection and image generation~\cite{Fu2020}.
