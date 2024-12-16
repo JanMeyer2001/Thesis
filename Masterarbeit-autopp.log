@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=latex 2024.4.12)  16 DEC 2024 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=latex 2024.4.12)  16 DEC 2024 11:59
 entering extended mode
  %&-line parsing enabled.
 **\let \APPmakepictures \empty \input  Masterarbeit.tex
@@ -1127,36 +1127,36 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 No file Masterarbeit-autopp.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-Package scrbase Info: activating english \partname on input line 140.
-Package scrbase Info: activating english \chaptername on input line 140.
-Package scrbase Info: activating english \appendixname on input line 140.
-Package scrbase Info: activating english \figurename on input line 140.
-Package scrbase Info: activating english \tablename on input line 140.
-Package scrbase Info: activating english \contentsname on input line 140.
-Package scrbase Info: activating english \listfigurename on input line 140.
-Package scrbase Info: activating english \listtablename on input line 140.
-Package scrbase Info: activating english \bibname on input line 140.
-Package scrbase Info: activating english \indexname on input line 140.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+Package scrbase Info: activating english \partname on input line 145.
+Package scrbase Info: activating english \chaptername on input line 145.
+Package scrbase Info: activating english \appendixname on input line 145.
+Package scrbase Info: activating english \figurename on input line 145.
+Package scrbase Info: activating english \tablename on input line 145.
+Package scrbase Info: activating english \contentsname on input line 145.
+Package scrbase Info: activating english \listfigurename on input line 145.
+Package scrbase Info: activating english \listtablename on input line 145.
+Package scrbase Info: activating english \bibname on input line 145.
+Package scrbase Info: activating english \indexname on input line 145.
 Package typearea Info: package `preview' with option `tightpage' detected.
-(typearea)             initial page size special deactivated on input line 140.
+(typearea)             initial page size special deactivated on input line 145.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1183,8 +1183,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Masterarbeit-autopp.bbl' not found.
 No file Masterarbeit-autopp.bbl.
-Package biblatex Info: Reference section=0 on input line 140.
-Package biblatex Info: Reference segment=0 on input line 140.
+Package biblatex Info: Reference section=0 on input line 145.
+Package biblatex Info: Reference segment=0 on input line 145.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1195,7 +1195,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \providecommand\hyper@newdestlabel[2]{}
-Package hyperref Info: Link coloring ON on input line 140.
+Package hyperref Info: Link coloring ON on input line 145.
 
 Package hyperref Warning: Rerun to get /PageLabels entry.
 
@@ -1206,7 +1206,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage[dvips]{bookmark}
-(scrbook)           before \begin{document} on input line 140.
+(scrbook)           before \begin{document} on input line 145.
 (C:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-dvips.def
@@ -1232,7 +1232,7 @@ Package scrhack Info: \landscape patched to make \textheight change optional on
 Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 124.
 ))
 \c@lstlisting=\count499
-Package scrhack Info: undefining \float@addtolists on input line 140.
+Package scrhack Info: undefining \float@addtolists on input line 145.
 \AC@reset@newl@bel
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -1268,19 +1268,19 @@ Package scrhack Info: undefining \float@addtolists on input line 140.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 140.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 140
+LaTeX Info: Redefining \celsius on input line 145.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 145
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 140.
-Package gensymb Info: Using \Omega for \ohm on input line 140.
+LaTeX Info: Redefining \ohm on input line 145.
+Package gensymb Info: Using \Omega for \ohm on input line 145.
 
 Package gensymb Warning: Not defining \micro.
 
 
-Package array Warning: Column X is already defined on input line 140.
+Package array Warning: Column X is already defined on input line 145.
 
 Preview: Fontsize 12pt
 (otherincludes/Titelseite.tex) (otherincludes/Erklaerung.tex) (otherincludes/Ku
@@ -11941,10 +11941,10 @@ l.408 ...width=\textwidth]{TestExamples_Mode2.pdf}
                                                   
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 37345 strings out of 475249
- 720899 string characters out of 5767654
+ 37347 strings out of 475249
+ 720924 string characters out of 5767654
  1955782 words of memory out of 5000000
- 58320 multiletter control sequences out of 15000+600000
+ 58322 multiletter control sequences out of 15000+600000
  570095 words of font info for 82 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,10964b,2463s stack positions out of 10000i,1000n,20000p,200000b,200000s
