@@ -368,26 +368,27 @@ To further evaluate the difference between the methods, one can look at the Dice
 
 
 \begin{figure}[H]
+	\vspace{-.5cm}
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\begin{subfigure}{0.85\textwidth}
+	\begin{subfigure}{0.83\textwidth}
     		\includegraphics[width=\textwidth]{Boxplot_DiceScores_LV-Cavity.pdf}
     		\caption{Boxplot of the Dice scores for the LV cavity.} %on the fully sampled \emph{ACDC} test data
     		\label{fig:Boxplot_DiceScores_LV-Cavity}
 	\end{subfigure}
 	\\
-	\begin{subfigure}{0.85\textwidth}
+	\begin{subfigure}{0.83\textwidth}
     		\includegraphics[width=\textwidth]{Boxplot_DiceScores_Myocardium.pdf}
     		\caption{Boxplot of the Dice scores for the myocardium.} %on the Acc4 \emph{ACDC} test data
     		\label{fig:Boxplot_DiceScores_Myocardium}
 	\end{subfigure}
 	\\
-	\begin{subfigure}{0.85\textwidth}
+	\begin{subfigure}{0.83\textwidth}
     		\includegraphics[width=\textwidth]{Boxplot_DiceScores_RV-Cavity.pdf}
     		\caption{Boxplot of the Dice scores for RV cavity.} %on the Acc8 \emph{ACDC} test data
     		\label{fig:Boxplot_DiceScores_RV-Cavity}
 	\end{subfigure}
-	\caption{Boxplots of Dice scores (split by label excluding the background) for all models on fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph{ACDC} test data. \legendsquare{violet}~Baseline, \legendsquare{teal}~\emph{NiftyReg}, \legendsquare{cyan}~\emph{VoxelMorph}, \legendsquare{lime}~\emph{Fourier-Net}, \legendsquare{orange}~\emph{Fourier-Net+}, \legendsquare{red}~\emph{4xFourier-Net+}}
+	\caption{Boxplots of Dice scores (split by label excluding the background) for all models on fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph{ACDC} test data. \legendsquare{violet}~Baseline, \legendsquare{teal}~\emph{NiftyReg}, \legendsquare{cyan}~\emph{VoxelMorph}, \legendsquare{lime}~\emph{Fourier-Net}, \legendsquare{orange}~\emph{Fourier-Net+}, \legendsquare{red}~\emph{4xFourier-Net+}.}
 	\label{fig:Boxplots_DiceScores}
 \end{figure}
 
@@ -540,9 +541,9 @@ For $R=10$, \emph{Fourier-Net+} again has the highest SSIM, although the value i
 
 \begin{figure}[H] %tpb
 	\centering
-	\includegraphics[width=\linewidth]{./Images/ResultsReconstruction_mode1.pdf} 
-	\includegraphics[width=\linewidth]{./Images/ResultsReconstruction_mode2.pdf}
-	\includegraphics[width=\linewidth]{./Images/ResultsReconstruction_mode3.pdf}
+	\includegraphics[width=\textwidth]{./Images/ResultsReconstruction_mode1.pdf} 
+	\includegraphics[width=\textwidth]{./Images/ResultsReconstruction_mode2.pdf}
+	\includegraphics[width=\textwidth]{./Images/ResultsReconstruction_mode3.pdf}
 	\caption{Visual results of the reconstruction pipeline for \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} as well as the ground truth image and the motion-corrupted baseline on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$.}
 	\label{fig:ResultsReconstruction}
 \end{figure}

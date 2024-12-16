@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 15:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1407,53 +1407,44 @@ File: ./Images/Image_ACDC_systolic.png Graphic file (type png)
 <use ./Images/Image_ACDC_systolic.png>
 Package pdftex.def Info: ./Images/Image_ACDC_systolic.png  used on input line 2
 06.
-(pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
 <./Images/Image_ACDC_diastolic.png, id=886, 462.528pt x 346.896pt>
 File: ./Images/Image_ACDC_diastolic.png Graphic file (type png)
 <use ./Images/Image_ACDC_diastolic.png>
 Package pdftex.def Info: ./Images/Image_ACDC_diastolic.png  used on input line 
 212.
-(pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
 <./Images/Segmentation_ACDC_systolic.png, id=887, 462.528pt x 346.896pt>
 File: ./Images/Segmentation_ACDC_systolic.png Graphic file (type png)
 <use ./Images/Segmentation_ACDC_systolic.png>
 Package pdftex.def Info: ./Images/Segmentation_ACDC_systolic.png  used on input
  line 218.
-(pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
 <./Images/Segmentation_ACDC_diastolic.png, id=888, 462.528pt x 346.896pt>
 File: ./Images/Segmentation_ACDC_diastolic.png Graphic file (type png)
 <use ./Images/Segmentation_ACDC_diastolic.png>
 Package pdftex.def Info: ./Images/Segmentation_ACDC_diastolic.png  used on inpu
 t line 224.
-(pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
 <./Images/ManualSubsamplingACDC_Mode1.png, id=891, 385.9218pt x 325.215pt>
 File: ./Images/ManualSubsamplingACDC_Mode1.png Graphic file (type png)
 <use ./Images/ManualSubsamplingACDC_Mode1.png>
 Package pdftex.def Info: ./Images/ManualSubsamplingACDC_Mode1.png  used on inpu
 t line 235.
-(pdftex.def)             Requested size: 132.30666pt x 111.49463pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
-[][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
- []
-
+(pdftex.def)             Requested size: 141.12889pt x 118.93323pt.
 <./Images/ManualSubsamplingACDC_Mode2.png, id=892, 384.4764pt x 323.0469pt>
 File: ./Images/ManualSubsamplingACDC_Mode2.png Graphic file (type png)
 <use ./Images/ManualSubsamplingACDC_Mode2.png>
 Package pdftex.def Info: ./Images/ManualSubsamplingACDC_Mode2.png  used on inpu
 t line 241.
-(pdftex.def)             Requested size: 132.30666pt x 111.16539pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--242
-[][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
- []
-
+(pdftex.def)             Requested size: 141.12889pt x 118.57906pt.
 <./Images/ManualSubsamplingACDC_Mode3.png, id=893, 384.4764pt x 322.3242pt>
 File: ./Images/ManualSubsamplingACDC_Mode3.png Graphic file (type png)
 <use ./Images/ManualSubsamplingACDC_Mode3.png>
 Package pdftex.def Info: ./Images/ManualSubsamplingACDC_Mode3.png  used on inpu
 t line 247.
-(pdftex.def)             Requested size: 132.30666pt x 110.9167pt.
+(pdftex.def)             Requested size: 141.12889pt x 118.31377pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1465,38 +1456,35 @@ File: images/Coils.png Graphic file (type png)
 <use images/Coils.png>
 Package pdftex.def Info: images/Coils.png  used on input line 271.
 (pdftex.def)             Requested size: 441.01773pt x 76.27373pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/k-space_fullysampled.png, id=914, 462.528pt x 231.264pt>
+ [40 <./Images/ManualSubsamplingACDC_Mode1.png> <./Images/ManualSubsamplingACDC
+_Mode2.png> <./Images/ManualSubsamplingACDC_Mode3.png>]
+<images/k-space_fullysampled.png, id=925, 462.528pt x 231.264pt>
 File: images/k-space_fullysampled.png Graphic file (type png)
 <use images/k-space_fullysampled.png>
 Package pdftex.def Info: images/k-space_fullysampled.png  used on input line 28
 1.
 (pdftex.def)             Requested size: 198.45662pt x 99.22984pt.
-<images/k-space_subsampled.png, id=915, 462.528pt x 231.264pt>
+<images/k-space_subsampled.png, id=926, 462.528pt x 231.264pt>
 File: images/k-space_subsampled.png Graphic file (type png)
 <use images/k-space_subsampled.png>
 Package pdftex.def Info: images/k-space_subsampled.png  used on input line 287.
 
 (pdftex.def)             Requested size: 198.45662pt x 99.22984pt.
-<images/image_fullysampled.png, id=916, 267.399pt x 166.221pt>
+<images/image_fullysampled.png, id=927, 267.399pt x 166.221pt>
 File: images/image_fullysampled.png Graphic file (type png)
 <use images/image_fullysampled.png>
 Package pdftex.def Info: images/image_fullysampled.png  used on input line 292.
 
 (pdftex.def)             Requested size: 198.45662pt x 123.36682pt.
-<images/image_subsampled.png, id=917, 267.399pt x 166.221pt>
+<images/image_subsampled.png, id=928, 267.399pt x 166.221pt>
 File: images/image_subsampled.png Graphic file (type png)
 <use images/image_subsampled.png>
 Package pdftex.def Info: images/image_subsampled.png  used on input line 298.
 (pdftex.def)             Requested size: 198.45662pt x 123.36682pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40 <./Images/ManualSubsamplingACDC_Mode1.png> <./Images/ManualSubsamplingACDC_
-Mode2.png> <./Images/ManualSubsamplingACDC_Mode3.png>]
 <./Images/LineSwappingOriginal.png, id=933, 216.81pt x 176.3388pt>
 File: ./Images/LineSwappingOriginal.png Graphic file (type png)
 <use ./Images/LineSwappingOriginal.png>
@@ -1513,7 +1501,6 @@ File: ./Images/LineSwapping32.png Graphic file (type png)
 <use ./Images/LineSwapping32.png>
 Package pdftex.def Info: ./Images/LineSwapping32.png  used on input line 329.
 (pdftex.def)             Requested size: 143.3294pt x 116.58038pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1694,22 +1681,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/Boxplot_DiceScores_LV-Cavity.pdf Graphic file (type pdf)
 <use images/Boxplot_DiceScores_LV-Cavity.pdf>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.pdf  used on input
- line 374.
-(pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
+ line 375.
+(pdftex.def)             Requested size: 366.04552pt x 180.6748pt.
 <images/Boxplot_DiceScores_Myocardium.pdf, id=1145, 887.72595pt x 438.17244pt>
 File: images/Boxplot_DiceScores_Myocardium.pdf Graphic file (type pdf)
 <use images/Boxplot_DiceScores_Myocardium.pdf>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.pdf  used on inpu
-t line 380.
-(pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
+t line 381.
+(pdftex.def)             Requested size: 366.04552pt x 180.6748pt.
 <images/Boxplot_DiceScores_RV-Cavity.pdf, id=1146, 887.72595pt x 438.17244pt>
 File: images/Boxplot_DiceScores_RV-Cavity.pdf Graphic file (type pdf)
 <use images/Boxplot_DiceScores_RV-Cavity.pdf>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.pdf  used on input
- line 386.
-(pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
+ line 387.
+(pdftex.def)             Requested size: 366.04552pt x 180.6748pt.
  [57] [58]
-Overfull \vbox (39.82652pt too high) has occurred while \output is active []
+Overfull \vbox (12.54245pt too high) has occurred while \output is active []
 
 
 [59 <./images/Boxplot_DiceScores_LV-Cavity.pdf> <./images/Boxplot_DiceScores_My
@@ -1725,25 +1712,25 @@ inclusion: multiple pdfs with page group included in a single page
 <images/TestExamples_Mode0.pdf, id=1171, 1957.54959pt x 768.22438pt>
 File: images/TestExamples_Mode0.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode0.pdf>
-Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 407.
+Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 408.
 
 (pdftex.def)             Requested size: 418.96548pt x 164.41481pt.
 <images/TestExamples_Mode1.pdf, id=1172, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode1.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode1.pdf>
-Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 408.
+Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 409.
 
 (pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
 <images/TestExamples_Mode2.pdf, id=1173, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode2.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode2.pdf>
-Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 409.
+Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 410.
 
 (pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
 <images/TestExamples_Mode3.pdf, id=1174, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode3.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode3.pdf>
-Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 410.
+Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 411.
 
 (pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
  [60]
@@ -1763,68 +1750,68 @@ pdfTeX warning: pdflatex (file ./images/TestExamples_Mode2.pdf): PDF inclusion:
 pdfTeX warning: pdflatex (file ./images/TestExamples_Mode3.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (8.29655pt too wide) in paragraph at lines 417--418
+Overfull \hbox (8.29655pt too wide) in paragraph at lines 418--419
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
 /m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/
 n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 430--430
+Underfull \hbox (badness 2653) in paragraph at lines 431--431
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 489--489
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 489--489
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 489--489
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 489--489
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 489--489
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 489--489
  []|[]| 
  []
 
 [62] [63]
-Underfull \hbox (badness 1308) in paragraph at lines 499--499
+Underfull \hbox (badness 1308) in paragraph at lines 500--500
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 532--532
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 532--532
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 532--532
  []|[]| 
  []
 
@@ -1834,21 +1821,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
-t line 543.
+t line 544.
 (pdftex.def)             Requested size: 441.01773pt x 149.9403pt.
 <./Images/ResultsReconstruction_mode2.pdf, id=1248, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
-t line 544.
+t line 545.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
 <./Images/ResultsReconstruction_mode3.pdf, id=1249, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.pdf  used on inpu
-t line 545.
+t line 546.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
 ) (chapters/Discussion.tex [65] [66 <./Images/ResultsReconstruction_mode1.pdf> 
 <./Images/ResultsReconstruction_mode2.pdf
@@ -1931,7 +1918,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (87 pages, 24464982 bytes).
+Output written on Masterarbeit.pdf (87 pages, 24464976 bytes).
 PDF statistics:
  1802 PDF objects out of 2073 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)

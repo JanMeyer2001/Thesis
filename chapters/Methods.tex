@@ -202,25 +202,25 @@ As the dataset only contained images reconstructed from fully sampled data, the 
 
 \begin{figure}[h]%tpb
 	\centering
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Image_ACDC_systolic.png}
     		\caption{Image of systolic phase.}
     		\label{fig:Image_ACDC_systolic}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Image_ACDC_diastolic.png}
     		\caption{Image of diastolic phase.}
     		\label{fig:Image_ACDC_diastolic}
 	\end{subfigure} 
 	\\
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Segmentation_ACDC_systolic.png}
     		\caption{Segmentation of systolic phase.}
     		\label{fig:Segmentation_ACDC_systolic}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Segmentation_ACDC_diastolic.png}
     		\caption{Segmentation of diastolic phase.}
     		\label{fig:Segmentation_ACDC_diastolic}
@@ -231,19 +231,19 @@ As the dataset only contained images reconstructed from fully sampled data, the 
 
 \begin{figure}[h] %tpb
 	\centering
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.32\textwidth}
     		\includegraphics[width=\textwidth]{./Images/ManualSubsamplingACDC_Mode1.png}
     		\caption{Manuel subsampling for $R=4$.}
     		\label{fig:ManualSubsamplingACDC_Mode1}
 	\end{subfigure}
 	\hfill 
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.32\textwidth}
     		\includegraphics[width=\textwidth]{./Images/ManualSubsamplingACDC_Mode2.png}
     		\caption{Manuel subsampling for $R=8$.}
     		\label{fig:ManualSubsamplingACDC_Mode2}
 	\end{subfigure}
 	\hfill 
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.32\textwidth}
     		\includegraphics[width=\textwidth]{./Images/ManualSubsamplingACDC_Mode3.png}
     		\caption{Manuel subsampling for $R=10$.}
     		\label{fig:ManualSubsamplingACDC_Mode3}
@@ -268,7 +268,7 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 \begin{figure}[h]%tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\linewidth]{Coils.png} 
+	\includegraphics[width=\textwidth]{Coils.png} 
 	\caption{MRI images for three different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there. Note that the sensitivities are slightly corrupted as the coils were compressed to 10 coils for all the scans.}
 	\label{fig:Coils}
 \end{figure}
@@ -434,7 +434,7 @@ As discussed in section~\ref{SubSec:Motion-CompensatedReconstruction}, neural ne
 % general reconstruction pipeline with synthetic motion-corrupted 
 \begin{figure}[h] %tpb
 	\centering
-	\includegraphics[width=\linewidth]{./Images/GeneralReconstructionPipeline.pdf} 
+	\includegraphics[width=\textwidth]{./Images/GeneralReconstructionPipeline.pdf} 
 	\caption{Overview of the generalized reconstruction pipeline in a) using \emph{Fourier-Net+} as a registration network (Figure inspired by~\cite{Kuestner2022}). The k-space data is corrupted with synthetic motion, either through swapping $z$ random line (steps shown in b) or by via $L$ random deformation frames to simulate lung motion (shown in c)).}
 	\label{fig:GeneralReconstructionPipeline}
 \end{figure}
