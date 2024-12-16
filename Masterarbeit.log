@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 14:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1233,19 +1233,7 @@ chapter 1.
 
 
 
-]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[2]) (chapters/Fundamentals.tex
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[3]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[4]
+] [2]) (chapters/Fundamentals.tex [3] [4]
 chapter 2.
 <./Images/MRI-Schematic.png, id=279, 639.13782pt x 345.54094pt>
 File: ./Images/MRI-Schematic.png Graphic file (type png)
@@ -1262,25 +1250,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--31
 
 [5
 
-]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[6 <./Images/MRI-Schematic.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[7]
+] [6 <./Images/MRI-Schematic.png>] [7]
 <./Images/CineWorkFlow.pdf, id=333, 415.41025pt x 159.33543pt>
 File: ./Images/CineWorkFlow.pdf Graphic file (type pdf)
 <use ./Images/CineWorkFlow.pdf>
 Package pdftex.def Info: ./Images/CineWorkFlow.pdf  used on input line 46.
 (pdftex.def)             Requested size: 441.01773pt x 169.1573pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[8 <./Images/CineWorkFlow.pdf>]
+ [8 <./Images/CineWorkFlow.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
@@ -1290,25 +1266,13 @@ File: ./Images/GradientEcho.pdf Graphic file (type pdf)
 <use ./Images/GradientEcho.pdf>
 Package pdftex.def Info: ./Images/GradientEcho.pdf  used on input line 60.
 (pdftex.def)             Requested size: 441.01773pt x 253.2289pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
 [9 <./Images/GradientEcho.pdf>]
 <./Images/SpinEcho.pdf, id=378, 853.58266pt x 358.50471pt>
 File: ./Images/SpinEcho.pdf Graphic file (type pdf)
 <use ./Images/SpinEcho.pdf>
 Package pdftex.def Info: ./Images/SpinEcho.pdf  used on input line 71.
 (pdftex.def)             Requested size: 441.01773pt x 185.23099pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[10 <./Images/SpinEcho.pdf>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[11]
+ [10 <./Images/SpinEcho.pdf>] [11]
 <./Images/2D_MRI_Measurement.png, id=410, 661.9689pt x 350.4184pt>
 File: ./Images/2D_MRI_Measurement.png Graphic file (type png)
 <use ./Images/2D_MRI_Measurement.png>
@@ -1330,66 +1294,20 @@ Package pdftex.def Info: ./Images/RefocusingPulse.pdf  used on input line 133.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[12 <./Images/2D_MRI_Measurement.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[13 <./Images/ConstantGradient.pdf> <./Images/RefocusingPulse.pdf
+[12 <./Images/2D_MRI_Measurement.png>] [13 <./Images/ConstantGradient.pdf> <./I
+mages/RefocusingPulse.pdf
 
 pdfTeX warning: pdflatex (file ./Images/RefocusingPulse.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[14]
+>] [14]
 <images/ExamplesSubsampling.png, id=479, 787.44188pt x 331.2375pt>
 File: images/ExamplesSubsampling.png Graphic file (type png)
 <use images/ExamplesSubsampling.png>
 Package pdftex.def Info: images/ExamplesSubsampling.png  used on input line 209
 .
 (pdftex.def)             Requested size: 441.01773pt x 185.51195pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[15 <./images/ExamplesSubsampling.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[16]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[17]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[18]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[19]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[20]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[21]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[22]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[23]
+ [15 <./images/ExamplesSubsampling.png>] [16] [17] [18] [19] [20]
+[21] [22] [23]
 <images/SupervisedRegistrationGraph.jpg, id=656, 2460.19125pt x 827.09pt>
 File: images/SupervisedRegistrationGraph.jpg Graphic file (type jpg)
 <use images/SupervisedRegistrationGraph.jpg>
@@ -1406,19 +1324,8 @@ t line 392.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[24 <./images/SupervisedRegistrationGraph.jpg>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[25 <./images/UnsupervisedRegistrationGraph.jpg>]) (chapters/Methods.tex
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[26]
+[24 <./images/SupervisedRegistrationGraph.jpg>] [25 <./images/UnsupervisedRegis
+trationGraph.jpg>]) (chapters/Methods.tex [26]
 chapter 3.
 [27
 
@@ -1429,26 +1336,14 @@ File: images/ArchitectureFourier-Net.png Graphic file (type png)
 Package pdftex.def Info: images/ArchitectureFourier-Net.png  used on input line
  22.
 (pdftex.def)             Requested size: 441.01773pt x 167.7513pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[28 <./images/ArchitectureFourier-Net.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[29]
+ [28 <./images/ArchitectureFourier-Net.png>] [29]
 <images/SYMNetArchitectureFCN.png, id=750, 1032.85875pt x 676.02562pt>
 File: images/SYMNetArchitectureFCN.png Graphic file (type png)
 <use images/SYMNetArchitectureFCN.png>
 Package pdftex.def Info: images/SYMNetArchitectureFCN.png  used on input line 5
 1.
 (pdftex.def)             Requested size: 441.01773pt x 288.65323pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[30 <./images/SYMNetArchitectureFCN.png>]
+ [30 <./images/SYMNetArchitectureFCN.png>]
 <images/DecoderDisplacementField.png, id=771, 493.845pt x 405.01312pt>
 File: images/DecoderDisplacementField.png Graphic file (type png)
 <use images/DecoderDisplacementField.png>
@@ -1459,30 +1354,14 @@ e 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[31]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[32 <./images/DecoderDisplacementField.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[33]
+[31] [32 <./images/DecoderDisplacementField.png>] [33]
 <images/SpatialTransformer.png, id=811, 609.77812pt x 260.47313pt>
 File: images/SpatialTransformer.png Graphic file (type png)
 <use images/SpatialTransformer.png>
 Package pdftex.def Info: images/SpatialTransformer.png  used on input line 110.
 
 (pdftex.def)             Requested size: 441.01773pt x 188.39104pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[34 <./images/SpatialTransformer.png>]
+ [34 <./images/SpatialTransformer.png>]
 <images/ArchitectureFourier-Net+.png, id=828, 1075.01625pt x 356.0803pt>
 File: images/ArchitectureFourier-Net+.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+.png>
@@ -1492,10 +1371,6 @@ e 149.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
 
 [35]
 <images/CompressionEncoder.png, id=843, 490.83376pt x 391.4625pt>
@@ -1517,10 +1392,6 @@ line 168.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
 [36 <./images/ArchitectureFourier-Net+.png>]
 <images/ArchitectureFourier-Net+Cascaded.png, id=859, 1409.265pt x 287.0725pt>
 File: images/ArchitectureFourier-Net+Cascaded.png Graphic file (type png)
@@ -1532,16 +1403,8 @@ nput line 188.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[37 <./images/CompressionEncoder.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[38 <./images/ArchitectureFourier-Net+CNN.png> <./images/ArchitectureFourier-Ne
-t+Cascaded.png>]
+[37 <./images/CompressionEncoder.png>] [38 <./images/ArchitectureFourier-Net+CN
+N.png> <./images/ArchitectureFourier-Net+Cascaded.png>]
 <./Images/Image_ACDC_systolic.png, id=885, 462.528pt x 346.896pt>
 File: ./Images/Image_ACDC_systolic.png Graphic file (type png)
 <use ./Images/Image_ACDC_systolic.png>
@@ -1597,10 +1460,6 @@ t line 247.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
 [39 <./Images/Image_ACDC_systolic.png> <./Images/Image_ACDC_diastolic.png> <./I
 mages/Segmentation_ACDC_systolic.png> <./Images/Segmentation_ACDC_diastolic.png
 >]
@@ -1638,10 +1497,6 @@ Package pdftex.def Info: images/image_subsampled.png  used on input line 298.
 (pdftex.def)             Requested size: 198.45662pt x 123.36682pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
 
 [40 <./Images/ManualSubsamplingACDC_Mode1.png> <./Images/ManualSubsamplingACDC_
 Mode2.png> <./Images/ManualSubsamplingACDC_Mode3.png>]
@@ -1688,30 +1543,11 @@ Package pdftex.def Info: ./Images/LungMotion4.png  used on input line 386.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[41 <./images/Coils.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[42 <./images/k-space_fullysampled.png> <./images/k-space_subsampled.png> <./im
-ages/image_fullysampled.png> <./images/image_subsampled.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[43 <./Images/LineSwappingOriginal.png> <./Images/LineSwapping16.png> <./Images
-/LineSwapping32.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[44 <./Images/LungMotion1.png> <./Images/LungMotion2.png> <./Images/LungMotion3
-.png> <./Images/LungMotion4.png>]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[45]
+[41 <./images/Coils.png>] [42 <./images/k-space_fullysampled.png> <./images/k-s
+pace_subsampled.png> <./images/image_fullysampled.png> <./images/image_subsampl
+ed.png>] [43 <./Images/LineSwappingOriginal.png> <./Images/LineSwapping16.png> 
+<./Images/LineSwapping32.png>] [44 <./Images/LungMotion1.png> <./Images/LungMot
+ion2.png> <./Images/LungMotion3.png> <./Images/LungMotion4.png>] [45]
 <./Images/GeneralReconstructionPipeline.pdf, id=1009, 688.55669pt x 438.17244pt
 >
 File: ./Images/GeneralReconstructionPipeline.pdf Graphic file (type pdf)
@@ -1723,15 +1559,7 @@ put line 437.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (chapters/Results.tex
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[46]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[47 <./Images/GeneralReconstructionPipeline.pdf>]
+) (chapters/Results.tex [46] [47 <./Images/GeneralReconstructionPipeline.pdf>]
 chapter 4.
 [48
 
@@ -1744,10 +1572,6 @@ Overfull \hbox (5.20145pt too wide) in paragraph at lines 47--47
 Overfull \hbox (5.20145pt too wide) in paragraph at lines 78--78
  []|[]| 
  []
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
 
 [49]
 Overfull \hbox (2.46306pt too wide) in paragraph at lines 120--120
@@ -1789,15 +1613,7 @@ Overfull \hbox (5.67068pt too wide) in paragraph at lines 120--120
  []|[]| 
  []
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[50]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[51]
+[50] [51]
 Overfull \hbox (2.46306pt too wide) in paragraph at lines 162--162
  []|[]| 
  []
@@ -1836,10 +1652,6 @@ Overfull \hbox (13.07755pt too wide) in paragraph at lines 162--162
 Overfull \hbox (5.67068pt too wide) in paragraph at lines 162--162
  []|[]| 
  []
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
 
 [52]
 Overfull \hbox (4.24423pt too wide) in paragraph at lines 188--188
@@ -1866,10 +1678,6 @@ Overfull \hbox (5.67068pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
 [53]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1880,21 +1688,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[54]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[55]
+[54] [55]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
 
 [56]
 <images/Boxplot_DiceScores_LV-Cavity.pdf, id=1144, 887.72595pt x 438.17244pt>
@@ -1915,19 +1711,8 @@ File: images/Boxplot_DiceScores_RV-Cavity.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.pdf  used on input
  line 386.
 (pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[57]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[58]
+ [57] [58]
 Overfull \vbox (39.82652pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
 
 
 [59 <./images/Boxplot_DiceScores_LV-Cavity.pdf> <./images/Boxplot_DiceScores_My
@@ -1964,15 +1749,8 @@ File: images/TestExamples_Mode3.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 409.
 
 (pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[60]
+ [60]
 Overfull \vbox (69.21065pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
 
 
 [61 <./images/TestExamples_Mode0.pdf> <./images/TestExamples_Mode1.pdf
@@ -2031,15 +1809,7 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
  []|[]| 
  []
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[62]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[63]
+[62] [63]
 Underfull \hbox (badness 1308) in paragraph at lines 498--498
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
@@ -2060,10 +1830,6 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
 Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
  []|[]| 
  []
-
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
 
 [64]
 <./Images/ResultsReconstruction_mode1.pdf, id=1222, 9070.73877pt x 3084.27869pt
@@ -2087,16 +1853,8 @@ File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.pdf  used on inpu
 t line 544.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
-) (chapters/Discussion.tex
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[65]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[66 <./Images/ResultsReconstruction_mode1.pdf> <./Images/ResultsReconstruction_
-mode2.pdf
+) (chapters/Discussion.tex [65] [66 <./Images/ResultsReconstruction_mode1.pdf> 
+<./Images/ResultsReconstruction_mode2.pdf
 
 pdfTeX warning: pdflatex (file ./Images/ResultsReconstruction_mode2.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
@@ -2115,40 +1873,12 @@ m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/n
 
 [67
 
-]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[68]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[69]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[70]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[71]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[72]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[73]) (chapters/Conclusion.tex
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[74]
+] [68] [69] [70] [71] [72] [73]) (chapters/Conclusion.tex [74]
 chapter 6.
 ) [75
 
 ]
-Overfull \hbox (20.21523pt too wide) in paragraph at lines 161--161
+Overfull \hbox (20.21523pt too wide) in paragraph at lines 162--162
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
@@ -2156,39 +1886,19 @@ onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 
 [76
 
-]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[77]
-Overfull \hbox (3.86661pt too wide) in paragraph at lines 161--161
+] [77]
+Overfull \hbox (3.86661pt too wide) in paragraph at lines 162--162
 []\OT1/cmr/m/n/10 Mark A. Gris-wold et al. \  Gen-er-al-ized au-to-cal-i-brat-i
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
 [78]
-Overfull \hbox (3.00894pt too wide) in paragraph at lines 161--161
+Overfull \hbox (3.00894pt too wide) in paragraph at lines 162--162
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[79]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[80]
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[81] (Masterarbeit.aux)
+[79] [80] [81] (Masterarbeit.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -2224,7 +1934,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (87 pages, 24403269 bytes).
+Output written on Masterarbeit.pdf (87 pages, 24397625 bytes).
 PDF statistics:
  1778 PDF objects out of 2073 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
