@@ -70,7 +70,7 @@
 
 %% FARBEN:
 \definecolor{Ocean}{cmyk}{1,0,0.2,0.78}
-\definecolor{Grey}{cmyk}{0,0,0,0.6}
+\definecolor{LightBlue}{cmyk}{0.3,0,0,0.2}
 \definecolor{ULGray}{cmyk}{0,0,0.03,0.1}
 
 %schusterjungen und hurenkinder vermeiden
@@ -100,10 +100,15 @@
 %% Subsubsections ohne Nummern machen
 \renewcommand*{\subsubsectionformat}{}
 
+%% Farbe und Größe von Sections, Subsections, etc. bestimmen
+\setkomafont{section}{\Large\textcolor{Ocean}}
+\setkomafont{subsection}{\large\textcolor{Ocean}}
+\setkomafont{subsubsection}{\normalsize\textcolor{Ocean}}
+
 
 \begin{document}
 % Format des Chapterheades:
-\renewcommand\chapterlinesformat[3]{\vspace{-.9cm}#3\vspace{.9cm}}
+\renewcommand\chapterlinesformat[3]{\vspace{-.9cm} \textcolor{Ocean}{#3} \vspace{.9cm}}
 %% ------------------------------------------------------------------------
 %% TITELSEITE
 %% ------------------------------------------------------------------------
@@ -125,7 +130,8 @@
 \tableofcontents
 
 % Format des Chapterheades:
-\renewcommand\chapterlinesformat[3]{\vspace{-.9cm}\chaptername\ #2\\*\vspace{.6cm}#3\vspace{.6cm}}
+\renewcommand\chapterlinesformat[3]{\vspace{-.9cm} \resizebox{0.1\textwidth}{!}{\textcolor{LightBlue}{#2}}\\*\vspace{.6cm} \huge \textcolor{Ocean}{#3}\vspace{.6cm}}
+
 
 %\listoffigures
 
@@ -151,7 +157,7 @@
 %% ------------------------------------------------------------------------
 
 % Format des Chapterheades:
-\renewcommand\chapterlinesformat[3]{\vspace{-.9cm}#3\vspace{.6cm}}
+\renewcommand\chapterlinesformat[3]{\vspace{-.9cm} \textcolor{Ocean}{#3} \vspace{.6cm}}
 
 %% ------------------------------------------------------------------------
 %% Literatur- und Abkuerzungsverzeichnis
@@ -165,7 +171,7 @@
 %% ------------------------------------------------------------------------
 
 % Format des Chapterheades:
-\renewcommand\chapterlinesformat[3]{\vspace{-.9cm}\appendixname\ #2\\*\vspace{.6cm}#3\vspace{.6cm}}
+\renewcommand\chapterlinesformat[3]{\vspace{-.9cm}\appendixname\ \textcolor{Ocean}{#2}\\*\vspace{.6cm}#3\vspace{.6cm}}
 
 % \appendix
 % \input{./chapters/Anhang}
