@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 15:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 15:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1816,13 +1816,13 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 532--532
  []
 
 [64]
-<./Images/ResultsReconstruction_mode1.pdf, id=1247, 9070.73877pt x 3084.27869pt
+<./Images/ResultsReconstruction_mode1.pdf, id=1247, 9087.80939pt x 3203.78032pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
 t line 544.
-(pdftex.def)             Requested size: 441.01773pt x 149.9403pt.
+(pdftex.def)             Requested size: 441.01773pt x 155.45648pt.
 <./Images/ResultsReconstruction_mode2.pdf, id=1248, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
@@ -1918,9 +1918,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (87 pages, 24464976 bytes).
+Output written on Masterarbeit.pdf (87 pages, 24511647 bytes).
 PDF statistics:
- 1802 PDF objects out of 2073 (max. 8388607)
+ 1820 PDF objects out of 2073 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
