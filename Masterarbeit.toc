@@ -77,29 +77,29 @@
 \contentsline {subsection}{\numberline {4.1.5}Dense Displacement on Accelerated Data}{53}{subsection.140}%
 \contentsline {section}{\numberline {4.2}Registration Performance on Subsampled Data}{54}{section.144}%
 \contentsline {subsubsection}{\numberline {4.2.0.1}Cardiac Labels}{56}{subsubsection.146}%
-\contentsline {subsubsection}{\numberline {4.2.0.2}Qualitative Results}{60}{subsubsection.148}%
-\contentsline {section}{\numberline {4.3}Integration into a Motion-Compensated Reconstruction Pipeline}{62}{section.150}%
-\contentsline {subsubsection}{\numberline {4.3.0.1}K-Space Line Swapping}{62}{subsubsection.151}%
-\contentsline {subsubsection}{\numberline {4.3.0.2}Simulated Lung Movement}{64}{subsubsection.153}%
-\contentsline {subsubsection}{\numberline {4.3.0.3}Qualitative Results}{65}{subsubsection.155}%
-\contentsline {chapter}{\numberline {5}Discussion}{67}{chapter.157}%
-\contentsline {section}{\numberline {5.1}Ablation Studies and Parameter Tests}{67}{section.158}%
-\contentsline {subsubsection}{\numberline {5.1.0.1}Fourier-Net versus Fourier-Net+}{67}{subsubsection.159}%
-\contentsline {subsubsection}{\numberline {5.1.0.2}Starting Channel Size}{68}{subsubsection.160}%
-\contentsline {subsubsection}{\numberline {5.1.0.3}Fourier-Transform Crop Size}{69}{subsubsection.161}%
-\contentsline {subsubsection}{\numberline {5.1.0.4}Comparison with VoxelMorph}{69}{subsubsection.162}%
-\contentsline {subsubsection}{\numberline {5.1.0.5}Dense Displacements}{70}{subsubsection.163}%
-\contentsline {section}{\numberline {5.2}Registration Performance on Subsampled Data}{70}{section.164}%
-\contentsline {subsubsection}{\numberline {5.2.0.1}Cardiac Labels}{71}{subsubsection.165}%
-\contentsline {subsubsection}{\numberline {5.2.0.2}Qualitative Results}{71}{subsubsection.166}%
-\contentsline {section}{\numberline {5.3}Integration into a Motion-Compensated Reconstruction Pipeline}{71}{section.167}%
-\contentsline {subsubsection}{\numberline {5.3.0.1}K-Space Line Swapping}{71}{subsubsection.168}%
-\contentsline {subsubsection}{\numberline {5.3.0.2}Simulated Lung Movement}{72}{subsubsection.169}%
-\contentsline {subsubsection}{\numberline {5.3.0.3}Qualitative Results}{72}{subsubsection.170}%
-\contentsline {section}{\numberline {5.4}Efficiency and Performance Trade-offs}{73}{section.171}%
-\contentsline {section}{\numberline {5.5}Limitations and Outlook}{73}{section.172}%
-\contentsline {subsubsection}{\numberline {5.5.0.1}Extending the Scope of the Experiments and Network Training}{73}{subsubsection.173}%
-\contentsline {subsubsection}{\numberline {5.5.0.2}Challenges of Evaluation}{74}{subsubsection.174}%
-\contentsline {chapter}{\numberline {6}Conclusion}{75}{chapter.175}%
-\contentsline {chapter}{\nonumberline Bibliography}{76}{chapter*.176}%
+\contentsline {subsubsection}{\numberline {4.2.0.2}Qualitative Results}{59}{subsubsection.148}%
+\contentsline {section}{\numberline {4.3}Integration into a Motion-Compensated Reconstruction Pipeline}{61}{section.150}%
+\contentsline {subsection}{\numberline {4.3.1}K-Space Line Swapping}{61}{subsection.151}%
+\contentsline {subsection}{\numberline {4.3.2}Non-Linear Lung Transformations}{63}{subsection.153}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Qualitative Results}{64}{subsubsection.155}%
+\contentsline {chapter}{\numberline {5}Discussion}{66}{chapter.157}%
+\contentsline {section}{\numberline {5.1}Ablation Studies and Parameter Tests}{66}{section.158}%
+\contentsline {subsubsection}{\numberline {5.1.0.1}Fourier-Net versus Fourier-Net+}{66}{subsubsection.159}%
+\contentsline {subsubsection}{\numberline {5.1.0.2}Starting Channel Size}{67}{subsubsection.160}%
+\contentsline {subsubsection}{\numberline {5.1.0.3}Fourier-Transform Crop Size}{68}{subsubsection.161}%
+\contentsline {subsubsection}{\numberline {5.1.0.4}Comparison with VoxelMorph}{68}{subsubsection.162}%
+\contentsline {subsubsection}{\numberline {5.1.0.5}Dense Displacements}{69}{subsubsection.163}%
+\contentsline {section}{\numberline {5.2}Registration Performance on Subsampled Data}{69}{section.164}%
+\contentsline {subsubsection}{\numberline {5.2.0.1}Cardiac Labels}{70}{subsubsection.165}%
+\contentsline {subsubsection}{\numberline {5.2.0.2}Qualitative Results}{70}{subsubsection.166}%
+\contentsline {section}{\numberline {5.3}Integration into a Motion-Compensated Reconstruction Pipeline}{70}{section.167}%
+\contentsline {subsubsection}{\numberline {5.3.0.1}K-Space Line Swapping}{70}{subsubsection.168}%
+\contentsline {subsubsection}{\numberline {5.3.0.2}Non-Linear Lung Transformations}{71}{subsubsection.169}%
+\contentsline {subsubsection}{\numberline {5.3.0.3}Qualitative Results}{71}{subsubsection.170}%
+\contentsline {section}{\numberline {5.4}Efficiency and Performance Trade-offs}{72}{section.171}%
+\contentsline {section}{\numberline {5.5}Limitations and Outlook}{72}{section.172}%
+\contentsline {subsubsection}{\numberline {5.5.0.1}Extending the Scope of the Experiments and Network Training}{72}{subsubsection.173}%
+\contentsline {subsubsection}{\numberline {5.5.0.2}Challenges of Evaluation}{73}{subsubsection.174}%
+\contentsline {chapter}{\numberline {6}Conclusion}{74}{chapter.175}%
+\contentsline {chapter}{\nonumberline Bibliography}{75}{chapter*.176}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
