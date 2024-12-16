@@ -93,13 +93,12 @@
 \contentsline {subsubsection}{\numberline {5.2.0.1}Cardiac Labels}{71}{subsubsection.165}%
 \contentsline {subsubsection}{\numberline {5.2.0.2}Qualitative Results}{71}{subsubsection.166}%
 \contentsline {section}{\numberline {5.3}Integration into a Motion-Compensated Reconstruction Pipeline}{71}{section.167}%
-\contentsline {subsubsection}{\numberline {5.3.0.1}Domain Translation}{71}{subsubsection.168}%
-\contentsline {subsubsection}{\numberline {5.3.0.2}K-Space Line Swapping}{72}{subsubsection.169}%
-\contentsline {subsubsection}{\numberline {5.3.0.3}Simulated Lung Movement}{72}{subsubsection.170}%
-\contentsline {subsubsection}{\numberline {5.3.0.4}Qualitative Results}{73}{subsubsection.171}%
-\contentsline {section}{\numberline {5.4}Efficiency and Performance Trade-offs}{73}{section.172}%
-\contentsline {section}{\numberline {5.5}Limitations and Outlook}{74}{section.173}%
-\contentsline {subsubsection}{\numberline {5.5.0.1}Extending the Scope of the Experiments and Network Training}{74}{subsubsection.174}%
-\contentsline {subsubsection}{\numberline {5.5.0.2}Challenges of Evaluation}{74}{subsubsection.175}%
-\contentsline {chapter}{\numberline {6}Conclusion}{76}{chapter.176}%
+\contentsline {subsubsection}{\numberline {5.3.0.1}K-Space Line Swapping}{71}{subsubsection.168}%
+\contentsline {subsubsection}{\numberline {5.3.0.2}Simulated Lung Movement}{72}{subsubsection.169}%
+\contentsline {subsubsection}{\numberline {5.3.0.3}Qualitative Results}{72}{subsubsection.170}%
+\contentsline {section}{\numberline {5.4}Efficiency and Performance Trade-offs}{73}{section.171}%
+\contentsline {section}{\numberline {5.5}Limitations and Outlook}{73}{section.172}%
+\contentsline {subsubsection}{\numberline {5.5.0.1}Extending the Scope of the Experiments and Network Training}{74}{subsubsection.173}%
+\contentsline {subsubsection}{\numberline {5.5.0.2}Challenges of Evaluation}{74}{subsubsection.174}%
+\contentsline {chapter}{\numberline {6}Conclusion}{75}{chapter.175}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
