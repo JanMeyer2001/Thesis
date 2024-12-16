@@ -1,0 +1,23 @@
+# latex cache
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.lof
+*.lot
+*.xdv
+*.nav
+*.snm
+*.vrb
+
+# vscode
+.vscode
+# macos
+.DS_Store

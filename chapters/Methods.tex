@@ -146,7 +146,7 @@ As seen in Figure~\ref{fig:Fourier-Net+}, the network architecture is almost the
 \begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\linewidth]{ArchitectureFourier-Net+.png} 
+	\includegraphics[width=\textwidth]{ArchitectureFourier-Net+.png} 
 	\caption{Architecture of \emph{Fourier-Net+} taken from~\cite{Fourier-Net+}. The encoder has a additional compression step to reduce the input size of the images compared to \emph{Fourier-Net}. This is achieved by center-cropping the k-space of the images obtained via a DFT and then reconstructing them via an iDFT to get a compressed version of the inputs without the higher frequencies present. The rest of the network is the same as for \emph{Fourier-Net}.}
 	\label{fig:Fourier-Net+}
 \end{figure}
@@ -165,7 +165,7 @@ In order to further reduce the amount of computational operations, \emph{Fourier
 \begin{figure}[h] %tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\linewidth]{ArchitectureFourier-Net+CNN.png} 
+	\includegraphics[width=\textwidth]{ArchitectureFourier-Net+CNN.png} 
 	\caption{Architecture of the CNN for a typical U-Net, \emph{Fourier-Net} and \emph{Fourier-Net+} taken from~\cite{Fourier-Net+}. The latter have far less trainable network parameters due to only computing a band-limited displacement. \emph{Fourier-Net+} additionally has a smaller encoder due to compressing the input images.} % making it even more efficient
 	\label{fig:Fourier-Net+CNN}
 \end{figure}
@@ -202,25 +202,25 @@ As the dataset only contained images reconstructed from fully sampled data, the 
 
 \begin{figure}[h]%tpb
 	\centering
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Image_ACDC_systolic.png}
     		\caption{Image of systolic phase.}
     		\label{fig:Image_ACDC_systolic}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Image_ACDC_diastolic.png}
     		\caption{Image of diastolic phase.}
     		\label{fig:Image_ACDC_diastolic}
 	\end{subfigure} 
 	\\
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Segmentation_ACDC_systolic.png}
     		\caption{Segmentation of systolic phase.}
     		\label{fig:Segmentation_ACDC_systolic}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.49\textwidth}
     		\includegraphics[width=\textwidth]{./Images/Segmentation_ACDC_diastolic.png}
     		\caption{Segmentation of diastolic phase.}
     		\label{fig:Segmentation_ACDC_diastolic}
@@ -231,19 +231,19 @@ As the dataset only contained images reconstructed from fully sampled data, the 
 
 \begin{figure}[h] %tpb
 	\centering
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.32\textwidth}
     		\includegraphics[width=\textwidth]{./Images/ManualSubsamplingACDC_Mode1.png}
     		\caption{Manuel subsampling for $R=4$.}
     		\label{fig:ManualSubsamplingACDC_Mode1}
 	\end{subfigure}
 	\hfill 
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.32\textwidth}
     		\includegraphics[width=\textwidth]{./Images/ManualSubsamplingACDC_Mode2.png}
     		\caption{Manuel subsampling for $R=8$.}
     		\label{fig:ManualSubsamplingACDC_Mode2}
 	\end{subfigure}
 	\hfill 
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.32\textwidth}
     		\includegraphics[width=\textwidth]{./Images/ManualSubsamplingACDC_Mode3.png}
     		\caption{Manuel subsampling for $R=10$.}
     		\label{fig:ManualSubsamplingACDC_Mode3}
