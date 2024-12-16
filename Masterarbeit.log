@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 09:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 11:41
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **./Masterarbeit.tex
 (Masterarbeit.tex
@@ -1030,50 +1030,289 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 (C:\Program Files\MiKTeX\tex/latex/gensymb\gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
 )
+(C:\Program Files\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+(C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks42
+\XKV@tempa@toks=\toks43
+)
+\XKV@depth=\count461
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks.tex
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count462
+\pstFP@xia=\count463
+\pstFP@xib=\count464
+\pstFP@xfa=\count465
+\pstFP@xfb=\count466
+\pstFP@rega=\count467
+\pstFP@regb=\count468
+\pstFP@regs=\count469
+\pstFP@times=\count470
+)
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks44
+\pgfutil@tempdima=\dimen267
+\pgfutil@tempdimb=\dimen268
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box72
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks45
+\pgfkeys@temptoks=\toks46
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.
+tex
+\pgfkeys@tmptoks=\toks47
+))) (C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex
+\pgf@x=\dimen269
+\pgf@xa=\dimen270
+\pgf@xb=\dimen271
+\pgf@xc=\dimen272
+\pgf@y=\dimen273
+\pgf@ya=\dimen274
+\pgf@yb=\dimen275
+\pgf@yc=\dimen276
+\c@pgf@counta=\count471
+\c@pgf@countb=\count472
+\c@pgf@countc=\count473
+\c@pgf@countd=\count474
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen277
+\pgfmath@count=\count475
+\pgfmath@box=\box73
+\pgfmath@toks=\toks48
+\pgfmath@stack@operand=\toks49
+\pgfmath@stack@operation=\toks50
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
+de.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
+tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
+cs.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count476
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen278
+\pgffor@skip=\dimen279
+\pgffor@stack=\toks51
+\pgffor@toks=\toks52
+))
+\psLoopIndex=\count477
+
+`PSTricks' v3.21  <2024/11/16> (tvz,hv)
+\pst@dima=\dimen280
+\pst@dimb=\dimen281
+\pst@dimc=\dimen282
+\pst@dimd=\dimen283
+\pst@dimg=\dimen284
+\pst@dimh=\dimen285
+\pst@dimm=\dimen286
+\pst@dimn=\dimen287
+\pst@dimo=\dimen288
+\pst@dimp=\dimen289
+\pst@hbox=\box74
+\pst@ibox=\box75
+\pst@boxg=\box76
+\pst@cnta=\count478
+\pst@cntb=\count479
+\pst@cntc=\count480
+\pst@cntd=\count481
+\pst@cntg=\count482
+\pst@cnth=\count483
+\pst@cntm=\count484
+\pst@cntn=\count485
+\pst@cnto=\count486
+\pst@cntp=\count487
+\@zero=\count488
+\pst@toks=\toks53
+--- We are running latex or xelatex ---
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks.con)
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks-color.tex)
+\psunit=\dimen290
+\psxunit=\dimen291
+\psyunit=\dimen292
+\pst@C@@rType=\count489
+\pslinewidth=\dimen293
+\psk@startLW=\dimen294
+\psk@endLW=\dimen295
+
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks-arrows.tex
+\pshooklength=\dimen296
+\pshookwidth=\dimen297
+)
+\pst@customdefs=\toks54
+
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks-dots.tex)
+\pslinearc=\dimen298
+\pst@symbolStep=\dimen299
+\pst@symbolWidth=\dimen300
+\pst@symbolLinewidth=\dimen301
+\everypsbox=\toks55
+\psframesep=\dimen302
+\pslabelsep=\dimen303
+\sh@wgridXunit=\dimen304
+\sh@wgridYunit=\dimen305
+\pst@shift=\dimen306
+\ps@imagectr=\count490
+
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks.con))
+File: pstricks.tex 2024/11/16 v3.21 `PSTricks' (tvz,hv)
+
+(C:\Program Files\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+(C:\Program Files\MiKTeX\tex/latex/auto-pst-pdf\auto-pst-pdf.sty
+Package: auto-pst-pdf 2020/10/08 v0.7 Wrapper for pst-pdf
+
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(C:\Program Files\MiKTeX\tex/latex/ifplatform\ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Program Files\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/04/15 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Program Files\MiKTeX\tex/generic/catchfile\catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+\c@app@runs=\count491
+runsystem(echo " ")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(latex -disable-write18 -jobname="Masterarbeit-autopp" -interaction=ba
+tchmode  "\let \APPmakepictures \empty \input  Masterarbeit.tex")...executed.
+
+
+
+Package auto-pst-pdf Warning: 
+    Creation of Masterarbeit-autopp.dvi failed.
+This warning occured on input line 128.
+
+
+Package auto-pst-pdf Warning: 
+    Could not create Masterarbeit-pics.pdf. Auxiliary files not deleted.
+This warning occured on input line 128.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: End auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+(C:\Program Files\MiKTeX\tex/latex/pst-pdf\pst-pdf.sty
+Package: pst-pdf 2020/10/10 v1.2f PS graphics for pdfLaTeX (RN,HjG)
+
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Program Files\MiKTeX\tex/latex/luatex85\luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+)
+\c@pspicture=\count492
+Package pst-pdf Info: MODE: 1 (pdfTeX mode) on input line 213.
+\ppf@output=\toks56
+
+(C:\Program Files\MiKTeX\tex/latex/preview\preview.sty
+Package: preview 2024/06/30 14.0.6 (AUCTeX/preview-latex)
+\pr@snippet=\count493
+\pr@box=\box77
+\pr@output=\toks57
+)
+(C:\Program Files\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Program Files\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (Masterarbeit.aux)
+
+(Masterarbeit.aux)
 \openout1 = `Masterarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-Package scrbase Info: activating english \partname on input line 133.
-Package scrbase Info: activating english \chaptername on input line 133.
-Package scrbase Info: activating english \appendixname on input line 133.
-Package scrbase Info: activating english \figurename on input line 133.
-Package scrbase Info: activating english \tablename on input line 133.
-Package scrbase Info: activating english \contentsname on input line 133.
-Package scrbase Info: activating english \listfigurename on input line 133.
-Package scrbase Info: activating english \listtablename on input line 133.
-Package scrbase Info: activating english \bibname on input line 133.
-Package scrbase Info: activating english \indexname on input line 133.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+Package scrbase Info: activating english \partname on input line 140.
+Package scrbase Info: activating english \chaptername on input line 140.
+Package scrbase Info: activating english \appendixname on input line 140.
+Package scrbase Info: activating english \figurename on input line 140.
+Package scrbase Info: activating english \tablename on input line 140.
+Package scrbase Info: activating english \contentsname on input line 140.
+Package scrbase Info: activating english \listfigurename on input line 140.
+Package scrbase Info: activating english \listtablename on input line 140.
+Package scrbase Info: activating english \bibname on input line 140.
+Package scrbase Info: activating english \indexname on input line 140.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+ (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
-
 (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
 File: ngerman.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
@@ -1096,40 +1335,32 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Masterarbeit.bbl' found.
  (Masterarbeit.bbl)
-Package biblatex Info: Reference section=0 on input line 133.
-Package biblatex Info: Reference segment=0 on input line 133.
+Package biblatex Info: Reference section=0 on input line 140.
+Package biblatex Info: Reference segment=0 on input line 140.
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count461
-\scratchdimen=\dimen267
-\scratchbox=\box72
-\nofMPsegments=\count462
-\nofMParguments=\count463
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count464
-\MPscratchDim=\dimen268
-\MPnumerator=\count465
-\makeMPintoPDFobject=\count466
-\everyMPtoPDFconversion=\toks43
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
+\scratchcounter=\count494
+\scratchdimen=\dimen307
+\scratchbox=\box78
+\nofMPsegments=\count495
+\nofMParguments=\count496
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count497
+\MPscratchDim=\dimen308
+\MPnumerator=\count498
+\makeMPintoPDFobject=\count499
+\everyMPtoPDFconversion=\toks59
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-
-(C:\Program Files\MiKTeX\tex/latex/caption\ltcaption.sty
+ (C:\Program Files\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 133.
+Package hyperref Info: Link coloring ON on input line 140.
  (Masterarbeit.out)
 (Masterarbeit.out)
 \@outlinefile=\write4
@@ -1142,14 +1373,14 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 133.
+(scrbook)           before \begin{document} on input line 140.
  (C:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
 (C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count467
+\BKM@id=\count500
 ))
 (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1172,8 +1403,8 @@ Package scrhack Info: \landscape patched to make \textheight change optional on
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-\c@lstlisting=\count468
-Package scrhack Info: undefining \float@addtolists on input line 133.
+\c@lstlisting=\count501
+Package scrhack Info: undefining \float@addtolists on input line 140.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1209,17 +1440,19 @@ Package scrhack Info: undefining \float@addtolists on input line 133.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 133.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 133
+LaTeX Info: Redefining \celsius on input line 140.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 140
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 133.
-Package gensymb Info: Using \Omega for \ohm on input line 133.
+LaTeX Info: Redefining \ohm on input line 140.
+Package gensymb Info: Using \Omega for \ohm on input line 140.
 
 Package gensymb Warning: Not defining \micro.
 
+Preview: Fontsize 12pt
+Preview: PDFoutput 1
 (otherincludes/Titelseite.tex
 <./images/Logo_IMI.pdf, id=3, 426.79147pt x 113.8112pt>
 File: ./images/Logo_IMI.pdf Graphic file (type pdf)
@@ -1236,15 +1469,29 @@ Package pdftex.def Info: ./images/Slogan_Uni_Luebeck.pdf  used on input line 51
 (C:\Program Files\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) [1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
 
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 
 
 {C:/Users/janme/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/Log
-o_IMI.pdf> <./images/Slogan_Uni_Luebeck.pdf>]) (otherincludes/Erklaerung.tex [2
+o_IMI.pdf> <./images/Slogan_Uni_Luebeck.pdf>]) (otherincludes/Erklaerung.tex
+[2
 
 
-])
-(otherincludes/Kurzfassung.tex [3
+]) (otherincludes/Kurzfassung.tex [3
 
 
 ]) [4
@@ -1473,34 +1720,34 @@ File: ./Images/Segmentation_ACDC_diastolic.png Graphic file (type png)
 Package pdftex.def Info: ./Images/Segmentation_ACDC_diastolic.png  used on inpu
 t line 224.
 (pdftex.def)             Requested size: 198.45662pt x 148.84477pt.
-<./Images/ManuelSubsampling_ACDC_R=4.png, id=891, 167.6664pt x 140.2038pt>
-File: ./Images/ManuelSubsampling_ACDC_R=4.png Graphic file (type png)
-<use ./Images/ManuelSubsampling_ACDC_R=4.png>
-Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=4.png  used on input
- line 235.
-(pdftex.def)             Requested size: 132.30666pt x 110.6421pt.
+<./Images/ManualSubsamplingACDC_Mode1.png, id=891, 385.9218pt x 325.215pt>
+File: ./Images/ManualSubsamplingACDC_Mode1.png Graphic file (type png)
+<use ./Images/ManualSubsamplingACDC_Mode1.png>
+Package pdftex.def Info: ./Images/ManualSubsamplingACDC_Mode1.png  used on inpu
+t line 235.
+(pdftex.def)             Requested size: 132.30666pt x 111.49463pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 236--236
 [][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
  []
 
-<./Images/ManuelSubsampling_ACDC_R=8.png, id=892, 167.6664pt x 140.2038pt>
-File: ./Images/ManuelSubsampling_ACDC_R=8.png Graphic file (type png)
-<use ./Images/ManuelSubsampling_ACDC_R=8.png>
-Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=8.png  used on input
- line 241.
-(pdftex.def)             Requested size: 132.30666pt x 110.6421pt.
+<./Images/ManualSubsamplingACDC_Mode2.png, id=892, 384.4764pt x 323.0469pt>
+File: ./Images/ManualSubsamplingACDC_Mode2.png Graphic file (type png)
+<use ./Images/ManualSubsamplingACDC_Mode2.png>
+Package pdftex.def Info: ./Images/ManualSubsamplingACDC_Mode2.png  used on inpu
+t line 241.
+(pdftex.def)             Requested size: 132.30666pt x 111.16539pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 242--242
 [][]|\OT1/cmr/m/n/10.95 Manuel sub-sam-pling
  []
 
-<./Images/ManuelSubsampling_ACDC_R=10.png, id=893, 167.6664pt x 140.2038pt>
-File: ./Images/ManuelSubsampling_ACDC_R=10.png Graphic file (type png)
-<use ./Images/ManuelSubsampling_ACDC_R=10.png>
-Package pdftex.def Info: ./Images/ManuelSubsampling_ACDC_R=10.png  used on inpu
+<./Images/ManualSubsamplingACDC_Mode3.png, id=893, 384.4764pt x 322.3242pt>
+File: ./Images/ManualSubsamplingACDC_Mode3.png Graphic file (type png)
+<use ./Images/ManualSubsamplingACDC_Mode3.png>
+Package pdftex.def Info: ./Images/ManualSubsamplingACDC_Mode3.png  used on inpu
 t line 247.
-(pdftex.def)             Requested size: 132.30666pt x 110.6421pt.
+(pdftex.def)             Requested size: 132.30666pt x 110.9167pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1542,8 +1789,8 @@ Package pdftex.def Info: images/image_subsampled.png  used on input line 298.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40 <./Images/ManuelSubsampling_ACDC_R=4.png> <./Images/ManuelSubsampling_ACDC_
-R=8.png> <./Images/ManuelSubsampling_ACDC_R=10.png>]
+[40 <./Images/ManualSubsamplingACDC_Mode1.png> <./Images/ManualSubsamplingACDC_
+Mode2.png> <./Images/ManualSubsamplingACDC_Mode3.png>]
 <./Images/LineSwappingOriginal.png, id=933, 216.81pt x 176.3388pt>
 File: ./Images/LineSwappingOriginal.png Graphic file (type png)
 <use ./Images/LineSwappingOriginal.png>
@@ -1738,19 +1985,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [56]
-<images/Boxplot_DiceScores_LV-Cavity.pdf, id=1144, 887.72595pt x 438.17244pt>
+<images/Boxplot_DiceScores_LV-Cavity.pdf, id=1145, 887.72595pt x 438.17244pt>
 File: images/Boxplot_DiceScores_LV-Cavity.pdf Graphic file (type pdf)
 <use images/Boxplot_DiceScores_LV-Cavity.pdf>
 Package pdftex.def Info: images/Boxplot_DiceScores_LV-Cavity.pdf  used on input
  line 374.
 (pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
-<images/Boxplot_DiceScores_Myocardium.pdf, id=1145, 887.72595pt x 438.17244pt>
+<images/Boxplot_DiceScores_Myocardium.pdf, id=1146, 887.72595pt x 438.17244pt>
 File: images/Boxplot_DiceScores_Myocardium.pdf Graphic file (type pdf)
 <use images/Boxplot_DiceScores_Myocardium.pdf>
 Package pdftex.def Info: images/Boxplot_DiceScores_Myocardium.pdf  used on inpu
 t line 380.
 (pdftex.def)             Requested size: 374.86775pt x 185.02737pt.
-<images/Boxplot_DiceScores_RV-Cavity.pdf, id=1146, 887.72595pt x 438.17244pt>
+<images/Boxplot_DiceScores_RV-Cavity.pdf, id=1147, 887.72595pt x 438.17244pt>
 File: images/Boxplot_DiceScores_RV-Cavity.pdf Graphic file (type pdf)
 <use images/Boxplot_DiceScores_RV-Cavity.pdf>
 Package pdftex.def Info: images/Boxplot_DiceScores_RV-Cavity.pdf  used on input
@@ -1770,25 +2017,25 @@ pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_Myocardium.pdf): PDF
 pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_RV-Cavity.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
-<images/TestExamples_Mode0.pdf, id=1171, 1957.54959pt x 734.08109pt>
+<images/TestExamples_Mode0.pdf, id=1172, 1957.54959pt x 734.08109pt>
 File: images/TestExamples_Mode0.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode0.pdf>
 Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 406.
 
 (pdftex.def)             Requested size: 441.01773pt x 165.37393pt.
-<images/TestExamples_Mode1.pdf, id=1172, 1957.54959pt x 705.62834pt>
+<images/TestExamples_Mode1.pdf, id=1173, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode1.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode1.pdf>
 Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 407.
 
 (pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
-<images/TestExamples_Mode2.pdf, id=1173, 1957.54959pt x 705.62834pt>
+<images/TestExamples_Mode2.pdf, id=1174, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode2.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode2.pdf>
 Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 408.
 
 (pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
-<images/TestExamples_Mode3.pdf, id=1174, 1957.54959pt x 705.62834pt>
+<images/TestExamples_Mode3.pdf, id=1175, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode3.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode3.pdf>
 Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 409.
@@ -1877,21 +2124,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
  []
 
 [64]
-<./Images/ResultsReconstruction_mode1.pdf, id=1222, 9070.73877pt x 3084.27869pt
+<./Images/ResultsReconstruction_mode1.pdf, id=1226, 9070.73877pt x 3084.27869pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
 t line 542.
 (pdftex.def)             Requested size: 441.01773pt x 149.9403pt.
-<./Images/ResultsReconstruction_mode2.pdf, id=1223, 9070.73877pt x 2936.32433pt
+<./Images/ResultsReconstruction_mode2.pdf, id=1227, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
 t line 543.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
-<./Images/ResultsReconstruction_mode3.pdf, id=1224, 9070.73877pt x 2936.32433pt
+<./Images/ResultsReconstruction_mode3.pdf, id=1228, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
@@ -1925,7 +2172,7 @@ chapter 6.
 
 
 ]
-Overfull \hbox (20.21523pt too wide) in paragraph at lines 188--188
+Overfull \hbox (20.21523pt too wide) in paragraph at lines 195--195
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
@@ -1935,13 +2182,13 @@ onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 
 
 ] [77]
-Overfull \hbox (3.86661pt too wide) in paragraph at lines 188--188
+Overfull \hbox (3.86661pt too wide) in paragraph at lines 195--195
 []\OT1/cmr/m/n/10 Mark A. Gris-wold et al. \  Gen-er-al-ized au-to-cal-i-brat-i
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
 [78]
-Overfull \hbox (3.00894pt too wide) in paragraph at lines 188--188
+Overfull \hbox (3.00894pt too wide) in paragraph at lines 195--195
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
@@ -1951,6 +2198,10 @@ Overfull \hbox (3.00894pt too wide) in paragraph at lines 188--188
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1958,33 +2209,81 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29767 strings out of 475248
- 549051 string characters out of 5767627
- 1970785 words of memory out of 5000000
- 50509 multiletter control sequences out of 15000+600000
+ 37293 strings out of 475248
+ 695247 string characters out of 5767627
+ 1971785 words of memory out of 5000000
+ 57867 multiletter control sequences out of 15000+600000
  570910 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,20n,107p,10929b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program File
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
-Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (87 pages, 24035740 bytes).
+ 108i,20n,107p,10929b,2463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{figure.caption.158} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.156} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.151} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{pspicture.149} has been referenced but does not exi
+st, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter.177} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.174} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.173} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.169} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.166} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.160} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter.159} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.152} has been referenced but does not exist
+, replaced by a fixed one
+
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
+C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Masterarbeit.pdf (87 pages, 24401874 bytes).
 PDF statistics:
- 1778 PDF objects out of 2073 (max. 8388607)
- 354 named destinations out of 1000 (max. 500000)
+ 1793 PDF objects out of 2073 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
