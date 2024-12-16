@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 15:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -96,9 +96,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \evensidemargin = 2.4185pt
 (typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 621.0pt
-(typearea)              \topmargin      = -1.84941pt
-(typearea)              \headheight     = 0.0pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
 (typearea)              \headsep        = 21.75pt
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
@@ -659,7 +659,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count411
 \LT@p@ftn=\toks28
 )
-Class scrbook Info: longtable captions redefined on input line 31.
+Class scrbook Info: longtable captions redefined on input line 29.
 
 (C:\Program Files\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box61
@@ -675,7 +675,7 @@ Package: ulem 2019/11/18
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 46.
+(scrhack)             need that hack, on input line 44.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
@@ -1000,34 +1000,34 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (Masterarbeit.aux)
 \openout1 = `Masterarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-Package scrbase Info: activating english \partname on input line 106.
-Package scrbase Info: activating english \chaptername on input line 106.
-Package scrbase Info: activating english \appendixname on input line 106.
-Package scrbase Info: activating english \figurename on input line 106.
-Package scrbase Info: activating english \tablename on input line 106.
-Package scrbase Info: activating english \contentsname on input line 106.
-Package scrbase Info: activating english \listfigurename on input line 106.
-Package scrbase Info: activating english \listtablename on input line 106.
-Package scrbase Info: activating english \bibname on input line 106.
-Package scrbase Info: activating english \indexname on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+Package scrbase Info: activating english \partname on input line 104.
+Package scrbase Info: activating english \chaptername on input line 104.
+Package scrbase Info: activating english \appendixname on input line 104.
+Package scrbase Info: activating english \figurename on input line 104.
+Package scrbase Info: activating english \tablename on input line 104.
+Package scrbase Info: activating english \contentsname on input line 104.
+Package scrbase Info: activating english \listfigurename on input line 104.
+Package scrbase Info: activating english \listtablename on input line 104.
+Package scrbase Info: activating english \bibname on input line 104.
+Package scrbase Info: activating english \indexname on input line 104.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1059,8 +1059,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Masterarbeit.bbl' found.
  (Masterarbeit.bbl)
-Package biblatex Info: Reference section=0 on input line 106.
-Package biblatex Info: Reference segment=0 on input line 106.
+Package biblatex Info: Reference section=0 on input line 104.
+Package biblatex Info: Reference segment=0 on input line 104.
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count453
@@ -1091,7 +1091,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 106.
+Package hyperref Info: Link coloring ON on input line 104.
  (Masterarbeit.out)
 (Masterarbeit.out)
 \@outlinefile=\write4
@@ -1104,7 +1104,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 106.
+(scrbook)           before \begin{document} on input line 104.
  (C:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
@@ -1150,8 +1150,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \textheight=644.05556pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=7.38666pt
-* \headheight=0.0pt
+* \topmargin=-10.73834pt
+* \headheight=18.125pt
 * \headsep=21.75pt
 * \topskip=12.0pt
 * \footskip=50.75pt
@@ -1168,14 +1168,14 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 106.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 106
+LaTeX Info: Redefining \celsius on input line 104.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 104
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 106.
-Package gensymb Info: Using \Omega for \ohm on input line 106.
+LaTeX Info: Redefining \ohm on input line 104.
+Package gensymb Info: Using \Omega for \ohm on input line 104.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1223,11 +1223,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `Masterarbeit.toc'.
 
-
-Overfull \vbox (16.39998pt too high) has occurred while \output is active []
-
-
-[6] (chapters/Introduction.tex
+ [6]
+(chapters/Introduction.tex
 chapter 1.
 [1
 
@@ -1725,32 +1722,32 @@ pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_Myocardium.pdf): PDF
 pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_RV-Cavity.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
-<images/TestExamples_Mode0.pdf, id=1171, 1957.54959pt x 734.08109pt>
+<images/TestExamples_Mode0.pdf, id=1171, 1957.54959pt x 768.22438pt>
 File: images/TestExamples_Mode0.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode0.pdf>
-Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 406.
+Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 407.
 
-(pdftex.def)             Requested size: 441.01773pt x 165.37393pt.
+(pdftex.def)             Requested size: 418.96548pt x 164.41481pt.
 <images/TestExamples_Mode1.pdf, id=1172, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode1.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode1.pdf>
-Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 407.
+Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 408.
 
-(pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
+(pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
 <images/TestExamples_Mode2.pdf, id=1173, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode2.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode2.pdf>
-Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 408.
+Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 409.
 
-(pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
+(pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
 <images/TestExamples_Mode3.pdf, id=1174, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode3.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode3.pdf>
-Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 409.
+Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 410.
 
-(pdftex.def)             Requested size: 441.01773pt x 158.9641pt.
+(pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
  [60]
-Overfull \vbox (69.21065pt too high) has occurred while \output is active []
+Overfull \vbox (12.99062pt too high) has occurred while \output is active []
 
 
 [61 <./images/TestExamples_Mode0.pdf> <./images/TestExamples_Mode1.pdf
@@ -1766,92 +1763,92 @@ pdfTeX warning: pdflatex (file ./images/TestExamples_Mode2.pdf): PDF inclusion:
 pdfTeX warning: pdflatex (file ./images/TestExamples_Mode3.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (8.29655pt too wide) in paragraph at lines 416--417
+Overfull \hbox (8.29655pt too wide) in paragraph at lines 417--418
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
 /m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/
 n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 429--429
+Underfull \hbox (badness 2653) in paragraph at lines 430--430
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 487--487
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
  []|[]| 
  []
 
 [62] [63]
-Underfull \hbox (badness 1308) in paragraph at lines 498--498
+Underfull \hbox (badness 1308) in paragraph at lines 499--499
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 530--530
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
  []|[]| 
  []
 
 [64]
-<./Images/ResultsReconstruction_mode1.pdf, id=1222, 9070.73877pt x 3084.27869pt
+<./Images/ResultsReconstruction_mode1.pdf, id=1247, 9070.73877pt x 3084.27869pt
 >
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
-t line 542.
+t line 543.
 (pdftex.def)             Requested size: 441.01773pt x 149.9403pt.
-<./Images/ResultsReconstruction_mode2.pdf, id=1223, 9070.73877pt x 2936.32433pt
+<./Images/ResultsReconstruction_mode2.pdf, id=1248, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
-t line 543.
+t line 544.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
-<./Images/ResultsReconstruction_mode3.pdf, id=1224, 9070.73877pt x 2936.32433pt
+<./Images/ResultsReconstruction_mode3.pdf, id=1249, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.pdf  used on inpu
-t line 544.
+t line 545.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
 ) (chapters/Discussion.tex [65] [66 <./Images/ResultsReconstruction_mode1.pdf> 
 <./Images/ResultsReconstruction_mode2.pdf
@@ -1878,7 +1875,7 @@ chapter 6.
 ) [75
 
 ]
-Overfull \hbox (20.21523pt too wide) in paragraph at lines 162--162
+Overfull \hbox (20.21523pt too wide) in paragraph at lines 160--160
 \OT1/cmr/m/it/10 ven-tion { MIC-CAI 2015\OT1/cmr/m/n/10 . Springer In-ter-na-ti
 onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 83319245744.
@@ -1887,13 +1884,13 @@ onal Pub-lish-ing, 2015, pp. 234{241. \OT1/cmr/m/sc/10 isbn\OT1/cmr/m/n/10 : 97
 [76
 
 ] [77]
-Overfull \hbox (3.86661pt too wide) in paragraph at lines 162--162
+Overfull \hbox (3.86661pt too wide) in paragraph at lines 160--160
 []\OT1/cmr/m/n/10 Mark A. Gris-wold et al. \  Gen-er-al-ized au-to-cal-i-brat-i
 ng par-tially par-al-lel ac-qui-si-tions (GRAPPA)".
  []
 
 [78]
-Overfull \hbox (3.00894pt too wide) in paragraph at lines 162--162
+Overfull \hbox (3.00894pt too wide) in paragraph at lines 160--160
 \OT1/cmr/m/n/10 Where SENSE meets GRAPPA". In: \OT1/cmr/m/it/10 Mag-netic Res-o
 -nance in Medicine \OT1/cmr/m/n/10 71.3 (May 2013), pp. 990{
  []
@@ -1910,11 +1907,11 @@ Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28398 strings out of 475248
- 529088 string characters out of 5767627
+ 28393 strings out of 475248
+ 528994 string characters out of 5767627
  1970785 words of memory out of 5000000
- 49154 multiletter control sequences out of 15000+600000
- 570910 words of font info for 85 fonts, out of 8000000 for 9000
+ 49149 multiletter control sequences out of 15000+600000
+ 571256 words of font info for 86 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,10929b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
@@ -1934,9 +1931,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (87 pages, 24397625 bytes).
+Output written on Masterarbeit.pdf (87 pages, 24464982 bytes).
 PDF statistics:
- 1778 PDF objects out of 2073 (max. 8388607)
+ 1802 PDF objects out of 2073 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 

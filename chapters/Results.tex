@@ -401,13 +401,14 @@ For $R=4$, the image artifacts due to the subsampling are very apparent. The seg
 For $R=8$, the displacements for all methods become more global due to the strong presence of image artifacts, however the Dice scores are higher than before for all methods. \emph{NiftyReg} even outperforms \emph{VoxelMorph} for the first time. This trend does not continue for $R=10$ however, were \emph{NiftyReg} is again far behind all other methods in terms of Dice with a very much more global displacement. \emph{VoxelMorph} seems to compensate more for the rippling artifacts present in the fixed image than for the change in the cardiac region as seen in the displacement. \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} do not share this behavior although their displacements also become more global and less focused on the cardiac region. The latter network has the highest Dice score for the first time managing an increase in Dice of about $16\%$ compared to the baseline for this specific case despite the heavy subsampling showing the robustness of the network.
 
 \begin{figure}[H]
+	\vspace{-1cm}
 	\centering
 	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\textwidth]{TestExamples_Mode0.pdf}
-    	\includegraphics[width=\textwidth]{TestExamples_Mode1.pdf}
-    	\includegraphics[width=\textwidth]{TestExamples_Mode2.pdf}
-    	\includegraphics[width=\textwidth]{TestExamples_Mode3.pdf}	
-	\caption{Examples of warped images, segmentations and flow fields for \emph{NiftiReg}, \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} together with the original image pair from the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph{ACDC} test data.}
+	\includegraphics[width=.95\textwidth]{TestExamples_Mode0.pdf}
+    	\includegraphics[width=.95\textwidth]{TestExamples_Mode1.pdf}
+    	\includegraphics[width=.95\textwidth]{TestExamples_Mode2.pdf}
+    	\includegraphics[width=.95\textwidth]{TestExamples_Mode3.pdf}	
+	\caption{\small Examples of warped images, segmentations and flow fields for \emph{NiftiReg}, \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} together with the original image pair from the fully sampled ($R=0$) and subsampled ($R=4$, $R=8$, $R=10$) \emph{ACDC} test data.}
 	\label{fig:TestExamples}
 \end{figure}
 
