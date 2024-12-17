@@ -252,27 +252,13 @@ As the dataset only contained images reconstructed from fully sampled data, the 
 
 
 \subsection{CMRxRecon Dataset} \label{SubSec:CMRxRecon}
-The \emph{CMRxRecon} dataset includes 
-%multi-contrast k-space data, consisting of cardiac cine, $\text{T}_1$/$\text{T}_2$-mapping, tagging, phase-contrast (i.e., flow2d), and dark-blood imaging
-fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines from the center region. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. In contrast to the \emph{ACDC} dataset, \emph{CMRxRecon} contains only the raw k-space data. One of the goals of the challenge is the reconstruction from subsampled k-space data, e.g. accelerated MRI scans.\\
+The \emph{CMRxRecon} dataset includes fully sampled and subsampled multi-coil k-space data, as well as auto-calibration lines from the center region. This includes imaging of different anatomical views like long-axis (2-chamber, 3-chamber, and 4-chamber) and short-axis (SAX). There is a total of 120 training data, 60 validation data, and 120 test data from healthy volunteers. In contrast to the \emph{ACDC} dataset, \emph{CMRxRecon} contains only the raw k-space data. One of the goals of the challenge is the reconstruction from subsampled k-space data, e.g. accelerated MRI scans.\\
 As the data was recorded in the k-space (see Figure~\ref{fig:k-space}) and stored as \emph{.mat} files it first needs to reconstructed to images in order to use them for training and testing of neural networks. First, an iFFT needs to be performed to get from k-space to image space, however the multi-coil data needs further processing. The effect of different coil sensitivities in their respective images can be seen in Figure~\ref{fig:Coils}, where each coil focuses on a specific area of the image. These images are then stitched together during reconstruction to produce a coil-combined image with great overall contrast. Often the simple RSS method is used where the resulting image is simply the root of the sum of the squared coil images~\cite{Roemer1990}. \\
-%, while Figure~\ref{fig:ImageSlice} contains the complete reconstructed image. 
-The dataset, as mentioned before, contains fully sampled as well as subsampled k-space data (see Figure~\ref{fig:fullySampled} and Figure~\ref{fig:subSampled}), with the latter being typically used to accelerate the MRI acquisition process. This is done by not using all of the available k-space data, but rather masking the signal to achieve the subsampling. The center region of the k-space is usually fully sampled, but the outer regions are subsampled depending on the sampling strategy~\cite{SamplingStrategies}. The dataset contains subsampled k-space data for 4x, 8x and 10x acceleration with the latter of course leading to more distortions in the reconstructed image as the subsampling can induce image reconstruction artifacts. This can be seen in Figure~\ref{fig:subSampledImage}, where the image reconstructed from 4x accelerated ($R=4$) k-space data seems blurred when compared to the fully sampled ($R=0$) one in Figure~\ref{fig:fullySampledImage}. \\
-%An example image can be seen in Figure~\ref{fig:Subsampling} where the k-space of the original image is subsampled with a random mask leading to heavy blurring artifacts after the reconstruction.
-For all experiments, the SAX view data was used. As image sizes between patients can vary slightly, interpolation was used to standardize the images to a size of $246 \times 512$ to avoid further problems with e.g. 
-%ensure coherent sizes between images to avoid problems with the network and 
-loss calculation. Additionally, min-max-normalization is used to standardize the data range for all images to $[0,1]$. The reconstructed images were stored for every image slice for every patient. Thus, all frames for a specific image slice were in a single folder to enable easy access for later data load-in for frame-to-frame registration.
-
-\begin{figure}[h]%tpb
-	\centering
-	\graphicspath{{images/}{\main/images/}}
-	\includegraphics[width=\textwidth]{Coils.png} 
-	\caption{MRI images for three different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there. Note that the sensitivities are slightly corrupted as the coils were compressed to 10 coils for all the scans.}
-	\label{fig:Coils}
-\end{figure}
+The dataset, as mentioned before, contains fully sampled as well as subsampled k-space data (see Figure~\ref{fig:fullySampled} and Figure~\ref{fig:subSampled}), with the latter being used to accelerate the MRI acquisition process. This is done by subsampling the k-space data with mask. The center region of the k-space is usually fully sampled, but the outer regions are subsampled~\cite{SamplingStrategies}. The dataset contains subsampled k-space data for 4x, 8x and 10x acceleration with the latter of course leading to more artifact in the reconstructed image due to the subsampling. This can be seen in Figure~\ref{fig:subSampledImage}, where the image reconstructed from 4x accelerated ($R=4$) k-space data seems blurred when compared to the fully sampled ($R=0$) one in Figure~\ref{fig:fullySampledImage}. \\
+For all experiments, the SAX view data was used. As image sizes between patients can vary slightly, interpolation was used to standardize the images to a size of $246 \times 512$ to avoid further problems with e.g. loss calculation. Additionally, min-max-normalization is used to standardize the data range for all images to $[0,1]$. The reconstructed images were stored for every image slice for every patient. Thus, all frames for an image slice were in a single folder to enable easy access for later data load-in.
 
 
-\begin{figure}[h]%tpb
+\begin{figure}[H]%tpb
 	\centering
 	\graphicspath{{images/}{\main/images/}}
 	\begin{subfigure}{0.45\textwidth}
@@ -299,6 +285,14 @@ loss calculation. Additionally, min-max-normalization is used to standardize the
 	\end{subfigure}
 	\caption{Fully sampled and subsampled k-space data from the from the \emph{CMRxRecon} dataset~\cite{CMRxRecon} with corresponding images (empty background was cropped out).}
 	\label{fig:k-space}
+\end{figure}
+
+\begin{figure}[H]%tpb
+	\centering
+	\graphicspath{{images/}{\main/images/}}
+	\includegraphics[width=\textwidth]{Coils.png} 
+	\caption{MRI images for three different coils from the \emph{CMRxRecon} dataset~\cite{CMRxRecon}. The different sensitive areas can clearly be seen as they have significantly higher pixel values compared to the rest of the image. The background was cropped out from the images as the effect is not visible there. Note that the sensitivities are slightly corrupted as the coils were compressed to 10 coils for all the scans.}
+	\label{fig:Coils}
 \end{figure}
 
 \subsection{Simulated Motion} \label{SubSec:SimulatedMotion}

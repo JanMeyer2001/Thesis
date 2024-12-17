@@ -56,11 +56,11 @@
 \contentsline {section}{\numberline {3.2}Datasets}{38}{section.107}%
 \contentsline {subsection}{\numberline {3.2.1}ACDC Dataset}{38}{subsection.108}%
 \contentsline {subsection}{\numberline {3.2.2}CMRxRecon Dataset}{40}{subsection.111}%
-\contentsline {subsection}{\numberline {3.2.3}Simulated Motion}{41}{subsection.114}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}K-space Line Swapping}{41}{subsubsection.115}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Non-Linear Lung Transformations}{41}{subsubsection.117}%
-\contentsline {section}{\numberline {3.3}Experiments}{42}{section.119}%
-\contentsline {subsection}{\numberline {3.3.1}Ablation Studies and Parameter Tests}{42}{subsection.120}%
+\contentsline {subsection}{\numberline {3.2.3}Simulated Motion}{42}{subsection.114}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}K-space Line Swapping}{42}{subsubsection.115}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Non-Linear Lung Transformations}{42}{subsubsection.117}%
+\contentsline {section}{\numberline {3.3}Experiments}{43}{section.119}%
+\contentsline {subsection}{\numberline {3.3.1}Ablation Studies and Parameter Tests}{43}{subsection.120}%
 \contentsline {subsubsection}{\numberline {3.3.1.1}Fourier-Net versus Fourier-Net+}{43}{subsubsection.121}%
 \contentsline {subsubsection}{\numberline {3.3.1.2}Starting Channel Size}{44}{subsubsection.122}%
 \contentsline {subsubsection}{\numberline {3.3.1.3}Fourier-Transform Crop Size}{44}{subsubsection.123}%
