@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  17 DEC 2024 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  17 DEC 2024 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1521,13 +1521,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [41 <./Images/LineSwappingOriginal.png> <./Images/LineSwapping16.png> <./Images
 /LineSwapping32.png>] [42 <./Images/LungMotion1.png> <./Images/LungMotion2.png>
  <./Images/LungMotion3.png> <./Images/LungMotion4.png>] [43] [44]
-<./Images/GeneralReconstructionPipeline.pdf, id=1011, 688.55669pt x 438.17244pt
+<./Images/GeneralReconstructionPipeline.pdf, id=1011, 497.92322pt x 671.48505pt
 >
 File: ./Images/GeneralReconstructionPipeline.pdf Graphic file (type pdf)
 <use ./Images/GeneralReconstructionPipeline.pdf>
 Package pdftex.def Info: ./Images/GeneralReconstructionPipeline.pdf  used on in
 put line 429.
-(pdftex.def)             Requested size: 441.01773pt x 280.65672pt.
+(pdftex.def)             Requested size: 396.91325pt x 535.27277pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1881,9 +1881,6 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1916,7 +1913,7 @@ c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (86 pages, 24519878 bytes).
+Output written on Masterarbeit.pdf (86 pages, 24519784 bytes).
 PDF statistics:
  1835 PDF objects out of 2073 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
