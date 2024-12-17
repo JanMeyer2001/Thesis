@@ -2804,8 +2804,8 @@
       \strng{authornamehash}{050d54c78be225fd7bbd2ec9534be1e7}
       \strng{authorfullhash}{a00b2de2a2aaab1ff21a940a5ef1ceaa}
       \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1471-2261}
@@ -2890,8 +2890,8 @@
       \strng{authorbibnamehash}{ad85321a9ee5596fdb4610e3599a9d49}
       \strng{authornamehash}{ad85321a9ee5596fdb4610e3599a9d49}
       \strng{authorfullhash}{ad85321a9ee5596fdb4610e3599a9d49}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -2929,8 +2929,8 @@
       \strng{authorbibnamehash}{162f18b3de739dfc5ae12afe69966428}
       \strng{authornamehash}{162f18b3de739dfc5ae12afe69966428}
       \strng{authorfullhash}{162f18b3de739dfc5ae12afe69966428}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -3096,8 +3096,8 @@
       \strng{authorbibnamehash}{0b9e337e833ed26d8763129ee3afc54f}
       \strng{authornamehash}{0b9e337e833ed26d8763129ee3afc54f}
       \strng{authorfullhash}{53349ed448ef612ed009e74ab2fc62d0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2594}
@@ -3147,8 +3147,8 @@
       \strng{authorbibnamehash}{b0cc5cb15079b6e08bc2e88c55e8a0f7}
       \strng{authornamehash}{b0cc5cb15079b6e08bc2e88c55e8a0f7}
       \strng{authorfullhash}{eeeb1c44a70e174ae7277ba42001daae}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2586}
