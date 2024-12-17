@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  17 DEC 2024 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  17 DEC 2024 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1704,12 +1704,12 @@ pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_Myocardium.pdf): PDF
 pdfTeX warning: pdflatex (file ./images/Boxplot_DiceScores_RV-Cavity.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
-<images/TestExamples_Mode0.pdf, id=1173, 1957.54959pt x 768.22438pt>
+<images/TestExamples_Mode0.pdf, id=1173, 1957.54959pt x 802.36769pt>
 File: images/TestExamples_Mode0.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode0.pdf>
 Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 414.
 
-(pdftex.def)             Requested size: 418.96548pt x 164.41481pt.
+(pdftex.def)             Requested size: 418.96548pt x 171.72212pt.
 <images/TestExamples_Mode1.pdf, id=1174, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode1.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode1.pdf>
@@ -1729,7 +1729,7 @@ Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 417.
 
 (pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
  [59]
-Overfull \vbox (12.99062pt too high) has occurred while \output is active []
+Overfull \vbox (20.29793pt too high) has occurred while \output is active []
 
 
 [60 <./images/TestExamples_Mode0.pdf> <./images/TestExamples_Mode1.pdf
@@ -1913,7 +1913,7 @@ c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (86 pages, 24519784 bytes).
+Output written on Masterarbeit.pdf (86 pages, 24516477 bytes).
 PDF statistics:
  1835 PDF objects out of 2073 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
