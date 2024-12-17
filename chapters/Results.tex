@@ -9,15 +9,14 @@ In this chapter, the results for the experiment described in section~\ref{Sec:Ex
 In this section, the results for the ablation studies and parameter tests are described in section~\ref{SubSec:ParameterTestsACDC} are presented.
 
 \subsection{Fourier-Net versus Fourier-Net+} \label{SubSec:ResultsFourier-NetvsFourier-Net+ACDC}
-First, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} were compared as described in section~\ref{SubSubSec:Fourier-NetvsFourier-Net+}. The results can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDC}. For the dense displacement variants, the diffeomorphic transform increases the Dice score (with and without the background label) slightly for \emph{Fourier-Net} and \emph{4xFourier-Net}, but decreases for \emph{Fourier-Net+}. The SSIM decreases for all models slightly, while the MSE remains unaffected. The percentage of non-positive Jacobian determinants is lower for the diffeomorphic variants. Times for the baseline and diffeomorphic versions are similar with the \emph{Fourier-Net} being faster without the diffeomorphism by 1.13~ms, while \emph{Fourier-Net+} and \emph{4xFourier-Net} are faster with the diffeomorphism by 3.28~ms and 1.56~ms respectively. \\
-The results for the band-limited versions are very similar with \emph{Fourier-Net} and \emph{Fourier-Net+} having a lower Dice (with background) with the diffeomorphism, while \emph{4xFourier-Net} increases by almost 2$\%$. When excluding the background label \emph{Fourier-Net} is again slightly worse, but \emph{Fourier-Net+} and \emph{4xFourier-Net} both improve, the latter with almost 3$\%$ Dice more than the baseline version. The SSIM values are slightly lower for \emph{Fourier-Net} and \emph{Fourier-Net+} with the diffeomorphism, but again higher for \emph{4xFourier-Net}. The MSE is slightly lower for \emph{Fourier-Net} and \emph{4xFourier-Net}, but slightly higher for \emph{Fourier-Net+}. The percentage of non-positive Jabobian determinants again decreases for the diffeomorphic variants. The times again vary slightly with \emph{Fourier-Net} and \emph{Fourier-Net+} being slower by 0.5~ms and 6.26~ms, while \emph{4xFourier-Net} is a lot faster with 14.68~ms difference.\\
-Now to the difference between the dense and band-limited displacements. Overall, the dense displacement versions have a higher Dice score for all models both with and without the background label.  The dense displacements also have better SSIM and MSE metrics, however the difference is not quite as large as with the Dice scores.  Only the percentage of non-positive Jacobian determinants is notably lower for the band-limited displacement. In terms of inference time, the dense displacement variants are slightly faster despite having a larger encoder, however all of the models are in the milliseconds (7~ms up to 33.5~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder, as discussed before, and thus have far more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
+First, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net} were compared as described in section~\ref{SubSubSec:Fourier-NetvsFourier-Net+}. The results for the dense displacements can be seen in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDCDense} and for the band-limited displacements in Table~\ref{tab:Fourier-NetvsFourier-Net+ACDCBand-Limited}. For the dense displacement variants, the diffeomorphic transform increases the Dice score (with and without the background label) slightly for \emph{Fourier-Net} and \emph{4xFourier-Net}, but decreases for \emph{Fourier-Net+}. The SSIM decreases for all models slightly, while the MSE remains unaffected. The percentage of non-positive Jacobian determinants is lower for the diffeomorphic variants. Times for the baseline and diffeomorphic versions are similar with the \emph{Fourier-Net} being faster without the diffeomorphism by 1.13~ms, while \emph{Fourier-Net+} and \emph{4xFourier-Net} are faster with the diffeomorphism by 3.28~ms and 1.56~ms respectively. \\
+The results for the band-limited versions are very similar with \emph{Fourier-Net} and \emph{Fourier-Net+} having a lower Dice (with background) with the diffeomorphism, while \emph{4xFourier-Net} increases by almost 2$\%$. When excluding the background label \emph{Fourier-Net} is again slightly worse, but \emph{Fourier-Net+} and \emph{4xFourier-Net} both improve, the latter with almost 3$\%$ Dice more than the baseline version. The SSIM values are slightly lower for \emph{Fourier-Net} and \emph{Fourier-Net+} with the diffeomorphism, but again higher for \emph{4xFourier-Net}. The MSE is slightly lower for \emph{Fourier-Net} and \emph{4xFourier-Net}, but slightly higher for \emph{Fourier-Net+}. The percentage of non-positive Jabobian determinants again decreases for the diffeomorphic variants. The times again vary slightly with \emph{Fourier-Net} and \emph{Fourier-Net+} being slower by 0.5~ms and 6.26~ms, while \emph{4xFourier-Net} is a lot faster with 14.68~ms difference.
 
 \begin{table}[h] %htpb
 	%\scriptsize
 	\centering
-	\caption{Results for the \emph{Fourier-Net versus Fourier-Net+} experiment. The networks are compared using both dense and band-limited displacement fields as well as diffeomorphic transforms on the fully sampled \emph{ACDC} test data.}
-	\label{tab:Fourier-NetvsFourier-Net+ACDC}
+	\caption{Results for the \emph{Fourier-Net versus Fourier-Net+} experiment using both dense displacements as well as diffeomorphic transforms on the fully sampled \emph{ACDC} test data.}
+	\label{tab:Fourier-NetvsFourier-Net+ACDCDense}
 	\begin{tabularx}{\textwidth}{Y Y Y Y Y} 
 		\toprule
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Dense Displacement} \\
@@ -46,9 +45,13 @@ Now to the difference between the dense and band-limited displacements. Overall,
 		\bottomrule
 	\end{tabularx}
 \end{table}
-% split table to fit better onto the pages
-\begin{table}[H]		
+
+\noindent Now to the difference between the dense and band-limited displacements. Overall, the dense displacement versions have a higher Dice score for all models both with and without the background label.  The dense displacements also have better SSIM and MSE metrics, however the difference is not quite as large as with the Dice scores.  Only the percentage of non-positive Jacobian determinants is notably lower for the band-limited displacement. In terms of inference time, the dense displacement variants are slightly faster despite having a larger encoder, however all of the models are in the milliseconds (7~ms up to 33.5~ms). Last but not least, the memory consumption needs to be addressed. The dense displacment variants have a larger encoder, as discussed before, and thus have far more parameters, especially for the more optimized \emph{Fourier-Net+} and \emph{4xFourier-Net} (about 5 times more). The number of Mult-Adds and the amount of total memory are more than doubled (almost tripled for \emph{4xFourier-Net}) for the dense displacement versions compared to those with a band-limited displacement across all models.
+
+\begin{table}[h]		
 	\centering
+	\caption{Results for the \emph{Fourier-Net versus Fourier-Net+} experiment using band-limited displacements as well as diffeomorphic transforms on the fully sampled \emph{ACDC} test data.}
+	\label{tab:Fourier-NetvsFourier-Net+ACDCBand-Limited}
 	\begin{tabularx}{\textwidth}{Y Y Y Y Y}
 		\toprule	
 		\multirow{2}{*}{Metrics} & \multicolumn{3}{c}{Band-limited Displacement} \\
@@ -418,7 +421,7 @@ For $R=8$, the displacements for all methods become more global due to the stron
 
 
 \section{Integration into a Motion-Compensated Reconstruction Pipeline} \label{Sec:ResultsIntegrationMotion-CompensatedReconstructionPipeline}
-After assessing the registration performance of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}, a final down-stream task to gauge the applicability of these networks was conducted in the form of an motion-compensated reconstruction pipeline where the networks are used to correct the moment between frames.
+After assessing the registration performance of \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+}, a final downstream task to gauge the applicability of these networks was conducted in the form of an motion-compensated reconstruction pipeline where the networks are used to correct the moment between frames.
 
 \subsection{K-Space Line Swapping} \label{SubSubSec:ResultsK-SpaceLineSwapping}
 As discussed in section~\ref{SubSec:IntegrationMotion-CompensatedReconstructionPipeline}, the reconstruction pipeline was first tested with motion-corrupted data using k-space line swapping described in section~\ref{SubSec:SimulatedMotion}. The results are shown in Table~\ref{tab:ComparisonReconstructionCMRxReconLineSwapping} with blue marking the best results per metric (not present if all methods have the same performance) and red marking worse results than the baseline. \\
@@ -545,6 +548,6 @@ For $R=10$, \emph{Fourier-Net+} has the highest SSIM, although the value is lowe
 	\includegraphics[width=\textwidth]{./Images/ResultsReconstruction_mode1.pdf} 
 	\includegraphics[width=\textwidth]{./Images/ResultsReconstruction_mode2.pdf}
 	\includegraphics[width=\textwidth]{./Images/ResultsReconstruction_mode3.pdf}
-	\caption{Visual results of the reconstruction pipeline for \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} as well as the ground truth image and the motion-corrupted baseline on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$.}
+	\caption{Visual results of the reconstruction pipeline for \emph{VoxelMorph}, \emph{Fourier-Net}, \emph{Fourier-Net+} and \emph{4xFourier-Net+} as well as the ground truth image and the motion-corrupted baseline on the \emph{CMRxRecon} test data for $R=4$, $R=8$ and $R=10$. Images are cropped around the cardiac region for better visibility of image details.}
 	\label{fig:ResultsReconstruction}
 \end{figure}

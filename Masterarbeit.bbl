@@ -5271,6 +5271,74 @@
       \endverb
       \keyw{Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
+    \entry{DataLungMotoin}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=dc488081d81f6b52a639859690f0df02}{%
+           family={Boye},
+           familyi={B\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4b2e669fb350ae746146501b563e4187}{%
+           family={Samei},
+           familyi={S\bibinitperiod},
+           given={Golnoosh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bfaacce1e9703804cf226a919b60443f}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ed84f8dcefc553e09b7a40477fb3b3c7}{%
+           family={Székely},
+           familyi={S\bibinitperiod},
+           given={Gabor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0c5eba8f8bcc92e115dd2c56dc9c8429}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=32246aa24a3f02a73916f12a384e1707}{%
+           family={Ourselin},
+           familyi={O\bibinitperiod},
+           given={Sebastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6c4b4302186936b4c91f342be5a9e633}{%
+           family={Haynor},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SPIE}%
+      }
+      \strng{namehash}{9324f8c6fd3eecfaefe1f7920651d828}
+      \strng{fullhash}{2d9c386aa3b1c4b39f987c8cd420b767}
+      \strng{bibnamehash}{9324f8c6fd3eecfaefe1f7920651d828}
+      \strng{authorbibnamehash}{9324f8c6fd3eecfaefe1f7920651d828}
+      \strng{authornamehash}{9324f8c6fd3eecfaefe1f7920651d828}
+      \strng{authorfullhash}{2d9c386aa3b1c4b39f987c8cd420b767}
+      \strng{editorbibnamehash}{6a39d1a753a59453605beb88d8aee2e6}
+      \strng{editornamehash}{6a39d1a753a59453605beb88d8aee2e6}
+      \strng{editorfullhash}{6a39d1a753a59453605beb88d8aee2e6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Medical Imaging 2013: Image Processing}
+      \field{issn}{0277-786X}
+      \field{month}{3}
+      \field{title}{Population based modeling of respiratory lung motion and prediction from partial information}
+      \field{volume}{8669}
+      \field{year}{2013}
+      \field{pages}{86690U}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1117/12.2007076
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
