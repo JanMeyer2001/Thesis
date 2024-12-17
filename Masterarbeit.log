@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  16 DEC 2024 22:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  17 DEC 2024 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1333,19 +1333,19 @@ File: images/ArchitectureFourier-Net.png Graphic file (type png)
 Package pdftex.def Info: images/ArchitectureFourier-Net.png  used on input line
  20.
 (pdftex.def)             Requested size: 441.01773pt x 167.7513pt.
- [28 <./images/ArchitectureFourier-Net.png>] [29]
-<images/SYMNetArchitectureFCN.png, id=757, 1032.85875pt x 676.02562pt>
+ [28 <./images/ArchitectureFourier-Net.png>]
+<images/SYMNetArchitectureFCN.png, id=747, 1032.85875pt x 676.02562pt>
 File: images/SYMNetArchitectureFCN.png Graphic file (type png)
 <use images/SYMNetArchitectureFCN.png>
-Package pdftex.def Info: images/SYMNetArchitectureFCN.png  used on input line 4
-9.
+Package pdftex.def Info: images/SYMNetArchitectureFCN.png  used on input line 3
+1.
 (pdftex.def)             Requested size: 441.01773pt x 288.65323pt.
- [30 <./images/SYMNetArchitectureFCN.png>]
+ [29 <./images/SYMNetArchitectureFCN.png>] [30]
 <images/DecoderDisplacementField.png, id=778, 493.845pt x 405.01312pt>
 File: images/DecoderDisplacementField.png Graphic file (type png)
 <use images/DecoderDisplacementField.png>
 Package pdftex.def Info: images/DecoderDisplacementField.png  used on input lin
-e 75.
+e 73.
 (pdftex.def)             Requested size: 286.65883pt x 235.09315pt.
 
 
@@ -1355,22 +1355,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/SpatialTransformer.png, id=818, 609.77812pt x 260.47313pt>
 File: images/SpatialTransformer.png Graphic file (type png)
 <use images/SpatialTransformer.png>
-Package pdftex.def Info: images/SpatialTransformer.png  used on input line 108.
+Package pdftex.def Info: images/SpatialTransformer.png  used on input line 106.
 
 (pdftex.def)             Requested size: 441.01773pt x 188.39104pt.
  [34 <./images/SpatialTransformer.png>]
-<images/ArchitectureFourier-Net+.png, id=835, 1075.01625pt x 356.0803pt>
+<images/ArchitectureFourier-Net+.png, id=830, 1075.01625pt x 356.0803pt>
 File: images/ArchitectureFourier-Net+.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+.png  used on input lin
-e 147.
+e 144.
 (pdftex.def)             Requested size: 441.01773pt x 146.0808pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[35]
-<images/CompressionEncoder.png, id=850, 490.83376pt x 391.4625pt>
+ [35 <./images/ArchitectureFourier-Net+.png>]
+<images/CompressionEncoder.png, id=849, 490.83376pt x 391.4625pt>
 File: images/CompressionEncoder.png Graphic file (type png)
 <use images/CompressionEncoder.png>
 Package pdftex.def Info: images/CompressionEncoder.png  used on input line 158.
@@ -1380,7 +1376,7 @@ Package pdftex.def Info: images/CompressionEncoder.png  used on input line 158.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/ArchitectureFourier-Net+CNN.png, id=853, 1078.0275pt x 218.31563pt>
+<images/ArchitectureFourier-Net+CNN.png, id=852, 1078.0275pt x 218.31563pt>
 File: images/ArchitectureFourier-Net+CNN.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+CNN.png>
 Package pdftex.def Info: images/ArchitectureFourier-Net+CNN.png  used on input 
@@ -1389,7 +1385,7 @@ line 166.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36 <./images/ArchitectureFourier-Net+.png>]
+[36]
 <images/ArchitectureFourier-Net+Cascaded.png, id=866, 1409.265pt x 287.0725pt>
 File: images/ArchitectureFourier-Net+Cascaded.png Graphic file (type png)
 <use images/ArchitectureFourier-Net+Cascaded.png>
@@ -1882,6 +1878,10 @@ Overfull \hbox (3.00894pt too wide) in paragraph at lines 166--166
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1913,7 +1913,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (86 pages, 24513748 bytes).
+Output written on Masterarbeit.pdf (86 pages, 24513750 bytes).
 PDF statistics:
  1828 PDF objects out of 2073 (max. 8388607)
  353 named destinations out of 1000 (max. 500000)
