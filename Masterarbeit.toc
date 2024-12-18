@@ -16,16 +16,16 @@
 \contentsline {subsubsection}{\numberline {2.1.2.2}Spin Echo Sequence}{9}{subsubsection.21}%
 \contentsline {subsubsection}{\numberline {2.1.2.3}Introduction to k-Space}{9}{subsubsection.23}%
 \contentsline {subsubsection}{\numberline {2.1.2.4}Rectilinear K-Space Sampling}{12}{subsubsection.26}%
-\contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{13}{subsubsection.27}%
+\contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{12}{subsubsection.27}%
 \contentsline {subsection}{\numberline {2.1.3}Imaging Acceleration and Reconstruction}{13}{subsection.28}%
 \contentsline {subsubsection}{\numberline {2.1.3.1}Image Acceleration via k-Space Subsampling}{13}{subsubsection.29}%
 \contentsline {subsubsection}{\numberline {2.1.3.2}Parallel Imaging}{15}{subsubsection.32}%
-\contentsline {subsubsection}{\numberline {2.1.3.3}Compressed Sensing}{17}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {2.1.3.3}Compressed Sensing}{16}{subsubsection.34}%
 \contentsline {subsection}{\numberline {2.1.4}Motion-Compensated Image Reconstruction}{17}{subsection.35}%
 \contentsline {subsubsection}{\numberline {2.1.4.1}Motion in MRI Acquisition}{17}{subsubsection.36}%
-\contentsline {subsubsection}{\numberline {2.1.4.2}Reconstruction Pipelines}{18}{subsubsection.37}%
+\contentsline {subsubsection}{\numberline {2.1.4.2}Motion-Compensated Reconstruction}{18}{subsubsection.37}%
 \contentsline {section}{\numberline {2.2}Image Transformations and Registration}{18}{section.38}%
-\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{19}{subsection.39}%
+\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{18}{subsection.39}%
 \contentsline {subsubsection}{\numberline {2.2.1.1}Rigid Transformations}{19}{subsubsection.40}%
 \contentsline {subsubsection}{\numberline {2.2.1.2}Affine Transformations}{19}{subsubsection.42}%
 \contentsline {subsubsection}{\numberline {2.2.1.3}Non-Linear Transformations}{19}{subsubsection.47}%

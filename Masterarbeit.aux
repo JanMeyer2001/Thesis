@@ -151,7 +151,7 @@
 \abx@aux@segm{0}{0}{Zou2024}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Related Work}{2}{section.6}\protected@file@percent }
 \newlabel{Sec:RelatedWork}{{1.2}{2}{Related Work}{section.6}{}}
-\BKM@entry{id=4,dest={73656374696F6E2E37},srcline={26}}{312E335C303430436F6E747269627574696F6E735C303430616E645C3034305374727563747572655C3034306F665C3034307468655C303430546865736973}
+\BKM@entry{id=4,dest={73656374696F6E2E37},srcline={24}}{312E335C303430436F6E747269627574696F6E735C303430616E645C3034305374727563747572655C3034306F665C3034307468655C303430546865736973}
 \abx@aux@cite{0}{Fourier-Net}
 \abx@aux@segm{0}{0}{Fourier-Net}
 \abx@aux@cite{0}{Fourier-Net+}
@@ -257,12 +257,16 @@
 \abx@aux@segm{0}{0}{SamplingStrategies}
 \abx@aux@cite{0}{SamplingStrategies}
 \abx@aux@segm{0}{0}{SamplingStrategies}
-\abx@aux@cite{0}{SamplingStrategies}
-\abx@aux@segm{0}{0}{SamplingStrategies}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic of an gradient echo sequence taken from~\blx@tocontentsinit {0}\cite {PulseSequences}. The FID signal is manipulated by a bi-polar gradient to create a gradient echo. The excitation RF pulse tilts the magnetization by $90 \ensuremath  {^\circ }$ and the signal is sampled during a gradient echo at time TE which is caused by a bi-polar gradient.}}{9}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:GradientEcho}{{2.3}{9}{Schematic of an gradient echo sequence taken from~\cite {PulseSequences}. The FID signal is manipulated by a bi-polar gradient to create a gradient echo. The excitation RF pulse tilts the magnetization by $90 \degree $ and the signal is sampled during a gradient echo at time TE which is caused by a bi-polar gradient}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic of an GE sequence taken from~\blx@tocontentsinit {0}\cite {PulseSequences}. The FID signal is manipulated by a bi-polar gradient to create a GE. The excitation RF pulse tilts the magnetization by $90 \ensuremath  {^\circ }$ and the signal is sampled during a GE at time TE which is caused by a bi-polar gradient.}}{9}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:GradientEcho}{{2.3}{9}{Schematic of an GE sequence taken from~\cite {PulseSequences}. The FID signal is manipulated by a bi-polar gradient to create a GE. The excitation RF pulse tilts the magnetization by $90 \degree $ and the signal is sampled during a GE at time TE which is caused by a bi-polar gradient}{figure.caption.20}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2.2}Spin Echo Sequence}{9}{subsubsection.21}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2.3}Introduction to k-Space}{9}{subsubsection.23}\protected@file@percent }
+\abx@aux@cite{0}{SamplingStrategies}
+\abx@aux@segm{0}{0}{SamplingStrategies}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Schematic of an SE sequence taken from~\blx@tocontentsinit {0}\cite {PulseSequences}. A $90 \ensuremath  {^\circ }$ pulse rotates the magnetization resulting in a quickly decaying FID signal. At $\frac  {\text  {TE}}{2}$ the spins are flipped by applying a $180 \ensuremath  {^\circ }$ pulse and give rise to a SE at time TE after waiting another $\frac  {\text  {TE}}{2}$ following the $180 \ensuremath  {^\circ }$ pulse.}}{10}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:SpinEcho}{{2.4}{10}{Schematic of an SE sequence taken from~\cite {PulseSequences}. A $90 \degree $ pulse rotates the magnetization resulting in a quickly decaying FID signal. At $\frac {\text {TE}}{2}$ the spins are flipped by applying a $180 \degree $ pulse and give rise to a SE at time TE after waiting another $\frac {\text {TE}}{2}$ following the $180 \degree $ pulse}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Correspondence of the image domain and the k-space via a 2D FT, adapted from~\blx@tocontentsinit {0}\cite {SamplingStrategies}. Consequently, a 2D iFT can be used to go from image space into k-space. In practice, a 2D FFT and iFFT are used due to faster computation. The coordinates of each domain are defined by the Larmor frequency according to Equation~\ref {eq:LarmorFrequency}.}}{10}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:2D_MRI_Measurement}{{2.5}{10}{Correspondence of the image domain and the k-space via a 2D FT, adapted from~\cite {SamplingStrategies}. Consequently, a 2D iFT can be used to go from image space into k-space. In practice, a 2D FFT and iFFT are used due to faster computation. The coordinates of each domain are defined by the Larmor frequency according to Equation~\ref {eq:LarmorFrequency}}{figure.caption.24}{}}
 \abx@aux@cite{0}{SamplingStrategies}
 \abx@aux@segm{0}{0}{SamplingStrategies}
 \abx@aux@cite{0}{SamplingStrategies}
@@ -277,10 +281,12 @@
 \abx@aux@segm{0}{0}{SamplingStrategies}
 \abx@aux@cite{0}{SamplingStrategies}
 \abx@aux@segm{0}{0}{SamplingStrategies}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Schematic of an spin echo sequence taken from~\blx@tocontentsinit {0}\cite {PulseSequences}. A $90 \ensuremath  {^\circ }$ pulse rotates the magnetization resulting in a quickly decaying FID signal. At $\frac  {\text  {TE}}{2}$ the spins are flipped by applying a $180 \ensuremath  {^\circ }$ pulse and give rise to a spin echo at time TE after waiting another $\frac  {\text  {TE}}{2}$ following the $180 \ensuremath  {^\circ }$ pulse.}}{10}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:SpinEcho}{{2.4}{10}{Schematic of an spin echo sequence taken from~\cite {PulseSequences}. A $90 \degree $ pulse rotates the magnetization resulting in a quickly decaying FID signal. At $\frac {\text {TE}}{2}$ the spins are flipped by applying a $180 \degree $ pulse and give rise to a spin echo at time TE after waiting another $\frac {\text {TE}}{2}$ following the $180 \degree $ pulse}{figure.caption.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Correspondence of the image domain and the k-space via a 2D FT, adapted from~\blx@tocontentsinit {0}\cite {SamplingStrategies}. Consequently, a 2D iFT can be used to go from image space into k-space. In practice, a 2D FFT and iFFT are used due to faster computation. The coordinates of each domain are defined by the Larmor frequency according to Equation~\ref {eq:LarmorFrequency}.}}{11}{figure.caption.24}\protected@file@percent }
-\newlabel{fig:2D_MRI_Measurement}{{2.5}{11}{Correspondence of the image domain and the k-space via a 2D FT, adapted from~\cite {SamplingStrategies}. Consequently, a 2D iFT can be used to go from image space into k-space. In practice, a 2D FFT and iFFT are used due to faster computation. The coordinates of each domain are defined by the Larmor frequency according to Equation~\ref {eq:LarmorFrequency}}{figure.caption.24}{}}
+\newlabel{fig:constant_k-space_gradient}{{2.6a}{11}{Schematic of a constant gradient creating a straight k-space trajectory}{figure.caption.25}{}}
+\newlabel{sub@fig:constant_k-space_gradient}{{a}{11}{Schematic of a constant gradient creating a straight k-space trajectory}{figure.caption.25}{}}
+\newlabel{fig:refocusing_k-sapce_pulse}{{2.6b}{11}{Schematic of an refocusing pulse inverting the phase of the k-space}{figure.caption.25}{}}
+\newlabel{sub@fig:refocusing_k-sapce_pulse}{{b}{11}{Schematic of an refocusing pulse inverting the phase of the k-space}{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Methods of moving in the k-space using a) constant gradients to move along straight lines or b) mirror the k-space at the origin using a refocusing pulse. Adapted from~\blx@tocontentsinit {0}\cite {SamplingStrategies}.}}{11}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:kSpaceTrajectories}{{2.6}{11}{Methods of moving in the k-space using a) constant gradients to move along straight lines or b) mirror the k-space at the origin using a refocusing pulse. Adapted from~\cite {SamplingStrategies}}{figure.caption.25}{}}
 \abx@aux@cite{0}{SamplingStrategies}
 \abx@aux@segm{0}{0}{SamplingStrategies}
 \abx@aux@cite{0}{Bardo2021}
@@ -303,13 +309,8 @@
 \abx@aux@segm{0}{0}{SamplingStrategies}
 \abx@aux@cite{0}{SamplingStrategies}
 \abx@aux@segm{0}{0}{SamplingStrategies}
-\newlabel{fig:constant_k-space_gradient}{{2.6a}{12}{Schematic of a constant gradient creating a straight k-space trajectory}{figure.caption.25}{}}
-\newlabel{sub@fig:constant_k-space_gradient}{{a}{12}{Schematic of a constant gradient creating a straight k-space trajectory}{figure.caption.25}{}}
-\newlabel{fig:refocusing_k-sapce_pulse}{{2.6b}{12}{Schematic of an refocusing pulse inverting the phase of the k-space}{figure.caption.25}{}}
-\newlabel{sub@fig:refocusing_k-sapce_pulse}{{b}{12}{Schematic of an refocusing pulse inverting the phase of the k-space}{figure.caption.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Methods of moving in the k-space using a) constant gradients to move along straight lines or b) mirror the k-space at the origin using a refocusing pulse. Adapted from~\blx@tocontentsinit {0}\cite {SamplingStrategies}.}}{12}{figure.caption.25}\protected@file@percent }
-\newlabel{fig:kSpaceTrajectories}{{2.6}{12}{Methods of moving in the k-space using a) constant gradients to move along straight lines or b) mirror the k-space at the origin using a refocusing pulse. Adapted from~\cite {SamplingStrategies}}{figure.caption.25}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2.4}Rectilinear K-Space Sampling}{12}{subsubsection.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{12}{subsubsection.27}\protected@file@percent }
 \BKM@entry{id=9,dest={73756273656374696F6E2E3238},srcline={133}}{322E312E335C303430496D6167696E675C303430416363656C65726174696F6E5C303430616E645C3034305265636F6E737472756374696F6E}
 \abx@aux@cite{0}{ParallelMRI}
 \abx@aux@segm{0}{0}{ParallelMRI}
@@ -329,7 +330,6 @@
 \abx@aux@segm{0}{0}{ParallelMRI}
 \abx@aux@cite{0}{SamplingStrategies}
 \abx@aux@segm{0}{0}{SamplingStrategies}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2.5}Non-Rectilinear K-Space Sampling}{13}{subsubsection.27}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Imaging Acceleration and Reconstruction}{13}{subsection.28}\protected@file@percent }
 \newlabel{SubSec:ImagingAccelerationReconstruction}{{2.1.3}{13}{Imaging Acceleration and Reconstruction}{subsection.28}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3.1}Image Acceleration via k-Space Subsampling}{13}{subsubsection.29}\protected@file@percent }
@@ -346,8 +346,6 @@
 \abx@aux@segm{0}{0}{DeepMRIReconstructionSubsampling}
 \abx@aux@cite{0}{MRISubsamplingPruning}
 \abx@aux@segm{0}{0}{MRISubsamplingPruning}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Examples of different subsampled k-space trajectories (top row) and their associated aliasing artifacts in image space (bottom row) taken from~\blx@tocontentsinit {0}\cite {AdvancesPI}. Omitted/zeroed data represented by dashed lines.}}{14}{figure.caption.31}\protected@file@percent }
-\newlabel{fig:ExamplesSubsampling}{{2.7}{14}{Examples of different subsampled k-space trajectories (top row) and their associated aliasing artifacts in image space (bottom row) taken from~\cite {AdvancesPI}. Omitted/zeroed data represented by dashed lines}{figure.caption.31}{}}
 \abx@aux@cite{0}{AdvancesPI}
 \abx@aux@segm{0}{0}{AdvancesPI}
 \abx@aux@cite{0}{DeepMRIReconstructionSubsampling}
@@ -362,6 +360,8 @@
 \abx@aux@segm{0}{0}{ParallelMRI}
 \abx@aux@cite{0}{AdvancesPI}
 \abx@aux@segm{0}{0}{AdvancesPI}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Examples of different subsampled k-space trajectories (top row) and their associated aliasing artifacts in image space (bottom row) taken from~\blx@tocontentsinit {0}\cite {AdvancesPI}. Omitted/zeroed data is represented by dashed lines.}}{14}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:ExamplesSubsampling}{{2.7}{14}{Examples of different subsampled k-space trajectories (top row) and their associated aliasing artifacts in image space (bottom row) taken from~\cite {AdvancesPI}. Omitted/zeroed data is represented by dashed lines}{figure.caption.31}{}}
 \abx@aux@cite{0}{AdvancesPI}
 \abx@aux@segm{0}{0}{AdvancesPI}
 \abx@aux@cite{0}{AdvancesPI}
@@ -400,6 +400,7 @@
 \abx@aux@segm{0}{0}{PI+CS}
 \abx@aux@cite{0}{PI+CS2}
 \abx@aux@segm{0}{0}{PI+CS2}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3.3}Compressed Sensing}{16}{subsubsection.34}\protected@file@percent }
 \BKM@entry{id=10,dest={73756273656374696F6E2E3335},srcline={171}}{322E312E345C3034304D6F74696F6E2D436F6D70656E73617465645C303430496D6167655C3034305265636F6E737472756374696F6E}
 \abx@aux@cite{0}{Kuestner2022}
 \abx@aux@segm{0}{0}{Kuestner2022}
@@ -409,7 +410,6 @@
 \abx@aux@segm{0}{0}{GRICS}
 \abx@aux@cite{0}{GRICS}
 \abx@aux@segm{0}{0}{GRICS}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3.3}Compressed Sensing}{17}{subsubsection.34}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Motion-Compensated Image Reconstruction}{17}{subsection.35}\protected@file@percent }
 \newlabel{SubSec:Motion-CompensatedReconstruction}{{2.1.4}{17}{Motion-Compensated Image Reconstruction}{subsection.35}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4.1}Motion in MRI Acquisition}{17}{subsubsection.36}\protected@file@percent }
@@ -439,25 +439,25 @@
 \abx@aux@cite{0}{Kuestner2022}
 \abx@aux@segm{0}{0}{Kuestner2022}
 \BKM@entry{id=11,dest={73656374696F6E2E3338},srcline={187}}{322E325C303430496D6167655C3034305472616E73666F726D6174696F6E735C303430616E645C303430526567697374726174696F6E}
-\BKM@entry{id=12,dest={73756273656374696F6E2E3339},srcline={191}}{322E322E315C303430496D6167655C3034305472616E73666F726D6174696F6E73}
+\BKM@entry{id=12,dest={73756273656374696F6E2E3339},srcline={190}}{322E322E315C303430496D6167655C3034305472616E73666F726D6174696F6E73}
 \abx@aux@cite{0}{Strittmatter2023}
 \abx@aux@segm{0}{0}{Strittmatter2023}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4.2}Reconstruction Pipelines}{18}{subsubsection.37}\protected@file@percent }
-\newlabel{SubSubSec:ReconstructionPipelines}{{2.1.4.2}{18}{Reconstruction Pipelines}{subsubsection.37}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4.2}Motion-Compensated Reconstruction}{18}{subsubsection.37}\protected@file@percent }
+\newlabel{SubSubSec:ReconstructionPipelines}{{2.1.4.2}{18}{Motion-Compensated Reconstruction}{subsubsection.37}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Image Transformations and Registration}{18}{section.38}\protected@file@percent }
 \newlabel{Sec:ImageTransformationsAndRegistration}{{2.2}{18}{Image Transformations and Registration}{section.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{18}{subsection.39}\protected@file@percent }
+\newlabel{SubSec:ImageTransformations}{{2.2.1}{18}{Image Transformations}{subsection.39}{}}
 \abx@aux@cite{0}{Strittmatter2023}
 \abx@aux@segm{0}{0}{Strittmatter2023}
 \abx@aux@cite{0}{Strittmatter2023}
 \abx@aux@segm{0}{0}{Strittmatter2023}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Image Transformations}{19}{subsection.39}\protected@file@percent }
-\newlabel{SubSec:ImageTransformations}{{2.2.1}{19}{Image Transformations}{subsection.39}{}}
+\abx@aux@cite{0}{Strittmatter2023}
+\abx@aux@segm{0}{0}{Strittmatter2023}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1.1}Rigid Transformations}{19}{subsubsection.40}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1.2}Affine Transformations}{19}{subsubsection.42}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1.3}Non-Linear Transformations}{19}{subsubsection.47}\protected@file@percent }
-\abx@aux@cite{0}{Strittmatter2023}
-\abx@aux@segm{0}{0}{Strittmatter2023}
-\BKM@entry{id=13,dest={73756273656374696F6E2E3439},srcline={278}}{322E322E325C303430496D6167655C303430526567697374726174696F6E}
+\BKM@entry{id=13,dest={73756273656374696F6E2E3439},srcline={277}}{322E322E325C303430496D6167655C303430526567697374726174696F6E}
 \abx@aux@cite{0}{Chen2023}
 \abx@aux@segm{0}{0}{Chen2023}
 \abx@aux@cite{0}{NiftiReg}
@@ -490,14 +490,14 @@
 \abx@aux@segm{0}{0}{Fu2020}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Image Registration}{20}{subsection.49}\protected@file@percent }
 \newlabel{SubSec:ImageRegistration}{{2.2.2}{20}{Image Registration}{subsection.49}{}}
-\BKM@entry{id=14,dest={73656374696F6E2E3531},srcline={287}}{322E335C303430446565705C3034304C6561726E696E67}
+\BKM@entry{id=14,dest={73656374696F6E2E3531},srcline={286}}{322E335C303430446565705C3034304C6561726E696E67}
 \abx@aux@cite{0}{Xu2023}
 \abx@aux@segm{0}{0}{Xu2023}
 \abx@aux@cite{0}{U-Net}
 \abx@aux@segm{0}{0}{U-Net}
 \abx@aux@cite{0}{Voxelmorph}
 \abx@aux@segm{0}{0}{Voxelmorph}
-\BKM@entry{id=15,dest={73756273656374696F6E2E3532},srcline={290}}{322E332E315C303430446565705C3034304C6561726E696E675C30343041726368697465637475726573}
+\BKM@entry{id=15,dest={73756273656374696F6E2E3532},srcline={289}}{322E332E315C303430446565705C3034304C6561726E696E675C30343041726368697465637475726573}
 \abx@aux@cite{0}{Chen2020}
 \abx@aux@segm{0}{0}{Chen2020}
 \abx@aux@cite{0}{Chen2023}
@@ -534,7 +534,7 @@
 \abx@aux@segm{0}{0}{Fu2020}
 \abx@aux@cite{0}{Fu2020}
 \abx@aux@segm{0}{0}{Fu2020}
-\BKM@entry{id=16,dest={73756273656374696F6E2E3536},srcline={303}}{322E332E325C303430446565705C3034304C6561726E696E675C303430666F725C303430496D6167655C303430526567697374726174696F6E}
+\BKM@entry{id=16,dest={73756273656374696F6E2E3536},srcline={302}}{322E332E325C303430446565705C3034304C6561726E696E675C303430666F725C303430496D6167655C303430526567697374726174696F6E}
 \abx@aux@cite{0}{Chen2023}
 \abx@aux@segm{0}{0}{Chen2023}
 \abx@aux@cite{0}{Fu2020}
@@ -583,7 +583,7 @@
 \abx@aux@segm{0}{0}{Zou2022}
 \abx@aux@cite{0}{Zou2022}
 \abx@aux@segm{0}{0}{Zou2022}
-\BKM@entry{id=17,dest={73756273656374696F6E2E3631},srcline={330}}{322E332E335C3034304E6574776F726B5C303430547261696E696E675C303430616E645C30343054657374696E67}
+\BKM@entry{id=17,dest={73756273656374696F6E2E3631},srcline={329}}{322E332E335C3034304E6574776F726B5C303430547261696E696E675C303430616E645C30343054657374696E67}
 \abx@aux@cite{0}{CNN2}
 \abx@aux@segm{0}{0}{CNN2}
 \abx@aux@cite{0}{CNN1}
@@ -595,8 +595,6 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Network Training and Testing}{23}{subsection.61}\protected@file@percent }
 \newlabel{SubSec:NetworkTrainingAndTesting}{{2.3.3}{23}{Network Training and Testing}{subsection.61}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3.1}Training and Back-Propagation}{23}{subsubsection.62}\protected@file@percent }
-\abx@aux@cite{0}{Chen2020}
-\abx@aux@segm{0}{0}{Chen2020}
 \abx@aux@cite{0}{Ghoul2024}
 \abx@aux@segm{0}{0}{Ghoul2024}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of the training process for an unsupervised network with only a image similarity loss (no ground truth), taken from~\blx@tocontentsinit {0}\cite {Zou2022}.}}{24}{figure.caption.60}\protected@file@percent }
