@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  18 DEC 2024 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.15)  18 DEC 2024 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1690,25 +1690,25 @@ inclusion: multiple pdfs with page group included in a single page
 <images/TestExamples_Mode0.pdf, id=1177, 1957.54959pt x 802.36769pt>
 File: images/TestExamples_Mode0.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode0.pdf>
-Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 409.
+Package pdftex.def Info: images/TestExamples_Mode0.pdf  used on input line 407.
 
 (pdftex.def)             Requested size: 418.96548pt x 171.72212pt.
 <images/TestExamples_Mode1.pdf, id=1178, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode1.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode1.pdf>
-Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 410.
+Package pdftex.def Info: images/TestExamples_Mode1.pdf  used on input line 408.
 
 (pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
 <images/TestExamples_Mode2.pdf, id=1179, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode2.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode2.pdf>
-Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 411.
+Package pdftex.def Info: images/TestExamples_Mode2.pdf  used on input line 409.
 
 (pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
 <images/TestExamples_Mode3.pdf, id=1180, 1957.54959pt x 705.62834pt>
 File: images/TestExamples_Mode3.pdf Graphic file (type pdf)
 <use images/TestExamples_Mode3.pdf>
-Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 412.
+Package pdftex.def Info: images/TestExamples_Mode3.pdf  used on input line 410.
 
 (pdftex.def)             Requested size: 418.96548pt x 151.01804pt.
  [59]
@@ -1728,68 +1728,68 @@ pdfTeX warning: pdflatex (file ./images/TestExamples_Mode2.pdf): PDF inclusion:
 pdfTeX warning: pdflatex (file ./images/TestExamples_Mode3.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (8.29655pt too wide) in paragraph at lines 419--420
+Overfull \hbox (8.29655pt too wide) in paragraph at lines 417--418
 \OT1/cmr/m/n/12 After as-sess-ing the reg-is-tra-tion per-for-mance of \OT1/cmr
 /m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net+ \OT1/cmr/m/
 n/12 and \OT1/cmr/m/it/12 4xFourier-
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 430--430
+Underfull \hbox (badness 1308) in paragraph at lines 428--428
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 486--486
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 486--486
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 486--486
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 486--486
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 486--486
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 488--488
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 486--486
  []|[]| 
  []
 
 [61] [62]
-Underfull \hbox (badness 1308) in paragraph at lines 499--499
+Underfull \hbox (badness 1308) in paragraph at lines 497--497
 [][]|\OT1/cmr/m/n/12 Re-con-struc-tion re-sults \OT1/cmr/m/it/12 Vox-el-Morph\O
 T1/cmr/m/n/12 , \OT1/cmr/m/it/12 Fourier-Net\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 
 Fourier-Net+ \OT1/cmr/m/n/12 and
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 529--529
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 529--529
  []|[]| 
  []
 
 
-Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
+Overfull \hbox (2.73097pt too wide) in paragraph at lines 529--529
  []|[]| 
  []
 
@@ -1799,21 +1799,21 @@ Overfull \hbox (2.73097pt too wide) in paragraph at lines 531--531
 File: ./Images/ResultsReconstruction_mode1.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode1.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode1.pdf  used on inpu
-t line 543.
+t line 541.
 (pdftex.def)             Requested size: 441.01773pt x 155.45648pt.
 <./Images/ResultsReconstruction_mode2.pdf, id=1252, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode2.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode2.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode2.pdf  used on inpu
-t line 544.
+t line 542.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
 <./Images/ResultsReconstruction_mode3.pdf, id=1253, 9070.73877pt x 2936.32433pt
 >
 File: ./Images/ResultsReconstruction_mode3.pdf Graphic file (type pdf)
 <use ./Images/ResultsReconstruction_mode3.pdf>
 Package pdftex.def Info: ./Images/ResultsReconstruction_mode3.pdf  used on inpu
-t line 545.
+t line 543.
 (pdftex.def)             Requested size: 441.01773pt x 142.74759pt.
 ) (chapters/Discussion.tex [64] [65 <./Images/ResultsReconstruction_mode1.pdf> 
 <./Images/ResultsReconstruction_mode2.pdf
@@ -1860,10 +1860,6 @@ Overfull \hbox (3.00894pt too wide) in paragraph at lines 174--174
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Masterarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Masterarbeit.run.xml'.
@@ -1896,7 +1892,7 @@ c/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterarbeit.pdf (86 pages, 24476033 bytes).
+Output written on Masterarbeit.pdf (86 pages, 24475946 bytes).
 PDF statistics:
  1839 PDF objects out of 2073 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
