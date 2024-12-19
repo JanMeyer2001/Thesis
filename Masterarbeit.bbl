@@ -705,8 +705,8 @@
       \strng{authorbibnamehash}{ef34355bba6fd21b02862fcb80dc4c98}
       \strng{authornamehash}{ef34355bba6fd21b02862fcb80dc4c98}
       \strng{authorfullhash}{a4cdd7f7f74cd42c1b10ea3b5ca673c8}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1573-0743}
@@ -745,8 +745,8 @@
       \strng{authorbibnamehash}{d8f23c8835d0000e440567a397827d62}
       \strng{authornamehash}{d8f23c8835d0000e440567a397827d62}
       \strng{authorfullhash}{d8f23c8835d0000e440567a397827d62}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Model-based reconstruction of accelerated quantitative magnetic resonance imaging (MRI)}
@@ -909,8 +909,8 @@
       \strng{authorbibnamehash}{f5d98b22a232041a3ede63dc1ab085c5}
       \strng{authornamehash}{f5d98b22a232041a3ede63dc1ab085c5}
       \strng{authorfullhash}{f5d98b22a232041a3ede63dc1ab085c5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1522-2586}
@@ -1294,8 +1294,8 @@
            familyi={G\bibinitperiod},
            given={Christopher},
            giveni={C\bibinitperiod}}}%
-        {{hash=d592b1000742a3ecd2c1c940fb1c9090}{%
-           family={Kustner},
+        {{hash=2e7ee55eb5a3df8620e623a874095c8b}{%
+           family={Küstner},
            familyi={K\bibinitperiod},
            given={Thomas},
            giveni={T\bibinitperiod}}}%
@@ -1308,12 +1308,12 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{05690768d0745449a95c2d61870b89db}
-      \strng{fullhash}{05690768d0745449a95c2d61870b89db}
-      \strng{bibnamehash}{05690768d0745449a95c2d61870b89db}
-      \strng{authorbibnamehash}{05690768d0745449a95c2d61870b89db}
-      \strng{authornamehash}{05690768d0745449a95c2d61870b89db}
-      \strng{authorfullhash}{05690768d0745449a95c2d61870b89db}
+      \strng{namehash}{b8d448d2860dcea2b340079f00c67990}
+      \strng{fullhash}{b8d448d2860dcea2b340079f00c67990}
+      \strng{bibnamehash}{b8d448d2860dcea2b340079f00c67990}
+      \strng{authorbibnamehash}{b8d448d2860dcea2b340079f00c67990}
+      \strng{authornamehash}{b8d448d2860dcea2b340079f00c67990}
+      \strng{authorfullhash}{b8d448d2860dcea2b340079f00c67990}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -1498,8 +1498,8 @@
       \strng{authornamehash}{80601f83f37a68fd67fffa7198a837c3}
       \strng{authorfullhash}{2626681cab0dcb5ce813f3a7e448b08f}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-254X}
@@ -2086,8 +2086,8 @@
       \strng{editornamehash}{77d1f759936b145c92c43ca974ac419d}
       \strng{editorfullhash}{77d1f759936b145c92c43ca974ac419d}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Medical Imaging 2022: Physics of Medical Imaging}
@@ -2420,8 +2420,8 @@
       \strng{authornamehash}{80601f83f37a68fd67fffa7198a837c3}
       \strng{authorfullhash}{3a2c07f039f965d08e9cee30fcd56058}
       \field{extraname}{3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2045-2322}
@@ -2480,8 +2480,8 @@
       \strng{authorbibnamehash}{5ba0a3a87fabf38e97d3a371b6bc628d}
       \strng{authornamehash}{5ba0a3a87fabf38e97d3a371b6bc628d}
       \strng{authorfullhash}{43355089c2f7234437536fecd661ec5f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1097-6647}
@@ -2730,8 +2730,8 @@
       \strng{authorbibnamehash}{811a0fa1beda7a44d28af9c78514b544}
       \strng{authornamehash}{811a0fa1beda7a44d28af9c78514b544}
       \strng{authorfullhash}{01d00b453f90494a8acf55c84b832cb9}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2223-4306}
